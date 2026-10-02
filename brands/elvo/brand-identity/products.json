@@ -121,7 +121,9 @@
         }
       ],
       "standard_disclaimer": "Pensado para agua de red potable. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo.",
-      "product_images": []
+      "product_images": [
+        "brands/elvo/brand-identity/product-images/vivo-front.png"
+      ]
     },
     {
       "id": "repuesto-nativo",
