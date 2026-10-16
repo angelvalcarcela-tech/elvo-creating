@@ -36,9 +36,45 @@ li{padding:2mm 0;border-bottom:1px solid var(--cal)}
 .dark .label{color:var(--cal)}
 .tbd{color:#8a6a2a;background:#EFE3C8;padding:0 1.5mm;font-size:9pt}
 .small{font-size:9pt;color:#5d5a53}
-</style></head><body>
 
-<section class="page cover">
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3mm}
+.sc{background:var(--hue);padding:3.5mm 4mm 4mm;position:relative}
+.sc .ill{background:var(--alab);margin-bottom:2.5mm;padding:1.5mm}
+.sc .svg{width:100%;height:30mm;display:block}
+.sc .num{position:absolute;top:2mm;left:4mm;font-size:22pt;color:var(--gla);line-height:1}
+.sc h3{font-size:12pt;margin-bottom:1mm}
+.sc p{font-size:9.5pt;line-height:1.45}
+.sc.wide{grid-column:span 2}
+.sc.wide .both{display:flex;gap:4mm}
+.sc.wide .both>div{flex:1;background:var(--alab);padding:1.5mm;text-align:center}
+.sc.wide .both .svg{height:28mm}
+.sc.wide .both .cap{font-size:8.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--graf);padding-bottom:1mm}
+.small3 .svg{height:22mm}
+.small3 p{font-size:9pt}
+.small3 .sc{padding:3mm}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.cases .sc .svg{height:34mm}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3mm}
+.sc{background:var(--hue);padding:3.5mm 4mm 4mm;position:relative}
+.sc .ill{background:var(--alab);margin-bottom:2.5mm;padding:1.5mm}
+.sc .svg{width:100%;height:40mm;display:block}
+.sc .num{position:absolute;top:2mm;left:4mm;font-size:22pt;color:var(--gla);line-height:1}
+.sc h3{font-size:12pt;margin-bottom:1mm}
+.sc p{font-size:9.5pt;line-height:1.45}
+.sc.wide{grid-column:span 2}
+.sc.wide .both{display:flex;gap:4mm}
+.sc.wide .both>div{flex:1;background:var(--alab);padding:1.5mm;text-align:center}
+.sc.wide .both .svg{height:42mm}
+.sc.wide .both .cap{font-size:8.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--graf);padding-bottom:1mm}
+.small3 .svg{height:22mm}
+.small3 p{font-size:9pt}
+.small3 .sc{padding:3mm}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.cases .sc .svg{height:34mm}
+</style></head><body><section class="page cover">
   <div class="logo">elvo<i></i></div>
   <div style="margin-top:38mm" class="label">Manual de instalación</div>
   <h1 class="serif">Tu agua,<br>desde el caño.<br>En 5 minutos.</h1>
@@ -52,87 +88,51 @@ li{padding:2mm 0;border-bottom:1px solid var(--cal)}
 
 <section class="page">
   <div class="label">01 · Antes de empezar</div>
-  <h2 class="serif">Qué necesitas y qué incluye</h2>
+  <h2 class="serif">Qué incluye la caja</h2>
   <div class="cols">
-    <div>
-      <div class="label" style="margin-bottom:2mm">En la caja</div>
-      <ul>
+    <div><ul>
         <li>Purificador con el núcleo ya instalado</li>
         <li>Derivador con la manguera ya conectada al purificador</li>
         <li>Adaptador de jebe, ya puesto en el derivador</li>
-        <li>Llave para cambiar el núcleo</li>
-        </ul>
-    </div>
-    <div>
-      <div class="label" style="margin-bottom:2mm">Datos útiles</div>
-      <ul>
+        <li>Llave para cambiar el núcleo</li></ul></div>
+    <div><ul>
         <li>Lo instalas tú en 5 minutos</li>
         <li>Medidas del Nativo: 25 cm de alto x 6 cm de ancho</li>
         <li>Sin electricidad, sin obras y sin gasfitero</li>
-        <li>Pensado para agua de red potable</li>
-      </ul>
-    </div>
+        <li>Pensado para agua de red potable</li></ul></div>
   </div>
   <hr>
-  <div class="label">02 · Elige el adaptador</div>
-  <h2 class="serif">Mira primero la boca de tu grifo</h2>
-  <p class="small" style="margin-bottom:5mm">Retira el aireador girándolo con la mano. Lo que encuentres debajo define el adaptador.</p>
-
-  <div class="card"><svg class="svg" viewBox="0 0 200 60"><rect x="10" y="14" width="60" height="32" rx="3" fill="none" stroke="#2B2E2D"/><g stroke="#82C3C4"><line x1="76" y1="18" x2="76" y2="42"/><line x1="82" y1="18" x2="82" y2="42"/><line x1="88" y1="18" x2="88" y2="42"/></g><rect x="94" y="18" width="40" height="24" fill="none" stroke="#2B2E2D"/><path d="M140 30h40m-8-6 8 6-8 6" fill="none" stroke="#2B2E2D"/></svg>
-    <h3 class="serif">Conexión sin jebe</h3>
-    <p>Si el derivador se conecta directamente a la boca de tu grifo, retira el jebe del derivador y enrosca el derivador en su lugar.</p></div>
-
-  <div class="card"><svg class="svg" viewBox="0 0 200 60"><rect x="40" y="10" width="50" height="40" fill="none" stroke="#2B2E2D"/><rect x="36" y="22" width="58" height="6" fill="#82C3C4"/><rect x="36" y="36" width="58" height="6" fill="#82C3C4"/><path d="M110 30h60m-8-6 8 6-8 6" fill="none" stroke="#2B2E2D"/></svg>
-    <h3 class="serif">Conexión con jebe</h3>
-    <p>Si tu grifo requiere el jebe, déjalo puesto en el derivador y ajústalo al diámetro de tu caño hasta que quede firme.</p></div>
+  <div class="label">02 · Elige la conexión</div>
+  <h2 class="serif">Mira la boca de tu grifo</h2>
+  <p class="small" style="margin-bottom:4mm">Retira primero el aireador. Lo que encuentres define si usas el jebe o no.</p>
+  <div class="cases">
+    <div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><g><rect x="8" y="30" width="88" height="16" rx="8" fill="#F3F1EC"/></g><rect x="96" y="26" width="26" height="40" rx="3" fill="#F3F1EC"/><rect x="93" y="32" width="32" height="6" fill="#D8D2C7"/><rect x="122" y="44" width="26" height="6" rx="3" fill="#82C3C4"/><path d="M96 50 h-30" stroke-width="3"/><text x="80" y="100" font-size="8.5" fill="#9A948A" stroke="none" font-family="Inter,sans-serif" text-anchor="middle" letter-spacing="1.5">SE ENROSCA DIRECTO</text></svg></div><h3 class="serif">Sin jebe</h3><p>Si el derivador se conecta directamente a la boca de tu grifo, retira el jebe del derivador y enrosca el derivador en su lugar.</p></div>
+    <div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><g><rect x="8" y="30" width="88" height="16" rx="8" fill="#F3F1EC"/></g><rect x="92" y="22" width="34" height="20" rx="2" fill="#2B2E2D"/><line x1="92" y1="28" x2="126" y2="28" stroke="#9A948A"/><line x1="92" y1="35" x2="126" y2="35" stroke="#9A948A"/><rect x="97" y="42" width="24" height="36" rx="3" fill="#F3F1EC"/><rect x="121" y="54" width="26" height="6" rx="3" fill="#82C3C4"/><path d="M97 60 h-26" stroke-width="3"/><text x="80" y="100" font-size="8.5" fill="#9A948A" stroke="none" font-family="Inter,sans-serif" text-anchor="middle" letter-spacing="1.5">SE AJUSTA AL CAÑO</text></svg></div><h3 class="serif">Con jebe</h3><p>Si tu grifo requiere el jebe, déjalo puesto en el derivador y ajústalo al diámetro de tu caño hasta que quede firme.</p></div>
+  </div>
   <div class="footer"><span>elvo· Manual de instalación</span><span>2</span></div>
 </section>
-
 <section class="page">
   <div class="label">03 · Instalación</div>
   <h2 class="serif">Cinco pasos</h2>
-  <div class="steps">
-    <div class="step"><div class="n serif">1</div><div><h3 class="serif">Retira el aireador</h3><p>Si tu grifo tiene aireador, gíralo con la mano hasta sacarlo. Es necesario quitarlo para enroscar el derivador. Si no tiene aireador, pasa al paso 2.</p></div></div>
-    <div class="step"><div class="n serif">2</div><div><h3 class="serif">Define si usas el jebe</h3><p>Si el derivador se conecta directamente a la boca de tu grifo, quítale el jebe. Si tu grifo requiere el jebe, déjalo puesto.</p></div></div>
-    <div class="step"><div class="n serif">3</div><div><h3 class="serif">Coloca el derivador</h3><p>Enrosca el derivador en la boca del grifo, o ajusta el jebe al diámetro de tu caño hasta que quede firme. Apriétalo con la mano, sin forzarlo.</p></div></div>
-    <div class="step"><div class="n serif">4</div><div><h3 class="serif">Ubica el purificador</h3><p>La manguera ya viene conectada entre el derivador y el purificador. Deja el purificador sobre la mesada, junto al grifo.</p></div></div>
-    <div class="step"><div class="n serif">5</div><div><h3 class="serif">Elige el tipo de agua</h3><p>Con la palanca del derivador en horizontal, el agua pasa por el purificador. En vertical, sale agua del caño. La primera vez que gires la palanca requiere un poco de fuerza.</p></div></div>
-    </div>
+  <div class="grid">
+<div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="34" width="92" height="16" rx="8" fill="#F3F1EC"/><rect x="116" y="30" width="26" height="24" rx="2" fill="#D8D2C7"/><g stroke="#9A948A"><line x1="122" y1="34" x2="122" y2="50"/><line x1="129" y1="34" x2="129" y2="50"/><line x1="136" y1="34" x2="136" y2="50"/></g><path d="M104 78 q12 -12 24 -6" stroke="#82C3C4" stroke-width="2"/><path d="M128 72 l-7 -1" stroke="#82C3C4" stroke-width="2"/><path d="M128 72 l-3 7" stroke="#82C3C4" stroke-width="2"/><text x="80" y="102" font-size="9" fill="#9A948A" stroke="none" text-anchor="middle" font-family="Inter,sans-serif" letter-spacing="1.5">GIRA CON LA MANO</text></svg></div><div class="num serif">1</div><div><h3 class="serif">Retira el aireador</h3><p>Si tu grifo tiene aireador, gíralo con la mano hasta sacarlo. Si no tiene, pasa al paso 2.</p></div></div><div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="22" y="34" width="24" height="46" rx="3" fill="#F3F1EC"/><rect x="19" y="42" width="30" height="6" fill="#D8D2C7"/><rect x="46" y="56" width="30" height="6" rx="3" fill="#82C3C4" stroke="#1C1E1C"/><path d="M22 60 h-14" stroke-width="3"/><rect x="96" y="34" width="24" height="46" rx="3" fill="#F3F1EC"/><rect x="93" y="42" width="30" height="6" fill="#D8D2C7"/><rect x="92" y="18" width="32" height="18" rx="2" fill="#2B2E2D"/><line x1="92" y1="24" x2="124" y2="24" stroke="#9A948A"/><line x1="92" y1="30" x2="124" y2="30" stroke="#9A948A"/><rect x="120" y="56" width="30" height="6" rx="3" fill="#82C3C4" stroke="#1C1E1C"/><path d="M96 60 h-14" stroke-width="3"/><g font-size="8.5" fill="#9A948A" stroke="none" font-family="Inter,sans-serif" letter-spacing="1.2" text-anchor="middle"><text x="42" y="102">SIN JEBE</text><text x="118" y="102">CON JEBE</text></g></svg></div><div class="num serif">2</div><div><h3 class="serif">Define si usas el jebe</h3><p>Si el derivador se conecta directo a la boca del grifo, quítale el jebe. Si tu grifo lo requiere, déjalo puesto.</p></div></div><div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="22" width="102" height="16" rx="8" fill="#F3F1EC"/><rect x="100" y="36" width="24" height="40" rx="3" fill="#F3F1EC"/><rect x="97" y="42" width="30" height="6" fill="#D8D2C7"/><rect x="124" y="54" width="26" height="6" rx="3" fill="#82C3C4"/><path d="M100 58 h-28 q-14 0 -14 14" stroke-width="3"/><path d="M112 4 v14" stroke="#82C3C4" stroke-width="2"/><path d="M112 18 l-4 -5" stroke="#82C3C4" stroke-width="2"/><path d="M112 18 l4 -5" stroke="#82C3C4" stroke-width="2"/><text x="80" y="102" font-size="9" fill="#9A948A" stroke="none" text-anchor="middle" font-family="Inter,sans-serif" letter-spacing="1.5">ENROSCA</text></svg></div><div class="num serif">3</div><div><h3 class="serif">Coloca el derivador</h3><p>Enrosca el derivador en la boca del grifo, o ajusta el jebe al diámetro de tu caño. Apriétalo con la mano.</p></div></div><div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="88" x2="154" y2="88" stroke="#9A948A"/><rect x="8" y="14" width="64" height="14" rx="7" fill="#F3F1EC"/><rect x="62" y="24" width="22" height="30" rx="3" fill="#F3F1EC"/><path d="M62 42 q-20 0 -22 22 q-2 18 30 20" stroke-width="3"/><rect x="104" y="28" width="38" height="60" rx="8" fill="#F3F1EC"/><path d="M123 42 q-6 8 0 12 q6 -4 0 -12z" fill="#82C3C4" stroke="#82C3C4"/><path d="M142 40 q10 -4 10 8" stroke-width="3"/></svg></div><div class="num serif">4</div><div><h3 class="serif">Ubica el purificador</h3><p>La manguera ya viene conectada entre el derivador y el purificador. Déjalo sobre la mesada, junto al grifo.</p></div></div><div class="sc wide"><div class="num serif">5</div><div style="padding-left:12mm"><h3 class="serif">Elige el tipo de agua</h3><p style="margin-bottom:2.5mm">La primera vez que gires la palanca requiere un poco de fuerza.</p></div><div class="both"><div><div class="cap">Agua purificada</div><svg class="svg" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="30" y="28" width="24" height="46" rx="3" fill="#F3F1EC"/><rect x="27" y="36" width="30" height="6" fill="#D8D2C7"/><rect x="54" y="50" width="30" height="6" rx="3" fill="#82C3C4" stroke="#1C1E1C"/><path d="M30 54 h-14" stroke-width="3"/><text x="46" y="100" font-size="9" fill="#1C1E1C" stroke="none" font-family="Inter,sans-serif" letter-spacing="1.5" text-anchor="middle">HORIZONTAL</text></svg></div><div><div class="cap">Agua del caño</div><svg class="svg" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="30" y="18" width="24" height="46" rx="3" fill="#F3F1EC"/><rect x="27" y="26" width="30" height="6" fill="#D8D2C7"/><rect x="39" y="64" width="6" height="28" rx="3" fill="#82C3C4" stroke="#1C1E1C"/><path d="M30 44 h-14" stroke-width="3"/><text x="46" y="100" font-size="9" fill="#1C1E1C" stroke="none" font-family="Inter,sans-serif" letter-spacing="1.5" text-anchor="middle">VERTICAL</text></svg></div></div></div>
+  </div>
   <div class="footer"><span>elvo· Manual de instalación</span><span>3</span></div>
 </section>
-
 <section class="page">
-  <div class="label">04 · Uso y mantenimiento</div>
-  <h2 class="serif">Después de instalar</h2>
-  <div class="cols">
-    <div>
-      <h3 class="serif" style="font-size:14pt;margin-bottom:2mm">Uso diario</h3>
-      <p>Palanca en horizontal: agua purificada. Palanca en vertical: agua del caño. Abre el grifo y llena tu vaso desde el caño del purificador.</p>
-    </div>
-    <div>
-      <h3 class="serif" style="font-size:14pt;margin-bottom:2mm">Núcleo</h3>
-      <p>El núcleo dura 18 meses de uso normal. Te avisamos por WhatsApp cuando toque cambiarlo.</p>
-    </div>
+  <div class="label">04 · Cambio del núcleo</div>
+  <h2 class="serif">Cada 18 meses</h2>
+  <p class="small" style="margin-bottom:4mm">El núcleo dura 18 meses de uso normal. Te avisamos por WhatsApp cuando toque cambiarlo.</p>
+  <div class="grid3 small3">
+<div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="52" width="56" height="12" rx="6" fill="#F3F1EC"/><circle cx="96" cy="58" r="22" fill="#F3F1EC"/><circle cx="96" cy="58" r="10" fill="#D8D2C7"/><path d="M70 28 a34 34 0 0 1 56 8" stroke="#82C3C4" stroke-width="2"/><path d="M126 36 l-8 -1" stroke="#82C3C4" stroke-width="2"/><path d="M126 36 l-2 8" stroke="#82C3C4" stroke-width="2"/></svg></div><div class="num serif">1</div><div><h3 class="serif">Desenrosca</h3><p>Desenrosca el purificador con la llave que viene en la caja.</p></div></div><div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="50" y="20" width="44" height="70" rx="8" fill="#F3F1EC"/><path d="M94 28 q30 -4 34 24" stroke="#82C3C4" stroke-width="2.5"/><path d="M94 28 l-36 0" stroke="#9A948A"/></svg></div><div class="num serif">2</div><div><h3 class="serif">Abre el núcleo nuevo</h3><p>Retira el film del núcleo de repuesto.</p></div></div><div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="56" y="24" width="48" height="62" rx="8" fill="#F3F1EC"/><path d="M80 44 q-8 12 0 18 q8 -6 0 -18z" fill="#82C3C4" stroke="#82C3C4"/><path d="M20 55 h24" stroke="#82C3C4" stroke-width="2"/><path d="M20 55 l6 -5" stroke="#82C3C4" stroke-width="2"/><path d="M20 55 l6 5" stroke="#82C3C4" stroke-width="2"/><path d="M140 55 h-24" stroke="#82C3C4" stroke-width="2"/><path d="M140 55 l-6 -5" stroke="#82C3C4" stroke-width="2"/><path d="M140 55 l-6 5" stroke="#82C3C4" stroke-width="2"/></svg></div><div class="num serif">3</div><div><h3 class="serif">Colócalo</h3><p>Sin importar el lado: funciona de ambos lados.</p></div></div><div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="56" y="14" width="48" height="52" rx="8" fill="#F3F1EC"/><rect x="48" y="66" width="64" height="20" rx="4" fill="#D8D2C7"/><g stroke="#9A948A"><line x1="60" y1="66" x2="60" y2="86"/><line x1="70" y1="66" x2="70" y2="86"/><line x1="80" y1="66" x2="80" y2="86"/><line x1="90" y1="66" x2="90" y2="86"/><line x1="100" y1="66" x2="100" y2="86"/></g><path d="M30 96 a50 14 0 0 0 100 0" stroke="#82C3C4" stroke-width="2"/><path d="M130 96 l-1 -9" stroke="#82C3C4" stroke-width="2"/></svg></div><div class="num serif">4</div><div><h3 class="serif">Enrosca de nuevo</h3><p>Vuelve a enroscar el purificador.</p></div></div><div class="sc"><div class="ill"><svg class="svg" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#1C1E1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="80" cy="52" r="32" fill="#F3F1EC"/><path d="M80 30 v22 l14 8" stroke="#1C1E1C"/><text x="80" y="104" font-size="10" fill="#1C1E1C" stroke="none" font-family="Inter,sans-serif" text-anchor="middle" letter-spacing="1.5">10 MIN</text><path d="M122 20 q-6 10 0 14 q6 -4 0 -14z" fill="#82C3C4" stroke="#82C3C4"/><path d="M36 28 q-5 8 0 12 q5 -4 0 -12z" fill="#82C3C4" stroke="#82C3C4"/></svg></div><div class="num serif">5</div><div><h3 class="serif">Deja correr 10 minutos</h3><p>Antes de usar, deja correr el agua 10 minutos: es la purga y activación de los filtros.</p></div></div>
+    <div class="sc" style="background:var(--piz);color:var(--hue)"><div class="label" style="color:var(--cal)">Soporte</div><p class="serif" style="font-size:12pt;margin-top:2mm;color:var(--hue)">WhatsApp<br>929 190 100</p></div>
   </div>
-  <hr>
-  <div class="label">05 · Cambio del núcleo</div>
-  <div class="steps" style="margin-top:2mm">
-    <div class="step"><div class="n serif">1</div><div><h3 class="serif">Desenrosca el purificador</h3><p>Usa la llave que viene en la caja.</p></div></div>
-    <div class="step"><div class="n serif">2</div><div><h3 class="serif">Prepara el núcleo nuevo</h3><p>Retira el film del núcleo de repuesto.</p></div></div>
-    <div class="step"><div class="n serif">3</div><div><h3 class="serif">Coloca el núcleo</h3><p>Colócalo sin importar el lado: funciona de ambos lados.</p></div></div>
-    <div class="step"><div class="n serif">4</div><div><h3 class="serif">Vuelve a enroscar</h3><p>Enrosca el purificador de nuevo.</p></div></div>
-    <div class="step"><div class="n serif">5</div><div><h3 class="serif">Deja correr el agua 10 minutos</h3><p>Antes de usar, deja correr el agua 10 minutos. Es el proceso de purga y activación de los filtros.</p></div></div>
-    </div>
   <hr>
   <div class="cols">
     <div><div class="label">Si no encaja en tu caño</div><p style="margin-top:2mm">Te devolvemos tu dinero.</p></div>
     <div><div class="label">Garantía</div><p style="margin-top:2mm">1 año. Además, 30 días de prueba.</p></div>
   </div>
-  <div class="dark">
-    <div class="label">Escríbenos por WhatsApp</div>
-    <p class="serif" style="font-size:16pt;margin-top:2mm">Soporte por WhatsApp: si algo no queda claro, te acompañamos. 929 190 100</p>
-  </div>
-  <p class="small" style="margin-top:8mm">Pensado para agua de red potable. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo.</p>
+  <p class="small" style="margin-top:6mm">Pensado para agua de red potable. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo.</p>
   <div class="footer"><span>elvo.pe</span><span>4</span></div>
 </section>
 </body></html>
