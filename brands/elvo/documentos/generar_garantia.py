@@ -5,7 +5,9 @@ from reportlab.platypus import Paragraph
 from reportlab.lib.styles import ParagraphStyle
 W,H=A4
 ALAB=HexColor('#EAE7E0');CAL=HexColor('#D8D2C7');PIE=HexColor('#9A948A');PIZ=HexColor('#2B2E2D');GRAF=HexColor('#1C1E1C');HUE=HexColor('#F3F1EC');GLA=HexColor('#82C3C4')
-out='/home/user/elvo-creating/brands/elvo/documentos/garantia-elvo-nativo.pdf'
+import sys,json
+DATA=json.load(open(sys.argv[1])) if len(sys.argv)>1 else {}
+out=DATA.get('salida','/home/user/elvo-creating/brands/elvo/documentos/garantia-elvo-nativo.pdf')
 c=canvas.Canvas(out,pagesize=A4); c.setTitle('Certificado de garantía · elvo· Nativo'); c.setAuthor('Inversiones Gad S.A.C.')
 c.setFillColor(ALAB); c.rect(0,0,W,H,fill=1,stroke=0)
 M=48
@@ -26,13 +28,16 @@ def para(y,txt,w=W-2*M,style=body):
     p=Paragraph(txt,style); _,h=p.wrap(w,500); p.drawOn(c,M,y-h); return y-h
 y=H-150
 label(y,'Datos del pedido (a completar al entregar)'); y-=24
-fields=[('N.º de pedido',''),('Nombre del cliente',''),('Producto / combo',''),('Fecha de entrega',''),('Boleta o factura N.º',''),('Garantía válida hasta','')]
+fields=DATA.get('campos',[('N.º de pedido',''),('Nombre del cliente',''),('Producto / combo',''),('Fecha de entrega',''),('Boleta o factura N.º',''),('Garantía válida hasta','')])
 colw=(W-2*M)/2
+rows=(len(fields)+1)//2
 for i,(k,v) in enumerate(fields):
     cx=M+(i%2)*colw; cy=y-(i//2)*30
     c.setFillColor(PIE); c.setFont('Helvetica',7.8); c.drawString(cx,cy,k.upper())
     c.setStrokeColor(PIE); c.setLineWidth(0.5); c.line(cx,cy-14,cx+colw-18,cy-14)
-y-=3*30+14
+    if v:
+        c.setFillColor(GRAF); c.setFont('Helvetica',9.2); c.drawString(cx,cy-11,v)
+y-=rows*30+14
 sections=[
 ('Qué cubre','Garantía de <b>1 año</b>, desde la fecha de entrega, contra fallas de fábrica del equipo: carcasa, derivador, conexiones y piezas. Si la falla está cubierta, reparamos o reemplazamos la pieza o el equipo sin costo para ti.'),
 ('Condiciones','El equipo se usa con núcleos originales elvo· y se cambian cuando corresponde: cada núcleo rinde 20.000 litros, unos 18 meses. Te avisamos por WhatsApp cuando toca el cambio. El Nativo está pensado para agua de red potable.'),
