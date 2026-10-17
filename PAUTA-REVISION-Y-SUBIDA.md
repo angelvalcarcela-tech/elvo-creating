@@ -96,3 +96,15 @@ Reparto sugerido: kit-cloro US$20, kit-lima US$25, plomo US$10, kit-provincia US
 - Purchase del formulario propio: los pedidos como el #1263 no llegan a Meta como compra. Revisar envío server-side (Conversions API) o disparar el evento en la página de gracias.
 - Auditoría por anuncio con el export de YaVendio ("Código de anuncio").
 - Tarea semanal `trig_01AFZWRXgUT9ZjtM75LdyVn2` (lunes 8:48).
+
+## 10. Actualización (17-oct, tarde): anuncios nuevos publicados
+Imágenes subidas por Angel a la biblioteca de Meta (hashes) y anuncios creados con página 383158558224028, botón WhatsApp, `link_url` `https://api.whatsapp.com/send`:
+| Anuncio | ID anuncio | Creativo | Hash imagen | Conjunto | Estado al publicar |
+|---|---|---|---|---|---|
+| K5 Menos cloro en tu vaso | 120254902712910401 | 1126028056560921 | ad2ab44eb1173ca19d51444fa9d24b17 | K Lima | IN_PROCESS |
+| K6 Con repuesto incluido | 120254902713080401 | 1571068824791218 | b84ed4fd4de6ad34f1d3584186245cc6 | K Lima | IN_PROCESS |
+| K7 Seis etapas | 120254902713210401 | 1671826737909235 | b22cfe9ab287689cbada7775d3ad2521 | K Lima | IN_PROCESS |
+| P3 Separa con S/50 · Shalom | 120254902713260401 | 1453470359995612 | 9680e47d02586da43a44e83728618f06 | P Provincia | IN_PROCESS |
+Angel confirmó que cada imagen corresponde a su texto. Verificar que pasen de IN_PROCESS a ACTIVE.
+Observación: en el conjunto P ya existía el anuncio `PV · Separa con S/50 por Yape [PV]` (120254902675840401, ACTIVE), con el mismo mensaje que P3. Revisar si es duplicado y pausar el que rinda menos tras unos días.
+Estado de conjuntos verificado: K+ 40, K 60, P 20, N-Miedo 15, N-Carruseles 10, RTG-Web 6 (US$ por día), todos ACTIVE.
