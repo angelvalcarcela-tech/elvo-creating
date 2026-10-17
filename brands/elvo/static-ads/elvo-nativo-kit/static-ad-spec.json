@@ -1,0 +1,37 @@
+{
+ "output_name": "elvo-nativo-kit",
+ "brand": "elvo",
+ "product_name": "elvo· Nativo",
+ "audience": "lima-general / provincia",
+ "mode": "text",
+ "quality": "medium",
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/nativo-front.png"
+ ],
+ "aspect_ratio": "4:5",
+ "additional_aspect_ratios": [
+  "9:16"
+ ],
+ "variations": [
+  {
+   "slug": "kit-cloro",
+   "angle": "menos cloro, kit incluido",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Product: the exact product from the attached photo, reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Headline: large light-weight high-contrast serif in charcoal #1C1E1C, left-aligned. Body text: clean neutral grotesque sans-serif in charcoal. Thin 1px glacial-aqua #82C3C4 rule as divider. Small pill badge in deep slate #2B2E2D with bone #F3F1EC text. Generous negative space, editorial apothecary aesthetic, one subject, product on pale stone surface with soft cool side-light. Headline: \"Menos cloro en tu vaso.\" Below, three rows: \"Reduce cloro, olores y sabores\" / \"Retiene plomo y metales pesados*\" / \"Lo instalas en 5 minutos\". Pill badge: \"S/ 349 · 2 núcleos incluidos\". Bottom tiny stone-grey #9A948A text: \"*Según la ficha técnica del núcleo PureCore.\" Product at lower right, slight angle. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified."
+  },
+  {
+   "slug": "kit-lima",
+   "angle": "kit incluido, paga al recibir en Lima",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Product: the exact product from the attached photo, reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Headline: large light-weight high-contrast serif in charcoal #1C1E1C, left-aligned. Body text: clean neutral grotesque sans-serif in charcoal. Thin 1px glacial-aqua #82C3C4 rule as divider. Small pill badge in deep slate #2B2E2D with bone #F3F1EC text. Generous negative space, editorial apothecary aesthetic, one subject, product on pale stone surface with soft cool side-light. Headline: \"Tu purificador, con repuesto.\" Below: \"S/ 349 con 2 núcleos incluidos\". Rows with thin rule: \"Pagas al recibir en Lima\" / \"Envío gratis a todo el Perú\" / \"Garantía de 1 año\". Pill badge: \"Escríbenos por WhatsApp\". Product centered, large. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified."
+  },
+  {
+   "slug": "kit-provincia",
+   "angle": "provincia, seña S/50, Shalom",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Product: the exact product from the attached photo, reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Headline: large light-weight high-contrast serif in charcoal #1C1E1C, left-aligned. Body text: clean neutral grotesque sans-serif in charcoal. Thin 1px glacial-aqua #82C3C4 rule as divider. Small pill badge in deep slate #2B2E2D with bone #F3F1EC text. Generous negative space, editorial apothecary aesthetic, one subject, product on pale stone surface with soft cool side-light. Headline: \"Separa con S/ 50 por Yape.\" Below: \"S/ 349 con 2 núcleos incluidos\". Rows: \"Lo enviamos por Shalom a tu ciudad\" / \"El resto lo pagas al recoger\" / \"Si no encaja en tu caño, te devolvemos tu dinero\". Pill badge: \"Envío a todo el Perú\". Product at lower right. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified."
+  },
+  {
+   "slug": "plomo",
+   "angle": "plomo y metales, 6 etapas",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Product: the exact product from the attached photo, reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Headline: large light-weight high-contrast serif in charcoal #1C1E1C, left-aligned. Body text: clean neutral grotesque sans-serif in charcoal. Thin 1px glacial-aqua #82C3C4 rule as divider. Small pill badge in deep slate #2B2E2D with bone #F3F1EC text. Generous negative space, editorial apothecary aesthetic, one subject, product on pale stone surface with soft cool side-light. Headline: \"Seis etapas.\" Rows with thin rule: \"Retiene: plomo y metales pesados*\" / \"Reduce: cloro, olores y sabores\" / \"Conserva: los minerales del agua\". Pill badge: \"S/ 349 · 2 núcleos incluidos\". Bottom tiny text: \"*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.\" Product at lower right. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified."
+  }
+ ]
+}
