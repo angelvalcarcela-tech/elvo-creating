@@ -57,7 +57,7 @@ c.setFont('Helvetica',9); c.setFillColor(CAL); c.drawString(M+16,y-34,'elvo.pe  
 c.setStrokeColor(GLA); c.setLineWidth(0.7); c.line(M,y-bh,W-M,y-bh)
 # pie
 c.setFillColor(PIE); c.setFont('Helvetica',7.4)
-c.drawString(M,52,'INVERSIONES GAD S.A.C.  ·  RUC 20522531287  ·  Marca elvo·')
+c.drawString(M,52,'INVERSIONES GAD S.A.C.  ·  RUC 20522531287  ·  Av. Alejandro Velasco Astete 179, Dpto. 102, San Borja, Lima  ·  Marca elvo·')
 leg=ParagraphStyle('l',fontName='Helvetica',fontSize=7.4,leading=9.6,textColor=PIE)
 p=Paragraph('Esta garantía comercial no limita los derechos que te corresponden como consumidor según la legislación peruana vigente.',leg); p.wrap(W-2*M,40); p.drawOn(c,M,30)
 c.showPage(); c.save(); print(out)
