@@ -108,3 +108,10 @@ Imágenes subidas por Angel a la biblioteca de Meta (hashes) y anuncios creados 
 Angel confirmó que cada imagen corresponde a su texto. Verificar que pasen de IN_PROCESS a ACTIVE.
 Observación: en el conjunto P ya existía el anuncio `PV · Separa con S/50 por Yape [PV]` (120254902675840401, ACTIVE), con el mismo mensaje que P3. Revisar si es duplicado y pausar el que rinda menos tras unos días.
 Estado de conjuntos verificado: K+ 40, K 60, P 20, N-Miedo 15, N-Carruseles 10, RTG-Web 6 (US$ por día), todos ACTIVE.
+
+## 11. Estado real verificado (17-oct, noche) y cambios
+- Otro chat creó conjuntos por anuncio en la misma campaña CTWA-Kit-Oct16: KC Menos cloro (120254902644710401, US$20), KL Con repuesto incluido (120254902644980401, US$25), KP Seis etapas (120254902645500401, US$10), PV Separa con S/50 Shalom (120254902645810401, US$10). Son los mismos 4 anuncios que K5, K6, K7 y P3.
+- Para no duplicar subasta, K5, K6, K7 y P3 se pausaron. Los activos son KC, KL, KP y PV.
+- K3 "Cuotas S/58 + kit" (120254899716560401) se pausó: el ángulo de cuotas fue el de peor costo por venta (W1: US$122).
+- También activos y no incluidos en el plan original: "ctwa sofia - Copia" (campaña 120253925686070401, US$25 por día: ctwa 5 en azul y ctwa 5 Copia 2) y WINNERS (120252608808600401, US$8 por día). Se mantienen por su historial.
+- Presupuesto diario activo: WhatsApp US$210 (K+ 40, K 60, P 20, KC 20, KL 25, KP 10, PV 10, ctwa sofia Copia 25). Web US$39 (N-Miedo 15, N-Carruseles 10, RTG-Web 6, WINNERS 8). Total US$249 por día, US$1,743 por semana, ~US$4,731 hasta el 5-nov.
