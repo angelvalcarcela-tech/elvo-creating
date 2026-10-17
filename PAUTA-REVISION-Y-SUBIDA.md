@@ -122,3 +122,22 @@ Estado de conjuntos verificado: K+ 40, K 60, P 20, N-Miedo 15, N-Carruseles 10, 
 - Cambios aplicados y verificados byte a byte: WhatsApp 917062687 a 929190100 (botón flotante, ficha de producto, página de productos, pie de página y su valor visible); cuenta regresiva de la ficha del Nativo al 24-oct 23:59 con "La oferta con núcleo de repuesto incluido termina en"; "Garantía de por vida" a "Garantía de 1 año" en checkout-nativo y checkout-vivo; "el único filtro en Perú que elimina arsénico, plomo y mercurio" y las otras menciones de mercurio/arsénico de la ficha del Nativo cambiadas por "Retiene plomo y metales pesados"; reseñas 4.9 / 87 conservadas.
 - No tocado (pendiente): `product.vivo.json` y `product.elvo.json` (6 "garantía de por vida" cada uno), lámpara UV en `elvo-pdp` y `elvo-pdp-cierre`, valor por defecto 917 del esquema de `elvo-pdp.liquid` (los JSON de Vivo lo sobreescriben con 929), FAQ "funciona con pozo", "Única opción con 6 cuotas", `chk_url` sigue en /pages/checkout-nativo.
 - Medición Purchase: el formulario ya dispara `fbq('track','Purchase')` en el navegador con el pixel 899375412789001 (7 de 8 pedidos del formulario desde el 21-sep coinciden con eventos solo de navegador; el #1263 no). Falta enviar el teléfono (advanced matching) y las ventas de WhatsApp a Meta.
+
+## 13. Anuncios recreados con código en el mensaje de WhatsApp (17-oct, noche)
+Los 12 anuncios con código se recrearon con `page_welcome_message` (mensaje prellenado que llega a YaVendio con el código) y las mejoras automáticas de Meta en OPT_OUT. Los viejos se pausaron. Los nuevos quedaron en proceso de revisión de Meta.
+| Código | Mensaje prellenado | Anuncio nuevo | Conjunto | Anuncio viejo (pausado) |
+|---|---|---|---|---|
+| K1 | Hola, quiero el elvo· Nativo con repuesto incluido [K1] | 120254903066830401 | K 120254899663550401 | 120254899688990401 |
+| K2 | Hola, quiero dejar los bidones con el elvo· Nativo [K2] | 120254903067890401 | K | 120254899716280401 |
+| K4 | Hola, quiero el elvo· Nativo con el kit de repuesto [K4] | 120254903068380401 | K | 120254899716910401 |
+| KL | Hola, quiero el elvo· Nativo con repuesto incluido [KL] | 120254903058660401 | KL 120254902644980401 | 120254902669800401 |
+| KC | Hola, quiero menos cloro en mi agua con el elvo· Nativo [KC] | 120254903059470401 | KC 120254902644710401 | 120254902666430401 |
+| KP | Hola, quiero saber las 6 etapas del elvo· Nativo [KP] | 120254903059700401 | KP 120254902645500401 | 120254902674430401 |
+| PV | Hola, quiero separar mi elvo· Nativo con S/50 [PV] | 120254903059900401 | PV 120254902645810401 | 120254902675840401 |
+| P1 | Hola, quiero el elvo· Nativo con repuesto incluido, envío por Shalom [P1] | 120254903063080401 | P 120254899663710401 | 120254899717280401 |
+| P2 | Hola, quiero dejar los bidones, envío por Shalom [P2] | 120254903065130401 | P | 120254899718250401 |
+| K+A | Hola, quiero el elvo· Nativo a S/349 [K+A] | 120254903061170401 | K+ 120254901204110401 | 120254901234710401 |
+| K+B | Hola, quiero el elvo· Nativo a S/349 [K+B] | 120254903062010401 | K+ | 120254901234810401 |
+| K+C | Hola, quiero el elvo· Nativo a S/349 [K+C] | 120254903062530401 | K+ | 120254901235240401 |
+Borrador de prueba sin usar: 120254903057480401 (renombrado "NO USAR"). Los anuncios K5, K6, K7 y P3 siguen pausados.
+Verificar con una prueba real (tocar el anuncio desde un celular) que el mensaje llega con el código.
