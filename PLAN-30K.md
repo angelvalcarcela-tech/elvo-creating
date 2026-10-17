@@ -42,3 +42,14 @@ Ritmo actual en Shopify: 27 pedidos en 17 días (~30 en los próximos 19). YaVen
 - El contexto dice que ningún anuncio activo va a la web, pero Meta muestra gasto y compras pixel en campañas WEB-* y "nuevos" en los últimos 30 días. Verificar cuáles siguen activas.
 - Textos K+ dicen "Pagas al recibir en Lima. Envío gratis a todo el Perú"; los pedidos reales a provincia se cobran con seña S/50 y saldo en Shalom (texto de P1/P2). Alinear el texto.
 - `HANDOVER.md` dice ignorar la doctrina; `CLAUDE.md` dice que manda. Falta decisión.
+
+## Actualización 17-oct (costos de Angel y decisiones ejecutadas)
+Costo del kit: purificador S/35 + repuesto extra S/10 = S/45 (sin envío ni comisiones). Contribución antes de ads: S/349 - 45 = S/304.
+Ventas necesarias en 19 días: S/30,000 / (304 - CPA). Con CPA S/25: 108. Con S/40: 114. Con S/80: 134. Es decir, 6 a 7 ventas por día.
+
+Presupuesto activado en Meta (cuenta 893663859368314), total US$120 por día (~S/8,000 hasta el 5-nov):
+- K+ (A, B, C) publicado, US$40 por día. Estado al cierre: IN_PROCESS.
+- K Lima Oferta kit: US$15 a US$60 por día.
+- P Provincia Shalom: US$5 a US$20 por día.
+- V-WhatsApp-Lima (Vivo, cuotas, 0.56 US$ por chat) pausado.
+Revisar el 19-oct: si K+/K/P no llegan a 5 ventas por día, subir; si el CPA pasa de US$25, recortar.
