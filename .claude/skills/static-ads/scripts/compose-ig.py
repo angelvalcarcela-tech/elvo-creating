@@ -17,6 +17,8 @@ W, H = 1080, 1350
 M = int(W * 0.08)
 INK = {"light": ("#2B2E2D", "#6B665D"), "dark": ("#EAE7E0", "#9A948A")}  # (titular, etiqueta)
 
+SUB = {"p05": "Si no encaja en tu caño, te devolvemos tu dinero."}
+LOGO = {"p02"}  # piezas con logo elvo· abajo a la izquierda
 SIZE = {"p18": 52}  # tamaño del titular si el default roza el producto
 
 # id: (titular, producto de la etiqueta o None, tono, posición)
@@ -29,6 +31,15 @@ TEXTS = {
     "p22": ("El té también\nempieza en el agua.", None, "light", "top"),
     "p20": ("Cinco etapas.", None, "dark", "top"),
     "p23": ("Fría o caliente, un solo gesto.", "CERO", "light", "top"),
+    "p02": ("", None, "dark", "top"),
+    "p04": ("Lo simple, bien hecho.", None, "light", "top"),
+    "p05": ("30 días de prueba.", None, "light", "top"),
+    "p07": ("18 meses.", "!NÚCLEO DE REPUESTO", "dark", "top"),
+    "p08": ("Un vaso antes de dormir.", None, "light", "top"),
+    "p09": ("Directo de tu caño.", None, "light", "top"),
+    "p10": ("¿Qué necesitas?", None, "light", "top"),
+    "p11": ("El agua primero.", None, "dark", "top"),
+    "p14": ("Agua con magnesio,\ndirecto de tu caño.", "VIVO", "light", "top"),
     "p24": ("Fría. Caliente.", None, "dark", "top"),
 }
 
@@ -75,15 +86,32 @@ def compose(i):
     hf, lf = font("Fraunces-Light.ttf", fs), font("HankenGrotesk-Medium.ttf", 19)
     lines = [w for part in head.split("\n") for w in wrap(d, part, hf, W - 2 * M - 120)]
     lh = int(fs * 1.14)
+    lines = [ln for ln in lines if ln]
     block = (50 if prod else 0) + len(lines) * lh
     y = int(H * 0.115) if pos == "top" else int(H * 0.885) - block
-    if prod:
+    if prod and prod.startswith("!"):
+        tracked(d, (M, y), prod[1:], lf, soft, 4)
+        y += 50
+    elif prod:
         x = tracked(d, (M, y), "elvo·", font("HankenGrotesk-Regular.ttf", 19), soft, 1)
         tracked(d, (x + 12, y), prod, lf, soft, 4)
         y += 50
     for ln in lines:
         d.text((M, y), ln, font=hf, fill=ink)
         y += lh
+    if i in SUB:
+        sf = font("HankenGrotesk-Regular.ttf", 27)
+        y += 14
+        for ln in wrap(d, SUB[i], sf, W - 2 * M - 160):
+            d.text((M, y), ln, font=sf, fill=soft if tone == "dark" else "#4A4740")
+            y += 36
+    if i in LOGO:
+        lg = font("Fraunces-Light.ttf", 44)
+        ly = int(H * 0.885) - 44
+        d.text((M, ly), "elvo", font=lg, fill=ink)
+        x0 = M + d.textlength("elvo", font=lg) + 5
+        d.ellipse([x0, ly + 27, x0 + 10, ly + 37], fill="#82C3C4")
+        d.polygon([(x0 + 5, ly + 12), (x0 + 1, ly + 28), (x0 + 9, ly + 28)], fill="#82C3C4")
     out = src.parent / "final"
     out.mkdir(exist_ok=True)
     dest = out / f"{src.stem}_1080x1350.png"
