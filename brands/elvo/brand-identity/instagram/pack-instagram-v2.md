@@ -234,3 +234,88 @@ Otras: garantía (`p11-01`), núcleo (`p09-01`), atención por WhatsApp (`p21-01
 - Confirmar las etapas de Nativo con la ficha del fabricante.
 - Tener fotos reales de Cero y bidones, y de la instalación.
 - No publicar piezas de Cero y bidones hasta que haya stock.
+
+
+---
+
+## H. POSTS DE MARCA (6 nuevos) y grilla de 30
+
+Se publican **primero**, para que la grilla fije el mundo elvo antes de vender desde él. Las piezas 1 a 24 de arriba siguen igual.
+
+### B1 · Marca peruana (PIEDRA)
+- **Prompt:** 4:5 vertical aspect ratio. [PIEDRA]. A pale stone windowsill with a clear glass of water and a folded linen cloth, soft diffuse coastal light through the window. Text: "elvo· es una marca peruana." as headline, "Lima · Perú" as a small label.
+- **Descripción:** elvo· es una marca peruana de purificación de agua para el hogar. Pensamos el agua como un ingrediente y cada producto como un objeto de casa, hecho para durar. Escríbenos y te acompañamos. Link en bio.
+
+### B2 · Territorios (PIEDRA, carrusel de 4)
+- **Portada:** [PIEDRA]. A single clear glass at the center of a pale stone counter, lots of negative space. Text: "Un purificador para cada lugar donde el agua te toca." **Interior:** `tipograficas/p26t-02` a `p26t-04` (el caño: Vivo y Nativo · la mesada: Cero · la reserva: Alivio).
+- **Descripción:** El caño, la mesada, la reserva: tres lugares de la casa donde el agua te toca, y un purificador para cada uno. Cuéntanos qué buscas y te acompañamos a elegir. Link en bio.
+
+### B3 · Mundo mineral (FORMULACIÓN)
+- **Prompt:** 4:5 vertical aspect ratio. [FORMULACIÓN]. Overhead flat-lay: pale mineral stones of different sizes and one clear glass of water on slate. Text: "Materia mineral, luz serena." as headline.
+- **Descripción:** Piedra, vidrio, agua. El mundo en el que vive elvo·.
+
+### B4 · Valores de marca (FORMULACIÓN, carrusel de 5)
+- **Portada:** [FORMULACIÓN]. One pale stone alone on slate, a thin glacier highlight on its edge. Text: "Lo que nos guía." **Interior:** `tipograficas/p28-02` a `p28-05` (longevidad · formulación consciente · consulta, no venta · vida sin prisa).
+- **Descripción:** Cuatro ideas que ordenan lo que hacemos. Escríbenos y te acompañamos. Link en bio.
+
+### B5 · Dónde encontrarnos (tarjeta de texto, alabastro)
+- **Imagen:** `tipograficas/p31-01.png` (feed) y `historias/p23-01.png` (Historias, 9:16). Lista: elvo.pe · WhatsApp · Falabella · Sodimac · Plaza Vea · Promart · Oechsle.
+- **Descripción:** Encuentra elvo· en elvo.pe, por WhatsApp y en Falabella, Sodimac, Plaza Vea, Promart y Oechsle. Elige cómo prefieres comprar.
+- **Reglas:** publicar solo los canales con ficha activa; usar solo los nombres, sin logos, hasta tener el kit de marca de cada tienda (Falabella y Sodimac pertenecen a un grupo; Plaza Vea, Oechsle y Promart, a otro); no mencionar precios.
+
+### B6 · Consulta, no venta (PIEDRA, gesto)
+- **Prompt:** 4:5 vertical aspect ratio. [PIEDRA]. Two hands holding a clear glass beside a closed notebook and a pen on a pale stone table, soft light, no phone, no faces. Text: "Consulta, no venta." as headline.
+- **Descripción:** Acompañar la decisión antes que empujarla. Escríbenos y te ayudamos a elegir. Link en bio.
+
+### Orden de publicación v5 (30 publicaciones; la diagonal de pizarra queda en la grilla)
+
+| Orden | Publicación | Registro |
+|---|---|---|
+| 1 | B1 Marca peruana | Piedra |
+| 2 | B2 Territorios (carrusel) | Piedra |
+| 3 | B3 Mundo mineral | Pizarra |
+| 4 | B4 Valores (carrusel) | Pizarra |
+| 5 | B5 Dónde encontrarnos | Alabastro (texto) |
+| 6 | B6 Consulta, no venta | Piedra |
+| 7 | 1 Ritual · piel | Arena |
+| 8 | 2 Flat-lay · la gota | Pizarra |
+| 9 | 3 Cómo instalar (real) | Real |
+| 10 | 4 Lo simple, bien hecho | Piedra |
+| 11 | 5 30 días de prueba | Piedra |
+| 12 | 6 Frase de casa | Pizarra (texto) |
+| 13 | 7 Flat-lay · el repuesto | Pizarra |
+| 14 | 8 La noche | Piedra |
+| 15 | 9 Del caño al vaso | Piedra |
+| 16 | 10 ¿Qué necesitas? | Piedra (carrusel) |
+| 17 | 11 Flat-lay · el vaso | Pizarra |
+| 18 | 12 La mesa servida | Piedra |
+| 19 | 13 Baño · piel | Arena |
+| 20 | 14 Vivo | Piedra (carrusel) |
+| 21 | 15 Flat-lay · carbón y KDF | Pizarra |
+| 22 | 16 Flat-lay · magnesio | Pizarra |
+| 23 | 17 La primera decisión | Piedra |
+| 24 | 18 Nativo | Piedra (carrusel) |
+| 25 | 19 Alivio | Piedra (carrusel) |
+| 26 | 20 Flat-lay · cinco etapas | Pizarra |
+| 27 | 21 Agua guardada | Piedra |
+| 28 | 22 Té y agua fría | Piedra |
+| 29 | 23 Cero | Piedra (carrusel) |
+| 30 | 24 Flat-lay · fría y caliente | Pizarra |
+
+Se pueden intercambiar publicaciones solo dentro del mismo registro, para no romper la diagonal.
+
+Máximo dos tarjetas de texto en el feed: la frase de casa (12) y dónde encontrarnos (5).
+
+---
+
+## I. REVISIÓN DE COLOR
+
+El sistema del manual funciona: piedra, pizarra y un destello de agua. Cambios mínimos:
+
+| Cambio | Por qué |
+|---|---|
+| **Agregar Piedra oscura (#6B665D)** para texto pequeño sobre claro | Piedra (#9A948A) sobre alabastro da 2.4 de contraste; no sirve para texto. Piedra oscura da 4.6 |
+| **Ampliar el uso de Arena (#D7C4A6)** a calidez: agua caliente (Cero) y hogar | Es el contrapunto natural del glaciar: frío y caliente. No hay que sumar color |
+| **Blanco retail (#FFFFFF)** solo en fichas de marketplace | Las tiendas piden fondo blanco; no se usa en Instagram |
+
+Se mantiene: glaciar solo como destello (nunca texto sobre claro, 1.6 de contraste), regla 70/20/10, sin degradados ni colores saturados. Las láminas tipográficas claras ya usan Piedra oscura.
