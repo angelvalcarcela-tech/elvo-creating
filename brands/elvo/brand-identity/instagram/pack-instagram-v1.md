@@ -231,19 +231,56 @@ Formato por defecto: 4:5 vertical. Orden de publicación al final.
 - Las piezas 25 a 30 están en la sección F. Cada una lleva la marca **[CONFIRMAR]** donde el dato viene del proveedor y debe verificarse con el equipo real o la caja antes de publicar.
 - **Ritual (ducha):** sin stock hoy.
 
-## D. ORDEN DE PUBLICACIÓN
+## D. ORDEN DE PUBLICACIÓN (v2: feed con foto, texto adentro)
+
+**Regla:** en el feed, la primera lámina de cada publicación es una foto. Las láminas de solo texto van dentro de los carruseles o en Historias. Máximo una tarjeta de texto en el feed (el manifiesto). **Descripciones: 2 o 3 líneas y el CTA.**
+
+### Feed (20 publicaciones)
+
+| # | Publicación | Portada (foto) | Láminas interiores |
+|---|---|---|---|
+| F1 | Nativo | Pieza 1 | `tipograficas/p03-02` a `p03-05` |
+| F2 | Vivo | Pieza 2 | `tipograficas/p04-02` a `p04-04` |
+| F3 | Cómo elegir | Pieza 22 (ambos) | `tipograficas/p07-02` a `p07-04` |
+| F4 | Cómo instalar | Foto real | Fotos reales (pieza 6) |
+| F5 | Núcleo de repuesto | Pieza 5 | n/a |
+| F6 | 30 días de prueba | Pieza 10 | n/a |
+| F7 | Pago contra entrega | Pieza 12 | n/a |
+| F8 | Sin electricidad, sin obras | Pieza 13 | n/a |
+| F9 | La primera decisión del día | Pieza 14 | n/a |
+| F10 | Agua para el café | Pieza 15 | n/a |
+| F11 | La mesa | Pieza 16 | n/a |
+| F12 | La noche | Pieza 17 | n/a |
+| F13 | Lo simple, bien hecho | Pieza 18 | n/a |
+| F14 | Sobre elvo | Pieza 20 | n/a |
+| F15 | Manifiesto (única tarjeta de texto) | Pieza 19 | n/a |
+| F16 | Cero | Pieza 25 | `tipograficas/p26-02` a `p26-05` |
+| F17 | Cero en la casa | Pieza 27 | n/a |
+| F18 | Bidones | Pieza 28 | `tipograficas/p29-02` y `p29-03` |
+| F19 | Bidón en la mesa | Pieza 30 | n/a |
+| F20 | Reseñas reales (solo con permiso) | Pieza 24 | n/a |
+
+Las portadas de texto `p03-01`, `p04-01`, `p07-01`, `p26-01` y `p29-01` quedan de reserva: ya no se usan en el feed.
+
+### Cadencia
 
 | Semana | Publicaciones |
 |---|---|
-| 1 (ponerse al día, 1 al día) | 1, 14, 10, 2, 8, 6, 19 |
-| 2 | 3, 12, 15 |
-| 3 | 7, 5, 17 |
-| 4 | 11, 4, 18 |
-| 5 | 13, 9, 22 |
-| 6 | 20, 21, 16 |
-| 7 | 23, 24 (cuando haya testimonio real) |
+| 1 (ponerse al día, 1 al día) | F1, F9, F6, F2, F15, F4, F8 |
+| 2 | F3, F7, F10 |
+| 3 | F5, F12, F13 |
+| 4 | F11, F14 |
+| 5 en adelante | F16, F17, F18, F19 (cuando haya stock) · F20 (con testimonio real) |
 
-Cada fila de la cuadrícula de 3 debería mezclar producto, mundo elvo y educativo.
+### Historias y Destacadas (formato 9:16, en `historias/`)
+
+| Destacada | Láminas |
+|---|---|
+| Preguntas | `p08-01` a `p08-06` |
+| Garantía | `p11-01` |
+| Núcleo | `p09-01` |
+| Atención | `p21-01` |
+| Dónde comprar | `p23-01` |
 
 ## E. HISTORIAS (ideas, sin precio)
 
