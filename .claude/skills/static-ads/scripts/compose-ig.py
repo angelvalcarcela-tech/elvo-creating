@@ -17,6 +17,8 @@ W, H = 1080, 1350
 M = int(W * 0.08)
 INK = {"light": ("#2B2E2D", "#6B665D"), "dark": ("#EAE7E0", "#9A948A")}  # (titular, etiqueta)
 
+SIZE = {"p18": 52}  # tamaño del titular si el default roza el producto
+
 # id: (titular, producto de la etiqueta o None, tono, posición)
 TEXTS = {
     "p18": ("El agua es el primer ingrediente.", "NATIVO", "light", "top"),
@@ -24,7 +26,7 @@ TEXTS = {
     "p01": ("Lo que el agua toca.", None, "light", "top"),
     "p19": ("Agua de reserva en casa.", "ALIVIO", "light", "top"),
     "p21": ("Un alivio cuando no hay agua.", "ALIVIO", "light", "top"),
-    "p22": ("El té también empieza en el agua.", None, "light", "top"),
+    "p22": ("El té también\nempieza en el agua.", None, "light", "top"),
     "p20": ("Cinco etapas.", None, "dark", "top"),
     "p23": ("Fría o caliente, un solo gesto.", "CERO", "light", "top"),
     "p24": ("Fría. Caliente.", None, "dark", "top"),
@@ -69,9 +71,10 @@ def compose(i):
     im = Image.open(src).convert("RGB").resize((W, H), Image.LANCZOS)
     d = ImageDraw.Draw(im)
     ink, soft = INK[tone]
-    hf, lf = font("Fraunces-Light.ttf", 64), font("HankenGrotesk-Medium.ttf", 19)
-    lines = wrap(d, head, hf, W - 2 * M - 120)
-    lh = int(64 * 1.14)
+    fs = SIZE.get(i, 64)
+    hf, lf = font("Fraunces-Light.ttf", fs), font("HankenGrotesk-Medium.ttf", 19)
+    lines = [w for part in head.split("\n") for w in wrap(d, part, hf, W - 2 * M - 120)]
+    lh = int(fs * 1.14)
     block = (50 if prod else 0) + len(lines) * lh
     y = int(H * 0.115) if pos == "top" else int(H * 0.885) - block
     if prod:
