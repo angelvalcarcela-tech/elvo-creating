@@ -21,16 +21,18 @@ elvo no vende aparatos: vende la primera decisión del día. Habla de lo que el 
 | **El caño** | elvo· Nativo, elvo· Vivo | Abrir el caño y llenar un vaso | Piedra (macro) y formulación (pizarra) |
 | **La ducha** | elvo· Ritual (sin stock) | Enjuagarse | Arena (solo ambiente hoy) |
 | **La mesada** | elvo· Cero | Servir agua fría o caliente, sin cañerías | Piedra + formulación |
-| **La mesa** | Bidón purificador (nombre propuesto: **elvo· Ánfora**) | Servir agua a la mesa, sin electricidad | Piedra (gesto de servir) |
+| **La despensa** | Bidón purificador (nombre por definir) | Llenar con una jarra, guardar y servir; sin electricidad ni conexión al caño | Piedra (gesto cotidiano) |
 
-### Nombre de la línea de bidones (propuesta)
-La nomenclatura del manual pide nombres breves, en español, con carácter. Propongo **Ánfora**: evoca el recipiente de agua y encaja con el mundo mineral y de apothecary. Alternativas: **Cántaro** (más popular) o **Vertiente** (el agua que baja). Mientras no decidas, usa "bidón purificador elvo·" en las descripciones. Ánfora 16 y Ánfora 22 serían las dos capacidades.
+### El bidón: el territorio de la reserva
+Quien elige el bidón en lugar del caño quiere **tener agua guardada**: en muchas zonas de Lima el agua es escasa y no hay cisterna ni tubería. La competencia vende minerales y número de etapas; nadie habla de la reserva. El bidón de elvo· ocupa ese espacio: agua purificada en casa, sin electricidad y sin conexión al caño, que se llena con una jarra.
+
+**Nombre:** por definir. Candidatos que se entienden en Perú: **Reserva**, **Despensa**, **Siempre**. Mientras tanto, todo el copy de este paquete usa "bidón purificador elvo·" y no depende del nombre.
 
 ### Líneas de voz por producto
 - **Nativo:** "Retiene plomo y metales pesados*, conserva los minerales naturales." Observación, no alarma.
 - **Vivo:** "Aporta magnesio. Agua más rica, directo de tu caño."
 - **Cero:** "Fría o caliente, un solo gesto." · "El té también empieza en el agua."
-- **Ánfora:** "El agua, servida a la mesa." · "Dos capacidades: 16 y 22 litros."
+- **Bidón:** "Tu agua, guardada." · "Se llena con una jarra." · "Agua de reserva en casa."
 - **Casa:** "El agua es el primer ingrediente. Todo cuidado empieza en ella." · "El agua que entra a tu cuerpo es una decisión." · "Agua, en su forma más pura." · "La primera decisión del día." · "Vida sin prisa."
 
 ### Voz (del manual)
@@ -41,7 +43,7 @@ Precisa, literaria, sensorial. Sin exclamaciones, sin emoji. Qué retira y qué 
 - **Vivo (ficha verificada):** aporta magnesio; tendencia alcalina; reduce cloro, olores, sabores, sedimentos y turbidez; carbón activado sólido con plata coloidal, KDF-F y fibras microporosas; acero inoxidable; llenas un vaso en 5 segundos.
 - **Ambos:** sin electricidad, sin obras, sin gasfitero; instalación en 5 minutos; garantía de 1 año; 30 días de prueba; si no encaja en tu caño, devolvemos tu dinero; te avisamos por WhatsApp cuando toca cambiar el núcleo.
 - **Cero [CONFIRMAR con ficha y equipo]:** agua fría y caliente; ósmosis inversa (según tu manual); filtración de 5 etapas; esterilización UV; autolimpieza; sin instalación de cañerías.
-- **Ánfora [CONFIRMAR con la caja o ficha]:** capacidades de 16 y 22 litros. Cualquier beneficio adicional solo si figura en la caja.
+- **Bidón (confirmado):** sin electricidad; sin conexión al caño; se llena con una jarra; purifica por gravedad (según tu manual); la capacidad del bidón es de 16 y 22 litros (capacidad total del recipiente, **no** agua ya purificada). No afirmar cuántos días rinde ni beneficios minerales o alcalinos mientras no figuren en la caja o ficha.
 - **No usar:** arsénico (salvo pozo), mercurio, PFAS, microplásticos, certificaciones, "alcaliniza", comparativas con marcas.
 
 ---
@@ -61,7 +63,7 @@ Precisa, literaria, sensorial. Sin exclamaciones, sin emoji. Qué retira y qué 
 | Fila | Izquierda | Centro | Derecha |
 |---|---|---|---|
 | 1 | **24** Flat-lay · fría y caliente | 23 Cero | 22 Té y agua fría |
-| 2 | 21 Agua a la mesa | **20** Flat-lay · cinco etapas | 19 Ánfora |
+| 2 | 21 Agua guardada | **20** Flat-lay · cinco etapas | 19 Bidón |
 | 3 | 18 Nativo | 17 La primera decisión | **16** Flat-lay · magnesio |
 | 4 | **15** Flat-lay · carbón y KDF | 14 Vivo | 13 Baño (arena) |
 | 5 | 12 La mesa servida | **11** Flat-lay · el vaso | 10 Cómo elegir |
@@ -84,7 +86,7 @@ Precisa, literaria, sensorial. Sin exclamaciones, sin emoji. Qué retira y qué 
 
 **Links:** elvo.pe y WhatsApp.
 
-**Destacadas:** Nativo · Vivo · Cero · Ánfora · Instalar · Preguntas · Ritual · Dónde comprar (láminas de Historias en `historias/`).
+**Destacadas:** Nativo · Vivo · Cero · Bidón · Instalar · Preguntas · Ritual · Dónde comprar (láminas de Historias en `historias/`).
 
 ---
 
@@ -178,18 +180,17 @@ Tipografía de las imágenes: titular en serif ligera de alto contraste; texto e
 - **Adjuntar:** `nativo-front.png`. **Portada:** the attached elvo· Nativo on a pale stone counter next to a chrome tap, side window light. Text: "El agua es el primer ingrediente." as headline, "elvo· Nativo" as a small label. **Interior:** `tipograficas/p03-02` a `p03-05`.
 - **Descripción:** elvo· Nativo, con núcleo PureCore, retiene plomo y metales pesados* y conserva los minerales naturales. Sin electricidad, sin obras. Escríbenos y te acompañamos. Link en bio. *Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.
 
-### 19 · Ánfora (PIEDRA, carrusel de 3) **[nombre provisional]**
-- **Adjuntar:** foto real del bidón. **Portada:** the attached jug purifier on a pale stone surface, soft window light, one glass. Text: "Dos capacidades: 16 y 22 litros." as headline, "Bidón purificador elvo·" as a small label. **Interior:** `tipograficas/p29-02` y `p29-03`.
-- **Descripción:** El agua, servida a la mesa. Dos tamaños para elegir el que mejor se ajuste a tu casa. Escríbenos y te acompañamos. Link en bio.
-- **Nota [CONFIRMAR]:** agregar beneficios solo si figuran en la caja.
+### 19 · Bidón (PIEDRA, carrusel de 3)
+- **Adjuntar:** foto real del bidón. **Portada:** the attached jug purifier on a kitchen shelf next to a clear glass jug, soft window light, calm and tidy. Text: "Agua de reserva en casa." as headline, "Bidón purificador elvo·" as a small label. **Interior:** `tipograficas/p29-02` y `p29-03` (se llena con una jarra · purifica por gravedad, sin electricidad).
+- **Descripción:** Llénalo con una jarra y tendrás agua purificada guardada en casa. Sin electricidad, sin conexión al caño. Dos capacidades de bidón: 16 y 22 litros. Escríbenos y te acompañamos a elegir. Link en bio.
 
 ### 20 · Flat-lay · cinco etapas (FORMULACIÓN, carrusel de 3) **[CONFIRMAR]**
 - **Prompt:** 4:5 vertical aspect ratio. [FORMULACIÓN]. Five pale stones in a line beside a glass of water. Text: "Cinco etapas." as headline. **Interior:** `tipograficas/p26-04` y `p26-05` (ya numeradas 2 / 3 y 3 / 3).
 - **Descripción:** La filtración de elvo· Cero, en cinco etapas.
 
-### 21 · Agua a la mesa (PIEDRA, gesto)
-- **Adjuntar:** foto real del bidón (opcional). **Prompt:** 4:5 vertical aspect ratio. [PIEDRA]. The attached jug on a wooden side table in a calm living room, a clear glass in the foreground. Text: "Agua a la mano." as headline.
-- **Descripción:** El agua, siempre lista en casa.
+### 21 · Agua guardada (PIEDRA, gesto)
+- **Adjuntar:** foto real del bidón (opcional). **Prompt:** 4:5 vertical aspect ratio. [PIEDRA]. The attached jug purifier on a pale kitchen shelf, a clear glass jug beside it, a hand pouring water from the jug into a glass. Text: "Tu agua, guardada." as headline.
+- **Descripción:** Agua purificada en casa, lista cuando la necesitas.
 
 ### 22 · Té y agua fría (PIEDRA, gesto)
 - **Prompt:** 4:5 vertical aspect ratio. [PIEDRA]. A ceramic cup with a thin line of steam beside a clear glass of cold water on a pale stone tray. Text: "El té también empieza en el agua." as headline.
@@ -201,7 +202,7 @@ Tipografía de las imágenes: titular en serif ligera de alto contraste; texto e
 
 ### 24 · Flat-lay · fría y caliente (FORMULACIÓN)
 - **Prompt:** 4:5 vertical aspect ratio. [FORMULACIÓN]. Overhead: a clear glass of cold water with a glacier highlight and a ceramic cup with thin steam, side by side on slate. Text: "Fría. Caliente." as headline.
-- **Descripción:** Dos temperaturas, una sola fuente.
+- **Descripción:** Dos temperaturas, un solo gesto.
 
 ---
 
@@ -212,7 +213,7 @@ Tipografía de las imágenes: titular en serif ligera de alto contraste; texto e
 | Nativo | Núcleo, etapas |
 | Vivo | Magnesio |
 | Cero | Fría y caliente (cuando haya stock) |
-| Ánfora | Capacidades |
+| Bidón | La reserva de agua |
 | Instalar | Pasos de instalación |
 | Preguntas | `p08-01` a `p08-06` |
 | Ritual | Mood de piel (sin producto) |
@@ -224,8 +225,9 @@ Otras: garantía (`p11-01`), núcleo (`p09-01`), atención por WhatsApp (`p21-01
 
 ## 7. Pendientes antes de publicar
 
-- Confirmar el nombre de la línea de bidones.
-- Confirmar los datos de Cero y Ánfora con la ficha, la caja y el equipo.
+- Elegir el nombre de la línea de bidones (Reserva, Despensa o Siempre) y registrarlo si se usa.
+- Medir cuánta agua purificada rinde el bidón (la capacidad de 16 y 22 litros es el recipiente completo).
+- Confirmar los datos de Cero y Bidón con la ficha, la caja y el equipo.
 - Confirmar las etapas de Nativo con la ficha del fabricante.
 - Tener fotos reales de Cero y bidones, y de la instalación.
 - No publicar piezas de Cero y bidones hasta que haya stock.
