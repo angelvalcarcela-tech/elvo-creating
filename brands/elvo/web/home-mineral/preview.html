@@ -1,0 +1,208 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>/* elvo· mineral — manual de marca v2.0. Tokens + home. Sin degradados, sin sombras, reglas de 1 px. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Hanken+Grotesk:wght@400;500;600&display=swap');
+:root{
+  --alabastro:#EAE7E0;--caliza:#D8D2C7;--piedra:#9A948A;--piedra-osc:#6B665D;
+  --pizarra:#2B2E2D;--grafito:#1C1E1C;--hueso:#F3F1EC;--glaciar:#82C3C4;--arena:#D7C4A6;
+  --serif:'Fraunces',Georgia,serif;--sans:'Hanken Grotesk',system-ui,sans-serif;
+}
+body{background:var(--alabastro);}
+.m{font-family:var(--sans);color:var(--pizarra);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.m *{box-sizing:border-box}
+.m h1,.m h2,.m h3{font-family:var(--serif);font-weight:300;letter-spacing:-.01em;line-height:1.08;margin:0;color:var(--grafito)}
+.m p{margin:0}
+.m a{color:inherit}
+.m-wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.m-sec{padding:104px 0;border-top:1px solid var(--caliza)}
+.m-eyebrow{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--piedra-osc);margin-bottom:20px;display:block}
+.m-h2{font-size:clamp(2rem,4.2vw,3.2rem)}
+.m .m-lead{font-size:18px;line-height:1.7;color:var(--piedra-osc);max-width:54ch;margin-top:20px}
+.m-btn{display:inline-block;font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:.04em;text-decoration:none;padding:15px 28px;border:1px solid var(--grafito);border-radius:2px;transition:background .2s,color .2s}
+.m-btn--solid{background:var(--grafito);color:var(--hueso)!important}
+.m-btn--solid:hover{background:var(--pizarra)}
+.m-btn--line{background:transparent;color:var(--grafito)}
+.m-btn--line:hover{background:var(--grafito);color:var(--hueso)}
+.m-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+
+/* hero */
+.m-hero{padding:0;border-top:0}
+.m-hero-grid{display:grid;grid-template-columns:1.05fr 1fr;min-height:640px}
+.m-hero-copy{display:flex;flex-direction:column;justify-content:center;padding:88px 56px 88px max(32px,calc((100vw - 1180px)/2 + 32px))}
+.m-hero h1{font-size:clamp(2.6rem,5.6vw,4.6rem)}
+.m-hero .m .m-lead{font-size:19px}
+.m-hero-img{background:var(--caliza);position:relative;overflow:hidden}
+.m-hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.m .m-hero-note{margin-top:44px;font-size:13px;color:var(--piedra-osc);letter-spacing:.02em}
+
+/* línea */
+.m-line{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:64px;border-top:1px solid var(--caliza);border-left:1px solid var(--caliza)}
+.m-card{display:flex;flex-direction:column;border-right:1px solid var(--caliza);border-bottom:1px solid var(--caliza);text-decoration:none;background:var(--alabastro);transition:background .25s}
+.m-card:hover{background:var(--hueso)}
+.m-card-img{aspect-ratio:1;background:var(--caliza);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.m-card-img img{width:100%;height:100%;object-fit:cover}
+.m-card-img--slate{background:var(--pizarra)}
+.m-card-img--sand{background:var(--arena)}
+.m-card-ph{font-family:var(--serif);font-weight:300;font-size:2.4rem;color:var(--hueso);letter-spacing:-.01em}
+.m-card-ph--dark{color:var(--grafito)}
+.m-card-body{padding:24px 24px 28px;display:flex;flex-direction:column;gap:8px;flex:1}
+.m-card-tag{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--piedra-osc)}
+.m-card h3{font-size:1.7rem}
+.m-card p{font-size:15px;line-height:1.55;color:var(--piedra-osc)}
+.m-card-foot{margin-top:auto;padding-top:20px;font-size:13px;font-weight:500;letter-spacing:.04em;color:var(--grafito);border-top:1px solid var(--caliza)}
+.m-card-foot span{color:var(--piedra-osc);font-weight:400}
+
+/* qué necesitas */
+.m-need{margin-top:56px;border-top:1px solid var(--grafito)}
+.m-need a{display:grid;grid-template-columns:1.1fr 1.4fr auto;gap:32px;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--caliza);text-decoration:none;transition:padding .25s}
+.m-need a:hover{padding-left:12px}
+.m-need-q{font-family:var(--serif);font-weight:300;font-size:clamp(1.3rem,2.4vw,1.9rem);color:var(--grafito);line-height:1.2}
+.m-need-a{font-size:16px;color:var(--piedra-osc)}
+.m-need-go{font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--grafito);white-space:nowrap}
+
+/* formulación (pizarra) */
+.m-slate{background:var(--pizarra);border-top:0;color:var(--caliza)}
+.m-slate h2,.m-slate h3{color:var(--hueso)}
+.m-slate .m-eyebrow{color:var(--piedra)}
+.m-slate .m .m-lead{color:var(--caliza)}
+.m-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:64px}
+.m-step{border-top:1px solid var(--piedra-osc);padding-top:24px}
+.m-step-n{font-family:var(--serif);font-weight:300;font-size:14px;letter-spacing:.14em;color:var(--glaciar)}
+.m-step h3{font-size:1.6rem;margin:14px 0 12px}
+.m-step p{font-size:15px;line-height:1.7;color:var(--caliza)}
+.m .m-fine{margin-top:56px;font-size:12px;line-height:1.7;color:var(--piedra);max-width:70ch}
+
+/* marca / valores */
+.m-brand-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
+.m-brand h2{font-size:clamp(2.2rem,4.6vw,3.6rem)}
+.m-vals{border-top:1px solid var(--grafito)}
+.m-val{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:26px 0;border-bottom:1px solid var(--caliza)}
+.m-val-n{font-family:var(--serif);font-size:14px;color:var(--piedra-osc);letter-spacing:.1em;padding-top:6px}
+.m-val h3{font-size:1.6rem;margin-bottom:6px}
+.m-val p{font-size:15px;line-height:1.6;color:var(--piedra-osc)}
+
+/* dónde comprar */
+.m-where{background:var(--caliza);border-top:0}
+.m-where-list{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border-top:1px solid var(--grafito);border-left:1px solid var(--piedra)}
+.m-where-list a,.m-where-list div{padding:28px 24px;border-right:1px solid var(--piedra);border-bottom:1px solid var(--piedra);text-decoration:none;font-family:var(--serif);font-weight:300;font-size:1.5rem;color:var(--grafito);transition:background .2s}
+.m-where-list a:hover{background:var(--alabastro)}
+.m-where-list small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--piedra-osc);margin-top:6px}
+
+/* faq */
+.m-faq{display:grid;grid-template-columns:1fr 1.5fr;gap:80px}
+.m-faq details{border-bottom:1px solid var(--caliza);padding:22px 0}
+.m-faq details:first-child{border-top:1px solid var(--grafito)}
+.m-faq summary{cursor:pointer;font-family:var(--serif);font-weight:300;font-size:1.35rem;color:var(--grafito);list-style:none;display:flex;justify-content:space-between;gap:16px}
+.m-faq summary::-webkit-details-marker{display:none}
+.m-faq summary::after{content:'+';font-family:var(--sans);color:var(--piedra-osc)}
+.m-faq details[open] summary::after{content:'–'}
+.m-faq details p{margin-top:14px;font-size:16px;line-height:1.7;color:var(--piedra-osc);max-width:60ch}
+
+/* cierre */
+.m-close{background:var(--grafito);color:var(--caliza);border-top:0;text-align:left}
+.m-close h2{color:var(--hueso);font-size:clamp(2.2rem,4.6vw,3.6rem);max-width:18ch}
+.m-close .m .m-lead{color:var(--caliza)}
+.m-close .m-btn--solid{background:var(--hueso);color:var(--grafito)!important;border-color:var(--hueso)}
+.m-close .m-btn--line{color:var(--hueso);border-color:var(--hueso)}
+.m-close .m-btn--line:hover{background:var(--hueso);color:var(--grafito)}
+
+@media(max-width:900px){
+  .m-wrap{padding:0 20px}.m-sec{padding:72px 0}
+  .m-hero-grid{grid-template-columns:1fr;min-height:0}
+  .m-hero-copy{padding:56px 20px}
+  .m-hero-img{aspect-ratio:1}
+  .m-line{grid-template-columns:1fr 1fr}
+  .m-need a{grid-template-columns:1fr;gap:8px}
+  .m-steps{grid-template-columns:1fr;gap:32px}
+  .m-brand-grid,.m-faq{grid-template-columns:1fr;gap:40px}
+  .m-where-list{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){.m-line{grid-template-columns:1fr}.m-card h3{font-size:1.5rem}}
+</style></head><body style="margin:0">
+<section class="m m-hero"><div class="m-hero-grid">
+<div class="m-hero-copy">
+<span class="m-eyebrow">elvo· · Purificación doméstica de agua</span>
+<h1>El agua es el primer ingrediente.</h1>
+<p class="m-lead">Un purificador para cada lugar donde el agua te toca. Cuéntanos cómo es tu casa y te ayudamos a elegir.</p>
+<div class="m-actions"><a class="m-btn m-btn--solid" href="#linea">Ver la línea</a><a class="m-btn m-btn--line" href="https://wa.me/51929190100?text=Hola,%20quiero%20elegir%20mi%20purificador%20elvo%C2%B7">Escríbenos</a></div>
+<p class="m-hero-note">30 días de prueba · Envío gratis a todo el Perú · Garantía de 1 año</p>
+</div>
+<div class="m-hero-img"><img src="nativo-front.png" alt="elvo· Nativo, purificador para el caño, con un vaso de agua" loading="eager"></div>
+</div></section>
+
+<section class="m m-sec" id="linea"><div class="m-wrap">
+<span class="m-eyebrow">La línea</span>
+<h2 class="m-h2">Un purificador para cada lugar donde el agua te toca.</h2>
+<div class="m-line">
+<a class="m-card" href="/products/elvonativo"><div class="m-card-img"><img src="nativo-front.png" alt="elvo· Nativo" loading="lazy"></div><div class="m-card-body"><span class="m-card-tag">Para el caño</span><h3>Nativo</h3><p>Retiene plomo y metales pesados*. Se instala en 5 minutos, sin gasfitero.</p><div class="m-card-foot">Ver Nativo <span>· desde S/ 299</span></div></div></a>
+<a class="m-card" href="https://wa.me/51929190100?text=Hola,%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo"><div class="m-card-img"><img src="vivo-front.png" alt="elvo· Vivo" loading="lazy"></div><div class="m-card-body"><span class="m-card-tag">Para el caño</span><h3>Vivo</h3><p>Aporta magnesio y reduce cloro, olores y sabores. Agua más rica, directo de tu caño.</p><div class="m-card-foot">Consultar Vivo</div></div></a>
+<a class="m-card" href="https://wa.me/51929190100?text=Hola,%20me%20interesa%20Alivio"><div class="m-card-img"><span class="m-card-ph m-card-ph--dark">Alivio</span></div><div class="m-card-body"><span class="m-card-tag">Para tener reserva</span><h3>Alivio</h3><p>Purificador de bidón de 16 y 22 litros. Se llena con una jarra, sin electricidad ni conexión al caño.</p><div class="m-card-foot">Consultar Alivio</div></div></a>
+<a class="m-card" href="https://wa.me/51929190100?text=Hola,%20me%20interesa%20Cero"><div class="m-card-img m-card-img--slate"><span class="m-card-ph">Cero</span></div><div class="m-card-body"><span class="m-card-tag">Para la pureza máxima</span><h3>Cero</h3><p>Ósmosis inversa. Agua fría y caliente en un solo equipo.</p><div class="m-card-foot">Consultar Cero</div></div></a>
+</div>
+<p class="m-fine" style="color:var(--piedra-osc)">*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.</p>
+</div></section>
+
+<section class="m m-sec"><div class="m-wrap">
+<span class="m-eyebrow">¿Qué necesitas?</span>
+<h2 class="m-h2">Empieza por tu casa, no por el equipo.</h2>
+<div class="m-need">
+<a href="https://wa.me/51929190100?text=Hola,%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo"><span class="m-need-q">Quiero que el agua del caño sepa mejor.</span><span class="m-need-a">Vivo aporta magnesio y reduce cloro, olores y sabores.</span><span class="m-need-go">Ver Vivo →</span></a>
+<a href="/products/elvonativo"><span class="m-need-q">Quiero retener metales pesados.</span><span class="m-need-a">Nativo retiene plomo y metales pesados* en el mismo caño.</span><span class="m-need-go">Ver Nativo →</span></a>
+<a href="https://wa.me/51929190100?text=Hola,%20me%20interesa%20Alivio"><span class="m-need-q">Quiero tener agua guardada.</span><span class="m-need-a">Alivio se llena con una jarra. Sin electricidad, sin conexión al caño.</span><span class="m-need-go">Ver Alivio →</span></a>
+<a href="https://wa.me/51929190100?text=Hola,%20me%20interesa%20Cero"><span class="m-need-q">Quiero el máximo nivel de purificación.</span><span class="m-need-a">Cero usa ósmosis inversa y entrega agua fría y caliente.</span><span class="m-need-go">Ver Cero →</span></a>
+</div>
+<div class="m-actions"><a class="m-btn m-btn--line" href="https://wa.me/51929190100?text=Hola,%20no%20s%C3%A9%20cu%C3%A1l%20elvo%C2%B7%20elegir">No sé cuál elegir: escríbenos</a></div>
+</div></section>
+
+<section class="m m-sec m-slate"><div class="m-wrap">
+<span class="m-eyebrow">Formulación</span>
+<h2 class="m-h2">Tres pasos. Un solo gesto.</h2>
+<p class="m-lead">Sin electricidad, sin obras y sin gasfitero.</p>
+<div class="m-steps">
+<div class="m-step"><span class="m-step-n">01</span><h3>Instala</h3><p>Lo instalas tú en 5 minutos. Incluye adaptador universal de jebe y derivador.</p></div>
+<div class="m-step"><span class="m-step-n">02</span><h3>Purifica</h3><p>Seis etapas de filtración: carbón activado, KDF-F, nanotecnología, aluminosilicato sintético, plata coloidal y plata iónica.</p></div>
+<div class="m-step"><span class="m-step-n">03</span><h3>Toma</h3><p>Conserva los minerales naturales del agua. El núcleo dura 18 meses de uso normal y te avisamos por WhatsApp cuando toque cambiarlo.</p></div>
+</div>
+<p class="m-fine">Descrito para elvo· Nativo. *Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo. elvo· no es un dispositivo médico ni reemplaza el tratamiento de agua de la red pública.</p>
+</div></section>
+
+<section class="m m-sec m-brand"><div class="m-wrap"><div class="m-brand-grid">
+<div><span class="m-eyebrow">elvo·</span><h2>Todo cuidado empieza en ella.</h2><p class="m-lead">El agua es lo primero que llega a tu casa y lo último en lo que solemos pensar. Diseñamos objetos que se instalan sin ruido y duran.</p></div>
+<div class="m-vals">
+<div class="m-val"><span class="m-val-n">01</span><div><h3>Longevidad.</h3><p>Objetos que duran años, no temporadas.</p></div></div>
+<div class="m-val"><span class="m-val-n">02</span><div><h3>Formulación consciente.</h3><p>Lo que se retira y lo que se aporta, dicho con exactitud.</p></div></div>
+<div class="m-val"><span class="m-val-n">03</span><div><h3>Consulta, no venta.</h3><p>Acompañar la decisión antes que empujarla.</p></div></div>
+<div class="m-val"><span class="m-val-n">04</span><div><h3>Vida sin prisa.</h3><p>Contra la tendencia; a favor de lo perdurable.</p></div></div>
+</div>
+</div></div></section>
+
+<section class="m m-sec m-where"><div class="m-wrap">
+<span class="m-eyebrow">Dónde comprar</span>
+<h2 class="m-h2">Encuentra elvo·</h2>
+<p class="m-lead" style="color:var(--pizarra)">En la tienda, por WhatsApp o en las principales cadenas del país.</p>
+<div class="m-where-list">
+<div>elvo.pe<small>Tienda online</small></div>
+<a href="https://wa.me/51929190100?text=Hola,%20quiero%20comprar%20elvo%C2%B7">WhatsApp<small>Te acompañamos a elegir</small></a>
+<div>Falabella<small>Disponible</small></div>
+<div>Sodimac<small>Disponible</small></div>
+<div>Plaza Vea<small>Disponible</small></div>
+<div>Promart<small>Disponible</small></div>
+<div>Oechsle<small>Disponible</small></div>
+<div>Mercado Libre<small>Online</small></div>
+</div>
+</div></section>
+
+<section class="m m-sec"><div class="m-wrap"><div class="m-faq">
+<div><span class="m-eyebrow">Preguntas frecuentes</span><h2 class="m-h2">¿Tienes dudas?</h2></div>
+<div>
+<details><summary>¿Se adapta a mi caño?</summary><p>Sí. Incluye un adaptador universal de jebe y un derivador para grifos estándar. Si tienes dudas, mándanos una foto de tu caño por WhatsApp y te confirmamos antes de comprar.</p></details>
+<details><summary>¿Cada cuánto cambio el núcleo?</summary><p>Cada 18 meses de uso normal. Te avisamos por WhatsApp cuando toque cambiarlo.</p></details>
+<details><summary>¿Cuándo llega mi pedido?</summary><p>En Lima, el mismo día si confirmas antes de las 4 p. m. (lunes a sábado). En provincias, en 2 días. También puedes recogerlo en Jr. Varela 1235, Breña, de lunes a sábado de 9 a. m. a 5 p. m.</p></details>
+<details><summary>¿Cómo pago?</summary><p>Con Yape, tarjeta en hasta 6 cuotas sin interés o contraentrega. En provincias, la contraentrega va por agencia Shalom con una seña de S/ 50 y tu DNI.</p></details>
+<details><summary>¿Qué incluye mi pedido?</summary><p>El purificador y los núcleos de tu plan: 1 en el de 18 meses, 2 en el de 3 años y 4 en el de 6 años. También el adaptador universal de jebe.</p></details>
+<details><summary>¿Y si no me convence?</summary><p>Tienes 30 días de prueba. Si no te convence, escríbenos por WhatsApp y te devolvemos tu dinero. Además, el equipo tiene 1 año de garantía.</p></details>
+</div></div></div></section>
+
+<section class="m m-sec m-close"><div class="m-wrap">
+<h2>Escríbenos y te acompañamos.</h2>
+<p class="m-lead">Cuéntanos cómo es el agua de tu casa y te ayudamos a elegir. Sofía te responde por WhatsApp.</p>
+<div class="m-actions"><a class="m-btn m-btn--solid" href="https://wa.me/51929190100?text=Hola,%20quiero%20elegir%20mi%20purificador%20elvo%C2%B7">Hablar por WhatsApp</a><a class="m-btn m-btn--line" href="#linea">Ver la línea</a></div>
+</div></section></body></html>

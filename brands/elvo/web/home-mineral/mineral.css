@@ -1,0 +1,118 @@
+/* elvo· mineral — manual de marca v2.0. Tokens + home. Sin degradados, sin sombras, reglas de 1 px. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Hanken+Grotesk:wght@400;500;600&display=swap');
+:root{
+  --alabastro:#EAE7E0;--caliza:#D8D2C7;--piedra:#9A948A;--piedra-osc:#6B665D;
+  --pizarra:#2B2E2D;--grafito:#1C1E1C;--hueso:#F3F1EC;--glaciar:#82C3C4;--arena:#D7C4A6;
+  --serif:'Fraunces',Georgia,serif;--sans:'Hanken Grotesk',system-ui,sans-serif;
+}
+body{background:var(--alabastro);}
+.m{font-family:var(--sans);color:var(--pizarra);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.m *{box-sizing:border-box}
+.m h1,.m h2,.m h3{font-family:var(--serif);font-weight:300;letter-spacing:-.01em;line-height:1.08;margin:0;color:var(--grafito)}
+.m p{margin:0}
+.m a{color:inherit}
+.m-wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.m-sec{padding:104px 0;border-top:1px solid var(--caliza)}
+.m-eyebrow{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--piedra-osc);margin-bottom:20px;display:block}
+.m-h2{font-size:clamp(2rem,4.2vw,3.2rem)}
+.m .m-lead{font-size:18px;line-height:1.7;color:var(--piedra-osc);max-width:54ch;margin-top:20px}
+.m-btn{display:inline-block;font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:.04em;text-decoration:none;padding:15px 28px;border:1px solid var(--grafito);border-radius:2px;transition:background .2s,color .2s}
+.m-btn--solid{background:var(--grafito);color:var(--hueso)!important}
+.m-btn--solid:hover{background:var(--pizarra)}
+.m-btn--line{background:transparent;color:var(--grafito)}
+.m-btn--line:hover{background:var(--grafito);color:var(--hueso)}
+.m-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+
+/* hero */
+.m-hero{padding:0;border-top:0}
+.m-hero-grid{display:grid;grid-template-columns:1.05fr 1fr;min-height:640px}
+.m-hero-copy{display:flex;flex-direction:column;justify-content:center;padding:88px 56px 88px max(32px,calc((100vw - 1180px)/2 + 32px))}
+.m-hero h1{font-size:clamp(2.6rem,5.6vw,4.6rem)}
+.m-hero .m .m-lead{font-size:19px}
+.m-hero-img{background:var(--caliza);position:relative;overflow:hidden}
+.m-hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.m .m-hero-note{margin-top:44px;font-size:13px;color:var(--piedra-osc);letter-spacing:.02em}
+
+/* línea */
+.m-line{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:64px;border-top:1px solid var(--caliza);border-left:1px solid var(--caliza)}
+.m-card{display:flex;flex-direction:column;border-right:1px solid var(--caliza);border-bottom:1px solid var(--caliza);text-decoration:none;background:var(--alabastro);transition:background .25s}
+.m-card:hover{background:var(--hueso)}
+.m-card-img{aspect-ratio:1;background:var(--caliza);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.m-card-img img{width:100%;height:100%;object-fit:cover}
+.m-card-img--slate{background:var(--pizarra)}
+.m-card-img--sand{background:var(--arena)}
+.m-card-ph{font-family:var(--serif);font-weight:300;font-size:2.4rem;color:var(--hueso);letter-spacing:-.01em}
+.m-card-ph--dark{color:var(--grafito)}
+.m-card-body{padding:24px 24px 28px;display:flex;flex-direction:column;gap:8px;flex:1}
+.m-card-tag{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--piedra-osc)}
+.m-card h3{font-size:1.7rem}
+.m-card p{font-size:15px;line-height:1.55;color:var(--piedra-osc)}
+.m-card-foot{margin-top:auto;padding-top:20px;font-size:13px;font-weight:500;letter-spacing:.04em;color:var(--grafito);border-top:1px solid var(--caliza)}
+.m-card-foot span{color:var(--piedra-osc);font-weight:400}
+
+/* qué necesitas */
+.m-need{margin-top:56px;border-top:1px solid var(--grafito)}
+.m-need a{display:grid;grid-template-columns:1.1fr 1.4fr auto;gap:32px;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--caliza);text-decoration:none;transition:padding .25s}
+.m-need a:hover{padding-left:12px}
+.m-need-q{font-family:var(--serif);font-weight:300;font-size:clamp(1.3rem,2.4vw,1.9rem);color:var(--grafito);line-height:1.2}
+.m-need-a{font-size:16px;color:var(--piedra-osc)}
+.m-need-go{font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--grafito);white-space:nowrap}
+
+/* formulación (pizarra) */
+.m-slate{background:var(--pizarra);border-top:0;color:var(--caliza)}
+.m-slate h2,.m-slate h3{color:var(--hueso)}
+.m-slate .m-eyebrow{color:var(--piedra)}
+.m-slate .m .m-lead{color:var(--caliza)}
+.m-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:64px}
+.m-step{border-top:1px solid var(--piedra-osc);padding-top:24px}
+.m-step-n{font-family:var(--serif);font-weight:300;font-size:14px;letter-spacing:.14em;color:var(--glaciar)}
+.m-step h3{font-size:1.6rem;margin:14px 0 12px}
+.m-step p{font-size:15px;line-height:1.7;color:var(--caliza)}
+.m .m-fine{margin-top:56px;font-size:12px;line-height:1.7;color:var(--piedra);max-width:70ch}
+
+/* marca / valores */
+.m-brand-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
+.m-brand h2{font-size:clamp(2.2rem,4.6vw,3.6rem)}
+.m-vals{border-top:1px solid var(--grafito)}
+.m-val{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:26px 0;border-bottom:1px solid var(--caliza)}
+.m-val-n{font-family:var(--serif);font-size:14px;color:var(--piedra-osc);letter-spacing:.1em;padding-top:6px}
+.m-val h3{font-size:1.6rem;margin-bottom:6px}
+.m-val p{font-size:15px;line-height:1.6;color:var(--piedra-osc)}
+
+/* dónde comprar */
+.m-where{background:var(--caliza);border-top:0}
+.m-where-list{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border-top:1px solid var(--grafito);border-left:1px solid var(--piedra)}
+.m-where-list a,.m-where-list div{padding:28px 24px;border-right:1px solid var(--piedra);border-bottom:1px solid var(--piedra);text-decoration:none;font-family:var(--serif);font-weight:300;font-size:1.5rem;color:var(--grafito);transition:background .2s}
+.m-where-list a:hover{background:var(--alabastro)}
+.m-where-list small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--piedra-osc);margin-top:6px}
+
+/* faq */
+.m-faq{display:grid;grid-template-columns:1fr 1.5fr;gap:80px}
+.m-faq details{border-bottom:1px solid var(--caliza);padding:22px 0}
+.m-faq details:first-child{border-top:1px solid var(--grafito)}
+.m-faq summary{cursor:pointer;font-family:var(--serif);font-weight:300;font-size:1.35rem;color:var(--grafito);list-style:none;display:flex;justify-content:space-between;gap:16px}
+.m-faq summary::-webkit-details-marker{display:none}
+.m-faq summary::after{content:'+';font-family:var(--sans);color:var(--piedra-osc)}
+.m-faq details[open] summary::after{content:'–'}
+.m-faq details p{margin-top:14px;font-size:16px;line-height:1.7;color:var(--piedra-osc);max-width:60ch}
+
+/* cierre */
+.m-close{background:var(--grafito);color:var(--caliza);border-top:0;text-align:left}
+.m-close h2{color:var(--hueso);font-size:clamp(2.2rem,4.6vw,3.6rem);max-width:18ch}
+.m-close .m .m-lead{color:var(--caliza)}
+.m-close .m-btn--solid{background:var(--hueso);color:var(--grafito)!important;border-color:var(--hueso)}
+.m-close .m-btn--line{color:var(--hueso);border-color:var(--hueso)}
+.m-close .m-btn--line:hover{background:var(--hueso);color:var(--grafito)}
+
+@media(max-width:900px){
+  .m-wrap{padding:0 20px}.m-sec{padding:72px 0}
+  .m-hero-grid{grid-template-columns:1fr;min-height:0}
+  .m-hero-copy{padding:56px 20px}
+  .m-hero-img{aspect-ratio:1}
+  .m-line{grid-template-columns:1fr 1fr}
+  .m-need a{grid-template-columns:1fr;gap:8px}
+  .m-steps{grid-template-columns:1fr;gap:32px}
+  .m-brand-grid,.m-faq{grid-template-columns:1fr;gap:40px}
+  .m-where-list{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){.m-line{grid-template-columns:1fr}.m-card h3{font-size:1.5rem}}
