@@ -1,0 +1,249 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>/* elvo· web v3 — sistema visual de referencia OQUVA (cobalto + azules polvo + marino), aplicado con marca elvo. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;600&display=swap');
+:root{--cobalto:#3355FF;--peri:#5B7EF0;--cielo:#7B9BDD;--polvo:#A0BBD0;--niebla:#BED0DF;--hielo:#DCE6EE;--blanco:#FAFAFA;--negro:#050607;--marino:#010A21;--gris:#6B7480;--disp:'Sora',system-ui,sans-serif;--txt:'Inter',system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.2,1)}
+body{background:var(--blanco)}
+.v{font-family:var(--txt);color:var(--negro);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.v *{box-sizing:border-box}
+.v h1,.v h2,.v h3,.v p{margin:0}
+.v h1,.v h2,.v h3{font-family:var(--disp);letter-spacing:-.03em;line-height:1.02;font-weight:600;color:var(--negro)}
+.v a{text-decoration:none}
+.v-lab{font-family:var(--txt);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.v .v-pill{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;padding:14px 24px;border:1px solid currentColor;border-radius:999px;transition:background .2s,color .2s,border-color .2s;color:var(--negro)}
+.v .v-pill::after{content:'↗';font-size:13px}
+.v .v-pill--solid{background:var(--cobalto);border-color:var(--cobalto);color:#fff}
+.v .v-pill--solid:hover{background:var(--negro);border-color:var(--negro)}
+.v .v-pill--wh{color:#fff}
+.v .v-pill--wh:hover{background:#fff;color:var(--cobalto)}
+.v .v-pill:not(.v-pill--solid):not(.v-pill--wh):hover{background:var(--negro);color:#fff}
+.v-chip{display:inline-block;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:10px 18px;border:1px solid currentColor;border-radius:999px}
+.v-row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* hero */
+.v-hero{display:grid;grid-template-columns:1fr 1fr;min-height:min(100vh,880px);gap:12px;padding:12px;background:var(--blanco)}
+.v-hero-l{position:relative;background:var(--polvo);border-radius:24px;padding:44px 48px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;color:#fff}
+.v-hero-l .v-lab{color:rgba(255,255,255,.85)}
+.v .v-hero h1{color:#fff;font-size:clamp(2.6rem,5.4vw,5.2rem);text-transform:uppercase;margin:7vh 0 0}
+.v-hero p.sub{font-size:19px;font-weight:300;max-width:34ch;margin-top:24px;color:#fff}
+.v-hero-foot{display:flex;flex-direction:column;gap:28px;margin-top:40px}
+.v-hero-r{position:relative;border-radius:24px;overflow:hidden;background:var(--hielo)}
+.v-hero-r img{position:absolute;left:0;top:-6%;width:100%;height:112%;object-fit:cover;will-change:transform}
+.v-tag{position:absolute;left:20px;bottom:20px;z-index:2;display:flex;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:8px 16px 8px 10px;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.v-tag i{width:10px;height:10px;border-radius:50%;background:var(--cobalto)}
+
+/* camino caño → núcleo → vaso */
+.v-flow{padding:92px max(24px,5vw) 84px;background:var(--blanco)}
+.v-flow-top{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;flex-wrap:wrap}
+.v-flow h2{font-size:clamp(2rem,4vw,3.4rem);max-width:15ch}
+.v-flow-line{position:relative;display:grid;grid-template-columns:repeat(3,1fr);margin-top:72px}
+.v-flow-line::before{content:'';position:absolute;left:0;right:0;top:27px;height:1px;background:var(--niebla)}
+.v-node{position:relative;padding-right:24px}
+.v-node b{position:relative;display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:#fff;border:1px solid var(--cobalto);color:var(--cobalto);font-family:var(--disp);font-weight:400;font-size:14px}
+.v-node h3{font-size:1.5rem;margin-top:24px;font-weight:400}
+.v-node p{font-size:15px;color:var(--gris);margin-top:8px;max-width:30ch}
+
+/* historia fija */
+.v-story{position:relative;height:460vh;background:var(--hielo)}
+.v-pin{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:1.1fr 1fr;gap:12px;padding:12px;overflow:hidden}
+.v-stage{position:relative;border-radius:24px;overflow:hidden;background:var(--niebla)}
+.v-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.v-stage .v-tag{left:20px;top:20px;bottom:auto}
+.v-caps{position:relative;padding:0 max(24px,3.4vw);display:flex;flex-direction:column;justify-content:center}
+.v-count{position:absolute;top:40px;left:max(24px,3.4vw);right:max(24px,3.4vw);display:flex;gap:8px}
+.v-count i{flex:1;height:2px;border-radius:2px;background:var(--niebla);position:relative}
+.v-count i::after{content:'';position:absolute;inset:0;border-radius:2px;background:var(--cobalto);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease)}
+.v-count i.on::after{transform:scaleX(1)}
+.v-cap{position:absolute;left:max(24px,3.4vw);right:max(24px,3.4vw);top:50%;opacity:0;transform:translateY(calc(-50% + 36px));transition:opacity .7s var(--ease),transform .9s var(--ease);pointer-events:none}
+.v-cap.on{opacity:1;transform:translateY(-50%)}
+.v-cap .v-lab{color:var(--cobalto);display:block;margin-bottom:18px}
+.v-fig{display:block;font-family:var(--disp);font-weight:600;font-size:clamp(5.4rem,13vw,11.5rem);line-height:.88;letter-spacing:-.05em;color:var(--cobalto)}
+.v-fig small{font-size:.2em;letter-spacing:0;margin-left:.25em;color:var(--negro);font-weight:400}
+.v-cap h3{font-size:clamp(1.4rem,2.2vw,2rem);margin-top:22px;max-width:17ch;font-weight:400}
+.v-fine{position:absolute;left:max(24px,3.4vw);right:max(24px,3.4vw);bottom:24px;font-size:11px;line-height:1.5;color:var(--gris);max-width:60ch}
+
+/* esquema técnico */
+.v-diag{background:var(--marino);color:#fff;padding:96px max(24px,5vw);position:relative;overflow:hidden}
+.v-diag .v-lab{color:var(--cielo)}
+.v-diag h2{color:#fff;font-size:clamp(2rem,4vw,3.4rem);margin-top:18px;max-width:16ch}
+.v-diag-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center;margin-top:56px}
+.v-diag svg{width:100%;height:auto;display:block}
+.v-diag svg text{font-family:var(--txt);fill:#fff}
+.v-diag-note{font-size:12px;color:var(--cielo);margin-top:28px;max-width:60ch;line-height:1.6}
+.v-list{border-top:1px solid rgba(255,255,255,.18)}
+.v-list div{display:grid;grid-template-columns:56px 1fr;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:16px;align-items:baseline}
+.v-list b{font-family:var(--disp);font-weight:400;font-size:13px;color:var(--cielo)}
+
+/* cifras */
+.v-num{padding:96px max(24px,5vw);background:var(--blanco)}
+.v-num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
+.v-num-i{border:1px solid var(--niebla);border-radius:20px;padding:28px 24px 24px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between}
+.v-num-i b{display:block;font-family:var(--disp);font-weight:600;font-size:clamp(3.4rem,6vw,5.4rem);line-height:.95;letter-spacing:-.04em;color:var(--cobalto)}
+.v-num-i>span{font-size:15px;color:var(--gris)}
+.v-num h2{font-size:clamp(2rem,4vw,3.4rem);max-width:16ch}
+
+/* línea horizontal */
+.v-h{position:relative;height:340vh;background:var(--niebla)}
+.v-h-pin{position:sticky;top:0;height:100vh;overflow:hidden}
+.v-h-track{display:flex;gap:12px;height:100%;padding:12px;will-change:transform}
+.v-h-intro{flex:0 0 min(42vw,560px);background:var(--blanco);border-radius:24px;padding:40px;display:flex;flex-direction:column;justify-content:space-between}
+.v-h-intro h2{font-size:clamp(2.2rem,4vw,3.8rem);margin-top:20px}
+.v-h-hint{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+.v-h-hint i{display:block;width:48px;height:1px;background:var(--negro)}
+.v .v-p{position:relative;flex:0 0 min(58vw,780px);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;color:var(--negro);background:var(--hielo)}
+.v-p-bg{position:absolute;inset:0}
+.v-p-bg img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.v-p:hover .v-p-bg img{transform:scale(1.04)}
+.v .v-p--cob{background:var(--cobalto);color:#fff}
+.v .v-p--mar{background:var(--marino);color:#fff}
+.v-p-big{position:absolute;left:32px;top:28px;font-family:var(--disp);font-weight:600;font-size:clamp(5rem,13vw,11.5rem);line-height:.9;letter-spacing:-.05em;color:#fff}
+.v-dome{position:absolute;left:50%;bottom:-62%;width:130%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.95) 0,rgba(255,255,255,.55) 55%,rgba(255,255,255,0) 100%);border:1px solid rgba(255,255,255,.7)}
+.v-p-info{position:relative;margin:12px;border-radius:16px;padding:22px 24px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;background:#fff;color:var(--negro)}
+.v-p-info h3{font-size:clamp(1.8rem,3vw,2.8rem);font-weight:400}
+.v-p-info p{font-size:15px;color:var(--gris);margin-top:8px;max-width:30ch}
+.v-p-go{flex:none;font-size:13px;font-weight:500;border:1px solid currentColor;padding:10px 18px;border-radius:999px;white-space:nowrap}
+.v-prog{position:absolute;left:12px;right:12px;bottom:6px;height:3px;border-radius:3px;background:rgba(255,255,255,.7);z-index:5}
+.v-prog i{display:block;height:100%;border-radius:3px;background:var(--cobalto);width:0}
+
+/* cierre */
+.v-end{position:relative;background:var(--cobalto);color:#fff;padding:140px max(24px,5vw) 70px;overflow:hidden;margin:12px;border-radius:24px}
+.v-end .v-dome{bottom:-95%;width:110%;opacity:.9}
+.v-end>*{position:relative}
+.v .v-end h2{color:#fff;font-size:clamp(2.8rem,8vw,7.4rem);max-width:12ch;text-transform:uppercase}
+.v-end .v-row{margin-top:44px}
+.v-faq{margin-top:120px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.v-faq details{background:rgba(255,255,255,.12);border-radius:16px;padding:20px 22px}
+.v-faq summary{cursor:pointer;list-style:none;font-family:var(--disp);font-weight:400;font-size:1.05rem;color:#fff;display:flex;justify-content:space-between;gap:12px}
+.v-faq summary::-webkit-details-marker{display:none}
+.v-faq summary::after{content:'+';color:#fff}
+.v-faq details[open] summary::after{content:'–'}
+.v-faq p{margin-top:12px;font-size:15px;line-height:1.6;color:rgba(255,255,255,.88)}
+.v-legal{margin-top:40px;font-size:11px;color:rgba(255,255,255,.75)}
+
+.v-rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
+.v-rv.on{opacity:1;transform:none}
+
+@media(max-width:900px){
+ .v-hero{grid-template-columns:1fr;min-height:0}.v-hero-l{padding:28px 22px}.v .v-hero h1{font-size:clamp(2.4rem,11vw,3.6rem);margin-top:6vh}.v-hero-r{aspect-ratio:1}
+ .v-flow{padding:64px 20px}.v-flow-line{grid-template-columns:1fr;gap:32px;margin-top:44px}.v-flow-line::before{left:27px;right:auto;top:0;bottom:0;width:1px;height:auto}.v-node{padding-left:78px;min-height:54px}.v-node b{position:absolute;left:0;top:0}.v-node h3{margin-top:0}
+ .v-story{height:520vh}.v-pin{grid-template-columns:1fr;grid-template-rows:50vh 1fr}.v-caps{padding:0 18px}.v-cap{left:18px;right:18px}.v-count{left:18px;right:18px;top:18px}.v-fig{font-size:clamp(4.6rem,24vw,7.4rem)}
+ .v-diag{padding:64px 20px}.v-diag-grid{grid-template-columns:1fr;gap:32px}
+ .v-num{padding:64px 20px}.v-num-grid{grid-template-columns:1fr 1fr}.v-num-i{min-height:160px}
+ .v-h{height:420vh}.v-h-intro{flex-basis:82vw;padding:26px 22px}.v .v-p{flex-basis:82vw}.v-p-info{flex-direction:column;align-items:flex-start}.v-p-big{left:22px;top:20px}
+ .v-end{padding:88px 20px 44px}.v-faq{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){.v-rv{opacity:1;transform:none}}
+</style></head><body style="margin:0">
+<div class="v">
+<section class="v-hero">
+ <div class="v-hero-l">
+  <span class="v-lab">01 // Purificación doméstica de agua</span>
+  <div>
+   <h1>El agua es el primer ingrediente.</h1>
+   <p class="sub">Un purificador para cada lugar donde el agua te toca.</p>
+   <div class="v-hero-foot">
+    <div class="v-row"><span class="v-chip">5 min</span><span class="v-chip">6 etapas</span><span class="v-chip">18 meses</span></div>
+    <div class="v-row"><a class="v-pill v-pill--solid" href="#linea">Ver la línea</a><a class="v-pill v-pill--wh" href="https://wa.me/51929190100?text=Hola,%20quiero%20elegir%20mi%20purificador%20elvo%C2%B7">Escríbenos</a></div>
+   </div>
+  </div>
+ </div>
+ <div class="v-hero-r"><img src="nativo-front.png" alt="elvo· Nativo, purificador para el caño, con un vaso de agua"><span class="v-tag"><i></i>elvo· Nativo · Para el caño</span></div>
+</section>
+
+<section class="v-flow">
+ <div class="v-flow-top"><div><span class="v-lab" style="color:var(--cobalto)">02 // Cómo funciona</span><h2 style="margin-top:18px">Caño, núcleo, vaso.</h2></div><a class="v-pill" href="#esquema">Ver el esquema</a></div>
+ <div class="v-flow-line">
+  <div class="v-node v-rv"><b>01</b><h3>Caño</h3><p>Se instala en tu caño en 5 minutos. Sin obras, sin gasfitero.</p></div>
+  <div class="v-node v-rv"><b>02</b><h3>Núcleo</h3><p>Seis etapas de filtración dentro de un solo cartucho.</p></div>
+  <div class="v-node v-rv"><b>03</b><h3>Vaso</h3><p>Agua con tendencia alcalina. Conserva sus minerales.</p></div>
+ </div>
+</section>
+
+<section class="v-story"><div class="v-pin">
+ <div class="v-stage"><img src="nativo-front.png" alt="elvo· Nativo en detalle" style="transform:translate(0,-38%) scale(1.9)"><span class="v-tag"><i></i>Nativo</span></div>
+ <div class="v-caps">
+  <div class="v-count"><i></i><i></i><i></i><i></i></div>
+  <div class="v-cap"><span class="v-lab">Instalación</span><span class="v-fig">5<small>min</small></span><h3>Lo instalas tú. Sin gasfitero.</h3></div>
+  <div class="v-cap"><span class="v-lab">Filtración</span><span class="v-fig">6<small>etapas</small></span><h3>Carbón, KDF-F, plata y más.</h3></div>
+  <div class="v-cap"><span class="v-lab">Agua</span><span class="v-fig">8.5<small>pH</small></span><h3>Tendencia alcalina. Conserva sus minerales.</h3></div>
+  <div class="v-cap"><span class="v-lab">Núcleo</span><span class="v-fig">18<small>meses</small></span><h3>Por núcleo. Te avisamos por WhatsApp.</h3></div>
+  <p class="v-fine">Descrito para elvo· Nativo. Resultados según la ficha técnica del núcleo PureCore y la calidad del agua de entrada.</p>
+ </div>
+</div></section>
+
+<section class="v-diag" id="esquema">
+ <span class="v-lab">03 // Por dentro</span>
+ <div class="v-diag-grid">
+  <div>
+   <h2>Seis etapas en un solo núcleo.</h2>
+   <div class="v-row" style="margin-top:32px"><span class="v-chip" style="color:#fff">Plomo y metales pesados*</span><span class="v-chip" style="color:#fff">Cloro, olores, sabores</span><span class="v-chip" style="color:#fff">pH ~8.5</span></div>
+   <p class="v-diag-note">Esquema ilustrativo del núcleo PureCore de elvo· Nativo. *Según la ficha técnica del núcleo y la calidad del agua de entrada. El orden y el espesor de cada etapa son representativos.</p>
+  </div>
+  <div><svg viewBox="0 0 640 580" role="img" aria-label="Esquema ilustrativo de las seis etapas del núcleo"><rect x="100" y="64" width="200" height="456" rx="30" fill="none" stroke="#7B9BDD" stroke-width="1"/><rect x="112" y="76" width="176" height="68" rx="8" fill="#101417" stroke="rgba(255,255,255,.25)"/><circle cx="288" cy="110.0" r="3" fill="#fff"/><path d="M288 110.0 H340 H372" stroke="rgba(255,255,255,.55)" fill="none"/><text x="384" y="106.0" font-size="11" letter-spacing="1.6" fill="#7B9BDD" style="fill:#7B9BDD">01</text><text x="384" y="124.0" font-size="13" letter-spacing="1.2">[ CARBÓN ACTIVADO ]</text><rect x="112" y="150" width="176" height="68" rx="8" fill="#3355FF" stroke="rgba(255,255,255,.25)"/><circle cx="288" cy="184.0" r="3" fill="#fff"/><path d="M288 184.0 H340 H372" stroke="rgba(255,255,255,.55)" fill="none"/><text x="384" y="180.0" font-size="11" letter-spacing="1.6" fill="#7B9BDD" style="fill:#7B9BDD">02</text><text x="384" y="198.0" font-size="13" letter-spacing="1.2">[ KDF-F ]</text><rect x="112" y="224" width="176" height="68" rx="8" fill="#7B9BDD" stroke="rgba(255,255,255,.25)"/><circle cx="288" cy="258.0" r="3" fill="#fff"/><path d="M288 258.0 H340 H372" stroke="rgba(255,255,255,.55)" fill="none"/><text x="384" y="254.0" font-size="11" letter-spacing="1.6" fill="#7B9BDD" style="fill:#7B9BDD">03</text><text x="384" y="272.0" font-size="13" letter-spacing="1.2">[ NANOTECNOLOGÍA ]</text><rect x="112" y="298" width="176" height="68" rx="8" fill="#BED0DF" stroke="rgba(255,255,255,.25)"/><circle cx="288" cy="332.0" r="3" fill="#fff"/><path d="M288 332.0 H340 H372" stroke="rgba(255,255,255,.55)" fill="none"/><text x="384" y="328.0" font-size="11" letter-spacing="1.6" fill="#7B9BDD" style="fill:#7B9BDD">04</text><text x="384" y="346.0" font-size="13" letter-spacing="1.2">[ ALUMINOSILICATO SINTÉTICO ]</text><rect x="112" y="372" width="176" height="68" rx="8" fill="#DCE6EE" stroke="rgba(255,255,255,.25)"/><circle cx="288" cy="406.0" r="3" fill="#fff"/><path d="M288 406.0 H340 H372" stroke="rgba(255,255,255,.55)" fill="none"/><text x="384" y="402.0" font-size="11" letter-spacing="1.6" fill="#7B9BDD" style="fill:#7B9BDD">05</text><text x="384" y="420.0" font-size="13" letter-spacing="1.2">[ PLATA COLOIDAL ]</text><rect x="112" y="446" width="176" height="68" rx="8" fill="#FFFFFF" stroke="rgba(255,255,255,.25)"/><circle cx="288" cy="480.0" r="3" fill="#fff"/><path d="M288 480.0 H340 H372" stroke="rgba(255,255,255,.55)" fill="none"/><text x="384" y="476.0" font-size="11" letter-spacing="1.6" fill="#7B9BDD" style="fill:#7B9BDD">06</text><text x="384" y="494.0" font-size="13" letter-spacing="1.2">[ PLATA IÓNICA ]</text><path d="M200 44 V548" stroke="#3355FF" stroke-width="1.5" stroke-dasharray="3 4"/><path d="M194 540 L200 552 L206 540" fill="#3355FF"/><text x="200" y="30" font-size="11" letter-spacing="1.8" text-anchor="middle" style="fill:#7B9BDD">ENTRADA · AGUA DEL CAÑO</text><text x="200" y="574" font-size="11" letter-spacing="1.8" text-anchor="middle" style="fill:#7B9BDD">SALIDA · AGUA PURIFICADA</text></svg></div>
+ </div>
+</section>
+
+<section class="v-num">
+ <span class="v-lab" style="color:var(--cobalto)">04 // Tranquilidad</span>
+ <h2 style="margin-top:18px">Compras con calma.</h2>
+ <div class="v-num-grid">
+  <div class="v-num-i v-rv"><b><span data-to="30">0</span></b><span>días de prueba</span></div>
+  <div class="v-num-i v-rv"><b><span data-to="1">0</span></b><span>año de garantía</span></div>
+  <div class="v-num-i v-rv"><b><span data-to="6">0</span></b><span>cuotas sin interés</span></div>
+  <div class="v-num-i v-rv"><b>Perú</b><span>envío gratis a todo el país</span></div>
+ </div>
+</section>
+
+<section class="v-h" id="linea"><div class="v-h-pin"><div class="v-h-track">
+ <div class="v-h-intro"><div><span class="v-lab" style="color:var(--cobalto)">05 // La línea</span><h2>Un purificador para cada lugar donde el agua te toca.</h2></div><span class="v-h-hint"><i></i>Sigue bajando</span></div>
+ <a class="v-p" href="/products/elvonativo"><div class="v-p-bg"><img src="nativo-front.png" alt="elvo· Nativo"></div><div class="v-p-info"><div><h3>Nativo</h3><p>Para el caño. Retiene plomo y metales pesados*.</p></div><span class="v-p-go">Ver · desde S/ 299</span></div></a>
+ <a class="v-p" href="https://wa.me/51929190100?text=Hola,%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo"><div class="v-p-bg"><img src="vivo-front.png" alt="elvo· Vivo"></div><div class="v-p-info"><div><h3>Vivo</h3><p>Para el caño. Aporta magnesio, sin sabor a cloro.</p></div><span class="v-p-go">Consultar</span></div></a>
+ <a class="v-p v-p--cob" href="https://wa.me/51929190100?text=Hola,%20me%20interesa%20Alivio"><span class="v-dome"></span><span class="v-p-big">16 · 22<small style="font-size:.2em;letter-spacing:0;font-weight:400"> L</small></span><div class="v-p-info"><div><h3>Alivio</h3><p>Se llena con una jarra. Sin electricidad, sin conexión al caño.</p></div><span class="v-p-go">Consultar</span></div></a>
+ <a class="v-p v-p--mar" href="https://wa.me/51929190100?text=Hola,%20me%20interesa%20Cero"><span class="v-p-big">Cero</span><div class="v-p-info"><div><h3>Cero</h3><p>Ósmosis inversa. Agua fría y caliente.</p></div><span class="v-p-go">Consultar</span></div></a>
+</div><div class="v-prog"><i></i></div></div></section>
+
+<section class="v-end">
+ <span class="v-dome"></span>
+ <span class="v-lab">06 // Hablemos</span>
+ <h2 class="v-rv" style="margin-top:22px">Escríbenos y te acompañamos.</h2>
+ <div class="v-row v-rv"><a class="v-pill v-pill--wh" href="https://wa.me/51929190100?text=Hola,%20quiero%20elegir%20mi%20purificador%20elvo%C2%B7">Hablar por WhatsApp</a><a class="v-pill v-pill--wh" href="#linea">Ver la línea</a></div>
+ <div class="v-faq">
+  <details><summary>¿Se adapta a mi caño?</summary><p>Incluye adaptador universal de jebe y derivador. Mándanos una foto por WhatsApp y te confirmamos antes de comprar.</p></details>
+  <details><summary>¿Cuándo llega?</summary><p>En Lima, el mismo día si confirmas antes de las 4 p. m. (lunes a sábado). En provincias, en 2 días.</p></details>
+  <details><summary>¿Y si no me convence?</summary><p>Tienes 30 días de prueba. Escríbenos por WhatsApp y te devolvemos tu dinero.</p></details>
+ </div>
+ <p class="v-legal">*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada. elvo· no es un dispositivo médico. Inversiones Gad SAC.</p>
+</section>
+<script>
+(function(){
+var root=document.currentScript.parentNode;
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function clamp(v){return Math.max(0,Math.min(1,v))}
+var hero=root.querySelector('.v-hero-r img');
+var story=root.querySelector('.v-story'),caps=root.querySelectorAll('.v-cap'),dots=root.querySelectorAll('.v-count i'),simg=root.querySelector('.v-stage img');
+var STEPS=[{s:1.9,x:.5,y:.9},{s:2.1,x:.66,y:.34},{s:2.4,x:.27,y:.66},{s:1,x:.5,y:.5}];
+var cur=-1;
+function setStep(i){if(i===cur)return;cur=i;
+ caps.forEach(function(c,k){c.classList.toggle('on',k===i)});
+ dots.forEach(function(d,k){d.classList.toggle('on',k<=i)});
+ var t=STEPS[i];var lim=(t.s-1)*50,tx=Math.max(-lim,Math.min(lim,-t.s*(t.x-.5)*100)),ty=Math.max(-lim,Math.min(lim,-t.s*(t.y-.5)*100));simg.style.transform='translate('+tx+'%,'+ty+'%) scale('+t.s+')';}
+var hs=root.querySelector('.v-h'),track=root.querySelector('.v-h-track'),bar=root.querySelector('.v-prog i');
+
+var dm=location.hash.match(/only=(\w+)&p=([\d.]+)/);var DBG=dm?{only:dm[1],p:+dm[2]}:null;
+if(DBG){var map={hero:'.v-hero',flow:'.v-flow',story:'.v-story',diag:'.v-diag',num:'.v-num',h:'.v-h',end:'.v-end'};Object.keys(map).forEach(function(k){if(k!==DBG.only){var e=root.querySelector(map[k]);if(e)e.style.display='none'}});root.querySelectorAll('.v-rv').forEach(function(e){e.classList.add('on')});}
+function frame(){
+ var vh=window.innerHeight;
+ if(hero&&!reduce){var r=hero.parentNode.getBoundingClientRect();if(r.bottom>0)hero.style.transform='translateY('+(-r.top*.08)+'px)';}
+ if(story){var r2=story.getBoundingClientRect(),p=DBG?DBG.p:clamp(-r2.top/(r2.height-vh));setStep(Math.min(3,Math.floor(p*4)));}
+ if(hs){var r3=hs.getBoundingClientRect(),p3=DBG?DBG.p:clamp(-r3.top/(r3.height-vh));
+  var max=track.scrollWidth-window.innerWidth;track.style.transform='translateX('+(-p3*max)+'px)';bar.style.width=(p3*100)+'%';}
+}
+var tick=false;function onS(){if(!tick){tick=true;requestAnimationFrame(function(){tick=false;frame()})}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+var m=location.hash.match(/y=(\d+)/);if(m)window.scrollTo(0,+m[1]);
+frame();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');
+ var n=e.target.querySelector('[data-to]');if(n&&!n.dataset.done){n.dataset.done=1;var to=+n.dataset.to,t0=performance.now();(function up(t){var k=clamp((t-t0)/1400),v=Math.round(to*(1-Math.pow(1-k,3)));n.firstChild.nodeValue=v;if(k<1)requestAnimationFrame(up)})(t0)}
+ io.unobserve(e.target)}})},{threshold:.25});
+root.querySelectorAll('.v-rv').forEach(function(el){io.observe(el)});
+})();
+</script>
+</div></body></html>
