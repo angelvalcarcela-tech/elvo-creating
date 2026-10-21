@@ -1,3 +1,2 @@
-fal-client
-pillow
 requests
+pillow

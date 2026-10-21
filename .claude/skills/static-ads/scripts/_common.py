@@ -1,7 +1,13 @@
-"""Utilidades compartidas: tamaños, .env, subida a fal, descarga y export."""
-import os
+"""Utilidades compartidas: tamaños, llamadas a fal (REST directo), descarga y export.
+
+La autenticación la inyecta el entorno (Network secrets para *.fal.run y *.fal.ai,
+encabezado Authorization: Key ...). Este código no lee ni envía ninguna clave.
+"""
+import base64
+import mimetypes
 import re
 import sys
+import time
 from pathlib import Path
 
 import requests
@@ -38,17 +44,8 @@ def project_root() -> Path:
 
 
 def load_env():
-    """Carga FAL_KEY desde .env en la raíz del proyecto si no está ya en el entorno."""
-    env = project_root() / ".env"
-    if env.exists():
-        for line in env.read_text().splitlines():
-            line = line.strip()
-            if not line or line.startswith("#") or "=" not in line:
-                continue
-            k, v = line.split("=", 1)
-            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
-    if not os.environ.get("FAL_KEY"):
-        sys.exit("Falta FAL_KEY. Agrégala a .env en la raíz del proyecto (FAL_KEY=...).")
+    """Sin clave local: la inyecta el proxy del entorno. Se mantiene por compatibilidad."""
+    return None
 
 
 def check_ratio(ratio: str):
@@ -56,18 +53,23 @@ def check_ratio(ratio: str):
         sys.exit(f"Aspect ratio no soportado: {ratio}. Usa uno de: {', '.join(GEN_SIZES)}")
 
 
+QUEUE = "https://queue.fal.run"
+POLL_SECONDS = 3
+TIMEOUT_SECONDS = 600
+
+
 def upload(path: str) -> str:
-    import fal_client
+    """Devuelve la imagen como data URI (fal la acepta en image_urls)."""
     full = Path(path)
     if not full.is_absolute():
         full = project_root() / path
     if not full.exists():
         sys.exit(f"No existe la imagen: {full}")
-    return fal_client.upload_file(str(full))
+    mime = mimetypes.guess_type(full.name)[0] or "image/png"
+    return f"data:{mime};base64," + base64.b64encode(full.read_bytes()).decode()
 
 
 def run_fal(prompt: str, image_urls: list, ratio: str, quality: str = "high") -> str:
-    import fal_client
     w, h = GEN_SIZES[ratio]
     args = {
         "prompt": prompt,
@@ -81,8 +83,23 @@ def run_fal(prompt: str, image_urls: list, ratio: str, quality: str = "high") ->
         args["image_urls"] = image_urls[:16]
         endpoint = EDIT_ENDPOINT
     print(f"→ {endpoint} · {w}x{h} · quality={quality} · {len(image_urls)} imagen(es) de referencia")
-    result = fal_client.subscribe(endpoint, arguments=args, with_logs=False)
-    return result["images"][0]["url"]
+    r = requests.post(f"{QUEUE}/{endpoint}", json=args, timeout=120)
+    if r.status_code >= 400:
+        sys.exit(f"fal respondió {r.status_code}: {r.text[:300]}")
+    job = r.json()
+    status_url, response_url = job["status_url"], job["response_url"]
+    t0 = time.time()
+    while True:
+        st = requests.get(status_url, timeout=60).json()
+        if st.get("status") == "COMPLETED":
+            break
+        if st.get("status") in ("FAILED", "ERROR") or time.time() - t0 > TIMEOUT_SECONDS:
+            sys.exit(f"fal no completó la solicitud: {st}")
+        time.sleep(POLL_SECONDS)
+    res = requests.get(response_url, timeout=120)
+    if res.status_code >= 400:
+        sys.exit(f"fal respondió {res.status_code} al leer el resultado: {res.text[:300]}")
+    return res.json()["images"][0]["url"]
 
 
 def download(url: str, dest: Path):
