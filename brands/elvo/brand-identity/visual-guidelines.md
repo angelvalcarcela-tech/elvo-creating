@@ -34,7 +34,7 @@ elvo· no vende aparatos: vende la primera decisión del día. El agua es un ing
 Un solo sujeto, una sola idea, una sola prop. Mucho aire (mínimo una "columna" de margen). Filetes finos de 1px en vez de cajas. Producto a la vista, sobre superficie de piedra o mesada, nunca escondido.
 
 ## Fotografía / luz
-Macro con profundidad de campo corta; luz lateral suave de bajo contraste, fría-neutra (macro), pizarra + reborde glaciar (formulación), cálida mineral/arena (piel y wellness). El agua lleva un leve tinte glaciar, nunca azul saturado. Props: piedra pálida, cerámica, vaso de vidrio, fragmento mineral oscuro (Nativo).
+Macro con profundidad de campo corta; luz lateral suave de bajo contraste, fría-neutra (macro), pizarra + reborde glaciar (formulación), cálida mineral/arena (piel y wellness). El agua se ve natural: incolora, fresca y apetecible para beber, sin tintes. El tinte glaciar queda solo para piezas tecnológicas puntuales (la gota macro, un filete de luz), nunca en agua que se bebe. Props: piedra pálida, cerámica, vaso de vidrio, fragmento mineral oscuro (Nativo).
 
 ## Voz
 - Precisa, literaria, sensorial. Observación en lugar de alarma.

@@ -95,10 +95,10 @@ Precisa, literaria, sensorial. Sin exclamaciones, sin emoji. Qué retira y qué 
 ## 4. Bloques de estilo (uno por registro)
 
 **PIEDRA (producto y gestos):**
-> Warm alabaster (#EAE7E0) and pale limestone (#D8D2C7) background, soft low-contrast cool-neutral daylight from the side, shallow depth of field, a single tactile prop (pale mineral stone, ceramic or a clear glass), subtle glacier-teal (#82C3C4) tint only in the water, generous negative space, no gradients, no hard shadows, muted stone tones, editorial apothecary aesthetic. Leave the top and bottom 10% free of text. Reproduce any attached product photo exactly; do not alter the product or its logo.
+> Warm alabaster (#EAE7E0) and pale limestone (#D8D2C7) background, soft low-contrast cool-neutral daylight from the side, shallow depth of field, a single tactile prop (pale mineral stone, ceramic or a clear glass), generous negative space, no gradients, no hard shadows, muted stone tones, editorial apothecary aesthetic. Leave the top and bottom 10% free of text. Reproduce any attached product photo exactly; do not alter the product or its logo.
 
 **FORMULACIÓN (pizarra):**
-> Overhead flat-lay on deep slate charcoal (#2B2E2D), cool studio lighting with a thin glacier-teal (#82C3C4) rim-light, precise and considered arrangement, luminous aqua highlights only on glass and water, minimal, no gradients, no hard shadows. Leave the top and bottom 10% free of text. Reproduce any attached product photo exactly.
+> Overhead flat-lay on deep slate charcoal (#2B2E2D), cool neutral studio lighting with a thin soft white rim-light, precise and considered arrangement, natural colorless drinkable-looking water (teal rim-light only on technological pieces such as the macro drop), minimal, no gradients, no hard shadows. Leave the top and bottom 10% free of text. Reproduce any attached product photo exactly.
 
 **ARENA (ritual, piel):**
 > Warm mineral-toned interior in soft daylight, gentle warm sand light (#D7C4A6), considered architectural composition, muted stone-and-sand palette, one subject in frame, low-contrast, calm spa aesthetic, no people's faces, no gradients. Leave the top and bottom 10% free of text.
