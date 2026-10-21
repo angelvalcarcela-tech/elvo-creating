@@ -19,7 +19,7 @@ INK = {"light": ("#2B2E2D", "#6B665D"), "dark": ("#EAE7E0", "#9A948A")}  # (titu
 
 SUB = {"p05": "Si no encaja en tu caño, te devolvemos tu dinero."}
 LOGO = {"p02"}  # piezas con logo elvo· abajo a la izquierda
-SIZE = {"p18": 52, "p14": 48}  # tamaño del titular si el default roza el producto
+SIZE = {"p18": 52}  # tamaño del titular si el default roza el producto
 
 # id: (titular, producto de la etiqueta o None, tono, posición)
 TEXTS = {
