@@ -49,6 +49,9 @@ TEXTS = {
     "pB3": ("Materia mineral, luz serena.", None, "dark", "top"),
     "pB4": ("Lo que nos guía.", None, "dark", "top"),
     "pB6": ("Consulta, no venta.", None, "light", "top"),
+    "q14": ("Agua con magnesio,\ndirecto de tu caño.", "VIVO", "light", "top"),
+    "q19": ("Agua de reserva en casa.", "ALIVIO", "light", "top"),
+    "q23": ("Fría o caliente, un solo gesto.", "CERO", "dark", "top"),
     "p24": ("Fría. Caliente.", None, "dark", "top"),
 }
 

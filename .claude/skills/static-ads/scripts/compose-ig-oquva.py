@@ -24,6 +24,9 @@ OQ = {
     "p16": ("03", "FORMULACIÓN", "AGUA → MINERAL → VASO", "elvo· Vivo aporta magnesio al vaso.", ["APORTA MAGNESIO"]),
     "p05": ("04", "PRUEBA", "PRUEBA → DECISIÓN", "Si no encaja en tu caño, te devolvemos tu dinero.", []),
     "p23": ("05", "ELVO· CERO", "FRÍA → CALIENTE", "", []),
+    "q14": ("01", "ELVO· VIVO", "AGUA → VASO", "Aporta magnesio. Tendencia alcalina.", ["APORTA MAGNESIO", "UN VASO EN 5 SEGUNDOS"]),
+    "q19": ("02", "ELVO· ALIVIO", "AGUA → BIDÓN → VASO", "Se llena con una jarra. Sin electricidad, sin conexión al caño.", ["SIN ELECTRICIDAD", "SIN CONEXIÓN AL CAÑO"]),
+    "q23": ("03", "ELVO· CERO", "FRÍA → CALIENTE", "", []),
     "p01": ("06", "LO QUE EL AGUA TOCA", "AGUA → PIEL", "", []),
 }
 

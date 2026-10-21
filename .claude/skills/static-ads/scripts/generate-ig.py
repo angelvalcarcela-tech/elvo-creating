@@ -16,6 +16,9 @@ STYLE = {
     "PIEDRA": "Warm alabaster (#EAE7E0) and pale limestone (#D8D2C7) background, soft low-contrast cool-neutral daylight from the side, shallow depth of field, a single tactile prop (pale mineral stone, ceramic or a clear glass), generous negative space, no gradients, no hard shadows, muted stone tones, editorial apothecary aesthetic.",
     "FORMULACION": "Overhead flat-lay on deep slate charcoal (#2B2E2D), cool neutral studio lighting with a thin soft white rim-light, precise and considered arrangement, minimal, no gradients, no hard shadows.",
     "TECH": "Overhead flat-lay on deep slate charcoal (#2B2E2D), cool studio lighting with a thin glacier-teal (#82C3C4) rim-light, luminous aqua highlights, minimal, technological and precise, no gradients, no hard shadows.",
+    "OQ_A": "Bright modern kitchen with a white quartz countertop with subtle veining and a brushed-steel faucet, soft cool daylight from a large window, clean architectural minimal interior, neutral cool white and light grey tones with a hint of steel blue, matte white objects, shallow depth of field, premium product photography.",
+    "OQ_B": "Seamless studio backdrop in flat steel blue (#A0BBD0), soft diffused cool light, a gentle soft contact shadow on the floor, minimal, no props except where stated, premium product photography.",
+    "OQ_C": "Deep blue-black studio (#010A15), low-key lighting, a thin electric-blue (#3355FF) rim-light tracing the edges of the product, crisp highlights, clean and technological, no clutter.",
     "ARENA": "Warm mineral-toned interior in soft daylight, gentle warm sand light (#D7C4A6), considered architectural composition, muted stone-and-sand palette, one subject in frame, low-contrast, calm spa aesthetic, no people's faces, no gradients.",
 }
 WATER = " Any water in the image must look like fresh, natural, drinkable water: colorless, crystal clear, clean and appealing to drink, with no blue, teal or green tint and no colored light cast on it."
@@ -61,6 +64,12 @@ PIECES = {
     "pB3": ("FORMULACION", [], "4:5 vertical. Overhead flat-lay: pale mineral stones of different sizes and one clear glass of water."),
     "pB4": ("TECH", [], "4:5 vertical. Overhead. One pale stone alone on the slate, a thin glacier highlight on its edge."),
     "pB6": ("PIEDRA", [], "4:5 vertical. Two hands holding a clear glass beside a closed notebook and a pen on a pale stone table, soft light, no phone, no faces."),
+    "q14": ("OQ_A", [f"{BRAND}/product-images/vivo-front.png"],
+            "4:5 vertical. The attached purifier on the countertop beside the steel faucet, a clear glass of water filled at its spout, low in the frame: purifier and props in the lower 60%, upper 40% plain wall and window light." + REF),
+    "q19": ("OQ_B", [f"{BRAND}/product-images/alivio-22-front.png"],
+            "4:5 vertical. The attached jug-style purifier centered on the steel-blue seamless floor, a clear glass jug of water beside it, front three-quarter view, product in the lower 65%, upper area empty." + REF),
+    "q23": ("OQ_C", [f"{BRAND}/product-images/cero-front.png"],
+            "4:5 vertical. The attached countertop dispenser centered on a dark glossy surface, a thin stream of colorless water falling from its spout into a clear glass, caught mid-air; keep the screen and every mark exactly as in the photo." + REF),
     "p01": ("ARENA", [],
             "4:5 vertical. A warm bathroom corner with a chrome shower fixture and a folded linen towel, soft sand light."),
 }
