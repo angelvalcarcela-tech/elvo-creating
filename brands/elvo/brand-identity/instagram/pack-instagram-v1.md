@@ -226,10 +226,9 @@ Formato por defecto: 4:5 vertical. Orden de publicación al final.
 
 ---
 
-## C. RESERVA (hasta tener fotos y claims verificados)
+## C. CERO Y BIDONES (ya con fotos reales; ver sección F)
 
-- **Cero (osmosis, agua fría y caliente):** 3 piezas (lanzamiento, cómo funciona, instalación). Datos del proveedor: filtración de 5 etapas (osmosis inversa y carbón), esterilización UV, agua fría y caliente, auto-limpieza. Necesitas la foto real del producto y confirmar los claims. No usar "certificado" sin documento.
-- **Bidones de 16 y 22 litros:** 2 piezas. Necesitas fotos reales y la lista de claims verificados.
+- Las piezas 25 a 30 están en la sección F. Cada una lleva la marca **[CONFIRMAR]** donde el dato viene del proveedor y debe verificarse con el equipo real o la caja antes de publicar.
 - **Ritual (ducha):** sin stock hoy.
 
 ## D. ORDEN DE PUBLICACIÓN
@@ -254,3 +253,52 @@ Cada fila de la cuadrícula de 3 debería mezclar producto, mundo elvo y educati
 - Detrás de escena del envío.
 - Recordatorio del cambio de núcleo.
 - Sondeo: "¿Cuántos bidones compras al mes?".
+
+
+---
+
+## F. CERO Y BIDONES (piezas 25 a 30)
+
+Adjuntar siempre la foto real. Datos usados: solo lo que dice el proforma del proveedor del Cero (agua fría y caliente, filtración de 5 etapas, esterilización UV, autolimpieza, 7 niveles de temperatura del agua caliente) y la capacidad de los bidones. Todo lo marcado **[CONFIRMAR]** debe verificarse con la caja, el manual o el equipo. No usar "certificado", "norma peruana", "osmosis inversa" ni cifras de temperatura sin confirmar.
+
+### 25. Cero, lanzamiento
+- **Adjuntar:** foto real del Cero, de frente.
+- **Prompt:** 4:5 vertical aspect ratio. [BLOQUE DE ESTILO]. The attached elvo· Cero on a pale stone kitchen counter near a window, a clear glass beside it. Text: "Agua fría y caliente, en tu cocina." as headline, "elvo· Cero" as a small uppercase label.
+- **Descripción:**
+  > Un solo equipo para agua fría y agua caliente.
+  > elvo· Cero filtra en 5 etapas y cuenta con esterilización UV. [CONFIRMAR]
+  > Escríbenos por WhatsApp. Link en bio.
+
+### 26. Cero, lo que lleva (carrusel, 5 láminas)
+- **Portada:** [Variante oscura] Text: "Lo que lleva Cero." as headline.
+- **Láminas:**
+  - 2: "Agua fría." (agregar temperatura solo si se confirma)
+  - 3: "Agua caliente." / "Con temperaturas a elección." [CONFIRMAR]
+  - 4: "Filtración de 5 etapas." [CONFIRMAR]
+  - 5: "Esterilización UV y autolimpieza." [CONFIRMAR]
+- **Descripción:** "Cuatro funciones, un solo lugar en tu cocina. Escríbenos por WhatsApp. Link en bio."
+
+### 27. Cero en la casa
+- **Adjuntar:** foto real del Cero en un ambiente (o de frente).
+- **Prompt:** 4:5 vertical aspect ratio. [BLOQUE DE ESTILO]. The attached Cero in a bright, tidy kitchen, soft morning light, one glass on the counter, lots of empty space. Text: "Una sola fuente." as headline.
+- **Descripción:** "Agua para el té, el café y el vaso del día."
+
+### 28. Bidones de 16 y 22 litros, lanzamiento
+- **Adjuntar:** foto real de los bidones.
+- **Prompt:** 4:5 vertical aspect ratio. [BLOQUE DE ESTILO]. The attached elvo· water purifier jugs, 16 L and 22 L, side by side on a pale stone surface, soft window light. Text: "Dos capacidades: 16 y 22 litros." as headline, "Purificador de bidón elvo·" as a small uppercase label.
+- **Descripción:**
+  > Dos tamaños para elegir el que mejor se ajuste a tu casa: 16 y 22 litros.
+  > Escríbenos por WhatsApp. Link en bio.
+- **Nota:** agregar beneficios (por ejemplo mineralizar o alcalinizar) solo si figuran en la caja o en la ficha del fabricante. [CONFIRMAR]
+
+### 29. Bidón, cómo elegir tu tamaño (carrusel, 3 láminas)
+- **Láminas:** 1: "¿16 o 22 litros?" · 2: "16 litros: más compacto." · 3: "22 litros: más capacidad." + "Escríbenos y te ayudamos a elegir."
+- **Descripción:** "Cuéntanos cuántas personas son en casa y te ayudamos a escoger."
+
+### 30. Bidón en la mesa (mundo elvo)
+- **Adjuntar:** foto real del bidón.
+- **Prompt:** 4:5 vertical aspect ratio. [BLOQUE DE ESTILO]. The attached jug purifier on a wooden side table in a calm living room, a clear glass in the foreground, soft light. Text: "Agua a la mano." as headline.
+- **Descripción:** "El agua, siempre lista en casa."
+
+### Orden sugerido
+Semanas 8 y 9 (o antes, si Cero y bidones ya están a la venta): 25, 28, 26 · 27, 29, 30.
