@@ -1,7 +1,3 @@
-{%- assign p = all_products['elvonativo'] -%}
-{%- assign rep = all_products['repuesto-elvo-nativo'] -%}
-{%- assign meses = '18,36,72' | split: ',' -%}
-{%- assign nucleos = '1,2,4' | split: ',' -%}
 {%- assign chips = section.settings.chips | split: ',' -%}
 <style>
 .et{max-width:1100px;margin:0 auto;padding:72px 20px;font-family:'Inter',Arial,sans-serif;color:#050607;letter-spacing:0}
@@ -16,10 +12,9 @@
 .et__pi span{display:block;font-size:15px;color:#5B6470;line-height:1.5}
 .et__pl{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .et__plan{position:relative;border:1px solid #DCE6EE;border-radius:24px;background:#fff;padding:26px 24px}
-.et__plan.is{border-color:#3355FF;background:#F2F5FF}
 .et__tag{position:absolute;top:-11px;left:24px;background:#3355FF;color:#fff;font-size:11.5px;font-weight:500;border-radius:999px;padding:3px 11px}
-.et__plan b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1rem;color:#5B6470}
-.et__plan .pr{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:2rem;line-height:1.1;margin:6px 0 10px;letter-spacing:-.02em!important}
+.et__plan b{display:block;font-size:12px;font-weight:500;letter-spacing:.12em!important;text-transform:uppercase;color:#3355FF}
+.et__plan .pr{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:1.6rem;line-height:1.1;margin:6px 0 10px;letter-spacing:-.02em!important}
 .et__plan small{display:block;font-size:14.5px;color:#2B3238;line-height:1.5}
 .et__plan small.r{color:#6B7480}
 .et__note{font-size:14px;color:#6B7480;margin:16px 0 0}
@@ -43,221 +38,23 @@
       {%- if section.settings[kt] != blank -%}<li><b>{{ section.settings[kt] }}</b><span>{{ section.settings[kx] }}</span></li>{%- endif -%}
     {%- endfor -%}
   </ul>
-  <p class="et__lab">{{ section.settings.titulo_planes }}</p>
+  <p class="et__lab">{{ section.settings.titulo_cert }}</p>
   <div class="et__pl">
-    {%- for v in p.variants -%}
-      {%- assign i = forloop.index0 -%}
-      {%- assign m = meses[i] | plus: 0 -%}
-      {%- assign n = nucleos[i] | plus: 0 -%}
-      <div class="et__plan{% if i == 1 %} is{% endif %}">
-        {%- if i == 1 -%}<span class="et__tag">Más elegido</span>{%- endif -%}
-        <b>{{ v.title }}</b><span class="pr">S/ {{ v.price | divided_by: 100 }}</span>
-        <small>{{ n }} {% if n == 1 %}núcleo incluido{% else %}núcleos incluidos{% endif %}</small>
-        <small class="r">S/ {{ v.price | divided_by: 100.0 | divided_by: m | round: 2 }} al mes</small>
+    {%- for i in (1..3) -%}
+      {%- assign kn = 'c' | append: i | append: '_n' -%}
+      {%- assign kk = 'c' | append: i | append: '_k' -%}
+      {%- assign kx = 'c' | append: i | append: '_x' -%}
+      {%- if section.settings[kn] != blank -%}
+      <div class="et__plan">
+        <b>{{ section.settings[kk] }}</b><span class="pr">{{ section.settings[kn] }}</span>
+        <small>{{ section.settings[kx] }}</small>
       </div>
+      {%- endif -%}
     {%- endfor -%}
   </div>
-  {%- if rep.price > 0 -%}<p class="et__note">El núcleo suelto cuesta S/ {{ rep.price | divided_by: 100 }} y dura 18 meses. En los planes largos te sale mucho menos.</p>{%- endif -%}
-  {%- assign hay_cert = false -%}
-  {%- for b in section.blocks -%}{%- if b.type == 'cert' -%}{%- assign hay_cert = true -%}{%- endif -%}{%- endfor -%}
-  {%- if hay_cert -%}
-  <div class="et__cert"><strong>Nuestro fabricante</strong>
-    {%- for b in section.blocks -%}{%- if b.type == 'cert' -%}<span {{ b.shopify_attributes }}>{{ b.settings.nombre }}</span>{%- endif -%}{%- endfor -%}
-  </div>
-  {%- endif -%}
   <p class="et__chips">{%- for c in chips -%}{{ c | strip }}{% unless forloop.last %} · {% endunless %}{%- endfor -%}</p>
   <p class="et__fine">{{ section.settings.legal }}</p>
 </section>
 {% schema %}
-{
- "name": "elvo· Tecnología y precio",
- "settings": [
-  {
-   "type": "text",
-   "id": "etiqueta",
-   "label": "Etiqueta",
-   "default": "Tecnología"
-  },
-  {
-   "type": "text",
-   "id": "titulo",
-   "label": "Título",
-   "default": "Por qué vale lo que cuesta"
-  },
-  {
-   "type": "textarea",
-   "id": "bajada_marca",
-   "label": "Bajada",
-   "default": "Diseño, un núcleo por dentro y una marca que te acompaña."
-  },
-  {
-   "type": "text",
-   "id": "titulo_pilares",
-   "label": "(Sin uso) Título de la caja",
-   "default": "Más que un filtro"
-  },
-  {
-   "type": "text",
-   "id": "p1_t",
-   "label": "Punto 1: título",
-   "default": "Diseño que se queda a la vista"
-  },
-  {
-   "type": "text",
-   "id": "p1_x",
-   "label": "Punto 1: texto",
-   "default": "Pensado para vivir sobre tu mesada."
-  },
-  {
-   "type": "text",
-   "id": "p2_t",
-   "label": "Punto 2: título",
-   "default": "Filtración en un solo núcleo"
-  },
-  {
-   "type": "text",
-   "id": "p2_x",
-   "label": "Punto 2: texto",
-   "default": "Toda la filtración, dentro de un núcleo fácil de cambiar."
-  },
-  {
-   "type": "text",
-   "id": "p3_t",
-   "label": "Punto 3: título",
-   "default": "Te avisamos cuándo cambiarlo"
-  },
-  {
-   "type": "text",
-   "id": "p3_x",
-   "label": "Punto 3: texto",
-   "default": "Un aviso por WhatsApp cuando toca renovarlo."
-  },
-  {
-   "type": "text",
-   "id": "p4_t",
-   "label": "Punto 4: título",
-   "default": "Atención cercana"
-  },
-  {
-   "type": "text",
-   "id": "p4_x",
-   "label": "Punto 4: texto",
-   "default": "Te acompañamos por WhatsApp antes y después de comprar."
-  },
-  {
-   "type": "text",
-   "id": "p5_t",
-   "label": "Punto 5: título"
-  },
-  {
-   "type": "text",
-   "id": "p5_x",
-   "label": "Punto 5: texto"
-  },
-  {
-   "type": "text",
-   "id": "titulo_planes",
-   "label": "Título de los planes",
-   "default": "Elige tu plan"
-  },
-  {
-   "type": "text",
-   "id": "chips",
-   "label": "Garantías (separadas por coma)",
-   "default": "Garantía de 1 año, 30 días de prueba, Envío gratis a todo el Perú"
-  },
-  {
-   "type": "textarea",
-   "id": "legal",
-   "label": "Nota legal",
-   "default": "*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo."
-  }
- ],
- "blocks": [
-  {
-   "type": "etapa",
-   "name": "Etapa",
-   "settings": [
-    {
-     "type": "text",
-     "id": "nombre",
-     "label": "Nombre",
-     "default": "Etapa"
-    },
-    {
-     "type": "text",
-     "id": "texto",
-     "label": "Texto",
-     "default": "Descripción"
-    }
-   ]
-  },
-  {
-   "type": "cert",
-   "name": "Certificación",
-   "settings": [
-    {
-     "type": "text",
-     "id": "nombre",
-     "label": "Nombre (ej. ISO 9001, WQA)"
-    },
-    {
-     "type": "text",
-     "id": "texto",
-     "label": "Qué certifica y para qué producto"
-    }
-   ]
-  }
- ],
- "max_blocks": 12,
- "presets": [
-  {
-   "name": "elvo· Tecnología y precio",
-   "blocks": [
-    {
-     "type": "etapa",
-     "settings": {
-      "nombre": "Carbón activado",
-      "texto": "Reduce cloro, olores y sabores."
-     }
-    },
-    {
-     "type": "etapa",
-     "settings": {
-      "nombre": "KDF-F",
-      "texto": "Retiene plomo y metales pesados*."
-     }
-    },
-    {
-     "type": "etapa",
-     "settings": {
-      "nombre": "Nanotecnología",
-      "texto": "Etapa adicional del núcleo PureCore."
-     }
-    },
-    {
-     "type": "etapa",
-     "settings": {
-      "nombre": "Aluminosilicato sintético",
-      "texto": "Cuida la calidad del agua."
-     }
-    },
-    {
-     "type": "etapa",
-     "settings": {
-      "nombre": "Plata coloidal",
-      "texto": "Protege el núcleo por dentro."
-     }
-    },
-    {
-     "type": "etapa",
-     "settings": {
-      "nombre": "Plata iónica",
-      "texto": "Protege el núcleo por dentro."
-     }
-    }
-   ]
-  }
- ]
-}
+{"name":"elvo· Tecnología y precio","settings":[{"type":"text","id":"etiqueta","label":"Etiqueta","default":"Tecnología"},{"type":"text","id":"titulo","label":"Título","default":"Por qué vale lo que cuesta"},{"type":"textarea","id":"bajada_marca","label":"Bajada","default":"Diseño, un núcleo por dentro y una marca que te acompaña."},{"type":"text","id":"titulo_pilares","label":"(Sin uso) Título de la caja","default":"Más que un filtro"},{"type":"text","id":"p1_t","label":"Punto 1: título","default":"Diseño que se queda a la vista"},{"type":"text","id":"p1_x","label":"Punto 1: texto","default":"Pensado para vivir sobre tu mesada."},{"type":"text","id":"p2_t","label":"Punto 2: título","default":"Filtración en un solo núcleo"},{"type":"text","id":"p2_x","label":"Punto 2: texto","default":"Toda la filtración, dentro de un núcleo fácil de cambiar."},{"type":"text","id":"p3_t","label":"Punto 3: título","default":"Te avisamos cuándo cambiarlo"},{"type":"text","id":"p3_x","label":"Punto 3: texto","default":"Un aviso por WhatsApp cuando toca renovarlo."},{"type":"text","id":"p4_t","label":"Punto 4: título","default":"Atención cercana"},{"type":"text","id":"p4_x","label":"Punto 4: texto","default":"Te acompañamos por WhatsApp antes y después de comprar."},{"type":"text","id":"p5_t","label":"Punto 5: título"},{"type":"text","id":"p5_x","label":"Punto 5: texto"},{"type":"text","id":"titulo_cert","label":"Título de las certificaciones","default":"Nuestras certificaciones"},{"type":"text","id":"c1_k","label":"Cert 1: etiqueta","default":"Membresía"},{"type":"text","id":"c1_n","label":"Cert 1: nombre","default":"Water Quality Association"},{"type":"textarea","id":"c1_x","label":"Cert 1: qué significa","default":"Asociación internacional de la industria del agua. Nuestro fabricante es miembro desde 2025 y se compromete con su código de ética."},{"type":"text","id":"c2_k","label":"Cert 2: etiqueta","default":"Calidad"},{"type":"text","id":"c2_n","label":"Cert 2: nombre","default":"ISO 9001:2015"},{"type":"textarea","id":"c2_x","label":"Cert 2: qué significa","default":"Norma internacional de gestión de calidad. Certifica que la fábrica controla y mejora de forma documentada cómo produce."},{"type":"text","id":"c3_k","label":"Cert 3: etiqueta","default":"Medio ambiente"},{"type":"text","id":"c3_n","label":"Cert 3: nombre","default":"ISO 14001:2015"},{"type":"textarea","id":"c3_x","label":"Cert 3: qué significa","default":"Norma internacional de gestión ambiental. Certifica que la fábrica gestiona y reduce su impacto sobre el medio ambiente."},{"type":"text","id":"chips","label":"Garantías (separadas por coma)","default":"Garantía de 1 año, 30 días de prueba, Envío gratis a todo el Perú"},{"type":"textarea","id":"legal","label":"Nota legal","default":"*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo."}],"blocks":[{"type":"etapa","name":"Etapa","settings":[{"type":"text","id":"nombre","label":"Nombre","default":"Etapa"},{"type":"text","id":"texto","label":"Texto","default":"Descripción"}]},{"type":"cert","name":"Certificación","settings":[{"type":"text","id":"nombre","label":"Nombre (ej. ISO 9001, WQA)"},{"type":"text","id":"texto","label":"Qué certifica y para qué producto"}]}],"max_blocks":12,"presets":[{"name":"elvo· Tecnología y precio","blocks":[{"type":"etapa","settings":{"nombre":"Carbón activado","texto":"Reduce cloro, olores y sabores."}},{"type":"etapa","settings":{"nombre":"KDF-F","texto":"Retiene plomo y metales pesados*."}},{"type":"etapa","settings":{"nombre":"Nanotecnología","texto":"Etapa adicional del núcleo PureCore."}},{"type":"etapa","settings":{"nombre":"Aluminosilicato sintético","texto":"Cuida la calidad del agua."}},{"type":"etapa","settings":{"nombre":"Plata coloidal","texto":"Protege el núcleo por dentro."}},{"type":"etapa","settings":{"nombre":"Plata iónica","texto":"Protege el núcleo por dentro."}}]}]}
 {% endschema %}
