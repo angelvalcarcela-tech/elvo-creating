@@ -1,0 +1,44 @@
+{%- assign fallback = 'elvo-nativo-front.png' | file_url -%}
+{%- assign foto = section.settings.imagen -%}
+{%- if foto != blank or section.settings.mostrar_sin_foto or request.design_mode -%}
+<style>
+.hl{max-width:1440px;margin:0 auto;padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px;font-family:'Inter',Arial,sans-serif}
+.hl__l{background:#A0BBD0;border-radius:24px;padding:clamp(28px,5vw,64px);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:620px}
+.hl__k{font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.hl h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:clamp(2.5rem,5.6vw,5rem);line-height:1;letter-spacing:-.02em;text-transform:uppercase;color:#fff;margin:0}
+.hl h2 em{display:block;font-style:normal;padding-left:clamp(0px,9%,90px)}
+.hl__s{font-size:clamp(1rem,1.5vw,1.25rem);font-weight:300;line-height:1.4;max-width:34ch;margin:0 0 0 clamp(0px,18%,170px)}
+.hl__a{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;margin-left:clamp(0px,18%,170px);color:#fff;border:1px solid #fff;border-radius:999px;padding:14px 26px;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s,color .2s}
+.hl__a:hover{background:#fff;color:#3355FF}
+.hl__f{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:300;opacity:.85}
+.hl__r{position:relative;border-radius:24px;overflow:hidden;background:#DCE6EE;min-height:620px}
+.hl__r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hl__t{position:absolute;left:18px;bottom:18px;background:#fff;border-radius:999px;padding:9px 12px 9px 18px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+.hl__t i{width:26px;height:26px;border-radius:50%;background:#3355FF;color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-size:14px}
+@media(max-width:800px){.hl{grid-template-columns:1fr;padding:10px}.hl__l{min-height:0;padding:30px 22px}.hl__r{min-height:0;aspect-ratio:4/5}.hl__s,.hl__a{margin-left:0}.hl h2 em{padding-left:0}}
+</style>
+<section class="hl">
+  <div class="hl__l">
+    <span class="hl__k">{{ section.settings.etiqueta }}</span>
+    <div><h2>{{ section.settings.linea1 }}<em>{{ section.settings.linea2 }}</em></h2></div>
+    <p class="hl__s">{{ section.settings.sub }}</p>
+    <a class="hl__a" href="{{ section.settings.url | default: '/products/elvonativo' }}">{{ section.settings.cta }} <span aria-hidden="true">↗</span></a>
+    <span class="hl__f">{{ section.settings.pie }}</span>
+  </div>
+  <div class="hl__r">{%- if foto != blank -%}{{ foto | image_url: width: 1800 | image_tag: loading: 'lazy', alt: section.settings.tag }}{%- else -%}<img src="{{ fallback }}" alt="" loading="lazy">{%- endif -%}{%- if section.settings.tag != blank -%}<span class="hl__t">{{ section.settings.tag }}<i>·</i></span>{%- endif -%}</div>
+</section>
+{%- endif -%}
+{% schema %}
+{"name":"elvo· En la mesada","settings":[
+{"type":"image_picker","id":"imagen","label":"Foto del producto junto al lavadero"},
+{"type":"checkbox","id":"mostrar_sin_foto","label":"Mostrar con la foto de producto mientras no subas la tuya","default":true},
+{"type":"text","id":"etiqueta","label":"Etiqueta","default":"Purificador para el caño"},
+{"type":"text","id":"linea1","label":"Titular, línea 1","default":"Un objeto"},
+{"type":"text","id":"linea2","label":"Titular, línea 2","default":"para tu mesada."},
+{"type":"textarea","id":"sub","label":"Texto","default":"Se instala en el caño en 5 minutos. Sin electricidad, sin obras y sin gasfitero."},
+{"type":"text","id":"cta","label":"Botón","default":"Conoce Nativo"},
+{"type":"url","id":"url","label":"Enlace del botón (vacío = ficha de Nativo)"},
+{"type":"text","id":"pie","label":"Pie","default":"Para el caño de tu cocina"},
+{"type":"text","id":"tag","label":"Etiqueta sobre la foto","default":"elvo· Nativo"}],
+"presets":[{"name":"elvo· En la mesada"}]}
+{% endschema %}

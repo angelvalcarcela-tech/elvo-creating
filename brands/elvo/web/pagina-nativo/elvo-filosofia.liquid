@@ -1,0 +1,57 @@
+{%- assign fallback = 'elvo-nativo-front.png' | file_url -%}
+{%- assign foto = section.settings.imagen -%}
+{%- assign foto2 = section.settings.imagen2 -%}
+{%- assign parrafos = section.settings.texto | newline_to_br | split: '<br />' -%}
+<style>
+.fi{max-width:1440px;margin:0 auto;font-family:'Inter',Arial,sans-serif;color:#050607}
+.fi__h{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;min-height:620px;overflow:hidden;background:#fff}
+.fi__hl{position:relative;z-index:2;padding:clamp(28px,6vw,96px);display:flex;flex-direction:column;justify-content:center;gap:22px}
+.fi__hl h1{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.02;letter-spacing:-.02em;text-transform:uppercase;margin:0}
+.fi__sub{font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.45;color:#2B3238;max-width:30ch;margin:0}
+.fi__row{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.fi__pill{background:#3355FF;color:#fff;border-radius:999px;padding:14px 26px;font-weight:600;font-size:15px;text-decoration:none}
+.fi__pill:hover{background:#050607}
+.fi__ln{color:#3355FF;font-size:14px;text-decoration:none}
+.fi__pie{font-size:12.5px;color:#4A5258;margin-top:18px}
+.fi__hr{position:absolute;right:0;top:0;bottom:0;width:62%;z-index:1;-webkit-mask-image:linear-gradient(90deg,transparent,#000 38%);mask-image:linear-gradient(90deg,transparent,#000 38%)}
+.fi__hr img{width:100%;height:100%;object-fit:cover}
+.fi__b{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff}
+.fi__bi{min-height:480px;background:radial-gradient(120% 90% at 30% 20%,#BED0DF 0%,#3355FF 55%,#010A21 100%);position:relative}
+.fi__bi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fi__bt{padding:clamp(28px,6vw,96px);display:flex;flex-direction:column;justify-content:center;gap:16px}
+.fi__bt h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.9rem,3.6vw,3rem);line-height:1.05;letter-spacing:-.01em;text-transform:uppercase;margin:0 0 6px}
+.fi__bt p{margin:0;font-size:clamp(.98rem,1.25vw,1.1rem);line-height:1.55;color:#2B3238;max-width:46ch}
+@media(max-width:800px){.fi__h{grid-template-columns:1fr;min-height:0}.fi__hl{padding:36px 20px 8px}.fi__hr{position:relative;width:100%;height:340px;mask-image:linear-gradient(180deg,transparent,#000 30%);-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%)}.fi__b{grid-template-columns:1fr}.fi__bi{min-height:300px}.fi__bt{padding:32px 20px 44px}}
+</style>
+<section class="fi">
+ <div class="fi__h">
+  <div class="fi__hl">
+   <h1>{{ section.settings.titular }}</h1>
+   <p class="fi__sub">{{ section.settings.sub }}</p>
+   <div class="fi__row"><a class="fi__pill" href="{{ section.settings.url | default: '/products/elvonativo' }}">{{ section.settings.cta }} ↗</a><a class="fi__ln" href="#nucleo">{{ section.settings.enlace }} ↓</a></div>
+   <span class="fi__pie">— {{ section.settings.pie }}</span>
+  </div>
+  <div class="fi__hr">{%- if foto != blank -%}{{ foto | image_url: width: 1800 | image_tag: loading: 'lazy', alt: section.settings.titular }}{%- else -%}<img src="{{ fallback }}" alt="" loading="lazy">{%- endif -%}</div>
+ </div>
+ <div class="fi__b">
+  <div class="fi__bi">{%- if foto2 != blank -%}{{ foto2 | image_url: width: 1400 | image_tag: loading: 'lazy', alt: section.settings.titulo2 }}{%- endif -%}</div>
+  <div class="fi__bt">
+   <h2>{{ section.settings.titulo2 }}</h2>
+   {%- for p in parrafos -%}{%- if p != blank -%}<p>{{ p }}</p>{%- endif -%}{%- endfor -%}
+  </div>
+ </div>
+</section>
+{% schema %}
+{"name":"elvo· Filosofía de marca","settings":[
+{"type":"image_picker","id":"imagen","label":"Foto del inicio (cocina, mesada)","info":"Sin foto se usa la de producto."},
+{"type":"image_picker","id":"imagen2","label":"Foto del agua (detalle, textura)","info":"Sin foto se muestra un degradado de agua."},
+{"type":"text","id":"titular","label":"Titular","default":"El agua es el primer ingrediente."},
+{"type":"textarea","id":"sub","label":"Bajada","default":"Filtrar no es plomería: es cuidar lo primero que bebes."},
+{"type":"text","id":"cta","label":"Botón","default":"Conoce Nativo"},
+{"type":"url","id":"url","label":"Enlace del botón (vacío = ficha de Nativo)"},
+{"type":"text","id":"enlace","label":"Enlace secundario","default":"Cómo funciona"},
+{"type":"text","id":"pie","label":"Pie","default":"Pensado para el flujo diario"},
+{"type":"text","id":"titulo2","label":"Título de filosofía","default":"Agua, diseñada distinto."},
+{"type":"textarea","id":"texto","label":"Texto (un párrafo por línea)","default":"El agua es esencial. La tecnología que la cuida no tiene por qué sentirse complicada.\nelvo· trae diseño a la filtración doméstica: un objeto que se queda a la vista sobre tu mesada, un núcleo cuyo cambio te avisamos con tiempo y una promesa simple, decirte con exactitud qué hace cada equipo.\nCreemos que el agua es el primer ingrediente de todo lo que haces. Por eso la tratamos con calma y con cifras, no con alarmas."}],
+"presets":[{"name":"elvo· Filosofía de marca"}]}
+{% endschema %}

@@ -1,0 +1,58 @@
+{%- assign fallback = 'elvo-nativo-front.png' | file_url -%}
+{%- assign foto = section.settings.imagen -%}
+{%- if foto != blank or section.settings.mostrar_sin_foto or request.design_mode -%}
+<style>
+.rz{max-width:1440px;margin:0 auto;padding:12px;font-family:'Inter',Arial,sans-serif}
+.rz__box{position:relative;border-radius:24px;overflow:hidden;min-height:620px;background:#010A21;color:#fff;display:flex;flex-direction:column;justify-content:flex-end}
+.rz__box>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.rz__box::before{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(1,10,33,.82) 0%,rgba(1,10,33,.35) 55%,rgba(1,10,33,.1) 100%);z-index:1}
+.rz__in{position:relative;z-index:2;padding:clamp(24px,4vw,56px)}
+.rz__k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.rz__route{display:flex;gap:clamp(12px,3vw,40px);align-items:center;flex-wrap:wrap;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:500;font-size:clamp(1.5rem,3.2vw,2.6rem);letter-spacing:-.01em;margin:10px 0 28px}
+.rz__route i{font-style:normal;opacity:.7}
+.rz__tl{display:grid;grid-template-columns:repeat(3,1fr);position:relative;margin-bottom:18px}
+.rz__tl::before{content:'';position:absolute;left:8%;right:8%;top:29px;height:2px;background:rgba(255,255,255,.4)}
+.rz__s{position:relative;background:none;border:0;color:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:10px;font:inherit;padding:0}
+.rz__s b{width:58px;height:58px;border-radius:50%;border:2px solid rgba(255,255,255,.8);display:grid;place-items:center;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:500;font-size:1.05rem;background:rgba(1,10,33,.35);transition:background .25s,border-color .25s}
+.rz__s.on b{background:#3355FF;border-color:#3355FF}
+.rz__s span{font-size:13.5px;opacity:.85;text-align:center}
+.rz__d{font-size:clamp(.9rem,1.3vw,1.05rem);line-height:1.5;max-width:70ch;min-height:3em;margin:0}
+@media(max-width:800px){.rz{padding:10px}.rz__box{min-height:640px}.rz__s b{width:48px;height:48px}.rz__tl::before{top:24px}}
+</style>
+<section class="rz" id="recorrido">
+ <div class="rz__box">{%- if foto != blank -%}{{ foto | image_url: width: 1800 | image_tag: loading: 'lazy', alt: section.settings.titulo }}{%- else -%}<img src="{{ fallback }}" alt="" loading="lazy">{%- endif -%}
+  <div class="rz__in">
+   <span class="rz__k">{{ section.settings.etiqueta }}</span>
+   <div class="rz__route">{%- for b in section.blocks -%}<span>{{ b.settings.corto }}</span>{%- unless forloop.last -%}<i>→</i>{%- endunless -%}{%- endfor -%}</div>
+   <div class="rz__tl">{%- for b in section.blocks -%}<button type="button" class="rz__s{% if forloop.first %} on{% endif %}" data-d="{{ b.settings.texto | escape }}" {{ b.shopify_attributes }}><b>{{ forloop.index | prepend: '0' }}</b><span>{{ b.settings.nombre }}</span></button>{%- endfor -%}</div>
+   <p class="rz__d" data-rz-d>{{ section.blocks.first.settings.texto }}</p>
+  </div>
+ </div>
+</section>
+<script>
+(function(){
+  var r=document.getElementById('recorrido');if(!r||r.dataset.on)return;r.dataset.on='1';
+  var bs=r.querySelectorAll('.rz__s'),d=r.querySelector('[data-rz-d]'),i=0,t;
+  function show(n){i=n;bs.forEach(function(b,k){b.classList.toggle('on',k===n)});d.textContent=bs[n].getAttribute('data-d')}
+  function auto(){t=setInterval(function(){show((i+1)%bs.length)},4500)}
+  bs.forEach(function(b,k){b.addEventListener('click',function(){clearInterval(t);show(k)})});
+  if(bs.length>1&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches)auto();
+})();
+</script>
+{%- endif -%}
+{% schema %}
+{"name":"elvo· Recorrido del agua","settings":[
+{"type":"image_picker","id":"imagen","label":"Foto (persona tomando agua)"},
+{"type":"checkbox","id":"mostrar_sin_foto","label":"Mostrar con la foto de producto mientras no subas la tuya","default":true},
+{"type":"text","id":"titulo","label":"Texto alternativo de la foto","default":"El recorrido del agua con elvo·"},
+{"type":"text","id":"etiqueta","label":"Etiqueta","default":"El recorrido del agua"}],
+"blocks":[{"type":"paso","name":"Paso","settings":[
+{"type":"text","id":"corto","label":"Palabra del recorrido","default":"Caño"},
+{"type":"text","id":"nombre","label":"Nombre bajo el círculo","default":"Paso"},
+{"type":"textarea","id":"texto","label":"Descripción","default":"Descripción"}]}],
+"max_blocks":5,
+"presets":[{"name":"elvo· Recorrido del agua","blocks":[
+{"type":"paso","settings":{"corto":"Caño","nombre":"Agua del caño","texto":"El agua de tu caño entra al núcleo de elvo· Nativo, conectado directo a la salida."}},
+{"type":"paso","settings":{"corto":"Núcleo","nombre":"Núcleo PureCore","texto":"Pasa por seis etapas de filtración dentro de un solo cartucho."}},
+{"type":"paso","settings":{"corto":"Vaso","nombre":"Tu vaso","texto":"Sale lista al instante, con tendencia alcalina (pH 8.5) y conservando sus minerales naturales."}}]}]}
+{% endschema %}
