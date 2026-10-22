@@ -2,117 +2,262 @@
 {%- assign rep = all_products['repuesto-elvo-nativo'] -%}
 {%- assign meses = '18,36,72' | split: ',' -%}
 {%- assign nucleos = '1,2,4' | split: ',' -%}
-{%- assign base = p.variants.first.price -%}
 {%- assign chips = section.settings.chips | split: ',' -%}
 <style>
-.et{max-width:1100px;margin:0 auto;padding:56px 20px;font-family:'Inter',Arial,sans-serif;color:#050607}
-.et__k{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#3355FF}
-.et h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.7rem,3vw,2.5rem);letter-spacing:-.02em;line-height:1.08;margin:10px 0 12px}
-.et__lead{font-size:17px;line-height:1.5;color:#5B6470;max-width:60ch;margin:0 0 28px}
-.et__g{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.et__box{background:#010A21;border-radius:24px;padding:26px;color:#fff}
-.et__box h3,.et__pl h3{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.15rem;margin:0 0 14px}
-.et ol{list-style:none;margin:0;padding:0;counter-reset:e}
-.et li.st{counter-increment:e;display:grid;grid-template-columns:34px 1fr;gap:12px;padding:12px 0;border-top:1px solid rgba(190,208,223,.2)}
-.et li.st:first-child{border-top:0}
-.et li.st::before{content:counter(e);width:30px;height:30px;border-radius:50%;background:#3355FF;color:#fff;display:grid;place-items:center;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:13px}
-.et li.st b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:16px}
-.et li.st span{font-size:14px;color:#BED0DF;line-height:1.4}
-.et__pi{list-style:none;margin:0;padding:0}
-.et__pi li{display:grid;grid-template-columns:30px 1fr;column-gap:12px;padding:14px 0;border-top:1px solid rgba(190,208,223,.2)}
-.et__pi li:first-child{border-top:0}
-.et__pi li::before{content:"";width:10px;height:10px;border-radius:50%;background:#3355FF;margin:7px 0 0 10px;grid-row:1/3}
-.et__pi b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.05rem}
-.et__pi span{font-size:14.5px;color:#BED0DF;line-height:1.45}
-.et__pl{display:flex;flex-direction:column;gap:10px}
-.et__plan{border:1px solid #DCE6EE;border-radius:18px;background:#fff;padding:16px 18px;display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:baseline}
-.et__plan b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:1.05rem}
-.et__plan .pr{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:1.3rem;text-align:right}
-.et__plan small{font-size:13.5px;color:#5B6470;line-height:1.4}
-.et__plan small.r{text-align:right}
-.et__plan.is{border-color:#3355FF;box-shadow:0 0 0 1px #3355FF;background:#F2F5FF}
-.et__note{font-size:13px;color:#5B6470;margin:4px 2px 0;line-height:1.45}
-.et__chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
-.et__chips span{font-size:13.5px;font-weight:500;padding:9px 15px;border:1px solid #BED0DF;border-radius:999px;background:#fff}
-.et__fine{font-size:12px;color:#6B7480;margin-top:18px;line-height:1.5}
-.et__cert{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.et__ct{display:flex;align-items:flex-start;gap:14px;padding:20px 22px;border:1px solid #BED0DF;border-radius:20px;background:#F2F5FF;color:#050607}
-.et__ct i{flex:none;width:30px;height:30px;border-radius:50%;background:#3355FF;color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:15px}
-.et__ct b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.05rem;margin-bottom:3px}
-.et__ct span{font-size:14px;color:#2B3238;line-height:1.4}
-@media(max-width:760px){.et__g,.et__cert{grid-template-columns:1fr}.et{padding:44px 16px}.et__box{padding:20px}}
+.et{max-width:1100px;margin:0 auto;padding:72px 20px;font-family:'Inter',Arial,sans-serif;color:#050607;letter-spacing:0}
+.et *{box-sizing:border-box;letter-spacing:0}
+.et__k{font-size:12px;font-weight:500;letter-spacing:.14em!important;text-transform:uppercase;color:#3355FF}
+.et h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.9rem,3.2vw,2.8rem);letter-spacing:-.02em!important;line-height:1.05;margin:10px 0 10px}
+.et__lead{font-size:18px;line-height:1.5;color:#5B6470;max-width:52ch;margin:0 0 44px}
+.et__lab{font-size:12px;font-weight:500;letter-spacing:.12em!important;text-transform:uppercase;color:#6B7480;margin:0 0 16px}
+.et__pi{list-style:none;margin:0 0 56px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.et__pi li{border-top:2px solid #050607;padding-top:16px}
+.et__pi b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.1rem;line-height:1.25;margin-bottom:6px}
+.et__pi span{display:block;font-size:15px;color:#5B6470;line-height:1.5}
+.et__pl{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.et__plan{position:relative;border:1px solid #DCE6EE;border-radius:24px;background:#fff;padding:26px 24px}
+.et__plan.is{border-color:#3355FF;background:#F2F5FF}
+.et__tag{position:absolute;top:-11px;left:24px;background:#3355FF;color:#fff;font-size:11.5px;font-weight:500;border-radius:999px;padding:3px 11px}
+.et__plan b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1rem;color:#5B6470}
+.et__plan .pr{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:2rem;line-height:1.1;margin:6px 0 10px;letter-spacing:-.02em!important}
+.et__plan small{display:block;font-size:14.5px;color:#2B3238;line-height:1.5}
+.et__plan small.r{color:#6B7480}
+.et__note{font-size:14px;color:#6B7480;margin:16px 0 0}
+.et__cert{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:40px;padding-top:22px;border-top:1px solid #DCE6EE;font-size:14px;color:#2B3238}
+.et__cert strong{font-weight:600}
+.et__cert span{display:inline-flex;align-items:center;gap:7px}
+.et__cert span::before{content:"\2713";color:#3355FF;font-weight:700}
+.et__chips{margin-top:14px;font-size:13.5px;color:#6B7480}
+.et__fine{font-size:12px;color:#8A93A0;margin-top:12px;line-height:1.5;max-width:80ch}
+@media(max-width:900px){.et__pi{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.et{padding:48px 16px}.et__lead{margin-bottom:32px}.et__pi{grid-template-columns:1fr;gap:20px;margin-bottom:40px}.et__pl{grid-template-columns:1fr}.et__plan{padding:22px 20px}}
 </style>
 <section class="et" id="tecnologia">
   <span class="et__k">{{ section.settings.etiqueta }}</span>
   <h2>{{ section.settings.titulo }}</h2>
   <p class="et__lead">{{ section.settings.bajada_marca }}</p>
-  <div class="et__g">
-    <div class="et__box">
-      <h3>{{ section.settings.titulo_pilares }}</h3>
-      <ul class="et__pi">
-        {%- for i in (1..5) -%}
-          {%- assign kt = 'p' | append: i | append: '_t' -%}
-          {%- assign kx = 'p' | append: i | append: '_x' -%}
-          {%- if section.settings[kt] != blank -%}<li><b>{{ section.settings[kt] }}</b><span>{{ section.settings[kx] }}</span></li>{%- endif -%}
-        {%- endfor -%}
-      </ul>
-    </div>
-    <div class="et__pl">
-      <h3>{{ section.settings.titulo_planes }}</h3>
-      {%- for v in p.variants -%}
-        {%- assign i = forloop.index0 -%}
-        {%- assign m = meses[i] | plus: 0 -%}
-        {%- assign n = nucleos[i] | plus: 0 -%}
-        {%- assign extra = n | minus: 1 -%}
-        <div class="et__plan{% if i == 1 %} is{% endif %}">
-          <b>{{ v.title }}</b><span class="pr">S/ {{ v.price | divided_by: 100 }}</span>
-          <small>{{ n }} {% if n == 1 %}núcleo incluido{% else %}núcleos incluidos{% endif %}{% if extra > 0 %} · cada repuesto extra te sale a S/ {{ v.price | minus: base | divided_by: extra | divided_by: 100.0 | round }}{% endif %}</small>
-          <small class="r">S/ {{ v.price | divided_by: 100.0 | divided_by: m | round: 2 }} al mes</small>
-        </div>
-      {%- endfor -%}
-      {%- if rep.price > 0 -%}<p class="et__note">El núcleo suelto cuesta S/ {{ rep.price | divided_by: 100 }} y dura 18 meses de uso normal. Los planes de 3 y 6 años te lo dejan mucho más barato.</p>{%- endif -%}
-    </div>
+  <ul class="et__pi">
+    {%- for i in (1..5) -%}
+      {%- assign kt = 'p' | append: i | append: '_t' -%}
+      {%- assign kx = 'p' | append: i | append: '_x' -%}
+      {%- if section.settings[kt] != blank -%}<li><b>{{ section.settings[kt] }}</b><span>{{ section.settings[kx] }}</span></li>{%- endif -%}
+    {%- endfor -%}
+  </ul>
+  <p class="et__lab">{{ section.settings.titulo_planes }}</p>
+  <div class="et__pl">
+    {%- for v in p.variants -%}
+      {%- assign i = forloop.index0 -%}
+      {%- assign m = meses[i] | plus: 0 -%}
+      {%- assign n = nucleos[i] | plus: 0 -%}
+      <div class="et__plan{% if i == 1 %} is{% endif %}">
+        {%- if i == 1 -%}<span class="et__tag">Más elegido</span>{%- endif -%}
+        <b>{{ v.title }}</b><span class="pr">S/ {{ v.price | divided_by: 100 }}</span>
+        <small>{{ n }} {% if n == 1 %}núcleo incluido{% else %}núcleos incluidos{% endif %}</small>
+        <small class="r">S/ {{ v.price | divided_by: 100.0 | divided_by: m | round: 2 }} al mes</small>
+      </div>
+    {%- endfor -%}
   </div>
+  {%- if rep.price > 0 -%}<p class="et__note">El núcleo suelto cuesta S/ {{ rep.price | divided_by: 100 }} y dura 18 meses. En los planes largos te sale mucho menos.</p>{%- endif -%}
   {%- assign hay_cert = false -%}
   {%- for b in section.blocks -%}{%- if b.type == 'cert' -%}{%- assign hay_cert = true -%}{%- endif -%}{%- endfor -%}
   {%- if hay_cert -%}
-  <div class="et__cert">
-   {%- for b in section.blocks -%}{%- if b.type == 'cert' -%}
-    <div class="et__ct" {{ b.shopify_attributes }}><i aria-hidden="true">&#10003;</i><div><b>{{ b.settings.nombre }}</b><span>{{ b.settings.texto }}</span></div></div>
-   {%- endif -%}{%- endfor -%}
+  <div class="et__cert"><strong>Nuestro fabricante</strong>
+    {%- for b in section.blocks -%}{%- if b.type == 'cert' -%}<span {{ b.shopify_attributes }}>{{ b.settings.nombre }}</span>{%- endif -%}{%- endfor -%}
   </div>
   {%- endif -%}
-  <div class="et__chips">{%- for c in chips -%}<span>{{ c | strip }}</span>{%- endfor -%}</div>
+  <p class="et__chips">{%- for c in chips -%}{{ c | strip }}{% unless forloop.last %} · {% endunless %}{%- endfor -%}</p>
   <p class="et__fine">{{ section.settings.legal }}</p>
 </section>
 {% schema %}
-{"name":"elvo· Tecnología y precio","settings":[
-{"type":"text","id":"etiqueta","label":"Etiqueta","default":"Tecnología"},
-{"type":"text","id":"titulo","label":"Título","default":"Por qué vale lo que cuesta"},
-{"type":"textarea","id":"bajada","label":"Bajada","default":"Un núcleo de 6 etapas por dentro y un diseño pensado para vivir a la vista en tu cocina."},
-{"type":"textarea","id":"bajada_marca","label":"Bajada","default":"Un objeto de diseño con un núcleo de filtración por dentro, y un equipo que te acompaña después de comprar."},
-{"type":"text","id":"titulo_pilares","label":"Título de la caja de marca","default":"Más que un filtro"},
-{"type":"text","id":"p1_t","label":"Punto 1: título","default":"Diseño que se queda a la vista"},
-{"type":"text","id":"p1_x","label":"Punto 1: texto","default":"Pensado para vivir sobre tu mesada, no escondido bajo el fregadero."},
-{"type":"text","id":"p2_t","label":"Punto 2: título","default":"Filtración en un solo núcleo"},
-{"type":"text","id":"p2_x","label":"Punto 2: texto","default":"Todo el trabajo de filtración ocurre dentro de un núcleo que se cambia fácil."},
-{"type":"text","id":"p3_t","label":"Punto 3: título","default":"Te avisamos cuándo cambiarlo"},
-{"type":"text","id":"p3_x","label":"Punto 3: texto","default":"Recibes un aviso por WhatsApp cuando toca renovar el núcleo."},
-{"type":"text","id":"p4_t","label":"Punto 4: título","default":"Te decimos qué hace cada equipo"},
-{"type":"text","id":"p4_x","label":"Punto 4: texto","default":"Lo que afirmamos sale de la ficha técnica, sin promesas vagas."},
-{"type":"text","id":"p5_t","label":"Punto 5: título","default":"Atención cercana"},
-{"type":"text","id":"p5_x","label":"Punto 5: texto","default":"Te acompañamos por WhatsApp antes y después de comprar."},
-{"type":"text","id":"titulo_etapas","label":"Título de las etapas","default":"6 etapas en un solo núcleo"},
-{"type":"text","id":"titulo_planes","label":"Título de los planes","default":"Lo que te llevas en cada plan"},
-{"type":"text","id":"chips","label":"Garantías (separadas por coma)","default":"Garantía de 1 año, 30 días de prueba, Envío gratis a todo el Perú"},
-{"type":"textarea","id":"legal","label":"Nota legal","default":"*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo."}],
-"blocks":[{"type":"etapa","name":"Etapa","settings":[{"type":"text","id":"nombre","label":"Nombre","default":"Etapa"},{"type":"text","id":"texto","label":"Texto","default":"Descripción"}]},{"type":"cert","name":"Certificación","settings":[{"type":"text","id":"nombre","label":"Nombre (ej. ISO 9001, WQA)"},{"type":"text","id":"texto","label":"Qué certifica y para qué producto"}]}],
-"max_blocks":12,
-"presets":[{"name":"elvo· Tecnología y precio","blocks":[
-{"type":"etapa","settings":{"nombre":"Carbón activado","texto":"Reduce cloro, olores y sabores."}},
-{"type":"etapa","settings":{"nombre":"KDF-F","texto":"Retiene plomo y metales pesados*."}},
-{"type":"etapa","settings":{"nombre":"Nanotecnología","texto":"Etapa adicional del núcleo PureCore."}},
-{"type":"etapa","settings":{"nombre":"Aluminosilicato sintético","texto":"Cuida la calidad del agua."}},
-{"type":"etapa","settings":{"nombre":"Plata coloidal","texto":"Protege el núcleo por dentro."}},
-{"type":"etapa","settings":{"nombre":"Plata iónica","texto":"Protege el núcleo por dentro."}}]}]}
+{
+ "name": "elvo· Tecnología y precio",
+ "settings": [
+  {
+   "type": "text",
+   "id": "etiqueta",
+   "label": "Etiqueta",
+   "default": "Tecnología"
+  },
+  {
+   "type": "text",
+   "id": "titulo",
+   "label": "Título",
+   "default": "Por qué vale lo que cuesta"
+  },
+  {
+   "type": "textarea",
+   "id": "bajada_marca",
+   "label": "Bajada",
+   "default": "Diseño, un núcleo por dentro y una marca que te acompaña."
+  },
+  {
+   "type": "text",
+   "id": "titulo_pilares",
+   "label": "(Sin uso) Título de la caja",
+   "default": "Más que un filtro"
+  },
+  {
+   "type": "text",
+   "id": "p1_t",
+   "label": "Punto 1: título",
+   "default": "Diseño que se queda a la vista"
+  },
+  {
+   "type": "text",
+   "id": "p1_x",
+   "label": "Punto 1: texto",
+   "default": "Pensado para vivir sobre tu mesada."
+  },
+  {
+   "type": "text",
+   "id": "p2_t",
+   "label": "Punto 2: título",
+   "default": "Filtración en un solo núcleo"
+  },
+  {
+   "type": "text",
+   "id": "p2_x",
+   "label": "Punto 2: texto",
+   "default": "Toda la filtración, dentro de un núcleo fácil de cambiar."
+  },
+  {
+   "type": "text",
+   "id": "p3_t",
+   "label": "Punto 3: título",
+   "default": "Te avisamos cuándo cambiarlo"
+  },
+  {
+   "type": "text",
+   "id": "p3_x",
+   "label": "Punto 3: texto",
+   "default": "Un aviso por WhatsApp cuando toca renovarlo."
+  },
+  {
+   "type": "text",
+   "id": "p4_t",
+   "label": "Punto 4: título",
+   "default": "Atención cercana"
+  },
+  {
+   "type": "text",
+   "id": "p4_x",
+   "label": "Punto 4: texto",
+   "default": "Te acompañamos por WhatsApp antes y después de comprar."
+  },
+  {
+   "type": "text",
+   "id": "p5_t",
+   "label": "Punto 5: título"
+  },
+  {
+   "type": "text",
+   "id": "p5_x",
+   "label": "Punto 5: texto"
+  },
+  {
+   "type": "text",
+   "id": "titulo_planes",
+   "label": "Título de los planes",
+   "default": "Elige tu plan"
+  },
+  {
+   "type": "text",
+   "id": "chips",
+   "label": "Garantías (separadas por coma)",
+   "default": "Garantía de 1 año, 30 días de prueba, Envío gratis a todo el Perú"
+  },
+  {
+   "type": "textarea",
+   "id": "legal",
+   "label": "Nota legal",
+   "default": "*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo."
+  }
+ ],
+ "blocks": [
+  {
+   "type": "etapa",
+   "name": "Etapa",
+   "settings": [
+    {
+     "type": "text",
+     "id": "nombre",
+     "label": "Nombre",
+     "default": "Etapa"
+    },
+    {
+     "type": "text",
+     "id": "texto",
+     "label": "Texto",
+     "default": "Descripción"
+    }
+   ]
+  },
+  {
+   "type": "cert",
+   "name": "Certificación",
+   "settings": [
+    {
+     "type": "text",
+     "id": "nombre",
+     "label": "Nombre (ej. ISO 9001, WQA)"
+    },
+    {
+     "type": "text",
+     "id": "texto",
+     "label": "Qué certifica y para qué producto"
+    }
+   ]
+  }
+ ],
+ "max_blocks": 12,
+ "presets": [
+  {
+   "name": "elvo· Tecnología y precio",
+   "blocks": [
+    {
+     "type": "etapa",
+     "settings": {
+      "nombre": "Carbón activado",
+      "texto": "Reduce cloro, olores y sabores."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "nombre": "KDF-F",
+      "texto": "Retiene plomo y metales pesados*."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "nombre": "Nanotecnología",
+      "texto": "Etapa adicional del núcleo PureCore."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "nombre": "Aluminosilicato sintético",
+      "texto": "Cuida la calidad del agua."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "nombre": "Plata coloidal",
+      "texto": "Protege el núcleo por dentro."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "nombre": "Plata iónica",
+      "texto": "Protege el núcleo por dentro."
+     }
+    }
+   ]
+  }
+ ]
+}
 {% endschema %}
