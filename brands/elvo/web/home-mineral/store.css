@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;600&display=swap');
-:root{--cobalto:#3355FF;--cielo:#7B9BDD;--polvo:#A0BBD0;--niebla:#BED0DF;--hielo:#DCE6EE;--blanco:#FAFAFA;--negro:#050607;--marino:#010A21;--gris:#6B7480;--disp:'Sora',system-ui,sans-serif;--txt:'Inter',system-ui,sans-serif}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+:root{--cobalto:#3355FF;--cielo:#7B9BDD;--polvo:#A0BBD0;--niebla:#BED0DF;--hielo:#DCE6EE;--blanco:#FAFAFA;--negro:#050607;--marino:#010A21;--gris:#6B7480;--disp:'Plus Jakarta Sans',system-ui,sans-serif;--txt:'Inter',system-ui,sans-serif}
 body{background:var(--blanco)}
 .a{font-family:var(--txt);color:var(--negro);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
 .a *{box-sizing:border-box}
 .a h1,.a h2,.a h3,.a p{margin:0}
-.a h1,.a h2,.a h3{font-family:var(--disp);letter-spacing:-.03em;line-height:1.05;font-weight:600;color:var(--negro)}
+.a h1,.a h2,.a h3{font-family:var(--disp);letter-spacing:-.02em;word-spacing:.06em;line-height:1.05;font-weight:600;color:var(--negro)}
 .a a{text-decoration:none;color:inherit}
 .a-w{max-width:1240px;margin:0 auto;padding:0 24px}
 .a-sec{padding:64px 0}
