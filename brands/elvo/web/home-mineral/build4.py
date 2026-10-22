@@ -44,6 +44,16 @@ HTML = '''
  <p class="a-fine">*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.</p>
 </div></section>
 
+<section class="a-sec a-revs"><div class="a-w">
+ <div class="a-head"><div><span class="a-lab">Clientes</span><h2 class="a-h2">Lo que cuentan en casa</h2></div></div>
+ <div class="a-rev-grid">
+  <figure class="a-rev"><blockquote>“Lo instalé en menos de 5 minutos, funciona perfecto y tiene muy buen caudal.”</blockquote><figcaption><i>L</i><span><b>Lucía P.</b> · Ica<small>Compra verificada</small></span></figcaption></figure>
+  <figure class="a-rev"><blockquote>“El agua sale cristalina, sin sabor ni olor.”</blockquote><figcaption><i>C</i><span><b>Carmen S.</b> · Trujillo<small>Compra verificada</small></span></figcaption></figure>
+  <figure class="a-rev"><blockquote>“Le consulté a un amigo químico de laboratorio y me dijo que era una muy buena compra y a buen precio.”</blockquote><figcaption><i>R</i><span><b>Roberto M.</b> · Piura<small>Compra verificada</small></span></figcaption></figure>
+  <figure class="a-rev"><blockquote>“El agua sale transparente, sin sabor y sin ningún residuo. La instalación fue muy fácil.”</blockquote><figcaption><i>M</i><span><b>María G.</b> · Lima<small>Compra verificada</small></span></figcaption></figure>
+ </div>
+</div></section>
+
 <section class="a-sec a-need"><div class="a-w">
  <div class="a-head"><div><span class="a-lab">¿Qué necesitas?</span><h2 class="a-h2">Empieza por tu casa</h2></div></div>
  <div class="a-need-grid">

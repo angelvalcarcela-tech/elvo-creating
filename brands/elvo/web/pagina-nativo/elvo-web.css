@@ -52,3 +52,9 @@ body .elvo-ft__form button{border:0!important;border-radius:999px!important;back
 body .elvo-ft__acc{border-top-width:1px}body .elvo-ft__acc details{border-bottom-width:1px}
 body .elvo-ft__box{border-width:1px;border-color:var(--ft-line)}
 body .elvo-ft__social a{border-radius:50%}
+
+/* estructura PDP: caja de compra más corta y un solo bloque de reseñas */
+body #mini-resenas,body .elvo-band,body .elvo-mini-rev{display:none!important}
+body .elvo-checks[data-elvo="benefits"] li:nth-child(3),body .elvo-checks[data-elvo="benefits"] li:nth-child(5){display:none}
+body .elvo-cano{display:flex;background:#EEF3F7;border:1px solid #BED0DF!important;border-style:solid!important;border-radius:16px;padding:16px 18px;font-size:16px;line-height:1.4}
+body .elvo-sticky{background:rgba(255,255,255,.94)!important;border-top:1px solid #DCE6EE;backdrop-filter:blur(8px)}

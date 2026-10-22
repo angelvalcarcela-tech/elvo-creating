@@ -117,3 +117,13 @@ body{background:var(--blanco)}
 }
 @media(max-width:800px){.a-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -16px;padding:0 16px 8px;-webkit-overflow-scrolling:touch}.a-card{flex:0 0 78%;scroll-snap-align:start}.a-need-grid{grid-template-columns:1fr 1fr}.a-need a{min-height:150px;padding:16px;gap:16px}.a-need h3{font-size:1.05rem}}
 @media(max-width:520px){.a-need-grid{grid-template-columns:1fr 1fr}}
+
+/* reseñas */
+.a-rev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.a-rev{margin:0;background:#fff;border:1px solid var(--hielo);border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:230px}
+.a-rev blockquote{margin:0;font-family:var(--disp);font-weight:400;font-size:1.1rem;line-height:1.4;letter-spacing:-.01em}
+.a-rev figcaption{display:flex;gap:12px;align-items:center;font-size:14px}
+.a-rev i{width:40px;height:40px;border-radius:50%;background:var(--hielo);color:var(--cobalto);font-style:normal;font-family:var(--disp);font-weight:600;display:grid;place-items:center;flex:none}
+.a-rev small{display:block;font-size:12px;color:var(--gris)}
+@media(max-width:1000px){.a-rev-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:800px){.a-rev-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -16px;padding:0 16px 8px}.a-rev{flex:0 0 80%;scroll-snap-align:start;min-height:200px}}
