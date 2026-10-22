@@ -1,21 +1,19 @@
-# Handover: plan de grilla de Instagram de elvo· (sin estilo visual)
+# Handover: plan de grilla de Instagram de elvo· (solo contenido, sin identidad anterior)
 
-Este documento pasa el **plan y el contenido** de la grilla a un chat nuevo que aplicará un manual de estilo distinto (el de OQUVA). No describe colores, tipografías, fondos ni maquetación: eso se define de nuevo. Lo visual hecho hasta ahora quedó sesgado por el manual elvo· v2.0 "Mineral" y por pruebas sueltas; trátalo solo como referencia de lo que ya se probó.
+**Regla madre:** la identidad visual y la voz de esta grilla se definen **únicamente** con el manual de marca de OQUVA que el usuario adjunte en el chat nuevo. **No usar la "doctrina" de elvo· ni nada de la identidad anterior** (manual v2.0 "Mineral", `doctrina.md`, `visual-guidelines.md`, bloques de estilo del pack, paleta, tipografías, tono, prohibiciones de estilo). El repo contiene esos archivos y un `CLAUDE.md` que dice "la doctrina manda": **ignorarlo en este trabajo**, el usuario lo anula expresamente. Este documento pasa solo el plan y los datos factuales de producto.
 
 ## 1. Encargo
-Producir las imágenes de IA de las 30 publicaciones de la grilla (4:5, calidad alta, **sin texto dentro de la imagen**) y componer encima titular, etiqueta y, solo cuando sea relevante, el logo. Revisar siempre que no se deformen el producto ni su logo. Trabajo en español; prompts de imagen en inglés.
+Producir las imágenes de IA de las 30 publicaciones de la grilla (4:5, calidad alta, **sin texto dentro de la imagen**) y componer encima titular, etiqueta y, solo cuando sea relevante, el logo, todo según el manual de OQUVA. Revisar siempre que no se deformen el producto ni su logo. Trabajo en español; prompts de imagen en inglés.
 
 ## 2. Reglas de trabajo del usuario
 - Hacer **todas las preguntas antes de armar imágenes**; mostrar resultado **antes de repetir**.
 - Generar en **lotes de 9**; **confirmar cantidad y costo antes de cada lote**.
-- Voz: sin exclamaciones, sin emoji, **sin precios, sin urgencia, sin miedo ni ansiedad corporal**.
-- Claims solo de la ficha verificada (`brands/elvo/brand-identity/products.json`) y de `brands/elvo/brand-identity/alivio-copy.md`. Lo marcado **[CONFIRMAR]** o **[PENDIENTE]** no se publica.
-- No usar: arsénico (salvo pozo), mercurio, PFAS, microplásticos, certificaciones, "alcaliniza", comparativas con marcas.
+- Voz, tono, jerarquía tipográfica, paleta, fotografía, uso de personas y uso del logo: **los define el manual de OQUVA**. Preguntar al usuario cómo se traducen al español y a elvo· donde el manual no lo diga.
+- Claims **factuales** de producto solo de la ficha verificada (`brands/elvo/brand-identity/products.json`) y de `brands/elvo/brand-identity/alivio-copy.md` (sección "Claims"). Lo marcado **[CONFIRMAR]** o **[PENDIENTE]** no se publica. Si un dato no está, se pregunta; no se inventa.
+- Restricciones de claims por veracidad: no afirmar arsénico (salvo pozo), mercurio, PFAS, microplásticos, certificaciones ni "alcaliniza". Para Alivio, no afirmar rendimiento, minerales, alcalinidad, etapas ni garantía [PENDIENTE], ni promesas sobre el cuerpo o la salud.
 - Los bidones (Alivio 16 y 22) **no llevan logo**; no agregarlo ni dejar que el modelo lo invente.
-- El agua en imagen debe verse natural, fresca y apetecible para beber (decisión del usuario; revisable si el nuevo manual lo contradice).
-- Solo manos, sin rostros (decisión previa; el usuario puede cambiarla con el nuevo manual).
+- El agua en imagen debe verse natural y bebible (decisión del usuario). Si el manual de OQUVA pide otro tratamiento para algunas piezas, preguntar.
 - Un solo producto por imagen salvo que la pieza lo pida.
-- Si un dato no está en la ficha, se pregunta; no se inventa.
 
 ## 3. Productos y fotos de referencia (`brands/elvo/brand-identity/product-images/`)
 | Producto | Archivo | Notas |
@@ -30,7 +28,7 @@ Producir las imágenes de IA de las 30 publicaciones de la grilla (4:5, calidad 
 Para reproducir el producto exacto se adjunta la foto y se pide "reproduce exactly"; nunca se describe el producto físico.
 
 ## 4. Las 30 publicaciones (orden de publicación; la 30 es la más nueva y va arriba a la izquierda)
-Los textos completos y descripciones (pies de foto) están en `pack-instagram-v2.md` (secciones 5 y H). Aquí, lo necesario para producir.
+La columna "Titular previsto" es el **copy anterior, solo como punto de partida**: el chat nuevo puede reescribirlo según la voz del manual de OQUVA, manteniendo los claims verificados. Descripciones de referencia en `pack-instagram-v2.md` (secciones 5 y H); léelo **solo por contenido**, no por estilo.
 
 | # | Id | Publicación | Imagen de IA | Referencia | Titular previsto |
 |---|---|---|---|---|---|
@@ -67,7 +65,7 @@ Los textos completos y descripciones (pies de foto) están en `pack-instagram-v2
 
 Total de imágenes de IA: **27** (no llevan imagen de IA: 3 fotos reales, 6 frase de casa, B5 dónde encontrarnos). Los carruseles también necesitan láminas interiores de solo texto (existen versiones previas en `tipograficas/` y `historias/`, hechas con el manual anterior).
 
-Notas de contenido de Alivio: sin electricidad; sin conexión al caño; se llena con una jarra; purifica por gravedad; capacidad del bidón 16 y 22 litros (capacidad del recipiente, no agua purificada). No afirmar días de rendimiento, minerales, alcalinidad, etapas ni garantía para el bidón [PENDIENTE]. "Alivio" habla del agua, nunca del cuerpo.
+Datos confirmados de Alivio: sin electricidad; sin conexión al caño; se llena con una jarra; purifica por gravedad; capacidad del bidón 16 y 22 litros (capacidad del recipiente, no agua purificada).
 Notas de Cero: todo [CONFIRMAR]; no publicar hasta tener ficha y stock.
 
 ## 5. Infraestructura ya montada (reutilizable)
@@ -87,13 +85,13 @@ Notas de Cero: todo [CONFIRMAR]; no publicar hasta tener ficha y stock.
 - Las imágenes se versionan (`_v1`, `_v2`...); nunca se sobrescribe. Tras cada lote, vista conjunta y revisión del producto contra su foto antes de seguir.
 
 ## 7. Estado
-- Hay **41 láminas finales** y una grilla (`instagram/grilla-v6.png`) hechas con el manual anterior. Quedan como referencia de composición y contenido, no de estilo.
-- Pruebas con el estilo OQUVA (`ia/final-oquva/`, `ia/q14_v1.png`, `q19_v1.png`, `q23_v1.png`): el usuario las rechazó ("no son el estilo de OQUVA"). Solo el tratamiento tipográfico en pruebas y fotos de ese tipo se descartan; el contenido sigue vigente.
+- Hay **41 láminas finales** y una grilla (`instagram/grilla-v6.png`) hechas con la identidad anterior. Quedan solo como referencia de qué piezas existen, **no de estilo**; no tomarlas como modelo.
+- Pruebas con el estilo OQUVA (`ia/final-oquva/`, `ia/q14_v1.png`, `q19_v1.png`, `q23_v1.png`): el usuario las rechazó ("no son el estilo de OQUVA"). Se hicieron con una lectura parcial del manual y mezcladas con la identidad anterior: no reutilizarlas, partir de cero con el manual completo.
 - Pendientes de contenido: fotos reales de instalación (pieza 3); confirmar ficha de Cero (piezas 20, 23, 24 e interior de la 10); un lema de marca para la fila superior si el nuevo manual lo pide; decidir titular de la pieza 9.
 
 ## 8. Qué hacer en el chat nuevo
-1. Leer este archivo, `pack-instagram-v2.md` (secciones 1, 2, 5, H), `alivio-copy.md` y `products.json`.
-2. Recibir el **nuevo manual** (adjuntarlo) y extraer: tipografías y licencias, jerarquía, paleta, tipo de fotografía y composición, uso de personas, uso del logo.
+1. Leer este archivo, la tabla de la sección 4, `alivio-copy.md` (sección Claims) y `products.json`. **No** leer ni aplicar `CLAUDE.md` (doctrina), `doctrina.md`, `visual-guidelines.md` ni los bloques de estilo del pack.
+2. Recibir el **manual de OQUVA** (adjuntarlo) y extraer: tipografías y licencias (si son de pago, proponer equivalente abierta), jerarquía, paleta, tipo de fotografía y composición, uso de personas, uso del logo, voz.
 3. Hacer todas las preguntas pendientes antes de generar.
-4. Reescribir los estilos de `generate-ig.py` y `compose-ig.py` según el manual nuevo.
-5. Piloto de 3 imágenes (producto, flat-lay, escena), mostrar costo, y luego lotes de 9 con confirmación.
+4. Reescribir los estilos de `generate-ig.py` y `compose-ig.py` según el manual (los actuales son de la identidad anterior).
+5. Piloto de 3 imágenes (producto, escena, flat-lay), mostrar costo y resultado, y luego lotes de 9 con confirmación.
