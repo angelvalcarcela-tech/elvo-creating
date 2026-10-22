@@ -1,0 +1,30 @@
+<style>
+.ek{max-width:1100px;margin:0 auto;padding:40px 20px;font-family:'Inter',Arial,sans-serif;color:#050607}
+.ek h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.4rem,2.4vw,1.9rem);letter-spacing:-.02em;margin:0 0 6px}
+.ek p.l{font-size:15px;color:#5B6470;margin:0 0 18px}
+.ek__g{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.ek__g a{border:1px solid #DCE6EE;border-radius:16px;background:#fff;padding:16px;display:flex;flex-direction:column;gap:4px;text-decoration:none;color:#050607;transition:border-color .2s}
+.ek__g a:hover{border-color:#3355FF}
+.ek__g b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.02rem}
+.ek__g span{font-size:13px;color:#3355FF}
+@media(max-width:900px){.ek__g{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.ek{padding:32px 16px}.ek__g{grid-template-columns:1fr 1fr}}
+</style>
+<section class="ek" id="canales">
+  <h2>{{ section.settings.titulo }}</h2>
+  <p class="l">{{ section.settings.bajada }}</p>
+  <div class="ek__g">
+    <a target="_blank" rel="noopener" href="https://www.falabella.com.pe/falabella-pe/seller/IMPORTACIONES%20GAD"><b>Falabella</b><span>Ver tienda ↗</span></a>
+    <a target="_blank" rel="noopener" href="https://www.sodimac.com.pe/sodimac-pe/vendedor/IMPORTACIONES%20GAD"><b>Sodimac</b><span>Ver tienda ↗</span></a>
+    <a target="_blank" rel="noopener" href="https://www.plazavea.com.pe/sellers?id=ELVO"><b>Plaza Vea</b><span>Ver tienda ↗</span></a>
+    <a target="_blank" rel="noopener" href="https://www.promart.pe/gasfiteria/purificadores-de-agua-y-filtros/repuestos-de-purificadores-y-filtros/elvo"><b>Promart</b><span>Ver tienda ↗</span></a>
+    <a target="_blank" rel="noopener" href="https://www.oechsle.pe/mejoramiento-del-hogar/gasfiteria/filtros-y-purificadores/elvo"><b>Oechsle</b><span>Ver tienda ↗</span></a>
+    <a target="_blank" rel="noopener" href="https://www.instagram.com/elvo_filtros/"><b>Instagram</b><span>@elvo_filtros ↗</span></a>
+  </div>
+</section>
+{% schema %}
+{"name":"elvo· Canales","settings":[
+{"type":"text","id":"titulo","label":"Título","default":"Estamos donde compras"},
+{"type":"text","id":"bajada","label":"Bajada","default":"elvo· también está en las principales tiendas del Perú, con boleta o factura y atención por WhatsApp."}],
+"presets":[{"name":"elvo· Canales"}]}
+{% endschema %}
