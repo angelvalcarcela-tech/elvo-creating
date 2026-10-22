@@ -169,3 +169,11 @@ Decidir por **CAC por pedido** y no por costo por conversación. No declarar gan
 - Condiciones de garantía y prueba aplicables al bidón.
 - Registro de "Alivio" en INDECOPI.
 - Fotos reales del bidón.
+
+## 11. Confirmado por el dueño (oct-2026)
+
+- Mismo equipo y kit de filtros que el bidón de referencia del proveedor; el kit dura 10,000 litros o 1 año, lo que ocurra primero.
+- Garantía: 6 meses.
+- Kit de repuesto: se vende aparte, S/95. El equipo trae su filtro.
+- Etapas: filtro cerámico; multimedia de 5 capas (carbón activado y de plata, WMSM-300, arena de sílice, zeolita, arena mineral); piedra mineral.
+- No usar: claims de salud del proveedor (cáncer, virus, terapéutico), certificados ajenos (ENAC, WQA, ROHS, ISO 9001), metales por nombre, ni "mata bacterias" literal.
