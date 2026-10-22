@@ -21,4 +21,29 @@ body .elvo-ft__acc summary{min-height:48px}
   .as__r{aspect-ratio:1/1!important}
   .ex__fig{max-width:230px!important}
   .ex__list li{padding:12px 0!important}
+
+  /* beneficios de la home en una sola fila */
+  .a-ben .a-w{grid-template-columns:repeat(4,1fr)!important}
+  .a-ben div{flex-direction:column!important;justify-content:center;text-align:center;gap:2px!important;padding:10px 4px!important;font-size:11px!important;line-height:1.2;border-bottom:0!important}
+  .a-ben b{font-size:17px!important}
+  /* tienda: fotos de las tarjetas más bajas */
+  .a-card-img{aspect-ratio:4/3!important}
+  /* filosofía: esencia y principio lado a lado, foto más baja */
+  .fi__tira{grid-template-columns:1fr 1fr!important;gap:12px!important}
+  .fi__bi{min-height:220px!important}
+  .fi__bt{padding:26px 20px 30px!important}
+
+  /* aspiracional: chips en fila, etiqueta a la izquierda y botón sobre la foto */
+  .as{position:relative}
+  .as__bot{padding:22px 20px!important;gap:16px!important}
+  .as__chips{flex-direction:row!important;flex-wrap:wrap;gap:8px!important}
+  .as__chips span{font-size:11px!important;letter-spacing:0!important;padding:8px 10px!important}
+  .as__a{position:absolute;right:22px;bottom:22px;margin:0!important;padding:11px 20px!important;font-size:14.5px!important;z-index:2}
+  .as__tag{left:14px!important;top:14px!important;transform:none!important;font-size:12px!important;padding:6px 12px!important}
+
+  /* mesada: botón sobre la foto, bloque más compacto */
+  .hl{position:relative}
+  .hl__l{gap:14px!important;padding:24px 20px!important}
+  .hl__a{position:absolute;right:22px;bottom:22px;margin:0!important;background:#3355FF;border-color:#3355FF;padding:11px 20px!important;font-size:14.5px!important;z-index:2}
+  .hl__t{left:14px!important;bottom:14px!important;font-size:11.5px!important;padding:6px 8px 6px 12px!important}
 }
