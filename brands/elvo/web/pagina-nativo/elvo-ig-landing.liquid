@@ -1,0 +1,68 @@
+{{ 'elvo-mineral.css' | asset_url | stylesheet_tag }}
+{%- assign p = all_products['elvonativo'] -%}
+{%- assign img = 'elvo-nativo-front.png' | file_url -%}
+<style>
+.g{max-width:520px;margin:0 auto;padding:12px 16px 96px}
+.g img.hero{width:100%;border-radius:24px;display:block}
+.g .of{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:14px 0 0;padding:12px 16px;border-radius:14px;background:#050607;color:#fff;font-size:14px}
+.g .of .cd{background:#3355FF;border-radius:999px;padding:6px 12px;font-weight:700;white-space:nowrap;font-family:'Plus Jakarta Sans',Arial,sans-serif}
+.g h1{font-size:2.1rem;margin:18px 0 6px}
+.g .pr{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:1.5rem;margin:0 0 12px}
+.g .pr small{font-family:'Inter',Arial,sans-serif;font-weight:400;font-size:13px;color:#6B7480}
+.g ul.t{list-style:none;padding:0;margin:0 0 16px}
+.g ul.t li{padding:8px 0 8px 28px;position:relative;font-size:16px}
+.g ul.t li::before{content:'';position:absolute;left:0;top:13px;width:16px;height:16px;border-radius:50%;background:#3355FF}
+.g ul.t li::after{content:'\2713';position:absolute;left:3px;top:10px;color:#fff;font-size:11px}
+.g .chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}
+.g .chips span{font-size:12.5px;font-weight:500;padding:7px 12px;border:1px solid #BED0DF;border-radius:999px}
+.g form{display:flex;flex-direction:column;gap:10px}
+.g .wa{display:block;text-align:center;margin-top:10px;padding:14px 18px;border:1px solid #3355FF;border-radius:999px;color:#3355FF;font-weight:600;font-family:'Plus Jakarta Sans',Arial,sans-serif;text-decoration:none}
+.g h2{font-size:1.3rem;margin:34px 0 12px}
+.g .rv{border:1px solid #DCE6EE;border-radius:18px;padding:16px 18px;margin:0 0 10px;background:#fff}
+.g .rv p{margin:0 0 8px;font-family:'Plus Jakarta Sans',Arial,sans-serif;line-height:1.4}
+.g .rv small{color:#6B7480}
+.g details{border-bottom:1px solid #DCE6EE;padding:14px 0}
+.g summary{cursor:pointer;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+.g summary::-webkit-details-marker{display:none}
+.g summary::after{content:'+';color:#3355FF}
+.g details[open] summary::after{content:'\2013'}
+.g details p{margin:8px 0 0;font-size:15px;color:#6B7480;line-height:1.55}
+.g .fine{font-size:11px;color:#6B7480;margin-top:22px}
+</style>
+<div class="a g">
+  <img class="hero" src="{{ img }}" alt="elvo· Nativo, purificador para el caño, con un vaso de agua">
+  <div class="of"><span><b>Oferta</b> hasta el 24 de octubre</span><span class="cd" id="g-cd"></span></div>
+  <h1>elvo· Nativo</h1>
+  <p class="pr">Desde S/ {{ p.price | money_without_currency | split: '.' | first }} <small>· 6 cuotas sin interés</small></p>
+  <ul class="t">
+    <li>Retiene plomo y metales pesados*</li>
+    <li>Reduce cloro, olores y sabores</li>
+    <li>Lo instalas tú en 5 minutos, sin gasfitero</li>
+  </ul>
+  <div class="chips"><span>Env&iacute;o gratis</span><span>Pagas al recibir en Lima</span><span>30 d&iacute;as de prueba</span></div>
+  <form method="post" action="/cart/add" accept-charset="UTF-8">
+    <select name="id" aria-label="Plan">{%- for v in p.variants -%}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}>{{ v.title }} · S/ {{ v.price | money_without_currency | split: '.' | first }}</option>{%- endfor -%}</select>
+    <button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button>
+  </form>
+  <a class="wa" target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20quiero%20comprar%20elvo%C2%B7%20Nativo%20%5BWEB-IG%5D">Comprar por WhatsApp</a>
+
+  <h2>Lo que cuentan en casa</h2>
+  <div class="rv"><p>“Lo instalé en menos de 5 minutos, funciona perfecto y tiene muy buen caudal.”</p><small>Lucía P. · Ica · Compra verificada</small></div>
+  <div class="rv"><p>“El agua sale cristalina, sin sabor ni olor.”</p><small>Carmen S. · Trujillo · Compra verificada</small></div>
+
+  <h2>Preguntas</h2>
+  <details><summary>¿Se adapta a mi caño?</summary><p>Incluye adaptador universal de jebe y derivador. Mándanos una foto por WhatsApp y te confirmamos antes de comprar.</p></details>
+  <details><summary>¿Cuándo llega?</summary><p>En Lima, el mismo día si confirmas antes de las 4 p. m. (lunes a sábado). En provincias, en 2 días.</p></details>
+  <details><summary>¿Y si no me convence?</summary><p>Tienes 30 días de prueba. Escríbenos por WhatsApp y te devolvemos tu dinero.</p></details>
+  <p class="fine">*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada. elvo· no es un dispositivo médico. Inversiones Gad SAC.</p>
+</div>
+<script>
+(function(){
+  var FIN=new Date('2026-10-24T23:59:59-05:00').getTime(),el=document.getElementById('g-cd');
+  function pad(n){return n<10?'0'+n:n}
+  (function tick(){var l=FIN-Date.now();if(l<=0){var o=el&&el.closest('.of');if(o)o.style.display='none';return}
+    var d=Math.floor(l/864e5),h=Math.floor(l%864e5/36e5),m=Math.floor(l%36e5/6e4),s=Math.floor(l%6e4/1e3);
+    if(el)el.textContent=(d>0?d+'d ':'')+pad(h)+':'+pad(m)+':'+pad(s);setTimeout(tick,1000)})();
+})();
+</script>
+{% schema %}{"name":"elvo· Landing IG","settings":[]}{% endschema %}
