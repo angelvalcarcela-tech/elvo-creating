@@ -62,3 +62,20 @@ body .elvo-ft__acc summary{min-height:48px}
   .hl__a{position:absolute;right:22px;bottom:22px;margin:0!important;background:#3355FF;border-color:#3355FF;padding:11px 20px!important;font-size:14.5px!important;z-index:2}
   .hl__t{display:none!important}
 }
+
+/* elvo· móvil: barra superior compacta como Apple (logo a la izquierda; lupa, carrito y menú a la derecha) */
+@media(max-width:989px){
+  .header{display:flex!important;align-items:center;min-height:48px;padding:0 12px 0 16px!important}
+  .header .header__heading,.header .header__heading-link{margin:0 auto 0 0!important;justify-self:auto;order:1}
+  .header .header__heading-logo-wrapper{width:60px!important;max-width:60px}
+  .header .header__icons{order:2;gap:0;justify-content:flex-end}
+  .header header-drawer{order:3;margin:0!important}
+  .header .header__icon,.header .header__icon--menu,.header .header__icon--summary{width:44px;height:44px}
+  .header .header__icon .svg-wrapper,.header .header__icon svg{width:22px;height:22px}
+  .header .header__icon--menu .icon-hamburger{display:none!important}
+  .header .header__icon--menu{display:flex!important;align-items:center;justify-content:center}
+  .header .header__icon--menu::before{content:'';display:block;width:22px;height:8px;border-top:1.6px solid #1D1D1F;border-bottom:1.6px solid #1D1D1F}
+  .header .header__icon--cart .svg-wrapper,.header .header__icon--cart svg{width:26px;height:26px}
+  .header .menu-opening .header__icon--menu::before{display:none}
+  .shopify-section-header-sticky .header{min-height:48px}
+}

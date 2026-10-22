@@ -1,26 +1,58 @@
 {%- assign fallback = 'elvo-nativo-front.png' | file_url -%}
 {%- assign foto = section.settings.imagen -%}
+{%- assign p_cero = all_products['elvo-cero-purificador-osmosis-inversa-con-agua-fria-y-caliente-instantanea-sin-instalacion'] -%}
+{%- assign c_fallback = 'elvo-cero-hero.webp' | file_url -%}
+{%- assign cero_url = section.settings.c_url | default: p_cero.url | default: '/products/elvo-cero-purificador-osmosis-inversa-con-agua-fria-y-caliente-instantanea-sin-instalacion' -%}
 <style>
-.ho{background:#F5F5F7;text-align:center;font-family:'Inter',Arial,sans-serif;color:#050607;overflow:hidden}
+.ho{display:grid;gap:12px;background:#fff;font-family:'Inter',Arial,sans-serif;color:#050607}
 .ho *{box-sizing:border-box}
-.ho__in{max-width:1100px;margin:0 auto;padding:40px 20px 0}
-.ho h1{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(36px,6vw,76px);line-height:1.03;letter-spacing:-.025em;text-transform:uppercase;margin:0}
-.ho__sub{font-size:clamp(17px,1.8vw,22px);line-height:1.4;color:#2B3238;margin:14px auto 0;max-width:34ch}
-.ho__row{display:flex;gap:10px 24px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:22px}
-.ho__pill{background:#3355FF;color:#fff;border-radius:999px;padding:14px 28px;font-weight:600;font-size:16px;text-decoration:none;transition:background .2s}
-.ho__pill:hover{background:#050607}
-.ho__ln{color:#3355FF;font-size:16px;text-decoration:none;padding:12px 4px}
-.ho__img{display:block;margin:14px auto 0;width:min(100%,640px);height:clamp(300px,50vh,560px);object-fit:contain;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(180deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(180deg,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect}
-@media(max-width:700px){.ho__in{padding:32px 16px 0}.ho__img{height:clamp(300px,46vh,420px);margin-top:8px}}
+.ho__t{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;height:485px;background:#F5F5F7;padding:28px 20px 0}
+.ho__t--d{background:#010A21;color:#fff}
+.ho__t--d .ho__n,.ho__t--d .ho__l{color:#fff}
+.ho__n{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:34px;line-height:1.08;letter-spacing:-.025em;margin:0}
+.ho__l{font-size:20px;line-height:1.25;margin:6px 0 0;font-weight:500}
+.ho__s{font-size:14.5px;line-height:1.4;color:#5B6470;margin:8px 0 0;max-width:32ch}
+.ho__t--d .ho__s{color:#BED0DF}
+.ho__pill{display:inline-block;margin-top:14px;background:#3355FF;color:#fff;border-radius:999px;padding:11px 24px;font-weight:600;font-size:16px;text-decoration:none;transition:background .2s;flex:none}
+.ho__pill:hover{background:#1F3BD6}
+.ho__img{display:block;margin:auto auto 0;width:100%;max-width:640px;flex:1;min-height:0;object-fit:contain;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(180deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(180deg,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect}
+.ho__t--d .ho__img{object-fit:cover;object-position:50% 42%;max-width:none;margin:14px -20px 0;width:calc(100% + 40px);-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%);mask-image:linear-gradient(180deg,transparent,#000 30%);-webkit-mask-composite:source-over;mask-composite:add}
+@media(min-width:701px){.ho__t{height:clamp(560px,84vh,740px);padding-top:56px}.ho__n{font-size:clamp(44px,5vw,68px)}.ho__l{font-size:clamp(22px,2.2vw,30px);margin-top:8px}.ho__s{font-size:18px;max-width:46ch}.ho__pill{margin-top:20px;padding:13px 28px}.ho__t--d .ho__img{margin-top:24px}}
 </style>
 <section class="ho">
- <div class="ho__in">
-  <h1>{{ section.settings.titular }}</h1>
-  <p class="ho__sub">{{ section.settings.sub }}</p>
-  <div class="ho__row"><a class="ho__pill" href="{{ section.settings.url | default: '/products/elvonativo' }}">{{ section.settings.cta }}</a><a class="ho__ln" href="#recorrido">{{ section.settings.enlace }} ↓</a></div>
+ <div class="ho__t">
+  <h1 class="ho__n">{{ section.settings.n_nombre }}</h1>
+  <p class="ho__l">{{ section.settings.titular }}</p>
+  <p class="ho__s">{{ section.settings.sub }}</p>
+  <a class="ho__pill" href="{{ section.settings.url | default: '/products/elvonativo' }}">{{ section.settings.cta }}</a>
+  {%- if foto != blank -%}{{ foto | image_url: width: 1254 | image_tag: class: 'ho__img', loading: 'eager', fetchpriority: 'high', alt: 'elvo· Nativo, purificador para el caño' }}{%- else -%}<img class="ho__img" src="{{ fallback }}" alt="elvo· Nativo, purificador para el caño">{%- endif -%}
  </div>
- {%- if foto != blank -%}{{ foto | image_url: width: 1254 | image_tag: class: 'ho__img', loading: 'eager', fetchpriority: 'high', alt: 'elvo· Nativo, purificador para el caño' }}{%- else -%}<img class="ho__img" src="{{ fallback }}" alt="elvo· Nativo, purificador para el caño">{%- endif -%}
+ <div class="ho__t ho__t--d">
+  <h2 class="ho__n">{{ section.settings.c_nombre }}</h2>
+  <p class="ho__l">{{ section.settings.c_lema }}</p>
+  <p class="ho__s">{{ section.settings.c_sub }}</p>
+  <a class="ho__pill" href="{{ cero_url }}">{{ section.settings.c_cta }}</a>
+  {%- if section.settings.c_imagen != blank -%}{{ section.settings.c_imagen | image_url: width: 1122 | image_tag: class: 'ho__img', loading: 'lazy', alt: 'elvo· Cero, purificador de ósmosis inversa con agua fría y caliente' }}{%- else -%}<img class="ho__img" src="{{ c_fallback }}" alt="elvo· Cero, purificador de ósmosis inversa con agua fría y caliente" loading="lazy">{%- endif -%}
+ </div>
 </section>
 {% schema %}
-{"name": "elvo· Inicio", "settings": [{"type": "image_picker", "id": "imagen", "label": "Foto del producto (fondo claro #F5F5F7)", "info": "Sin foto se usa la de producto."}, {"type": "text", "id": "titular", "label": "Titular", "default": "El agua es el primer ingrediente."}, {"type": "textarea", "id": "sub", "label": "Bajada", "default": "Filtrar no es plomería: es cuidar lo primero que bebes."}, {"type": "text", "id": "cta", "label": "Botón", "default": "Conoce Nativo"}, {"type": "url", "id": "url", "label": "Enlace del botón (vacío = ficha de Nativo)"}, {"type": "text", "id": "enlace", "label": "Enlace secundario", "default": "Cómo funciona"}, {"type": "text", "id": "pie", "label": "(Sin uso) Pie", "default": "Diseñado para el día a día"}], "presets": [{"name": "elvo· Inicio"}]}
+{"name": "elvo· Inicio", "settings": [
+{"type": "header", "content": "Bloque 1 · Nativo (fondo claro)"},
+{"type": "image_picker", "id": "imagen", "label": "Foto del producto (fondo claro #F5F5F7)", "info": "Sin foto se usa la de producto."},
+{"type": "text", "id": "n_nombre", "label": "Nombre", "default": "elvo· Nativo"},
+{"type": "text", "id": "titular", "label": "Lema", "default": "Agua es el primer ingrediente."},
+{"type": "textarea", "id": "sub", "label": "Bajada", "default": "Filtración pensada con cuidado para los hogares peruanos."},
+{"type": "text", "id": "cta", "label": "Botón", "default": "Conoce Nativo"},
+{"type": "url", "id": "url", "label": "Enlace del botón (vacío = ficha de Nativo)"},
+{"type": "header", "content": "Bloque 2 · Cero (fondo oscuro)"},
+{"type": "image_picker", "id": "c_imagen", "label": "Foto de Cero"},
+{"type": "text", "id": "c_nombre", "label": "Nombre", "default": "elvo· Cero"},
+{"type": "text", "id": "c_lema", "label": "Lema", "default": "Pureza máxima."},
+{"type": "textarea", "id": "c_sub", "label": "Bajada", "default": "Ósmosis inversa. Agua fría y caliente en un solo equipo."},
+{"type": "text", "id": "c_cta", "label": "Botón", "default": "Conoce Cero"},
+{"type": "url", "id": "c_url", "label": "Enlace del botón (vacío = ficha de Cero)"},
+{"type": "header", "content": "Sin uso"},
+{"type": "text", "id": "enlace", "label": "(Sin uso) Enlace secundario", "default": "Cómo funciona"},
+{"type": "text", "id": "pie", "label": "(Sin uso) Pie", "default": "Diseñado para el día a día"}
+], "presets": [{"name": "elvo· Inicio"}]}
 {% endschema %}
