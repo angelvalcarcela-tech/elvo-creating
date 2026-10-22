@@ -4,7 +4,7 @@ import re, os
 from build_home import LIQ_URLS, MOCK, wa
 import build3
 D = os.path.dirname(os.path.abspath(__file__))
-WAHOLA = wa('Hola,%20quiero%20elegir%20mi%20purificador%20elvo%C2%B7')
+WAHOLA = wa('Hola,%20quiero%20elegir%20mi%20purificador%20elvo%C2%B7%20%5BWEB-HOME%5D')
 
 NATIVO_FORM = '''[[L]]<form method="post" action="/cart/add" accept-charset="UTF-8"><select name="id" aria-label="Plan">{%- for v in p_nativo.variants -%}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}>{{ v.title }} · S/ {{ v.price | money_without_currency | split: '.' | first }}</option>{%- endfor -%}</select><button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button></form>[[/L]][[M]]<form onsubmit="return false"><select><option>18 meses · S/ 299</option><option>3 años · S/ 349</option><option>6 años · S/ 399</option></select><button class="a-pill a-pill--s a-pill--b">Agregar al carrito</button></form>[[/M]]'''
 
@@ -15,8 +15,8 @@ HTML = '''
   <span class="a-lab" style="color:rgba(255,255,255,.9)">elvo· · Purificación doméstica de agua</span>
   <h1>El agua es el primer ingrediente.</h1>
   <p class="sub">Un purificador para cada lugar donde el agua te toca.</p>
-  <div class="a-row"><span class="a-chip">5 min</span><span class="a-chip">6 etapas</span><span class="a-chip">18 meses</span></div>
-  <div class="a-row"><a class="a-pill a-pill--s" href="#linea">Ver la línea</a><a class="a-pill a-pill--wh" href="''' + WAHOLA + '''">Escríbenos</a></div>
+  <div class="a-row"><span class="a-chip">Oferta hasta el 24 de octubre</span><span class="a-chip">Envío gratis</span><span class="a-chip">30 días de prueba</span></div>
+  <div class="a-row"><a class="a-pill a-pill--s" href="{{ nativo_url }}">Comprar Nativo · desde S/ {{ nativo_price }}</a><a class="a-pill a-pill--wh" href="#linea">Ver la línea</a></div>
  </div>
  <div class="a-hero-r"><img src="{{ nativo_img }}" alt="elvo· Nativo, purificador para el caño, con un vaso de agua"></div>
 </section>
