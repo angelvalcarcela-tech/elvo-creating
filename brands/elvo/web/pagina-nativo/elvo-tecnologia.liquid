@@ -1,6 +1,6 @@
 {%- assign chips = section.settings.chips | split: ',' -%}
 <style>
-.et-bg{position:relative;overflow:hidden;background:#F9FAFB;isolation:isolate}
+.et-bg{position:relative;overflow:hidden;background:#F1F4F8;isolation:isolate}
 .et-bg::before,.et-bg::after{content:"";position:absolute;z-index:-1;pointer-events:none;background:repeating-linear-gradient(90deg,rgba(125,200,255,0) 0,rgba(110,195,255,.95) 46px,rgba(125,200,255,.05) 96px,rgba(110,195,255,.8) 150px,rgba(125,200,255,0) 200px);filter:blur(26px)}
 .et-bg::before{top:-6%;left:-4%;width:72%;height:95%;-webkit-mask-image:radial-gradient(ellipse at 0 0,#000 22%,transparent 56%);mask-image:radial-gradient(ellipse at 0 0,#000 22%,transparent 56%)}
 .et-bg::after{bottom:-6%;right:-4%;width:72%;height:95%;-webkit-mask-image:radial-gradient(ellipse at 100% 100%,#000 22%,transparent 56%);mask-image:radial-gradient(ellipse at 100% 100%,#000 22%,transparent 56%)}
@@ -13,21 +13,27 @@
 .et__lab{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(22px,2.4vw,30px);letter-spacing:-.015em!important;margin:46px 0 16px}
 .et__rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:4px 20px 8px;scroll-padding:0 20px}
 .et__rail::-webkit-scrollbar{display:none}
-.et__card{flex:0 0 300px;scroll-snap-align:start;background:#fff;border:1px solid #DCE6EE;border-radius:28px;padding:28px 26px 30px;min-height:290px;display:flex;flex-direction:column}
-.et__ic{width:46px;height:46px;display:block;margin-bottom:auto}
+.et__card{--c:#3355FF;flex:0 0 300px;scroll-snap-align:start;background:#fff;border-radius:28px;padding:30px 28px 26px;min-height:340px;display:flex;flex-direction:column}
+.et__ic{width:46px;height:46px;display:block;color:var(--c)}
 .et__ic svg{width:100%;height:100%;display:block}
-.et__card h3{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:22px;line-height:1.2;letter-spacing:-.01em!important;margin:34px 0 10px}
-.et__card p{font-size:15.5px;line-height:1.5;color:#2B3238;margin:0}
-.et__card .et__e{font-size:12px;font-weight:500;letter-spacing:.12em!important;text-transform:uppercase;color:#3355FF;margin:34px 0 8px}
-.et__card--c h3{margin-top:0;font-size:24px}
+.et__card h3{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:24px;line-height:1.22;letter-spacing:-.015em!important;margin:30px 0 0;color:#050607}
+.et__card h3 em{font-style:normal;color:var(--c)}
+.et__card .et__e{font-size:12px;font-weight:500;letter-spacing:.12em!important;text-transform:uppercase;color:#6B7480;margin:26px 0 0}
+.et__card--c h3{margin-top:8px}
+.et__more{margin-top:16px;font-size:15.5px;line-height:1.5;color:#2B3238}
+.et__more[hidden]{display:none}
+.et__more p{margin:0}
+.et__plus{margin-top:auto;align-self:flex-end;width:44px;height:44px;border-radius:50%;border:0;background:#E8E8ED;color:#1D1D1F;cursor:pointer;display:grid;place-items:center;padding:0;transition:transform .2s,background .2s}
+.et__plus svg{width:18px;height:18px}
+.et__card.is-open .et__plus{transform:rotate(45deg);background:#050607;color:#fff}
 .et__nav{display:flex;justify-content:flex-end;gap:12px;margin-top:12px}
-.et__nav button{width:44px;height:44px;border-radius:50%;border:0;background:rgba(190,208,223,.55);color:#050607;cursor:pointer;display:grid;place-items:center;padding:0}
+.et__nav button{width:44px;height:44px;border-radius:50%;border:0;background:rgba(210,210,215,.6);color:#1D1D1F;cursor:pointer;display:grid;place-items:center;padding:0}
 .et__nav button:disabled{opacity:.4;cursor:default}
-.et__nav button:not(:disabled):hover{background:#BED0DF}
+.et__nav button:not(:disabled):hover{background:#D2D2D7}
 .et__nav svg{width:18px;height:18px}
 .et__chips{margin-top:26px;font-size:13.5px;color:#6B7480}
 .et__fine{font-size:12px;color:#6B7480;margin-top:12px;line-height:1.5;max-width:80ch}
-@media(max-width:700px){.et{padding:48px 16px 40px}.et__lead{font-size:16.5px;margin-bottom:24px}.et__rail{margin:0 -16px;padding:4px 16px 8px;scroll-padding:0 16px}.et__card{flex-basis:78%;min-height:250px;padding:24px 22px 26px}.et__lab{margin-top:34px}}
+@media(max-width:700px){.et{padding:48px 16px 40px}.et__lead{font-size:16.5px;margin-bottom:24px}.et__rail{margin:0 -16px;padding:4px 16px 8px;scroll-padding:0 16px}.et__card{flex-basis:78%;min-height:300px;padding:26px 22px 22px}.et__card h3{font-size:22px}.et__lab{margin-top:34px}}
 </style>
 <div class="et-bg"><section class="et" id="tecnologia">
   <span class="et__k">{{ section.settings.etiqueta }}</span>
@@ -35,20 +41,54 @@
   <p class="et__lead">{{ section.settings.bajada_marca }}</p>
   <div data-rail>
    <div class="et__rail">
-    {%- if section.settings.p1_t != blank -%}<article class="et__card"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="#050607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 24s7.5-13 21-13 21 13 21 13-7.5 13-21 13S3 24 3 24z"/><circle cx="24" cy="24" r="6"/></svg></span><h3>{{ section.settings.p1_t }}</h3><p>{{ section.settings.p1_x }}</p></article>{%- endif -%}
-    {%- if section.settings.p2_t != blank -%}<article class="et__card"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="#050607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="24" cy="10" rx="13" ry="4.5"/><path d="M11 10v8c0 2.5 5.8 4.5 13 4.5S37 20.5 37 18v-8M11 18v8c0 2.5 5.8 4.5 13 4.5S37 28.5 37 26v-8M11 26v8c0 2.5 5.8 4.5 13 4.5S37 36.5 37 34v-8"/></svg></span><h3>{{ section.settings.p2_t }}</h3><p>{{ section.settings.p2_x }}</p></article>{%- endif -%}
-    {%- if section.settings.p3_t != blank -%}<article class="et__card"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="#050607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 33V21a12 12 0 0 1 24 0v12l3 4H9l3-4zM19 41a5 5 0 0 0 10 0"/></svg></span><h3>{{ section.settings.p3_t }}</h3><p>{{ section.settings.p3_x }}</p></article>{%- endif -%}
-    {%- if section.settings.p4_t != blank -%}<article class="et__card"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="#050607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10h36v24H20l-9 8v-8H6z"/><path d="M15 19h18M15 26h11"/></svg></span><h3>{{ section.settings.p4_t }}</h3><p>{{ section.settings.p4_x }}</p></article>{%- endif -%}
-    {%- if section.settings.p5_t != blank -%}<article class="et__card"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="#050607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 14v10l7 4"/></svg></span><h3>{{ section.settings.p5_t }}</h3><p>{{ section.settings.p5_x }}</p></article>{%- endif -%}
+    {%- assign cols = '#3355FF,#8B5CF6,#F2680C,#0E9F8E,#D9467E' | split: ',' -%}
+    {%- for i in (1..5) -%}
+     {%- assign kt = 'p' | append: i | append: '_t' -%}{%- assign kx = 'p' | append: i | append: '_x' -%}
+     {%- if section.settings[kt] != blank -%}
+     {%- assign tt = section.settings[kt] -%}
+     {%- liquid
+  assign hl = ''
+  assign pl = ''
+  if tt contains '*'
+    assign parts = tt | split: '*'
+    for pt in parts
+      assign odd = forloop.index0 | modulo: 2
+      if odd == 1
+        assign hl = hl | append: pt
+      else
+        assign pl = pl | append: pt
+      endif
+    endfor
+  else
+    assign words = tt | split: ' '
+    assign cut = words.size | divided_by: 2
+    for w in words
+      if forloop.index0 < cut
+        assign pl = pl | append: w | append: ' '
+      else
+        assign hl = hl | append: w | append: ' '
+      endif
+    endfor
+  endif
+-%}
+     <article class="et__card" style="--c:{{ cols[forloop.index0] }}"><span class="et__ic">
+      {%- case i -%}{%- when 1 -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 24s7.5-13 21-13 21 13 21 13-7.5 13-21 13S3 24 3 24z"/><circle cx="24" cy="24" r="6"/></svg>{%- when 2 -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="24" cy="10" rx="13" ry="4.5"/><path d="M11 10v8c0 2.5 5.8 4.5 13 4.5S37 20.5 37 18v-8M11 18v8c0 2.5 5.8 4.5 13 4.5S37 28.5 37 26v-8M11 26v8c0 2.5 5.8 4.5 13 4.5S37 36.5 37 34v-8"/></svg>{%- when 3 -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 33V21a12 12 0 0 1 24 0v12l3 4H9l3-4zM19 41a5 5 0 0 0 10 0"/></svg>{%- when 4 -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10h36v24H20l-9 8v-8H6z"/><path d="M15 19h18M15 26h11"/></svg>{%- else -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 14v10l7 4"/></svg>{%- endcase -%}
+     </span><h3>{{ pl }}<em>{{ hl }}</em></h3>{%- if section.settings[kx] != blank -%}<div class="et__more" hidden><p>{{ section.settings[kx] }}</p></div><button type="button" class="et__plus" aria-expanded="false" aria-label="Ver más"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 2v14M2 9h14"/></svg></button>{%- endif -%}</article>
+     {%- endif -%}
+    {%- endfor -%}
    </div>
    <div class="et__nav"><button type="button" data-p aria-label="Anterior"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 3l-6 6 6 6"/></svg></button><button type="button" data-n aria-label="Siguiente"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3l6 6-6 6"/></svg></button></div>
   </div>
   <p class="et__lab">{{ section.settings.titulo_cert }}</p>
   <div data-rail>
    <div class="et__rail">
-    {%- if section.settings.c1_n != blank -%}<article class="et__card et__card--c"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="#050607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v12c0 10-6.5 18-16 22C14.5 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg></span><p class="et__e">{{ section.settings.c1_k }}</p><h3>{{ section.settings.c1_n }}</h3><p>{{ section.settings.c1_x }}</p></article>{%- endif -%}
-    {%- if section.settings.c2_n != blank -%}<article class="et__card et__card--c"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="#050607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v12c0 10-6.5 18-16 22C14.5 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg></span><p class="et__e">{{ section.settings.c2_k }}</p><h3>{{ section.settings.c2_n }}</h3><p>{{ section.settings.c2_x }}</p></article>{%- endif -%}
-    {%- if section.settings.c3_n != blank -%}<article class="et__card et__card--c"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="#050607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v12c0 10-6.5 18-16 22C14.5 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg></span><p class="et__e">{{ section.settings.c3_k }}</p><h3>{{ section.settings.c3_n }}</h3><p>{{ section.settings.c3_x }}</p></article>{%- endif -%}
+    {%- assign ccols = '#0E9F8E,#3355FF,#8B5CF6' | split: ',' -%}
+    {%- for i in (1..3) -%}
+     {%- assign kn = 'c' | append: i | append: '_n' -%}{%- assign kk = 'c' | append: i | append: '_k' -%}{%- assign kx = 'c' | append: i | append: '_x' -%}
+     {%- if section.settings[kn] != blank -%}
+     <article class="et__card et__card--c" style="--c:{{ ccols[forloop.index0] }}"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v12c0 10-6.5 18-16 22C14.5 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg></span><p class="et__e">{{ section.settings[kk] }}</p><h3><em>{{ section.settings[kn] }}</em></h3>{%- if section.settings[kx] != blank -%}<div class="et__more" hidden><p>{{ section.settings[kx] }}</p></div><button type="button" class="et__plus" aria-expanded="false" aria-label="Ver más"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 2v14M2 9h14"/></svg></button>{%- endif -%}</article>
+     {%- endif -%}
+    {%- endfor -%}
    </div>
    <div class="et__nav"><button type="button" data-p aria-label="Anterior"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 3l-6 6 6 6"/></svg></button><button type="button" data-n aria-label="Siguiente"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3l6 6-6 6"/></svg></button></div>
   </div>
@@ -57,7 +97,12 @@
 </section></div>
 <script>
 (function(){
-  document.querySelectorAll('#tecnologia [data-rail]').forEach(function(w){
+  var root=document.getElementById('tecnologia');if(!root)return;
+  root.querySelectorAll('.et__plus').forEach(function(b){b.addEventListener('click',function(){
+    var c=b.closest('.et__card'),m=c.querySelector('.et__more'),o=b.getAttribute('aria-expanded')==='true';
+    b.setAttribute('aria-expanded',o?'false':'true');m.hidden=o;c.classList.toggle('is-open',!o);
+  })});
+  root.querySelectorAll('[data-rail]').forEach(function(w){
     var r=w.querySelector('.et__rail'),p=w.querySelector('[data-p]'),n=w.querySelector('[data-n]'),nav=w.querySelector('.et__nav');
     function st(){var m=r.scrollWidth-r.clientWidth;nav.style.display=m>6?'flex':'none';p.disabled=r.scrollLeft<=4;n.disabled=r.scrollLeft>=m-4}
     function go(d){var c=r.querySelector('.et__card');r.scrollBy({left:d*(c.offsetWidth+16),behavior:'smooth'})}
