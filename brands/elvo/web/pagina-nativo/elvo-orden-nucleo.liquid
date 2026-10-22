@@ -1,0 +1,14 @@
+<script>
+(function(){
+  function mover(){
+    var tec=document.getElementById('tecnologia'),nuc=document.getElementById('nucleo');
+    if(!tec||!nuc)return;
+    var a=tec.closest('.shopify-section')||tec,b=nuc.closest('.shopify-section')||nuc;
+    if(a===b||b.nextElementSibling===a)return;
+    a.insertAdjacentElement('beforebegin',b);
+  }
+  var n=0,t=setInterval(function(){mover();if(++n>40)clearInterval(t)},250);
+  if(document.readyState!=='loading')mover();
+})();
+</script>
+{% schema %}{"name":"elvo· Orden núcleo","settings":[],"presets":[{"name":"elvo· Orden núcleo"}]}{% endschema %}
