@@ -12,93 +12,91 @@
 {%- assign nativo_img = 'elvo-nativo-front.png' | file_url -%}
 {%- assign vivo_img = 'elvo-vivo-front.png' | file_url -%}
 <style>
-.cp{max-width:1280px;margin:0 auto;padding:64px 24px;font-family:'Inter',Arial,sans-serif;color:#050607;letter-spacing:0}
+.cp{max-width:1100px;margin:0 auto;padding:64px 20px 56px;font-family:'Inter',Arial,sans-serif;color:#050607;letter-spacing:0;text-align:center}
 .cp *{box-sizing:border-box;letter-spacing:0}
 .cp__k{font-size:12.5px;font-weight:500;letter-spacing:.14em!important;text-transform:uppercase;color:#3355FF}
-.cp h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(30.4px,3vw,44.8px);letter-spacing:-.02em!important;line-height:1.05;margin:10px 0 8px}
-.cp__lead{font-size:16px;color:#5B6470;margin:0 0 22px}
-.cp__ctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 18px}
-.cp__chip{font:inherit;font-size:14px;font-weight:500;padding:9px 18px;border:1px solid #BED0DF;border-radius:999px;background:#fff;color:#050607;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
-.cp__chip[aria-pressed="true"]{background:#3355FF;border-color:#3355FF;color:#fff}
-.cp__sw{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:14px;color:#2B3238;cursor:pointer}
-.cp__sw input{width:18px;height:18px;accent-color:#3355FF}
-.cp__hint{display:none;font-size:12px;color:#6B7480;margin:0 0 8px}
-.cp__wrap{overflow-x:auto;border:1px solid #DCE6EE;border-radius:24px;background:#fff;-webkit-overflow-scrolling:touch}
-.cp__grid{display:grid;grid-template-columns:150px repeat(var(--n,4),minmax(190px,1fr));min-width:calc(150px + var(--n,4)*190px)}
-.cp [hidden]{display:none!important}
-.cp__r{display:contents}
-.cp__r[hidden]{display:none}
-.cp__h,.cp__c,.cp__l,.cp__e{padding:16px 18px;border-bottom:1px solid #DCE6EE;border-left:1px solid #DCE6EE;transition:background .15s}
-.cp__e{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:16.8px;display:flex;align-items:flex-end}
-.cp__e,.cp__l{grid-column:1;border-left:0;position:sticky;left:0;z-index:2;background:#fff}
-.cp__l{color:#6B7480;font-size:12px;font-weight:500;letter-spacing:.1em!important;text-transform:uppercase;display:flex;align-items:flex-start;padding-top:20px}
-.cp__c{font-size:15.5px;line-height:1.4}
-.cp__no a{color:#6B7480;text-decoration:underline;text-underline-offset:3px}
-.cp__no a:hover{color:#3355FF}
-.cp__h{display:flex;flex-direction:column;gap:6px}
-.cp__ph0{aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:#EEF3F7;display:grid;place-items:center;margin-bottom:6px}
-.cp__ph0 img{width:100%;height:100%;object-fit:cover;display:block}
-.cp__ph{width:100%;height:100%;display:grid;place-items:center;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(25.6px,3vw,38.4px);color:#fff;letter-spacing:-.03em}
-.cp__ph--c{background:#3355FF}.cp__ph--m{background:#010A21}
-.cp__h h3{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:20.8px;margin:0}
-.cp__pr{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:16.8px;min-height:1.6em}
-.cp__pr small{font-family:'Inter',Arial,sans-serif;font-weight:400;font-size:13px;color:#6B7480}
-.cp__b{margin-top:6px;text-align:center;padding:11px 16px;border:1px solid #050607;border-radius:999px;color:#050607;font-weight:500;font-size:14px;text-decoration:none;transition:background .2s,color .2s}
-.cp__b:hover{background:#050607;color:#fff}
-.cp__b--s{background:#3355FF;border-color:#3355FF;color:#fff}
-.cp__b--s:hover{background:#050607;border-color:#050607}
-.cp__r:last-child .cp__c,.cp__r:last-child .cp__l{border-bottom:0}
-.cp__grid[data-hl="0"] [data-c="0"]{background:#F2F5FF}.cp__grid[data-hl="1"] [data-c="1"]{background:#F2F5FF}.cp__grid[data-hl="2"] [data-c="2"]{background:#F2F5FF}.cp__grid[data-hl="3"] [data-c="3"]{background:#F2F5FF}
-.cp__fine{font-size:12.5px;color:#6B7480;margin:14px 0 0}
-@media(max-width:700px){.cp{padding:44px 16px}.cp__sw{margin-left:0}.cp__hint{display:block}.cp__grid{grid-template-columns:104px repeat(var(--n,2),minmax(170px,1fr));min-width:calc(104px + var(--n,2)*170px)}.cp__l,.cp__e{padding:14px 10px;font-size:12px}.cp__h,.cp__c{padding:14px}}
+.cp h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:clamp(38px,5.4vw,60px);letter-spacing:-.03em!important;line-height:1.04;margin:12px auto 12px;max-width:14ch}
+.cp__lead{font-size:17px;line-height:1.5;color:#5B6470;margin:0 auto 8px;max-width:46ch}
+.cp__go{display:inline-block;margin:6px 0 0;color:#3355FF;font-size:17px;text-decoration:none}
+.cp__sel,.cp__cols{display:grid;grid-template-columns:repeat(var(--c,2),minmax(0,1fr));gap:14px}
+.cp__sel{margin:30px 0 26px}
+.cp__s{position:relative}
+.cp__s select{-webkit-appearance:none;appearance:none;width:100%;font:inherit;font-size:17px;font-weight:600;color:#050607;padding:15px 40px 15px 16px;border:1px solid #BED0DF;border-radius:14px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%233355FF' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 16px center;cursor:pointer;text-overflow:ellipsis}
+.cp__s select:focus-visible{outline:2px solid #3355FF;outline-offset:2px}
+.cp__img{aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:#EEF3F7;display:grid;place-items:center}
+.cp__img img{width:100%;height:100%;object-fit:cover;display:block}
+.cp__ph{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:28px;color:#fff;width:100%;height:100%;display:grid;place-items:center}
+.cp__pr{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:18px;margin:14px 0 10px;min-height:1.4em}
+.cp__pr small{font-family:'Inter',Arial,sans-serif;font-weight:400;font-size:13.5px;color:#6B7480}
+.cp__b{display:inline-block;padding:11px 24px;border-radius:999px;background:#3355FF;color:#fff;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s}
+.cp__b:hover{background:#050607}
+.cp__cols{margin-top:8px;row-gap:0}
+.cp__lab{grid-column:1/-1;margin-top:26px;padding-top:18px;border-top:1px solid #DCE6EE;font-size:12px;font-weight:600;letter-spacing:.12em!important;text-transform:uppercase;color:#6B7480}
+.cp__c{font-size:16px;line-height:1.4;padding-top:8px;color:#050607}
+.cp__fine{font-size:12.5px;color:#6B7480;margin:30px 0 0;line-height:1.5}
+@media(max-width:640px){.cp{padding:44px 16px 40px}.cp__sel{margin:24px 0 20px}.cp__s select{font-size:16px;padding:14px 36px 14px 14px}.cp__c{font-size:15px}.cp__lab{font-size:12px}}
 </style>
 <section class="cp" id="comparar">
  <span class="cp__k">{{ section.settings.etiqueta }}</span>
  <h2>{{ section.settings.titulo }}</h2>
  <p class="cp__lead">{{ section.settings.bajada }}</p>
- <div class="cp__ctl"><button type="button" class="cp__chip" aria-pressed="true" data-i="0">Nativo</button><button type="button" class="cp__chip" aria-pressed="true" data-i="1">Vivo</button><button type="button" class="cp__chip" aria-pressed="true" data-i="2">Alivio</button><button type="button" class="cp__chip" aria-pressed="true" data-i="3">Cero</button><label class="cp__sw"><input type="checkbox"> Ver solo diferencias</label></div>
- <p class="cp__hint">Desliza para ver más →</p>
- <div class="cp__wrap"><div class="cp__grid" style="--n:4">
-  <div class="cp__r"><div class="cp__e">Productos:</div><div class="cp__h" data-c="0"><div class="cp__ph0">{%- if section.settings.foto_nativo != blank -%}{{ section.settings.foto_nativo | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'elvo· Nativo' }}{%- else -%}<img src="{{ nativo_img }}" alt="elvo· Nativo" loading="lazy">{%- endif -%}</div><h3>Nativo</h3><div class="cp__pr"><small>Desde</small> S/ {{ nativo_min | money_without_currency | split: '.' | first }}</div><a class="cp__b cp__b--s" href="{{ nativo_url }}">Ver Nativo</a></div><div class="cp__h" data-c="1"><div class="cp__ph0">{%- if section.settings.foto_vivo != blank -%}{{ section.settings.foto_vivo | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'elvo· Vivo' }}{%- else -%}<img src="{{ vivo_img }}" alt="elvo· Vivo" loading="lazy">{%- endif -%}</div><h3>Vivo</h3><div class="cp__pr">{% if vivo_ok %}<small>Desde</small> S/ {{ vivo_min | money_without_currency | split: '.' | first }}{% else %}<small>Consulta el precio</small>{% endif %}</div><a class="cp__b" href="{% if vivo_ok %}{{ p_vivo.url }}{% else %}https://wa.me/51929190100?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo%20%5BWEB-COMP%5D{% endif %}"{% unless vivo_ok %} target="_blank" rel="noopener"{% endunless %}>Ver Vivo</a></div><div class="cp__h" data-c="2"><div class="cp__ph0">{%- if section.settings.foto_alivio != blank -%}{{ section.settings.foto_alivio | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'elvo· Alivio' }}{%- else -%}<span class="cp__ph cp__ph--c">16 · 22 L</span>{%- endif -%}</div><h3>Alivio</h3><div class="cp__pr">{% if alivio_ok %}<small>Desde</small> S/ {{ p_a16.price | money_without_currency | split: '.' | first }}{% else %}<small>Consulta el precio</small>{% endif %}</div><a class="cp__b" href="{% if alivio_ok %}{{ p_a16.url }}{% else %}https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Alivio%20%5BWEB-COMP%5D{% endif %}"{% unless alivio_ok %} target="_blank" rel="noopener"{% endunless %}>Ver Alivio</a></div><div class="cp__h" data-c="3"><div class="cp__ph0">{%- if section.settings.foto_cero != blank -%}{{ section.settings.foto_cero | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'elvo· Cero' }}{%- else -%}<span class="cp__ph cp__ph--m">Cero</span>{%- endif -%}</div><h3>Cero</h3><div class="cp__pr">{% if cero_ok %}S/ {{ p_cero.price | money_without_currency | split: '.' | first }}{% else %}<small>Consulta el precio</small>{% endif %}</div><a class="cp__b" href="{% if cero_ok %}{{ p_cero.url }}{% else %}https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Cero%20%5BWEB-COMP%5D{% endif %}"{% unless cero_ok %} target="_blank" rel="noopener"{% endunless %}>Conoce Cero</a></div></div>
-  <div class="cp__r" data-row="0"><div class="cp__l">Para</div><div class="cp__c" data-c="0">El caño</div><div class="cp__c" data-c="1">El caño</div><div class="cp__c" data-c="2">Tener agua guardada</div><div class="cp__c" data-c="3">Pureza máxima</div></div>
-  <div class="cp__r" data-row="1"><div class="cp__l">Qué hace</div><div class="cp__c" data-c="0">Retiene plomo y metales pesados*</div><div class="cp__c" data-c="1">Aporta magnesio; reduce cloro, olores y sabores</div><div class="cp__c" data-c="2">Purifica por gravedad</div><div class="cp__c" data-c="3">Ósmosis inversa; agua fría y caliente al instante</div></div>
-  <div class="cp__r" data-row="2"><div class="cp__l">Filtro interno</div><div class="cp__c" data-c="0">6 etapas en un núcleo</div><div class="cp__c" data-c="1">4 etapas con magnesio</div><div class="cp__c" data-c="2">Filtro cerámico, multimedia de 5 capas y piedra mineral</div><div class="cp__c" data-c="3">5 etapas: PAC y ROC (membrana RO y carbón activado), con esterilización UV</div></div>
-  <div class="cp__r" data-row="3"><div class="cp__l">Vida del filtro</div><div class="cp__c" data-c="0">18 meses</div><div class="cp__c" data-c="1">18 meses</div><div class="cp__c" data-c="2">10,000 litros o 1 año, lo que ocurra primero</div><div class="cp__c" data-c="3">PAC: 8 a 12 meses. ROC: 12 a 36 meses</div></div>
-  <div class="cp__r" data-row="4"><div class="cp__l">Instalación</div><div class="cp__c" data-c="0">5 min, sin gasfitero</div><div class="cp__c" data-c="1">5 min, sin gasfitero</div><div class="cp__c" data-c="2">Se llena con una jarra</div><div class="cp__c" data-c="3">Sin instalación</div></div>
-  <div class="cp__r" data-row="5"><div class="cp__l">Electricidad</div><div class="cp__c" data-c="0">Sin electricidad</div><div class="cp__c" data-c="1">Sin electricidad</div><div class="cp__c" data-c="2">Sin electricidad</div><div class="cp__c" data-c="3">110 a 240 V · 2200 W</div></div>
- </div></div>
+ <div class="cp__sel" data-sel></div>
+ <div class="cp__cols" data-cols></div>
  <p class="cp__fine">{{ section.settings.legal }}</p>
 </section>
+{%- if section.settings.foto_nativo != blank -%}{%- assign img_n = section.settings.foto_nativo | image_url: width: 700 -%}{%- else -%}{%- assign img_n = nativo_img -%}{%- endif -%}
+{%- if section.settings.foto_vivo != blank -%}{%- assign img_v = section.settings.foto_vivo | image_url: width: 700 -%}{%- else -%}{%- assign img_v = vivo_img -%}{%- endif -%}
+{%- if section.settings.foto_alivio != blank -%}{%- assign img_a = section.settings.foto_alivio | image_url: width: 700 -%}{%- else -%}{%- assign img_a = '' -%}{%- endif -%}
+{%- if section.settings.foto_cero != blank -%}{%- assign img_c = section.settings.foto_cero | image_url: width: 700 -%}{%- else -%}{%- assign img_c = '' -%}{%- endif -%}
+<script type="application/json" id="cp-data">[
+{"n":"Nativo","img":{{ img_n | json }},"price":{{ nativo_min | money_without_currency | split: '.' | first | prepend: 'Desde S/ ' | json }},"url":{{ nativo_url | json }},"cta":"Ver Nativo","ph":"#3355FF"},
+{"n":"Vivo","img":{{ img_v | json }},"price":{% if vivo_ok %}{{ vivo_min | money_without_currency | split: '.' | first | prepend: 'Desde S/ ' | json }}{% else %}"Consulta el precio"{% endif %},"url":{% if vivo_ok %}{{ p_vivo.url | json }}{% else %}"https://wa.me/51929190100?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo%20%5BWEB-COMP%5D"{% endif %},"cta":"Ver Vivo","ph":"#3355FF"},
+{"n":"Alivio","img":{{ img_a | json }},"price":{% if alivio_ok %}{{ p_a16.price | money_without_currency | split: '.' | first | prepend: 'Desde S/ ' | json }}{% else %}"Consulta el precio"{% endif %},"url":{% if alivio_ok %}{{ p_a16.url | json }}{% else %}"https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Alivio%20%5BWEB-COMP%5D"{% endif %},"cta":"Ver Alivio","ph":"#3355FF"},
+{"n":"Cero","img":{{ img_c | json }},"price":{% if cero_ok %}{{ p_cero.price | money_without_currency | split: '.' | first | prepend: 'S/ ' | json }}{% else %}"Consulta el precio"{% endif %},"url":{% if cero_ok %}{{ p_cero.url | json }}{% else %}"https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Cero%20%5BWEB-COMP%5D"{% endif %},"cta":"Conoce Cero","ph":"#010A21"}
+]</script>
 <script>
 (function(){
-  var r=document.getElementById('comparar');if(!r||r.dataset.on)return;r.dataset.on='1';
-  var g=r.querySelector('.cp__grid'),chips=[].slice.call(r.querySelectorAll('.cp__chip')),sw=r.querySelector('.cp__sw input');
-  var on=[true,true,true,true];
-  if(window.matchMedia&&matchMedia('(max-width:700px)').matches)on=[true,true,false,false];
-  function paint(){
-    var n=0;
-    on.forEach(function(v,i){
-      if(v)n++;
-      [].forEach.call(r.querySelectorAll('[data-c="'+i+'"]'),function(e){e.hidden=!v});
-      chips[i].setAttribute('aria-pressed',v?'true':'false');
-    });
-    g.style.setProperty('--n',n);
-    [].forEach.call(r.querySelectorAll('.cp__r[data-row]'),function(row){
-      var vals=[];
-      [].forEach.call(row.querySelectorAll('.cp__c'),function(c){if(!c.hidden)vals.push(c.textContent.trim())});
-      var same=vals.every(function(v){return v===vals[0]});
-      row.hidden=!!(sw.checked&&same&&n>1);
+  var root=document.getElementById('comparar');if(!root||root.dataset.on)return;root.dataset.on='1';
+  var P=JSON.parse(document.getElementById('cp-data').textContent);
+  var ROWS=[
+    ['Para',['El caño','El caño','Tener agua guardada','Pureza máxima']],
+    ['Qué hace',['Retiene plomo y metales pesados*','Aporta magnesio; reduce cloro, olores y sabores','Purifica por gravedad','Ósmosis inversa; agua fría y caliente al instante']],
+    ['Filtro interno',['6 etapas en un núcleo','4 etapas con magnesio','Filtro cerámico, multimedia de 5 capas y piedra mineral','5 etapas: PAC y ROC (membrana RO y carbón activado), con esterilización UV']],
+    ['Vida del filtro',['18 meses','18 meses','10,000 litros o 1 año, lo que ocurra primero','PAC: 8 a 12 meses. ROC: 12 a 36 meses']],
+    ['Instalación',['5 min, sin gasfitero','5 min, sin gasfitero','Se llena con una jarra','Sin instalación']],
+    ['Electricidad',['Sin electricidad','Sin electricidad','Sin electricidad','110 a 240 V · 2200 W']]
+  ];
+  var selEl=root.querySelector('[data-sel]'),colsEl=root.querySelector('[data-cols]'),pick=[0,1,2,3],cnt=0;
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+  function count(){var w=window.innerWidth;return w>=900?4:(w>=640?3:2)}
+  function draw(){
+    var n=cnt;selEl.innerHTML='';colsEl.innerHTML='';
+    selEl.style.setProperty('--c',n);colsEl.style.setProperty('--c',n);
+    for(var i=0;i<n;i++)(function(i){
+      var w=el('div','cp__s'),s=document.createElement('select');s.setAttribute('aria-label','Equipo '+(i+1));
+      P.forEach(function(p,k){var o=el('option',null,p.n);o.value=k;if(k===pick[i])o.selected=true;s.appendChild(o)});
+      s.addEventListener('change',function(){pick[i]=+s.value;draw();var ns=selEl.querySelectorAll('select')[i];if(ns)ns.focus()});
+      w.appendChild(s);selEl.appendChild(w)})(i);
+    for(var i=0;i<n;i++){
+      var p=P[pick[i]],c=el('div','cp__col'),im=el('div','cp__img');
+      if(p.img){var g=document.createElement('img');g.src=p.img;g.alt='elvo· '+p.n;g.loading='lazy';im.appendChild(g)}
+      else{var ph=el('span','cp__ph',p.n);ph.style.background=p.ph;im.appendChild(ph)}
+      c.appendChild(im);
+      var pr=el('div','cp__pr');
+      if(p.price.indexOf('Desde')===0){var sm=el('small',null,'Desde ');pr.appendChild(sm);pr.appendChild(document.createTextNode(p.price.slice(6)))}
+      else if(p.price.indexOf('Consulta')===0){pr.appendChild(el('small',null,p.price))}
+      else pr.textContent=p.price;
+      c.appendChild(pr);
+      var a=el('a','cp__b',p.cta);a.href=p.url;if(p.url.indexOf('wa.me')>-1){a.target='_blank';a.rel='noopener'}
+      c.appendChild(a);colsEl.appendChild(c);
+    }
+    ROWS.forEach(function(r){
+      colsEl.appendChild(el('div','cp__lab',r[0]));
+      for(var i=0;i<n;i++)colsEl.appendChild(el('div','cp__c',r[1][pick[i]]));
     });
   }
-  chips.forEach(function(b,i){b.addEventListener('click',function(){
-    var cnt=on.filter(Boolean).length;
-    if(on[i]&&cnt<=2)return;
-    on[i]=!on[i];paint();
-  })});
-  sw.addEventListener('change',paint);
-  g.addEventListener('mouseover',function(e){var c=e.target.closest&&e.target.closest('[data-c]');g.setAttribute('data-hl',c?c.getAttribute('data-c'):'')});
-  g.addEventListener('mouseleave',function(){g.setAttribute('data-hl','')});
-  paint();
+  function init(){var c=count();if(c!==cnt){cnt=c;draw()}}
+  init();window.addEventListener('resize',init);
 })();
 </script>
 {% schema %}
