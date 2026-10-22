@@ -1,6 +1,7 @@
 {%- assign p_n = all_products['repuesto-elvo-nativo'] -%}
 {%- assign p_v = all_products['repuesto-elvo-vivo'] -%}
 {%- assign p_a = all_products['kit-de-filtros-purificador-de-agua'] -%}
+{%- assign p_c = all_products['kit-filtros-elvo-cero'] -%}
 {%- assign wa = 'https://wa.me/51929190100?text=' -%}
 <style>
 .er{max-width:1280px;margin:0 auto;padding:64px 24px;font-family:'Inter',Arial,sans-serif;color:#050607;letter-spacing:0}
@@ -50,7 +51,7 @@
          assign pr = p_a
          assign cod = 'REP-ALIVIO'
        else
-         assign pr = nil
+         assign pr = p_c
          assign cod = 'REP-CERO'
      endcase
      assign kt = 'r' | append: i | append: '_tag'
@@ -122,10 +123,10 @@
 {"type":"image_picker","id":"r3_foto","label":"Foto (vacío = foto del producto)"},
 {"type":"header","content":"4 · Cero"},
 {"type":"text","id":"r4_tag","label":"Etiqueta","default":"Para Cero"},
-{"type":"text","id":"r4_nombre","label":"Nombre","default":"Filtros Cero · PAC y ROC"},
-{"type":"textarea","id":"r4_desc","label":"Descripción","default":"Filtros PAC y ROC para elvo· Cero."},
+{"type":"text","id":"r4_nombre","label":"Nombre","default":"Kit de filtros Cero"},
+{"type":"textarea","id":"r4_desc","label":"Descripción","default":"Kit con los filtros PAC y ROC para elvo· Cero."},
 {"type":"text","id":"r4_vida","label":"Duración","default":"PAC: 8 a 12 meses. ROC: 12 a 36 meses."},
-{"type":"text","id":"r4_precio","label":"Precio","default":""},
+{"type":"text","id":"r4_precio","label":"Precio si no está disponible en la tienda","default":"S/ 329"},
 {"type":"image_picker","id":"r4_foto","label":"Foto"}
 ],"presets":[{"name":"elvo· Repuestos"}]}
 {% endschema %}
