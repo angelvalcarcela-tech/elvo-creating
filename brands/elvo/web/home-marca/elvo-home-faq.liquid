@@ -1,4 +1,16 @@
 {{ 'elvo-mineral.css' | asset_url | stylesheet_tag }}
+<style>
+.a{letter-spacing:0}
+.a .a-faq summary{font-size:1.2rem;font-weight:500;padding:2px 0;letter-spacing:-.005em}
+.a .a-faq summary::after{font-size:1.5rem;line-height:1}
+.a .a-faq details{padding:22px 0}
+.a .a-faq p{font-size:1.02rem;line-height:1.6;margin-top:12px;letter-spacing:0}
+.a .a-end h2{font-size:clamp(2rem,4.2vw,3.6rem);letter-spacing:-.02em}
+.a .a-end .a-pill{font-size:1.05rem;padding:16px 30px}
+.a .a-legal{font-size:12.5px;line-height:1.55;letter-spacing:0}
+@media(min-width:1100px){.a .a-faq summary{font-size:1.4rem}.a .a-faq p{font-size:1.12rem}.a .a-faq details{padding:26px 0}.a .a-legal{font-size:13px}}
+@media(max-width:800px){.a .a-faq summary{font-size:1.1rem}}
+</style>
 <div class="a">
 <section class="a-sec" style="padding-top:8px"><div class="a-w">
  <div class="a-head"><div><span class="a-lab">Preguntas frecuentes</span><h2 class="a-h2">¿Tienes dudas?</h2></div></div>

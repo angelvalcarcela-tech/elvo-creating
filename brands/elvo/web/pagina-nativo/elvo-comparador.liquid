@@ -1,0 +1,107 @@
+{%- assign p_nativo = all_products['elvonativo'] -%}
+{%- assign nativo_url = p_nativo.url | default: '/products/elvonativo' -%}
+{%- assign nativo_price = p_nativo.price | money_without_currency | split: '.' | first -%}
+{%- assign nativo_img = 'elvo-nativo-front.png' | file_url -%}
+{%- assign vivo_img = 'elvo-vivo-front.png' | file_url -%}
+<style>
+.cp{max-width:1280px;margin:0 auto;padding:64px 24px;font-family:'Inter',Arial,sans-serif;color:#050607}
+.cp *{box-sizing:border-box}
+.cp__k{font-size:12.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#3355FF}
+.cp h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.9rem,3vw,2.8rem);letter-spacing:-.02em;line-height:1.05;margin:10px 0 8px}
+.cp__lead{font-size:16px;color:#5B6470;margin:0 0 22px}
+.cp__ctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 18px}
+.cp__chip{font:inherit;font-size:14px;font-weight:500;padding:9px 18px;border:1px solid #BED0DF;border-radius:999px;background:#fff;color:#050607;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.cp__chip[aria-pressed="true"]{background:#3355FF;border-color:#3355FF;color:#fff}
+.cp__sw{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:14px;color:#2B3238;cursor:pointer}
+.cp__sw input{width:18px;height:18px;accent-color:#3355FF}
+.cp__hint{display:none;font-size:12px;color:#6B7480;margin:0 0 8px}
+.cp__wrap{overflow-x:auto;border:1px solid #DCE6EE;border-radius:24px;background:#fff;-webkit-overflow-scrolling:touch}
+.cp__grid{display:grid;grid-template-columns:150px repeat(var(--n,4),minmax(190px,1fr));min-width:calc(150px + var(--n,4)*190px)}
+.cp [hidden]{display:none!important}
+.cp__r{display:contents}
+.cp__r[hidden]{display:none}
+.cp__h,.cp__c,.cp__l,.cp__e{padding:16px 18px;border-bottom:1px solid #DCE6EE;border-left:1px solid #DCE6EE;transition:background .15s}
+.cp__e,.cp__l{border-left:0;position:sticky;left:0;z-index:2;background:#fff}
+.cp__l{color:#6B7480;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:flex-start;padding-top:20px}
+.cp__c{font-size:15.5px;line-height:1.4}
+.cp__no a{color:#6B7480;text-decoration:underline;text-underline-offset:3px}
+.cp__no a:hover{color:#3355FF}
+.cp__h{display:flex;flex-direction:column;gap:6px}
+.cp__ph0{aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:#EEF3F7;display:grid;place-items:center;margin-bottom:6px}
+.cp__ph0 img{width:100%;height:100%;object-fit:cover;display:block}
+.cp__ph{width:100%;height:100%;display:grid;place-items:center;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.6rem,3vw,2.4rem);color:#fff;letter-spacing:-.03em}
+.cp__ph--c{background:#3355FF}.cp__ph--m{background:#010A21}
+.cp__h h3{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.3rem;margin:0}
+.cp__pr{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.05rem;min-height:1.6em}
+.cp__pr small{font-family:'Inter',Arial,sans-serif;font-weight:400;font-size:13px;color:#6B7480}
+.cp__b{margin-top:6px;text-align:center;padding:11px 16px;border:1px solid #050607;border-radius:999px;color:#050607;font-weight:500;font-size:14px;text-decoration:none;transition:background .2s,color .2s}
+.cp__b:hover{background:#050607;color:#fff}
+.cp__b--s{background:#3355FF;border-color:#3355FF;color:#fff}
+.cp__b--s:hover{background:#050607;border-color:#050607}
+.cp__r:last-child .cp__c,.cp__r:last-child .cp__l{border-bottom:0}
+.cp__grid[data-hl="0"] [data-c="0"]{background:#F2F5FF}.cp__grid[data-hl="1"] [data-c="1"]{background:#F2F5FF}.cp__grid[data-hl="2"] [data-c="2"]{background:#F2F5FF}.cp__grid[data-hl="3"] [data-c="3"]{background:#F2F5FF}
+.cp__fine{font-size:12.5px;color:#6B7480;margin:14px 0 0}
+@media(max-width:700px){.cp{padding:44px 16px}.cp__sw{margin-left:0}.cp__hint{display:block}.cp__grid{grid-template-columns:104px repeat(var(--n,2),minmax(170px,1fr));min-width:calc(104px + var(--n,2)*170px)}.cp__l,.cp__e{padding:14px 10px;font-size:11px}.cp__h,.cp__c{padding:14px}}
+</style>
+<section class="cp" id="comparar">
+ <span class="cp__k">{{ section.settings.etiqueta }}</span>
+ <h2>{{ section.settings.titulo }}</h2>
+ <p class="cp__lead">{{ section.settings.bajada }}</p>
+ <div class="cp__ctl"><button type="button" class="cp__chip" aria-pressed="true" data-i="0">Nativo</button><button type="button" class="cp__chip" aria-pressed="true" data-i="1">Vivo</button><button type="button" class="cp__chip" aria-pressed="true" data-i="2">Alivio</button><button type="button" class="cp__chip" aria-pressed="true" data-i="3">Cero</button><label class="cp__sw"><input type="checkbox"> Ver solo diferencias</label></div>
+ <p class="cp__hint">Desliza para ver más →</p>
+ <div class="cp__wrap"><div class="cp__grid" style="--n:4">
+  <div class="cp__r"><div class="cp__e"></div><div class="cp__h" data-c="0"><div class="cp__ph0">{%- if section.settings.foto_nativo != blank -%}{{ section.settings.foto_nativo | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'elvo· Nativo' }}{%- else -%}<img src="{{ nativo_img }}" alt="elvo· Nativo" loading="lazy">{%- endif -%}</div><h3>Nativo</h3><div class="cp__pr"><small>Desde</small> S/ {{ nativo_price }}</div><a class="cp__b cp__b--s" href="{{ nativo_url }}">Ver Nativo</a></div><div class="cp__h" data-c="1"><div class="cp__ph0">{%- if section.settings.foto_vivo != blank -%}{{ section.settings.foto_vivo | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'elvo· Vivo' }}{%- else -%}<img src="{{ vivo_img }}" alt="elvo· Vivo" loading="lazy">{%- endif -%}</div><h3>Vivo</h3><div class="cp__pr"><small>Consulta el precio</small></div><a class="cp__b" target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo%20%5BWEB-COMP%5D">Consultar</a></div><div class="cp__h" data-c="2"><div class="cp__ph0">{%- if section.settings.foto_alivio != blank -%}{{ section.settings.foto_alivio | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'elvo· Alivio' }}{%- else -%}<span class="cp__ph cp__ph--c">16 · 22 L</span>{%- endif -%}</div><h3>Alivio</h3><div class="cp__pr"><small>Consulta el precio</small></div><a class="cp__b" target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Alivio%20%5BWEB-COMP%5D">Consultar</a></div><div class="cp__h" data-c="3"><div class="cp__ph0">{%- if section.settings.foto_cero != blank -%}{{ section.settings.foto_cero | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'elvo· Cero' }}{%- else -%}<span class="cp__ph cp__ph--m">Cero</span>{%- endif -%}</div><h3>Cero</h3><div class="cp__pr"><small>Consulta el precio</small></div><a class="cp__b" target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Cero%20%5BWEB-COMP%5D">Conoce Cero</a></div></div>
+  <div class="cp__r" data-row="0"><div class="cp__l">Para</div><div class="cp__c" data-c="0">El caño</div><div class="cp__c" data-c="1">El caño</div><div class="cp__c" data-c="2">Tener agua guardada</div><div class="cp__c" data-c="3">Pureza máxima</div></div>
+  <div class="cp__r" data-row="1"><div class="cp__l">Qué hace</div><div class="cp__c" data-c="0">Retiene plomo y metales pesados*</div><div class="cp__c" data-c="1">Aporta magnesio; reduce cloro, olores y sabores</div><div class="cp__c" data-c="2">Purifica por gravedad</div><div class="cp__c" data-c="3">Ósmosis inversa; agua fría y caliente</div></div>
+  <div class="cp__r" data-row="2"><div class="cp__l">Instalación</div><div class="cp__c" data-c="0">5 min, sin gasfitero</div><div class="cp__c" data-c="1">5 min, sin gasfitero</div><div class="cp__c" data-c="2">Se llena con una jarra</div><div class="cp__c cp__no" data-c="3"><a target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20quiero%20consultar%20instalaci%C3%B3n%20de%20elvo%C2%B7%20Cero%20%5BWEB-COMP%5D">Consultar</a></div></div>
+  <div class="cp__r" data-row="3"><div class="cp__l">Electricidad</div><div class="cp__c" data-c="0">Sin electricidad</div><div class="cp__c" data-c="1">Sin electricidad</div><div class="cp__c" data-c="2">Sin electricidad</div><div class="cp__c cp__no" data-c="3"><a target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20quiero%20consultar%20electricidad%20de%20elvo%C2%B7%20Cero%20%5BWEB-COMP%5D">Consultar</a></div></div>
+  <div class="cp__r" data-row="4"><div class="cp__l">Capacidad</div><div class="cp__c" data-c="0">—</div><div class="cp__c" data-c="1">—</div><div class="cp__c" data-c="2">16 o 22 litros</div><div class="cp__c" data-c="3">—</div></div>
+  <div class="cp__r" data-row="5"><div class="cp__l">Núcleo</div><div class="cp__c" data-c="0">18 meses</div><div class="cp__c" data-c="1">18 meses</div><div class="cp__c cp__no" data-c="2"><a target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20quiero%20consultar%20n%C3%BAcleo%20de%20elvo%C2%B7%20Alivio%20%5BWEB-COMP%5D">Consultar</a></div><div class="cp__c cp__no" data-c="3"><a target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20quiero%20consultar%20n%C3%BAcleo%20de%20elvo%C2%B7%20Cero%20%5BWEB-COMP%5D">Consultar</a></div></div>
+  <div class="cp__r" data-row="6"><div class="cp__l">Garantía</div><div class="cp__c" data-c="0">1 año</div><div class="cp__c" data-c="1">1 año</div><div class="cp__c cp__no" data-c="2"><a target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20quiero%20consultar%20garant%C3%ADa%20de%20elvo%C2%B7%20Alivio%20%5BWEB-COMP%5D">Consultar</a></div><div class="cp__c cp__no" data-c="3"><a target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola%2C%20quiero%20consultar%20garant%C3%ADa%20de%20elvo%C2%B7%20Cero%20%5BWEB-COMP%5D">Consultar</a></div></div>
+ </div></div>
+ <p class="cp__fine">{{ section.settings.legal }}</p>
+</section>
+<script>
+(function(){
+  var r=document.getElementById('comparar');if(!r||r.dataset.on)return;r.dataset.on='1';
+  var g=r.querySelector('.cp__grid'),chips=[].slice.call(r.querySelectorAll('.cp__chip')),sw=r.querySelector('.cp__sw input');
+  var on=[true,true,true,true];
+  if(window.matchMedia&&matchMedia('(max-width:700px)').matches)on=[true,true,false,false];
+  function paint(){
+    var n=0;
+    on.forEach(function(v,i){
+      if(v)n++;
+      [].forEach.call(r.querySelectorAll('[data-c="'+i+'"]'),function(e){e.hidden=!v});
+      chips[i].setAttribute('aria-pressed',v?'true':'false');
+    });
+    g.style.setProperty('--n',n);
+    [].forEach.call(r.querySelectorAll('.cp__r[data-row]'),function(row){
+      var vals=[];
+      [].forEach.call(row.querySelectorAll('.cp__c'),function(c){if(!c.hidden)vals.push(c.textContent.trim())});
+      var same=vals.every(function(v){return v===vals[0]});
+      row.hidden=!!(sw.checked&&same&&n>1);
+    });
+  }
+  chips.forEach(function(b,i){b.addEventListener('click',function(){
+    var cnt=on.filter(Boolean).length;
+    if(on[i]&&cnt<=2)return;
+    on[i]=!on[i];paint();
+  })});
+  sw.addEventListener('change',paint);
+  g.addEventListener('mouseover',function(e){var c=e.target.closest&&e.target.closest('[data-c]');g.setAttribute('data-hl',c?c.getAttribute('data-c'):'')});
+  g.addEventListener('mouseleave',function(){g.setAttribute('data-hl','')});
+  paint();
+})();
+</script>
+{% schema %}
+{"name":"elvo· Comparador","settings":[
+{"type":"text","id":"etiqueta","label":"Etiqueta","default":"Comparar"},
+{"type":"text","id":"titulo","label":"Título","default":"Cuál es para ti"},
+{"type":"text","id":"bajada","label":"Bajada","default":"Elige qué equipos comparar y mira solo lo que cambia entre ellos."},
+{"type":"image_picker","id":"foto_nativo","label":"Foto de Nativo (opcional)"},
+{"type":"image_picker","id":"foto_vivo","label":"Foto de Vivo (opcional)"},
+{"type":"image_picker","id":"foto_alivio","label":"Foto de Alivio"},
+{"type":"image_picker","id":"foto_cero","label":"Foto de Cero"},
+{"type":"text","id":"legal","label":"Nota","default":"*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada."}],
+"presets":[{"name":"elvo· Comparador"}]}
+{% endschema %}

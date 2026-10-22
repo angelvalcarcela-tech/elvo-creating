@@ -1,5 +1,7 @@
 {%- assign fallback = 'elvo-nativo-front.png' | file_url -%}
 {%- assign foto = section.settings.imagen -%}
+{%- assign p_cero = all_products['elvo-cero'] -%}
+{%- if section.settings.url != blank -%}{%- assign cero_url = section.settings.url -%}{%- elsif p_cero.id -%}{%- assign cero_url = p_cero.url -%}{%- else -%}{%- assign cero_url = 'https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Cero%20%5BWEB-ASP%5D' -%}{%- endif -%}
 {%- if foto != blank or section.settings.mostrar_sin_foto or request.design_mode -%}
 <style>
 .as{max-width:1440px;margin:0 auto;padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px;font-family:'Inter',Arial,sans-serif;color:#050607}
@@ -13,6 +15,8 @@
 .as__chips span{font-size:clamp(.95rem,1.4vw,1.15rem);text-transform:uppercase;letter-spacing:.04em;padding:14px 30px;border:1px solid #A0BBD0;border-radius:999px;background:#fff}
 .as__chips span:nth-child(2){margin-left:min(14%,110px)}
 .as__chips span:nth-child(3){margin-left:min(7%,50px)}
+.as__a{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;margin-top:6px;background:#3355FF;color:#fff;border-radius:999px;padding:15px 30px;font-weight:600;font-size:1.05rem;text-decoration:none;transition:background .2s}
+.as__a:hover{background:#050607}
 .as__r{position:relative;border-radius:24px;overflow:hidden;background:#DCE6EE;min-height:640px}
 .as__r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .as__tag{position:absolute;top:18px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #BED0DF;border-radius:999px;padding:9px 20px;font-size:14px;white-space:nowrap}
@@ -24,6 +28,7 @@
     <div class="as__bot">
       <h2>{{ section.settings.linea1 }}<br>{{ section.settings.linea2 }}</h2>
       <div class="as__chips"><span>{{ section.settings.chip1 }}</span><span>{{ section.settings.chip2 }}</span><span>{{ section.settings.chip3 }}</span></div>
+      {%- if section.settings.cta != blank -%}<a class="as__a" href="{{ cero_url }}"{% unless p_cero.id %} target="_blank" rel="noopener"{% endunless %}>{{ section.settings.cta }} <span aria-hidden="true">↗</span></a>{%- endif -%}
     </div>
   </div>
   <div class="as__r">{%- if foto != blank -%}{{ foto | image_url: width: 1800 | image_tag: loading: 'lazy', alt: section.settings.tag }}{%- else -%}<img src="{{ fallback }}" alt="" loading="lazy">{%- endif -%}{%- if section.settings.tag != blank -%}<span class="as__tag">{{ section.settings.tag }}</span>{%- endif -%}</div>
@@ -39,6 +44,8 @@
 {"type":"text","id":"chip1","label":"Etiqueta 1","default":"5 minutos de instalación"},
 {"type":"text","id":"chip2","label":"Etiqueta 2","default":"6 etapas de filtración"},
 {"type":"text","id":"chip3","label":"Etiqueta 3","default":"Sin electricidad"},
+{"type":"text","id":"cta","label":"Botón","default":"Conoce Cero"},
+{"type":"url","id":"url","label":"Enlace del botón (vacío = ficha de Cero o WhatsApp)"},
 {"type":"text","id":"tag","label":"Etiqueta sobre la foto","default":"El primer vaso del día"}],
 "presets":[{"name":"elvo· Aspiracional"}]}
 {% endschema %}
