@@ -1,0 +1,23 @@
+<style>
+.elvo-tier[data-tier="0"],.elvo-pv[data-pv="0"]{display:none!important}
+</style>
+<script>
+(function(){
+  function fix(){
+    var root=document.querySelector('.elvo[id^="elvo-pdp-"]');if(!root)return;
+    var act=root.querySelector('.elvo-tier[aria-pressed="true"]');
+    if(act&&act.getAttribute('data-tier')==='0'){
+      var t1=root.querySelector('.elvo-tier[data-tier="1"]');
+      if(t1&&!t1.disabled)t1.click();
+    }
+  }
+  function init(){
+    fix();
+    var root=document.querySelector('.elvo[id^="elvo-pdp-"]');if(!root)return;
+    new MutationObserver(fix).observe(root,{subtree:true,attributes:true,attributeFilter:['aria-pressed']});
+    setTimeout(fix,600);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+{% schema %}{"name":"elvo· Sin plan 18 meses","settings":[],"presets":[{"name":"elvo· Sin plan 18 meses"}]}{% endschema %}

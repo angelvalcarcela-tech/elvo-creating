@@ -1,5 +1,7 @@
 {%- assign p = product -%}
-{%- assign v0 = p.selected_or_first_available_variant -%}
+{%- assign ocultar = section.settings.ocultar | default: '18 meses' -%}
+{%- assign v0 = p.variants.first -%}
+{%- for v in p.variants -%}{%- if v.title != ocultar and v0.title == ocultar -%}{%- assign v0 = v -%}{%- endif -%}{%- endfor -%}
 {%- assign multi = false -%}
 {%- if p.variants.size > 1 -%}{%- assign multi = true -%}{%- endif -%}
 {%- assign wa = section.settings.whatsapp | default: '51929190100' -%}
@@ -116,6 +118,7 @@
     {%- if multi -%}
     <div class="pe__vs" role="radiogroup" aria-label="{{ p.options.first }}">
      {%- for v in p.variants -%}
+      {%- if v.title == ocultar -%}{%- continue -%}{%- endif -%}
       {%- assign ah = v.compare_at_price | minus: v.price -%}
       <label class="pe__v"><input type="radio" name="id" value="{{ v.id }}" data-price="S/ {{ v.price | money_without_currency | split: '.' | first }}" data-cmp="{% if v.compare_at_price > v.price %}S/ {{ v.compare_at_price | money_without_currency | split: '.' | first }}{% endif %}" data-sv="{% if ah > 0 %}Ahorras S/ {{ ah | money_without_currency | split: '.' | first }}{% endif %}"{% if v.id == v0.id %} checked{% endif %}{% unless v.available %} disabled{% endunless %}><i></i><span><b>{{ v.title }}</b>{%- if ah > 0 -%}<small>Ahorras S/ {{ ah | money_without_currency | split: '.' | first }}</small>{%- endif -%}</span><em>S/ {{ v.price | money_without_currency | split: '.' | first }}{%- if v.compare_at_price > v.price -%}<s>S/ {{ v.compare_at_price | money_without_currency | split: '.' | first }}</s>{%- endif -%}</em></label>
      {%- endfor -%}
@@ -186,6 +189,7 @@
 {"type":"text","id":"fi_titulo","label":"Filtro interno: título","default":"Lo que pasa por dentro"},
 {"type":"textarea","id":"fi_bajada","label":"Filtro interno: bajada"},
 {"type":"checkbox","id":"mostrar_descripcion","label":"Mostrar la descripción del producto","default":true},
+{"type":"text","id":"ocultar","label":"Variante a ocultar (título exacto)","default":"18 meses"},
 {"type":"text","id":"legal","label":"Nota"}],
 "blocks":[
 {"type":"punto","name":"Punto destacado","settings":[{"type":"text","id":"texto","label":"Texto"}]},
