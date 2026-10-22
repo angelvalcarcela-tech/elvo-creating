@@ -177,3 +177,5 @@ Decidir por **CAC por pedido** y no por costo por conversación. No declarar gan
 - Kit de repuesto: se vende aparte, S/95. El equipo trae su filtro.
 - Etapas: filtro cerámico; multimedia de 5 capas (carbón activado y de plata, WMSM-300, arena de sílice, zeolita, arena mineral); piedra mineral.
 - No usar: claims de salud del proveedor (cáncer, virus, terapéutico), certificados ajenos (ENAC, WQA, ROHS, ISO 9001), metales por nombre, ni "mata bacterias" literal.
+- Precios: Alivio 16 = S/159, Alivio 22 = S/198.
+- Incluye gotas de pH para medir el pH del agua.
