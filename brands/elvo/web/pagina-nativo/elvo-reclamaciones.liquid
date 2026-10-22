@@ -1,0 +1,76 @@
+{{ 'elvo-web.css' | asset_url | stylesheet_tag }}
+<style>
+  .rc{font-family:var(--body,'Inter',sans-serif);color:#050607;max-width:820px;margin:0 auto;padding:56px 20px 88px}
+  .rc *{box-sizing:border-box}
+  .rc h1{font-family:var(--display,'Plus Jakarta Sans',sans-serif);font-weight:600;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.02em;margin:0 0 12px}
+  .rc h2{font-family:var(--display,'Plus Jakarta Sans',sans-serif);font-weight:600;font-size:1.15rem;margin:34px 0 14px}
+  .rc p{margin:0 0 12px;line-height:1.6}
+  .rc .rc-box{background:#EEF3F7;border-radius:16px;padding:18px 20px;font-size:15px;line-height:1.6;color:#2B3440}
+  .rc .rc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .rc label{display:block;font-size:13px;font-weight:600;margin:0 0 6px}
+  .rc input[type=text],.rc input[type=email],.rc input[type=tel],.rc select,.rc textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1px solid #BED0DF;border-radius:12px;background:#fff;color:#050607}
+  .rc textarea{min-height:120px;resize:vertical}
+  .rc .rc-full{grid-column:1/-1}
+  .rc .rc-radio{display:flex;gap:22px;flex-wrap:wrap;font-size:15px}
+  .rc .rc-radio label{font-weight:400;display:flex;gap:8px;align-items:center;margin:0}
+  .rc button{margin-top:22px;font:inherit;font-weight:500;font-size:15px;background:#3355FF;color:#fff;border:0;border-radius:999px;padding:14px 30px;cursor:pointer}
+  .rc button:hover{background:#050607}
+  .rc .rc-ok{background:#E8EEF5;border-radius:16px;padding:18px 20px;margin-bottom:20px}
+  .rc .rc-err{background:#FDECEA;border-radius:16px;padding:14px 18px;margin-bottom:20px;color:#8A1F11}
+  .rc small{color:#5B6470;font-size:12.5px;line-height:1.5;display:block;margin-top:14px}
+  @media(max-width:640px){.rc .rc-grid{grid-template-columns:1fr}}
+</style>
+<div class="rc">
+  <h1>Libro de Reclamaciones</h1>
+  <p>Si tienes un reclamo o una queja sobre un producto o servicio de elvo·, regístralo aquí. Te enviaremos una copia a tu correo.</p>
+  <div class="rc-box">
+    <strong>Proveedor:</strong> Inversiones Gad SAC · <strong>RUC</strong> 20522531287<br>
+    <strong>Dirección:</strong> Jr. Varela 1235, Breña, Lima<br>
+    <strong>Tienda:</strong> elvo.pe · WhatsApp 929190100
+  </div>
+
+  {%- form 'contact', id: 'libro-reclamaciones' -%}
+    {%- if form.posted_successfully? -%}
+      <div class="rc-ok" role="status"><strong>Recibimos tu registro.</strong> Te contactaremos al correo y teléfono que indicaste y te responderemos dentro del plazo que establece la ley.</div>
+    {%- endif -%}
+    {%- if form.errors -%}
+      <div class="rc-err" role="alert">Revisa los datos: falta un campo obligatorio o el correo no es válido.</div>
+    {%- endif -%}
+
+    <input type="hidden" name="contact[Asunto]" value="Libro de Reclamaciones">
+
+    <h2>1. Identificación del consumidor</h2>
+    <div class="rc-grid">
+      <div class="rc-full"><label for="rc-name">Nombre completo *</label><input id="rc-name" type="text" name="contact[name]" required autocomplete="name"></div>
+      <div><label for="rc-doc">Tipo de documento *</label><select id="rc-doc" name="contact[Tipo de documento]" required><option>DNI</option><option>Carné de extranjería</option><option>Pasaporte</option><option>RUC</option></select></div>
+      <div><label for="rc-num">Número de documento *</label><input id="rc-num" type="text" name="contact[Número de documento]" required></div>
+      <div class="rc-full"><label for="rc-dom">Domicilio *</label><input id="rc-dom" type="text" name="contact[Domicilio]" required autocomplete="street-address"></div>
+      <div><label for="rc-tel">Teléfono *</label><input id="rc-tel" type="tel" name="contact[phone]" required autocomplete="tel"></div>
+      <div><label for="rc-mail">Correo electrónico *</label><input id="rc-mail" type="email" name="contact[email]" required autocomplete="email"></div>
+    </div>
+
+    <h2>2. Identificación del bien contratado</h2>
+    <div class="rc-grid">
+      <div><label for="rc-bien">Tipo *</label><select id="rc-bien" name="contact[Bien contratado]" required><option>Producto</option><option>Servicio</option></select></div>
+      <div><label for="rc-monto">Monto reclamado (S/)</label><input id="rc-monto" type="text" name="contact[Monto reclamado]" inputmode="decimal"></div>
+      <div class="rc-full"><label for="rc-desc">Descripción del producto o servicio *</label><input id="rc-desc" type="text" name="contact[Descripción del bien]" required placeholder="Ejemplo: elvo· Nativo, plan 3 años, pedido n.º"></div>
+    </div>
+
+    <h2>3. Detalle del reclamo o la queja</h2>
+    <div class="rc-grid">
+      <div class="rc-full">
+        <label>Tipo *</label>
+        <div class="rc-radio">
+          <label><input type="radio" name="contact[Tipo]" value="Reclamo" required> Reclamo (disconformidad con el producto o servicio)</label>
+          <label><input type="radio" name="contact[Tipo]" value="Queja"> Queja (malestar sobre la atención)</label>
+        </div>
+      </div>
+      <div class="rc-full"><label for="rc-det">Detalle *</label><textarea id="rc-det" name="contact[body]" required></textarea></div>
+      <div class="rc-full"><label for="rc-ped">Pedido del consumidor *</label><textarea id="rc-ped" name="contact[Pedido del consumidor]" required></textarea></div>
+      <div class="rc-full"><label style="display:flex;gap:10px;align-items:flex-start;font-weight:400"><input type="checkbox" required style="margin-top:4px"> Declaro que los datos son verdaderos y acepto que elvo· me responda por el correo y el teléfono indicados.</label></div>
+    </div>
+    <button type="submit">Enviar registro</button>
+    <small>La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI. El proveedor debe dar respuesta al reclamo en un plazo no mayor al establecido por la normativa vigente.</small>
+  {%- endform -%}
+</div>
+{% schema %}{"name":"elvo· Libro de Reclamaciones","settings":[]}{% endschema %}
