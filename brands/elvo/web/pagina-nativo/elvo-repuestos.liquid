@@ -1,0 +1,131 @@
+{%- assign p_n = all_products['repuesto-elvo-nativo'] -%}
+{%- assign p_v = all_products['repuesto-elvo-vivo'] -%}
+{%- assign p_a = all_products['kit-de-filtros-purificador-de-agua'] -%}
+{%- assign wa = 'https://wa.me/51929190100?text=' -%}
+<style>
+.er{max-width:1280px;margin:0 auto;padding:64px 24px;font-family:'Inter',Arial,sans-serif;color:#050607;letter-spacing:0}
+.er *{box-sizing:border-box;letter-spacing:0}
+.er__k{font-size:12px;font-weight:500;letter-spacing:.14em!important;text-transform:uppercase;color:#3355FF}
+.er__top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.er h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.9rem,3vw,2.8rem);letter-spacing:-.02em!important;line-height:1.05;margin:10px 0 8px}
+.er__l{font-size:17px;line-height:1.5;color:#5B6470;margin:0;max-width:54ch}
+.er__pill{display:inline-block;border:1px solid #050607;border-radius:999px;padding:12px 22px;color:#050607;text-decoration:none;font-weight:500;font-size:14.5px;white-space:nowrap;transition:background .2s,color .2s}
+.er__pill:hover{background:#050607;color:#fff}
+.er__g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.er__c{border:1px solid #DCE6EE;border-radius:24px;background:#fff;overflow:hidden;display:flex;flex-direction:column}
+.er__im{position:relative;aspect-ratio:1;background:#EEF3F7;display:grid;place-items:center}
+.er__im img{width:100%;height:100%;object-fit:contain;display:block}
+.er__im span{position:absolute;left:14px;top:14px;background:#fff;border-radius:999px;padding:6px 12px;font-size:11.5px;font-weight:500;letter-spacing:.1em!important;text-transform:uppercase}
+.er__ph{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.6rem;color:#3355FF}
+.er__b{padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.er__b h3{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.25rem;margin:0}
+.er__d{font-size:14.5px;line-height:1.45;color:#5B6470;margin:0}
+.er__v{font-size:13.5px;font-weight:500;color:#2B3238;margin:0}
+.er__p{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.3rem;margin-top:auto;padding-top:10px}
+.er__p small{font-family:'Inter',Arial,sans-serif;font-weight:400;font-size:12.5px;color:#6B7480}
+.er__btn{display:block;width:100%;text-align:center;border:1px solid #3355FF;background:#3355FF;color:#fff;border-radius:999px;padding:13px 18px;font:inherit;font-weight:500;font-size:14.5px;text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s}
+.er__btn:hover{background:#050607;border-color:#050607}
+.er__btn--w{background:#fff;color:#050607;border-color:#050607}
+.er__btn--w:hover{background:#050607;color:#fff}
+.er__help{margin-top:24px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:15px;color:#2B3238}
+@media(max-width:1000px){.er__g{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.er{padding:44px 16px}.er__g{grid-template-columns:1fr}}
+</style>
+<section class="er" id="repuestos">
+ <div class="er__top">
+  <div><span class="er__k">{{ section.settings.etiqueta }}</span><h2>{{ section.settings.titulo }}</h2><p class="er__l">{{ section.settings.bajada }}</p></div>
+  {%- if section.settings.mostrar_enlace -%}<a class="er__pill" href="{{ section.settings.url_pagina | default: '/pages/repuestos' }}">Ver todos los repuestos</a>{%- endif -%}
+ </div>
+ <div class="er__g">
+  {%- for i in (1..4) -%}
+   {%- liquid
+     case i
+       when 1
+         assign pr = p_n
+         assign cod = 'REP-NATIVO'
+       when 2
+         assign pr = p_v
+         assign cod = 'REP-VIVO'
+       when 3
+         assign pr = p_a
+         assign cod = 'REP-ALIVIO'
+       else
+         assign pr = nil
+         assign cod = 'REP-CERO'
+     endcase
+     assign kt = 'r' | append: i | append: '_tag'
+     assign kn = 'r' | append: i | append: '_nombre'
+     assign kd = 'r' | append: i | append: '_desc'
+     assign kv = 'r' | append: i | append: '_vida'
+     assign kp = 'r' | append: i | append: '_precio'
+     assign kf = 'r' | append: i | append: '_foto'
+     assign ok = false
+     if pr and pr.available
+       assign ok = true
+     endif
+   -%}
+   <article class="er__c">
+    <div class="er__im">
+     {%- if section.settings[kf] != blank -%}{{ section.settings[kf] | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings[kn] }}
+     {%- elsif pr and pr.featured_image != blank -%}{{ pr.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings[kn] }}
+     {%- else -%}<span class="er__ph" style="position:static;background:none;padding:0">{{ section.settings[kn] }}</span>{%- endif -%}
+     <span>{{ section.settings[kt] }}</span>
+    </div>
+    <div class="er__b">
+     <h3>{{ section.settings[kn] }}</h3>
+     <p class="er__d">{{ section.settings[kd] }}</p>
+     <p class="er__v">{{ section.settings[kv] }}</p>
+     {%- if ok -%}
+      <div class="er__p">S/ {{ pr.price | money_without_currency | split: '.' | first }}</div>
+      <form method="post" action="/cart/add" accept-charset="UTF-8"><input type="hidden" name="id" value="{{ pr.selected_or_first_available_variant.id }}"><button class="er__btn" type="submit">Agregar al carrito</button></form>
+     {%- else -%}
+      <div class="er__p">{%- if section.settings[kp] != blank -%}{{ section.settings[kp] }}{%- else -%}<small>Consulta el precio</small>{%- endif -%}</div>
+      <a class="er__btn er__btn--w" target="_blank" rel="noopener" href="{{ wa }}{{ 'Hola, quiero pedir: ' | append: section.settings[kn] | append: ' [WEB-' | append: cod | append: ']' | url_encode }}">Pedir por WhatsApp</a>
+     {%- endif -%}
+    </div>
+   </article>
+  {%- endfor -%}
+ </div>
+ {%- if section.settings.mostrar_ayuda -%}
+ <div class="er__help"><span>{{ section.settings.ayuda }}</span><a class="er__btn er__btn--w" style="width:auto;display:inline-block" target="_blank" rel="noopener" href="{{ wa }}{{ 'Hola, necesito ayuda para elegir mi repuesto [WEB-REP-AYUDA]' | url_encode }}">Escríbenos</a></div>
+ {%- endif -%}
+</section>
+{% schema %}
+{"name":"elvo· Repuestos","settings":[
+{"type":"text","id":"etiqueta","label":"Etiqueta","default":"Repuestos"},
+{"type":"text","id":"titulo","label":"Título","default":"Repuestos para tu purificador"},
+{"type":"textarea","id":"bajada","label":"Bajada","default":"Núcleos y filtros originales de elvo·, listos para pedir."},
+{"type":"checkbox","id":"mostrar_enlace","label":"Mostrar botón 'Ver todos los repuestos'","default":false},
+{"type":"url","id":"url_pagina","label":"Enlace de la página de repuestos (vacío = /pages/repuestos)"},
+{"type":"checkbox","id":"mostrar_ayuda","label":"Mostrar ayuda por WhatsApp","default":false},
+{"type":"text","id":"ayuda","label":"Texto de ayuda","default":"¿No sabes cuál necesitas? Cuéntanos qué equipo tienes."},
+{"type":"header","content":"1 · Nativo"},
+{"type":"text","id":"r1_tag","label":"Etiqueta","default":"Para Nativo"},
+{"type":"text","id":"r1_nombre","label":"Nombre","default":"Núcleo Nativo"},
+{"type":"textarea","id":"r1_desc","label":"Descripción","default":"Núcleo PureCore de 6 etapas para elvo· Nativo."},
+{"type":"text","id":"r1_vida","label":"Duración","default":"Unos 18 meses de uso normal."},
+{"type":"text","id":"r1_precio","label":"Precio si no está disponible en la tienda"},
+{"type":"image_picker","id":"r1_foto","label":"Foto (vacío = foto del producto)"},
+{"type":"header","content":"2 · Vivo"},
+{"type":"text","id":"r2_tag","label":"Etiqueta","default":"Para Vivo"},
+{"type":"text","id":"r2_nombre","label":"Nombre","default":"Núcleo Vivo"},
+{"type":"textarea","id":"r2_desc","label":"Descripción","default":"Núcleo con magnesio para elvo· Vivo."},
+{"type":"text","id":"r2_vida","label":"Duración","default":"Unos 18 meses de uso normal."},
+{"type":"text","id":"r2_precio","label":"Precio si no está disponible en la tienda"},
+{"type":"image_picker","id":"r2_foto","label":"Foto (vacío = foto del producto)"},
+{"type":"header","content":"3 · Alivio"},
+{"type":"text","id":"r3_tag","label":"Etiqueta","default":"Para Alivio"},
+{"type":"text","id":"r3_nombre","label":"Nombre","default":"Kit de filtros Alivio"},
+{"type":"textarea","id":"r3_desc","label":"Descripción","default":"Kit de repuesto para Alivio 16 y Alivio 22."},
+{"type":"text","id":"r3_vida","label":"Duración","default":"10,000 litros o 1 año, lo que ocurra primero."},
+{"type":"text","id":"r3_precio","label":"Precio si no está disponible en la tienda","default":"S/ 95"},
+{"type":"image_picker","id":"r3_foto","label":"Foto (vacío = foto del producto)"},
+{"type":"header","content":"4 · Cero"},
+{"type":"text","id":"r4_tag","label":"Etiqueta","default":"Para Cero"},
+{"type":"text","id":"r4_nombre","label":"Nombre","default":"Filtros Cero · PAC y ROC"},
+{"type":"textarea","id":"r4_desc","label":"Descripción","default":"Filtros PAC y ROC para elvo· Cero."},
+{"type":"text","id":"r4_vida","label":"Duración","default":"PAC: 8 a 12 meses. ROC: 12 a 36 meses."},
+{"type":"text","id":"r4_precio","label":"Precio","default":""},
+{"type":"image_picker","id":"r4_foto","label":"Foto"}
+],"presets":[{"name":"elvo· Repuestos"}]}
+{% endschema %}
