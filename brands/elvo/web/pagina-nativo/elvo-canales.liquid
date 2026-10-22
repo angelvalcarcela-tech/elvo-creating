@@ -1,30 +1,43 @@
 <style>
-.ek{max-width:1100px;margin:0 auto;padding:40px 20px;font-family:'Inter',Arial,sans-serif;color:#050607}
-.ek h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.4rem,2.4vw,1.9rem);letter-spacing:-.02em;margin:0 0 6px}
-.ek p.l{font-size:15px;color:#5B6470;margin:0 0 18px}
-.ek__g{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
-.ek__g a{border:1px solid #DCE6EE;border-radius:16px;background:#fff;padding:16px;display:flex;flex-direction:column;gap:4px;text-decoration:none;color:#050607;transition:border-color .2s}
-.ek__g a:hover{border-color:#3355FF}
-.ek__g b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.02rem}
-.ek__g span{font-size:13px;color:#3355FF}
-@media(max-width:900px){.ek__g{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:520px){.ek{padding:32px 16px}.ek__g{grid-template-columns:1fr 1fr}}
+.ek{max-width:1280px;margin:0 auto;padding:56px 24px;font-family:'Inter',Arial,sans-serif;color:#050607}
+.ek__k{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#3355FF}
+.ek h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.7rem,3vw,2.6rem);letter-spacing:-.02em;line-height:1.08;margin:10px 0 10px}
+.ek__l{font-size:16px;line-height:1.5;color:#5B6470;margin:0 0 26px;max-width:60ch}
+.ek__g{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ek__c{border:1px solid #DCE6EE;border-radius:20px;background:#fff;padding:20px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:#050607;transition:border-color .2s,transform .2s}
+.ek__c:hover{border-color:#3355FF}
+.ek__lg{height:40px;display:flex;align-items:center;margin-bottom:6px}
+.ek__lg img{height:34px;width:auto;max-width:150px;object-fit:contain;display:block}
+.ek__w{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:1.7rem;letter-spacing:-.04em}
+.ek__c b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.1rem}
+.ek__d{font-size:14px;color:#5B6470;line-height:1.4;flex:1}
+.ek__c em{font-style:normal;font-size:13.5px;font-weight:500;color:#3355FF;margin-top:6px}
+.ek__f{font-size:13px;color:#6B7480;margin:16px 0 0}
+@media(max-width:1000px){.ek__g{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.ek{padding:40px 16px}.ek__c{padding:16px}.ek__g{gap:10px}}
 </style>
 <section class="ek" id="canales">
+  <span class="ek__k">{{ section.settings.etiqueta }}</span>
   <h2>{{ section.settings.titulo }}</h2>
-  <p class="l">{{ section.settings.bajada }}</p>
+  <p class="ek__l">{{ section.settings.bajada }}</p>
   <div class="ek__g">
-    <a target="_blank" rel="noopener" href="https://www.falabella.com.pe/falabella-pe/seller/IMPORTACIONES%20GAD"><b>Falabella</b><span>Ver tienda ↗</span></a>
-    <a target="_blank" rel="noopener" href="https://www.sodimac.com.pe/sodimac-pe/vendedor/IMPORTACIONES%20GAD"><b>Sodimac</b><span>Ver tienda ↗</span></a>
-    <a target="_blank" rel="noopener" href="https://www.plazavea.com.pe/sellers?id=ELVO"><b>Plaza Vea</b><span>Ver tienda ↗</span></a>
-    <a target="_blank" rel="noopener" href="https://www.promart.pe/gasfiteria/purificadores-de-agua-y-filtros/repuestos-de-purificadores-y-filtros/elvo"><b>Promart</b><span>Ver tienda ↗</span></a>
-    <a target="_blank" rel="noopener" href="https://www.oechsle.pe/mejoramiento-del-hogar/gasfiteria/filtros-y-purificadores/elvo"><b>Oechsle</b><span>Ver tienda ↗</span></a>
-    <a target="_blank" rel="noopener" href="https://www.instagram.com/elvo_filtros/"><b>Instagram</b><span>@elvo_filtros ↗</span></a>
+    <a class="ek__c" href="{{ section.settings.url_web | default: '/products/elvonativo' }}"><span class="ek__lg"><span class="ek__w">elvo·</span></span><b>elvo.pe</b><span class="ek__d">Paga en hasta 6 cuotas sin interés o al recibir en Lima.</span><em>Comprar en la web ↗</em></a>
+    <a class="ek__c" target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola,%20quiero%20comprar%20elvo%C2%B7%20%5BWEB-HOME%5D"><span class="ek__lg"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#25D366"/><path fill="#fff" d="M12 4.5a7.5 7.5 0 0 0-6.4 11.3L4.5 19.5l3.8-1A7.5 7.5 0 1 0 12 4.5zm4 10.4c-.2.5-1 .9-1.4.9-.4.1-.8.1-2.5-.5-2.1-.9-3.4-3-3.5-3.1-.1-.2-.8-1.1-.8-2.1s.5-1.5.7-1.7c.2-.2.4-.2.5-.2h.4c.1 0 .3 0 .4.4l.6 1.4c.1.1.1.3 0 .4l-.3.5c-.1.1-.2.3-.1.5.2.3.6 1 1.3 1.6.9.8 1.6 1 1.8 1.1.2.1.4.1.5-.1l.7-.8c.1-.2.3-.2.5-.1l1.4.7c.2.1.3.2.3.3.1.1.1.6-.1 1z"/></svg></span><b>WhatsApp</b><span class="ek__d">Te ayudamos a elegir y armamos tu pedido.</span><em>Escribir ahora ↗</em></a>
+    <a class="ek__c" target="_blank" rel="noopener" href="https://www.instagram.com/elvo_filtros/"><span class="ek__lg"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><defs><linearGradient id="ekig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#ekig)"/><rect x="5.5" y="5.5" width="13" height="13" rx="4" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="12" cy="12" r="3.1" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="16" cy="8" r="1" fill="#fff"/></svg></span><b>Instagram</b><span class="ek__d">Instalaciones, novedades y clientes en casa.</span><em>Ver el perfil ↗</em></a>
+    <a class="ek__c" target="_blank" rel="noopener" href="https://www.falabella.com.pe/falabella-pe/seller/IMPORTACIONES%20GAD"><span class="ek__lg"><img src="{{ 'elvo-logo-falabella.svg' | file_url }}" alt="Falabella" loading="lazy"></span><b>Falabella</b><span class="ek__d">Nuestra tienda en Falabella.com.pe.</span><em>Ver tienda ↗</em></a>
+    <a class="ek__c" target="_blank" rel="noopener" href="https://www.sodimac.com.pe/sodimac-pe/vendedor/IMPORTACIONES%20GAD"><span class="ek__lg"><img src="{{ 'elvo-logo-sodimac.svg' | file_url }}" alt="Sodimac" loading="lazy"></span><b>Sodimac</b><span class="ek__d">Nuestra tienda en Sodimac.com.pe.</span><em>Ver tienda ↗</em></a>
+    <a class="ek__c" target="_blank" rel="noopener" href="https://www.plazavea.com.pe/sellers?id=ELVO"><span class="ek__lg"><img src="{{ 'elvo-logo-plazavea.svg' | file_url }}" alt="Plaza Vea" loading="lazy"></span><b>Plaza Vea</b><span class="ek__d">Nuestra tienda en Plaza Vea.</span><em>Ver tienda ↗</em></a>
+    <a class="ek__c" target="_blank" rel="noopener" href="https://www.promart.pe/gasfiteria/purificadores-de-agua-y-filtros/repuestos-de-purificadores-y-filtros/elvo"><span class="ek__lg"><img src="{{ 'elvo-logo-promart.png' | file_url }}" alt="Promart" loading="lazy"></span><b>Promart</b><span class="ek__d">Purificadores y repuestos en Promart.</span><em>Ver tienda ↗</em></a>
+    <a class="ek__c" target="_blank" rel="noopener" href="https://www.oechsle.pe/mejoramiento-del-hogar/gasfiteria/filtros-y-purificadores/elvo"><span class="ek__lg"><img src="{{ 'elvo-logo-oechsle.svg' | file_url }}" alt="Oechsle" loading="lazy"></span><b>Oechsle</b><span class="ek__d">Nuestros productos en Oechsle.</span><em>Ver tienda ↗</em></a>
   </div>
+  <p class="ek__f">{{ section.settings.pie }}</p>
 </section>
 {% schema %}
 {"name":"elvo· Canales","settings":[
-{"type":"text","id":"titulo","label":"Título","default":"Estamos donde compras"},
-{"type":"text","id":"bajada","label":"Bajada","default":"elvo· también está en las principales tiendas del Perú, con boleta o factura y atención por WhatsApp."}],
+{"type":"text","id":"etiqueta","label":"Etiqueta","default":"Dónde comprar"},
+{"type":"text","id":"titulo","label":"Título","default":"Estamos en todos los canales"},
+{"type":"textarea","id":"bajada","label":"Bajada","default":"Compra donde te quede más cómodo: en la web, por WhatsApp o en las principales tiendas online del Perú."},
+{"type":"url","id":"url_web","label":"Enlace de la tienda web (vacío = ficha de Nativo)"},
+{"type":"text","id":"pie","label":"Pie","default":"Recojo gratis en Jr. Varela 1235, Breña, de lunes a sábado de 9 a. m. a 5 p. m."}],
 "presets":[{"name":"elvo· Canales"}]}
 {% endschema %}
