@@ -2,8 +2,8 @@
 {%- assign nativo_url = p_nativo.url | default: '/products/elvonativo' -%}
 {%- assign nativo_price = p_nativo.price | money_without_currency | split: '.' | first -%}
 {%- assign p_vivo = all_products['elvovivo'] -%}
-{%- assign nativo_min = 0 -%}{%- for v in p_nativo.variants -%}{%- unless v.title == '18 meses' -%}{%- if nativo_min == 0 or v.price < nativo_min -%}{%- assign nativo_min = v.price -%}{%- endif -%}{%- endunless -%}{%- endfor -%}
-{%- assign vivo_min = 0 -%}{%- for v in p_vivo.variants -%}{%- unless v.title == '18 meses' -%}{%- if vivo_min == 0 or v.price < vivo_min -%}{%- assign vivo_min = v.price -%}{%- endif -%}{%- endunless -%}{%- endfor -%}
+{%- assign nativo_min = 0 -%}{%- for v in p_nativo.variants -%}{%- if nativo_min == 0 or v.price < nativo_min -%}{%- assign nativo_min = v.price -%}{%- endif -%}{%- endfor -%}
+{%- assign vivo_min = 0 -%}{%- for v in p_vivo.variants -%}{%- if vivo_min == 0 or v.price < vivo_min -%}{%- assign vivo_min = v.price -%}{%- endif -%}{%- endfor -%}
 {%- assign p_a16 = all_products['elvo-bidon-16l'] -%}
 {%- assign p_cero = all_products['elvo-cero-purificador-osmosis-inversa-con-agua-fria-y-caliente-instantanea-sin-instalacion'] -%}
 {%- assign vivo_ok = false -%}{%- if p_vivo.id and p_vivo.available -%}{%- assign vivo_ok = true -%}{%- endif -%}
