@@ -1,0 +1,54 @@
+/* elvo· web — capa de estilo global (cobalto · polvo · marino, Plus Jakarta Sans + Inter).
+   Redefine los tokens de las secciones elvo-* y del tema sin tocar su lógica. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+
+:root,body,body .elvo,body .ep,body .elvo-ft{
+  --ink:#050607;--ink-soft:#5B6470;--agua:#DCE6EE;--caudal:#3355FF;--caudal-dark:#1F3BD6;
+  --sol:#BED0DF;--sol-soft:#EEF3F7;--piedra:#F3F6F9;--menta:#E8EEF5;--linea:#BED0DF;--blanco:#FFFFFF;
+  --display:'Plus Jakarta Sans','Arial',system-ui,sans-serif;--body:'Inter','Helvetica Neue',Arial,sans-serif;
+  --font-heading-family:'Plus Jakarta Sans','Arial',sans-serif;--font-body-family:'Inter','Helvetica Neue',Arial,sans-serif;
+  --buttons-radius:999px;--buttons-radius-outset:999px;--inputs-radius:12px;
+}
+body,body .elvo,body .ep{font-family:'Inter','Helvetica Neue',Arial,sans-serif}
+h1,h2,h3,.h0,.h1,.h2,.h3{font-family:'Plus Jakarta Sans','Arial',sans-serif;letter-spacing:-.02em}
+
+/* esquemas de color de Dawn (cabecera, barra, carrito) */
+.color-scheme-1,.color-scheme-2{--color-background:250,250,250;--color-foreground:5,6,7;--color-button:51,85,255;--color-button-text:255,255,255;--color-secondary-button-text:5,6,7;--color-link:51,85,255;--gradient-background:#FAFAFA}
+.color-scheme-4{--color-background:51,85,255;--color-foreground:255,255,255;--color-button:255,255,255;--color-button-text:51,85,255;--color-secondary-button-text:255,255,255;--gradient-background:#3355FF}
+.color-scheme-5{--color-background:160,187,208;--color-foreground:255,255,255;--gradient-background:#A0BBD0}
+.announcement-bar__message,.announcement-bar .announcement-bar__link{font-family:'Inter',sans-serif;font-size:1.2rem;letter-spacing:.1em;font-weight:500}
+
+/* botones principales: píldora cobalto, sin sombra dura */
+body .elvo-cta,body .ep__cta{background:var(--caudal)!important;border:0!important;border-radius:999px!important;box-shadow:none!important;font-family:var(--display)!important;font-weight:600!important;letter-spacing:0}
+body .elvo-cta:hover,body .ep__cta:hover{background:var(--ink)!important}
+body .elvo-cta:active,body .ep__cta:active{transform:none!important;box-shadow:none!important}
+body .ep__btn{border:1px solid var(--linea)!important;box-shadow:none!important;color:var(--caudal)!important}
+
+/* sin sombras duras: el estado elegido se marca con borde cobalto */
+body .elvo-model[aria-pressed="true"],body .elvo-tier[aria-pressed="true"],body .elvo-pv[aria-checked="true"]{box-shadow:none!important;border-color:var(--caudal)!important}
+body .elvo-quote__img,body .ep__table,body .ep__steps li,body .ep__card{box-shadow:none!important;border-width:1px!important}
+body .elvo-gallery__main,body .elvo-lab,body .elvo-pv,body .elvo-tier,body .elvo-model{border-width:1px!important}
+body .elvo-pv,body .elvo-pv__radio,body .elvo-pagos span.chip,body .elvo-pv__thumb,body .elvo-pv__detail{border-color:var(--linea)!important}
+body .elvo-pv__radio{border-width:1.5px}
+body .elvo-pv[aria-checked="true"] .elvo-pv__radio{border-color:var(--caudal)!important;background:var(--caudal)!important}
+
+/* etiquetas y chips */
+body .elvo-pv__save,body .elvo-pv__flag,body .elvo-hero-precio .hp-save,body .elvo-gallery__gift,body .elvo-video__label{background:var(--hielo,#DCE6EE)!important;border:0!important;color:var(--ink)!important;border-radius:999px!important}
+body .elvo-pv__flag--mayor,body .elvo-tier__flag--mayor{background:var(--caudal)!important;color:#fff!important}
+body .elvo-categoria,body .ep-mejor__eyebrow{background:var(--agua)!important;color:var(--caudal)!important;border-radius:999px}
+body .elvo-mini-rev{border-left-color:var(--caudal)}
+body .elvo-cano{border-color:var(--caudal)}
+body .elvo-cano b,body .ep-mini__more a{color:var(--caudal)!important}
+body .elvo-eta{background:var(--menta)}
+body .ep-mini__t,body .ep-mini__card blockquote{color:var(--ink)!important}
+body .ep-mini__card{border-color:var(--linea)!important}
+
+/* pie de página */
+body .elvo-ft{--ft-bg:#010A21;--ft-ink:#DCE6EE;--ft-sol:#FFFFFF;--ft-line:rgba(190,208,223,.22);font-family:'Inter',sans-serif}
+body .elvo-ft__h,body .elvo-ft__mark,body .elvo-ft__slogan,body .elvo-ft__acc summary{font-family:'Plus Jakarta Sans','Arial',sans-serif!important}
+body .elvo-ft__slogan{color:#10215A!important}
+body .elvo-ft__form input{border:1px solid var(--caudal)!important;border-radius:999px!important}
+body .elvo-ft__form button{border:0!important;border-radius:999px!important;background:var(--caudal)!important;color:#fff!important}
+body .elvo-ft__acc{border-top-width:1px}body .elvo-ft__acc details{border-bottom-width:1px}
+body .elvo-ft__box{border-width:1px;border-color:var(--ft-line)}
+body .elvo-ft__social a{border-radius:50%}
