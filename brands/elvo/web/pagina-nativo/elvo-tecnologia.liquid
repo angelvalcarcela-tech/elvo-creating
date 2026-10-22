@@ -18,6 +18,12 @@
 .et li.st::before{content:counter(e);width:30px;height:30px;border-radius:50%;background:#3355FF;color:#fff;display:grid;place-items:center;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:13px}
 .et li.st b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:16px}
 .et li.st span{font-size:14px;color:#BED0DF;line-height:1.4}
+.et__pi{list-style:none;margin:0;padding:0}
+.et__pi li{display:grid;grid-template-columns:30px 1fr;column-gap:12px;padding:14px 0;border-top:1px solid rgba(190,208,223,.2)}
+.et__pi li:first-child{border-top:0}
+.et__pi li::before{content:"";width:10px;height:10px;border-radius:50%;background:#3355FF;margin:7px 0 0 10px;grid-row:1/3}
+.et__pi b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:1.05rem}
+.et__pi span{font-size:14.5px;color:#BED0DF;line-height:1.45}
 .et__pl{display:flex;flex-direction:column;gap:10px}
 .et__plan{border:1px solid #DCE6EE;border-radius:18px;background:#fff;padding:16px 18px;display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:baseline}
 .et__plan b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:1.05rem}
@@ -39,11 +45,17 @@
 <section class="et" id="tecnologia">
   <span class="et__k">{{ section.settings.etiqueta }}</span>
   <h2>{{ section.settings.titulo }}</h2>
-  <p class="et__lead">{{ section.settings.bajada }}</p>
+  <p class="et__lead">{{ section.settings.bajada_marca }}</p>
   <div class="et__g">
     <div class="et__box">
-      <h3>{{ section.settings.titulo_etapas }}</h3>
-      <ol>{%- for b in section.blocks -%}{%- if b.type == 'etapa' -%}<li class="st" {{ b.shopify_attributes }}><div><b>{{ b.settings.nombre }}</b><span>{{ b.settings.texto }}</span></div></li>{%- endif -%}{%- endfor -%}</ol>
+      <h3>{{ section.settings.titulo_pilares }}</h3>
+      <ul class="et__pi">
+        {%- for i in (1..5) -%}
+          {%- assign kt = 'p' | append: i | append: '_t' -%}
+          {%- assign kx = 'p' | append: i | append: '_x' -%}
+          {%- if section.settings[kt] != blank -%}<li><b>{{ section.settings[kt] }}</b><span>{{ section.settings[kx] }}</span></li>{%- endif -%}
+        {%- endfor -%}
+      </ul>
     </div>
     <div class="et__pl">
       <h3>{{ section.settings.titulo_planes }}</h3>
@@ -78,6 +90,18 @@
 {"type":"text","id":"etiqueta","label":"Etiqueta","default":"Tecnología"},
 {"type":"text","id":"titulo","label":"Título","default":"Por qué vale lo que cuesta"},
 {"type":"textarea","id":"bajada","label":"Bajada","default":"Un núcleo de 6 etapas por dentro y un diseño pensado para vivir a la vista en tu cocina."},
+{"type":"textarea","id":"bajada_marca","label":"Bajada","default":"Un objeto de diseño con un núcleo de filtración por dentro, y un equipo que te acompaña después de comprar."},
+{"type":"text","id":"titulo_pilares","label":"Título de la caja de marca","default":"Más que un filtro"},
+{"type":"text","id":"p1_t","label":"Punto 1: título","default":"Diseño que se queda a la vista"},
+{"type":"text","id":"p1_x","label":"Punto 1: texto","default":"Pensado para vivir sobre tu mesada, no escondido bajo el fregadero."},
+{"type":"text","id":"p2_t","label":"Punto 2: título","default":"Filtración en un solo núcleo"},
+{"type":"text","id":"p2_x","label":"Punto 2: texto","default":"Todo el trabajo de filtración ocurre dentro de un núcleo que se cambia fácil."},
+{"type":"text","id":"p3_t","label":"Punto 3: título","default":"Te avisamos cuándo cambiarlo"},
+{"type":"text","id":"p3_x","label":"Punto 3: texto","default":"Recibes un aviso por WhatsApp cuando toca renovar el núcleo."},
+{"type":"text","id":"p4_t","label":"Punto 4: título","default":"Te decimos qué hace cada equipo"},
+{"type":"text","id":"p4_x","label":"Punto 4: texto","default":"Lo que afirmamos sale de la ficha técnica, sin promesas vagas."},
+{"type":"text","id":"p5_t","label":"Punto 5: título","default":"Atención cercana"},
+{"type":"text","id":"p5_x","label":"Punto 5: texto","default":"Te acompañamos por WhatsApp antes y después de comprar."},
 {"type":"text","id":"titulo_etapas","label":"Título de las etapas","default":"6 etapas en un solo núcleo"},
 {"type":"text","id":"titulo_planes","label":"Título de los planes","default":"Lo que te llevas en cada plan"},
 {"type":"text","id":"chips","label":"Garantías (separadas por coma)","default":"Garantía de 1 año, 30 días de prueba, Envío gratis a todo el Perú"},
