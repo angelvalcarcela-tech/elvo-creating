@@ -1,0 +1,24 @@
+/* elvo· ajustes de accesibilidad y zonas táctiles (mínimo 44 px) */
+details>summary{min-height:44px;align-items:center}
+.announcement-bar{min-height:44px}
+.announcement-bar__message,.announcement-bar .announcement-bar__link{display:flex;align-items:center;justify-content:center;min-height:44px}
+body .elvo-ft a:not([class*="social"]):not([class*="mark"]){display:inline-block;padding-top:11px;padding-bottom:11px}
+body .elvo-ft__acc summary{min-height:48px}
+
+/* elvo· móvil: páginas más cortas (carruseles horizontales y bloques más compactos) */
+@media(max-width:700px){
+  .er__g,.ek__g,.et__pl,.elvo-rv__list{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;gap:12px!important;margin-left:-16px;margin-right:-16px;padding:0 16px 10px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .er__g::-webkit-scrollbar,.ek__g::-webkit-scrollbar,.et__pl::-webkit-scrollbar,.elvo-rv__list::-webkit-scrollbar{display:none}
+  .er__c{flex:0 0 76%;scroll-snap-align:start}
+  .ek__c{flex:0 0 64%;scroll-snap-align:start}
+  .et__plan{flex:0 0 82%;scroll-snap-align:start}
+  .elvo-rv__item{flex:0 0 84%;scroll-snap-align:start;margin:0!important}
+  .et__pi{grid-template-columns:1fr 1fr!important;gap:16px!important;margin-bottom:32px!important}
+  .et__pi b{font-size:15px!important}
+  .et__pi span{font-size:13.5px!important}
+  .et__lead{margin-bottom:28px!important}
+  .as__top{padding:26px 0!important}
+  .as__r{aspect-ratio:1/1!important}
+  .ex__fig{max-width:230px!important}
+  .ex__list li{padding:12px 0!important}
+}
