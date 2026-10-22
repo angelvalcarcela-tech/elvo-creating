@@ -1,15 +1,19 @@
 {{ 'elvo-mineral.css' | asset_url | stylesheet_tag }}
 {%- assign p_nativo = all_products['elvonativo'] -%}
 {%- assign p_vivo = all_products['elvovivo'] -%}
-{%- assign p_alivio = all_products['elvo-alivio'] -%}
-{%- assign p_cero = all_products['elvo-cero'] -%}
+{%- assign p_a16 = all_products['elvo-bidon-16l'] -%}
+{%- assign p_a22 = all_products['elvo-bidon-22l'] -%}
+{%- assign p_cero = all_products['elvo-cero-purificador-osmosis-inversa-con-agua-fria-y-caliente-instantanea-sin-instalacion'] -%}
 {%- assign nativo_url = p_nativo.url | default: '/products/elvonativo' -%}
 {%- assign nativo_price = p_nativo.price | money_without_currency | split: '.' | first -%}
 {%- assign nativo_img = 'elvo-nativo-front.png' | file_url -%}
 {%- assign vivo_img = 'elvo-vivo-front.png' | file_url -%}
-{%- if p_vivo.id -%}{%- assign vivo_url = p_vivo.url -%}{%- else -%}{%- assign vivo_url = 'https://wa.me/51929190100?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo' -%}{%- endif -%}
-{%- if p_alivio.id -%}{%- assign alivio_url = p_alivio.url -%}{%- else -%}{%- assign alivio_url = 'https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Alivio' -%}{%- endif -%}
-{%- if p_cero.id -%}{%- assign cero_url = p_cero.url -%}{%- else -%}{%- assign cero_url = 'https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Cero' -%}{%- endif -%}
+{%- assign wa_vivo = 'https://wa.me/51929190100?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo%20%5BWEB-HOME%5D' -%}
+{%- assign wa_alivio = 'https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Alivio%20%5BWEB-HOME%5D' -%}
+{%- assign wa_cero = 'https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Cero%20%5BWEB-HOME%5D' -%}
+{%- if p_vivo.id and p_vivo.available -%}{%- assign vivo_url = p_vivo.url -%}{%- assign vivo_ok = true -%}{%- else -%}{%- assign vivo_url = wa_vivo -%}{%- assign vivo_ok = false -%}{%- endif -%}
+{%- if p_a16.id and p_a16.available -%}{%- assign alivio_url = p_a16.url -%}{%- assign alivio_ok = true -%}{%- else -%}{%- assign alivio_url = wa_alivio -%}{%- assign alivio_ok = false -%}{%- endif -%}
+{%- if p_cero.id and p_cero.available -%}{%- assign cero_url = p_cero.url -%}{%- assign cero_ok = true -%}{%- else -%}{%- assign cero_url = wa_cero -%}{%- assign cero_ok = false -%}{%- endif -%}
 <div class="a">
 <div class="a-ben"><div class="a-w">
  <div><b>30</b>días de prueba</div><div><b>1</b>año de garantía</div><div><b>6</b>cuotas sin interés</div><div><b>PE</b>envío gratis a todo el Perú</div>
@@ -19,17 +23,20 @@
  <div class="a-head"><div><span class="a-lab">La línea</span><h2 class="a-h2">Elige tu purificador</h2></div><a class="a-pill" href="#comparar">Comparar los cuatro</a></div>
  <div class="a-grid">
   <article class="a-card"><a class="a-card-img" href="{{ nativo_url }}"><img src="{{ nativo_img }}" alt="elvo· Nativo"><span class="a-badge">Para el caño</span></a>
-   <div class="a-card-b"><h3>Nativo</h3><p>Retiene plomo y metales pesados*. Se instala en 5 minutos, sin gasfitero.</p>
+   <div class="a-card-b"><h3>Nativo</h3><p>Núcleo de 6 etapas que retiene plomo y metales pesados*, en un diseño pensado para tu cocina.</p>
    <div class="a-price"><small>Desde</small> S/ {{ nativo_price }}</div><form method="post" action="/cart/add" accept-charset="UTF-8"><select name="id" aria-label="Plan">{%- for v in p_nativo.variants -%}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}>{{ v.title }} · S/ {{ v.price | money_without_currency | split: '.' | first }}</option>{%- endfor -%}</select><button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button></form></div></article>
   <article class="a-card"><a class="a-card-img" href="{{ vivo_url }}"><img src="{{ vivo_img }}" alt="elvo· Vivo"><span class="a-badge">Para el caño</span></a>
    <div class="a-card-b"><h3>Vivo</h3><p>Aporta magnesio y reduce cloro, olores y sabores. Agua más rica, directo de tu caño.</p>
-   <div class="a-price"><small>Consulta el precio</small></div><a class="a-pill a-pill--b" href="{{ vivo_url }}">Consultar por WhatsApp</a></div></article>
+   {%- if vivo_ok -%}<div class="a-price"><small>Desde</small> S/ {{ p_vivo.price | money_without_currency | split: '.' | first }}</div><form method="post" action="/cart/add" accept-charset="UTF-8"><select name="id" aria-label="Plan">{%- for v in p_vivo.variants -%}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}>{{ v.title }} · S/ {{ v.price | money_without_currency | split: '.' | first }}</option>{%- endfor -%}</select><button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button></form>
+   {%- else -%}<div class="a-price"><small>Consulta el precio</small></div><a class="a-pill a-pill--b" href="{{ wa_vivo }}">Consultar por WhatsApp</a>{%- endif -%}</div></article>
   <article class="a-card"><a class="a-card-img a-card-img--c" href="{{ alivio_url }}"><span class="a-big">16 · 22 L</span><span class="a-badge">Para tener reserva</span></a>
    <div class="a-card-b"><h3>Alivio</h3><p>Purificador de bidón. Se llena con una jarra. Sin electricidad, sin conexión al caño.</p>
-   <div class="a-price"><small>Consulta el precio</small></div><a class="a-pill a-pill--b" href="{{ alivio_url }}">Consultar por WhatsApp</a></div></article>
+   {%- if alivio_ok -%}<div class="a-price"><small>Desde</small> S/ {{ p_a16.price | money_without_currency | split: '.' | first }}</div><form method="post" action="/cart/add" accept-charset="UTF-8"><select name="id" aria-label="Tamaño"><option value="{{ p_a16.variants.first.id }}">Alivio 16 · S/ {{ p_a16.price | money_without_currency | split: '.' | first }}</option>{%- if p_a22.id and p_a22.available -%}<option value="{{ p_a22.variants.first.id }}">Alivio 22 · S/ {{ p_a22.price | money_without_currency | split: '.' | first }}</option>{%- endif -%}</select><button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button></form>
+   {%- else -%}<div class="a-price"><small>Consulta el precio</small></div><a class="a-pill a-pill--b" href="{{ wa_alivio }}">Consultar por WhatsApp</a>{%- endif -%}</div></article>
   <article class="a-card"><a class="a-card-img a-card-img--m" href="{{ cero_url }}"><span class="a-big">Cero</span><span class="a-badge">Pureza máxima</span></a>
    <div class="a-card-b"><h3>Cero</h3><p>Ósmosis inversa. Agua fría y caliente en un solo equipo.</p>
-   <div class="a-price"><small>Consulta el precio</small></div><a class="a-pill a-pill--b" href="{{ cero_url }}">Consultar por WhatsApp</a></div></article>
+   {%- if cero_ok -%}<div class="a-price">S/ {{ p_cero.price | money_without_currency | split: '.' | first }}</div><form method="post" action="/cart/add" accept-charset="UTF-8"><input type="hidden" name="id" value="{{ p_cero.variants.first.id }}"><button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button></form>
+   {%- else -%}<div class="a-price"><small>Consulta el precio</small></div><a class="a-pill a-pill--b" href="{{ wa_cero }}">Consultar por WhatsApp</a>{%- endif -%}</div></article>
  </div>
  <p class="a-fine">*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.</p>
 </div></section>

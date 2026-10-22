@@ -3,6 +3,7 @@
 {%- assign meses = '18,36,72' | split: ',' -%}
 {%- assign nucleos = '1,2,4' | split: ',' -%}
 {%- assign base = p.variants.first.price -%}
+{%- assign chips = section.settings.chips | split: ',' -%}
 <style>
 .et{max-width:1100px;margin:0 auto;padding:56px 20px;font-family:'Inter',Arial,sans-serif;color:#050607}
 .et__k{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#3355FF}
@@ -28,6 +29,12 @@
 .et__chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
 .et__chips span{font-size:13.5px;font-weight:500;padding:9px 15px;border:1px solid #BED0DF;border-radius:999px;background:#fff}
 .et__fine{font-size:12px;color:#6B7480;margin-top:18px;line-height:1.5}
+.et__cert{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.et__ct{display:flex;align-items:center;gap:14px;padding:14px 18px;border:1px solid #DCE6EE;border-radius:18px;background:#fff;text-decoration:none;color:#050607;min-width:240px}
+.et__ct img{height:44px;width:auto;max-width:90px;object-fit:contain}
+.et__ct b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:15px}
+.et__ct span{font-size:13px;color:#5B6470;line-height:1.35}
+.et__ct--p{border-style:dashed;opacity:.7}
 @media(max-width:760px){.et__g{grid-template-columns:1fr}.et{padding:44px 16px}.et__box{padding:20px}}
 </style>
 <section class="et" id="tecnologia">
@@ -37,7 +44,7 @@
   <div class="et__g">
     <div class="et__box">
       <h3>{{ section.settings.titulo_etapas }}</h3>
-      <ol>{%- for b in section.blocks -%}<li class="st" {{ b.shopify_attributes }}><div><b>{{ b.settings.nombre }}</b><span>{{ b.settings.texto }}</span></div></li>{%- endfor -%}</ol>
+      <ol>{%- for b in section.blocks -%}{%- if b.type == 'etapa' -%}<li class="st" {{ b.shopify_attributes }}><div><b>{{ b.settings.nombre }}</b><span>{{ b.settings.texto }}</span></div></li>{%- endif -%}{%- endfor -%}</ol>
     </div>
     <div class="et__pl">
       <h3>{{ section.settings.titulo_planes }}</h3>
@@ -55,20 +62,33 @@
       {%- if rep.price > 0 -%}<p class="et__note">El núcleo suelto cuesta S/ {{ rep.price | divided_by: 100 }} y dura 18 meses de uso normal. Los planes de 3 y 6 años te lo dejan mucho más barato.</p>{%- endif -%}
     </div>
   </div>
-  <div class="et__chips">{%- for c in section.settings.chips | split: ',' -%}<span>{{ c | strip }}</span>{%- endfor -%}</div>
+  {%- assign hay_cert = false -%}
+  {%- for b in section.blocks -%}{%- if b.type == 'cert' and b.settings.archivo != blank -%}{%- assign hay_cert = true -%}{%- endif -%}{%- endfor -%}
+  {%- if hay_cert or request.design_mode -%}
+  <div class="et__cert">
+   {%- for b in section.blocks -%}{%- if b.type == 'cert' -%}
+    {%- if b.settings.archivo != blank -%}
+    <a class="et__ct" href="{{ b.settings.archivo }}" target="_blank" rel="noopener" {{ b.shopify_attributes }}>{%- if b.settings.logo != blank -%}{{ b.settings.logo | image_url: height: 100 | image_tag: loading: 'lazy', alt: b.settings.nombre }}{%- endif -%}<div><b>{{ b.settings.nombre }}</b><span>{{ b.settings.texto }}</span></div></a>
+    {%- elsif request.design_mode -%}
+    <div class="et__ct et__ct--p" {{ b.shopify_attributes }}><div><b>{{ b.settings.nombre }}</b><span>Pendiente: agrega el documento del certificado para que se muestre en la tienda.</span></div></div>
+    {%- endif -%}
+   {%- endif -%}{%- endfor -%}
+  </div>
+  {%- endif -%}
+  <div class="et__chips">{%- for c in chips -%}<span>{{ c | strip }}</span>{%- endfor -%}</div>
   <p class="et__fine">{{ section.settings.legal }}</p>
 </section>
 {% schema %}
 {"name":"elvo· Tecnología y precio","settings":[
 {"type":"text","id":"etiqueta","label":"Etiqueta","default":"Tecnología"},
 {"type":"text","id":"titulo","label":"Título","default":"Por qué vale lo que cuesta"},
-{"type":"textarea","id":"bajada","label":"Bajada","default":"Un purificador con un núcleo de 6 etapas que lo instalas tú en 5 minutos, sin electricidad, sin obras y sin gasfitero."},
+{"type":"textarea","id":"bajada","label":"Bajada","default":"Un núcleo de 6 etapas por dentro y un diseño pensado para vivir a la vista en tu cocina."},
 {"type":"text","id":"titulo_etapas","label":"Título de las etapas","default":"6 etapas en un solo núcleo"},
 {"type":"text","id":"titulo_planes","label":"Título de los planes","default":"Lo que te llevas en cada plan"},
-{"type":"text","id":"chips","label":"Garantías (separadas por coma)","default":"30 días de prueba, Garantía de 1 año, Si no encaja en tu caño te devolvemos tu dinero, Envío gratis a todo el Perú"},
+{"type":"text","id":"chips","label":"Garantías (separadas por coma)","default":"Garantía de 1 año, 30 días de prueba, Envío gratis a todo el Perú"},
 {"type":"textarea","id":"legal","label":"Nota legal","default":"*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo."}],
-"blocks":[{"type":"etapa","name":"Etapa","settings":[{"type":"text","id":"nombre","label":"Nombre","default":"Etapa"},{"type":"text","id":"texto","label":"Texto","default":"Descripción"}]}],
-"max_blocks":8,
+"blocks":[{"type":"etapa","name":"Etapa","settings":[{"type":"text","id":"nombre","label":"Nombre","default":"Etapa"},{"type":"text","id":"texto","label":"Texto","default":"Descripción"}]},{"type":"cert","name":"Certificación","settings":[{"type":"text","id":"nombre","label":"Nombre (ej. ISO 9001, WQA)"},{"type":"text","id":"texto","label":"Qué certifica y para qué producto"},{"type":"image_picker","id":"logo","label":"Logo"},{"type":"url","id":"archivo","label":"Enlace al certificado (PDF)","info":"Solo se muestra en la tienda cuando hay documento."}]}],
+"max_blocks":12,
 "presets":[{"name":"elvo· Tecnología y precio","blocks":[
 {"type":"etapa","settings":{"nombre":"Carbón activado","texto":"Reduce cloro, olores y sabores."}},
 {"type":"etapa","settings":{"nombre":"KDF-F","texto":"Retiene plomo y metales pesados*."}},

@@ -1,0 +1,196 @@
+{%- assign p = product -%}
+{%- assign v0 = p.selected_or_first_available_variant -%}
+{%- assign multi = false -%}
+{%- if p.variants.size > 1 -%}{%- assign multi = true -%}{%- endif -%}
+{%- assign wa = section.settings.whatsapp | default: '51929190100' -%}
+{%- assign nombre = section.settings.titulo | default: p.title -%}
+{%- assign confianza = section.settings.confianza | split: ',' -%}
+{%- assign ahorro0 = v0.compare_at_price | minus: v0.price -%}
+<style>
+.pe{max-width:1280px;margin:0 auto;padding:36px 24px 56px;font-family:'Inter',Arial,sans-serif;color:#050607;letter-spacing:0}
+.pe *{box-sizing:border-box}
+.pe__g{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,72px);align-items:start}
+.pe__gal{position:sticky;top:20px}
+.pe__main{aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:#EEF3F7;display:grid;place-items:center}
+.pe__main img{width:100%;height:100%;object-fit:cover;display:block}
+.pe__ph{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.03em;color:#fff;text-align:center;padding:24px}
+.pe__thumbs{display:flex;gap:10px;margin-top:12px;overflow-x:auto}
+.pe__thumbs button{flex:0 0 76px;height:76px;border:2px solid transparent;border-radius:14px;overflow:hidden;padding:0;background:#EEF3F7;cursor:pointer}
+.pe__thumbs button[aria-current="true"]{border-color:#3355FF}
+.pe__thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.pe__k{font-size:12.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#3355FF}
+.pe h1{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(2rem,3.4vw,3.2rem);letter-spacing:-.02em;line-height:1.05;margin:10px 0 10px}
+.pe__tag{font-size:clamp(1rem,1.3vw,1.2rem);line-height:1.45;color:#2B3238;margin:0 0 20px;max-width:44ch}
+.pe__pr{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin:0 0 18px}
+.pe__pr b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:clamp(1.9rem,3vw,2.6rem);letter-spacing:-.02em}
+.pe__pr s{font-size:1.15rem;color:#6B7480}
+.pe__sv{font-size:13px;font-weight:600;background:#DCE6EE;border-radius:999px;padding:4px 12px}
+.pe__sz{display:flex;gap:8px;margin:0 0 18px;flex-wrap:wrap}
+.pe__sz a{padding:10px 20px;border:1px solid #BED0DF;border-radius:999px;text-decoration:none;color:#050607;font-weight:500;font-size:15px}
+.pe__sz a[aria-current="true"]{background:#050607;border-color:#050607;color:#fff}
+.pe__vs{display:grid;gap:10px;margin:0 0 18px}
+.pe__v{position:relative;display:grid;grid-template-columns:22px 1fr auto;gap:12px;align-items:center;padding:14px 16px;border:1.5px solid #BED0DF;border-radius:16px;cursor:pointer;background:#fff}
+.pe__v input{position:absolute;opacity:0;pointer-events:none}
+.pe__v i{width:20px;height:20px;border-radius:50%;border:2px solid #9FB0B5;display:block}
+.pe__v:has(input:checked){border-color:#3355FF;background:#F2F5FF;box-shadow:0 0 0 1px #3355FF}
+.pe__v:has(input:checked) i{border-color:#3355FF;background:#3355FF;box-shadow:inset 0 0 0 4px #fff}
+.pe__v:has(input:disabled){opacity:.5;cursor:not-allowed}
+.pe__v span b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-size:1.05rem}
+.pe__v span small{color:#5B6470;font-size:13px}
+.pe__v em{font-style:normal;text-align:right;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700}
+.pe__v em s{display:block;font-weight:400;font-size:13px;color:#6B7480}
+.pe__add{width:100%;border:0;border-radius:999px;background:#3355FF;color:#fff;font:inherit;font-weight:600;font-size:1.05rem;padding:17px 24px;cursor:pointer;transition:background .2s}
+.pe__add:hover{background:#050607}
+.pe__add:disabled{background:#BED0DF;cursor:not-allowed}
+.pe__wa{display:block;text-align:center;margin-top:10px;padding:15px 22px;border:1px solid #3355FF;border-radius:999px;color:#3355FF;font-weight:600;text-decoration:none}
+.pe__wa:hover{background:#3355FF;color:#fff}
+.pe__pts{list-style:none;margin:22px 0 0;padding:0}
+.pe__pts li{padding:9px 0 9px 28px;position:relative;font-size:16px;line-height:1.4}
+.pe__pts li::before{content:'';position:absolute;left:0;top:14px;width:16px;height:16px;border-radius:50%;background:#3355FF}
+.pe__pts li::after{content:'\2713';position:absolute;left:3.5px;top:11.5px;color:#fff;font-size:11px}
+.pe__tr{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.pe__tr span{font-size:13px;font-weight:500;padding:8px 14px;border:1px solid #BED0DF;border-radius:999px;background:#fff}
+.pe__more{max-width:1280px;margin:0 auto;padding:0 24px 56px}
+.pe__fi{background:#010A21;border-radius:24px;padding:clamp(24px,4vw,48px);color:#fff;display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(20px,4vw,56px);margin-bottom:12px}
+.pe__fi h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.7rem,2.8vw,2.5rem);letter-spacing:-.02em;line-height:1.08;margin:8px 0 10px;color:#fff}
+.pe__fi p{color:#BED0DF;line-height:1.5;margin:0}
+.pe__fi .pe__k{color:#7B9BDD}
+.pe__fi ol{list-style:none;margin:0;padding:0;counter-reset:e}
+.pe__fi li{counter-increment:e;display:grid;grid-template-columns:34px 1fr;gap:12px;padding:12px 0;border-top:1px solid rgba(190,208,223,.2)}
+.pe__fi li:first-child{border-top:0}
+.pe__fi li::before{content:counter(e);width:30px;height:30px;border-radius:50%;background:#3355FF;color:#fff;display:grid;place-items:center;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:13px}
+.pe__fi li b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:16px}
+.pe__fi li span{font-size:14px;color:#BED0DF;line-height:1.4}
+.pe details{border-bottom:1px solid #DCE6EE;padding:20px 0}
+.pe details:first-of-type{border-top:1px solid #DCE6EE}
+.pe summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:500;font-size:1.25rem}
+.pe summary::-webkit-details-marker{display:none}
+.pe summary::after{content:'+';color:#3355FF;font-size:1.5rem;line-height:1}
+.pe details[open] summary::after{content:'\2013'}
+.pe .pe__body{margin-top:12px;font-size:1.02rem;line-height:1.6;color:#2B3238}
+.pe .pe__body p{margin:0 0 10px}
+.pe__fine{font-size:12.5px;color:#6B7480;margin:18px 0 0}
+@media(max-width:800px){.pe{padding:20px 16px 36px}.pe__g{grid-template-columns:1fr}.pe__gal{position:static}.pe__fi{grid-template-columns:1fr}.pe__more{padding:0 16px 40px}}
+</style>
+<div class="pe" data-pe>
+ <div class="pe__g">
+  <div class="pe__gal">
+   {%- liquid
+     assign imgs = ''
+     assign n_over = 0
+     for i in (1..3)
+       assign k = 'imagen' | append: i
+       if section.settings[k] != blank
+         assign n_over = n_over | plus: 1
+       endif
+     endfor
+   -%}
+   <div class="pe__main" data-pe-main>
+    {%- if n_over > 0 -%}{{ section.settings.imagen1 | image_url: width: 1200 | image_tag: loading: 'eager', alt: nombre }}
+    {%- elsif p.featured_image != blank -%}{{ p.featured_image | image_url: width: 1200 | image_tag: loading: 'eager', alt: nombre }}
+    {%- else -%}<span class="pe__ph" style="background:{{ section.settings.color_placeholder }};width:100%;height:100%;display:grid;place-items:center">{{ nombre }}</span>{%- endif -%}
+   </div>
+   {%- if n_over > 1 or p.images.size > 1 -%}
+   <div class="pe__thumbs">
+    {%- if n_over > 0 -%}
+      {%- for i in (1..3) -%}{%- assign k = 'imagen' | append: i -%}{%- if section.settings[k] != blank -%}<button type="button" data-src="{{ section.settings[k] | image_url: width: 1200 }}" aria-current="{% if i == 1 %}true{% else %}false{% endif %}" aria-label="Foto {{ i }}"><img src="{{ section.settings[k] | image_url: width: 160 }}" alt="" loading="lazy"></button>{%- endif -%}{%- endfor -%}
+    {%- else -%}
+      {%- for im in p.images limit: 8 -%}<button type="button" data-src="{{ im | image_url: width: 1200 }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}" aria-label="Foto {{ forloop.index }}"><img src="{{ im | image_url: width: 160 }}" alt="" loading="lazy"></button>{%- endfor -%}
+    {%- endif -%}
+   </div>
+   {%- endif -%}
+  </div>
+  <div class="pe__info">
+   <span class="pe__k">{{ section.settings.eyebrow }}</span>
+   <h1>{{ nombre }}</h1>
+   {%- if section.settings.tagline != blank -%}<p class="pe__tag">{{ section.settings.tagline }}</p>{%- endif -%}
+   {%- if section.settings.size_1 != blank and section.settings.size_2 != blank -%}
+   <div class="pe__sz" role="group" aria-label="Tamaño">
+    <a href="{{ section.settings.size_1.url }}" aria-current="{% if section.settings.size_1.handle == p.handle %}true{% else %}false{% endif %}">{{ section.settings.size_1_label }}</a>
+    <a href="{{ section.settings.size_2.url }}" aria-current="{% if section.settings.size_2.handle == p.handle %}true{% else %}false{% endif %}">{{ section.settings.size_2_label }}</a>
+   </div>
+   {%- endif -%}
+   <div class="pe__pr"><b data-pe-price>S/ {{ v0.price | money_without_currency | split: '.' | first }}</b><s data-pe-cmp{% unless v0.compare_at_price > v0.price %} hidden{% endunless %}>{% if v0.compare_at_price > v0.price %}S/ {{ v0.compare_at_price | money_without_currency | split: '.' | first }}{% endif %}</s><span class="pe__sv" data-pe-sv{% unless ahorro0 > 0 %} hidden{% endunless %}>{% if ahorro0 > 0 %}Ahorras S/ {{ ahorro0 | money_without_currency | split: '.' | first }}{% endif %}</span></div>
+   <form method="post" action="/cart/add" accept-charset="UTF-8" data-pe-form>
+    <input type="hidden" name="return_to" value="/cart">
+    {%- if multi -%}
+    <div class="pe__vs" role="radiogroup" aria-label="{{ p.options.first }}">
+     {%- for v in p.variants -%}
+      {%- assign ah = v.compare_at_price | minus: v.price -%}
+      <label class="pe__v"><input type="radio" name="id" value="{{ v.id }}" data-price="S/ {{ v.price | money_without_currency | split: '.' | first }}" data-cmp="{% if v.compare_at_price > v.price %}S/ {{ v.compare_at_price | money_without_currency | split: '.' | first }}{% endif %}" data-sv="{% if ah > 0 %}Ahorras S/ {{ ah | money_without_currency | split: '.' | first }}{% endif %}"{% if v.id == v0.id %} checked{% endif %}{% unless v.available %} disabled{% endunless %}><i></i><span><b>{{ v.title }}</b>{%- if ah > 0 -%}<small>Ahorras S/ {{ ah | money_without_currency | split: '.' | first }}</small>{%- endif -%}</span><em>S/ {{ v.price | money_without_currency | split: '.' | first }}{%- if v.compare_at_price > v.price -%}<s>S/ {{ v.compare_at_price | money_without_currency | split: '.' | first }}</s>{%- endif -%}</em></label>
+     {%- endfor -%}
+    </div>
+    {%- else -%}
+    <input type="hidden" name="id" value="{{ v0.id }}">
+    {%- endif -%}
+    <button type="submit" class="pe__add" data-pe-add{% unless v0.available %} disabled{% endunless %}>{% if v0.available %}{{ section.settings.boton | default: 'Agregar al carrito' }}{% else %}Agotado{% endif %}</button>
+   </form>
+   <a class="pe__wa" target="_blank" rel="noopener" href="https://wa.me/{{ wa }}?text={{ 'Hola, quiero comprar ' | append: nombre | append: ' [' | append: section.settings.codigo | append: ']' | url_encode }}">{{ section.settings.texto_wa | default: 'Comprar por WhatsApp' }}</a>
+   <ul class="pe__pts">{%- for b in section.blocks -%}{%- if b.type == 'punto' -%}<li {{ b.shopify_attributes }}>{{ b.settings.texto }}</li>{%- endif -%}{%- endfor -%}</ul>
+   {%- if confianza.size > 0 and section.settings.confianza != blank -%}<div class="pe__tr">{%- for c in confianza -%}<span>{{ c | strip }}</span>{%- endfor -%}</div>{%- endif -%}
+  </div>
+ </div>
+</div>
+<div class="pe pe__more">
+ {%- assign n_et = 0 -%}
+ {%- for b in section.blocks -%}{%- if b.type == 'etapa' -%}{%- assign n_et = n_et | plus: 1 -%}{%- endif -%}{%- endfor -%}
+ {%- if n_et > 0 -%}
+ <div class="pe__fi">
+  <div><span class="pe__k">{{ section.settings.fi_etiqueta }}</span><h2>{{ section.settings.fi_titulo }}</h2><p>{{ section.settings.fi_bajada }}</p></div>
+  <ol>{%- for b in section.blocks -%}{%- if b.type == 'etapa' -%}<li {{ b.shopify_attributes }}><div><b>{{ b.settings.nombre }}</b><span>{{ b.settings.texto }}</span></div></li>{%- endif -%}{%- endfor -%}</ol>
+ </div>
+ {%- endif -%}
+ {%- if section.settings.mostrar_descripcion and p.description != blank -%}
+ <details><summary>Descripción</summary><div class="pe__body">{{ p.description }}</div></details>
+ {%- endif -%}
+ {%- for b in section.blocks -%}{%- if b.type == 'detalle' -%}<details {{ b.shopify_attributes }}><summary>{{ b.settings.titulo }}</summary><div class="pe__body">{{ b.settings.texto }}</div></details>{%- endif -%}{%- endfor -%}
+ {%- for b in section.blocks -%}{%- if b.type == 'faq' -%}<details {{ b.shopify_attributes }}><summary>{{ b.settings.pregunta }}</summary><div class="pe__body"><p>{{ b.settings.respuesta }}</p></div></details>{%- endif -%}{%- endfor -%}
+ {%- if section.settings.legal != blank -%}<p class="pe__fine">{{ section.settings.legal }}</p>{%- endif -%}
+</div>
+<script>
+(function(){
+  var r=document.querySelector('[data-pe]');if(!r||r.dataset.on)return;r.dataset.on='1';
+  var main=r.querySelector('[data-pe-main]');
+  [].forEach.call(r.querySelectorAll('.pe__thumbs button'),function(b){b.addEventListener('click',function(){
+    var im=main.querySelector('img');if(!im){im=document.createElement('img');main.innerHTML='';main.appendChild(im)}
+    im.removeAttribute('srcset');im.src=b.getAttribute('data-src');
+    [].forEach.call(r.querySelectorAll('.pe__thumbs button'),function(x){x.setAttribute('aria-current','false')});b.setAttribute('aria-current','true');
+  })});
+  var pr=r.querySelector('[data-pe-price]'),cm=r.querySelector('[data-pe-cmp]'),sv=r.querySelector('[data-pe-sv]');
+  [].forEach.call(r.querySelectorAll('.pe__v input'),function(i){i.addEventListener('change',function(){
+    pr.textContent=i.getAttribute('data-price');
+    var c=i.getAttribute('data-cmp'),s=i.getAttribute('data-sv');
+    cm.textContent=c;cm.hidden=!c;sv.textContent=s;sv.hidden=!s;
+  })});
+})();
+</script>
+{% schema %}
+{"name":"elvo· Ficha de equipo","settings":[
+{"type":"text","id":"eyebrow","label":"Etiqueta superior","default":"Purificador elvo·"},
+{"type":"text","id":"titulo","label":"Nombre (vacío = nombre del producto)"},
+{"type":"textarea","id":"tagline","label":"Bajada"},
+{"type":"text","id":"boton","label":"Texto del botón","default":"Agregar al carrito"},
+{"type":"text","id":"texto_wa","label":"Texto del botón de WhatsApp","default":"Comprar por WhatsApp"},
+{"type":"text","id":"codigo","label":"Código de atribución de WhatsApp","default":"WEB-PDP"},
+{"type":"text","id":"whatsapp","label":"WhatsApp (con 51)","default":"51929190100"},
+{"type":"text","id":"confianza","label":"Garantías (separadas por coma)"},
+{"type":"color","id":"color_placeholder","label":"Color si el producto no tiene foto","default":"#3355FF"},
+{"type":"image_picker","id":"imagen1","label":"Foto 1 (sustituye a las del producto)"},
+{"type":"image_picker","id":"imagen2","label":"Foto 2"},
+{"type":"image_picker","id":"imagen3","label":"Foto 3"},
+{"type":"product","id":"size_1","label":"Tamaño 1 (producto)"},
+{"type":"text","id":"size_1_label","label":"Tamaño 1 (texto)"},
+{"type":"product","id":"size_2","label":"Tamaño 2 (producto)"},
+{"type":"text","id":"size_2_label","label":"Tamaño 2 (texto)"},
+{"type":"text","id":"fi_etiqueta","label":"Filtro interno: etiqueta","default":"Filtro interno"},
+{"type":"text","id":"fi_titulo","label":"Filtro interno: título","default":"Lo que pasa por dentro"},
+{"type":"textarea","id":"fi_bajada","label":"Filtro interno: bajada"},
+{"type":"checkbox","id":"mostrar_descripcion","label":"Mostrar la descripción del producto","default":true},
+{"type":"text","id":"legal","label":"Nota"}],
+"blocks":[
+{"type":"punto","name":"Punto destacado","settings":[{"type":"text","id":"texto","label":"Texto"}]},
+{"type":"etapa","name":"Etapa del filtro","settings":[{"type":"text","id":"nombre","label":"Nombre"},{"type":"text","id":"texto","label":"Texto"}]},
+{"type":"detalle","name":"Detalle","settings":[{"type":"text","id":"titulo","label":"Título"},{"type":"richtext","id":"texto","label":"Texto"}]},
+{"type":"faq","name":"Pregunta","settings":[{"type":"text","id":"pregunta","label":"Pregunta"},{"type":"textarea","id":"respuesta","label":"Respuesta"}]}],
+"presets":[{"name":"elvo· Ficha de equipo"}]}
+{% endschema %}
