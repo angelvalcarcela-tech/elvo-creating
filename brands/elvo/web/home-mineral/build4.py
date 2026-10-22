@@ -95,7 +95,7 @@ HTML = '''
 </div></section>
 
 <section class="a-sec" style="padding-top:0"><div class="a-w">
- <p class="a-where"><span>Disponible en</span><b>elvo.pe</b><b>WhatsApp</b><b>Falabella</b><b>Sodimac</b><b>Plaza Vea</b><b>Promart</b><b>Oechsle</b><b>Mercado Libre</b></p>
+ <p class="a-where"><span>Disponible en</span><a class="wh" href="/products/elvonativo">elvo.pe</a><b>WhatsApp</b><a class="wh" href="https://www.falabella.com.pe/falabella-pe/seller/IMPORTACIONES%20GAD" target="_blank" rel="noopener">Falabella</a><a class="wh" href="https://www.sodimac.com.pe/sodimac-pe/vendedor/IMPORTACIONES%20GAD" target="_blank" rel="noopener">Sodimac</a><a class="wh" href="https://www.plazavea.com.pe/sellers?id=ELVO" target="_blank" rel="noopener">Plaza Vea</a><a class="wh" href="https://www.promart.pe/gasfiteria/purificadores-de-agua-y-filtros/repuestos-de-purificadores-y-filtros/elvo" target="_blank" rel="noopener">Promart</a><a class="wh" href="https://www.oechsle.pe/mejoramiento-del-hogar/gasfiteria/filtros-y-purificadores/elvo" target="_blank" rel="noopener">Oechsle</a><b>Mercado Libre</b></p>
 </div></section>
 
 <section class="a-sec" style="padding-top:8px"><div class="a-w">

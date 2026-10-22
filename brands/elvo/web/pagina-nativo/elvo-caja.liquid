@@ -1,0 +1,32 @@
+{%- assign img = section.settings.imagen -%}
+{%- if img != blank or request.design_mode -%}
+<style>
+.ec{max-width:1100px;margin:0 auto;padding:56px 20px;font-family:'Inter',Arial,sans-serif;color:#050607}
+.ec h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.6rem,3vw,2.3rem);letter-spacing:-.02em;margin:0 0 20px}
+.ec__g{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.ec__i{border-radius:24px;overflow:hidden;background:#EEF3F7;aspect-ratio:4/3}
+.ec__i img{width:100%;height:100%;object-fit:cover;display:block}
+.ec__ph{height:100%;display:grid;place-items:center;color:#5B6470;font-size:14px;text-align:center;padding:20px}
+.ec ul{list-style:none;margin:0;padding:0}
+.ec li{padding:12px 0 12px 30px;position:relative;border-bottom:1px solid #DCE6EE;font-size:16px}
+.ec li::before{content:'';position:absolute;left:0;top:17px;width:14px;height:14px;border-radius:50%;background:#3355FF}
+@media(max-width:760px){.ec__g{grid-template-columns:1fr}}
+</style>
+<section class="ec" id="caja">
+  <h2>{{ section.settings.titulo }}</h2>
+  <div class="ec__g">
+    <div class="ec__i">
+      {%- if img != blank -%}{{ img | image_url: width: 1200 | image_tag: loading: 'lazy', alt: section.settings.titulo }}{%- else -%}<div class="ec__ph">Aquí va la foto del contenido de la caja. Súbela en el editor del tema.</div>{%- endif -%}
+    </div>
+    <ul>{%- for b in section.blocks -%}<li {{ b.shopify_attributes }}>{{ b.settings.texto }}</li>{%- endfor -%}</ul>
+  </div>
+</section>
+{%- endif -%}
+{% schema %}
+{"name":"elvo· Contenido caja","settings":[
+{"type":"text","id":"titulo","label":"Título","default":"Qué incluye la caja"},
+{"type":"image_picker","id":"imagen","label":"Foto del contenido"}],
+"blocks":[{"type":"item","name":"Ítem","settings":[{"type":"text","id":"texto","label":"Texto","default":"Ítem"}]}],
+"max_blocks":10,
+"presets":[{"name":"elvo· Contenido caja","blocks":[{"type":"item","settings":{"texto":"Purificador elvo· Nativo"}},{"type":"item","settings":{"texto":"Núcleo(s) de tu plan"}},{"type":"item","settings":{"texto":"Adaptador universal de jebe"}}]}]}
+{% endschema %}

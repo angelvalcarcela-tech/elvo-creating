@@ -94,8 +94,8 @@ body{background:var(--blanco)}
 /* dónde + faq */
 .a-where{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:22px 0;border-top:1px solid var(--hielo);border-bottom:1px solid var(--hielo);margin:0}
 .a-where span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris);margin-right:10px}
-.a-where b{font-family:var(--disp);font-weight:400;font-size:1.15rem;padding:0 14px;border-left:1px solid var(--niebla)}
-.a-where b:nth-of-type(1){border-left:0;padding-left:0}
+.a-where b,.a-where a.wh{color:inherit;text-decoration:none;font-family:var(--disp);font-weight:400;font-size:1.15rem;padding:0 14px;border-left:1px solid var(--niebla)}
+.a-where>*:nth-child(2){border-left:0;padding-left:0}.a-where a.wh:hover{color:#3355FF}
 .a-faq{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
 .a-faq details{border-bottom:1px solid var(--hielo);padding:18px 0}
 .a-faq summary{cursor:pointer;list-style:none;font-family:var(--disp);font-weight:400;font-size:1.05rem;display:flex;justify-content:space-between;gap:12px}
