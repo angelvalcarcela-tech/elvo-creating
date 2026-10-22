@@ -1,0 +1,31 @@
+{{ 'elvo-web.css' | asset_url | stylesheet_tag }}
+<style>
+body .elvo-pv__save,body .elvo-pv__flag,body .elvo-tier__flag,body .elvo-summary__save,body .elvo-hero-precio .hp-save{display:inline-block!important}
+body .elvo-hero-precio s,body .elvo-summary s{display:inline!important}
+body .elvo-pv__price s{display:block!important}
+body .elvo-wa-cta{display:block;text-align:center;margin-top:10px;padding:14px 18px;border:1px solid #3355FF;border-radius:999px;color:#3355FF!important;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:17px;text-decoration:none!important;background:#fff}
+body .elvo-wa-cta:hover{background:#3355FF;color:#fff!important}
+</style>
+<script>
+(function(){
+  var WA='51929190100';
+  function plan(){
+    var p=document.querySelector('.elvo-pv[aria-checked="true"]');
+    return p?p.textContent.trim().replace(/\s+/g,' ').split('S/')[0].slice(0,32).trim():'';
+  }
+  function add(){
+    if(document.getElementById('elvo-wa-cta'))return true;
+    var b=document.querySelector('.elvo [data-elvo="cta"]');
+    if(!b)return false;
+    var a=document.createElement('a');
+    a.id='elvo-wa-cta';a.className='elvo-wa-cta';a.target='_blank';a.rel='noopener';
+    a.textContent='Comprar por WhatsApp';
+    function href(){var pl=plan();a.href='https://wa.me/'+WA+'?text='+encodeURIComponent('Hola, quiero comprar elvo· Nativo'+(pl?' ('+pl+')':'')+' [WEB-PDP]');}
+    href();a.addEventListener('click',href);
+    b.insertAdjacentElement('afterend',a);
+    return true;
+  }
+  var n=0,t=setInterval(function(){if(add()||++n>40)clearInterval(t);},500);
+})();
+</script>
+{% schema %}{"name":"elvo· Estilo global","settings":[]}{% endschema %}
