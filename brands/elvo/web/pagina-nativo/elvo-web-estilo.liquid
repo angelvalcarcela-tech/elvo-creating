@@ -131,6 +131,29 @@ body .elvo-wa-cta:hover{background:#3355FF;color:#fff!important}
     });
     return true;
   }
+  /* carritos viejos: quita la propiedad "Regalo / l\u00e1mpara" de las l\u00edneas */
+  var MAL=/regalo|l[a\u00e1]mpara/i,limp=0;
+  function limpiaProps(){
+    if(++limp>6)return;
+    fetch('/cart.js',{headers:{Accept:'application/json'}}).then(function(r){return r.json()}).then(function(c){
+      var idx=-1,np=null;
+      (c.items||[]).some(function(it,i){
+        var p=it.properties;if(!p)return false;
+        var bad=Object.keys(p).filter(function(k){return k.charAt(0)!=='_'&&MAL.test(k+' '+p[k])});
+        if(!bad.length)return false;
+        idx=i;np={};Object.keys(p).forEach(function(k){np[k]=bad.indexOf(k)>-1?'':p[k]});
+        if(!np._plan)np._plan='Plan con repuestos incluidos';return true;
+      });
+      if(idx<0)return;
+      return fetch('/cart/change.js',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({line:idx+1,properties:np})}).then(function(){
+        try{if(window.ELVO&&ELVO.cart&&ELVO.cart.refresh)ELVO.cart.refresh()}catch(e){}
+        limpiaProps();
+      });
+    }).catch(function(){});
+  }
+  function ocultaProps(){document.querySelectorAll('.elvo-cart__prop').forEach(function(e){if(MAL.test(e.textContent))e.style.display='none'})}
+  limpiaProps();
+  new MutationObserver(ocultaProps).observe(document.documentElement,{childList:true,subtree:true});
   var m=0,o=setInterval(function(){if(orden()||++m>80)clearInterval(o)},60);
   var n=0,t=setInterval(function(){var a=add(),b=addOferta(),c=stickyWA(),d=canoOpts(),e=planHint();if((a&&b&&c&&d&&e)||++n>40)clearInterval(t);},500);
 })();
