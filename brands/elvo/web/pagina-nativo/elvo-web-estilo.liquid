@@ -109,7 +109,30 @@ body .elvo-wa-cta:hover{background:#3355FF;color:#fff!important}
     b.insertAdjacentElement('afterend',a);
     return true;
   }
-  var n=0,t=setInterval(function(){var a=add(),b=addOferta(),c=stickyWA(),d=canoOpts();if((a&&b&&c&&d)||++n>40)clearInterval(t);},500);
+  function planHint(){
+    var l=document.querySelector('.elvo-pv-list');
+    if(!l)return false;
+    if(document.getElementById('elvo-planhint'))return true;
+    var p=document.createElement('p');p.id='elvo-planhint';p.className='elvo-planhint';
+    p.textContent='Pagas una sola vez y el purificador es tuyo. El plan solo cambia cu\u00e1ntos n\u00facleos de repuesto te llevas.';
+    l.insertAdjacentElement('beforebegin',p);return true;
+  }
+  /* orden bajo la compra, de m\u00e1s a menos relevante */
+  function orden(){
+    var r=document.querySelector('.elvo[id^="elvo-pdp-"]');
+    if(!r||!r.dataset.cierre)return false;
+    var buy=r.querySelector('.elvo-buy'),an=buy&&buy.parentElement;
+    if(!an)return true;
+    ['.elvo-rv','[data-elvo-videos-lazy]','#instalacion','#caja','[id$="__llega"]','.elvo-faq','.elvo-quote'].forEach(function(s){
+      var el=document.querySelector(s);if(!el)return;
+      var nodo=r.contains(el)?el:(el.closest('.shopify-section')||el);
+      if(nodo===an||nodo.contains(an))return;
+      an.insertAdjacentElement('afterend',nodo);an=nodo;
+    });
+    return true;
+  }
+  var m=0,o=setInterval(function(){if(orden()||++m>80)clearInterval(o)},60);
+  var n=0,t=setInterval(function(){var a=add(),b=addOferta(),c=stickyWA(),d=canoOpts(),e=planHint();if((a&&b&&c&&d&&e)||++n>40)clearInterval(t);},500);
 })();
 </script>
 {% schema %}{"name":"elvo· Estilo global","settings":[]}{% endschema %}

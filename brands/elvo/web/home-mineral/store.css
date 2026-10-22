@@ -80,7 +80,7 @@ body{background:var(--blanco)}
 .a-steps em{font-style:normal;font-family:var(--disp);font-weight:600;color:var(--cobalto);font-size:1.3rem}
 .a-in-r{background:var(--marino);border-radius:24px;padding:28px;color:#fff}
 .a-in-r svg{width:100%;height:auto;display:block}
-.a-in-r svg text{font-family:var(--txt);fill:#fff}
+.a-in-r svg{max-width:460px;margin:0 auto}.a-in-r svg text{font-family:var(--txt);fill:#fff}.a-in-r .sl{font-size:11px;letter-spacing:.16em;fill:#7B9BDD!important}.a-in-r .sn{font-size:13px;letter-spacing:.1em}.a-in-r .st{font-size:15px;font-weight:500;letter-spacing:.06em}
 
 /* comparador */
 .a-cmp{overflow-x:auto;border:1px solid var(--hielo);border-radius:20px;background:#fff}
@@ -92,10 +92,6 @@ body{background:var(--blanco)}
 .a-cmp .no{color:var(--gris)}
 
 /* dónde + faq */
-.a-where{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:22px 0;border-top:1px solid var(--hielo);border-bottom:1px solid var(--hielo);margin:0}
-.a-where span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris);margin-right:10px}
-.a-where b,.a-where a.wh{color:inherit;text-decoration:none;font-family:var(--disp);font-weight:400;font-size:1.15rem;padding:0 14px;border-left:1px solid var(--niebla)}
-.a-where>*:nth-child(2){border-left:0;padding-left:0}.a-where a.wh:hover{color:#3355FF}
 .a-faq{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
 .a-faq details{border-bottom:1px solid var(--hielo);padding:18px 0}
 .a-faq summary{cursor:pointer;list-style:none;font-family:var(--disp);font-weight:400;font-size:1.05rem;display:flex;justify-content:space-between;gap:12px}
@@ -127,3 +123,51 @@ body{background:var(--blanco)}
 .a-rev small{display:block;font-size:12px;color:var(--gris)}
 @media(max-width:1000px){.a-rev-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:800px){.a-rev-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -16px;padding:0 16px 8px}.a-rev{flex:0 0 80%;scroll-snap-align:start;min-height:200px}}
+
+/* canales */
+.a-ch-main{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.a .a-ch-c{background:var(--marino);color:#fff;border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px;min-height:210px;transition:background .2s}
+.a .a-ch-c:hover{background:var(--cobalto)}
+.a-ch-k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cielo)}
+.a .a-ch-c h3{color:#fff;font-size:1.6rem}
+.a .a-ch-c p{color:#DCE6EE;font-size:15px}
+.a-ch-c em{margin-top:auto;font-style:normal;font-weight:500;font-size:14px}
+.a .a-ch-t{margin:28px 0 12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+.a-ch-mp{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.a .a-ch-mp a{background:#fff;border:1px solid var(--hielo);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:6px;transition:border-color .2s}
+.a .a-ch-mp a:hover{border-color:var(--cobalto)}
+.a-ch-mp b{font-family:var(--disp);font-weight:600;font-size:1.1rem}
+.a-ch-mp span{font-size:13px;color:var(--cobalto)}
+@media(max-width:1000px){.a-ch-main{grid-template-columns:1fr}.a-ch-mp{grid-template-columns:repeat(3,1fr)}.a .a-ch-c{min-height:0}}
+@media(max-width:520px){.a-ch-mp{grid-template-columns:1fr 1fr}}
+
+/* tamaño de letra: laptops y pantallas grandes */
+@media(min-width:1100px){
+ .a{font-size:17px}
+ .a-w{max-width:1280px}
+ .a-h2{font-size:clamp(2.2rem,2.8vw,3rem)}
+ .a-lab{font-size:12.5px}
+ .a-chip{font-size:12px}
+ .a-hero p.sub{font-size:20px}
+ .a .a-hero h1{font-size:clamp(2.6rem,4vw,3.9rem)}
+ .a .a-pill{font-size:15.5px;padding:15px 26px}
+ .a-ben div{font-size:16px}
+ .a-card h3{font-size:1.6rem}
+ .a-card p{font-size:15.5px}
+ .a-price{font-size:1.5rem}
+ .a select{font-size:15.5px}
+ .a-rev blockquote{font-size:1.2rem}
+ .a-rev figcaption{font-size:15px}
+ .a-need h3{font-size:1.4rem}
+ .a-need p{font-size:15.5px}
+ .a-steps h3{font-size:1.3rem}
+ .a-steps p{font-size:15.5px}
+ .a-cmp th,.a-cmp td{font-size:15.5px}
+ .a-faq summary{font-size:1.2rem}
+ .a-faq p{font-size:16px}
+ .a-fine{font-size:12.5px}
+}
+@media(max-width:800px){.a-ch-main{gap:10px}.a-in-r{padding:18px}.a-cmp::after{content:'';}}
+.a-cmp td:first-child,.a-cmp th:first-child{position:sticky;left:0;background:#fff;z-index:1}
+.a .a-hint{display:none;font-size:12px;color:var(--gris);margin:-12px 0 10px}
+@media(max-width:800px){.a .a-hint{display:block}.a-cmp table{min-width:640px}.a-cmp td:first-child,.a-cmp th:first-child{width:96px}}

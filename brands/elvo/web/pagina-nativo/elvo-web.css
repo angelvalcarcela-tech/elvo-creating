@@ -61,3 +61,24 @@ body .elvo-sticky{background:rgba(255,255,255,.94)!important;border-top:1px soli
 
 /* sin descuentos ni etiquetas de presión */
 body .elvo-pv__save,body .elvo-pv__flag,body .elvo-tier__flag,body .elvo-summary__save,body .elvo-hero-precio .hp-save,body .elvo-hero-precio s,body .elvo-pv__price s,body .elvo-summary s{display:none!important}
+
+/* PDP: columna de compra más limpia */
+body .elvo-categoria,body .elvo-sub,body .elvo-riesgo,body .elvo-hero-precio .hp-linea+.hp-linea{display:none!important}
+body .elvo-oferta{padding:10px 14px!important;font-size:14px!important;margin:10px 0 14px!important}
+body .elvo-checks{margin:8px 0 18px}
+body .elvo-planhint{font-size:13.5px;line-height:1.4;color:#5B6470;margin:0 0 12px}
+body .elvo-pv-list{gap:12px!important;margin:8px 0!important}
+body .elvo-pv{border:1.5px solid #BED0DF!important;border-radius:16px!important;padding:14px 16px!important;box-shadow:none!important;background:#fff!important}
+body .elvo-pv[aria-checked="true"]{background:#F2F5FF!important;border-color:#3355FF!important;box-shadow:0 0 0 1px #3355FF!important}
+body .elvo-pv__top{align-items:center!important}
+body .elvo-pv__name{font-size:17px!important;font-weight:700!important}
+body .elvo-pv__sub{font-size:13px!important;font-weight:400!important}
+body .elvo-pv__price b{font-size:21px!important;font-weight:700!important}
+body .elvo-pv__price s{font-size:13px!important;font-weight:400!important}
+body .elvo-pv__save{margin-top:6px!important;font-size:12px!important;padding:2px 9px!important}
+body .elvo-pv__flag{top:-10px!important;right:14px!important;font-size:11px!important;background:#3355FF!important;color:#fff!important}
+body .elvo-pv__flag--mayor{background:#050607!important}
+body .elvo-pv__detail{margin-top:10px!important;padding-top:10px!important;border-top:1px solid #DCE6EE!important}
+body .elvo-pv__detail .elvo-pv__item{display:block!important;margin:0!important;font-size:14px!important}
+body .elvo-pv__thumb,body .elvo-pv__item:first-child,body .elvo-pv__item:has(.elvo-pv__thumb--check),body .elvo-pv__extra{display:none!important}
+body .elvo-pv__detail:not(:has(.elvo-pv__thumb i)){display:none!important}

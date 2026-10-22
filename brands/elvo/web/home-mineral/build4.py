@@ -8,6 +8,17 @@ WAHOLA = wa('Hola,%20quiero%20elegir%20mi%20purificador%20elvo%C2%B7%20%5BWEB-HO
 
 NATIVO_FORM = '''[[L]]<form method="post" action="/cart/add" accept-charset="UTF-8"><select name="id" aria-label="Plan">{%- for v in p_nativo.variants -%}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}>{{ v.title }} · S/ {{ v.price | money_without_currency | split: '.' | first }}</option>{%- endfor -%}</select><button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button></form>[[/L]][[M]]<form onsubmit="return false"><select><option>18 meses · S/ 299</option><option>3 años · S/ 349</option><option>6 años · S/ 399</option></select><button class="a-pill a-pill--s a-pill--b">Agregar al carrito</button></form>[[/M]]'''
 
+
+def _svg():
+    L=[('CARBÓN ACTIVADO','#101417','#fff'),('KDF-F','#3355FF','#fff'),('NANOTECNOLOGÍA','#7B9BDD','#050607'),('ALUMINOSILICATO SINTÉTICO','#BED0DF','#050607'),('PLATA COLOIDAL','#DCE6EE','#050607'),('PLATA IÓNICA','#FFFFFF','#050607')]
+    o='<svg viewBox="0 0 400 500" role="img" aria-label="Esquema ilustrativo de las seis etapas del núcleo"><text x="200" y="22" text-anchor="middle" class="sl">ENTRADA · AGUA DEL CAÑO</text><path d="M200 30 V44 M194 38 L200 46 L206 38" stroke="#7B9BDD" fill="none" stroke-width="1.5"/>'
+    for k,(n,f,c) in enumerate(L):
+        y=56+k*64
+        o+=f'<rect x="12" y="{y}" width="376" height="56" rx="14" fill="{f}" stroke="rgba(255,255,255,.22)"/><text x="34" y="{y+34}" class="sn" style="fill:{c};opacity:.7">0{k+1}</text><text x="70" y="{y+34}" class="st" style="fill:{c}">{n}</text>'
+    o+='<path d="M200 442 V456 M194 450 L200 458 L206 450" stroke="#7B9BDD" fill="none" stroke-width="1.5"/><text x="200" y="482" text-anchor="middle" class="sl">SALIDA · AGUA PURIFICADA</text></svg>'
+    return o
+SVG=_svg()
+
 HTML = '''
 <div class="a">
 <section class="a-hero">
@@ -76,13 +87,13 @@ HTML = '''
    </div>
    <p class="a-fine" style="margin:0">Descrito para elvo· Nativo. Resultados según la ficha técnica del núcleo PureCore y la calidad del agua de entrada.</p>
   </div>
-  <div class="a-in-r">''' + build3.svg() + '''<p style="font-size:11px;color:#7B9BDD;margin-top:14px">Esquema ilustrativo del núcleo PureCore. El orden y el espesor de cada etapa son representativos.</p></div>
+  <div class="a-in-r">''' + SVG + '''<p style="font-size:11px;color:#7B9BDD;margin-top:14px">Esquema ilustrativo del núcleo PureCore. El orden y el espesor de cada etapa son representativos.</p></div>
  </div>
 </div></section>
 
 <section class="a-sec" id="comparar" style="padding-top:0"><div class="a-w">
  <div class="a-head"><div><span class="a-lab">Comparar</span><h2 class="a-h2">Cuál es para ti</h2></div></div>
- <div class="a-cmp"><table>
+ <p class="a-hint">Desliza para ver los cuatro →</p><div class="a-cmp"><table>
   <tr><th></th><th>Nativo</th><th>Vivo</th><th>Alivio</th><th>Cero</th></tr>
   <tr><td>Para</td><td>El caño</td><td>El caño</td><td>Tener agua guardada</td><td>Pureza máxima</td></tr>
   <tr><td>Qué hace</td><td>Retiene plomo y metales pesados*</td><td>Aporta magnesio; reduce cloro, olores y sabores</td><td>Purifica por gravedad</td><td>Ósmosis inversa; agua fría y caliente</td></tr>
@@ -94,8 +105,22 @@ HTML = '''
  </table></div>
 </div></section>
 
-<section class="a-sec" style="padding-top:0"><div class="a-w">
- <p class="a-where"><span>Disponible en</span><a class="wh" href="/products/elvonativo">elvo.pe</a><b>WhatsApp</b><a class="wh" href="https://www.falabella.com.pe/falabella-pe/seller/IMPORTACIONES%20GAD" target="_blank" rel="noopener">Falabella</a><a class="wh" href="https://www.sodimac.com.pe/sodimac-pe/vendedor/IMPORTACIONES%20GAD" target="_blank" rel="noopener">Sodimac</a><a class="wh" href="https://www.plazavea.com.pe/sellers?id=ELVO" target="_blank" rel="noopener">Plaza Vea</a><a class="wh" href="https://www.promart.pe/gasfiteria/purificadores-de-agua-y-filtros/repuestos-de-purificadores-y-filtros/elvo" target="_blank" rel="noopener">Promart</a><a class="wh" href="https://www.oechsle.pe/mejoramiento-del-hogar/gasfiteria/filtros-y-purificadores/elvo" target="_blank" rel="noopener">Oechsle</a><b>Mercado Libre</b></p>
+<section class="a-sec a-ch" id="canales" style="padding-top:0"><div class="a-w">
+ <div class="a-head"><div><span class="a-lab">Dónde comprar</span><h2 class="a-h2">Elige tu canal</h2></div></div>
+ <div class="a-ch-main">
+  <a class="a-ch-c" href="{{ nativo_url }}"><span class="a-ch-k">Tienda web</span><h3>elvo.pe</h3><p>Paga en hasta 6 cuotas sin interés o al recibir en Lima.</p><em>Comprar en la web →</em></a>
+  <a class="a-ch-c" target="_blank" rel="noopener" href="https://wa.me/51929190100?text=Hola,%20quiero%20comprar%20elvo%C2%B7%20%5BWEB-HOME%5D"><span class="a-ch-k">WhatsApp</span><h3>929 190 100</h3><p>Te ayudamos a elegir y armamos tu pedido.</p><em>Escribir ahora →</em></a>
+  <a class="a-ch-c" target="_blank" rel="noopener" href="https://www.instagram.com/elvo_filtros/"><span class="a-ch-k">Instagram</span><h3>@elvo_filtros</h3><p>Instalaciones, novedades y clientes en casa.</p><em>Ver el perfil →</em></a>
+ </div>
+ <p class="a-ch-t">También en tiendas online</p>
+ <div class="a-ch-mp">
+  <a target="_blank" rel="noopener" href="https://www.falabella.com.pe/falabella-pe/seller/IMPORTACIONES%20GAD"><b>Falabella</b><span>Ver tienda ↗</span></a>
+  <a target="_blank" rel="noopener" href="https://www.sodimac.com.pe/sodimac-pe/vendedor/IMPORTACIONES%20GAD"><b>Sodimac</b><span>Ver tienda ↗</span></a>
+  <a target="_blank" rel="noopener" href="https://www.plazavea.com.pe/sellers?id=ELVO"><b>Plaza Vea</b><span>Ver tienda ↗</span></a>
+  <a target="_blank" rel="noopener" href="https://www.promart.pe/gasfiteria/purificadores-de-agua-y-filtros/repuestos-de-purificadores-y-filtros/elvo"><b>Promart</b><span>Ver tienda ↗</span></a>
+  <a target="_blank" rel="noopener" href="https://www.oechsle.pe/mejoramiento-del-hogar/gasfiteria/filtros-y-purificadores/elvo"><b>Oechsle</b><span>Ver tienda ↗</span></a>
+ </div>
+ <p class="a-fine">Recojo gratis en Jr. Varela 1235, Breña, de lunes a sábado de 9 a. m. a 5 p. m.</p>
 </div></section>
 
 <section class="a-sec" style="padding-top:8px"><div class="a-w">
