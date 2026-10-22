@@ -14,6 +14,12 @@
 {%- if p_vivo.id and p_vivo.available -%}{%- assign vivo_url = p_vivo.url -%}{%- assign vivo_ok = true -%}{%- else -%}{%- assign vivo_url = wa_vivo -%}{%- assign vivo_ok = false -%}{%- endif -%}
 {%- if p_a16.id and p_a16.available -%}{%- assign alivio_url = p_a16.url -%}{%- assign alivio_ok = true -%}{%- else -%}{%- assign alivio_url = wa_alivio -%}{%- assign alivio_ok = false -%}{%- endif -%}
 {%- if p_cero.id and p_cero.available -%}{%- assign cero_url = p_cero.url -%}{%- assign cero_ok = true -%}{%- else -%}{%- assign cero_url = wa_cero -%}{%- assign cero_ok = false -%}{%- endif -%}
+<style>
+.a .a-card-b form{display:flex;flex-direction:column;gap:10px;margin-top:0}
+.a .a-card-b form select{width:100%}
+.a .a-card-b .a-price{margin-top:auto}
+.a .a-card-b p{min-height:0}
+</style>
 <div class="a">
 <div class="a-ben"><div class="a-w">
  <div><b>30</b>días de prueba</div><div><b>1</b>año de garantía</div><div><b>6</b>cuotas sin interés</div><div><b>PE</b>envío gratis a todo el Perú</div>
@@ -35,7 +41,7 @@
    {%- else -%}<div class="a-price"><small>Consulta el precio</small></div><a class="a-pill a-pill--b" href="{{ wa_alivio }}">Consultar por WhatsApp</a>{%- endif -%}</div></article>
   <article class="a-card"><a class="a-card-img a-card-img--m" href="{{ cero_url }}"><span class="a-big">Cero</span><span class="a-badge">Pureza máxima</span></a>
    <div class="a-card-b"><h3>Cero</h3><p>Ósmosis inversa. Agua fría y caliente en un solo equipo.</p>
-   {%- if cero_ok -%}<div class="a-price">S/ {{ p_cero.price | money_without_currency | split: '.' | first }}</div><form method="post" action="/cart/add" accept-charset="UTF-8"><input type="hidden" name="id" value="{{ p_cero.variants.first.id }}"><button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button></form>
+   {%- if cero_ok -%}<div class="a-price"><small>Precio</small> S/ {{ p_cero.price | money_without_currency | split: '.' | first }}</div><form method="post" action="/cart/add" accept-charset="UTF-8"><select name="id" aria-label="Equipo"><option value="{{ p_cero.variants.first.id }}">Equipo único · S/ {{ p_cero.price | money_without_currency | split: '.' | first }}</option></select><button class="a-pill a-pill--s a-pill--b" type="submit">Agregar al carrito</button></form>
    {%- else -%}<div class="a-price"><small>Consulta el precio</small></div><a class="a-pill a-pill--b" href="{{ wa_cero }}">Consultar por WhatsApp</a>{%- endif -%}</div></article>
  </div>
  <p class="a-fine">*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.</p>
