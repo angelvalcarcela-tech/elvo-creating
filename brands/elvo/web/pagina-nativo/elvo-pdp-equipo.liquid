@@ -11,21 +11,22 @@
 <style>
 .pe{max-width:1280px;margin:0 auto;padding:36px 24px 56px;font-family:'Inter',Arial,sans-serif;color:#050607;letter-spacing:0}
 .pe *{box-sizing:border-box}
-.pe__g{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,72px);align-items:start}
+.pe__g{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.pe__gal,.pe__info{min-width:0}
 .pe__gal{position:sticky;top:20px}
 .pe__main{aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:#EEF3F7;display:grid;place-items:center}
 .pe__main img{width:100%;height:100%;object-fit:cover;display:block}
-.pe__ph{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.03em;color:#fff;text-align:center;padding:24px}
+.pe__ph{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(32px,4vw,54.4px);letter-spacing:-.03em;color:#fff;text-align:center;padding:24px}
 .pe__thumbs{display:flex;gap:10px;margin-top:12px;overflow-x:auto}
 .pe__thumbs button{flex:0 0 76px;height:76px;border:2px solid transparent;border-radius:14px;overflow:hidden;padding:0;background:#EEF3F7;cursor:pointer}
 .pe__thumbs button[aria-current="true"]{border-color:#3355FF}
 .pe__thumbs img{width:100%;height:100%;object-fit:cover;display:block}
 .pe__k{font-size:12.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#3355FF}
-.pe h1{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(2rem,3.4vw,3.2rem);letter-spacing:-.02em;line-height:1.05;margin:10px 0 10px}
-.pe__tag{font-size:clamp(1rem,1.3vw,1.2rem);line-height:1.45;color:#2B3238;margin:0 0 20px;max-width:44ch}
+.pe h1{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(32px,3.4vw,51.2px);letter-spacing:-.02em;line-height:1.05;margin:10px 0 10px}
+.pe__tag{font-size:clamp(16px,1.3vw,19.2px);line-height:1.45;color:#2B3238;margin:0 0 20px;max-width:44ch}
 .pe__pr{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin:0 0 18px}
-.pe__pr b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:clamp(1.9rem,3vw,2.6rem);letter-spacing:-.02em}
-.pe__pr s{font-size:1.15rem;color:#6B7480}
+.pe__pr b{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700;font-size:clamp(30.4px,3vw,41.6px);letter-spacing:-.02em}
+.pe__pr s{font-size:18.4px;color:#6B7480}
 .pe__sv{font-size:13px;font-weight:600;background:#DCE6EE;border-radius:999px;padding:4px 12px}
 .pe__sz{display:flex;gap:8px;margin:0 0 18px;flex-wrap:wrap}
 .pe__sz a{padding:10px 20px;border:1px solid #BED0DF;border-radius:999px;text-decoration:none;color:#050607;font-weight:500;font-size:15px}
@@ -37,11 +38,11 @@
 .pe__v:has(input:checked){border-color:#3355FF;background:#F2F5FF;box-shadow:0 0 0 1px #3355FF}
 .pe__v:has(input:checked) i{border-color:#3355FF;background:#3355FF;box-shadow:inset 0 0 0 4px #fff}
 .pe__v:has(input:disabled){opacity:.5;cursor:not-allowed}
-.pe__v span b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-size:1.05rem}
+.pe__v span b{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-size:16.8px}
 .pe__v span small{color:#5B6470;font-size:13px}
 .pe__v em{font-style:normal;text-align:right;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:700}
 .pe__v em s{display:block;font-weight:400;font-size:13px;color:#6B7480}
-.pe__add{width:100%;border:0;border-radius:999px;background:#3355FF;color:#fff;font:inherit;font-weight:600;font-size:1.05rem;padding:17px 24px;cursor:pointer;transition:background .2s}
+.pe__add{width:100%;border:0;border-radius:999px;background:#3355FF;color:#fff;font:inherit;font-weight:600;font-size:16.8px;padding:17px 24px;cursor:pointer;transition:background .2s}
 .pe__add:hover{background:#050607}
 .pe__add:disabled{background:#BED0DF;cursor:not-allowed}
 .pe__wa{display:block;text-align:center;margin-top:10px;padding:15px 22px;border:1px solid #3355FF;border-radius:999px;color:#3355FF;font-weight:600;text-decoration:none}
@@ -54,7 +55,7 @@
 .pe__tr span{font-size:13px;font-weight:500;padding:8px 14px;border:1px solid #BED0DF;border-radius:999px;background:#fff}
 .pe__more{max-width:1280px;margin:0 auto;padding:0 24px 56px}
 .pe__fi{background:#010A21;border-radius:24px;padding:clamp(24px,4vw,48px);color:#fff;display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(20px,4vw,56px);margin-bottom:12px}
-.pe__fi h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(1.7rem,2.8vw,2.5rem);letter-spacing:-.02em;line-height:1.08;margin:8px 0 10px;color:#fff}
+.pe__fi h2{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(27.2px,2.8vw,40px);letter-spacing:-.02em;line-height:1.08;margin:8px 0 10px;color:#fff}
 .pe__fi p{color:#BED0DF;line-height:1.5;margin:0}
 .pe__fi .pe__k{color:#7B9BDD}
 .pe__fi ol{list-style:none;margin:0;padding:0;counter-reset:e}
@@ -65,14 +66,14 @@
 .pe__fi li span{font-size:14px;color:#BED0DF;line-height:1.4}
 .pe details{border-bottom:1px solid #DCE6EE;padding:20px 0}
 .pe details:first-of-type{border-top:1px solid #DCE6EE}
-.pe summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:500;font-size:1.25rem}
+.pe summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:500;font-size:20px}
 .pe summary::-webkit-details-marker{display:none}
-.pe summary::after{content:'+';color:#3355FF;font-size:1.5rem;line-height:1}
+.pe summary::after{content:'+';color:#3355FF;font-size:24px;line-height:1}
 .pe details[open] summary::after{content:'\2013'}
-.pe .pe__body{margin-top:12px;font-size:1.02rem;line-height:1.6;color:#2B3238}
+.pe .pe__body{margin-top:12px;font-size:16.3px;line-height:1.6;color:#2B3238}
 .pe .pe__body p{margin:0 0 10px}
 .pe__fine{font-size:12.5px;color:#6B7480;margin:18px 0 0}
-@media(max-width:800px){.pe{padding:20px 16px 36px}.pe__g{grid-template-columns:1fr}.pe__gal{position:static}.pe__fi{grid-template-columns:1fr}.pe__more{padding:0 16px 40px}}
+@media(max-width:800px){.pe{padding:20px 16px 36px}.pe__g{grid-template-columns:minmax(0,1fr)}.pe__gal{position:static}.pe__fi{grid-template-columns:1fr}.pe__more{padding:0 16px 40px}}
 </style>
 <div class="pe" data-pe>
  <div class="pe__g">
