@@ -8,8 +8,8 @@
 {%- assign nativo_price = p_nativo.price | money_without_currency | split: '.' | first -%}
 {%- assign nativo_min = 0 -%}{%- for v in p_nativo.variants -%}{%- if nativo_min == 0 or v.price < nativo_min -%}{%- assign nativo_min = v.price -%}{%- endif -%}{%- endfor -%}
 {%- assign vivo_min = 0 -%}{%- for v in p_vivo.variants -%}{%- if vivo_min == 0 or v.price < vivo_min -%}{%- assign vivo_min = v.price -%}{%- endif -%}{%- endfor -%}
-{%- assign nativo_img = 'elvo-nativo-front.png' | file_url -%}
-{%- assign vivo_img = 'elvo-vivo-front.png' | file_url -%}
+{%- assign nativo_img = 'elvo-foto-nativo-equipo.webp' | file_url -%}
+{%- assign vivo_img = 'elvo-foto-vivo-equipo.webp' | file_url -%}
 {%- assign wa_vivo = 'https://wa.me/51929190100?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20elvo%C2%B7%20Vivo%20%5BWEB-HOME%5D' -%}
 {%- assign wa_alivio = 'https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Alivio%20%5BWEB-HOME%5D' -%}
 {%- assign wa_cero = 'https://wa.me/51929190100?text=Hola%2C%20me%20interesa%20Cero%20%5BWEB-HOME%5D' -%}
