@@ -13,7 +13,7 @@
 .et__lab{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:clamp(22px,2.4vw,30px);letter-spacing:-.015em!important;margin:46px 0 16px}
 .et__rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:4px 20px 8px;scroll-padding:0 20px}
 .et__rail::-webkit-scrollbar{display:none}
-.et__card{--c:#3355FF;flex:0 0 300px;scroll-snap-align:start;background:#fff;border-radius:28px;padding:30px 28px 26px;min-height:340px;display:flex;flex-direction:column}
+.et__card{--c:#3355FF;flex:0 0 300px;scroll-snap-align:start;background:#fff;border-radius:28px;padding:26px 26px 22px;min-height:250px;display:flex;flex-direction:column}
 .et__ic{width:46px;height:46px;display:block;color:var(--c)}
 .et__ic svg{width:100%;height:100%;display:block}
 .et__card h3{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:600;font-size:24px;line-height:1.22;letter-spacing:-.015em!important;margin:30px 0 0;color:#050607}
@@ -37,7 +37,7 @@
 .et__nav svg{width:18px;height:18px}
 .et__chips{margin-top:26px;font-size:13.5px;color:#6B7480}
 .et__fine{font-size:12px;color:#6B7480;margin-top:12px;line-height:1.5;max-width:80ch}
-@media(max-width:700px){.et{padding:48px 16px 40px}.et__lead{font-size:16.5px;margin-bottom:24px}.et__rail{margin:0 -16px;padding:4px 16px 8px;scroll-padding:0 16px}.et__card{flex-basis:78%;min-height:300px;padding:26px 22px 22px}.et__card h3{font-size:22px}.et__lab{margin-top:34px}}
+@media(max-width:700px){.et{padding:48px 16px 40px}.et__lead{font-size:16.5px;margin-bottom:24px}.et__rail{margin:0 -16px;padding:4px 16px 8px;scroll-padding:0 16px}.et__card{flex-basis:78%;min-height:210px;padding:22px 20px 18px}.et__card h3{font-size:22px}.et__lab{margin-top:34px}}
 </style>
 <div class="et-bg"><section class="et" id="tecnologia">
   <span class="et__k">{{ section.settings.etiqueta }}</span>
@@ -82,7 +82,7 @@
      </span><h3>{{ html }}</h3>{%- if section.settings[kx] != blank -%}<div class="et__more" hidden><p>{{ section.settings[kx] }}</p></div><button type="button" class="et__plus" aria-expanded="false" aria-label="Ver más"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 2v14M2 9h14"/></svg></button>{%- endif -%}</article>
      {%- endif -%}
     {%- endfor -%}
-    <article class="et__card et__card--k" style="--c:#0E9F8E"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v12c0 10-6.5 18-16 22C14.5 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg></span><h3><em>{{ section.settings.titulo_cert }}</em></h3><ul class="et__list">{%- for i in (1..3) -%}{%- assign kn = 'c' | append: i | append: '_n' -%}{%- assign kk = 'c' | append: i | append: '_k' -%}{%- if section.settings[kn] != blank -%}<li><b>{{ section.settings[kn] }}</b> · {{ section.settings[kk] }}</li>{%- endif -%}{%- endfor -%}</ul><div class="et__more" hidden><p>{{ section.settings.cert_texto }}</p></div><button type="button" class="et__plus" aria-expanded="false" aria-label="Ver más"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 2v14M2 9h14"/></svg></button></article>
+    <article class="et__card et__card--k" style="--c:#0E9F8E"><span class="et__ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v12c0 10-6.5 18-16 22C14.5 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg></span><h3><em>{{ section.settings.titulo_cert }}</em></h3><div class="et__more" hidden><ul class="et__list">{%- for i in (1..3) -%}{%- assign kn = 'c' | append: i | append: '_n' -%}{%- assign kk = 'c' | append: i | append: '_k' -%}{%- if section.settings[kn] != blank -%}<li><b>{{ section.settings[kn] }}</b> · {{ section.settings[kk] }}</li>{%- endif -%}{%- endfor -%}</ul><p>{{ section.settings.cert_texto }}</p></div><button type="button" class="et__plus" aria-expanded="false" aria-label="Ver más"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 2v14M2 9h14"/></svg></button></article>
    </div>
    <div class="et__nav"><button type="button" data-p aria-label="Anterior"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 3l-6 6 6 6"/></svg></button><button type="button" data-n aria-label="Siguiente"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3l6 6-6 6"/></svg></button></div>
   </div>
