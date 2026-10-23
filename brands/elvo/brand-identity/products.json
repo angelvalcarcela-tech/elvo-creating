@@ -38,12 +38,15 @@
         "Lo instalas tú en 5 minutos; adaptador universal de jebe y derivador incluidos",
         "Si no encaja en tu caño, te devolvemos tu dinero",
         "Núcleo: 18 meses de uso normal; te avisamos por WhatsApp cuando toque cambiarlo",
-        "Garantía de 1 año",
+        "Garantía de por vida del equipo contra fallas de fábrica (solo Nativo; ver condiciones en elvo.pe/pages/garantia)",
         "30 días de prueba",
         "Medidas: 25 cm de alto x 6 cm de ancho",
         "Pago contra entrega",
         "Envío gratis a todo el Perú",
-        "Hasta 6 cuotas sin intereses con tarjeta de crédito"
+        "Hasta 6 cuotas sin intereses con cualquier tarjeta",
+        "Entrega el mismo día hasta las 4 p. m. (Lima)",
+        "Aviso por WhatsApp y soporte para instalar",
+        "Calificación 4,2 (124 reseñas en Falabella)"
       ],
       "restricted_claims": [
         {
@@ -60,7 +63,11 @@
         },
         {
           "claim": "Garantía de por vida",
-          "condition": "NO usar: la garantía es de 1 año."
+          "condition": "Solo para el equipo Nativo. Vivo y Cero tienen 1 año; Alivio, 6 meses. No aplica al núcleo (18 meses)."
+        },
+        {
+          "claim": "1 de cada 3 peruanos expuesto a metales pesados",
+          "condition": "NO usar: cifra retirada, sin fuente verificada."
         },
         {
           "claim": "Rinde 20,000 litros",
@@ -72,7 +79,7 @@
         },
         {
           "claim": "Estrellas / número de reseñas",
-          "condition": "Solo si son reales y visibles en la tienda."
+          "condition": "Solo la calificación real de Falabella: 4,2 (124 reseñas). No inventar otras cifras ni distribución de estrellas."
         }
       ],
       "standard_disclaimer": "*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.",
