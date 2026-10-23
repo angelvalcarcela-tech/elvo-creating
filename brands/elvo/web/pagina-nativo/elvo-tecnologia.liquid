@@ -47,19 +47,20 @@
      {%- if section.settings[kt] != blank -%}
      {%- assign tt = section.settings[kt] -%}
      {%- liquid
-  assign hl = ''
-  assign pl = ''
+  assign html = ''
   if tt contains '*'
     assign parts = tt | split: '*'
     for pt in parts
       assign odd = forloop.index0 | modulo: 2
       if odd == 1
-        assign hl = hl | append: pt
+        assign html = html | append: '<em>' | append: pt | append: '</em>'
       else
-        assign pl = pl | append: pt
+        assign html = html | append: pt
       endif
     endfor
   else
+    assign pl = ''
+    assign hl = ''
     assign words = tt | split: ' '
     assign cut = words.size | divided_by: 2
     for w in words
@@ -69,11 +70,12 @@
         assign hl = hl | append: w | append: ' '
       endif
     endfor
+    assign html = pl | append: '<em>' | append: hl | append: '</em>'
   endif
 -%}
      <article class="et__card" style="--c:{{ cols[forloop.index0] }}"><span class="et__ic">
       {%- case i -%}{%- when 1 -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 14v10l7 4"/></svg>{%- when 2 -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 14v20M19 19c0-2 2-3 5-3s5 1 5 3-2 3-5 3-5 1-5 3 2 3 5 3 5-1 5-3"/></svg>{%- when 3 -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5c7 9 12 15 12 21a12 12 0 0 1-24 0c0-6 5-12 12-21z"/><path d="M18 28a6 6 0 0 0 6 6"/></svg>{%- when 4 -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 24s7.5-13 21-13 21 13 21 13-7.5 13-21 13S3 24 3 24z"/><circle cx="24" cy="24" r="6"/></svg>{%- else -%}<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v12c0 10-6.5 18-16 22C14.5 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg>{%- endcase -%}
-     </span><h3>{{ pl }}<em>{{ hl }}</em></h3>{%- if section.settings[kx] != blank -%}<div class="et__more" hidden><p>{{ section.settings[kx] }}</p></div><button type="button" class="et__plus" aria-expanded="false" aria-label="Ver más"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 2v14M2 9h14"/></svg></button>{%- endif -%}</article>
+     </span><h3>{{ html }}</h3>{%- if section.settings[kx] != blank -%}<div class="et__more" hidden><p>{{ section.settings[kx] }}</p></div><button type="button" class="et__plus" aria-expanded="false" aria-label="Ver más"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 2v14M2 9h14"/></svg></button>{%- endif -%}</article>
      {%- endif -%}
     {%- endfor -%}
    </div>
