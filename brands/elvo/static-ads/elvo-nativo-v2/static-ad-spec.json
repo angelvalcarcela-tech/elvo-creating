@@ -51,6 +51,16 @@
    "slug": "retailbg",
    "angle": "fondo retail",
    "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle photograph, everyday middle-class Peruvian home kitchen, natural window light, no text anywhere in the image. Image 1 shows the exact product (white countertop water purifier with chrome gooseneck spout, grey droplet icon and 'elvo' wordmark): reproduce it faithfully, large, centered-right in the upper-middle of the frame, water pouring from its spout into a glass on the counter. The upper 35% of the frame and the bottom 30% must be calm, soft, empty wall/counter areas (for text overlay added later). Image 2 is the logo, do not include it. No people faces, no text, no logos, no other products."
+  },
+  {
+   "slug": "retailbg2",
+   "angle": "fondo retail",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle photograph, everyday middle-class Peruvian home kitchen, natural window light. Image 1 shows the exact product: a white countertop water purifier with a chrome gooseneck spout, a grey droplet icon near the top and the lowercase 'elvo' wordmark with a small droplet printed in grey on the lower half of the white body, just above the base. Reproduce it faithfully and large, centered-right in the upper-middle of the frame, with water pouring from its spout into a glass on the counter. IMPORTANT: the 'elvo' wordmark MUST be clearly visible and legible on the front of the purifier body, exactly as in image 1 (use image 2 as the exact reference for the wordmark letterforms). The upper 35% of the frame and the bottom 30% must be calm, soft, empty wall/counter areas for text added later. No text anywhere else, no other logos, no people."
+  },
+  {
+   "slug": "retailbg3",
+   "angle": "fondo retail",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle photograph, everyday middle-class Peruvian home kitchen, natural window light. Image 1 shows the exact product: a white countertop water purifier with a chrome gooseneck spout, a grey droplet icon near the top and the lowercase 'elvo' wordmark with a small droplet printed in grey on the lower half of the white body, just above the base. Reproduce it faithfully and large, centered-right in the upper-middle of the frame, with water pouring from its spout into a glass on the counter. IMPORTANT: the 'elvo' wordmark MUST be clearly visible and legible on the front of the purifier body, exactly as in image 1 (use image 2 as the exact reference for the wordmark letterforms). The upper 35% of the frame and the bottom 30% must be calm, soft, empty wall/counter areas for text added later. No text anywhere else, no other logos, no people."
   }
  ]
 }
