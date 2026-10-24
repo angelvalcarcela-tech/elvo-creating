@@ -1,0 +1,56 @@
+{
+ "output_name": "elvo-nativo-v2",
+ "brand": "elvo",
+ "product_name": "elvo· Nativo",
+ "audience": "lima-general",
+ "mode": "text",
+ "quality": "high",
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/nativo-equipo-web.png",
+  "brands/elvo/brand-identity/product-images/elvo-logo.png"
+ ],
+ "aspect_ratio": "4:5",
+ "additional_aspect_ratios": [],
+ "variations": [
+  {
+   "slug": "familia2",
+   "angle": "escena de uso · para toda la familia",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural window light, shallow depth of field, no stock-photo look. Image 1 shows the exact product (a white countertop water purifier with a chrome gooseneck spout, grey droplet icon and the 'elvo' wordmark): reproduce it faithfully and keep it clearly visible, do not redesign, recolor or relabel it. Image 2 is the official elvo brand logo: reproduce the wordmark exactly (lowercase 'elvo' with the small droplet at upper right), recolored to white or near-black #050607 as the background requires. Scene: a warm family kitchen at breakfast, a father pouring a glass of water from the product while a young child holds up an empty glass beside him, a table with bread and fruit in the background softly blurred, natural light. Product large and clearly visible at the counter, in the right third of the frame, with water pouring from its spout. Top over a calm area: headline \"Agua purificada para toda la familia.\" with body text \"Purificador de agua para tu caño. Retiene metales pesados.\" Bottom-left: the small logo from image 2. No footnote, no asterisk. Typography: bold geometric grotesque sans-serif headline in near-black #050607 (or white over dark areas), clean regular sans-serif body text, short and left-aligned, high contrast. Accent color electric blue #3355FF only for the button/pill. No exclamation marks, no extra text, no stars, no fake UI, no countdowns, no other logos. Safe zones: keep the top 8% and bottom 8% of the frame free from text, logos and buttons."
+  },
+  {
+   "slug": "caja2",
+   "angle": "unboxing · todo viene incluido",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural window light, shallow depth of field, no stock-photo look. Image 1 shows the exact product (a white countertop water purifier with a chrome gooseneck spout, grey droplet icon and the 'elvo' wordmark): reproduce it faithfully and keep it clearly visible, do not redesign, recolor or relabel it. Image 2 is the official elvo brand logo: reproduce the wordmark exactly (lowercase 'elvo' with the small droplet at upper right), recolored to white or near-black #050607 as the background requires. Scene: top-down view of a kitchen table at home with hands opening a plain white cardboard box; laid out neatly on a light wooden table: the purifier from image 1, one slim white filter core cartridge with a blue label, a black rubber faucet adapter with a hose clamp, and a small chrome metal diverter valve with a white hose. Headline over a clean area: \"Tu purificador de agua, todo en la caja.\" Body text: \"Lo abres, lo conectas a tu caño, lo usas.\" and a small line \"Núcleo PureCore · Adaptador de jebe · Derivador metálico\". Bottom-left: small logo from image 2. Typography: bold geometric grotesque sans-serif headline in near-black #050607 (or white over dark areas), clean regular sans-serif body text, short and left-aligned, high contrast. Accent color electric blue #3355FF only for the button/pill. No exclamation marks, no extra text, no stars, no fake UI, no countdowns, no other logos. Safe zones: keep the top 8% and bottom 8% of the frame free from text, logos and buttons.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-equipo-web.png",
+    "brands/elvo/brand-identity/product-images/elvo-logo.png",
+    "brands/elvo/brand-identity/product-images/nativo-en-la-caja-web.png"
+   ]
+  },
+  {
+   "slug": "instalas2",
+   "angle": "escena de uso · instalación en 5 minutos",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural window light, shallow depth of field, no stock-photo look. Image 1 shows the exact product (a white countertop water purifier with a chrome gooseneck spout, grey droplet icon and the 'elvo' wordmark): reproduce it faithfully and keep it clearly visible, do not redesign, recolor or relabel it. Image 3 is a flat-lay of the real box contents (purifier, filter core, black rubber faucet adapter with a metal hose clamp, chrome metal diverter valve with white hose): use it ONLY as the exact reference for how the black rubber adapter with metal clamp and the metal diverter look, do not copy its text or layout. Image 2 is the official elvo brand logo: reproduce the wordmark exactly (lowercase 'elvo' with the small droplet at upper right), recolored to white or near-black #050607 as the background requires. Scene: close-up of two hands at a home kitchen sink sliding the exact black rubber faucet adapter with its metal hose clamp (as in image 3) over the plain end of the kitchen faucet spout, one hand tightening the clamp; on the counter beside the sink the chrome metal diverter valve with its white hose and the purifier from image 1 stands ready, large and clearly visible, natural window light. Top-left over a clean area: headline \"Instala tu purificador de agua. En 5 minutos.\" and body text \"Sin gasfitero, sin obras, sin electricidad.\" Below, a thin row of three small numbered pills in electric blue #3355FF with white numerals and labels \"1 Coloca el adaptador\" \"2 Conecta\" \"3 Abre el agua\". Bottom-left: small logo from image 2. Typography: bold geometric grotesque sans-serif headline in near-black #050607 (or white over dark areas), clean regular sans-serif body text, short and left-aligned, high contrast. Accent color electric blue #3355FF only for pills/buttons. No exclamation marks, no extra text, no stars, no fake UI, no countdowns, no other logos. Safe zones: keep the top 8% and bottom 8% of the frame free from text, logos and buttons.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-equipo-web.png",
+    "brands/elvo/brand-identity/product-images/elvo-logo.png",
+    "brands/elvo/brand-identity/product-images/nativo-en-la-caja-web.png"
+   ]
+  },
+  {
+   "slug": "prueba2",
+   "angle": "confianza · 30 días en tu casa",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural window light, shallow depth of field, no stock-photo look. Image 1 shows the exact product (a white countertop water purifier with a chrome gooseneck spout, grey droplet icon and the 'elvo' wordmark): reproduce it faithfully and keep it clearly visible, do not redesign, recolor or relabel it. Image 2 is the official elvo brand logo: reproduce the wordmark exactly (lowercase 'elvo' with the small droplet at upper right), recolored to white or near-black #050607 as the background requires. Scene: a relaxed couple in their home kitchen, one of them drinking a glass of water leaning against the counter, the product large and clearly visible on the counter with water pouring from its spout, soft natural light. Headline over a clean area: \"Prueba tu purificador de agua 30 días en tu casa.\" Body text: \"Si no te convence, te devolvemos tu dinero.\" No pills, no shipping or payment text. A fully rounded pill button in electric blue #3355FF with white bold text \"Pídelo en elvo.pe\". Small logo from image 2 at top-left. Typography: bold geometric grotesque sans-serif headline in near-black #050607 (or white over dark areas), clean regular sans-serif body text, short and left-aligned, high contrast. Accent color electric blue #3355FF only for the button/pill. No exclamation marks, no extra text, no stars, no fake UI, no countdowns, no other logos. Safe zones: keep the top 8% and bottom 8% of the frame free from text, logos and buttons."
+  },
+  {
+   "slug": "resena2",
+   "angle": "reseña real · Carmen S.",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural window light, shallow depth of field, no stock-photo look. Image 1 shows the exact product (a white countertop water purifier with a chrome gooseneck spout, grey droplet icon and the 'elvo' wordmark): reproduce it faithfully and keep it clearly visible, do not redesign, recolor or relabel it. Image 2 is the official elvo brand logo: reproduce the wordmark exactly (lowercase 'elvo' with the small droplet at upper right), recolored to white or near-black #050607 as the background requires. Scene: a person's hand holding a glass of crystal-clear water up against window light in a home kitchen, the product large and in sharp focus on the counter at right, occupying about a third of the frame height, water pouring from its spout into the glass held by the hand. Large quote text in the upper area, bold geometric sans-serif: \"El agua sale cristalina, sin sabor ni olor.\" and beneath it small body text \"Carmen S. · Trujillo — Compra verificada en elvo.pe\" and a small line \"Purificador de agua elvo· Nativo\". Bottom: a pill button in electric blue #3355FF with white text \"Pruébalo 30 días\". Small logo from image 2 at top-left. Typography: bold geometric grotesque sans-serif headline in near-black #050607 (or white over dark areas), clean regular sans-serif body text, short and left-aligned, high contrast. Accent color electric blue #3355FF only for the button/pill. No exclamation marks, no extra text, no stars, no fake UI, no countdowns, no other logos. Safe zones: keep the top 8% and bottom 8% of the frame free from text, logos and buttons."
+  },
+  {
+   "slug": "retailbg",
+   "angle": "fondo retail",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic lifestyle photograph, everyday middle-class Peruvian home kitchen, natural window light, no text anywhere in the image. Image 1 shows the exact product (white countertop water purifier with chrome gooseneck spout, grey droplet icon and 'elvo' wordmark): reproduce it faithfully, large, centered-right in the upper-middle of the frame, water pouring from its spout into a glass on the counter. The upper 35% of the frame and the bottom 30% must be calm, soft, empty wall/counter areas (for text overlay added later). Image 2 is the logo, do not include it. No people faces, no text, no logos, no other products."
+  }
+ ]
+}
