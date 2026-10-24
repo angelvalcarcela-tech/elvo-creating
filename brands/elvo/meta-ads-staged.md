@@ -16,3 +16,5 @@ prospección — manana 120255011852650401 · familia 120255011852810401 · bido
 remarketing — masvendido 120255011854290401 · maselegido 120255011854540401 · prueba 120255011854580401 · canales 120255011854800401 · incluye 120255011854840401.
 Ubicaciones: solo Facebook (feed, historias, reels) e Instagram (feed, historias, reels, explorar).
 Pendiente: audiencia de remarketing (~20 usuarios), objetivo de optimización, decidir estructura por etapa del embudo.
+
+Remarketing ampliado (24-oct-2026): conjunto 120255011195150401 ahora usa Visitantes web 30d (120255011194330401) + Interacción Página FB 90d (120255011956700401) + Interacción Instagram 90d (120255011956800401), excluye Compradores web 180d (120255011194460401). Las dos audiencias de interacción estaban "en proceso" (delivery INACTIVE) al crearse; revisar tamaño en Administrador de audiencias antes de publicar.
