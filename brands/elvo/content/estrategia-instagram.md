@@ -67,8 +67,22 @@ Cada producto tiene un papel en el ritual, no una ficha.
 
 Medimos qué *construye marca* (guardados, compartidos, visitas al perfil) y qué *envía a la web* (clics, mensajes de WhatsApp). Éxito de marca: que la gente reconozca la foto antes de ver el logo.
 
-## 6. Decisiones abiertas
-1. ¿Mostramos clientes reales (serie Hogares), con permiso?
-2. ¿Qué línea protagoniza las primeras semanas?
-3. ¿Aprobamos "Agua pura. Simplificada." como lema, u otro?
-4. ¿Se abre la grilla a colaboraciones de diseño (ceramistas, arquitectos)?
+## 6. Decisiones tomadas
+1. **Sin fotos reales de clientes** (rompen la estética): se cae la serie Hogares; la prueba social vive en stories y en la web.
+2. **Lanzamiento de una sola vez:** las 18 piezas se suben juntas para que el perfil se vea completo desde el primer día (después se arman variaciones). Las cuatro líneas aparecen en el lanzamiento.
+3. **Lema aprobado:** "Agua pura. Simplificada."
+4. **Colaboraciones de diseño:** fuera por ahora.
+
+## 7. Lista final de la grilla (de arriba a abajo, como se ve en el perfil)
+✔ = ya generada · NUEVA = por generar.
+
+| Fila | Izquierda | Centro | Derecha |
+|---|---|---|---|
+| 1 | ✔ Mujer de perfil frente a la ventana | ✔ Nativo en cocina arquitectónica | NUEVA · Té con vapor y vaso, mañana |
+| 2 | NUEVA · Manos con vaso junto a la ventana | ✔ Vaso con luz y reflejos | NUEVA · **Vivo** junto a la taza de café |
+| 3 | ✔ **Nativo** como objeto frente a pared azul acero | NUEVA · Mesa familiar con jarra y vasos | NUEVA · Mesa de trabajo, vaso a un costado |
+| 4 | NUEVA · Hielo en vaso con luz | NUEVA · **Alivio** en la sala, alguien sirviendo la jarra | NUEVA · Perro junto a su plato de agua, cocina luminosa |
+| 5 | NUEVA · Vaso en la mesa de noche, luz azul tenue | NUEVA · Jarra de vidrio con luz de tarde | NUEVA · Balcón, persona con vaso mirando la ciudad |
+| 6 | NUEVA · Estiramiento en la sala, vaso en el suelo | NUEVA · Hombre sirviendo café en la cocina, de espaldas | NUEVA · **Cero** en cocina moderna con taza humeante |
+
+Reparto: 5 de producto (Nativo ×2, Vivo, Alivio, Cero), 10 de ritual, 3 de detalle. 4 generadas, 14 por generar.
