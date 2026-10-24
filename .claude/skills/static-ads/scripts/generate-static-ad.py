@@ -50,7 +50,7 @@ def main():
     elif mode == "wireframe" and spec.get("layout_zones"):
         wf = make_wireframe(spec["layout_zones"], ratio, out_dir / f"wireframe_{ratio.replace(':', 'x')}.png")
         image_urls.append(upload(str(wf)))
-    for p in spec.get("product_images", []):
+    for p in var.get("product_images", spec.get("product_images", [])):
         image_urls.append(upload(p))
 
     url = run_fal(var["prompt"], image_urls, ratio, quality)

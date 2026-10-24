@@ -1,57 +1,44 @@
-# elvo· — Visual & voice guidelines (para static ads)
+# elvo· — Identidad vigente (sacada de www.elvo.pe, 24-oct-2026)
 
-Fuente: Manual de marca v2.0 · mineral + doctrina (`doctrina.md`, manda ante cualquier conflicto). Mercado: Perú. Idioma del copy: español. Prompts de imagen: inglés.
+Reemplaza la identidad "mineral" anterior (alabastro/pizarra/glaciar, serif ligera), archivada en `old-identity/`. Los ads generados antes de esta fecha usan esa identidad vieja.
 
-## Esencia
-elvo· no vende aparatos: vende la primera decisión del día. El agua es un ingrediente que se compone, no una amenaza que neutralizar. Tensión rectora: **precisión + calma** — creíble como filtro, sereno como ritual. Registro de revista de diseño / apothecary de lujo, no de electrodoméstico clínico ni de "la competencia azul".
+## Sensación
+Tecnología limpia y cercana, hogar peruano real. Azul eléctrico + blanco + gris azulado muy claro, tipografía geométrica sans y gruesa. Directo, útil, tranquilizador. Nada de "apothecary/revista de lujo".
 
-## Paleta (regla 70/20/10)
-| Rol | Nombre | HEX | Uso |
-|---|---|---|---|
-| Base 70% | Alabastro | #EAE7E0 | fondo por defecto |
-| Base | Caliza | #D8D2C7 | superficie secundaria |
-| Base | Piedra | #9A948A | texto secundario, disclaimers |
-| Profundidad 20% | Pizarra | #2B2E2D | bandas, pills, badges, fondo de formulación |
-| Profundidad | Grafito | #1C1E1C | texto principal |
-| Claro sobre oscuro | Hueso | #F3F1EC | texto sobre pizarra/grafito |
-| Acento 10% | Glaciar | #82C3C4 | el agua: gota, filete 1px, reflejo, rim-light |
-| Contrapunto | Arena | #D7C4A6 | solo territorio piel/ducha/wellness |
+## Paleta
+| Rol | HEX | Uso |
+|---|---|---|
+| Azul elvo· (acento) | #3355FF | botón/CTA, numerales, pills, subrayados |
+| Negro tinta | #050607 | titulares y texto principal |
+| Gris azulado oscuro | #5B6470 / #6B7480 | texto secundario |
+| Azul hielo | #DCE6EE / #BED0DF | fondos de pared/panel, sombras suaves |
+| Blanco hielo | #EEF3F7 | fondo claro por defecto |
+| Verde petróleo | #0A2A33 | footer / bandas oscuras |
+| Logo | azul cielo ~#4294D0 | logo oficial (`product-images/elvo-logo.png`) |
+Blanco puro para texto sobre foto oscura o sobre azul. Sin degradados de colores, sin sombras duras.
 
-- **Glaciar es destello, nunca campo.** Como relleno sólido solo en el botón CTA (si el formato lleva CTA). Pills y badges van en pizarra con texto hueso.
-- Sin degradados, sin sombras duras, sin contornos, sin colores saturados. Terracota y cobalto ya no existen.
-- Fondo de formulación/ciencia: pizarra profunda con luz glaciar de reborde.
+## Tipografía (describir, no nombrar)
+- Titulares: grotesca geométrica de display, peso bold/semibold, tracking ligeramente cerrado (Bricolage Grotesque / Plus Jakarta Sans). Prompt: "bold geometric grotesque sans-serif headline".
+- Cuerpo: sans neutra limpia (Inter / Plus Jakarta Sans), peso regular/medium.
+- Etiquetas: mayúsculas con tracking amplio en azul #3355FF (ej. "EN LA CAJA").
+- Pills/botones: redondeados completos, texto blanco sobre azul #3355FF.
 
-## Tipografía (describirla en el prompt, no nombrar la fuente)
-- **Titular:** serif de despliegue, peso ligero, alto contraste (Fraunces Light). En prompt: "large light-weight high-contrast serif".
-- **Cuerpo/datos:** grotesca neutra limpia (Hanken Grotesk). En prompt: "clean neutral grotesque sans-serif".
-- **Etiquetas:** grotesca en mayúsculas con tracking amplio (+0.2em), 11–12 px equivalentes.
-- Alineación a la izquierda. Jerarquía por escala y espacio, no por color.
+## Logo
+Wordmark "elvo" en minúsculas sans redondeada + gota pequeña arriba a la derecha (la gota lleva un brillo interior). Adjuntar `product-images/elvo-logo.png` como referencia y pedir reproducirlo exacto (se puede en blanco o negro tinta según fondo). No inventar otro logo.
 
-## Logotipo
-`elvo·` en minúsculas, serif ligera, seguida de una gota. Gota en glaciar; palabra en grafito, pizarra o hueso según el fondo. Nunca "ELVO", nunca con efectos. En la foto real del producto el logo es sans redondeado gris: no lo modifiques, respeta el producto tal cual.
-
-## Composición
-Un solo sujeto, una sola idea, una sola prop. Mucho aire (mínimo una "columna" de margen). Filetes finos de 1px en vez de cajas. Producto a la vista, sobre superficie de piedra o mesada, nunca escondido.
-
-## Fotografía / luz
-Macro con profundidad de campo corta; luz lateral suave de bajo contraste, fría-neutra (macro), pizarra + reborde glaciar (formulación), cálida mineral/arena (piel y wellness). El agua lleva un leve tinte glaciar, nunca azul saturado. Props: piedra pálida, cerámica, vaso de vidrio, fragmento mineral oscuro (Nativo).
+## Fotografía
+- Producto real: `product-images/nativo-equipo-web.png` (fondo azul hielo) y `nativo-hero-web.png`. Siempre adjuntar y pedir fidelidad exacta.
+- Para ads: **contexto real de hogar peruano** — cocina cotidiana, mesada, luz de mañana natural, manos, vasos, familia. El comprador debe imaginarse usándolo, tocándolo, teniéndolo. Preferir manos/escenas de uso a producto flotando.
 
 ## Voz
-- Precisa, literaria, sensorial. Observación en lugar de alarma.
-- La cifra antes que el superlativo ("Retiene plomo y metales pesados", no "la mejor agua").
-- **Sin signos de exclamación. Sin emoji. Sin urgencia. Sin superlativos vacíos.**
-- Líneas de casa: "El agua que entra a tu cuerpo es una decisión." · "El agua es el primer ingrediente."
+Segunda persona, cercana y concreta: "tu caño", "tu cocina", "lo instalas tú". Beneficios cotidianos (sabor, practicidad, ahorro en bidones, tranquilidad) antes que tecnicismos. Sin signos de exclamación en exceso, sin emojis, sin urgencia falsa. Claims solo de `products.json`.
 
-## Señales de confianza permitidas (badges / CTA / disclaimer)
-Pago contra entrega · Envío gratis a todo el Perú · Garantía de 1 año · 30 días de prueba · Hasta 6 cuotas sin intereses · Lo instalas en 5 minutos · Te avisamos por WhatsApp cuando toca cambiar el núcleo · Si no encaja en tu caño, te devolvemos tu dinero.
-
-CTA serenos: "Conoce elvo· Nativo", "Ver planes", "Escríbenos por WhatsApp", "Elige tu plan".
-
-## Prohibido (doctrina)
-Cuentas regresivas, "quedan N", barras de stock, escasez inventada, descuentos gritados o badges de % enormes, flechas rojas, "STOP", caras de miedo, agua sucia/turbia como amenaza, contaminación local sin respaldo, ansiedad corporal o de edad, testimonios o chats inventados, estrellas/reseñas que no existan en la tienda, comparativas que nombren marcas competidoras.
+## Señales de confianza (de la web)
+30 días de prueba · Envío gratis a todo el Perú · Hasta 6 cuotas sin interés · Pago contra entrega · Garantía de por vida del equipo Nativo (contra fallas de fábrica) · Instalación en 5 minutos, sin gasfitero · Te avisamos por WhatsApp cuando toque cambiar el núcleo · Reseñas reales de clientes (solo textuales, con nombre y ciudad como en la web).
 
 ## Reglas para prompts de imagen
-1. La primera frase es el formato: "4:5 vertical aspect ratio."
-2. Nunca describir el producto físico: se adjunta la foto real y se pide reproducirla exacta.
-3. Todo texto entre comillas, exacto, corto.
-4. Safe zones: 10% arriba y abajo (14% en 9:16) libres de texto, logos y botones.
+1. Primera frase: formato ("4:5 vertical aspect ratio.").
+2. No describir el producto físico: adjuntar foto real y pedir reproducirlo exacto.
+3. Todo texto entre comillas, exacto y corto, con tildes.
+4. Safe zones 10% arriba/abajo (14% en 9:16).
+5. Escena realista fotográfica, hogar peruano de clase media, sin look de stock genérico.

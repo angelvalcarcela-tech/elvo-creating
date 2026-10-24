@@ -1,144 +1,169 @@
 {
-  "brand": "elvo",
-  "domain": "https://elvo.pe",
-  "currency": "PEN",
-  "last_synced_from_shopify": "2026-10-02",
-  "products": [
+ "brand": "elvo",
+ "domain": "https://elvo.pe",
+ "currency": "PEN",
+ "last_synced_from_shopify": "2026-10-02",
+ "products": [
+  {
+   "id": "nativo",
+   "name": "elvo· Nativo",
+   "shopify_handle": "elvonativo",
+   "product_url": "https://elvo.pe/products/elvonativo",
+   "category": "Purificador antimetales para el caño",
+   "plans": [
     {
-      "id": "nativo",
-      "name": "elvo· Nativo",
-      "shopify_handle": "elvonativo",
-      "product_url": "https://elvo.pe/products/elvonativo",
-      "category": "Purificador antimetales para el caño",
-      "plans": [
-        {
-          "name": "18 meses",
-          "price": "S/ 299",
-          "cores_included": 1
-        },
-        {
-          "name": "3 años",
-          "price": "S/ 349",
-          "cores_included": 2
-        },
-        {
-          "name": "6 años",
-          "price": "S/ 399",
-          "cores_included": 4
-        }
-      ],
-      "price_rule": "Sin precios en la cara de piezas de marca; en ads de conversión solo si el formato lo pide, sin descuentos gritados.",
-      "verified_claims": [
-        "Retiene plomo y metales pesados (*según ficha técnica del núcleo PureCore)",
-        "Reduce cloro, olores, sabores y turbidez",
-        "6 etapas de filtración: carbón activado, KDF-F, nanotecnología, aluminosilicato sintético, plata coloidal y plata iónica",
-        "Tendencia alcalina (pH ~8.5)",
-        "Conserva los minerales naturales del agua",
-        "Sin electricidad, sin obras y sin gasfitero",
-        "Lo instalas tú en 5 minutos; adaptador universal de jebe y derivador incluidos",
-        "Si no encaja en tu caño, te devolvemos tu dinero",
-        "Núcleo: 18 meses de uso normal; te avisamos por WhatsApp cuando toque cambiarlo",
-        "Garantía de 1 año",
-        "30 días de prueba",
-        "Medidas: 25 cm de alto x 6 cm de ancho",
-        "Pago contra entrega",
-        "Envío gratis a todo el Perú",
-        "Hasta 6 cuotas sin intereses con tarjeta de crédito"
-      ],
-      "restricted_claims": [
-        {
-          "claim": "Retiene arsénico",
-          "condition": "Solo en anuncios segmentados a agua de pozo / provincia. Nunca en Lima red general. Acompañar con: No reemplaza la cloración del agua de pozo."
-        },
-        {
-          "claim": "Mercurio",
-          "condition": "NO usar: no verificado."
-        },
-        {
-          "claim": "Certificaciones (CERPER, INACAL u otras)",
-          "condition": "NO usar hasta tener documentos verificados."
-        },
-        {
-          "claim": "Garantía de por vida",
-          "condition": "NO usar: la garantía es de 1 año."
-        },
-        {
-          "claim": "Rinde 20,000 litros",
-          "condition": "Usar solo junto a los 18 meses; confirmar con la ficha antes de publicar."
-        },
-        {
-          "claim": "Mini lámpara UV de regalo",
-          "condition": "NO usar: se retiró como regalo el 28-sep-2026."
-        },
-        {
-          "claim": "Estrellas / número de reseñas",
-          "condition": "Solo si son reales y visibles en la tienda."
-        }
-      ],
-      "standard_disclaimer": "*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.",
-      "product_images": [
-        "brands/elvo/brand-identity/product-images/nativo-front.png"
-      ]
+     "name": "18 meses",
+     "price": "S/ 349",
+     "cores_included": 1
     },
     {
-      "id": "vivo",
-      "name": "elvo· Vivo",
-      "shopify_handle": "elvovivo",
-      "product_url": "https://elvo.pe/products/elvovivo",
-      "category": "Purificador con magnesio para el caño",
-      "plans": [
-        {
-          "name": "18 meses",
-          "price": "S/ 199"
-        },
-        {
-          "name": "3 años",
-          "price": "S/ 249"
-        },
-        {
-          "name": "6 años",
-          "price": "S/ 329"
-        }
-      ],
-      "verified_claims": [
-        "Agua más rica y sin sabor a cloro, directo de tu caño",
-        "Reduce cloro, olores, sabores, sedimentos y turbidez",
-        "Aporta magnesio",
-        "Tendencia alcalina (pH ~8.5)",
-        "Carbón activado sólido con plata coloidal, KDF-F y fibras microporosas",
-        "Piezas principales de acero inoxidable; componentes de grado alimenticio, libres de BPA",
-        "Sin electricidad, sin obras y sin gasfitero",
-        "Lo instalas tú en 5 minutos; kit de adaptadores incluido",
-        "Llenas un vaso en 5 segundos",
-        "Núcleo: 18 meses de uso normal; te avisamos por WhatsApp cuando toque cambiarlo",
-        "Repuesto S/ 119",
-        "Garantía de 1 año"
-      ],
-      "restricted_claims": [
-        {
-          "claim": "Retiene plomo/metales pesados/arsénico",
-          "condition": "NO usar: eso es del Nativo, no del Vivo."
-        }
-      ],
-      "standard_disclaimer": "Pensado para agua de red potable. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo.",
-      "product_images": [
-        "brands/elvo/brand-identity/product-images/vivo-front.png"
-      ]
+     "name": "3 años",
+     "price": "S/ 389",
+     "cores_included": 2
     },
     {
-      "id": "repuesto-nativo",
-      "name": "Repuesto elvo· Nativo",
-      "shopify_handle": "repuesto-elvo-nativo",
-      "product_url": "https://elvo.pe/products/repuesto-elvo-nativo",
-      "price": "S/ 149",
-      "verified_claims": [
-        "Núcleo PureCore de repuesto para elvo· Nativo",
-        "Dura 18 meses de uso normal"
-      ],
-      "product_images": [
-        "brands/elvo/brand-identity/product-images/nativo-repuesto-nucleo.png"
-      ]
+     "name": "6 años",
+     "price": "S/ 489",
+     "cores_included": 4
     }
-  ],
-  "notes": "Gama activa: Vivo, Nativo, Ritual y repuestos. Ritual sin stock a sep-2026. Cero y bidones parqueados. Para Vivo y Ritual, buscar en elvo.pe y agregarlos aquí con sus claims verificados antes de generar."
+   ],
+   "price_rule": "Precios tomados de la home de elvo.pe el 24-oct-2026 (Nativo desde S/ 349). La ficha de producto aplica descuentos por plan; confirmar antes de publicar.",
+   "verified_claims": [
+    "Retiene plomo y metales pesados (*según ficha técnica del núcleo PureCore)",
+    "Reduce cloro, olores, sabores y turbidez",
+    "6 etapas de filtración: carbón activado, KDF-F, nanotecnología, aluminosilicato sintético, plata coloidal y plata iónica",
+    "Tendencia alcalina (pH ~8.5)",
+    "Conserva los minerales naturales del agua",
+    "Sin electricidad, sin obras y sin gasfitero",
+    "Lo instalas tú en 5 minutos; adaptador universal de jebe y derivador incluidos",
+    "Si no encaja en tu caño, te devolvemos tu dinero",
+    "Núcleo: 18 meses de uso normal; te avisamos por WhatsApp cuando toque cambiarlo",
+    "30 días de prueba",
+    "Medidas: 25 cm de alto x 6 cm de ancho",
+    "Pago contra entrega",
+    "Envío gratis a todo el Perú",
+    "Hasta 6 cuotas sin intereses con tarjeta de crédito",
+    "Garantía de por vida del equipo Nativo contra fallas de fábrica (según elvo.pe, 24-oct-2026)",
+    "Ahorras en bidones y botellas: compras menos agua envasada",
+    "Agua lista sin salir a comprar, sin cargar botellas",
+    "En la caja: purificador, núcleo PureCore, adaptador universal de jebe y derivador metálico",
+    "Entrega el mismo día en Lima si confirmas antes de las 4 p. m. (lun-sáb); en provincias, 2 días",
+    "Aceptamos Yape, Plin, tarjeta y contraentrega"
+   ],
+   "restricted_claims": [
+    {
+     "claim": "Retiene arsénico",
+     "condition": "Solo en anuncios segmentados a agua de pozo / provincia. Nunca en Lima red general. Acompañar con: No reemplaza la cloración del agua de pozo."
+    },
+    {
+     "claim": "Mercurio",
+     "condition": "NO usar: no verificado."
+    },
+    {
+     "claim": "Certificaciones (CERPER, INACAL u otras)",
+     "condition": "NO usar hasta tener documentos verificados."
+    },
+    {
+     "claim": "Rinde 20,000 litros",
+     "condition": "Usar solo junto a los 18 meses; confirmar con la ficha antes de publicar."
+    },
+    {
+     "claim": "Mini lámpara UV de regalo",
+     "condition": "NO usar: se retiró como regalo el 28-sep-2026."
+    },
+    {
+     "claim": "Estrellas / número de reseñas",
+     "condition": "Solo si son reales y visibles en la tienda."
+    },
+    {
+     "claim": "Lámpara UV de regalo",
+     "condition": "NO usar: la ficha aún la menciona pero la home no; confirmar con el dueño."
+    }
+   ],
+   "standard_disclaimer": "*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-equipo-web.png"
+   ],
+   "real_reviews": [
+    {
+     "quote": "El agua sale cristalina, sin sabor ni olor.",
+     "author": "Carmen S.",
+     "city": "Trujillo",
+     "verified": true
+    },
+    {
+     "quote": "Lo instalé en menos de 5 minutos, funciona perfecto y tiene muy buen caudal.",
+     "author": "Lucía P.",
+     "city": "Ica",
+     "verified": true
+    },
+    {
+     "quote": "El agua sale transparente, sin sabor y sin ningún residuo. La instalación fue muy fácil.",
+     "author": "María G.",
+     "city": "Lima",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "vivo",
+   "name": "elvo· Vivo",
+   "shopify_handle": "elvovivo",
+   "product_url": "https://elvo.pe/products/elvovivo",
+   "category": "Purificador con magnesio para el caño",
+   "plans": [
+    {
+     "name": "18 meses",
+     "price": "S/ 199"
+    },
+    {
+     "name": "3 años",
+     "price": "S/ 249"
+    },
+    {
+     "name": "6 años",
+     "price": "S/ 329"
+    }
+   ],
+   "verified_claims": [
+    "Agua más rica y sin sabor a cloro, directo de tu caño",
+    "Reduce cloro, olores, sabores, sedimentos y turbidez",
+    "Aporta magnesio",
+    "Tendencia alcalina (pH ~8.5)",
+    "Carbón activado sólido con plata coloidal, KDF-F y fibras microporosas",
+    "Piezas principales de acero inoxidable; componentes de grado alimenticio, libres de BPA",
+    "Sin electricidad, sin obras y sin gasfitero",
+    "Lo instalas tú en 5 minutos; kit de adaptadores incluido",
+    "Llenas un vaso en 5 segundos",
+    "Núcleo: 18 meses de uso normal; te avisamos por WhatsApp cuando toque cambiarlo",
+    "Repuesto S/ 119",
+    "Garantía de 1 año"
+   ],
+   "restricted_claims": [
+    {
+     "claim": "Retiene plomo/metales pesados/arsénico",
+     "condition": "NO usar: eso es del Nativo, no del Vivo."
+    }
+   ],
+   "standard_disclaimer": "Pensado para agua de red potable. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/vivo-front.png"
+   ]
+  },
+  {
+   "id": "repuesto-nativo",
+   "name": "Repuesto elvo· Nativo",
+   "shopify_handle": "repuesto-elvo-nativo",
+   "product_url": "https://elvo.pe/products/repuesto-elvo-nativo",
+   "price": "S/ 149",
+   "verified_claims": [
+    "Núcleo PureCore de repuesto para elvo· Nativo",
+    "Dura 18 meses de uso normal"
+   ],
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-repuesto-nucleo.png"
+   ]
+  }
+ ],
+ "notes": "Gama activa: Vivo, Nativo, Ritual y repuestos. Ritual sin stock a sep-2026. Cero y bidones parqueados. Para Vivo y Ritual, buscar en elvo.pe y agregarlos aquí con sus claims verificados antes de generar."
 }
