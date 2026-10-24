@@ -11,6 +11,22 @@
 - **Productos:** Nativo (antimetales) · Vivo (magnesio) · Alivio (bidón, sin electricidad) · Cero (ósmosis, fría y caliente) · Núcleos de repuesto.
 - **Contacto:** WhatsApp 929 190 100 · elvo.pe · Recojo en Jr. Quilca 565, Breña (L–V 9–5). Venta también en Falabella, Oechsle, Promart, Sodimac, Plaza Vea.
 
+## Identidad OQUVA (manual que adjuntaste) — es la misma de elvo.pe
+Revisado el PDF "OQUVA — Water Filter Branding & Visual Identity" (Behance). La web ya la aplica: azul #3355FF, azul noche #010A21, Inter, "Caño → Núcleo → Vaso" (= SOURCE → FILTER → FLOW). La grilla usa el vocabulario completo:
+- **Concepto:** "Thoughtful Water Technology". Promesa: una experiencia de agua más considerada, diseñada alrededor de la vida diaria. Principio: Filtración × Diseño × Simplicidad. El giro: de aparato escondido a esencial del hogar.
+- **Lema y flujo:** "PURE WATER. SIMPLIFIED." → propuesta "Agua pura. Simplificada." y "CAÑO → NÚCLEO → VASO" con puntos 01 / 02 / 03.
+- **Paleta:** azul eléctrico #3355FF y su escala (#5B7FF0, #7B9BDD), azul acero #9EBACE, celestes #BDD0DF y #DCE6EE, blanco #FAFAFA, grises, negro, azul noche #010A21. Degradados azules y la cúpula luminosa (semicírculo) como pieza de marca; texturas de puntos (halftone) para fondos.
+- **Tipografía:** Atyp (principal, de pago) + Inter (secundaria). Para Instagram usar Inter en pesos Regular/Bold/Black; si se quiere el carácter de Atyp, equivalente abierta cercana (p. ej. Familjen Grotesk). Titulares grandes en mayúscula o inicial, tracking ajustado.
+- **Microetiquetas:** textos pequeños en mayúsculas con "01 // ...", "// 2026", "SOURCE → FILTER → FLOW" y píldoras de contorno (0.0001 MICRON, 5-STAGE CORE, ZERO-PLASTIC). Se traducen: "6 ETAPAS", "SIN GASFITERO", "PLOMO Y METALES*".
+- **Fotografía:** personas reales tomando agua con luz natural, cocinas modernas y producto sobre mesada de piedra, vaso en blanco y negro con luz dura, agua macro sobre negro, diagramas despiezados con llamadas numeradas, agua azul en vidrio. Sin stock genérico.
+- **Logo:** `elvo·` con la gota; en piezas azules va en blanco o negro, nunca deformado. En la foto del producto no se toca.
+- **Redes (del manual):** portada con cúpula azul degradada, pieza azul con "SOURCE → FILTER → FLOW" y logo.
+
+Mockup con este sistema: `mockup-grilla-instagram-oquva.png`. Las casillas con "FOTO IA" son fotos que faltan (mujer bebiendo en cocina, agua macro sobre negro, vaso B/N).
+
+## Qué se rescata de la grilla anterior (v6, 30 piezas)
+Escenas y fotos de ingrediente con un solo sujeto y mucho aire, el ritmo producto / escena / dato, los carruseles de instalación y "¿Qué necesitas?", y las lecciones de generación (no deformar producto ni logo, agua natural y bebible, evitar franjas planas). No se rescata el beige y la pizarra ni los titulares solo poéticos.
+
 ## Arquitectura (3 columnas = 3 pilares)
 Se publica una fila por semana (lun-mié-vie, de derecha a izquierda para que el perfil quede ordenado). Posiciones como se ven en el perfil.
 
