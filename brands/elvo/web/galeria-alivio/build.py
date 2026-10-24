@@ -52,21 +52,21 @@ foto('s7','g5-armado.png','Armado','Lo armas tú, en casa','Coloca el filtro y l
 foto('s9','g6-ph.png','Gotas de pH incluidas','Mide el pH de tu agua','Una gota en el vaso y comparas.')
 
 # 4 tamaños
-def size(n,p,img=None):
+def size(n,p,img=None,dim=''):
     return f'''<div style="width:500px;background:#fff;border-radius:34px;padding:40px 40px 44px;text-align:center"><span class="k">Alivio {n}</span>
-<div style="width:300px;height:300px;margin:18px auto 8px;overflow:hidden;border-radius:24px">{img or '<img src="assets/producto.png" style="width:520px;margin:-80px 0 0 -110px">'}</div>
+<div style="width:300px;height:300px;margin:18px auto 8px;overflow:hidden;border-radius:24px">{img or '<img src="assets/producto.png" style="width:420px;margin:-60px 0 0 -62px">'}</div>
 <h2 style="font-size:92px;font-weight:700;line-height:1">{n}<span style="font-size:48px;font-weight:600;margin-left:10px">litros</span></h2>
-<p style="font-size:44px;font-weight:600;color:#3355FF;margin-top:18px">S/ {p}</p></div>'''
+<p style="font-size:44px;font-weight:600;color:#3355FF;margin-top:18px">S/ {p}</p><p style="font-size:30px;color:#5B6470;margin-top:14px;line-height:1.25">{dim}</p></div>'''
 page('s10',f'''<div style="position:absolute;left:72px;top:72px"><span class="k">Tamaños</span><h1 style="font-size:78px;font-weight:600;margin-top:14px;line-height:1.04">Elige cuánto alivio<br>quieres tener</h1></div>
-<div style="position:absolute;left:72px;top:330px;display:flex;gap:56px">{size(16,159)}{size(22,198,'<img src="assets/producto22.png" style="width:360px;margin:-30px 0 0 -30px">')}</div>
+<div style="position:absolute;left:72px;top:330px;display:flex;gap:56px">{size(16,159,None,'62 × 35 × 31 cm')}{size(22,198,'<img src="assets/producto22.png" style="width:360px;margin:-30px 0 0 -30px">','61 × 35 × 23.5 cm')}</div>
 <div style="position:absolute;left:72px;top:1040px;font-size:42px;font-weight:500">Más litros, más alivio. <span style="color:#5B6470">Alivio 22, para toda la casa.</span></div>
-<div class="fn">Capacidad total del recipiente.</div>''',bg='#EEF3F7')
+<div class="fn">Medidas: alto × largo × ancho. Capacidad total del recipiente.</div>''',bg='#EEF3F7')
 # 5 por dentro
 def lab(y,n,t,sub='',h=''):
     s_=f'<p style="font-size:30px;line-height:1.2;color:#5B6470;margin-top:8px">{sub}</p>' if sub else ''
     return f'''<div style="position:absolute;left:760px;top:{y}px;width:380px;transform:translateY(-50%)"><div style="display:flex;gap:18px;align-items:center"><div class="num">{n}</div><h3 style="font-size:42px;font-weight:600;line-height:1.1">{t}</h3></div>{s_}</div>
 <div style="position:absolute;left:560px;top:{y}px;width:160px;height:3px;background:#3355FF"></div><div style="position:absolute;left:552px;top:{y-7}px;width:16px;height:16px;border-radius:50%;background:#3355FF"></div>'''
-page('s8',f'''<div style="position:absolute;left:72px;top:60px"><span class="k">Alivio · Por dentro</span><h1 style="font-size:76px;font-weight:600;margin-top:12px">Tres etapas de filtrado</h1></div>
+page('s8',f'''<div style="position:absolute;left:72px;top:60px"><span class="k">Alivio · Por dentro</span><h1 style="font-size:76px;font-weight:600;margin-top:12px">7 etapas de filtrado</h1></div>
 <img src="assets/explosionado.png" style="position:absolute;left:-40px;top:200px;width:900px;height:900px">
 {lab(335,1,"Filtro cerámico")}{lab(640,2,"Filtro multimedia","5 capas: carbón activado y de plata, WMSM-300, arena de sílice, zeolita y arena mineral")}{lab(960,3,"Piedra mineral")}
 <div class="fn">Esquema ilustrativo. Los resultados dependen de la calidad del agua de entrada.</div>''',bg='#fff')
