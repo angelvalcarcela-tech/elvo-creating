@@ -111,7 +111,7 @@ def foto(src,pos='50% 50%'): return f'<div style="width:326px;height:360px;borde
 chk=lambda x:f'<div style="display:flex;gap:20px;align-items:center"><span style="width:52px;height:52px;border-radius:50%;background:#3355FF;display:grid;place-items:center;flex:none"><svg viewBox="0 0 24 24" width="25" height="25"><path d="M5 12.500l4.500 4.500L19 7.500" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:40px;font-weight:500;line-height:1.12">{x}</span></div>'
 page('s10',f'''<div style="position:absolute;left:72px;top:72px"><span class="k">Compatibilidad</span><h1 style="font-size:78px;font-weight:600;margin-top:14px;line-height:1.04">¿Sirve para tu caño?</h1></div>
 <div style="position:absolute;left:72px;top:260px;display:flex;gap:26px">{foto("r_carmen.png","40% 45%")}{foto("r_maria.webp","50% 40%")}{foto("r_lucia.webp","55% 55%")}</div>
-<div style="position:absolute;left:72px;top:660px;display:flex;flex-direction:column;gap:24px">{chk("Adaptador de jebe ajustable y derivador incluidos")}{chk("Para grifos estándar")}{chk("Si no encaja, te devolvemos tu dinero")}</div>
+<div style="position:absolute;left:72px;top:660px;display:flex;flex-direction:column;gap:24px">{chk("Adaptador de jebe ajustable y derivador incluidos")}{chk("Para todo caño")}{chk("Si no encaja, te devolvemos tu dinero")}</div>
 <div style="position:absolute;left:72px;bottom:48px;background:#fff;border-radius:999px;padding:18px 34px;font-size:34px;font-weight:500">¿Dudas? Mándanos una foto por WhatsApp</div>
 ''',bg='#EEF3F7')
 # 11 nucleo
