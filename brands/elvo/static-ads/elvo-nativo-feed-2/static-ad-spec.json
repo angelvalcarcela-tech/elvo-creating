@@ -1,0 +1,57 @@
+{
+ "output_name": "elvo-nativo-feed-2",
+ "brand": "elvo",
+ "product_name": "elvo· Nativo",
+ "audience": "lima-general",
+ "mode": "wireframe",
+ "quality": "high",
+ "layout_zones": {
+  "text_zone": {
+   "top": 0.1,
+   "bottom": 0.4
+  },
+  "product_zone": {
+   "top": 0.42,
+   "bottom": 0.84
+  }
+ },
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/nativo-front.png"
+ ],
+ "aspect_ratio": "4:5",
+ "additional_aspect_ratios": [
+  "9:16"
+ ],
+ "variations": [
+  {
+   "slug": "seguridad",
+   "angle": "seguridad anti metales pesados · tranquilidad",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Image 1 is a neutral grey wireframe that only shows where each zone sits — use it for placement and proportions only; do not reproduce its grey boxes, colors or style. Image 2 shows the exact product: reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Top-left: small rectangular label in deep slate #2B2E2D with off-white #F3F1EC uppercase wide-tracked text \"TRANQUILIDAD\", neutral grotesque sans-serif. Below, left-aligned: large light-weight high-contrast serif headline \"Agua en la que confías.\" in charcoal #1C1E1C. Under it, grotesque charcoal text \"Retiene metales pesados* con 6 etapas de filtración.\" Center-right: the product from image 2 on a pale stone surface, a glass of water beside it, soft side-light. Bottom: tiny stone-grey #9A948A text \"*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.\" Small wordmark \"elvo\" in lowercase light serif charcoal #1C1E1C followed by a tiny glacial-aqua #82C3C4 droplet to its right, bottom-left above the disclaimer. Generous negative space, editorial apothecary aesthetic, one subject. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements — photographic content such as product edges entering the frame is fine."
+  },
+  {
+   "slug": "fiabilidad",
+   "angle": "fiabilidad · garantía y núcleo",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Image 1 is a neutral grey wireframe that only shows where each zone sits — use it for placement and proportions only; do not reproduce its grey boxes, colors or style. Image 2 shows the exact product: reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Top-left, left-aligned: large light-weight high-contrast serif headline \"Hecho para durar.\" in charcoal #1C1E1C. Under it, grotesque charcoal text \"Garantía de 1 año. Núcleo de 18 meses de uso normal.\" Center: the product from image 2 on a pale limestone surface, slight angle, soft side-light, one glass of water. Below, two short items separated by a thin 1px glacial-aqua #82C3C4 vertical rule: \"30 días de prueba\" / \"Pago contra entrega\". Rectangular button in glacial-aqua #82C3C4 with charcoal text \"Elige tu plan\". Small wordmark \"elvo\" in lowercase light serif charcoal #1C1E1C followed by a tiny glacial-aqua #82C3C4 droplet to its right, top-right. Generous negative space, editorial apothecary aesthetic, one subject. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements — photographic content such as product edges entering the frame is fine."
+  },
+  {
+   "slug": "acompanamiento",
+   "angle": "acompañamiento · aviso por WhatsApp",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Image 1 is a neutral grey wireframe that only shows where each zone sits — use it for placement and proportions only; do not reproduce its grey boxes, colors or style. Image 2 shows the exact product: reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Top-left: large light-weight high-contrast serif headline \"No estás solo con tu filtro.\" in charcoal #1C1E1C. Under it, three stacked rows with a thin 1px glacial-aqua #82C3C4 left rule, grotesque charcoal text: \"Te avisamos por WhatsApp cuando toca cambiar el núcleo\" / \"30 días de prueba\" / \"Si no encaja en tu caño, te devolvemos tu dinero\". Right: the product from image 2 on pale stone, soft side-light, partial crop allowed. Small wordmark \"elvo\" in lowercase light serif charcoal #1C1E1C followed by a tiny glacial-aqua #82C3C4 droplet to its right, bottom-left. Generous negative space, editorial apothecary aesthetic, one subject. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements — photographic content such as product edges entering the frame is fine."
+  },
+  {
+   "slug": "pasos",
+   "angle": "pasos claros · practicidad",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Image 1 is a neutral grey wireframe that only shows where each zone sits — use it for placement and proportions only; do not reproduce its grey boxes, colors or style. Image 2 shows the exact product: reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Top-left: large light-weight high-contrast serif headline \"Tres pasos. Nada más.\" in charcoal #1C1E1C. Left column, three rows separated by thin 1px glacial-aqua #82C3C4 rules, each with a serif numeral and grotesque text: \"1  Coloca el adaptador\" / \"2  Conecta tu elvo· Nativo\" / \"3  Abre el agua\". Under the rows small grotesque text \"Sin electricidad, sin obras, sin gasfitero.\" Right: the product from image 2, slight angle, soft side-light, on pale limestone. Rectangular button in glacial-aqua #82C3C4 with charcoal text \"Conoce elvo· Nativo\". Small wordmark \"elvo\" in lowercase light serif charcoal #1C1E1C followed by a tiny glacial-aqua #82C3C4 droplet to its right, top-right. Generous negative space, editorial apothecary aesthetic, one subject. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements — photographic content such as product edges entering the frame is fine."
+  },
+  {
+   "slug": "sabor",
+   "angle": "sabor · sin cloro",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Image 1 is a neutral grey wireframe that only shows where each zone sits — use it for placement and proportions only; do not reproduce its grey boxes, colors or style. Image 2 shows the exact product: reproduce it faithfully, do not redesign, recolor or relabel it. Background: flat matte alabaster #EAE7E0, no gradients. Top-left: large light-weight high-contrast serif headline \"Agua que sabe bien.\" in charcoal #1C1E1C. Under it, grotesque charcoal text \"Sin sabor a cloro. Con sus minerales.\" Center: a tall clear drinking glass of water beside the product from image 2 on a pale stone surface, a thin slice of lemon-free minimal scene, soft cool side-light, faint glacial-aqua tint in the droplets. Small circular badge in deep slate #2B2E2D with off-white text \"Directo de tu caño\". Small wordmark \"elvo\" in lowercase light serif charcoal #1C1E1C followed by a tiny glacial-aqua #82C3C4 droplet to its right, bottom-left. Generous negative space, editorial apothecary aesthetic, one subject. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements — photographic content such as product edges entering the frame is fine."
+  },
+  {
+   "slug": "premium",
+   "angle": "agua premium · seis etapas",
+   "prompt": "4:5 vertical aspect ratio. Static ad. Image 1 is a neutral grey wireframe that only shows where each zone sits — use it for placement and proportions only; do not reproduce its grey boxes, colors or style. Image 2 shows the exact product: reproduce it faithfully, do not redesign, recolor or relabel it. Background: deep slate #2B2E2D, flat, with a subtle glacial-aqua #82C3C4 rim-light on the product edges only. Top-left, left-aligned: large light-weight high-contrast serif headline in bone #F3F1EC \"Agua premium, desde tu caño.\" Under it, bone neutral grotesque text \"6 etapas de filtración. Tendencia alcalina, pH ~8.5.\" Center-right: the product from image 2 on a dark mineral fragment, soft glacial side-light, a few droplets with a faint glacial-aqua tint. Small wordmark \"elvo\" in lowercase light serif bone #F3F1EC followed by a tiny glacial-aqua droplet to its right, bottom-left. Generous negative space, editorial apothecary aesthetic, one subject. No exclamation marks, no extra text, no stars or ratings, no countdowns, no badges other than the ones specified. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements — photographic content such as product edges entering the frame is fine."
+  }
+ ]
+}
