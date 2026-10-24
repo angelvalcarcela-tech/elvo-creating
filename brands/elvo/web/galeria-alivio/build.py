@@ -40,36 +40,36 @@ page('_drop',f'''<div style="position:absolute;right:0;top:380px;width:520px;hei
 <div style="position:absolute;left:72px;top:84px"><span class="k">Cómo funciona</span><h1 style="font-size:84px;font-weight:600;margin-top:14px;line-height:1.04">Tres pasos,<br>sin instalación</h1></div>
 <div style="position:absolute;left:72px;top:470px;width:640px;display:flex;flex-direction:column;gap:54px">{step(1,"Llénalo","con una jarra")}{step(2,"Purifica","por gravedad")}{step(3,"Sirve","directo de la llave")}</div>''',bg='#EEF3F7')
 
-def foto(name,img,kick,title,sub,pos='center'):
-    page(name,f'''<img src="assets/{img}" style="position:absolute;inset:0;width:1200px;height:1200px;object-fit:cover;object-position:{pos}">
-<div style="position:absolute;left:0;right:0;bottom:0;height:560px;background:linear-gradient(0deg,rgba(1,10,33,.82),rgba(1,10,33,0))"></div>
-<div style="position:absolute;left:72px;right:72px;bottom:76px;color:#fff"><span class="k" style="color:#BFD0FF;font-size:32px">{kick}</span>
-<h1 style="font-size:84px;line-height:1.04;font-weight:600;margin-top:14px">{title}</h1><p style="font-size:42px;line-height:1.2;margin-top:14px;color:#E3EAF5">{sub}</p></div>''')
-foto('s3','g2-jarra.png','Paso 1','Llénalo con una jarra','Sin conexión al caño y sin electricidad.','20% 50%')
+def foto(name,img,kick,title,sub,pos='50% 55%'):
+    page(name,f'''<img src="assets/{img}" style="position:absolute;left:0;top:0;width:1200px;height:990px;object-fit:cover;object-position:{pos}">
+<div style="position:absolute;left:0;right:0;bottom:0;height:210px;background:#010A21;color:#fff;padding:26px 72px 0"><span class="k" style="color:#BFD0FF;font-size:30px">{kick}</span>
+<h1 style="font-size:70px;line-height:1.04;font-weight:600;margin-top:6px">{title}</h1><p style="font-size:38px;line-height:1.15;margin-top:6px;color:#C9D6EA">{sub}</p></div>''')
+foto('s3','g2-jarra.png','Paso 1','Llénalo con una jarra','Sin conexión al caño y sin electricidad.','30% 50%')
 foto('s4','g8-filtro.png','Paso 2','Purifica por gravedad','El agua baja sola por los filtros.')
-foto('s5','g3-vaso.png','Paso 3','Sirve cuando quieras','Directo de la llave a tu vaso.','55% 50%')
-foto('s6','g4-botella.png','Para llevar','Llena tu botella','O tu jarra, o tu vaso.','80% 50%')
+foto('s5','g3-vaso.png','Paso 3','Sirve cuando quieras','Directo de la llave a tu vaso.','50% 55%')
+foto('s6','g4-botella.png','Para llevar','Llena tu botella','O tu jarra, o tu vaso.','50% 55%')
 foto('s7','g5-armado.png','Armado','Lo armas tú, en casa','Coloca el filtro y listo.')
 foto('s9','g6-ph.png','Gotas de pH incluidas','Mide el pH de tu agua','Una gota en el vaso y comparas.')
 
 # 4 tamaños
-def size(n,p):
+def size(n,p,img=None):
     return f'''<div style="width:500px;background:#fff;border-radius:34px;padding:40px 40px 44px;text-align:center"><span class="k">Alivio {n}</span>
-<div style="width:300px;height:300px;margin:18px auto 8px;overflow:hidden;border-radius:24px"><img src="assets/producto.png" style="width:520px;margin:-80px 0 0 -110px"></div>
+<div style="width:300px;height:300px;margin:18px auto 8px;overflow:hidden;border-radius:24px">{img or '<img src="assets/producto.png" style="width:520px;margin:-80px 0 0 -110px">'}</div>
 <h2 style="font-size:92px;font-weight:700;line-height:1">{n}<span style="font-size:48px;font-weight:600;margin-left:10px">litros</span></h2>
 <p style="font-size:44px;font-weight:600;color:#3355FF;margin-top:18px">S/ {p}</p></div>'''
 page('s10',f'''<div style="position:absolute;left:72px;top:72px"><span class="k">Tamaños</span><h1 style="font-size:78px;font-weight:600;margin-top:14px;line-height:1.04">Elige cuánto alivio<br>quieres tener</h1></div>
-<div style="position:absolute;left:72px;top:330px;display:flex;gap:56px">{size(16,159)}{size(22,198)}</div>
+<div style="position:absolute;left:72px;top:330px;display:flex;gap:56px">{size(16,159)}{size(22,198,'<img src="assets/producto22.png" style="width:360px;margin:-30px 0 0 -30px">')}</div>
 <div style="position:absolute;left:72px;top:1040px;font-size:42px;font-weight:500">Más litros, más alivio. <span style="color:#5B6470">Alivio 22, para toda la casa.</span></div>
 <div class="fn">Capacidad total del recipiente.</div>''',bg='#EEF3F7')
 # 5 por dentro
-def etapa(n,t,s=''):
-    sub=f'<p style="font-size:32px;color:#BED0DF;margin-top:6px;line-height:1.2">{s}</p>' if s else ''
-    return f'<div style="display:flex;gap:26px;align-items:center"><div class="num">{n}</div><div><h3 style="font-size:46px;font-weight:600;color:#fff;line-height:1.1">{t}</h3>{sub}</div></div>'
-page('s8',f'''<div style="position:absolute;left:72px;top:60px"><span class="k" style="color:#8FA5FF">Alivio · Por dentro</span><h1 style="font-size:76px;color:#fff;font-weight:600;margin-top:12px">Tres etapas de filtrado</h1></div>
-<div style="position:absolute;left:72px;top:330px;width:1056px;height:380px;border-radius:34px;overflow:hidden"><img src="assets/repuesto.webp" style="width:800px;margin:-300px 0 0 128px;display:block"></div>
-<div style="position:absolute;left:72px;top:760px;width:1056px;display:flex;flex-direction:column;gap:34px">{etapa(1,"Filtro cerámico")}{etapa(2,"Filtro multimedia de 5 capas","Carbón activado y de plata · WMSM-300 · arena de sílice · zeolita · arena mineral")}{etapa(3,"Piedra mineral")}</div>
-<div class="fn" style="color:#8FA5C0">Esquema ilustrativo. Los resultados dependen de la calidad del agua de entrada.</div>''',bg='#010A21')
+def lab(y,n,t,sub='',h=''):
+    s_=f'<p style="font-size:30px;line-height:1.2;color:#5B6470;margin-top:8px">{sub}</p>' if sub else ''
+    return f'''<div style="position:absolute;left:760px;top:{y}px;width:380px;transform:translateY(-50%)"><div style="display:flex;gap:18px;align-items:center"><div class="num">{n}</div><h3 style="font-size:42px;font-weight:600;line-height:1.1">{t}</h3></div>{s_}</div>
+<div style="position:absolute;left:560px;top:{y}px;width:160px;height:3px;background:#3355FF"></div><div style="position:absolute;left:552px;top:{y-7}px;width:16px;height:16px;border-radius:50%;background:#3355FF"></div>'''
+page('s8',f'''<div style="position:absolute;left:72px;top:60px"><span class="k">Alivio · Por dentro</span><h1 style="font-size:76px;font-weight:600;margin-top:12px">Tres etapas de filtrado</h1></div>
+<img src="assets/explosionado.png" style="position:absolute;left:-40px;top:200px;width:900px;height:900px">
+{lab(335,1,"Filtro cerámico")}{lab(640,2,"Filtro multimedia","5 capas: carbón activado y de plata, WMSM-300, arena de sílice, zeolita y arena mineral")}{lab(960,3,"Piedra mineral")}
+<div class="fn">Esquema ilustrativo. Los resultados dependen de la calidad del agua de entrada.</div>''',bg='#fff')
 # 6 repuesto
 page('s11',f'''<div style="position:absolute;left:72px;top:72px"><span class="k">Kit de repuesto</span><h1 style="font-size:78px;font-weight:600;margin-top:14px;line-height:1.04">Un kit, hasta<br>un año de uso</h1></div>
 <div style="position:absolute;left:72px;top:380px;width:1056px;height:420px;border-radius:34px;overflow:hidden"><img src="assets/repuesto.webp" style="width:900px;margin:-350px 0 0 78px;display:block"></div>
