@@ -109,7 +109,7 @@
     $('[data-f-ag]').hidden = m !== 'shalom';
     $('[data-total]').textContent = m === 'shalom' ? 'Hoy pagas ' + money(C.adelanto) + ' · saldo ' + money(net() - C.adelanto) + ' al recoger'
       : m === 'cod' ? 'Total ' + money(net()) + ' · pagas al recibir' : 'Total ' + money(net()) + ' · envío gratis';
-    $('[data-confirmar]').textContent = m === 'tarjeta' ? 'Ir a pagar con tarjeta' : 'Confirmar pedido';
+    $('[data-confirmar]').textContent = m === 'tarjeta' ? 'Continuar con tarjeta' : 'Confirmar pedido';
     err('');
   }
 
@@ -210,7 +210,7 @@
     var ciudad = S.zona === 'lima' ? val('distrito') : val('ciudad');
     var gratis = S.lines.filter(function (l) { return l.gratis; }).map(function (l) { return l.cantidad + 'x ' + l.titulo; }).join(' + ');
     if (S.metodo === 'tarjeta') {
-      btn.textContent = 'Abriendo el pago…';
+      btn.textContent = 'Un momento…';
       var attrs = { 'Pago': 'Tarjeta (pago rápido)', 'WhatsApp': val('tel'), 'DNI': val('dni'), 'Zona': S.zona === 'lima' ? 'Lima' : 'Provincia', 'Referencia': val('referencia') || '—', 'Regalos incluidos': gratis || '—' };
       var items = pagadas().map(function (l) { return { id: l.id, quantity: l.cantidad }; });
       var preparar = S.modo === 'cart' ? Promise.resolve()
