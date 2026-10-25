@@ -23,3 +23,12 @@ prueba 120255012426730401 · masvendido (4,2 · 124 reseñas Falabella, confirma
 - Revisión del usuario en Ads Manager y OK explícito; publicar solo estos objetos por ID.
 - Videos del usuario como campaña aparte (la cuenta no tiene ninguno cargado).
 - Tamaño de las audiencias de remarketing (muy pequeñas) antes de publicar.
+
+## v2 (25-oct-2026): reconstrucción tras borrar las campañas v1
+Las campañas v1 (120255012416420401 / 120255012416560401) fueron borradas por el usuario; los anuncios v1 no se usan.
+Públicos nuevos: Carrito 60d 120255022346590401 · Checkout iniciado 60d 120255022346620401 · Interacción FB+IG 180d 120255022346680401 (existentes: Visitantes 30d 120255011194330401, Compradores 180d 120255011194460401).
+- Campaña **ELVO | Nativo | Compra web | Prospección v2** 120255022346780401 (CBO US$40): P1 Lima 35 km 120255022347420401 (tope US$32) · P2 Perú sin Lima 120255022347450401 (tope US$16).
+- Campaña **ELVO | Nativo | Compra web | Remarketing v2** 120255022346880401 (CBO US$15): R1 120255022347520401 (Carrito+Checkout 60d, Visitas 30d, Interacción 180d, sin compradores).
+- Anuncio de prueba: LIMA | manana v2 120255022348520401 (imágenes sin tubo: 4:5 390a2d13…, 9:16 bf42e6f6…; 9:16 primera, descripción "Tienda oficial elvo.pe").
+Decisiones: "Tienda oficial elvo.pe" en todos los anuncios; reseña con "Carmen S. · Trujillo" también en Lima.
+Pendiente: revisar el test en Reels/Historias/Feed, revisar zonas seguras y 9:16 de las otras 10, un píxel distinto por anuncio, luego crear los otros 16.
