@@ -118,3 +118,10 @@ Campaña `120255038541140401` "ELVO | WhatsApp | Conversaciones | Feed FB" (OUTC
 - Conjunto **Alivio** `120255038543270401` (tope US$5/día): Alivio 16 `120255038546350401` · Alivio 22 `120255038546510401`.
 Targeting: Perú, 25-65 (sugerencia Advantage+), excluye compradores web `120255011194460401`. Ubicación: solo Facebook Feed (`publisher_platforms:["facebook"]`, `facebook_positions:["feed"]`). Creativos: ficha 4:5 sin logo, CTA WHATSAPP_MESSAGE, mensaje precargado por producto/plan.
 Pendiente antes de publicar: bot de YaVendio con precios nuevos; confirmar que el 929 190 100 está conectado a la Página; publicar solo con "publica".
+
+### WhatsApp — 4 anuncios más en borrador (26-oct-2026, SIN publicar)
+Hashes: Nativo reseñas `b986b5c6f62fe1cc006204fd98181769` · Nativo dudas `8d2f2cfe3ef0fa4fde486e619963aaa9` · Alivio miedo v2 `74e559b984ec6336ea2d73dee2d8afd9` · Alivio reseña (Yoannis) `5e1aa77cc54b92fe5e054c21d70f33e2`.
+- Conjunto Nativo `120255038543220401`: reseñas reales `120255038627650401` · lo que más preguntan `120255038627810401`.
+- Conjunto Alivio `120255038543270401`: miedo `120255038628590401` · reseña real `120255038628830401`.
+Con esto: Nativo 5 anuncios (3 fichas + 2), Alivio 4 (2 fichas + 2). Con US$11/día conviene dejar activos como máximo ~3 por conjunto al inicio; los demás en pausa.
+La imagen de miedo v2 tiene el titular bajado por script (leve mancha clara donde estaba el texto original).
