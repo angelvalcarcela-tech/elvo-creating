@@ -40,5 +40,5 @@ Segunda persona, cercana y concreta: "tu caño", "tu cocina", "lo instalas tú".
 1. Primera frase: formato ("4:5 vertical aspect ratio.").
 2. No describir el producto físico: adjuntar foto real y pedir reproducirlo exacto.
 3. Todo texto entre comillas, exacto y corto, con tildes.
-4. Safe zones 10% arriba/abajo (14% en 9:16).
+4. Safe zones: Facebook Feed recorta ~10% arriba y ~10% abajo de una 4:5 (muestra casi un 1:1 central; medido en preview real, 26-oct-2026). Titular, badges, producto y caras dentro de 18%–84% de la altura; arriba 16% y abajo 18% solo fondo. El logo NO se genera con el modelo (lo ubica abajo igual): se pega después con `elvo-logo-trim.png` por encima del 85% de la altura. En 9:16: 14% arriba/abajo.
 5. Escena realista fotográfica, hogar peruano de clase media, sin look de stock genérico.
