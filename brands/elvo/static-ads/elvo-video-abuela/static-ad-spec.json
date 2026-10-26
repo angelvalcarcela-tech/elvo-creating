@@ -1,0 +1,20 @@
+{
+ "output_name": "elvo-video-abuela",
+ "brand": "elvo",
+ "product_name": "elvo· Alivio",
+ "audience": "lima-general",
+ "mode": "text",
+ "quality": "high",
+ "product_images": [],
+ "aspect_ratio": "16:9",
+ "additional_aspect_ratios": [],
+ "variations": [
+  {
+   "slug": "personajes",
+   "angle": "hoja de personajes",
+   "prompt": "Flat 2D storybook illustration in a warm, friendly children's-book style: clean smooth vector-like shapes, soft gradients, gentle paper texture, rounded characters with expressive faces, consistent thick-free line style, warm palette of terracotta, teal, mustard yellow and cream. Peruvian everyday family. Character model sheet on a plain off-white background: four characters standing side by side, full body, front view, evenly spaced, same art style, no text, no labels, no logos. From left to right: (1) Papá: 35-year-old Peruvian man, short black hair, thick mustache, blue polo shirt, jeans, big expressive eyebrows, slightly nervous kind face. (2) Mamá: 33-year-old woman, black hair in a ponytail, terracotta blouse, calm confident smile. (3) Niño: 8-year-old boy, big round eyes, bowl haircut, mustard-yellow hoodie, curious face. (4) Abuela: 70-year-old grandmother, grey hair in a neat bun, round glasses, green cardigan, warm knowing smile, slightly shorter than the others.",
+   "product_images": [],
+   "aspect_ratio": "16:9"
+  }
+ ]
+}
