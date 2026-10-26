@@ -1,0 +1,50 @@
+{
+ "output_name": "elvo-cyber-wa",
+ "brand": "elvo",
+ "product_name": "elvo· Cyber",
+ "audience": "lima-general",
+ "mode": "text",
+ "quality": "high",
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/alivio-equipo.png"
+ ],
+ "aspect_ratio": "1:1",
+ "additional_aspect_ratios": [],
+ "variations": [
+  {
+   "slug": "alivio16",
+   "angle": "cyber · Alivio 16 + kit",
+   "prompt": "1:1 square aspect ratio. A bold promotional graphic card for a WhatsApp carousel, flat graphic design (not a photograph), electric blue #3355FF background with a subtle large repeated outline wordmark pattern 'elvo' in slightly lighter blue, light-blue #BFD4FF diagonal stripes in two corners. Top area: the title 'CYBER elvo·' in huge bold geometric grotesque sans-serif white letters, and below it a light-blue rounded pill with dark blue text 'Del 27 de octubre al 1 de noviembre'. Below, the real product photo(s) cut out cleanly and sitting on the left side, exactly faithful to the reference images, no redesign. On the right side, a large off-white #EEF3F7 rounded panel with near-black #050607 bold text for the product name, and inside it a fully rounded deep-blue #1F3FD1 pill with the price in big white numerals. All text in Spanish exactly as given with correct accents, no exclamation marks, no extra text, no logos or brand marks other than the words given, no certification seals, no crossed-out prices, no fake UI, no footnote. Keep all text and products inside the central area, at least 6% away from every edge. Image 1 shows the exact Alivio 16 gravity water purifier bottle-top unit; Image 2 shows the exact replacement filter kit (three parts: cream ceramic dome, clear cartridge with layered media, white grid disc). Place the purifier large on the left with the three kit parts small in front of it. Panel text exactly: product name 'Bidón Alivio 16 Litros' with the line '+ kit de repuesto' under it; price pill 'S/ 249'; and under the pill one small line '+ medidor de agua de regalo'.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-equipo.png",
+    "brands/elvo/brand-identity/product-images/alivio-kit-repuesto.png"
+   ]
+  },
+  {
+   "slug": "alivio22",
+   "angle": "cyber · Alivio 22 + kit",
+   "prompt": "1:1 square aspect ratio. A bold promotional graphic card for a WhatsApp carousel, flat graphic design (not a photograph), electric blue #3355FF background with a subtle large repeated outline wordmark pattern 'elvo' in slightly lighter blue, light-blue #BFD4FF diagonal stripes in two corners. Top area: the title 'CYBER elvo·' in huge bold geometric grotesque sans-serif white letters, and below it a light-blue rounded pill with dark blue text 'Del 27 de octubre al 1 de noviembre'. Below, the real product photo(s) cut out cleanly and sitting on the left side, exactly faithful to the reference images, no redesign. On the right side, a large off-white #EEF3F7 rounded panel with near-black #050607 bold text for the product name, and inside it a fully rounded deep-blue #1F3FD1 pill with the price in big white numerals. All text in Spanish exactly as given with correct accents, no exclamation marks, no extra text, no logos or brand marks other than the words given, no certification seals, no crossed-out prices, no fake UI, no footnote. Keep all text and products inside the central area, at least 6% away from every edge. Image 1 shows the exact Alivio 22 gravity water purifier; Image 2 shows the exact replacement filter kit (three parts: cream ceramic dome, clear cartridge with layered media, white grid disc). Place the purifier large on the left with the three kit parts small in front of it. Panel text exactly: product name 'Bidón Alivio 22 Litros' with the line '+ kit de repuesto' under it; price pill 'S/ 288'; and under the pill one small line '+ medidor de agua de regalo'.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-22-galeria-01.png",
+    "brands/elvo/brand-identity/product-images/alivio-kit-repuesto.png"
+   ]
+  },
+  {
+   "slug": "nativo",
+   "angle": "cyber · Nativo + kit",
+   "prompt": "1:1 square aspect ratio. A bold promotional graphic card for a WhatsApp carousel, flat graphic design (not a photograph), electric blue #3355FF background with a subtle large repeated outline wordmark pattern 'elvo' in slightly lighter blue, light-blue #BFD4FF diagonal stripes in two corners. Top area: the title 'CYBER elvo·' in huge bold geometric grotesque sans-serif white letters, and below it a light-blue rounded pill with dark blue text 'Del 27 de octubre al 1 de noviembre'. Below, the real product photo(s) cut out cleanly and sitting on the left side, exactly faithful to the reference images, no redesign. On the right side, a large off-white #EEF3F7 rounded panel with near-black #050607 bold text for the product name, and inside it a fully rounded deep-blue #1F3FD1 pill with the price in big white numerals. All text in Spanish exactly as given with correct accents, no exclamation marks, no extra text, no logos or brand marks other than the words given, no certification seals, no crossed-out prices, no fake UI, no footnote. Keep all text and products inside the central area, at least 6% away from every edge. Image 1 shows the exact product: a white countertop water purifier with a chrome gooseneck spout; Image 2 shows the exact spare filter core. Place the purifier large on the left with the spare core small beside its base. Panel text exactly: product name 'Purificador Nativo antimetales' with the line '+ kit de repuesto' under it; price pill 'S/ 379' (the currency letter is a CAPITAL S followed by a slash, exactly like 'S/ 249' in a sibling card, never lowercase); and under the pill one small line '+ medidor de agua de regalo'. Do not write any claim about metals, lead or health.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-equipo-web.png",
+    "brands/elvo/brand-identity/product-images/nativo-repuesto-nucleo.png"
+   ]
+  },
+  {
+   "slug": "kit",
+   "angle": "cyber · Kit repuesto",
+   "prompt": "1:1 square aspect ratio. A bold promotional graphic card for a WhatsApp carousel, flat graphic design (not a photograph), electric blue #3355FF background with a subtle large repeated outline wordmark pattern 'elvo' in slightly lighter blue, light-blue #BFD4FF diagonal stripes in two corners. Top area: the title 'CYBER elvo·' in huge bold geometric grotesque sans-serif white letters, and below it a light-blue rounded pill with dark blue text 'Del 27 de octubre al 1 de noviembre'. Below, the real product photo(s) cut out cleanly and sitting on the left side, exactly faithful to the reference images, no redesign. On the right side, a large off-white #EEF3F7 rounded panel with near-black #050607 bold text for the product name, and inside it a fully rounded deep-blue #1F3FD1 pill with the price in big white numerals. All text in Spanish exactly as given with correct accents, no exclamation marks, no extra text, no logos or brand marks other than the words given, no certification seals, no crossed-out prices, no fake UI, no footnote. Keep all text and products inside the central area, at least 6% away from every edge. Image 1 shows the exact replacement filter kit made of THREE separate parts: a cream-white ceramic dome with a grey base ring, a clear cylindrical cartridge with layered media (black carbon, grey and white beads, orange-brown ceramic beads) and a round white grid disc. Show the three parts large on the left. Panel text exactly: product name 'Kit de filtros de repuesto' with the line '3 filtros' under it; price pill 'S/ 99'.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-kit-repuesto.png"
+   ]
+  }
+ ]
+}
