@@ -139,3 +139,12 @@ Nombre completo "Bidón Alivio 22 Litros · S/ 198"; cierre "Que no te pase."; m
 Hashes: 22 L 2017 `f81173816bdeb341db3cac8a3ca3f8d8` · 7 millones `cffdca31caa6dc26cf9ca5ecc5d23af9` · toda la casa `d89c85879d5036d19a86693a46bfc188`.
 Conjunto Alivio `120255038543270401`: 2017 `120255038935000401` · 7 millones `120255038935250401` · toda la casa `120255038936040401`.
 Nota: en "toda la casa" el equipo queda pegado al borde derecho (ligeramente cortado); considerar regenerar. Alivio ahora tiene 10 anuncios en borrador; activar como máximo ~3 con US$11/día.
+
+## Campaña Repuestos WhatsApp (borrador, 26-oct-2026)
+- Campaña 120255039167520401 "ELVO | Repuestos | WhatsApp | Lanzamiento hasta el viernes" — CBO US$6/día (600 centavos). BORRADOR, sin publicar.
+- Conjunto 120255039183210401: Perú, solo Facebook Feed, incluye compradores de bidón (120255033451230401), excluye compradores de kit (120255039152460401), Advantage+ audience apagado (solo la lista), WhatsApp 51929190100, CONVERSATIONS, termina 2026-10-31T04:59Z (vie 30-oct 23:59 Lima).
+- Anuncios (todos dicen "Oferta de lanzamiento: envío gratis hasta el viernes"; mensaje prellenado "Hola, quiero el Kit de filtros de repuesto (S/ 99)"):
+  - 120255039184450401 Cambia el filtro — hash a0cd2981b28a4e3023ac089b558e30ff
+  - 120255039184960401 Cada cuánto — hash 29bc11a09121b639146352dde5cf464e
+  - 120255039185080401 Lanzamiento envío gratis — hash 9cc8f3596d2d434aa8fd767bf560343c
+- No se afirma "entrega este fin de semana" ni compatibilidad con bidones AQA antiguos (sin confirmar).
