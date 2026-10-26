@@ -100,3 +100,14 @@ REMARKETING `120255024128020401`: prueba `120255024980200401`, masvendido `12025
 
 Borrar a mano en Ads Manager (borradores v5, ya reemplazados): `120255024567560401` (con error al marcarlo DELETED), `120255024571300401`, `120255024572500401`, `120255024573950401`, `120255024576400401`, `120255024577290401`, `120255024578370401`, `120255024579260401`.
 Al publicar los "zona segura", pausar los anuncios activos equivalentes (mismos nombres sin "zona segura", 4x5 + 9x16) para no duplicar. El anuncio retail no se corrigió.
+
+## WhatsApp — fichas (26-oct-2026, en preparación, NADA creado en campañas todavía)
+
+Decisiones del dueño: WhatsApp 929 190 100; campaña aparte con conjuntos distintos por producto (Nativo / Alivio) para no mezclar aprendizaje ni tracking; solo Facebook Feed (sin Instagram, Stories ni Reels, 4:5); sin logo; atención 24 horas; el bot de YaVendio se actualiza por su cuenta; presupuesto derivado del CAC aceptado (pendiente: no hay un CAC definido en el repo).
+
+Imágenes 4:5 (1080×1350) subidas a la cuenta 893663859368314 (hash): Nativo 18 meses `952720df40b0bc26429228c6f1a85264` · Nativo 3 años `a96668d3c737d72b6a52774a0fbea3d2` · Nativo 6 años `cfec2720c0b5540b3ef6bcb28e9d9e39` · Alivio 16 `45894e633346ebadb5b301ed8b3c7379` · Alivio 22 `9b0292075381e1baa3fcc0e3b81df146`.
+
+Auditoría de zona segura (Feed recorta ~10 % arriba y abajo): las 5 fichas tienen el contenido entre ~10 % y ~90 % de la altura; la más justa es Alivio 22 (pill del título a ~10 %). Nativo 6 años usa otro layout (tarjeta enmarcada, beneficios en 2×2).
+
+Mensajes precargados previstos: "Hola, quiero el Nativo 18 meses (S/ 349)" · "…Nativo 3 años (S/ 389)" · "…Nativo 6 años (S/ 489)" · "…Alivio 16 (S/ 159)" · "…Alivio 22 (S/ 198)". Respuestas rápidas: ¿Cuánto cuesta? / ¿Cómo se instala? / ¿Llegan a mi ciudad? / Quiero pagar al recibir.
+Disclaimer de Nativo (metales pesados): "Según la ficha técnica del núcleo PureCore" va en el texto del anuncio, no en la imagen.
