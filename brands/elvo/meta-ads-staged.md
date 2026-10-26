@@ -133,3 +133,9 @@ Hashes: 2017 v4 `620aa21141d71ee38a7ad9261317decb` · 7 millones v3 `322f169b88e
 - Conjunto Nativo `120255038543220401`: turbidez `120255038895960401`.
 Totales en borrador: Alivio 7 anuncios (2 fichas, miedo, reseña, 3 El Niño); Nativo 6 (3 fichas, reseñas, dudas, turbidez). Con US$11/día activar como máximo ~3 por conjunto.
 Pendiente: los anuncios de fichas de Alivio (16 y 22) aún usan "Alivio 16"/"Alivio 22" como titular y en la imagen; cambiar al nombre completo si el dueño lo confirma. Verificar cifras de Gestión antes de publicar. Datos citados: Atarjea cerró compuertas hasta 6 días en 2017; casi 7 millones (estimación de Gestión); 53 puntos críticos de huaico en la cuenca del Rímac (de 362 en Lima).
+
+### WhatsApp — Alivio 22 L, El Niño (titulares más cortos), 3 anuncios en borrador, SIN publicar
+Nombre completo "Bidón Alivio 22 Litros · S/ 198"; cierre "Que no te pase."; mensaje precargado "Hola, quiero el Bidón Alivio 22 Litros (S/ 198)".
+Hashes: 22 L 2017 `f81173816bdeb341db3cac8a3ca3f8d8` · 7 millones `cffdca31caa6dc26cf9ca5ecc5d23af9` · toda la casa `d89c85879d5036d19a86693a46bfc188`.
+Conjunto Alivio `120255038543270401`: 2017 `120255038935000401` · 7 millones `120255038935250401` · toda la casa `120255038936040401`.
+Nota: en "toda la casa" el equipo queda pegado al borde derecho (ligeramente cortado); considerar regenerar. Alivio ahora tiene 10 anuncios en borrador; activar como máximo ~3 con US$11/día.
