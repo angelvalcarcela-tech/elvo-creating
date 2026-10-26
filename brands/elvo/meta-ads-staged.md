@@ -89,3 +89,14 @@ Claim El Niño: "El Niño Costero en alerta" (ENFEN comunicado 18-2026, 16-oct-2
 Prospección `120255024856150401` (CBO US$25/día): LIMA `120255024860540401` (tope 20), PROVINCIAS `120255024860810401` (tope 10).
 Remarketing `120255024856310401` (CBO US$10/día): REMARKETING `120255024860920401`.
 Pendiente: imágenes (fal sin saldo 26-oct), copy aprobado, listar Alivio en Shopify (hoy "no listado"), landing `elvo.pe/products/elvo-bidon-16l`.
+
+## Ronda v6 — zona segura de Facebook Feed (borradores, "zona segura 4x5")
+
+Facebook Feed recorta ~10% arriba/abajo de una 4:5. Imágenes corregidas en `brands/elvo/static-ads/elvo-nativo-zonasegura/` (logo real pegado, titulares dentro). Los anuncios nuevos reemplazan a los de la ronda 4:5 original (Nativo activos) y a los 8 borradores de la ronda v5.
+
+LIMA `120255024127880401`: enojo-bidon `120255024957810401`, enojo-hervir `120255024958590401`, alegria-listo `120255024959980401`, alegria-cero `120255024960930401`, risa-vida-social `120255024962800401`, risa-espalda `120255024965150401`, nino-turbia `120255024966070401`, manana `120255024972110401`, bidones `120255024972840401`, familia `120255024974020401`, caja `120255024974710401`, instalas `120255024975520401`, resena `120255024976120401`
+PROVINCIAS `120255024127960401`: nino-turbia `120255024969400401`, manana `120255024976900401`, familia `120255024977520401`, caja `120255024978230401`, instalas `120255024978590401`, resena `120255024979470401`
+REMARKETING `120255024128020401`: prueba `120255024980200401`, masvendido `120255024981670401`, maselegido `120255024982420401`, duracion `120255024983890401`
+
+Borrar a mano en Ads Manager (borradores v5, ya reemplazados): `120255024567560401` (con error al marcarlo DELETED), `120255024571300401`, `120255024572500401`, `120255024573950401`, `120255024576400401`, `120255024577290401`, `120255024578370401`, `120255024579260401`.
+Al publicar los "zona segura", pausar los anuncios activos equivalentes (mismos nombres sin "zona segura", 4x5 + 9x16) para no duplicar. El anuncio retail no se corrigió.
