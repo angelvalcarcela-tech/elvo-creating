@@ -217,3 +217,67 @@ Se abrieron 116 fichas de Falabella Perú de 20 categorías y se contaron, en la
 - Con precios locales realistas, la contribución cae: irrigador a S/ 199 deja +S/ 12 con CAC 65 (y a S/ 179, -S/ 1); tensiómetro a S/ 129 deja -S/ 33.
 - Falabella no muestra unidades vendidas. Para medir demanda real hacen falta datos de ventas de Mercado Libre, o una prueba pequeña de ventas.
 - **La calificación 4,2 / 124 reseñas en Falabella no debe usarse como prueba de Nativo** (ni en la web ni en anuncios) mientras la ficha no esté corregida.
+
+---
+
+# Anexo 4: precios de mercado para Alivio (16 L y 22 L) y su kit de repuestos
+
+Leído el 26-oct-2026 en Falabella Perú (marketplace) y, con resúmenes de buscador, en Mercado Libre, Ripley y la tienda de Nuwa. Las reseñas de estos bidones son **100 % locales** (ninguna sindicada). Costos de elvo·: Alivio 16 L S/ 39,84; 22 L S/ 47,55; kit S/ 10,91 (estimados a partir del Contenedor 2).
+
+## Mapa de precios de la competencia (bidón de gravedad)
+
+| Producto | Precio hoy | Precio "antes" | Reseñas |
+|---|---|---|---|
+| Nuwa bidón mineralizador 14 L | S/ 134,90 | S/ 229 | 18 (3,7 estrellas) |
+| Nuwa bidón mineralizador 16 L | S/ 143,90 | S/ 249 | 12 (3,8 estrellas) |
+| Purificador 16 L genérico (Mercado Libre) | S/ 169-180 | n/d | n/d |
+| Nuwa 16 L + 2 kits de repuestos (Ripley) | S/ 239,90 | n/d | n/d |
+| Yakua 14 L | S/ 197 | S/ 250 | 5 (5 estrellas) |
+| **Waterpro 22 L con dispensador** | **S/ 198** | S/ 358 | **13 (4,5 estrellas)** |
+| Waterpro 22 L + hervidor | S/ 257 | S/ 576 | 2 |
+| Nolbert 24 L (8 etapas) | S/ 178 | S/ 320 | sin reseñas |
+| Kent Gold Plus 20 L | S/ 350 | S/ 520 | 1 |
+| Ecofiltro 20 L (cerámica) | S/ 474-561 | n/d | n/d |
+
+## Mapa de precios de repuestos
+
+| Repuesto | Precio |
+|---|---|
+| Kit repuesto bidón mineralizador Nuwa (tienda oficial) | S/ 99 |
+| Kit repuesto Waterpro 18 L o 22 L | S/ 120 (antes S/ 150) |
+| Kit repuestos genérico (Mercado Libre) | S/ 126; 2 kits S/ 96,70; cartucho de 5 etapas S/ 55 |
+| Kit de 3 filtros bidón (Osmosis Perú) | S/ 89 (precio antiguo) |
+| Kit de filtros 14 L (Yakua) | S/ 165 (antes S/ 195) |
+| Cartuchos de repuesto de lavadero (Rotoplas, Sole) | S/ 70 a S/ 229 (otro formato) |
+
+## Qué dicen las reseñas locales
+
+- **Nuwa (3,7 y 3,8 estrellas):** quejas de sabor a agua hervida o con sarro los primeros días, recipientes muy delgados, **falta de manual y de instrucciones del primer uso**, y moho o algas en un caso. Elogios por el ahorro de gas y un sabor neutro a partir del tercer día.
+- **Waterpro 22 L (4,5 estrellas):** elogian instrucciones claras de armado y el sabor. Una devolución por **falta de empaquetadura** (el agua pasaba sin filtrar). Compradores que repiten para familiares.
+- Para elvo·: manual ilustrado y paso a paso del primer uso, empaquetadura de repuesto y control de calidad del empaque.
+
+## Economía por pedido en Lima (courier S/ 18, empaque S/ 5, 80 % de entrega)
+
+| Producto | Precio | Contribución antes de publicidad | Con CAC 65 | Con CAC 120 |
+|---|---|---|---|---|
+| Alivio 16 L equipo | S/ 159 | S/ 49 | -S/ 16 | -S/ 71 |
+| Alivio 16 L equipo | S/ 169 | S/ 55 | -S/ 10 | -S/ 65 |
+| Alivio 16 L + kit | S/ 239 | S/ 92 | +S/ 27 | -S/ 28 |
+| Alivio 22 L equipo | S/ 198 | S/ 68 | +S/ 3 | -S/ 52 |
+| Alivio 22 L equipo | S/ 209 | S/ 75 | +S/ 10 | -S/ 45 |
+| Alivio 22 L + kit | S/ 279 | S/ 112 | +S/ 47 | -S/ 8 |
+| Kit de repuestos a S/ 109 (en el mismo pedido) | S/ 109 | ~S/ 63 | sin publicidad | sin publicidad |
+| Kit de repuestos a S/ 109 (recompra prepaga) | S/ 109 | ~S/ 62 | sin publicidad | sin publicidad |
+
+## Recomendación de precios
+
+| Producto | Precio actual | Recomendado | Por qué |
+|---|---|---|---|
+| Alivio 16 L equipo | S/ 159 | **S/ 159 a S/ 169** | Entre Nuwa (S/ 144) y Mercado Libre (S/ 169-180). Diferenciador: manual, empaquetadura, pruebas de laboratorio. |
+| Alivio 16 L + kit | S/ 229 | **S/ 239** | Igual que Nuwa + 2 kits en Ripley (S/ 239,90), con un kit; la utilidad sube a S/ 92 por pedido. |
+| Alivio 22 L equipo | S/ 198 | **S/ 209** | Waterpro vende a S/ 198 con 4,5 estrellas; a S/ 198 no hay margen de publicidad, a S/ 209 empieza a haber. |
+| Alivio 22 L + kit | S/ 269 | **S/ 279** | Mantiene el escalón de S/ 70 por el kit. |
+| Kit de repuestos suelto | S/ 95 | **S/ 109** | Entre Nuwa (S/ 99) y Waterpro (S/ 120); el costo es de S/ 11. |
+| Kit en el carrito ("por tu compra") | n/d | **S/ 70 a S/ 79** (referencia suelta S/ 109) | Es el complemento más rentable. |
+
+Conclusiones: el equipo solo no paga publicidad ni a precio de mercado; el negocio está en **equipo + kit** y en el **kit como recompra por WhatsApp**. Los precios "antes" tachados de la competencia (por ejemplo, Nuwa S/ 249 a S/ 144, Waterpro S/ 358 a S/ 198) deben usarse solo si son reales: INDECOPI exige que el precio de referencia haya sido el cobrado.
