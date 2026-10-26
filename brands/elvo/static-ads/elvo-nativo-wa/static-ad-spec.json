@@ -1,0 +1,31 @@
+{
+ "output_name": "elvo-nativo-wa",
+ "brand": "elvo",
+ "product_name": "elvo· Nativo",
+ "audience": "lima-general",
+ "mode": "text",
+ "quality": "high",
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/nativo-equipo-web.png"
+ ],
+ "aspect_ratio": "4:5",
+ "additional_aspect_ratios": [],
+ "variations": [
+  {
+   "slug": "resenas",
+   "angle": "WhatsApp · reseñas reales",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural light, shallow depth of field, no stock-photo look. Image 1 shows the exact product: a white countertop water purifier with a chrome gooseneck spout, a grey droplet icon and the small 'elvo' wordmark; reproduce it faithfully, keep it clearly visible, do not redesign, recolor or relabel it. Scene: the product on a bright Peruvian kitchen counter with a clear glass of water, soft natural window light, occupying the right half of the frame. On the left, three clean white rounded review cards stacked vertically over a soft light wall, each card with a short quote in regular text and a bold name below. Text to render exactly, nothing else: small heading \"Lo que dicen quienes ya lo instalaron\"; card 1: \"El agua sale cristalina, sin sabor ni olor.\" — \"Carmen S., Trujillo\"; card 2: \"Lo instalé en menos de 5 minutos, funciona perfecto y tiene muy buen caudal.\" — \"Lucía P., Ica\"; card 3: \"El agua sale transparente, sin sabor y sin ningún residuo. La instalación fue muy fácil.\" — \"María G., Lima\". No stars, no ratings, no numbers of reviews. Typography: bold geometric grotesque sans-serif headings in near-black #050607, clean regular sans-serif body, left-aligned, high contrast; electric blue #3355FF accents only. All text in Spanish exactly as given with correct accents. No exclamation marks, no stars, no fake UI, no countdowns, no logos, no extra text. Facebook Feed crop safe layout: the headline, any badge or pill, the product and any person's face must sit inside the central band between 18% and 84% of the frame height. The top 16% and the bottom 18% of the frame show ONLY background scenery (wall, ceiling, shelf, counter, floor): no text, no logo, no badge, no product edge, no face. The headline's first line begins at 20% of the frame height or lower. Do NOT draw any logo or brand wordmark on the picture (it is added later) and no footnote text. Keep the same composition style otherwise.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-equipo-web.png"
+   ]
+  },
+  {
+   "slug": "dudas",
+   "angle": "WhatsApp · lo que más preguntan",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural light, shallow depth of field, no stock-photo look. Image 1 shows the exact product: a white countertop water purifier with a chrome gooseneck spout, a grey droplet icon and the small 'elvo' wordmark; reproduce it faithfully, keep it clearly visible, do not redesign, recolor or relabel it. Scene: a bright Peruvian kitchen counter with the product and a clear glass of water on the right, soft natural window light. On the left over a clean light area, a clear Q and A layout of three rows, each with a bold blue question and a short regular answer beneath. Text to render exactly, nothing else: heading \"Lo que más nos preguntan\"; row 1 question \"¿Es la tienda oficial?\" answer \"Sí. Compras en elvo.pe.\"; row 2 question \"¿Se instala al caño?\" answer \"Sí, en 5 minutos y sin gasfitero. Si no encaja, te devolvemos tu dinero.\"; row 3 question \"¿Llega a mi ciudad?\" answer \"Enviamos a todo el Perú. Pagas al recibir.\". Typography: bold geometric grotesque sans-serif headings in near-black #050607, clean regular sans-serif body, left-aligned, high contrast; electric blue #3355FF accents only. All text in Spanish exactly as given with correct accents. No exclamation marks, no stars, no fake UI, no countdowns, no logos, no extra text. Facebook Feed crop safe layout: the headline, any badge or pill, the product and any person's face must sit inside the central band between 18% and 84% of the frame height. The top 16% and the bottom 18% of the frame show ONLY background scenery (wall, ceiling, shelf, counter, floor): no text, no logo, no badge, no product edge, no face. The headline's first line begins at 20% of the frame height or lower. Do NOT draw any logo or brand wordmark on the picture (it is added later) and no footnote text. Keep the same composition style otherwise.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-equipo-web.png"
+   ]
+  }
+ ]
+}
