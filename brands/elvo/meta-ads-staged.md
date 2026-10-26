@@ -41,3 +41,8 @@ Meta exige 1,91:1 para Feed de Facebook, así que las imágenes de feed se regen
 - Anuncios "… | 1x1" (17): feed 1:1 (img_feed) + 9:16 (img_story); ubicaciones solo Facebook e Instagram.
 - Hashes 1:1: manana 4bf4d16a…, bidones 5a5bc7d3…, familia e2bc81d9…, caja f01c2fc9…, instalas 5f84ae7d…, resena 7181ac01…, prueba afc7867a…, masvendido 399ea79b…, maselegido 00985198…, duracion 0dfaf31e…, retail 90d8881f….
 - Los anuncios viejos sin "1x1" (imagen 4:5) deben borrarse a mano antes de publicar.
+
+## Actualización: feed en 1,91:1 (Meta lo exige en Feed de Facebook; entra también en el rango de Instagram Feed)
+Anuncios "… | feed 1.91" (17) en los conjuntos LIMA 120255023215620401, PROVINCIAS 120255023215750401 y REMARKETING 120255023215890401 (campañas 120255023213110401 y 120255023213290401). Feed 1200×628 + Historias/Reels 9:16, solo Facebook e Instagram.
+Hashes 1,91:1: manana 012facac…, bidones 0eac4842…, familia e353a9f1…, caja 9c77baec…, instalas 1951e86f…, resena b4214235…, prueba 35cd5bf9…, masvendido 9adb2cf8…, maselegido 58843086…, duracion 596e0d36…, retail 7a69ce24….
+Borrar a mano: anuncios de prueba (PRUEBA…), el conjunto "ZZ PRUEBA | Solo Facebook Feed" y cualquier anuncio sin "feed 1.91".

@@ -14,6 +14,7 @@ GEN_SIZES = {
     "3:4": (1152, 1536),
     "9:16": (1152, 2048),
     "16:9": (2048, 1152),
+    "1.91:1": (1920, 1008),
 }
 # Tamaños de entrega exactos por canal.
 EXPORT_SIZES = {
@@ -22,6 +23,7 @@ EXPORT_SIZES = {
     "3:4": (1080, 1440),
     "9:16": (1080, 1920),
     "16:9": (1920, 1080),
+    "1.91:1": (1200, 628),
 }
 
 EDIT_ENDPOINT = "openai/gpt-image-2/edit"
