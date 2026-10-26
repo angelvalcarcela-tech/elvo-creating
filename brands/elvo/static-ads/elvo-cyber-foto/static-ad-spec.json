@@ -1,0 +1,50 @@
+{
+ "output_name": "elvo-cyber-foto",
+ "brand": "elvo",
+ "product_name": "elvo· Cyber",
+ "audience": "lima-general",
+ "mode": "text",
+ "quality": "high",
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/alivio-equipo.png"
+ ],
+ "aspect_ratio": "1:1",
+ "additional_aspect_ratios": [],
+ "variations": [
+  {
+   "slug": "alivio16",
+   "angle": "cyber foto · Alivio 16 + kit",
+   "prompt": "1:1 square aspect ratio. Photorealistic advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, soft natural window light, shallow depth of field, off-white and warm-wood tones, no stock-photo look, no studio backdrop. Image 1 shows the exact Alivio 16 gravity purifier; Image 2 shows the exact three-part replacement filter kit (cream ceramic dome with grey ring, clear cartridge with layered media, white grid disc). Scene: a bright Peruvian kitchen, the purifier standing on the stone counter at lower right with the three kit parts laid neatly in front of it, a plain light wall behind the text area, a window and a small plant softly out of focus. Typography: bold geometric grotesque sans-serif, left-aligned. Text elements, exactly and nothing else, in this order top to bottom, all in the upper-left half over the plain wall: (1) the headline 'Cyber elvo·' in very large near-black #050607 (the final character is a small middle dot), (2) one line in electric blue #3355FF 'Del 27 de octubre al 1 de noviembre'. Then in the lower half, left side above the counter: (3) the product name line in bold near-black, (4) one fully rounded electric blue #3355FF pill with white text containing the price, and (5) under the pill one small regular near-black line '+ medidor de agua de regalo'. All text in Spanish exactly as given with correct accents, no exclamation marks, no emojis, no extra text, no logos, no brand wordmark, no certification seals, no crossed-out prices, no fake UI, no countdowns. Keep every text and product at least 8% away from all four edges. The product(s) are real photos given in the reference images: reproduce them faithfully, no redesign, no invented parts or labels. Product name line exactly: 'Bidón Alivio 16 Litros + kit de repuesto'. Pill text exactly: 'S/ 249'.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-equipo.png",
+    "brands/elvo/brand-identity/product-images/alivio-kit-repuesto.png"
+   ]
+  },
+  {
+   "slug": "alivio22",
+   "angle": "cyber foto · Alivio 22 + kit",
+   "prompt": "1:1 square aspect ratio. Photorealistic advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, soft natural window light, shallow depth of field, off-white and warm-wood tones, no stock-photo look, no studio backdrop. Image 1 shows the exact Alivio 22 gravity purifier; Image 2 shows the exact three-part replacement filter kit (cream ceramic dome with grey ring, clear cartridge with layered media, white grid disc). Scene: a warm Peruvian dining-room sideboard or kitchen counter in morning light, the purifier standing at lower right with the three kit parts laid neatly in front of it, a plain light wall behind the text area, a glass of water beside it. Typography: bold geometric grotesque sans-serif, left-aligned. Text elements, exactly and nothing else, in this order top to bottom, all in the upper-left half over the plain wall: (1) the headline 'Cyber elvo·' in very large near-black #050607 (the final character is a small middle dot), (2) one line in electric blue #3355FF 'Del 27 de octubre al 1 de noviembre'. Then in the lower half, left side above the counter: (3) the product name line in bold near-black, (4) one fully rounded electric blue #3355FF pill with white text containing the price, and (5) under the pill one small regular near-black line '+ medidor de agua de regalo'. All text in Spanish exactly as given with correct accents, no exclamation marks, no emojis, no extra text, no logos, no brand wordmark, no certification seals, no crossed-out prices, no fake UI, no countdowns. Keep every text and product at least 8% away from all four edges. The product(s) are real photos given in the reference images: reproduce them faithfully, no redesign, no invented parts or labels. Product name line exactly: 'Bidón Alivio 22 Litros + kit de repuesto'. Pill text exactly: 'S/ 288'.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-22-galeria-01.png",
+    "brands/elvo/brand-identity/product-images/alivio-kit-repuesto.png"
+   ]
+  },
+  {
+   "slug": "nativo",
+   "angle": "cyber foto · Nativo + kit",
+   "prompt": "1:1 square aspect ratio. Photorealistic advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, soft natural window light, shallow depth of field, off-white and warm-wood tones, no stock-photo look, no studio backdrop. Image 1 shows the exact Nativo countertop purifier (white body, chrome gooseneck spout, grey drop icon); Image 2 shows the exact spare filter core. Scene: a Peruvian kitchen counter by the window, the purifier with water pouring into a glass at lower right, the spare core standing beside it, plain light wall behind the text area. Do not write any claim about metals, lead or health. Typography: bold geometric grotesque sans-serif, left-aligned. Text elements, exactly and nothing else, in this order top to bottom, all in the upper-left half over the plain wall: (1) the headline 'Cyber elvo·' in very large near-black #050607 (the final character is a small middle dot), (2) one line in electric blue #3355FF 'Del 27 de octubre al 1 de noviembre'. Then in the lower half, left side above the counter: (3) the product name line in bold near-black, (4) one fully rounded electric blue #3355FF pill with white text containing the price, and (5) under the pill one small regular near-black line '+ medidor de agua de regalo'. All text in Spanish exactly as given with correct accents, no exclamation marks, no emojis, no extra text, no logos, no brand wordmark, no certification seals, no crossed-out prices, no fake UI, no countdowns. Keep every text and product at least 8% away from all four edges. The product(s) are real photos given in the reference images: reproduce them faithfully, no redesign, no invented parts or labels. Product name line exactly: 'Purificador Nativo + kit de repuesto'. Pill text exactly: 'S/ 379'.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-equipo-web.png",
+    "brands/elvo/brand-identity/product-images/nativo-repuesto-nucleo.png"
+   ]
+  },
+  {
+   "slug": "kit",
+   "angle": "cyber foto · Kit repuesto",
+   "prompt": "1:1 square aspect ratio. Photorealistic advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, soft natural window light, shallow depth of field, off-white and warm-wood tones, no stock-photo look, no studio backdrop. Image 1 shows the exact replacement filter kit made of three separate parts: a cream ceramic dome with a grey base ring, a clear cylindrical cartridge with layered media (black carbon, grey and white beads, orange-brown ceramic beads) and a round white grid disc. Scene: a bright Peruvian kitchen counter, the three parts laid out neatly side by side at lower right, a white gravity purifier softly out of focus behind, plain light wall behind the text area. Typography: bold geometric grotesque sans-serif, left-aligned. Text elements, exactly and nothing else, in this order top to bottom, all in the upper-left half over the plain wall: (1) the headline 'Cyber elvo·' in very large near-black #050607 (the final character is a small middle dot), (2) one line in electric blue #3355FF 'Del 27 de octubre al 1 de noviembre'. Then in the lower half, left side above the counter: (3) the product name line in bold near-black, (4) one fully rounded electric blue #3355FF pill with white text containing the price, and (5) under the pill one small regular near-black line '+ medidor de agua de regalo' (omit line 5 entirely for this card). All text in Spanish exactly as given with correct accents, no exclamation marks, no emojis, no extra text, no logos, no brand wordmark, no certification seals, no crossed-out prices, no fake UI, no countdowns. Keep every text and product at least 8% away from all four edges. The product(s) are real photos given in the reference images: reproduce them faithfully, no redesign, no invented parts or labels. Product name line exactly: 'Kit de filtros de repuesto'. Pill text exactly: 'S/ 99'.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-kit-repuesto.png"
+   ]
+  }
+ ]
+}
