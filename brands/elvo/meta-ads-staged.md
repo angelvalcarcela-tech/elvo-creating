@@ -32,3 +32,9 @@ Públicos nuevos: Carrito 60d 120255022346590401 · Checkout iniciado 60d 120255
 - Anuncio de prueba: LIMA | manana v2 120255022348520401 (imágenes sin tubo: 4:5 390a2d13…, 9:16 bf42e6f6…; 9:16 primera, descripción "Tienda oficial elvo.pe").
 Decisiones: "Tienda oficial elvo.pe" en todos los anuncios; reseña con "Carmen S. · Trujillo" también en Lima.
 Pendiente: revisar el test en Reels/Historias/Feed, revisar zonas seguras y 9:16 de las otras 10, un píxel distinto por anuncio, luego crear los otros 16.
+
+### Los 16 anuncios restantes v2 (26-oct-2026), todos en borrador, 9:16 primero + 4:5 para feed/explorar, descripción "Tienda oficial elvo.pe"
+P1 Lima (120255022347420401): bidones 120255022429100401 · familia ...429550401 · caja ...429790401 · instalas ...430230401 · resena ...430560401 (+ manana de prueba 120255022348520401)
+P2 Provincias (120255022347450401): manana 120255022430790401 · familia ...431340401 · caja ...431620401 · instalas ...431840401 · resena ...432000401 · retail ...432400401
+R1 Remarketing (120255022347520401): prueba 120255022432590401 · masvendido ...433100401 · maselegido ...433420401 · duracion ...433590401 · retail ...434430401
+Imágenes únicas por anuncio (píxel distinto) para Provincias; Lima y Remarketing usan los hashes originales. Hashes Provincias 4:5/9:16: manana 7430080a…/e3809653… · familia a076f97b…/f0ee51eb… · caja f1967a74…/796ebcf8… · instalas 8099337e…/189fa171… · resena 6cf2b1e8…/f06c26eb… · retail bbd347d8…/3a86b56d…
