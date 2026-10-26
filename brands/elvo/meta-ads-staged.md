@@ -83,3 +83,9 @@ PROVINCIAS `120255024127960401`: nino-turbia `120255024579260401`
 Imágenes: `brands/elvo/static-ads/elvo-nativo-v4/` (4:5 + 9:16). Hashes feed/story: alegria-cero 457d5d25…/7cf49b66…, alegria-listo 8be230b1…/fc6cfda2…, enojo-bidon f50bab1a…/c2221761…, enojo-hervir 88b576b0…/2c5c91af…, nino-turbia f6a6e851…/e1324ea2…, risa-espalda 0aa9cb05…/1be06e92…, risa-vida-social a67f50d2…/31b8c5f9….
 
 Claim El Niño: "El Niño Costero en alerta" (ENFEN comunicado 18-2026, 16-oct-2026; próximo comunicado 30-oct). Releer antes de publicar. Turbidez: claim verificado de products.json ("Reduce cloro, olores, sabores y turbidez").
+
+## Alivio — estructura en borrador (sin anuncios aún)
+
+Prospección `120255024856150401` (CBO US$25/día): LIMA `120255024860540401` (tope 20), PROVINCIAS `120255024860810401` (tope 10).
+Remarketing `120255024856310401` (CBO US$10/día): REMARKETING `120255024860920401`.
+Pendiente: imágenes (fal sin saldo 26-oct), copy aprobado, listar Alivio en Shopify (hoy "no listado"), landing `elvo.pe/products/elvo-bidon-16l`.
