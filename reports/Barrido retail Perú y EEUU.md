@@ -186,3 +186,34 @@ Irrigador bucal 30 mil a 60 mil+ (US$ 35-80); tensiómetro 20 mil a 90 mil+ (US$
 - **Garantía y soporte** de motores y baterías; devoluciones de bultos grandes.
 - **Claims:** cualquier "clínicamente probado" o "reduce placa" necesita informe de laboratorio del proveedor.
 - **Costos:** todos son estimados; hace falta cotización real de MOQ, plazos y precios.
+
+---
+
+# Anexo 3: reseñas locales frente a reseñas sindicadas (corrección del análisis)
+
+Se abrieron 116 fichas de Falabella Perú de 20 categorías y se contaron, en la muestra visible de cada una (hasta unas 45 opiniones), las reseñas "Publicado originalmente en…" (sindicadas de sitios de marca o de otros países) y las reseñas locales. La muestra es parcial; los totales son los que muestra Falabella.
+
+## Hallazgos
+
+1. **El conteo de reseñas no mide demanda en Perú.** Casi todas las fichas de marcas globales tienen el 100 % de la muestra sindicada: Waterpik (865), Dyson V8 (16.731), Quip (5.323), Philips Sonicare (1.111), afeitadora Philips (2.292), Braun y los robots Xiaomi y Dreame. Vienen de waterpik.com, dyson, philips.com y similares.
+2. **Vigahome también.** Su filtro de ducha de S/ 49 (353), la jarra (101) y el pack de repuestos (71) tienen 100 % de reseñas sindicadas de falabella.com (otro país). No son reseñas peruanas.
+3. **La ficha de Nativo en Falabella Perú muestra reseñas que no son de elvo·.** La calificación de 4,2 con 124 reseñas incluye comentarios como "Tamaño perfecto para la casa de mis erizos", "Excelente bloqueador", "Cámara exterior" y "Silicona lubricante", sindicados de falabella.com, falabella.com.co y sodimac.cl. El resumen automático de Falabella habla de visión nocturna, pan-tilt y código QR. La ficha parece vinculada a un catálogo de producto equivocado, de modo que esas reseñas no se pueden usar como prueba de Nativo.
+4. **Las reseñas locales (de clientes peruanos) son pocas y se concentran en genéricos baratos:**
+
+| Categoría | Ficha con más reseñas locales | Precio | Locales / total |
+|---|---|---|---|
+| Tensiómetro | Alphagomed U80EH | S/ 84 | 53 (todas locales) |
+| Protector de colchón | Hypno Home / Drimer | S/ 40-150 | 22 a 89 |
+| Afeitadora | Philips híbrida (vendedor local) | S/ 99-179 | 15 a 21 |
+| Aspiradora vertical | Thomas TH-1022C | S/ 179 | 22 |
+| Freidora de aire | Wurden 5,5 L | S/ 169 | 12 de 38 en la muestra, 11 en los últimos 3 meses |
+| Irrigador bucal | Tech Care | S/ 118-180 | 5 a 9, ninguna reciente |
+| Deshumidificador | Imaco | S/ 569-789 | 10 de 28, ninguna en los últimos 3 meses |
+| Cepillo eléctrico, robot aspirador, purificador de aire HEPA | — | — | Casi sin reseñas locales |
+
+## Lectura
+
+- La demanda local de irrigador, cepillo sónico, aspiradora inalámbrica de gama media, robot y purificador de aire **no está probada** con estos datos. Los precios de los genéricos locales son más bajos de lo supuesto: irrigador S/ 118-180 (no S/ 299), tensiómetro S/ 69-84 (no S/ 229).
+- Con precios locales realistas, la contribución cae: irrigador a S/ 199 deja +S/ 12 con CAC 65 (y a S/ 179, -S/ 1); tensiómetro a S/ 129 deja -S/ 33.
+- Falabella no muestra unidades vendidas. Para medir demanda real hacen falta datos de ventas de Mercado Libre, o una prueba pequeña de ventas.
+- **La calificación 4,2 / 124 reseñas en Falabella no debe usarse como prueba de Nativo** (ni en la web ni en anuncios) mientras la ficha no esté corregida.
