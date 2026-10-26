@@ -24,17 +24,10 @@ prueba 120255012426730401 · masvendido (4,2 · 124 reseñas Falabella, confirma
 - Videos del usuario como campaña aparte (la cuenta no tiene ninguno cargado).
 - Tamaño de las audiencias de remarketing (muy pequeñas) antes de publicar.
 
-## v2 (25-oct-2026): reconstrucción tras borrar las campañas v1
-Las campañas v1 (120255012416420401 / 120255012416560401) fueron borradas por el usuario; los anuncios v1 no se usan.
-Públicos nuevos: Carrito 60d 120255022346590401 · Checkout iniciado 60d 120255022346620401 · Interacción FB+IG 180d 120255022346680401 (existentes: Visitantes 30d 120255011194330401, Compradores 180d 120255011194460401).
-- Campaña **ELVO | Nativo | Compra web | Prospección v2** 120255022346780401 (CBO US$40): P1 Lima 35 km 120255022347420401 (tope US$32) · P2 Perú sin Lima 120255022347450401 (tope US$16).
-- Campaña **ELVO | Nativo | Compra web | Remarketing v2** 120255022346880401 (CBO US$15): R1 120255022347520401 (Carrito+Checkout 60d, Visitas 30d, Interacción 180d, sin compradores).
-- Anuncio de prueba: LIMA | manana v2 120255022348520401 (imágenes sin tubo: 4:5 390a2d13…, 9:16 bf42e6f6…; 9:16 primera, descripción "Tienda oficial elvo.pe").
-Decisiones: "Tienda oficial elvo.pe" en todos los anuncios; reseña con "Carmen S. · Trujillo" también en Lima.
-Pendiente: revisar el test en Reels/Historias/Feed, revisar zonas seguras y 9:16 de las otras 10, un píxel distinto por anuncio, luego crear los otros 16.
-
-### Los 16 anuncios restantes v2 (26-oct-2026), todos en borrador, 9:16 primero + 4:5 para feed/explorar, descripción "Tienda oficial elvo.pe"
-P1 Lima (120255022347420401): bidones 120255022429100401 · familia ...429550401 · caja ...429790401 · instalas ...430230401 · resena ...430560401 (+ manana de prueba 120255022348520401)
-P2 Provincias (120255022347450401): manana 120255022430790401 · familia ...431340401 · caja ...431620401 · instalas ...431840401 · resena ...432000401 · retail ...432400401
-R1 Remarketing (120255022347520401): prueba 120255022432590401 · masvendido ...433100401 · maselegido ...433420401 · duracion ...433590401 · retail ...434430401
-Imágenes únicas por anuncio (píxel distinto) para Provincias; Lima y Remarketing usan los hashes originales. Hashes Provincias 4:5/9:16: manana 7430080a…/e3809653… · familia a076f97b…/f0ee51eb… · caja f1967a74…/796ebcf8… · instalas 8099337e…/189fa171… · resena 6cf2b1e8…/f06c26eb… · retail bbd347d8…/3a86b56d…
+## v3 (26-oct-2026): estructura vigente, todo en BORRADOR (nada publicado)
+Dos conjuntos por público: Feed (4:5; FB feed + IG feed/explorar) e Historias+Reels (9:16; FB stories/reels + IG stories/reels). Cada anuncio = creativo de imagen única simple (asset_feed_spec descartado: IG ignora las reglas de personalización y error #1885998). Mejoras Advantage+ en OPT_OUT, descripción "Tienda oficial elvo.pe".
+- Campaña **Prospección v2** 120255022494570401 (CBO US$40): P1F Lima Feed 120255022495930401 (tope 2000c) · P1H Lima Historias+Reels 120255022496010401 (1200c) · P2F Perú sin Lima Feed 120255022496170401 (1000c) · P2H Perú sin Lima Historias+Reels 120255022496220401 (600c). Lima = círculo 35 km; 25-65; excluye compradores 120255011194460401.
+- Campaña **Remarketing v2** 120255022494740401 (CBO US$15): R1F 120255022496260401 · R1H 120255022496300401. Públicos: Carrito 60d 120255022346590401, Checkout 60d ...346620401, Visitantes 30d 120255011194330401, Interacción 180d ...346680401; excluye compradores.
+- 34 anuncios (sufijo "v2b"): Lima manana/bidones/familia/caja/instalas/resena × F/H (manana F 120255022558850401, H 120255022558900401); Provincias manana/familia/caja/instalas/resena/retail × F/H (hashes únicos por píxel); Remarketing prueba/masvendido/maselegido/duracion/retail × F/H.
+- Borrar a mano: campaña "ZZ PRUEBA TECNICA (borrar)" 120255022444030401 y las campañas v2 anteriores (120255022346780401 / 120255022346880401).
+Pendiente: revisión del usuario en Ads Manager y "publica" explícito (hijos primero, luego campañas, por ID); videos como campaña aparte.
