@@ -80,3 +80,47 @@ Lectura: en EE. UU. el cartucho de repuesto del filtro de ducha se vende tanto c
 - Ventas y tendencias en Mercado Libre Perú y Google Trends (bloqueados): exportación manual de resultados o capturas.
 - Cotizaciones reales de proveedores en Alibaba y 1688 (bloqueados): se piden por mensaje.
 - Comisión real de Falabella para el vendedor Importaciones Gad.
+
+---
+
+# Anexo: categorías vecinas (mismo público: hogares que cuidan la calidad de su casa)
+
+Barrido del 26-oct-2026 en Falabella, Sodimac y Amazon EE. UU. Los precios de venta y las reseñas son datos leídos; **los costos FOB y puestos en Lima son estimaciones mías, sin cotización de proveedor**. Supuestos: IGV 18 % incluido, 80 % de entrega, comisión ~3 % + S/ 0,5, arancel ~6 %, flete S/ 650 por m³, courier S/ 12,5 a S/ 28 y empaque S/ 3,5 a S/ 6 según el tamaño.
+
+## Qué hay en Perú y en EE. UU.
+
+| Categoría | Perú (Falabella / Sodimac) | EE. UU. (Amazon, comprados al mes) |
+|---|---|---|
+| Purificador de aire | Dyson S/ 3.600 (501 reseñas); Xiaomi S/ 1.149 (4). **Casi nada entre S/ 300 y S/ 900** | Levoit US$ 27-170: 20 mil a 50 mil+ |
+| Deshumidificador | Imaco S/ 569-789 (46, 33 y 22 reseñas); absorbentes Boleseca S/ 26-32 (65 y 37) | Absorbentes DampRid US$ 12-22: 10 mil a 40 mil+ |
+| Humidificador | Xiaomi S/ 219-229 (23); genérico S/ 47 (24) | US$ 21-36: 10 mil a 40 mil+ |
+| Esterilizador de biberones | Philips Avent S/ 284-289 (266); Tommee Tippee S/ 170; genérico S/ 99 (5) | US$ 45-360: 4 mil a 10 mil+ |
+| Fuente de agua para mascotas | S/ 60-138, 1 a 9 reseñas | US$ 20-30: 8 mil a 30 mil+ |
+| Sensor de calidad de aire / CO₂ | S/ 105-230, casi sin reseñas | Higrómetros US$ 10: 20 mil+ |
+| Hervidores, extractores, licuadoras, cafeteras | Saturado: Oster, Recco, Imaco con precios de S/ 30 a S/ 100 y cientos de reseñas | Muy grande, pero sin diferenciación |
+
+## Economía estimada por pedido en Lima (con CAC de S/ 65 y S/ 120)
+
+| Producto | Precio | Costo puesto (estimado) | Contribución antes de publicidad | Con CAC 65 | Con CAC 120 |
+|---|---|---|---|---|---|
+| Purificador de aire HEPA mediano | S/ 599 | S/ 194 | S/ 209 | **+S/ 144** | **+S/ 89** |
+| Purificador de aire HEPA compacto | S/ 449 | S/ 124 | S/ 171 | **+S/ 106** | **+S/ 51** |
+| Deshumidificador 12 L de compresor | S/ 649 | S/ 330 | S/ 126 | +S/ 61 | +S/ 6 |
+| Esterilizador/secador de biberones | S/ 229 | S/ 83 | S/ 64 | -S/ 1 | -S/ 56 |
+| Humidificador ultrasónico 4 L | S/ 169 | S/ 40 | S/ 59 | -S/ 6 | -S/ 61 |
+| Fuente de agua para mascotas | S/ 99 | S/ 29 | S/ 26 | -S/ 39 | -S/ 94 |
+
+## Lectura
+
+1. **Purificador de aire HEPA: es el mejor candidato.** Es el mismo público (cuida lo que respira como lo que bebe), el ticket de S/ 449-599 sobrevive al CAC de S/ 120, hay un hueco de precio en Perú entre Xiaomi (S/ 1.149) y los absorbentes de humedad, y sus filtros de repuesto dan la misma recompra que los cartuchos de agua. Hay venta cruzada natural: "agua y aire de tu casa".
+2. **Deshumidificador: segunda opción**, por la humedad de Lima (Imaco vende a S/ 569-789 con reseñas). Su margen es más fino, es pesado (flete y courier más caros) y hay riesgo de garantía; los absorbentes de S/ 26-32 pueden ir como complemento barato.
+3. **Esterilizador de biberones y humidificador: solo complemento o marketplace**, no anuncio directo.
+4. **Fuente para mascotas: descartada** (audiencia distinta y margen insuficiente).
+5. **Cocina pequeña (extractores, cafeteras, hervidores): descartada** por saturación de marcas grandes.
+
+## Qué habría que verificar antes de comprar
+
+- Cotizaciones reales de FOB, MOQ y plazos (los costos de arriba son supuestos).
+- Informe de laboratorio del proveedor (filtro HEPA, caudal de aire limpio) para sostener cualquier claim; no usar ozono.
+- Certificados eléctricos y de seguridad, garantía de los motores y logística de bultos de 3 a 10 kg.
+- Qué filtros de repuesto vende el fabricante y a qué costo, para confirmar la recompra.
