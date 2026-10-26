@@ -1,0 +1,24 @@
+{
+ "output_name": "elvo-nativo-ficha",
+ "brand": "elvo",
+ "product_name": "elvo· Nativo",
+ "audience": "lima-general",
+ "mode": "reference",
+ "reference_image": "brands/elvo/static-ads/ad-references/aqa-original-120-soles.png",
+ "quality": "high",
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/nativo-equipo-web.png"
+ ],
+ "aspect_ratio": "4:5",
+ "additional_aspect_ratios": [],
+ "variations": [
+  {
+   "slug": "ficha-whatsapp",
+   "angle": "ficha · estilo anuncio original · Nativo a WhatsApp",
+   "prompt": "4:5 vertical aspect ratio. A clean sales information card for Facebook, same STRUCTURE as the reference in Image 1 (a rounded pill title at the top, a big price line, an 'Incluye:' numbered list, a light grey band 'por qué con nosotros', a benefits row with four small line icons, and a real lifestyle photograph filling the right side), but fully re-branded: do NOT copy the reference's Facebook icon, the AQA name, or ANY certification badge or seal (no WQA, NSF, ISO, RoHS or similar logos). Use only the colors off-white #EEF3F7 background, near-black #050607 text, electric blue #3355FF accents and a deep green-teal #0A2A33 only for the title pill. Bold geometric grotesque sans-serif headings, clean regular sans-serif body, all text in Spanish exactly as given with correct accents. Image 2 shows the exact product: a white countertop water purifier with a chrome gooseneck spout, a grey droplet icon and the small 'elvo' wordmark; reproduce it faithfully, no redesign. The right side of the card is NOT a studio cutout: it is a real lifestyle photograph of this product standing on a kitchen countertop in a Peruvian home with its chrome spout pouring water into a clear glass, a leafy plant behind, soft natural window light, like the right-hand photo of Image 1 but with the elvo product. The photo fills the right ~45% of the card and bleeds to the card edge. Text to render exactly, nothing else: title pill \"Purificador de Agua · elvo· Nativo\"; price line \"Desde S/ 349\"; heading \"Incluye:\" then a numbered list: \"1. Purificador Nativo\", \"2. Núcleo PureCore de 18 meses\", \"3. Adaptador universal y derivador\", \"4. 30 días de prueba\"; light band heading \"¿Por qué elvo·?\" then three short lines: \"1. Envíos a todo el Perú\", \"2. Pago contraentrega\", \"3. Te avisamos por WhatsApp cuándo cambiar el núcleo\"; heading \"¿Por qué elegir Nativo?\" then four icons with labels: \"Retiene plomo y metales pesados*\", \"Lo instalas en 5 minutos\", \"Sin electricidad ni gasfitero\", \"Reduce cloro, olores y sabores\"; a blue pill \"Pídelo por WhatsApp\"; and one tiny footnote line \"*Según ficha técnica del núcleo PureCore.\". No subtitle under the title. Layout safety (strict): ALL text, icons, the title pill, the WhatsApp pill and the photo stay inside the central band between 15% and 85% of the frame height; the top 14% and the bottom 14% of the frame are plain empty off-white background with nothing in them. Compress the vertical spacing between sections so everything fits, and keep the four benefit icons with their labels, the pill and the footnote fully above the 85% line. Do NOT draw any logo or brand wordmark (it is added later). No exclamation marks, no stars, no discounts, no fake UI.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/nativo-equipo-web.png"
+   ]
+  }
+ ]
+}
