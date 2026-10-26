@@ -59,3 +59,16 @@ Reemplaza los IDs anteriores (borrados a mano en Ads Manager).
 - Ad set REMARKETING `120255023623730401`: prueba `120255023651480401`, masvendido `120255023653170401`, maselegido `120255023655590401`, duracion `120255023657270401`, retail `120255023659010401`
 
 Formato: asset_feed_spec con img_feed (1200x628) -> FB feed / IG stream+explore y img_story (1080x1920) -> FB/IG story + reels. Nada publicado; esperar "publica".
+
+## Estado vigente v4 (4:5 feed + 9:16 stories, como N2/C1v2/C9v3; solo FB + IG) — BORRADORES
+
+Reemplaza los IDs anteriores (1.91:1, borrados a mano). Feed = hashes `v3-*` (1080x1350), stories = `s-*`/`manana_v2_916`/`retail_rmk_9x16` (1080x1920).
+
+**Prospección** `120255024123900401` (CBO US$40/día)
+- LIMA `120255024127880401` (tope 32): manana `120255024128990401`, bidones `120255024130280401`, familia `120255024130800401`, caja `120255024130950401`, instalas `120255024131390401`, resena `120255024131990401`
+- PROVINCIAS `120255024127960401` (tope 16): manana `120255024132830401`, familia `120255024133360401`, caja `120255024133560401`, instalas `120255024134210401`, resena `120255024134470401`, retail `120255024134770401`
+
+**Remarketing** `120255024124000401` (CBO US$15/día)
+- REMARKETING `120255024128020401`: prueba `120255024135190401`, masvendido `120255024135530401`, maselegido `120255024135820401`, duracion `120255024137070401`, retail `120255024137570401`
+
+Nada publicado; esperar "publica".
