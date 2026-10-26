@@ -111,3 +111,10 @@ Auditoría de zona segura (Feed recorta ~10 % arriba y abajo): las 5 fichas tien
 
 Mensajes precargados previstos: "Hola, quiero el Nativo 18 meses (S/ 349)" · "…Nativo 3 años (S/ 389)" · "…Nativo 6 años (S/ 489)" · "…Alivio 16 (S/ 159)" · "…Alivio 22 (S/ 198)". Respuestas rápidas: ¿Cuánto cuesta? / ¿Cómo se instala? / ¿Llegan a mi ciudad? / Quiero pagar al recibir.
 Disclaimer de Nativo (metales pesados): "Según la ficha técnica del núcleo PureCore" va en el texto del anuncio, no en la imagen.
+
+### WhatsApp — borrador creado (26-oct-2026, SIN publicar)
+Campaña `120255038541140401` "ELVO | WhatsApp | Conversaciones | Feed FB" (OUTCOME_ENGAGEMENT, CBO US$11/día ≈ S/ 41 al tipo de cambio ~3.7; objetivo conversaciones, WhatsApp 51929190100, Página 383158558224028).
+- Conjunto **Nativo** `120255038543220401` (tope US$7/día): 18 meses `120255038544510401` · 3 años `120255038545190401` · 6 años `120255038545710401`.
+- Conjunto **Alivio** `120255038543270401` (tope US$5/día): Alivio 16 `120255038546350401` · Alivio 22 `120255038546510401`.
+Targeting: Perú, 25-65 (sugerencia Advantage+), excluye compradores web `120255011194460401`. Ubicación: solo Facebook Feed (`publisher_platforms:["facebook"]`, `facebook_positions:["feed"]`). Creativos: ficha 4:5 sin logo, CTA WHATSAPP_MESSAGE, mensaje precargado por producto/plan.
+Pendiente antes de publicar: bot de YaVendio con precios nuevos; confirmar que el 929 190 100 está conectado a la Página; publicar solo con "publica".
