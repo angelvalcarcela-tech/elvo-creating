@@ -33,3 +33,11 @@ El usuario borró todo lo anterior y pidió cargar de nuevo con un solo conjunto
 - 17 anuncios 4:5: Lima manana/bidones/familia/caja/instalas/resena (6) · Provincias manana/familia/caja/instalas/resena/retail (6, hashes únicos por píxel) · Remarketing prueba/masvendido/maselegido/duracion/retail (5).
 - UTM: utm_campaign=nativo_lima | nativo_provincias | nativo_remarketing, utm_content=slug.
 Pendiente: revisión del usuario en Ads Manager y "publica" explícito (conjuntos y anuncios primero, luego campañas, por ID); videos como campaña aparte.
+
+## Estado actual (26-oct-2026): versión original con feed 1:1 + Historias/Reels 9:16, todo en BORRADOR
+Meta exige 1,91:1 para Feed de Facebook, así que las imágenes de feed se regeneraron en 1:1 (1080×1080) con generate-reformat.py.
+- Campaña **Prospección (Lima + Provincias)** 120255022971680401 (US$40): LIMA 120255022973540401 (tope US$32), PROVINCIAS 120255022973820401 (tope US$16).
+- Campaña **Remarketing** 120255022972040401 (US$15): conjunto 120255022973860401 (Carrito 60d, Checkout 60d, Visitas 30d, Interacción 180d; sin compradores).
+- Anuncios "… | 1x1" (17): feed 1:1 (img_feed) + 9:16 (img_story); ubicaciones solo Facebook e Instagram.
+- Hashes 1:1: manana 4bf4d16a…, bidones 5a5bc7d3…, familia e2bc81d9…, caja f01c2fc9…, instalas 5f84ae7d…, resena 7181ac01…, prueba afc7867a…, masvendido 399ea79b…, maselegido 00985198…, duracion 0dfaf31e…, retail 90d8881f….
+- Los anuncios viejos sin "1x1" (imagen 4:5) deben borrarse a mano antes de publicar.
