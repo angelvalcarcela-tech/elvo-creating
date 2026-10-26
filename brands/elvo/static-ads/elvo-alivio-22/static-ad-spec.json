@@ -1,0 +1,33 @@
+{
+ "output_name": "elvo-alivio-22",
+ "brand": "elvo",
+ "product_name": "elvo· Alivio 22",
+ "audience": "lima-general",
+ "mode": "text",
+ "quality": "high",
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/alivio-22-galeria-01.png"
+ ],
+ "aspect_ratio": "4:5",
+ "additional_aspect_ratios": [
+  "9:16"
+ ],
+ "variations": [
+  {
+   "slug": "orgullo",
+   "angle": "22 L · para toda la casa",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural light, shallow depth of field, no stock-photo look. Image 1 shows the exact product (a white-based gravity water purifier with a large transparent light-blue tinted rectangular tank on a white base, a smaller upper tank with a white dome filter inside, a visible multi-layer filter cartridge, a small chrome spigot at the front and the small 'elvo' wordmark on the base): reproduce it faithfully, keep it clearly visible, do not redesign, recolor or relabel it, and IGNORE any text pills or labels that appear in the reference photo. It has NO cable, NO hose and NO connection to the tap. Scene: a proud confident woman standing beside the tall product on a bright kitchen counter, a family of four softly out of focus behind her, warm daylight.  This ad has exactly these text elements: the headline \"Alivio 22. Agua para toda la casa.\" and one blue pill below the headline reading \"S/ 198 · Pago al recibir\"; nothing else, no subtitle, no body text, no footnotes. Typography: bold geometric grotesque sans-serif headline in near-black #050607 (or white over dark areas), left-aligned, high contrast; pills are fully rounded with white text on electric blue #3355FF. No exclamation marks, no extra text, no fake UI, no countdowns, no logos. Facebook Feed crop safe layout: the headline, any badge or pill, the product and any person's face must sit inside the central band between 18% and 84% of the frame height. The top 16% and the bottom 18% of the frame show ONLY background scenery (wall, ceiling, shelf, counter, floor): no text, no logo, no badge, no product edge, no face. The headline's first line begins at 20% of the frame height or lower. Do NOT draw any logo or brand wordmark on the picture (it is added later) and no footnote text. Keep the same composition style otherwise.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-22-galeria-01.png"
+   ]
+  },
+  {
+   "slug": "oferta",
+   "angle": "22 L · venta directa",
+   "prompt": "4:5 vertical aspect ratio. Photorealistic advertising photograph with clean text overlay, shot like a real phone-and-mirrorless candid in an everyday middle-class Peruvian home, natural light, shallow depth of field, no stock-photo look. Image 1 shows the exact product (a white-based gravity water purifier with a large transparent light-blue tinted rectangular tank on a white base, a smaller upper tank with a white dome filter inside, a visible multi-layer filter cartridge, a small chrome spigot at the front and the small 'elvo' wordmark on the base): reproduce it faithfully, keep it clearly visible, do not redesign, recolor or relabel it, and IGNORE any text pills or labels that appear in the reference photo. It has NO cable, NO hose and NO connection to the tap. Scene: hero shot of the tall product on a bright kitchen counter with a glass of water beside it, warm morning light, a plant behind.  This ad has exactly these text elements: the headline \"Tu purificador de bidón de 22 litros, S/ 198.\" and one blue pill below the headline reading \"Pago al recibir\"; nothing else, no subtitle, no body text, no footnotes. Typography: bold geometric grotesque sans-serif headline in near-black #050607 (or white over dark areas), left-aligned, high contrast; pills are fully rounded with white text on electric blue #3355FF. No exclamation marks, no extra text, no fake UI, no countdowns, no logos. Facebook Feed crop safe layout: the headline, any badge or pill, the product and any person's face must sit inside the central band between 18% and 84% of the frame height. The top 16% and the bottom 18% of the frame show ONLY background scenery (wall, ceiling, shelf, counter, floor): no text, no logo, no badge, no product edge, no face. The headline's first line begins at 20% of the frame height or lower. Do NOT draw any logo or brand wordmark on the picture (it is added later) and no footnote text. Keep the same composition style otherwise.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-22-galeria-01.png"
+   ]
+  }
+ ]
+}

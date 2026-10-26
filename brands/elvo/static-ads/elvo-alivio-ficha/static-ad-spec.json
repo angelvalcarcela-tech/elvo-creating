@@ -1,0 +1,32 @@
+{
+ "output_name": "elvo-alivio-ficha",
+ "brand": "elvo",
+ "product_name": "elvo· Alivio",
+ "audience": "lima-general",
+ "mode": "reference",
+ "reference_image": "brands/elvo/static-ads/ad-references/aqa-original-120-soles.png",
+ "quality": "high",
+ "product_images": [
+  "brands/elvo/brand-identity/product-images/alivio-equipo.png"
+ ],
+ "aspect_ratio": "4:5",
+ "additional_aspect_ratios": [],
+ "variations": [
+  {
+   "slug": "ficha-16",
+   "angle": "ficha · estilo anuncio original actualizado",
+   "prompt": "4:5 vertical aspect ratio. A clean sales information card for Facebook, same STRUCTURE as the reference in Image 1 (a rounded pill title at the top, a big price line, an 'Incluye:' numbered list, a light grey band 'por qué con nosotros', a benefits row with four small line icons, and the product photo filling the right side), but fully re-branded: do NOT copy the reference's Facebook icon, the AQA name, the 'AQA' wording, or ANY certification badge or seal (no WQA, NSF, ISO, RoHS or similar logos). Use only the colors off-white #EEF3F7 background, near-black #050607 text, electric blue #3355FF accents and a deep green-teal #0A2A33 only for the title pill. Bold geometric grotesque sans-serif headings, clean regular sans-serif body, all text in Spanish exactly as given with correct accents. Image 2 is the exact product photo for the right side: reproduce it faithfully, no redesign. Text to render exactly, nothing else: title pill \"Purificador de Agua · Alivio 16\"; price line \"Precio: S/ 159\"; heading \"Incluye:\" then a numbered list: 1. Purificador de 16 litros; 2. Filtro interno incluido; 3. Gotas de pH; 4. Garantía de 6 meses; light band heading \"¿Por qué elvo·?\" then three short lines: \"1. Envíos a todo el Perú\", \"2. Pago contraentrega\", \"3. 30 días de prueba\"; heading \"¿Por qué elegir Alivio?\" then four icons with labels: \"Sin electricidad\", \"Se llena con una jarra\", \"7 etapas de filtrado\", \"Fácil de armar\". Subtitle line under the title: \"Para 1 o 2 personas\". Layout safety: all text and the product stay inside the central band between 12% and 88% of the frame height; the top 10% and bottom 10% are plain off-white background only. Do NOT draw any logo or brand wordmark (it is added later). No exclamation marks, no stars, no discounts, no fake UI.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-equipo.png"
+   ]
+  },
+  {
+   "slug": "ficha-22",
+   "angle": "ficha · estilo anuncio original actualizado",
+   "prompt": "4:5 vertical aspect ratio. A clean sales information card for Facebook, same STRUCTURE as the reference in Image 1 (a rounded pill title at the top, a big price line, an 'Incluye:' numbered list, a light grey band 'por qué con nosotros', a benefits row with four small line icons, and the product photo filling the right side), but fully re-branded: do NOT copy the reference's Facebook icon, the AQA name, the 'AQA' wording, or ANY certification badge or seal (no WQA, NSF, ISO, RoHS or similar logos). Use only the colors off-white #EEF3F7 background, near-black #050607 text, electric blue #3355FF accents and a deep green-teal #0A2A33 only for the title pill. Bold geometric grotesque sans-serif headings, clean regular sans-serif body, all text in Spanish exactly as given with correct accents. Image 2 is the exact product photo for the right side: reproduce it faithfully, no redesign. Text to render exactly, nothing else: title pill \"Purificador de Agua · Alivio 22\"; price line \"Precio: S/ 198\"; heading \"Incluye:\" then a numbered list: 1. Purificador de 22 litros; 2. Filtro interno incluido; 3. Gotas de pH; 4. Garantía de 6 meses; light band heading \"¿Por qué elvo·?\" then three short lines: \"1. Envíos a todo el Perú\", \"2. Pago contraentrega\", \"3. 30 días de prueba\"; heading \"¿Por qué elegir Alivio?\" then four icons with labels: \"Sin electricidad\", \"Se llena con una jarra\", \"7 etapas de filtrado\", \"Fácil de armar\". Subtitle line under the title: \"Para 3 o más personas\". Layout safety: all text and the product stay inside the central band between 12% and 88% of the frame height; the top 10% and bottom 10% are plain off-white background only. Do NOT draw any logo or brand wordmark (it is added later). No exclamation marks, no stars, no discounts, no fake UI.",
+   "product_images": [
+    "brands/elvo/brand-identity/product-images/alivio-22-galeria-01.png"
+   ]
+  }
+ ]
+}
