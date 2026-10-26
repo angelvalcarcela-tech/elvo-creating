@@ -124,3 +124,65 @@ Barrido del 26-oct-2026 en Falabella, Sodimac y Amazon EE. UU. Los precios de ve
 - Informe de laboratorio del proveedor (filtro HEPA, caudal de aire limpio) para sostener cualquier claim; no usar ozono.
 - Certificados eléctricos y de seguridad, garantía de los motores y logística de bultos de 3 a 10 kg.
 - Qué filtros de repuesto vende el fabricante y a qué costo, para confirmar la recompra.
+
+---
+
+# Anexo 2: necesidades básicas o cercanas, sin estacionalidad
+
+Barrido del 26-oct-2026 de 39 categorías en Falabella y Sodimac (1.228 resultados relevantes) y 15 en Amazon EE. UU. Los precios y reseñas son datos leídos. **Los costos FOB, puestos en Lima y márgenes son estimaciones mías sin cotización.** Mismos supuestos de los anexos anteriores (80 % de entrega, IGV 18 % incluido, comisión ~3 % + S/ 0,5, courier S/ 12,5 a S/ 20, empaque S/ 3,5 a S/ 5).
+
+## Lo que se vende en Perú (reseñas totales entre los resultados relevantes)
+
+| Categoría | Precio mediana | Reseñas | Referencia líder |
+|---|---|---|---|
+| Aspiradoras portátiles e inalámbricas | S/ 464 | 24.179 | Dyson V8 S/ 2.700 (16.725 reseñas) |
+| Sábanas | S/ 90 | 7.741 | Ambienta S/ 29,90 (1.116) |
+| Cepillos eléctricos dentales | S/ 159 | 7.563 | Quip genérico S/ 159 (5.323); Philips Sonicare S/ 218 (1.111) |
+| Afeitadoras eléctricas | S/ 131 | 2.607 | Philips S/ 239 (2.292) |
+| Freidoras de aire | S/ 349 | 2.095 | Ninja S/ 649 (318); Wurden S/ 150-169 (233-272) |
+| **Irrigadores bucales** | S/ 184 | 1.870 | **Waterpik S/ 550-712 (865)** |
+| Power banks | S/ 109 | 1.568 | Xiaomi S/ 39-69 (274) |
+| Planchas de vapor | S/ 109 | 1.555 | Thomas S/ 109-129 (216-234) |
+| Protectores de colchón | S/ 87 | 888 | Drom S/ 90-140 (357) |
+| Tensiómetros | S/ 146 | 206 | Genéricos S/ 70-85 (53) |
+| Robots aspiradores | S/ 949 | 161 | Dreame S/ 2.400 (41) |
+| Oxímetros / termómetros infrarrojos | S/ 77 / S/ 82 | 54 / 82 | Genéricos S/ 40-85 (pocas reseñas) |
+| Detectores de humo | S/ 49 | 23 | Dairu S/ 49,90 (12) |
+
+## Demanda mensual en EE. UU. (Amazon, "comprados el último mes")
+
+Irrigador bucal 30 mil a 60 mil+ (US$ 35-80); tensiómetro 20 mil a 90 mil+ (US$ 20-40); cepillo eléctrico 40 mil a 50 mil+ (US$ 40) y sus cabezales de repuesto 30 mil+ (US$ 9,59 por 12); oxímetro 20 mil a 30 mil+ (US$ 12-20); termómetro infrarrojo 20 mil a 60 mil+ (US$ 10-32); protector de colchón 20 mil a 30 mil+ (US$ 21-36); freidora de aire 10 mil a 30 mil+; robot aspirador 7 mil a 10 mil+; detectores de humo y CO 10 mil+ (US$ 22-32).
+
+## Economía estimada por pedido en Lima (precio objetivo propio, costo puesto estimado)
+
+| Producto | Precio objetivo | Costo puesto | Contribución antes de publicidad | Con CAC 65 | Con CAC 120 |
+|---|---|---|---|---|---|
+| Robot aspirador | S/ 799 | S/ 317 | S/ 243 | **+S/ 178** | **+S/ 123** |
+| Aspiradora inalámbrica de mano | S/ 399 | S/ 122 | S/ 138 | **+S/ 73** | **+S/ 18** |
+| Irrigador bucal inalámbrico | S/ 299 | S/ 45 | S/ 143 | **+S/ 78** | **+S/ 23** |
+| Irrigador bucal inalámbrico | S/ 229 | S/ 45 | S/ 97 | +S/ 32 | -S/ 23 |
+| Tensiómetro de brazo | S/ 229 | S/ 45 | S/ 97 | +S/ 32 | -S/ 23 |
+| Cepillo sónico + 4 cabezales | S/ 189 | S/ 29 | S/ 84 | +S/ 19 | -S/ 36 |
+| Kit salud (termómetro + oxímetro + botiquín) | S/ 179 | S/ 39 | S/ 69 | +S/ 4 | -S/ 51 |
+| Almohada viscoelástica antiácaros (par) | S/ 169 | S/ 52 | S/ 49 | -S/ 16 | -S/ 71 |
+| Freidora de aire 5 L | S/ 249 | S/ 118 | S/ 43 | -S/ 22 | -S/ 77 |
+| Protector de colchón | S/ 119 | S/ 23 | S/ 43 | -S/ 22 | -S/ 77 |
+| Plancha de vapor | S/ 119 | S/ 43 | S/ 24 | -S/ 41 | -S/ 96 |
+| Detector de humo / CO | S/ 79 | S/ 16 | S/ 22 | -S/ 43 | -S/ 98 |
+| Termómetro infrarrojo | S/ 99 | S/ 15 | S/ 36 | -S/ 29 | -S/ 84 |
+| Oxímetro | S/ 89 | S/ 14 | S/ 30 | -S/ 35 | -S/ 90 |
+
+## Lectura
+
+- **Con margen para anuncios:** irrigador bucal inalámbrico (a S/ 299, frente a Waterpik a S/ 550-712), aspiradora inalámbrica (la categoría con más reseñas en Perú) y, con más riesgo de garantía, el robot aspirador.
+- **Con demanda alta y recompra, pero margen ajustado como producto solo:** cepillo eléctrico sónico (los cabezales son consumible, como tus cartuchos), tensiómetro.
+- **Mejor como complemento o regalo:** oxímetro, termómetro, detector de humo, protector de colchón, plancha. Un kit de salud del hogar puede armarse con termómetro, oxímetro y botiquín.
+- **Descartadas:** freidora de aire y sábanas (mercado saturado con marcas grandes y precios de S/ 30 a S/ 170).
+
+## Riesgos a confirmar antes de ordenar
+
+- **Salud:** tensiómetro, oxímetro, termómetro y quizá el irrigador pueden ser dispositivos médicos con registro sanitario de DIGEMID; confirmar categoría y registro antes de importar.
+- **Baterías de litio** (aspiradoras, cepillos, irrigadores, robots): exigen UN38.3 y MSDS para el transporte marítimo.
+- **Garantía y soporte** de motores y baterías; devoluciones de bultos grandes.
+- **Claims:** cualquier "clínicamente probado" o "reduce placa" necesita informe de laboratorio del proveedor.
+- **Costos:** todos son estimados; hace falta cotización real de MOQ, plazos y precios.
