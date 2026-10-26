@@ -1,0 +1,10 @@
+{
+  "output_name": "alivio-medidor-ph",
+  "mode": "text",
+  "quality": "medium",
+  "aspect_ratio": "1:1",
+  "product_images": [],
+  "variations": [
+    {"slug": "var-1", "angle": "regalo medidor de pH", "prompt": "1:1 square aspect ratio. Create: a calm editorial product-gift image for an e-commerce product page. Background: flat warm off-white alabaster (#EAE7E0), no gradients. Centered subject on a pale limestone surface: a small clear glass dropper bottle with a black rubber dropper cap and a plain white label with no readable text, next to a clear drinking glass of water with a faint glacier-teal tint (#82C3C4) at the rim, and a small 2x4 grid-less row of five tiny round color swatches (pale yellow to soft green to teal) lying on the stone. Soft low-contrast side light, shallow depth of field, one subject, generous negative space. Typography: at the top left, in a large light-weight high-contrast serif in graphite (#1C1E1C), the exact text \"Medidor de pH gratis\" on one line; below it in a clean neutral grotesque sans-serif in stone grey (#9A948A) the exact text \"con tu compra de Alivio\". At the bottom left a small dark slate (#2B2E2D) pill with bone-white (#F3F1EC) uppercase tracked grotesque text \"DE REGALO\". Thin 1px glacier-teal hairline under the headline. No exclamation marks, no extra text, no stars or ratings, no countdowns, no prices, no other badges, no logos. Safe zones: keep the top 10% and bottom 10% of the frame free from text, logos, icons, buttons and UI elements."}
+  ]
+}
