@@ -1,0 +1,14 @@
+{
+ "output_name": "alivio-galeria-elimina",
+ "mode": "text",
+ "quality": "medium",
+ "aspect_ratio": "1:1",
+ "product_images": [],
+ "variations": [
+  {
+   "slug": "var-1",
+   "angle": "elimina",
+   "prompt": "1:1 square aspect ratio. Text-led infographic, no product photo. Background soft pale blue-grey (#E3EAF6). Small royal blue uppercase tracked label at the top left \"LABORATORIO\", then a large bold navy headline \"Probado en laboratorio\". Below, three equal rounded white cards in a column, each with a very large bold royal blue number and a navy line under it, with a tiny uppercase grey source line at the bottom of the card: card 1 number \">99.99%\", text \"de E. coli, S. aureus y E. faecalis\", source \"SGS · 2021\"; card 2 number \">99.99%\", text \"de coliformes totales\", source \"SGS · 2023\"; card 3 number \"Sin plomo ni cadmio\", text \"detectados en la migración de los materiales\", source \"LCS · 2021\". At the bottom in small grey text exactly: \"Informes de SGS y LCS con agua preparada en laboratorio. En tu casa el resultado depende de tu agua de entrada y del cambio oportuno de los filtros.\" Visual style: soft pale blue-grey studio background (#E3EAF6) with a very gentle light gradient only behind the product, deep navy (#010A21) text in a modern geometric sans-serif with tight letter spacing, bright royal blue (#3355FF) accents, white rounded pills, generous spacing, clean e-commerce look. No exclamation marks, no stars or ratings, no prices, no countdowns, no logos other than the one printed on the real product, no extra text beyond the quoted strings. Keep the top 6% and bottom 6% of the frame free of text. "
+  }
+ ]
+}

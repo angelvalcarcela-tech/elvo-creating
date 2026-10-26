@@ -1,0 +1,18 @@
+{
+ "output_name": "alivio-galeria-caja22",
+ "mode": "text",
+ "quality": "medium",
+ "aspect_ratio": "1:1",
+ "product_images": [
+  "/tmp/claude-0/-home-user-elvo-creating/277900b6-5a12-5c8a-8dfe-ea4cc0880791/scratchpad/refs/h22.png",
+  "/tmp/claude-0/-home-user-elvo-creating/277900b6-5a12-5c8a-8dfe-ea4cc0880791/scratchpad/refs/explo.png",
+  "/home/user/elvo-creating/brands/elvo/static-ads/alivio-medidor-ph/alivio-medidor-ph-var-1_v1.png"
+ ],
+ "variations": [
+  {
+   "slug": "var-1",
+   "angle": "caja22",
+   "prompt": "1:1 square aspect ratio. Image 1 is the real Alivio 22 purifier photo, Image 2 is the real exploded view of its three filters, Image 3 is the pH drops gift bottle. Reproduce the purifier and the filters faithfully from these references, do not redesign or relabel them. Create a clean flat-lay inventory image titled at the top left in large bold navy text \"En tu caja\". Show, arranged neatly on a pale blue surface with generous spacing, six numbered items each with a small royal blue circle containing its number and a short label in navy text: 1 the full purifier (largest, left) labeled \"Alivio 22\"; 2 the white ceramic filter labeled \"Filtro cerámico\"; 3 the cylindrical multilayer filter labeled \"Filtro multietapa\"; 4 the round white stone disc filter labeled \"Piedra mineral\"; 5 a small clear glass dropper bottle with black rubber cap and plain white label, labeled \"Medidor de pH · de regalo\"; 6 a small closed paper booklet with a plain cover, labeled \"Manual\". All labels use exactly these strings. Visual style: soft pale blue-grey studio background (#E3EAF6) with a very gentle light gradient only behind the product, deep navy (#010A21) text in a modern geometric sans-serif with tight letter spacing, bright royal blue (#3355FF) accents, white rounded pills, generous spacing, clean e-commerce look. No exclamation marks, no stars or ratings, no prices, no countdowns, no logos other than the one printed on the real product, no extra text beyond the quoted strings. Keep the top 6% and bottom 6% of the frame free of text. "
+  }
+ ]
+}

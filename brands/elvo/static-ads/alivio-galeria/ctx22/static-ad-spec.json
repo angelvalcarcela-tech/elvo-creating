@@ -1,0 +1,16 @@
+{
+ "output_name": "alivio-galeria-ctx22",
+ "mode": "text",
+ "quality": "medium",
+ "aspect_ratio": "1:1",
+ "product_images": [
+  "/tmp/claude-0/-home-user-elvo-creating/277900b6-5a12-5c8a-8dfe-ea4cc0880791/scratchpad/refs/h22.png"
+ ],
+ "variations": [
+  {
+   "slug": "var-1",
+   "angle": "ctx22",
+   "prompt": "1:1 square aspect ratio. Image 1 is the real Alivio 22 purifier photo: reproduce the product faithfully, do not redesign or relabel it. Lifestyle scene: the purifier standing on a bright modern kitchen counter near a window with soft daylight, a glass of water and a pitcher beside it, a blurred warm kitchen in the background. Overlay a headline at the top left in bold navy text \"Agua de reserva en casa\" and three white rounded callout pills with a small blue line icon each, stacked on the left side with the exact strings \"Se llena con una jarra\", \"Sin electricidad\", \"Sin conexión al caño\". Visual style: soft pale blue-grey studio background (#E3EAF6) with a very gentle light gradient only behind the product, deep navy (#010A21) text in a modern geometric sans-serif with tight letter spacing, bright royal blue (#3355FF) accents, white rounded pills, generous spacing, clean e-commerce look. No exclamation marks, no stars or ratings, no prices, no countdowns, no logos other than the one printed on the real product, no extra text beyond the quoted strings. Keep the top 6% and bottom 6% of the frame free of text. "
+  }
+ ]
+}
