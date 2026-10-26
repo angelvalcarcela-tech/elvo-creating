@@ -125,3 +125,11 @@ Hashes: Nativo reseñas `b986b5c6f62fe1cc006204fd98181769` · Nativo dudas `8d2f
 - Conjunto Alivio `120255038543270401`: miedo `120255038628590401` · reseña real `120255038628830401`.
 Con esto: Nativo 5 anuncios (3 fichas + 2), Alivio 4 (2 fichas + 2). Con US$11/día conviene dejar activos como máximo ~3 por conjunto al inicio; los demás en pausa.
 La imagen de miedo v2 tiene el titular bajado por script (leve mancha clara donde estaba el texto original).
+
+### WhatsApp — El Niño (datos de Gestión 19-oct-2026), 4 anuncios más en borrador, SIN publicar
+Cierre "Que no te pase." + nombre completo "Bidón Alivio 16 Litros · S/ 159" (pedido del dueño: usar siempre el nombre completo en los ads de Alivio).
+Hashes: 2017 v4 `620aa21141d71ee38a7ad9261317decb` · 7 millones v3 `322f169b88e347047f1ff4f4eb3faa69` · río de Lima v3 `5da65dc5952833bce52a28a2abe560c0` · turbidez Nativo v3 `f725ded5bfd762b4e69fabd5f647607f`.
+- Conjunto Alivio `120255038543270401`: El Niño 2017 `120255038893950401` · 7 millones `120255038895230401` · el río de Lima `120255038895750401`.
+- Conjunto Nativo `120255038543220401`: turbidez `120255038895960401`.
+Totales en borrador: Alivio 7 anuncios (2 fichas, miedo, reseña, 3 El Niño); Nativo 6 (3 fichas, reseñas, dudas, turbidez). Con US$11/día activar como máximo ~3 por conjunto.
+Pendiente: los anuncios de fichas de Alivio (16 y 22) aún usan "Alivio 16"/"Alivio 22" como titular y en la imagen; cambiar al nombre completo si el dueño lo confirma. Verificar cifras de Gestión antes de publicar. Datos citados: Atarjea cerró compuertas hasta 6 días en 2017; casi 7 millones (estimación de Gestión); 53 puntos críticos de huaico en la cuenca del Rímac (de 362 en Lima).
