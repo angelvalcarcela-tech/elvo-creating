@@ -46,3 +46,16 @@ Meta exige 1,91:1 para Feed de Facebook, así que las imágenes de feed se regen
 Anuncios "… | feed 1.91" (17) en los conjuntos LIMA 120255023215620401, PROVINCIAS 120255023215750401 y REMARKETING 120255023215890401 (campañas 120255023213110401 y 120255023213290401). Feed 1200×628 + Historias/Reels 9:16, solo Facebook e Instagram.
 Hashes 1,91:1: manana 012facac…, bidones 0eac4842…, familia e353a9f1…, caja 9c77baec…, instalas 1951e86f…, resena b4214235…, prueba 35cd5bf9…, masvendido 9adb2cf8…, maselegido 58843086…, duracion 596e0d36…, retail 7a69ce24….
 Borrar a mano: anuncios de prueba (PRUEBA…), el conjunto "ZZ PRUEBA | Solo Facebook Feed" y cualquier anuncio sin "feed 1.91".
+
+## Estado vigente (reconstruido, 1.91:1 feed + 9:16 stories, solo FB + IG) — BORRADORES
+
+Reemplaza los IDs anteriores (borrados a mano en Ads Manager).
+
+**Campaña Prospección** `120255023618650401` (CBO US$40/día)
+- Ad set LIMA `120255023623070401` (tope 32/día): manana `120255023627220401`, bidones `120255023630140401`, familia `120255023632740401`, caja `120255023634670401`, instalas `120255023635950401`, resena `120255023638100401`
+- Ad set PROVINCIAS `120255023623370401` (tope 16/día): manana `120255023640060401`, familia `120255023642210401`, caja `120255023643620401`, instalas `120255023644630401`, resena `120255023647430401`, retail `120255023649530401`
+
+**Campaña Remarketing** `120255023619100401` (CBO US$15/día)
+- Ad set REMARKETING `120255023623730401`: prueba `120255023651480401`, masvendido `120255023653170401`, maselegido `120255023655590401`, duracion `120255023657270401`, retail `120255023659010401`
+
+Formato: asset_feed_spec con img_feed (1200x628) -> FB feed / IG stream+explore y img_story (1080x1920) -> FB/IG story + reels. Nada publicado; esperar "publica".
