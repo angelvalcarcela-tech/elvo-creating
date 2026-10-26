@@ -72,3 +72,14 @@ Reemplaza los IDs anteriores (1.91:1, borrados a mano). Feed = hashes `v3-*` (10
 - REMARKETING `120255024128020401`: prueba `120255024135190401`, masvendido `120255024135530401`, maselegido `120255024135820401`, duracion `120255024137070401`, retail `120255024137570401`
 
 Nada publicado; esperar "publica".
+
+## Ronda v5 — reacciones (enojo/alegría/risa) + El Niño (Nativo) — BORRADORES sobre campañas ya publicadas
+
+Las campañas v4 fueron publicadas por el dueño (activas, US$0 gastado al 26-oct). Estos 8 anuncios están en borrador (`action: add`, VALIDATED) dentro de los conjuntos existentes; no están al aire hasta publicar los cambios.
+
+LIMA `120255024127880401`: enojo-bidon `120255024567560401`, enojo-hervir `120255024571300401`, alegria-listo `120255024572500401`, alegria-cero `120255024573950401`, risa-vida-social `120255024576400401`, risa-espalda `120255024577290401`, nino-turbia `120255024578370401`
+PROVINCIAS `120255024127960401`: nino-turbia `120255024579260401`
+
+Imágenes: `brands/elvo/static-ads/elvo-nativo-v4/` (4:5 + 9:16). Hashes feed/story: alegria-cero 457d5d25…/7cf49b66…, alegria-listo 8be230b1…/fc6cfda2…, enojo-bidon f50bab1a…/c2221761…, enojo-hervir 88b576b0…/2c5c91af…, nino-turbia f6a6e851…/e1324ea2…, risa-espalda 0aa9cb05…/1be06e92…, risa-vida-social a67f50d2…/31b8c5f9….
+
+Claim El Niño: "El Niño Costero en alerta" (ENFEN comunicado 18-2026, 16-oct-2026; próximo comunicado 30-oct). Releer antes de publicar. Turbidez: claim verificado de products.json ("Reduce cloro, olores, sabores y turbidez").
