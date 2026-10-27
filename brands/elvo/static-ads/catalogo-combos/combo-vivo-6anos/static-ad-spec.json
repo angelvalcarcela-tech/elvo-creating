@@ -1,0 +1,17 @@
+{
+ "output_name": "combo-vivo-6anos",
+ "mode": "text",
+ "quality": "high",
+ "aspect_ratio": "1:1",
+ "product_images": [
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/h-vivo-equipo.png",
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/elvo-foto-vivo-repuesto.webp"
+ ],
+ "variations": [
+  {
+   "slug": "var-1",
+   "angle": "combo-vivo-6anos",
+   "prompt": "1:1 square aspect ratio. Image 1 is the real elvo Vivo faucet purifier with a glass of water, Image 2 is its real replacement filter cartridge (white carbon cartridge with a blue and white elvo label). Reproduce both faithfully, do not redesign or relabel. Compose a product photo with the Vivo purifier on the left and exactly FOUR identical replacement cartridges standing in a neat row (two in front, two slightly behind, staggered) at its right, all clearly visible. Soft pale blue-grey studio background (#E3EAF6) with a very gentle light gradient, soft natural contact shadows, clean premium e-commerce look, product centered with generous margins. Absolutely no text, no labels, no pills, no badges, no icons, no prices, no stars, no extra logos beyond the ones printed on the real products. "
+  }
+ ]
+}
