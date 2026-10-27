@@ -1,0 +1,19 @@
+{
+ "output_name": "banner-mesa-comedor",
+ "mode": "text",
+ "quality": "high",
+ "aspect_ratio": "16:9",
+ "product_images": [
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/alivio-g1-principal.png",
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/alivio22-principal.png",
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/cero-equipo.png",
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/nativo-equipo.png"
+ ],
+ "variations": [
+  {
+   "slug": "var-1",
+   "angle": "banner-mesa-comedor",
+   "prompt": "16:9 horizontal aspect ratio. Images 1-4 are the real products: Image 1 the Alivio 16 gravity bottle purifier, Image 2 the Alivio 22 gravity bottle purifier, Image 3 the Cero countertop reverse-osmosis purifier, Image 4 the Nativo faucet purifier with its tap. Reproduce every product faithfully (shape, proportions, colors, the elvo logo), do not redesign, recolor or relabel them. Lifestyle photograph of these four purifiers standing together on a table in a real home, arranged as a natural group on the RIGHT 60% of the frame, the tallest ones at the back, all four clearly visible and in sharp focus, realistic scale relative to each other, soft natural contact shadows. The LEFT 40% of the frame is calm, softly out of focus background with generous empty space (a text area for a website banner), no objects of interest there. Scene: dining table of a cozy Peruvian apartment at golden hour, large window with sheer curtain on the left, wooden table, a bowl of fruit and two glasses of water, blurred living room behind. Premium editorial home photography, shallow depth of field, soft natural daylight, subtle cool blue and white color palette that matches a clean water brand. Absolutely no text, no letters, no logos other than those printed on the real products, no badges, no icons, no people, no prices."
+  }
+ ]
+}
