@@ -170,3 +170,8 @@ Nota: en "toda la casa" el equipo queda pegado al borde derecho (ligeramente cor
 - Campañas WA (`120255038541140401` y repuestos `120255039167520401`): ACTIVAS, 0 impresiones y US$0. Sin errores de bloqueo en ads_get_errors.
 - Un anuncio antiguo "repuesto incluido v3 (929190100)" aparece con "WhatsApp Account Is Banned: phone number is banned from using WhatsApp". Ese es el mismo número de los conjuntos nuevos.
 - Cuenta publicitaria activa y con método de pago; las campañas web sí entregan (≈US$24 en 3 días).
+
+## WhatsApp recreado (27-oct, BORRADOR)
+- Prueba de vinculación: el número 51929190100 es aceptado con la Página AQA Filtros Perú (383158558224028); con la Página "Elvo Peru" (980802948447615) da "This WhatsApp phone number is not linked to your account".
+- Campaña `120255057359900401` "ELVO | Cyber | WhatsApp v2 (recreado)" (CBO US$20/día), conjunto `120255057360660401` (Perú 25–65, Feed FB, excluye compradores web), anuncio carrusel `120255057362320401` (4 tarjetas, texto de urgencia). Sin errores en el borrador. El conjunto de prueba `120255057360630401` (Elvo Peru) quedó marcado como eliminado.
+- Siguen activos pero sin entrega los originales (carrusel `120255041765200401`, 16 anuncios, repuestos).
