@@ -148,3 +148,10 @@ Nota: en "toda la casa" el equipo queda pegado al borde derecho (ligeramente cor
   - 120255039184960401 Cada cuánto — hash 29bc11a09121b639146352dde5cf464e
   - 120255039185080401 Lanzamiento envío gratis — hash 9cc8f3596d2d434aa8fd767bf560343c
 - No se afirma "entrega este fin de semana" ni compatibilidad con bidones AQA antiguos (sin confirmar).
+
+## Cyber elvo· — carrusel CTWA (27-oct-2026), BORRADOR
+- Conjunto `120255041658470401` "WA | Cyber carrusel | Perú | Feed FB" dentro de la campaña WhatsApp `120255038541140401`: Perú 25–65, solo Facebook Feed, excluye compradores web 180d, Advantage+ audience, tope US$20/día, termina 2026-11-02T04:59Z (1-nov 23:59 Lima).
+- Anuncio `120255041664570401` "WA | Cyber carrusel | 4 tarjetas v2" (carrusel WhatsApp, mensaje prellenado único "Hola, quiero la oferta del Cyber elvo·"). El primer intento `120255041659560401` falló por `degrees_of_freedom_spec` (mejoras estándar obsoletas) y se eliminó.
+- Orden: Nativo `adffcbf5642286050266dfc4b675a594`, Vivo `9d5b774cfd5c68ef2d1a7ff2714c13d8`, Alivio 16 `796af38abcfe80d85d10181653b0e93c`, Alivio 22 `49c07b85cc9f8aa4016d51e59f9943ff`.
+- Imágenes alojadas en Shopify Files como `cyber-elvo-*.png` (se subieron desde ahí a Meta).
+- Precios en Shopify cambiados el 27-oct: Nativo 3 Años S/ 349 (tachado 598), Vivo 18 meses S/ 259. Revertir/revisar después del 1-nov.
