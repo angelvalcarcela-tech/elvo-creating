@@ -160,3 +160,13 @@ Nota: en "toda la casa" el equipo queda pegado al borde derecho (ligeramente cor
 - Anuncio activo: `120255041765200401` "WA | Cyber carrusel | 4 tarjetas | urgencia" (texto: "Tu agua de casa tiene fecha límite: este domingo… Solo hasta este domingo…"). Conjunto `120255041658470401` activo, tope US$20/día, termina 1-nov 23:59 (hora Lima), en revisión de Meta.
 - Borradores a borrar a mano: `120255041664570401` (v2, pausado) y `120255041659560401` (primer intento con error).
 - Después del 1-nov: revertir Nativo 3 Años (S/ 349 → S/ 389) y revisar Vivo 18 meses (S/ 259).
+
+## Cyber Stories (web) — BORRADOR (27-oct-2026)
+- Campaña `120255057349560401` "ELVO | Cyber | Stories | Web" OUTCOME_SALES CBO US$20/día. Conjunto `120255057349800401`: Perú 25–65, Stories FB+IG, excluye compradores web 180d, pixel 899375412789001 PURCHASE, termina 1-nov 23:59 Lima.
+- Anuncios: Nativo `120255057350170401` (hash 3f3c4fc3…), Alivio 16 `120255057350270401` (f3d7224b…), Alivio 22 `120255057350400401` (b1080858…), Cero `120255057350720401` (1b272540…). CTA Comprar, UTM cyber-elvo-oct26.
+- Imágenes en Shopify Files `cyber-story-*.png`; fuentes en `static-ads/elvo-cyber-direccion/`.
+
+## Diagnóstico entrega WhatsApp (27-oct)
+- Campañas WA (`120255038541140401` y repuestos `120255039167520401`): ACTIVAS, 0 impresiones y US$0. Sin errores de bloqueo en ads_get_errors.
+- Un anuncio antiguo "repuesto incluido v3 (929190100)" aparece con "WhatsApp Account Is Banned: phone number is banned from using WhatsApp". Ese es el mismo número de los conjuntos nuevos.
+- Cuenta publicitaria activa y con método de pago; las campañas web sí entregan (≈US$24 en 3 días).
