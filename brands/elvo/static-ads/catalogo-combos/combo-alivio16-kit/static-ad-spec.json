@@ -1,0 +1,17 @@
+{
+ "output_name": "combo-alivio16-kit",
+ "mode": "text",
+ "quality": "high",
+ "aspect_ratio": "1:1",
+ "product_images": [
+  "/tmp/claude-0/-home-user-elvo-creating/277900b6-5a12-5c8a-8dfe-ea4cc0880791/scratchpad/refs/h16.png",
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/alivio-repuesto.png"
+ ],
+ "variations": [
+  {
+   "slug": "var-1",
+   "angle": "combo-alivio16-kit",
+   "prompt": "1:1 square aspect ratio. Image 1 is the real Alivio 16 water purifier, Image 2 is its real replacement filter kit (a white ceramic dome filter, a clear multilayer cylinder filter and a round white stone disc). Reproduce both faithfully, do not redesign or relabel. Compose a product photo with the full purifier standing at the center-back and the three filters of the kit arranged neatly on the surface in front of it, all clearly visible. Soft pale blue-grey studio background (#E3EAF6) with a very gentle light gradient, soft natural contact shadows, clean premium e-commerce look, product centered with generous margins. Absolutely no text, no labels, no pills, no badges, no icons, no prices, no stars, no extra logos beyond the ones printed on the real products. "
+  }
+ ]
+}

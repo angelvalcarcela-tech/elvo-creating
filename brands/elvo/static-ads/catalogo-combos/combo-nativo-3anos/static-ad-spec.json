@@ -1,0 +1,17 @@
+{
+ "output_name": "combo-nativo-3anos",
+ "mode": "text",
+ "quality": "high",
+ "aspect_ratio": "1:1",
+ "product_images": [
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/nativo-equipo.png",
+  "/home/user/elvo-creating/brands/elvo/web/fotos-producto/nativo-repuesto.png"
+ ],
+ "variations": [
+  {
+   "slug": "var-1",
+   "angle": "combo-nativo-3anos",
+   "prompt": "1:1 square aspect ratio. Image 1 is the real elvo Nativo faucet purifier with a glass of water, Image 2 is its real replacement core cartridge (PureCore). Reproduce both faithfully, do not redesign or relabel. Compose a product photo with the Nativo purifier on the left and exactly TWO identical PureCore cartridges standing side by side at its right, all clearly visible. Soft pale blue-grey studio background (#E3EAF6) with a very gentle light gradient, soft natural contact shadows, clean premium e-commerce look, product centered with generous margins. Absolutely no text, no labels, no pills, no badges, no icons, no prices, no stars, no extra logos beyond the ones printed on the real products. "
+  }
+ ]
+}
