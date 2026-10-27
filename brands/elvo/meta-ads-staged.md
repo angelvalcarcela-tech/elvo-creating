@@ -175,3 +175,9 @@ Nota: en "toda la casa" el equipo queda pegado al borde derecho (ligeramente cor
 - Prueba de vinculación: el número 51929190100 es aceptado con la Página AQA Filtros Perú (383158558224028); con la Página "Elvo Peru" (980802948447615) da "This WhatsApp phone number is not linked to your account".
 - Campaña `120255057359900401` "ELVO | Cyber | WhatsApp v2 (recreado)" (CBO US$20/día), conjunto `120255057360660401` (Perú 25–65, Feed FB, excluye compradores web), anuncio carrusel `120255057362320401` (4 tarjetas, texto de urgencia). Sin errores en el borrador. El conjunto de prueba `120255057360630401` (Elvo Peru) quedó marcado como eliminado.
 - Siguen activos pero sin entrega los originales (carrusel `120255041765200401`, 16 anuncios, repuestos).
+
+## Stories corregidos a zonas seguras (27-oct, BORRADOR)
+- Medición: las piezas v1 dejaban 15.2% libre arriba y 17.7% abajo (regla Meta: ~14% arriba, ~20% abajo). Rehechas (`static-ads/elvo-cyber-direccion/elvo-cyber-{nativo,alivio16,alivio22,cero}_v2.png`): 15.2% arriba / 20.1% abajo.
+- Hashes Meta v2: Nativo `dfd45a18…`, Alivio 16 `4548330f…`, Alivio 22 `16aa14a8…`, Cero `a002d1b6…`.
+- Anuncios v2 en el conjunto `120255057349800401`: Nativo `120255057614930401`, Alivio 16 `120255057615270401`, Alivio 22 `120255057615840401`, Cero `120255057616520401`. Los v1 (`…350170401`, `…350270401`, `…350400401`, `…350720401`) quedaron pausados: borrar.
+- Carrusel WhatsApp v2 (conjunto `120255057360660401`) pasó a solo Feed móvil: las imágenes 1:1 no sirven para Stories/Reels.
