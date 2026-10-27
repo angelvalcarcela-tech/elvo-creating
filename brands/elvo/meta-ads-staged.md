@@ -155,3 +155,8 @@ Nota: en "toda la casa" el equipo queda pegado al borde derecho (ligeramente cor
 - Orden: Nativo `adffcbf5642286050266dfc4b675a594`, Vivo `9d5b774cfd5c68ef2d1a7ff2714c13d8`, Alivio 16 `796af38abcfe80d85d10181653b0e93c`, Alivio 22 `49c07b85cc9f8aa4016d51e59f9943ff`.
 - Imágenes alojadas en Shopify Files como `cyber-elvo-*.png` (se subieron desde ahí a Meta).
 - Precios en Shopify cambiados el 27-oct: Nativo 3 Años S/ 349 (tachado 598), Vivo 18 meses S/ 259. Revertir/revisar después del 1-nov.
+
+### Cyber carrusel — PUBLICADO (27-oct-2026)
+- Anuncio activo: `120255041765200401` "WA | Cyber carrusel | 4 tarjetas | urgencia" (texto: "Tu agua de casa tiene fecha límite: este domingo… Solo hasta este domingo…"). Conjunto `120255041658470401` activo, tope US$20/día, termina 1-nov 23:59 (hora Lima), en revisión de Meta.
+- Borradores a borrar a mano: `120255041664570401` (v2, pausado) y `120255041659560401` (primer intento con error).
+- Después del 1-nov: revertir Nativo 3 Años (S/ 349 → S/ 389) y revisar Vivo 18 meses (S/ 259).
