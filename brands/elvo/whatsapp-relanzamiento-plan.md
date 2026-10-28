@@ -27,7 +27,8 @@ Ajustes de cada campaña (iguales en las tres):
 - Presupuesto a nivel de conjunto (ABO), sin topes de gasto por conjunto, para que no pase lo del aviso "una parte no se gastará".
 - Página: AQA Filtros Perú. Número: 51 929190100.
 - Público: Perú, 25–65, Advantage+. Excluye "Elvo | Compradores web 180d".
-- Ubicaciones: Feed de Facebook, Facebook Stories, Facebook Reels y Feed de Instagram, solo móvil. (Es la configuración de los conjuntos que sí entregaron antes.)
+- Ubicaciones: **solo Feed de Facebook y Feed de Instagram**, solo móvil. Sin Stories, Reels ni Audience Network. Todas las imágenes son 4:5 (1080×1350 o 1088×1360), que es el formato nativo de ambos feeds, así que no se recortan.
+- Instagram: cada anuncio lleva la cuenta de Instagram de la marca asociada (ID 7065817990099272). Sin eso no sale en Instagram.
 - Fecha de fin: ninguna (se agregan ángulos y se pausan los que no funcionen).
 - Para sumar un ángulo nuevo: crear un anuncio nuevo en el conjunto existente. No crear campaña nueva.
 
@@ -35,7 +36,7 @@ Ajustes de cada campaña (iguales en las tres):
 
 ## 3. Auditoría de las 16 imágenes actuales
 
-Precio a la vista en la imagen: **sí** en 12, **no** en 4.
+Precio a la vista en la imagen: **sí** en 14 (con las ediciones de hoy), **no** en 2 (#1 y #4).
 
 | # | Imagen | Producto | Precio en la imagen |
 |---|---|---|---|
@@ -48,8 +49,8 @@ Precio a la vista en la imagen: **sí** en 12, **no** en 4.
 | 7 | Río con 53 puntos críticos | Alivio 16 | Sí, S/ 159 |
 | 8 | Ficha 6 años | Nativo | Sí, S/ 489 |
 | 9 | Ficha 18 meses | Nativo | Sí, S/ 349 |
-| 10 | "Se corta el agua" (miedo) | Alivio 16 | **NO** |
-| 11 | "Lo que más nos preguntan" | Nativo | **NO** |
+| 10 | "Se corta el agua" (miedo) | Alivio 16 | Sí, píldora "desde S/ 159" (nueva) |
+| 11 | "Lo que más nos preguntan" | Nativo | Sí, píldora "desde S/ 349" (nueva) |
 | 12 | Toda la casa | Alivio 22 | Sí, S/ 198 |
 | 13 | Ficha | Alivio 22 | Sí, S/ 198 |
 | 14 | El Niño 2017 | Alivio 22 | Sí, S/ 198 |
@@ -84,9 +85,9 @@ Reglas de copy:
 | Nativo 18 meses \| ficha | #9 | Nativo 18 meses · S/ 349 | El purificador que va directo a tu caño: sin electricidad, sin gasfitero, lo instalas tú en 5 minutos. Escríbenos por WhatsApp y te ayudamos a elegir tu plan. Pago contraentrega.<br><br>*Retiene plomo y metales pesados, según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada. | Hola, quiero el Nativo 18 meses (S/ 349) |
 | Nativo 6 años \| ficha | #8 | Nativo 6 años · S/ 489 | Nativo 6 años: el purificador que va directo a tu caño, con 3 núcleos PureCore de repuesto incluidos. Sin electricidad, sin gasfitero, lo instalas tú en 5 minutos. Escríbenos por WhatsApp y te ayudamos a elegir tu plan. Pago contraentrega.<br><br>*Retiene plomo y metales pesados, según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada. | Hola, quiero el Nativo 6 años (S/ 489) |
 | Nativo \| reseñas reales | #4 (sin precio) | Nativo · desde S/ 349 | **Nativo desde S/ 349.** Esto dicen quienes ya lo instalaron en su casa. Escríbenos por WhatsApp y te ayudamos a elegir tu plan. Pago contraentrega. | Hola, quiero información del Nativo (desde S/ 349) |
-| Nativo \| lo que más preguntan | #11 (sin precio) | Nativo · desde S/ 349 | **Nativo desde S/ 349.** Lo que más nos preguntan, respondido. Si te queda otra duda, escríbenos por WhatsApp. Pago contraentrega. | Hola, tengo una duda sobre el Nativo (desde S/ 349) |
+| Nativo \| lo que más preguntan | #11 (píldora de precio) | Nativo · desde S/ 349 | **Nativo desde S/ 349.** Lo que más nos preguntan, respondido. Si te queda otra duda, escríbenos por WhatsApp. Pago contraentrega. | Hola, tengo una duda sobre el Nativo (desde S/ 349) |
 | Nativo \| turbidez (El Niño) | #15 | Purificador Nativo · desde S/ 349 | Con las lluvias, la calidad del agua puede cambiar (Gestión, 19-oct-2026). elvo· Nativo reduce la turbidez, el cloro, los olores y los sabores del agua de tu caño. Sin electricidad y sin gasfitero. Escríbenos por WhatsApp. Pago contraentrega.<br><br>Los resultados dependen de la calidad del agua de entrada. | Hola, quiero el Nativo (desde S/ 349) |
-| Nativo 3 años \| ficha | #6 (S/ 389, desactualizada) | Nativo 3 años · S/ 349 | Pendiente: ver sección 3, imagen 6. | Hola, quiero el Nativo 3 años (S/ 349) |
+| Nativo 3 años \| ficha | #6 (Promo S/ 349, hasta el 1-nov) | Nativo 3 años · S/ 349 | Pendiente: decidir si entra (sección 7). | Hola, quiero el Nativo 3 años (S/ 349) |
 
 El anuncio de 3 años queda fuera del lanzamiento hasta decidir. Entran 5.
 
@@ -96,7 +97,7 @@ El anuncio de 3 años queda fuera del lanzamiento hasta decidir. Entran 5.
 |---|---|---|---|---|
 | Alivio 16 \| ficha | #5 | Alivio 16 · S/ 159 | Agua de reserva en casa, sin depender del caño. Se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp y te lo enviamos. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
 | Alivio 16 \| reseña real | #1 (sin precio) | Alivio 16 · S/ 159 | **Bidón Alivio 16 Litros, S/ 159.** Así lo cuenta quien ya lo usa. Se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
-| Alivio 16 \| miedo | #10 (sin precio) | Alivio 16 · S/ 159 | **Bidón Alivio 16 Litros, S/ 159.** Con los cortes programados y las lluvias, tener agua lista en casa da tranquilidad. Se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
+| Alivio 16 \| miedo | #10 (píldora de precio) | Alivio 16 · S/ 159 | **Bidón Alivio 16 Litros, S/ 159.** Con los cortes programados y las lluvias, tener agua lista en casa da tranquilidad. Se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
 | Alivio 16 \| El Niño 2017 | #2 | Bidón Alivio 16 Litros · S/ 159 | En 2017, la planta que potabiliza el agua de Lima cerró sus compuertas hasta 6 días (Gestión, 19-oct-2026). Con El Niño Costero en alerta, que no te pase: Bidón Alivio 16 Litros se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
 | Alivio 16 \| río de Lima | #7 | Bidón Alivio 16 Litros · S/ 159 | El río que abastece a Lima tiene 53 puntos críticos de huaicos, según Gestión (19-oct-2026). Que no te pase: Bidón Alivio 16 Litros se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
 | Alivio 16 \| 7 millones | #16 | Bidón Alivio 16 Litros · S/ 159 | Casi 7 millones de peruanos podrían ver afectado su acceso al agua potable, según una estimación de Gestión (19-oct-2026). Que no te pase: Bidón Alivio 16 Litros se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
@@ -120,15 +121,21 @@ Son 4 anuncios, todos con precio en la imagen.
 - Alivio 16 (S/ 159) y Alivio 22 (S/ 198) coinciden con los precios de la tienda.
 
 ## 6. Cómo se carga (pasos)
-1. Confirmas el número (sección 1), los presupuestos (sección 2) y las dos decisiones abiertas (carrusel y Nativo 3 años).
+1. Confirmas el número (sección 1), los presupuestos (sección 2) y las decisiones abiertas (sección 7).
 2. Tú borras la campaña actual.
-3. Yo creo las 3 campañas como borrador, con sus anuncios, y te paso los enlaces de vista previa.
-4. Revisas y dices "publica".
-5. Reviso a las 2 horas si entregan. Si siguen en 0, el problema es el número, no los anuncios.
+3. **Subo las imágenes a Meta de nuevo.** Las 16 finales (las 7 editadas hoy y las 9 que no cambian) con identificadores nuevos. Motivo: una imagen del carrusel salió con el aviso "Imagen no encontrada" en el Feed de Instagram y la solución fue volver a subirla.
+4. **Creo las 3 campañas como borrador**, una por producto, con un conjunto amplio cada una (sección 2) y sus anuncios (sección 4):
+   - Anuncio con imagen única, enlace `https://fb.me/`, botón WhatsApp, página AQA Filtros Perú y cuenta de Instagram.
+   - Mensaje de bienvenida y mensaje precargado por producto (sección 4).
+   - Nombres: `ELVO | WA | <producto>`, conjunto `Amplio Perú | Feed FB + IG`, anuncio `<ángulo> v1`.
+5. Verifico que no haya errores y te paso los enlaces de vista previa de Facebook Feed e Instagram Feed.
+6. Revisas y dices "publica". Hasta entonces nada sale.
+7. A las 2 horas reviso si entregan. Si siguen en 0, el problema es el número y no los anuncios.
+8. Para sumar un ángulo después: nueva imagen y copy, y creo un anuncio en el conjunto de ese producto.
 
 ## 7. Decisiones pendientes
 - Presupuesto por producto (propuesto 25 / 15 / 15).
 - Carrusel Cyber: ¿pausar o dejar hasta el 1-nov?
-- Nativo 3 años: ¿regenerar la imagen a S/ 349 o dejarlo fuera?
-- ¿Regenerar las 4 imágenes sin precio, o basta con el precio en el copy?
-- ¿Ubicaciones: también Instagram Feed y Reels? Lo propuesto incluye Instagram Feed y quita Instagram Reels.
+- Nativo 3 años: ¿entra durante el Cyber (S/ 349 hasta el 1-nov) o se queda fuera?
+- Imágenes #1 y #4 (sin precio): ¿píldora pequeña como en #10 y #11, o solo el precio en el copy?
+- Ubicaciones: definido, solo Feed de Facebook y Feed de Instagram.
