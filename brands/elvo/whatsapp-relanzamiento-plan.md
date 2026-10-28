@@ -16,11 +16,11 @@ Los 16 anuncios actuales llevan más de un día con 0 impresiones. La causa no e
 
 | Campaña | Presupuesto/día (propuesto) | Conjunto | Anuncios iniciales |
 |---|---|---|---|
-| ELVO \| WA \| Nativo | US$25 | Amplio Perú (Advantage+) | 5 (ver sección 4) |
-| ELVO \| WA \| Alivio 16 L | US$15 | Amplio Perú (Advantage+) | 6 |
-| ELVO \| WA \| Alivio 22 L | US$15 | Amplio Perú (Advantage+) | 4 |
+| ELVO \| WA \| Nativo | US$25 | Amplio Perú (Advantage+) | 6 (ver sección 4) |
+| ELVO \| WA \| Alivio 16 L | US$18 | Amplio Perú (Advantage+) | 6 |
+| ELVO \| WA \| Alivio 22 L | US$12 | Amplio Perú (Advantage+) | 4 |
 
-Total US$55, igual que hoy. Es una propuesta: confirma o cambia los montos.
+Total US$55, igual que hoy. Decidido por mí: Nativo es el producto estrella y el de mayor ticket; Alivio 16 es la entrada más barata (S/ 159) y tiene más anuncios; Alivio 22 tiene menos ángulos.
 
 Ajustes de cada campaña (iguales en las tres):
 - Objetivo: Interacción, destino WhatsApp, optimiza conversaciones.
@@ -32,11 +32,11 @@ Ajustes de cada campaña (iguales en las tres):
 - Fecha de fin: ninguna (se agregan ángulos y se pausan los que no funcionen).
 - Para sumar un ángulo nuevo: crear un anuncio nuevo en el conjunto existente. No crear campaña nueva.
 
-**Pregunta abierta:** el carrusel "Cyber WhatsApp v2" (campaña aparte, US$20) mezcla 4 productos y rompe la regla. Termina el 1-nov. ¿Lo dejamos hasta esa fecha o lo pausamos?
+**Carrusel Cyber (decidido):** va en su propia campaña de Cyber, "ELVO | Cyber | WhatsApp v2" (US$20 al día, termina el 1-nov). Es la única excepción a la regla de un producto por campaña, porque es una campaña de evento. No se toca.
 
 ## 3. Auditoría de las 16 imágenes actuales
 
-Precio a la vista en la imagen: **sí** en 14 (con las ediciones de hoy), **no** en 2 (#1 y #4).
+Precio a la vista en la imagen: **no** en 4 al inicio (#1, #4, #10, #11); con las ediciones de hoy **ya lo tienen todas**.
 
 | # | Imagen | Producto | Precio en la imagen |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Precio a la vista en la imagen: **sí** en 14 (con las ediciones de hoy), **no**
 - #10 (miedo) y #11 (dudas) ahora llevan una píldora de precio **pequeña, de una línea**, a modo de llamado a la acción, debajo del producto: "Ten un bidón Alivio · desde S/ 159" y "elvo· Nativo · desde S/ 349". No compite con el mensaje principal.
 - Las 5 imágenes "ficha" (#5, #6, #8, #9, #13) ahora dicen **"Promo: S/ …"** en lugar de "Precio: S/ …". Sin precio tachado (se probó y se descartó).
 - #6 (Nativo 3 años) ahora dice **S/ 349**, ya no S/ 389. Vale solo hasta el 1-nov.
-- Siguen sin precio en la imagen: #1 (reseña Alivio 16) y #4 (reseñas Nativo). Para esas, el precio va en la **primera línea del copy** (sección 4).
+- #1 (reseña Alivio 16) y #4 (reseñas Nativo) también llevan ahora la píldora pequeña y neutra de precio. Además el copy empieza con el precio. Todas las imágenes tienen precio.
 
 Imagen 6 (Nativo 3 años): ya se regeneró con "Promo: S/ 349". El precio es válido solo hasta el 1-nov; después vuelve a S/ 389 y hay que pausar el anuncio. Ojo: durante el Cyber el plan de 3 años cuesta lo mismo que el de 18 meses, lo que resta sentido a vender el de 18 meses.
 
@@ -84,19 +84,19 @@ Reglas de copy:
 |---|---|---|---|---|
 | Nativo 18 meses \| ficha | #9 | Nativo 18 meses · S/ 349 | El purificador que va directo a tu caño: sin electricidad, sin gasfitero, lo instalas tú en 5 minutos. Escríbenos por WhatsApp y te ayudamos a elegir tu plan. Pago contraentrega.<br><br>*Retiene plomo y metales pesados, según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada. | Hola, quiero el Nativo 18 meses (S/ 349) |
 | Nativo 6 años \| ficha | #8 | Nativo 6 años · S/ 489 | Nativo 6 años: el purificador que va directo a tu caño, con 3 núcleos PureCore de repuesto incluidos. Sin electricidad, sin gasfitero, lo instalas tú en 5 minutos. Escríbenos por WhatsApp y te ayudamos a elegir tu plan. Pago contraentrega.<br><br>*Retiene plomo y metales pesados, según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada. | Hola, quiero el Nativo 6 años (S/ 489) |
-| Nativo \| reseñas reales | #4 (sin precio) | Nativo · desde S/ 349 | **Nativo desde S/ 349.** Esto dicen quienes ya lo instalaron en su casa. Escríbenos por WhatsApp y te ayudamos a elegir tu plan. Pago contraentrega. | Hola, quiero información del Nativo (desde S/ 349) |
+| Nativo \| reseñas reales | #4 (píldora de precio) | Nativo · desde S/ 349 | **Nativo desde S/ 349.** Esto dicen quienes ya lo instalaron en su casa. Escríbenos por WhatsApp y te ayudamos a elegir tu plan. Pago contraentrega. | Hola, quiero información del Nativo (desde S/ 349) |
 | Nativo \| lo que más preguntan | #11 (píldora de precio) | Nativo · desde S/ 349 | **Nativo desde S/ 349.** Lo que más nos preguntan, respondido. Si te queda otra duda, escríbenos por WhatsApp. Pago contraentrega. | Hola, tengo una duda sobre el Nativo (desde S/ 349) |
 | Nativo \| turbidez (El Niño) | #15 | Purificador Nativo · desde S/ 349 | Con las lluvias, la calidad del agua puede cambiar (Gestión, 19-oct-2026). elvo· Nativo reduce la turbidez, el cloro, los olores y los sabores del agua de tu caño. Sin electricidad y sin gasfitero. Escríbenos por WhatsApp. Pago contraentrega.<br><br>Los resultados dependen de la calidad del agua de entrada. | Hola, quiero el Nativo (desde S/ 349) |
-| Nativo 3 años \| ficha | #6 (Promo S/ 349, hasta el 1-nov) | Nativo 3 años · S/ 349 | Pendiente: decidir si entra (sección 7). | Hola, quiero el Nativo 3 años (S/ 349) |
+| Nativo 3 años \| ficha | #6 (Promo S/ 349, hasta el 1-nov) | Nativo 3 años · S/ 349 | Entra, termina el 1-nov 23:59. | Hola, quiero el Nativo 3 años (S/ 349) |
 
-El anuncio de 3 años queda fuera del lanzamiento hasta decidir. Entran 5.
+El anuncio de 3 años **entra** con fin programado: se carga con fecha de fin el 1-nov a las 23:59 (hora de Lima), así se apaga solo cuando vuelve el precio de S/ 389. Entran 6.
 
 ### Campaña Alivio 16 L
 
 | Anuncio / ángulo | Imagen | Titular | Copy principal | Mensaje precargado |
 |---|---|---|---|---|
 | Alivio 16 \| ficha | #5 | Alivio 16 · S/ 159 | Agua de reserva en casa, sin depender del caño. Se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp y te lo enviamos. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
-| Alivio 16 \| reseña real | #1 (sin precio) | Alivio 16 · S/ 159 | **Bidón Alivio 16 Litros, S/ 159.** Así lo cuenta quien ya lo usa. Se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
+| Alivio 16 \| reseña real | #1 (píldora de precio) | Alivio 16 · S/ 159 | **Bidón Alivio 16 Litros, S/ 159.** Así lo cuenta quien ya lo usa. Se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
 | Alivio 16 \| miedo | #10 (píldora de precio) | Alivio 16 · S/ 159 | **Bidón Alivio 16 Litros, S/ 159.** Con los cortes programados y las lluvias, tener agua lista en casa da tranquilidad. Se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
 | Alivio 16 \| El Niño 2017 | #2 | Bidón Alivio 16 Litros · S/ 159 | En 2017, la planta que potabiliza el agua de Lima cerró sus compuertas hasta 6 días (Gestión, 19-oct-2026). Con El Niño Costero en alerta, que no te pase: Bidón Alivio 16 Litros se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
 | Alivio 16 \| río de Lima | #7 | Bidón Alivio 16 Litros · S/ 159 | El río que abastece a Lima tiene 53 puntos críticos de huaicos, según Gestión (19-oct-2026). Que no te pase: Bidón Alivio 16 Litros se llena con una jarra, sin electricidad ni instalación. Escríbenos por WhatsApp. Pago contraentrega. | Hola, quiero el Bidón Alivio 16 Litros (S/ 159) |
@@ -121,7 +121,7 @@ Son 4 anuncios, todos con precio en la imagen.
 - Alivio 16 (S/ 159) y Alivio 22 (S/ 198) coinciden con los precios de la tienda.
 
 ## 6. Cómo se carga (pasos)
-1. Confirmas el número (sección 1), los presupuestos (sección 2) y las decisiones abiertas (sección 7).
+1. Número confirmado por ti: el 929 (51 929190100). Falta que verifiques en WhatsApp Manager que no esté baneado (sección 1).
 2. Tú borras la campaña actual.
 3. **Subo las imágenes a Meta de nuevo.** Las 16 finales (las 7 editadas hoy y las 9 que no cambian) con identificadores nuevos. Motivo: una imagen del carrusel salió con el aviso "Imagen no encontrada" en el Feed de Instagram y la solución fue volver a subirla.
 4. **Creo las 3 campañas como borrador**, una por producto, con un conjunto amplio cada una (sección 2) y sus anuncios (sección 4):
@@ -133,9 +133,10 @@ Son 4 anuncios, todos con precio en la imagen.
 7. A las 2 horas reviso si entregan. Si siguen en 0, el problema es el número y no los anuncios.
 8. Para sumar un ángulo después: nueva imagen y copy, y creo un anuncio en el conjunto de ese producto.
 
-## 7. Decisiones pendientes
-- Presupuesto por producto (propuesto 25 / 15 / 15).
-- Carrusel Cyber: ¿pausar o dejar hasta el 1-nov?
-- Nativo 3 años: ¿entra durante el Cyber (S/ 349 hasta el 1-nov) o se queda fuera?
-- Imágenes #1 y #4 (sin precio): ¿píldora pequeña como en #10 y #11, o solo el precio en el copy?
-- Ubicaciones: definido, solo Feed de Facebook y Feed de Instagram.
+## 7. Decisiones
+- Número de WhatsApp: el 929190100 (confirmado).
+- Presupuestos: 25 / 18 / 12, decididos.
+- Carrusel Cyber: campaña propia de Cyber, no se toca.
+- Nativo 3 años: entra con fin programado el 1-nov 23:59.
+- Imágenes #1 y #4: píldora pequeña de precio, hecha.
+- Ubicaciones: solo Feed de Facebook y Feed de Instagram.
