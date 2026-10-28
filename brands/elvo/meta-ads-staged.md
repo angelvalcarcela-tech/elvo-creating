@@ -181,3 +181,9 @@ Nota: en "toda la casa" el equipo queda pegado al borde derecho (ligeramente cor
 - Hashes Meta v2: Nativo `dfd45a18…`, Alivio 16 `4548330f…`, Alivio 22 `16aa14a8…`, Cero `a002d1b6…`.
 - Anuncios v2 en el conjunto `120255057349800401`: Nativo `120255057614930401`, Alivio 16 `120255057615270401`, Alivio 22 `120255057615840401`, Cero `120255057616520401`. Los v1 (`…350170401`, `…350270401`, `…350400401`, `…350720401`) quedaron pausados: borrar.
 - Carrusel WhatsApp v2 (conjunto `120255057360660401`) pasó a solo Feed móvil: las imágenes 1:1 no sirven para Stories/Reels.
+
+## Stories v3: todas las ubicaciones, zona segura (28-oct-2026, borrador)
+- Piezas 1080x1920 rehechas (`static-ads/elvo-cyber-direccion/elvo-cyber-*_v3.png`, generador `build_multi3.py`): todo el contenido entre y=301 y y=1532 (cabe en el recorte central 4:5 de Feed, y deja >=15% arriba y >=20% abajo para Stories/Reels).
+- Ad set 120255057349800401 sin restricción de ubicaciones (antes solo Stories de FB e IG), nombre "Cyber | Perú 25-65 | Todas las ubicaciones (9:16)".
+- Anuncios v3 (borrador, no publicados): Nativo 120255060743650401 (hash dd485b35…), Alivio 16 120255060743870401 (d220634e…), Alivio 22 120255060744200401 (47420bcd…), Cero 120255060746510401 (83b60817…). Con cuenta de Instagram, CTA SHOP_NOW, UTM cyber-elvo-oct26.
+- Anuncios v2 y v1 quedan en PAUSED y hay que borrarlos a mano.
