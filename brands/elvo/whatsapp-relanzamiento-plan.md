@@ -142,14 +142,16 @@ Son 4 anuncios, todos con precio en la imagen.
 - Ubicaciones: solo Feed de Facebook y Feed de Instagram.
 
 
-## Estado de carga (borradores en Meta, versión v2 del 28-oct-2026)
+## Estado de carga (borradores en Meta, 28-oct-2026)
 
-Todo en borrador, sin errores; no publicado hasta que el usuario diga "publica". Sin fecha de fin en ningún anuncio (el usuario los apaga a mano). Los 3 combos Nativo llevan copy largo con emojis; los 16 llevan mensaje precargado "Hola, quisiera la promo elvo …".
+Todo en borrador, sin errores; no publicado hasta que el usuario diga "publica". Sin fecha de fin en ningún anuncio. Los 3 combos Nativo llevan copy largo con emojis; los 16 llevan mensaje precargado "Hola, quisiera la promo elvo …". Regla de trabajo: si se modifica algo, se reemplaza el conjunto completo (no dejar versiones viejas mezcladas con nuevas).
+
+Nativo y Alivio 16 se recargaron completos (campaña, conjunto y anuncios) después de que el usuario los borrara; Alivio 22 no se tocó.
 
 | Campaña | ID campaña | ID conjunto | Anuncios (IDs) |
 |---|---|---|---|
-| ELVO \| WA \| Nativo | 120255075573680401 | 120255076113600401 | 18m 120255076640320401; 3a 120255076641040401; 6a 120255076641230401; reseñas 120255076641650401; dudas 120255076641780401; turbidez 120255076641880401 |
-| ELVO \| WA \| Alivio 16 L | 120255075574620401 | 120255076113910401 | ficha 120255076642240401; reseña 120255076642350401; miedo 120255076642630401; 2017 120255076642670401; río 120255076642730401; 7 millones 120255076642870401 |
+| ELVO \| WA \| Nativo | 120255076842560401 | 120255076843210401 | 18m 120255076847820401; 3a 120255076847940401; 6a 120255076848030401; reseñas 120255076848170401; dudas 120255076848250401; turbidez 120255076848310401 |
+| ELVO \| WA \| Alivio 16 L | 120255076842630401 | 120255076843400401 | ficha 120255076848370401; reseña 120255076848420401; miedo 120255076848490401; 2017 120255076848510401; río 120255076848690401; 7 millones 120255076848940401 |
 | ELVO \| WA \| Alivio 22 L | 120255075574740401 | 120255076114100401 | ficha 120255076643220401; 7 millones 120255076643690401; toda la casa 120255076643910401; 2017 120255076644510401 |
 
 Presupuestos por día: Nativo US$40, Alivio 16 US$18, Alivio 22 US$12 (total US$70). Número WhatsApp 51929190100.
