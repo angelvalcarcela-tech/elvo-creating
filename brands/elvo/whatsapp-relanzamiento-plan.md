@@ -57,7 +57,7 @@ Precio a la vista en la imagen: **sí** en 12, **no** en 4.
 | 16 | 7 millones | Alivio 16 | Sí, S/ 159 |
 
 **Actualización (28-oct, tarde):** ya se editaron imágenes en `static-ads/elvo-whatsapp-promo/`:
-- #10 (miedo) y #11 (dudas) ahora llevan la píldora de precio debajo del producto: "Ten un bidón Alivio desde S/ 159" y "elvo· Nativo desde S/ 349".
+- #10 (miedo) y #11 (dudas) ahora llevan una píldora de precio **pequeña, de una línea**, a modo de llamado a la acción, debajo del producto: "Ten un bidón Alivio · desde S/ 159" y "elvo· Nativo · desde S/ 349". No compite con el mensaje principal.
 - Las 5 imágenes "ficha" (#5, #6, #8, #9, #13) ahora dicen **"Promo: S/ …"** en lugar de "Precio: S/ …". Sin precio tachado (se probó y se descartó).
 - #6 (Nativo 3 años) ahora dice **S/ 349**, ya no S/ 389. Vale solo hasta el 1-nov.
 - Siguen sin precio en la imagen: #1 (reseña Alivio 16) y #4 (reseñas Nativo). Para esas, el precio va en la **primera línea del copy** (sección 4).
