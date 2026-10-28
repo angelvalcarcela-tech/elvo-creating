@@ -56,9 +56,13 @@ Precio a la vista en la imagen: **sí** en 12, **no** en 4.
 | 15 | Turbidez | Nativo | Sí, "desde S/ 349" |
 | 16 | 7 millones | Alivio 16 | Sí, S/ 159 |
 
-Para los 4 sin precio (1, 4, 10, 11): el precio va en la **primera línea del copy** (sección 4). Opción posterior: regenerar la imagen con la píldora de precio.
+**Actualización (28-oct, tarde):** ya se editaron imágenes en `static-ads/elvo-whatsapp-tachado/`:
+- #10 (miedo) y #11 (dudas) ahora llevan la píldora de precio debajo del producto: "Ten un bidón Alivio desde S/ 159" y "elvo· Nativo desde S/ 349".
+- Las 5 imágenes "ficha" (#5, #6, #8, #9, #13) muestran el **precio regular tachado** ("Antes: S/ …", precios de la tienda: Alivio 16 S/ 201, Alivio 22 S/ 213, Nativo 18 meses S/ 389, Nativo 3 años S/ 598, Nativo 6 años S/ 1,096).
+- #6 (Nativo 3 años) ahora dice **S/ 349**, ya no S/ 389. Vale solo hasta el 1-nov.
+- Siguen sin precio en la imagen: #1 (reseña Alivio 16) y #4 (reseñas Nativo). Para esas, el precio va en la **primera línea del copy** (sección 4).
 
-Imagen 6 (Nativo 3 años, S/ 389): hoy el precio en la tienda es S/ 349 (Cyber, hasta el 1-nov; después vuelve a S/ 389). Opciones: (a) regenerarla con S/ 349 y el texto "hasta el 1-nov", o (b) no usarla hasta que termine el Cyber. Recomiendo (b). Ojo: durante el Cyber el plan de 3 años cuesta lo mismo que el de 18 meses, lo que resta sentido a vender el de 18 meses.
+Imagen 6 (Nativo 3 años): ya se regeneró con S/ 349 y S/ 598 tachado. El precio es válido solo hasta el 1-nov; después vuelve a S/ 389 y hay que pausar el anuncio. Ojo: durante el Cyber el plan de 3 años cuesta lo mismo que el de 18 meses, lo que resta sentido a vender el de 18 meses.
 
 ## 4. Anuncios: copy y mensaje precargado
 
