@@ -16,11 +16,11 @@ Los 16 anuncios actuales llevan más de un día con 0 impresiones. La causa no e
 
 | Campaña | Presupuesto/día (propuesto) | Conjunto | Anuncios iniciales |
 |---|---|---|---|
-| ELVO \| WA \| Nativo | US$25 | Amplio Perú (Advantage+) | 6 (ver sección 4) |
+| ELVO \| WA \| Nativo | US$40 | Amplio Perú (Advantage+) | 6 (ver sección 4) |
 | ELVO \| WA \| Alivio 16 L | US$18 | Amplio Perú (Advantage+) | 6 |
 | ELVO \| WA \| Alivio 22 L | US$12 | Amplio Perú (Advantage+) | 4 |
 
-Total US$55, igual que hoy. Decidido por mí: Nativo es el producto estrella y el de mayor ticket; Alivio 16 es la entrada más barata (S/ 159) y tiene más anuncios; Alivio 22 tiene menos ángulos.
+Total US$70 (Nativo subido a US$40 por decisión del usuario). Criterio: Nativo es el producto estrella y el de mayor ticket; Alivio 16 es la entrada más barata (S/ 159) y tiene más anuncios; Alivio 22 tiene menos ángulos.
 
 Ajustes de cada campaña (iguales en las tres):
 - Objetivo: Interacción, destino WhatsApp, optimiza conversaciones.
@@ -140,3 +140,16 @@ Son 4 anuncios, todos con precio en la imagen.
 - Nativo 3 años: entra con fin programado el 1-nov 23:59.
 - Imágenes #1 y #4: píldora pequeña de precio, hecha.
 - Ubicaciones: solo Feed de Facebook y Feed de Instagram.
+
+
+## Estado de carga (borradores en Meta, 28-oct-2026)
+
+Todo en borrador, sin errores; no publicado hasta que el usuario diga "publica".
+
+| Campaña | ID campaña | ID conjunto | Anuncios (IDs) |
+|---|---|---|---|
+| ELVO \| WA \| Nativo | 120255075573680401 | 120255075575990401 | 18m 120255075581280401; 6a 120255075581400401; 3a 120255075581580401 (termina 1-nov 23:59 Lima); reseñas 120255075581660401; dudas 120255075581770401; turbidez 120255075581950401 |
+| ELVO \| WA \| Alivio 16 L | 120255075574620401 | 120255075576390401 | ficha 120255075598440401; reseña 120255075598890401; miedo 120255075599430401; 2017 120255075599500401; río 120255075599610401; 7 millones 120255075599680401 |
+| ELVO \| WA \| Alivio 22 L | 120255075574740401 | 120255075576450401 | ficha 120255075599790401; 7 millones 120255075599850401; toda la casa 120255075600200401; 2017 120255075600540401 |
+
+Presupuestos por día: Nativo US$40, Alivio 16 US$18, Alivio 22 US$12 (total US$70). Número WhatsApp 51929190100.
