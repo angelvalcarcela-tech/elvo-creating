@@ -142,14 +142,14 @@ Son 4 anuncios, todos con precio en la imagen.
 - Ubicaciones: solo Feed de Facebook y Feed de Instagram.
 
 
-## Estado de carga (borradores en Meta, recargados 28-oct-2026)
+## Estado de carga (borradores en Meta, versión v2 del 28-oct-2026)
 
-Todo en borrador, sin errores; no publicado hasta que el usuario diga "publica". El usuario borró los conjuntos y anuncios anteriores; se recrearon los 3 conjuntos y los 16 anuncios (fichas originales 4:5).
+Todo en borrador, sin errores; no publicado hasta que el usuario diga "publica". Sin fecha de fin en ningún anuncio (el usuario los apaga a mano). Los 3 combos Nativo llevan copy largo con emojis; los 16 llevan mensaje precargado "Hola, quisiera la promo elvo …".
 
 | Campaña | ID campaña | ID conjunto | Anuncios (IDs) |
 |---|---|---|---|
-| ELVO \| WA \| Nativo | 120255075573680401 | 120255076113600401 | 18m 120255076125150401; 6a 120255076125550401; 3a 120255076125760401 (termina 1-nov 23:59 Lima); reseñas 120255076125790401; dudas 120255076126010401; turbidez 120255076126090401 |
-| ELVO \| WA \| Alivio 16 L | 120255075574620401 | 120255076113910401 | ficha 120255076126110401; reseña 120255076126150401; miedo 120255076126230401; 2017 120255076126280401; río 120255076126380401; 7 millones 120255076126420401 |
-| ELVO \| WA \| Alivio 22 L | 120255075574740401 | 120255076114100401 | ficha 120255076126790401; 7 millones 120255076126900401; toda la casa 120255076127060401; 2017 120255076127190401 |
+| ELVO \| WA \| Nativo | 120255075573680401 | 120255076113600401 | 18m 120255076640320401; 3a 120255076641040401; 6a 120255076641230401; reseñas 120255076641650401; dudas 120255076641780401; turbidez 120255076641880401 |
+| ELVO \| WA \| Alivio 16 L | 120255075574620401 | 120255076113910401 | ficha 120255076642240401; reseña 120255076642350401; miedo 120255076642630401; 2017 120255076642670401; río 120255076642730401; 7 millones 120255076642870401 |
+| ELVO \| WA \| Alivio 22 L | 120255075574740401 | 120255076114100401 | ficha 120255076643220401; 7 millones 120255076643690401; toda la casa 120255076643910401; 2017 120255076644510401 |
 
 Presupuestos por día: Nativo US$40, Alivio 16 US$18, Alivio 22 US$12 (total US$70). Número WhatsApp 51929190100.
