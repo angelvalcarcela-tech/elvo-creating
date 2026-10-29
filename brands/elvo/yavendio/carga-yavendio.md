@@ -182,3 +182,22 @@ Los nombres de producto que Sofía usa al registrar ya coinciden con los de la s
 - Las FAQs bloqueadas (f45 a f53) se regeneran solas desde esa configuración al publicar.
 - Saldos que Sofía calcula: combo 3 años S/349 → saldo S/329; combo 6 años S/489 → saldo S/469.
 - La oferta de "separar con S/20 como último recurso" para el cliente que desconfía ya no existe, porque S/20 es ahora el adelanto normal.
+
+## Actualización del 29-oct (decisiones y datos de la web)
+- Repuesto Nativo suelto: **S/249**. Valor sin promo: combo 6 años S/1.096, combo 3 años S/598 (imagen de combos actualizada).
+- Sin repuesto: purificador a **S/299**, solo si el cliente lo pide.
+- Regalo: no hay lámpara de regalo. El "regalo" del Cyber es el repuesto (1 kit en 3 años, 3 repuestos en 6 años).
+- Garantía: Nativo, Vivo y Cero **1 año**; Alivio **6 meses**.
+- Recojo: sí, **previa coordinación**, Jr. Quilca 565, Breña (lunes a viernes de 9 a 5).
+- Adelanto de provincia: **S/20** y DNI.
+- Reseñas: 4,2 con 124 reseñas en Falabella; imagen `resenas-clientes-elvo.jpg` actualizada con 4 reseñas de la web.
+- Vivo (precios de la web): 18 meses S/259, 3 años S/289, 6 años S/359; repuesto S/129.
+- Alivio: kit S/99, filtros cada 10.000 litros o 1 año; 16 L para 1 o 2 personas, 22 L para 3 o más; "equipo + kit" S/249 (16 L) y S/288 (22 L).
+- Cero: 5 etapas, 110 a 240 V, kit de filtros S/329.
+
+### Para corregir en la web (elvo.pe)
+- Quitar "Lámpara UV de regalo" (planes de 3 y 6 años) y el "Incluye lámpara UV de regalo".
+- Cambiar "Garantía de por vida" por "Garantía de 1 año" (título de la página, FAQ y badges).
+- Cambiar "seña de S/50" por "seña de S/20" en provincia.
+- Unificar la dirección de recojo (Jr. Quilca 565 vs Jr. Varela 1235 en las FAQs antiguas) y que diga "previa coordinación".
+- Revisar el precio del plan "18 meses" (S/349 en la web vs "sin repuesto S/299" en WhatsApp).
