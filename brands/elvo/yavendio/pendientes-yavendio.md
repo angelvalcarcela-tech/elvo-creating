@@ -16,7 +16,7 @@ Reemplazan a los que hablan de "plan 18 meses". Todos terminan con una pregunta 
 - **warm1** (imagen combos): «Por Cyber tienes 2 opciones: 6 años S/489 (1 purificador + 3 repuestos, el de mayor valor) o 3 años S/349 (1 purificador + 1 kit de repuesto). ¿Cuál te acomoda?»
 - **warm2** (video): «¿Te quedó alguna duda de la instalación o del pago? Se instala en 5 minutos y pagas al recibir 😊 ¿Te lo separo?»
 - **hot1** (imagen): «Te guardo tu elvo· Nativo 😊 Solo me faltan tus datos para agendarlo: dirección con distrito y celular (y DNI si es provincia).»
-- **hot2** (video): «¿Lo agendamos? En Lima llega hoy o mañana y pagas al recibir; a provincia en 2 a 3 días con solo S/50 de adelanto ✅»
+- **hot2** (video): «¿Lo agendamos? En Lima llega hoy o mañana y pagas al recibir; a provincia en 2 a 3 días con solo S/20 de adelanto ✅»
 - Aviso: el precio Cyber termina el 1-nov. Después del 1-nov hay que cambiar estos textos.
 
 ## 3. Medición (pendiente de pedir)

@@ -99,7 +99,8 @@ Las 12 últimas (f44 a f55) están bloqueadas: las genera YaVendio desde Configu
 | f24 (garantía) | ⚠️ **Editar**: dice "garantía de por vida". La plantilla dice 1 año. Confirma cuál es y alineo |
 | f25, f26 | Dejar |
 | f27 (Lima) | Dejar |
-| f28 | **Editar**: "llega en hasta 2 o 3 días" (Shalom) y "hasta 4 días" a domicilio |
+| f28 | **Editar**: "llega en hasta 2 o 3 días" (Shalom) y "hasta 4 días" a domicilio; el adelanto es S/20 |
+| f29 (adelanto provincia) | **Editar**: cambiar S/50 por **S/20** y el saldo del combo 3 años a **S/329** |
 | f29 a f34 | Dejar |
 | f35 (por qué cuesta más) | **Reemplazar** (texto nuevo 8) |
 | f36, f37, f38 | Dejar |
@@ -173,3 +174,11 @@ Los nombres de producto que Sofía usa al registrar ya coinciden con los de la s
 ## Después del 1 de noviembre (pendiente)
 - Nativo 3 años pasa a S/389 y los repuestos ya no vienen incluidos: hay que cambiar catálogo, imagen de combos y textos "solo por Cyber".
 - Textos de recordatorios: ver `pendientes-yavendio.md`.
+
+
+## Adelanto de provincia: S/20 (antes S/50)
+- En el archivo de venta: ya cambiado en todo el flujo (pregunta de pago, resumen, saldo, clave de recojo, desconfianza) y en la configuración de envío Shalom (`partial_min` = 20).
+- Si el archivo no actualiza la configuración de envíos, cámbialo en el panel: Configuración → Envíos → Shalom → adelanto mínimo S/20.
+- Las FAQs bloqueadas (f45 a f53) se regeneran solas desde esa configuración al publicar.
+- Saldos que Sofía calcula: combo 3 años S/349 → saldo S/329; combo 6 años S/489 → saldo S/469.
+- La oferta de "separar con S/20 como último recurso" para el cliente que desconfía ya no existe, porque S/20 es ahora el adelanto normal.
