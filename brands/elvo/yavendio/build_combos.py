@@ -48,6 +48,6 @@ def card(y,h,badge,title,line,price,nrep,hl,valor=''):
 card(215,470,'Mayor valor · solo Cyber','Combo 6 años','1 purificador|+ 3 repuestos','S/489',3,True,'S/1,096')
 card(745,430,'Solo por Cyber','Combo 3 años','1 purificador|+ 1 kit de repuesto','S/349',1,False,'S/598')
 d.text((W/2,1230),'Repuesto suelto S/249 · cada núcleo rinde 20.000 litros (unos 18 meses)',font=f('Medium',28),fill=GRAY,anchor='mm')
-d.text((W/2,1275),'Precios solo por Cyber, hasta el 1 de noviembre · Pago contraentrega',font=f('Medium',28),fill=GRAY,anchor='mm')
+d.text((W/2,1275),'Hasta el 1 de noviembre · Lima: pagas al recibir · Provincia: separas con S/20',font=f('Medium',28),fill=GRAY,anchor='mm')
 im.save('imagenes/combos-elvo-nativo.jpg',quality=92); im.save('imagenes/combos-elvo-nativo.png')
 print('ok')

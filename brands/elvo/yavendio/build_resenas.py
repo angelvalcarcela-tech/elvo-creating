@@ -31,5 +31,5 @@ for q,a,c in R:
     d.text((W-90-vw/2,yy+27),vt,font=f('Medium',26),fill='white',anchor='mm')
     y+=h+30
 d.text((W/2,H-90),'4,2 ★ · 124 reseñas en Falabella · Más de 500 familias',font=f('Bold',32),fill=INK,anchor='mm')
-d.text((W/2,H-45),'30 días de prueba · Pago contraentrega',font=f('Medium',30),fill=GRAY,anchor='mm')
+d.text((W/2,H-45),'30 días de prueba · 1 año de garantía',font=f('Medium',30),fill=GRAY,anchor='mm')
 im.save('imagenes/resenas-clientes-elvo.jpg',quality=92); im.save('imagenes/resenas-clientes-elvo.png'); print(y)
