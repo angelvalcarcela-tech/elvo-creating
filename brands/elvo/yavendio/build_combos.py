@@ -20,7 +20,7 @@ def keyout(img):
 nuk=keyout(nu)
 def rmask(size,r):
     m=Image.new('L',size,0); ImageDraw.Draw(m).rounded_rectangle((0,0,size[0],size[1]),radius=r,fill=255); return m
-def card(y,h,badge,title,line,price,nrep,hl):
+def card(y,h,badge,title,line,price,nrep,hl,valor=''):
     d.rounded_rectangle((60,y,W-60,y+h),radius=36,fill='white',outline=BLUE if hl else ICE,width=6 if hl else 3)
     bw=d.textlength(badge,font=f('Bold',26))+48
     d.rounded_rectangle((W-60-bw-30,y-22,W-60-30,y+26),radius=24,fill=BLUE if hl else PET)
@@ -29,6 +29,8 @@ def card(y,h,badge,title,line,price,nrep,hl):
     d.text((95,y+70),title,font=f('Bold',50),fill=INK,anchor='ls')
     ft=f('Medium',29); ls=[l for l in line.split('|')]
     for i,l in enumerate(ls): d.text((95,y+118+i*40),l,font=ft,fill=GRAY,anchor='ls')
+    d.text((95,y+h-150),'Valor sin promo '+valor,font=f('Medium',28),fill=GRAY,anchor='ls')
+    wv=d.textlength('Valor sin promo '+valor,font=f('Medium',28)); d.line((95+d.textlength('Valor sin promo ',font=f('Medium',28)),y+h-160,95+wv,y+h-160),fill=GRAY,width=3)
     d.text((95,y+h-48),price,font=f('Bold',96),fill=BLUE,anchor='ls')
     # visuales a la derecha
     pw,ph=500,h-60; px0=W-60-30-pw; py0=y+30
@@ -43,9 +45,9 @@ def card(y,h,badge,title,line,price,nrep,hl):
     for i in range(nrep):
         panel.paste(n,(x+i*(n.width+4),int((ph-nh)/2)+10),n)
     im.paste(panel,(px0,py0),rmask((pw,ph),28))
-card(215,470,'Mayor valor','Combo 6 años','1 purificador|+ 3 repuestos','S/489',3,True)
-card(745,430,'Precio Cyber','Combo 3 años','1 purificador|+ 1 kit de repuesto','S/349',1,False)
-d.text((W/2,1230),'Cada núcleo rinde 20.000 litros (unos 18 meses)',font=f('Medium',28),fill=GRAY,anchor='mm')
+card(215,470,'Mayor valor','Combo 6 años','1 purificador|+ 3 repuestos','S/489',3,True,'S/896')
+card(745,430,'Precio Cyber','Combo 3 años','1 purificador|+ 1 kit de repuesto','S/349',1,False,'S/498')
+d.text((W/2,1230),'Repuesto suelto S/199 · cada núcleo rinde 20.000 litros (unos 18 meses)',font=f('Medium',28),fill=GRAY,anchor='mm')
 d.text((W/2,1275),'Pago contraentrega · 30 días de prueba',font=f('Medium',28),fill=GRAY,anchor='mm')
 im.save('imagenes/combos-elvo-nativo.jpg',quality=92); im.save('imagenes/combos-elvo-nativo.png')
 print('ok')
