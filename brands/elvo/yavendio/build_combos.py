@@ -45,9 +45,9 @@ def card(y,h,badge,title,line,price,nrep,hl,valor=''):
     for i in range(nrep):
         panel.paste(n,(x+i*(n.width+4),int((ph-nh)/2)+10),n)
     im.paste(panel,(px0,py0),rmask((pw,ph),28))
-card(215,470,'Mayor valor','Combo 6 años','1 purificador|+ 3 repuestos','S/489',3,True,'S/896')
-card(745,430,'Precio Cyber','Combo 3 años','1 purificador|+ 1 kit de repuesto','S/349',1,False,'S/498')
+card(215,470,'Mayor valor · solo Cyber','Combo 6 años','1 purificador|+ 3 repuestos','S/489',3,True,'S/896')
+card(745,430,'Solo por Cyber','Combo 3 años','1 purificador|+ 1 kit de repuesto','S/349',1,False,'S/498')
 d.text((W/2,1230),'Repuesto suelto S/199 · cada núcleo rinde 20.000 litros (unos 18 meses)',font=f('Medium',28),fill=GRAY,anchor='mm')
-d.text((W/2,1275),'Pago contraentrega · 30 días de prueba',font=f('Medium',28),fill=GRAY,anchor='mm')
+d.text((W/2,1275),'Precios solo por Cyber, hasta el 1 de noviembre · Pago contraentrega',font=f('Medium',28),fill=GRAY,anchor='mm')
 im.save('imagenes/combos-elvo-nativo.jpg',quality=92); im.save('imagenes/combos-elvo-nativo.png')
 print('ok')
