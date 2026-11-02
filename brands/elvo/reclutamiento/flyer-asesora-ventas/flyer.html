@@ -1,0 +1,130 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>elvo· — Asesora de ventas telefónicas</title>
+<style>
+@font-face{font-family:'Fraunces';font-weight:300;src:url(img/fraunces-latin-300-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-weight:400;src:url(img/fraunces-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-weight:400;src:url(img/hanken-grotesk-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-weight:500;src:url(img/hanken-grotesk-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-weight:600;src:url(img/hanken-grotesk-latin-600-normal.woff2) format('woff2')}
+:root{--ala:#EAE7E0;--cal:#D8D2C7;--pie:#9A948A;--piz:#2B2E2D;--gra:#1C1E1C;--hue:#F3F1EC;--gla:#82C3C4}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ala)}
+body{font-family:'Hanken Grotesk',Arial,sans-serif;color:var(--gra);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pg{width:210mm;height:297mm;position:relative;overflow:hidden;background:var(--ala);page-break-after:always}
+.logo{display:inline-flex;align-items:baseline;gap:1.5mm;font-family:'Fraunces',serif;font-weight:300;font-size:21pt;letter-spacing:-.01em;line-height:1}
+.logo svg{width:3.2mm;height:4.4mm;fill:var(--gla);transform:translateY(.2mm)}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12mm 16mm 0}
+.top small,.lab{font-size:7pt;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+.top small{color:var(--pie)}
+.lab{color:var(--piz);display:flex;align-items:center;gap:3mm}
+.lab:before{content:'';width:9mm;height:1px;background:var(--gla)}
+h1{font-family:'Fraunces',serif;font-weight:300;font-size:36pt;line-height:1.04;letter-spacing:-.02em}
+h2{font-family:'Fraunces',serif;font-weight:300;font-size:21pt;line-height:1.12;letter-spacing:-.015em}
+p{font-size:9.6pt;line-height:1.55;color:#2f322f}
+.hero{margin:9mm 0 0;height:84mm;position:relative}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:62% 62%;display:block}
+.p1 .body{padding:10mm 16mm 0}
+.cols{display:grid;grid-template-columns:1.25fr 1fr;gap:14mm;align-items:start}
+.lead{font-size:11pt;line-height:1.55;color:var(--gra);margin-top:5mm;max-width:92mm}
+.gan{display:grid;grid-template-columns:repeat(3,1fr);margin-top:9mm;border-top:1px solid var(--gla);border-bottom:1px solid var(--cal)}
+.gan div{padding:6mm 5mm 5mm 0}
+.gan div+div{padding-left:6mm;border-left:1px solid var(--cal)}
+.gan b{display:block;font-family:'Fraunces',serif;font-weight:300;font-size:29pt;letter-spacing:-.02em;line-height:1}
+.gan span{display:block;font-size:8.4pt;color:#4a4d4a;margin-top:2mm;line-height:1.4}
+.nota{font-size:7.6pt;color:var(--pie);margin-top:4mm;line-height:1.5}
+.quien{margin-top:9mm}
+.quien h2{font-size:17pt;margin:3mm 0 3mm}
+.estamos{position:absolute;left:16mm;right:16mm;bottom:13mm;border-top:1px solid var(--cal);padding-top:4mm;font-size:7.6pt;letter-spacing:.14em;text-transform:uppercase;color:var(--pie);display:flex;justify-content:space-between;gap:4mm}
+.pie{position:absolute;left:16mm;right:16mm;bottom:6mm;font-size:6.8pt;color:var(--pie);display:flex;justify-content:space-between}
+/* pagina 2 */
+.p2 .body{padding:8mm 16mm 0}
+.tres{display:grid;grid-template-columns:repeat(3,1fr);gap:7mm;margin-top:5mm}
+.tres div{border-top:1px solid var(--gla);padding-top:3.5mm}
+.tres b{display:block;font-family:'Fraunces',serif;font-weight:300;font-size:13pt;line-height:1.2;margin-bottom:1.5mm}
+.tres p{font-size:8.7pt;line-height:1.5}
+.lugar{margin-top:8mm}
+.fotos{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2.5mm;margin-top:4mm}
+.fotos img{width:100%;height:40mm;object-fit:cover;display:block}
+.cred{font-size:6.8pt;color:var(--pie);margin-top:1.5mm}
+.hor{display:grid;grid-template-columns:1fr 1fr;gap:12mm;margin-top:7mm}
+.hor h3,.proc h3{font-size:7pt;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--piz);margin-bottom:2.5mm}
+.hor table{width:100%;border-collapse:collapse;font-size:8.8pt}
+.hor td{padding:2mm 0;border-bottom:1px solid var(--cal)}
+.hor td:last-child{text-align:right}
+.hor p{font-size:8.2pt;margin-top:2mm;color:#4a4d4a}
+.proc{margin-top:7mm}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:5mm}
+.pasos div{border-top:1px solid var(--cal);padding-top:3mm}
+.pasos i{font-style:normal;font-family:'Fraunces',serif;font-weight:300;font-size:20pt;line-height:1;color:var(--piz);display:block;margin-bottom:1.5mm}
+.pasos p{font-size:8.3pt;line-height:1.45}
+.cta{position:absolute;left:0;right:0;bottom:0;height:58mm;background:var(--piz);color:var(--hue);padding:10mm 16mm 0}
+.cta h2{color:var(--hue);font-size:20pt}
+.cta p{color:#cfcbc2;font-size:9pt;margin-top:2mm}
+.btn{display:inline-block;margin-top:5mm;background:var(--gla);color:var(--gra);font-weight:600;font-size:9.4pt;padding:3mm 7mm;border-radius:99px}
+.cta .fine{position:absolute;left:16mm;right:16mm;bottom:6mm;font-size:6.6pt;color:#8c8a83;line-height:1.45}
+.cta .fund{position:absolute;right:16mm;top:11mm;text-align:right;font-size:8.4pt;color:#cfcbc2;line-height:1.5}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="gota" viewBox="0 0 10 14"><path d="M5 0C5 0 0 6.2 0 9a5 5 0 0 0 10 0C10 6.2 5 0 5 0z"/></symbol></defs></svg>
+
+<section class="pg p1">
+ <div class="top"><span class="logo">elvo<svg><use href="#gota"/></svg></span><small>Trabaja con nosotros · Noviembre 2026</small></div>
+ <div class="hero"><img src="img/mesa.jpg" alt=""></div>
+ <div class="body">
+  <div class="lab">Únete al equipo</div>
+  <h1 style="margin-top:4mm">Asesora de ventas telefónicas</h1>
+  <p class="lead">El agua es el primer ingrediente. Buscamos a alguien que sepa escuchar a las familias, acompañarlas por teléfono y ayudarlas a elegir.</p>
+  <div class="gan">
+   <div><b>S/1,300</b><span>sueldo fijo mensual</span></div>
+   <div><b>S/100</b><span>de movilidad al mes</span></div>
+   <div><b>hasta S/35</b><span>de comisión por purificador, desde tu primera venta</span></div>
+  </div>
+  <p class="nota">Referencial: con 20 ventas de Nativo en el mes, el ingreso total es de aproximadamente S/1,820 (fijo, movilidad y comisiones). Depende de las ventas entregadas y cobradas.</p>
+  <div class="quien">
+   <div class="lab">Quiénes somos</div>
+   <h2>Una marca peruana de purificadores de agua para el hogar</h2>
+   <p style="max-width:150mm">elvo· es de Inversiones Gad S.A.C., una empresa con más de 20 años en el mercado. Nuestras clientas y clientes son familias que quieren dejar de cargar bidones y de hervir agua. El equipo se instala en cinco minutos y nosotros nos encargamos del resto.</p>
+  </div>
+ </div>
+ <div class="estamos"><span>elvo.pe</span><span>WhatsApp</span><span>Falabella</span><span>Mercado Libre</span><span>Promart</span><span>Plaza Vea</span><span>Oechsle</span><span>Sodimac</span></div>
+ <div class="pie"><span>elvo· · Inversiones Gad S.A.C.</span><span>1 / 2</span></div>
+</section>
+
+<section class="pg p2">
+ <div class="top"><span class="logo">elvo<svg><use href="#gota"/></svg></span><small>Asesora de ventas telefónicas</small></div>
+ <div class="body">
+  <div class="lab" style="margin-top:6mm">Cómo es el trabajo</div>
+  <h2 style="margin-top:3mm">Clientes que ya quieren comprar, y tiempo para acompañarlos</h2>
+  <div class="tres">
+   <div><b>Llegan a ti</b><p>Nuestro sistema atiende el WhatsApp y preselecciona a quienes ya quieren comprar. No es venta en frío.</p></div>
+   <div><b>Los llamas y cierras</b><p>También acompañas a quienes preguntaron y no compraron, y avisas a quienes les toca cambiar el repuesto.</p></div>
+   <div><b>Todo queda registrado</b><p>Cada llamada y cada venta vive en el sistema. Ritmo esperado: 60 a 80 llamadas efectivas al día.</p></div>
+  </div>
+  <div class="lugar">
+   <div class="lab">Dónde vas a trabajar</div>
+   <h2 style="margin-top:3mm;font-size:17pt">Oficina privada en Comunal El Polo, Surco</h2>
+   <p style="margin-top:2mm">El Polo 695, Santiago de Surco, junto al C.C. El Polo, Monterrico. Comedor equipado, agua, café y té ilimitados, cabinas para llamadas, aire acondicionado e internet de alta velocidad. Transporte público a pocos minutos.</p>
+   <div class="fotos"><img src="img/p-007.jpg" alt=""><img src="img/p-008.jpg" alt=""><img src="img/p-009.jpg" alt=""></div>
+   <div class="cred">Fotos: Comunal El Polo.</div>
+  </div>
+  <div class="hor">
+   <div><h3>Horario</h3>
+    <table><tr><td>Turno A</td><td>9 a. m. – 6 p. m.</td></tr><tr><td>Turno B</td><td>11 a. m. – 8 p. m.</td></tr><tr><td>Sábados</td><td>9 a. m. – 6 p. m.</td></tr><tr><td>Domingos</td><td>libres</td></tr></table>
+    <p>Lunes a viernes, con 1 hora de refrigerio. El turno se define en la entrevista.</p></div>
+   <div class="proc" style="margin:0"><h3>Cómo sigue el proceso</h3>
+    <div class="pasos" style="grid-template-columns:1fr 1fr;gap:3mm 5mm">
+     <div><i>1</i><p>Te llamamos y hacemos un pequeño reto de venta por teléfono, dentro de 48 horas.</p></div>
+     <div><i>2</i><p>Entrevista con Angel, el fundador, en Comunal El Polo.</p></div>
+     <div><i>3</i><p>Carta de oferta con tu turno y fecha de inicio.</p></div>
+     <div><i>4</i><p>Primera semana de capacitación en producto, sistema y guion.</p></div>
+    </div></div>
+  </div>
+ </div>
+ <div class="cta">
+  <h2>Si esto suena a ti, escríbenos</h2>
+  <p>Postula por WhatsApp o con el formulario del anuncio.</p>
+  <span class="btn">Escríbenos por WhatsApp · 929 190 100</span>
+  <div class="fund">Angel Valcárcel<br>fundador · elvo.pe</div>
+  <div class="fine">Los montos de ingreso son referenciales y dependen de las ventas efectivamente entregadas y cobradas. Esta propuesta no constituye contrato; las condiciones definitivas constan en el contrato de trabajo.</div>
+ </div>
+</section>
+</body></html>
