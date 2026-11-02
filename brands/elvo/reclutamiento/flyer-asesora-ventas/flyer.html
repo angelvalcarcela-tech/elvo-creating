@@ -82,10 +82,10 @@ tr.t td{font-weight:700;background:var(--hie)}
 td.r,th.r{text-align:right}
 .nota{font-size:7.4pt;color:#9fb3c9;line-height:1.5;margin-top:3.5mm}
 /* P4 */
-.p4 .banner{margin:7mm -15mm 0;height:62mm;position:relative}
+.p4 .banner{margin:7mm -15mm 0;height:56mm;position:relative;background:var(--mar)}
 .p4 .banner img{width:100%;height:100%;object-fit:cover;display:block}
-.p4 .banner:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(1,10,33,.72),rgba(1,10,33,0) 60%)}
-.p4 .banner div{position:absolute;left:15mm;bottom:6mm;z-index:2;color:#fff}
+.p4 .banner:after{content:'';position:absolute;inset:0;background:radial-gradient(120% 140% at 100% 0%,rgba(51,85,255,.35),rgba(1,10,33,0) 60%)}
+.p4 .banner>div{position:absolute;left:15mm;bottom:9mm;z-index:2;color:#fff}
 .p4 .banner h2{color:#fff;font-size:19pt}
 .p4 .banner small{font-size:8.6pt;color:#dce6ee;display:block;margin-top:1.5mm}
 .fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5mm;margin-top:4mm}
@@ -93,13 +93,13 @@ td.r,th.r{text-align:right}
 .cred{font-size:6.6pt;color:var(--gri);margin-top:1.5mm}
 .dosc{display:grid;grid-template-columns:1fr 1fr;gap:9mm;margin-top:5.5mm}
 .dosc h3{font-size:12.5pt;margin:2mm 0 2mm}
-.dosc p{font-size:8.8pt}
-.hor{width:100%;font-size:8.6pt;margin-top:2mm}
+.dosc p{font-size:9.4pt;line-height:1.55}
+.hor{width:100%;font-size:9.2pt;margin-top:2mm}
 .hor th{background:var(--hie);color:var(--neg)}
 .pasos{display:grid;gap:1.6mm;margin-top:1mm}
-.pasos div{display:grid;grid-template-columns:7mm 1fr;gap:2.5mm;align-items:start;border-bottom:1px solid var(--hie);padding:1.8mm 0}
+.pasos div{display:grid;grid-template-columns:7mm 1fr;gap:2.5mm;align-items:start;border-bottom:1px solid var(--hie);padding:3mm 0}
 .pasos b{width:6.2mm;height:6.2mm;border-radius:50%;border:1px solid var(--cob);color:var(--cob);display:grid;place-items:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:8pt}
-.pasos span{font-size:8.5pt;line-height:1.4;color:#2c3340}
+.pasos span{font-size:9.2pt;line-height:1.45;color:#2c3340}
 .cta{position:absolute;left:0;right:0;bottom:0;height:50mm;background:var(--mar);color:#fff;padding:8mm 15mm 0}
 .cta h2{color:#fff;font-size:17pt}
 .cta p{color:#c9d5e3;font-size:8.8pt;margin-top:1.5mm}
@@ -126,7 +126,7 @@ td.r,th.r{text-align:right}
   <div><div class="lab">Quiénes somos</div><h2>Una marca peruana de purificadores de agua</h2></div>
   <p style="margin-top:6mm">elvo· es una marca peruana de purificadores de agua para el hogar y la oficina, de Inversiones Gad S.A.C., una empresa con más de 20 años en el mercado. Nuestros clientes son familias que quieren dejar de cargar bidones y hervir agua. Les vendemos tranquilidad: el equipo se instala en cinco minutos y nosotros nos encargamos del resto.</p>
  </div>
- <div class="datos" style="grid-template-columns:1fr;margin-top:7mm"><div style="display:flex;justify-content:space-between;align-items:center;padding:4.5mm 6mm"><span style="margin:0;font-size:9pt;color:var(--neg)"><b style="display:inline;font-size:9.6pt;color:var(--cob)">Lugar</b> &nbsp;Oficina privada en Comunal El Polo, Surco</span><span style="margin:0;font-size:8.2pt">El Polo 695, junto al C.C. El Polo, Monterrico</span></div></div>
+ <div class="datos" style="grid-template-columns:1fr;margin-top:7mm"><div style="display:flex;justify-content:space-between;align-items:center;padding:4.5mm 6mm"><span style="margin:0;font-size:9pt;color:var(--neg)"><b style="display:inline;font-size:9.6pt;color:var(--cob)">Lugar</b> &nbsp;Oficina privada en Comunal Golf Los Incas, Surco</span><span style="margin:0;font-size:8.2pt">Av. Circunvalación del Club Golf Los Incas 170, Piso 23</span></div></div>
  <div class="estamos"><div class="lab">Estamos en</div>
   <div class="logos"><span>elvo.pe</span><span>WhatsApp</span><img src="img/logo-falabella.svg" alt="Falabella"><span>Mercado Libre</span><img src="img/logo-promart.png" alt="Promart"><img src="img/logo-plazavea.svg" alt="Plaza Vea"><img src="img/logo-oechsle.svg" alt="Oechsle"><img src="img/logo-sodimac.svg" alt="Sodimac"></div></div>
  <div class="pie"><span>elvo· · Inversiones Gad S.A.C. · Asesora de ventas telefónicas</span><span>1 / 4</span></div>
@@ -172,10 +172,9 @@ td.r,th.r{text-align:right}
 
 <section class="pg p4">
  <div class="top"><img src="img/logo-azul.png" alt="elvo·"><small>Asesora de ventas telefónicas</small></div>
- <div class="banner"><img src="img/p-006.jpg" alt=""><div><div class="lab" style="color:#BED0DF">Dónde vas a trabajar</div><h2 style="margin-top:1.5mm">Oficina privada en Comunal El Polo</h2><small>El Polo 695, Santiago de Surco · junto al C.C. El Polo, Monterrico</small></div></div>
- <p style="margin-top:4.5mm">Tenemos oficina privada con acceso en todo nuestro horario, incluidos sábados. Comedor equipado, agua, café y té ilimitados, cabinas para llamadas, aire acondicionado, internet de alta velocidad y luz natural. Transporte público a pocos minutos.</p>
- <div class="fotos"><img src="img/p-007.jpg" alt=""><img src="img/p-008.jpg" alt=""><img src="img/p-009.jpg" alt=""></div><div class="cred">Fotos: Comunal El Polo.</div>
- <div class="dosc">
+ <div class="banner"><div><div class="lab" style="color:#BED0DF">Dónde vas a trabajar</div><h2 style="margin-top:1.5mm">Oficina privada en Comunal Golf Los Incas</h2><small>Av. Circunvalación del Club Golf Los Incas 170, Piso 23 · Santiago de Surco</small></div></div>
+ <p style="margin-top:4.5mm">Tenemos oficina privada con acceso en todo nuestro horario, incluidos sábados. Comedor equipado, agua, café y té ilimitados, cabinas para llamadas, aire acondicionado, internet de alta velocidad y luz natural.</p>
+ <div class="dosc" style="margin-top:12mm">
   <div>
    <div class="lab">Cómo es el trabajo</div>
    <p style="margin-top:2mm">No es venta en frío. Nuestro sistema atiende el WhatsApp y preselecciona a quienes ya quieren comprar; tú los llamas y cierras. También recuperas a clientes que preguntaron y no compraron, y avisas a quienes les toca repuesto. Cada llamada y venta queda registrada en el sistema. Ritmo esperado: 60–80 llamadas efectivas al día.</p>
@@ -189,7 +188,7 @@ td.r,th.r{text-align:right}
    <div class="lab" style="margin-top:5mm">Cómo sigue el proceso</div>
    <div class="pasos" style="margin-top:2mm">
     <div><b>1</b><span>Te llamamos 10 minutos y te hacemos un pequeño reto de venta por teléfono. Dentro de 48 h.</span></div>
-    <div><b>2</b><span>Entrevista con Angel, el fundador, en Comunal El Polo. Revisamos esta propuesta juntos.</span></div>
+    <div><b>2</b><span>Entrevista con Angel, el fundador, en Comunal Golf Los Incas. Revisamos esta propuesta juntos.</span></div>
     <div><b>3</b><span>Carta de oferta con tu turno y fecha de inicio.</span></div>
     <div><b>4</b><span>Primera semana de capacitación en producto, sistema y guion. Cobras tu fijo desde el día 1.</span></div>
    </div>
