@@ -50,22 +50,22 @@ p{font-size:9.4pt;line-height:1.5;color:#2c3340}
 /* P2 productos */
 .prods{display:grid;grid-template-columns:repeat(3,1fr);gap:3.5mm;margin-top:5mm}
 .card{background:#fff;border:1px solid var(--hie);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
-.card .im{aspect-ratio:1/0.6;background:var(--hie);overflow:hidden}
-.card .im img{width:100%;height:100%;object-fit:cover;display:block}
+.card .im{aspect-ratio:1/1;background:var(--hie);overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:contain;display:block}
 .card .im.m{background:var(--mar)}
-.card .tx{padding:4mm 4.2mm 4.5mm}
+.card .tx{padding:3mm 4mm 3.5mm}
 .card h3{font-size:12pt}
 .card .pr{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:9.4pt;color:var(--cob);margin-top:1mm}
 .card p{font-size:8.2pt;line-height:1.45;margin-top:1.8mm}
 .card .co{margin-top:2.6mm;padding-top:2.2mm;border-top:1px solid var(--hie);font-size:8pt;font-weight:600;color:var(--neg)}
 .card.big{grid-column:1/-1;flex-direction:row}
-.card.big .im{width:46mm;height:38mm;aspect-ratio:auto;flex:none}
-.card.big .tx{padding:4mm 5.5mm}
+.card.big .im{width:33mm;height:33mm;aspect-ratio:auto;flex:none}
+.card.big .tx{padding:3mm 5mm}
 .card.big h3{font-size:14pt}
 .card.big p{font-size:9pt}
 .tag{display:inline-block;background:var(--cob);color:#fff;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:1.4mm 3mm;border-radius:99px;margin-bottom:2mm}
-.dos{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:4mm}
-.caja{background:var(--hie);border-radius:20px;padding:5mm 5.5mm}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:3.5mm;margin-top:3.5mm}
+.caja{background:var(--hie);border-radius:18px;padding:3.6mm 5mm}
 .caja h3{font-size:11.5pt;margin-bottom:2mm}
 .caja p{font-size:8.5pt}
 .caja .co{margin-top:2mm;font-weight:600;font-size:8.4pt;color:var(--neg)}
@@ -134,15 +134,15 @@ td.r,th.r{text-align:right}
 
 <section class="pg p2">
  <div class="top"><img src="img/logo-azul.png" alt="elvo·"><small>Asesora de ventas telefónicas</small></div>
- <div style="margin-top:8mm"><div class="lab">Lo que vendes</div><h2 style="margin-top:2.5mm">Cinco purificadores. Un bestseller.</h2>
+ <div style="margin-top:5mm"><div class="lab">Lo que vendes</div><h2 style="margin-top:2.5mm">Cinco purificadores. Un bestseller.</h2>
  <p style="margin-top:2mm">El Nativo es 9 de cada 10 ventas; los demás se ofrecen cuando el cliente pide otra opción. Junto a cada producto está lo que ganas por venderlo.</p></div>
  <div class="prods">
   <div class="card big"><div class="im"><img src="img/prod-nativo.jpg" alt=""></div><div class="tx"><span class="tag">Bestseller</span><h3>elvo· Nativo</h3><div class="pr">S/299 · 349 · 489 &nbsp;(18 meses / 3 años / 6 años)</div>
-   <p>Se conecta al caño en 5 minutos. Retiene plomo y metales pesados, quita el cloro y deja el agua con tendencia alcalina. Núcleo de 20,000 litros. Para quien quiere la mayor protección. Combos con núcleos incluidos; el de 6 años paga +S/5.</p><div class="co">Comisión · S/10 · S/20 · S/35 según tramo</div></div></div>
+   <p>Se conecta al caño en 5 minutos. Retiene plomo y metales pesados, quita el cloro y deja el agua con tendencia alcalina. Núcleo de 20,000 litros o 18 meses. Para quien quiere la mayor protección. Combos con núcleos incluidos; el de 6 años paga +S/5.</p><div class="co">Comisión · S/10 · S/20 · S/35 según tramo</div></div></div>
   <div class="card"><div class="im"><img src="img/prod-vivo.jpg" alt=""></div><div class="tx"><h3>elvo· Vivo</h3><div class="pr">S/259 · 289 · 359</div><p>Mismo formato, con magnesio. Agua sin sabor a cloro y con tendencia alcalina. Para quien busca una opción más económica.</p><div class="co">Comisión · S/8 · S/15 · S/26</div></div></div>
   <div class="card"><div class="im"><img src="img/prod-a16.jpg" alt=""></div><div class="tx"><h3>elvo· Alivio 16</h3><div class="pr">S/159 · con kit S/249</div><p>Bidón purificador por gravedad: se llena con una jarra, sin electricidad ni caño. Para 1–2 personas u oficinas pequeñas.</p><div class="co">Comisión · S/5 · S/10 · S/18</div></div></div>
   <div class="card"><div class="im"><img src="img/prod-a22.jpg" alt=""></div><div class="tx"><h3>elvo· Alivio 22</h3><div class="pr">S/198 · con kit S/288</div><p>Igual que el Alivio 16, con más capacidad. Para familias de 3 o más.</p><div class="co">Comisión · S/5 · S/10 · S/18</div></div></div>
-  <div class="card" style="grid-column:1/-1;flex-direction:row"><div class="im m" style="width:46mm;height:34mm;aspect-ratio:auto;flex:none"><img src="img/prod-cero.jpg" alt=""></div><div class="tx" style="padding:4mm 5.5mm"><h3 style="font-size:14pt">elvo· Cero</h3><div class="pr">S/1,999 con instalación</div><p style="font-size:9pt">Ósmosis inversa con agua fría y caliente al instante. Solo se enchufa. Para oficinas y hogares que quieren lo mejor.</p><div class="co">Comisión · S/120 fijo · cuenta como 2 ventas</div></div></div>
+  <div class="card" style="grid-column:1/-1;flex-direction:row"><div class="im m" style="width:33mm;height:33mm;aspect-ratio:auto;flex:none"><img src="img/prod-cero.jpg" alt=""></div><div class="tx" style="padding:3mm 5mm"><h3 style="font-size:14pt">elvo· Cero</h3><div class="pr">S/1,999 con instalación</div><p style="font-size:9pt">Ósmosis inversa con agua fría y caliente al instante. Solo se enchufa. Para oficinas y hogares que quieren lo mejor.</p><div class="co">Comisión · S/120 fijo · cuenta como 2 ventas</div></div></div>
  </div>
  <div class="dos">
   <div class="caja"><h3>Repuestos y complementos</h3><p>Repuesto Nativo S/249 · Repuesto Vivo S/129 · Kit Alivio S/99 · Kit Cero S/329.</p><div class="co">Comisión · S/5 por unidad. No cuentan para el tramo.</div></div>
