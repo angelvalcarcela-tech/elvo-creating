@@ -83,6 +83,7 @@ Unidad principal ×1, conjunto de bandeja de goteo ×1, manual de usuario ×1, g
 
 ## Pendientes
 
-1. **Remoción de contaminantes:** el manual dice que el ROC "reduce incrustaciones, metales pesados y otros contaminantes finos". Es un dato del fabricante sin informe de laboratorio, así que la ficha no lo afirma.
+1. **Remoción de contaminantes:** hay ensayos de laboratorio del fabricante hechos con el modelo R200 (el R260 es "modelo cubierto", solo cambia la carcasa). Detalle y cifras en `cero-respaldo-tecnico.md`. En la ficha se citan como "ensayos del fabricante" y no como pruebas propias de elvo·.
+1b. **pH 8.5 y remineralización:** el ensayo mide pH 7.98 después del filtro (7.17 antes) y magnesio de solo 0.0435 mg/L. Shopify dice pH 8.5; no usar ese dato.
 2. **Shopify:** actualizar el producto con los datos del manual y la caja (capacidad, voltaje, temperatura, UV, TDS, contenido, EAN, sin adaptador).
 3. **Garantía de 1 año:** el manual de las páginas 1 a 10 no la trae; la fuente es Shopify y products.json.
