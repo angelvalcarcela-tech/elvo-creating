@@ -59,6 +59,16 @@
    "extra_images": [
     "/home/user/elvo-creating/brands/elvo/web/fotos-producto/cero-repuesto-elvo.png"
    ]
+  },
+  {
+   "slug": "img-03b",
+   "angle": "casa-elvo-prueba",
+   "prompt": "1:1 square aspect ratio. Images 2, 3 and 4 are the real elvo Nativo, Vivo and Alivio products; Image 1 is the real elvo Cero hot and cold reverse osmosis countertop purifier. Reproduce it faithfully: same shape, same black display with the colored icon grid, same front handle, same elvo logo, same clear water tank on the right side; do not redesign, recolor or relabel it. BRAND LINE (calm, technical-editorial, Swiss-minimal): clean off-white #FAFAFA canvas; a dusty steel-blue #9EBACC rounded card where useful; ONE soft dome (a large rising semicircle) with a gradient from cobalt blue #3355FF fading into white, placed behind the product like a sunrise arch; deep navy #010A21 for all text; ice #DCE6EE for thin outlines. Headlines: uppercase, light-weight geometric sans-serif (Atyp / Plus Jakarta Sans style), generous letter-spacing, navy, left aligned. Tiny technical captions in uppercase Inter with numbering and arrows, for example '01 // TEXT' or 'A → B → C'. Pills: white rounded-full capsules with a thin 1px ice-blue outline and small uppercase navy text, no fill color, no shadows. Matte white product on a pale stone surface with very soft contact shadow. Lots of negative space, calm and precise, no hard shadows, no gradients on text, no stars or ratings, no prices, no exclamation marks, no emoji, no extra logos. Copy every text exactly as written, with accents. Keep all text and the product at least 5% away from every edge. HOUSE OF BRANDS SYSTEM: every piece belongs to 'Casa elvo·'. Layout: top-left tiny caption '01 // AGUA FRÍA Y CALIENTE'. Top-right the wordmark 'elvo·' in bold lowercase geometric sans-serif, navy, with the small dot. Headline top-left in three short lines: 'FRÍA DESDE 6 °C.' / 'CALIENTE' / 'HASTA 98 °C.' The Cero purifier (Image 1) large, centered-right, in front of the cobalt-to-white dome. Bottom-left two outlined pills: '6 °C' and '98 °C'. Across the very bottom, a thin full-width house strip with a 1px ice-blue outline and rounded corners: on the left tiny caption 'CASA ELVO·', then four small product thumbnails in a row with tiny uppercase names under each: NATIVO (Image 2), VIVO (Image 3), ALIVIO (Image 4), CERO (Image 1). CERO is highlighted by a small cobalt dot and full opacity; the other three are slightly muted. Keep the strip at least 5% from the bottom edge.",
+   "extra_images": [
+    "/home/user/elvo-creating/brands/elvo/brand-identity/product-images/nativo-front.png",
+    "/home/user/elvo-creating/brands/elvo/brand-identity/product-images/vivo-front.png",
+    "/home/user/elvo-creating/brands/elvo/web/fotos-producto/alivio-equipo.png"
+   ]
   }
  ]
 }
