@@ -86,3 +86,58 @@ Medimos qué *construye marca* (guardados, compartidos, visitas al perfil) y qu�
 | 6 | NUEVA · Estiramiento en la sala, vaso en el suelo | NUEVA · Hombre sirviendo café en la cocina, de espaldas | NUEVA · **Cero** en cocina moderna con taza humeante |
 
 Reparto: 5 de producto (Nativo ×2, Vivo, Alivio, Cero), 10 de ritual, 3 de detalle. 4 generadas, 14 por generar.
+
+## 8. Pilares de marca (sacados de elvo.pe y del manual OQUVA)
+| Pilar | Qué significa | Dónde se ve en la web |
+|---|---|---|
+| **Agua considerada** | El agua como parte de un hogar bien pensado, no un aparato escondido | "Filtración pensada con cuidado", diseño para vivir a la vista |
+| **Simple** | Sin obras, sin gasfitero, sin electricidad; se instala en 5 minutos | "Lo instalas tú en 5 minutos", Alivio sin conexión |
+| **Clara** | Decimos qué retiene, qué no y cuándo cambiar el núcleo | Asterisco PureCore, aviso por WhatsApp, "Caño → Núcleo → Vaso" |
+| **Hogar peruano** | Hecha para las familias y casas del Perú | "Hogares peruanos", +500 familias, reseñas de Ica, Piura, Trujillo, Lima |
+
+Cada pilar tiene una serie en Instagram:
+| Pilar | Serie de Instagram | Qué se ve |
+|---|---|---|
+| Agua considerada | **Un día de agua** + **Luz y agua** | Rituales, espacios, detalle de luz y vaso |
+| Simple | **Objeto** | El producto como pieza de diseño, el gesto de instalar |
+| Clara | **Caño → Núcleo → Vaso** y **El cambio** | Cómo funciona y el ritual de cambiar el núcleo |
+| Hogar peruano | **Casas del Perú** | Familias, mascotas, costa, sierra y selva, fiestas y estaciones |
+
+## 9. Cómo entran todos los productos
+| Producto | Personaje en el mundo | Escenario propio | Estado en las 18 |
+|---|---|---|---|
+| Nativo | El cuidado de la familia | Cocina de casa | 2 fotos |
+| Vivo | El sabor de cada día | Mañana, café, té | 1 foto |
+| Alivio | La reserva | Sala, fin de semana, provincias, viajes | 1 foto |
+| Cero | El gesto premium | Cocina moderna, oficina, fría y caliente | 1 foto |
+| Núcleo de repuesto | El cuidado constante | Ritual de cambio cada 18 meses | **0 fotos (falta)** |
+
+El núcleo no está en la grilla inicial. Entra en la segunda ola (serie "El cambio") y en stories: es lo que fideliza y lo que más repite la compra.
+
+## 10. Motor para no quedarse sin ideas
+**La matriz.** Toda foto = Momento × Espacio × Persona × Producto sobre las mismas constantes.
+- 6 momentos (amanecer, mañana, mediodía, tarde, noche, fin de semana)
+- 8 espacios (cocina, comedor, sala, escritorio, balcón, dormitorio, patio, terraza)
+- 5 productos (Nativo, Vivo, Alivio, Cero, núcleo)
+- 4 tipos de persona (solo manos, adulto, familia, mascota)
+= 960 combinaciones antes de repetir una.
+
+**Series recurrentes** (cada una es una idea que no se agota): Un día de agua · Luz y agua · Objeto · Caño → Núcleo → Vaso · El cambio · Casas del Perú · **Agua + algo** (agua con limón, infusiones, café, hielo, mate: bebidas que parten de agua pura).
+
+**Capítulos.** Cada 6 semanas el mundo cambia de "capítulo": mismo ADN, nuevo acento (más blanco, más piedra, noche, azul eléctrico en un objeto). Evita la monotonía y da razones para volver.
+
+**Calendario peruano (ideas ya listas):**
+| Época | Tema |
+|---|---|
+| Ene-Mar | Verano: hielo, agua fría, mañana en la playa o la terraza. 22 de marzo: Día Mundial del Agua |
+| Abr-May | Regreso a clases, loncheras, Día de la Madre |
+| Jun-Ago | Garúa e invierno: té, vapor, mate. Día del Padre, Fiestas Patrias |
+| Sep-Oct | Primavera: patio, plantas, mesa larga |
+| Nov-Dic | Mesa familiar, Navidad, regalo de agua |
+
+**Producción barata.** Cada foto cuesta unos US$ 0.2 y se genera con una receta (prompt) fija. Tres posts por semana son unos US$ 2.4 al mes. El límite es el criterio, no el costo.
+
+**Ritmo después del lanzamiento:** lunes ritual · miércoles objeto o claridad · viernes detalle o reel. Cada mes se miran guardados y compartidos: se duplican las 2 series que mejor funcionan y se rotan las demás.
+
+## 11. Segunda ola (9 posts, un mes después del lanzamiento)
+Núcleo (El cambio) · Vivo ×2 · Alivio en provincia · Cero con infusión · Agua + limón · Casas del Perú (sierra) · Día del agua · un reel de instalación.
