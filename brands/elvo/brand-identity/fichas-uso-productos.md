@@ -70,6 +70,6 @@ Fuentes: respuestas del dueño de marca (nov-2026), esquemas de medidas y galer�
 
 ## 6. Datos por confirmar
 - Nativo: la web dice 25 × 6 cm; el esquema dice 30 cm de alto y 16 × 16 cm (probablemente con base y pico).
-- Cero: la web dice "caliente hasta 85 °C"; la pantalla muestra 100°.
+- Cero: **confirmado por el usuario (nov-2026): agua fría desde 6 °C y caliente hasta 85 °C.** La pantalla del equipo muestra atajos hasta 100°, no usarlos en copy.
 - Alivio 22 L: medidas.
 - Alivio en la web: las fotos muestran el logo en la base; la regla de marca es **sin logo**.
