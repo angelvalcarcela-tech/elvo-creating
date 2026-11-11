@@ -156,3 +156,18 @@ Analizado a partir de 11 capturas del usuario (grilla, perfil y destacados). No 
 8. **Carruseles y reels de gestos** (sacar el sobre, verter, abrir el frasco).
 
 **Qué no se rescata:** códigos de descuento y promos, rostros de creadores, colores saturados (el agua es incolora: el color lo pone el escenario, en tonos suaves), gimnasio y deporte intensos, y la saturación de mensajes de venta. La estética de elvo· sigue siendo calma y hogar.
+
+## 13. Reels y video (a partir del mapeo de @promix)
+Datos del mapeo: de los 15 reels recientes, cerca de la mitad son **recetas**; el resto, producto en mano y producto en escena. Producto puro rinde 7K–9K vistas; **recetas (hasta 136K) y calle/lifestyle (307K)** son los que despegan. Portadas siempre verticales con el sujeto centrado (se recortan en la grilla). Dos estilos de texto: grande para recetas, frase corta en sans delgada para producto. Perfil: bio en 3 líneas, un solo link, 17 destacados por producto con foto de portada.
+
+**Reels para elvo· (1–2 por semana):**
+| Formato | Qué se ve | Duración | Cómo se produce |
+|---|---|---|---|
+| **Agua + algo** (receta) | Plano cenital: agua con limón, infusión, hielo, mate; manos | 8–12 s | Foto en cadena o clip real; sonido de agua |
+| **Gesto de producto** | Servir del pico, botón plateado de Cero, jarra de 2 L, tapa de Alivio | 5–8 s | Mejor grabado real con celular |
+| **Instalación en 5 minutos** | Derivador, manguera, palanca, primer vaso | 15–25 s | Grabado real |
+| **El cambio** | Llave plástica, núcleo nuevo, purga de 5 min | 10–15 s | Grabado real |
+| **Mañana en casa** (lifestyle) | Cocina, ventana, persona sirviéndose agua | 8–12 s | IA a partir de fotos o grabado |
+| **Momentos peruanos** | Mesa de Fiestas Patrias, garúa con té | 8–12 s | IA o grabado |
+
+Texto en portada: recetas con título grande; producto con una frase corta y delgada. Mismo formato vertical con sujeto centrado.
