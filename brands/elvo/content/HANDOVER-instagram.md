@@ -108,3 +108,9 @@ Cuenta: @elvo_filtros (account_id 17841460108164627, vía Supermetrics `manage_s
 - Los destacados los crea el usuario en la app desde el archivo de stories (portadas en `lanzamiento/destacados/`).
 - Facebook: no se puede publicar con las herramientas disponibles; sugerido activar "compartir también en Facebook" en Instagram o copiar desde Meta Business Suite.
 - Consultar o cambiar lo programado: `manage_social_media` `status` (sin parámetros lista), `update_post` con `scheduled_id`, `cancel_scheduled`. Lo publicado no se edita ni borra desde la herramienta.
+
+## 16. Correcciones (11-nov-2026, 17:50 Lima)
+- **Defecto detectado:** la foto de Vivo con limón (post 12, scheduled_id 9046) se publicó sin el "elvo" escrito en el producto. Versión corregida: `lote7/h2b-vivo-limon_v1.png` y `lanzamiento/feed/12_vivo-limon-CORREGIDA.png`. La publicada solo se puede borrar desde la app de Instagram.
+- **Story de Vivo** reprogramada con la foto corregida (cancelada 9068, nueva 9129 a las 18:31). Portada del destacado Vivo regenerada.
+- **LinkedIn:** copy 100% aspiracional (nada de "hervir no elimina metales"), reseña descartada, post 8 nuevo ("El agua también se diseña"). Regla: sin precios, sin WhatsApp, sin cifras que caduquen, solo reseñas de Lima.
+- **Regla de calidad nueva:** en toda foto donde se vea el purificador de caño, debe leerse el "elvo" en el cuerpo, bajo la gota.
