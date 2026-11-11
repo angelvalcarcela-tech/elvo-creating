@@ -183,3 +183,7 @@ Pendiente de la segunda ola: capítulos por línea y reels de recetas.
 
 ## 15. Kit de lanzamiento
 Carpeta `lanzamiento/feed/`: 18 imágenes 1080×1350 numeradas **en orden de subida** (01 = fila de abajo a la derecha; 18 = fila de arriba a la izquierda). Subiéndolas en ese orden, el perfil queda igual al mockup `grilla-final-18-v3.png`.
+
+## 16. Grilla final v4 (orden A + catálogo)
+Filas de arriba a abajo (cada fila = un producto o un tema): **1** catálogo Nativo/Vivo en azul eléctrico con "Agua pura. Simplificada." · mujer en la cocina · té · **2** Nativo con nicho en arco · vaso con luz · cambio de núcleo · **3** Vivo con limón · balcón · mesa de noche con espejo · **4** catálogo Alivio en azul acero · Alivio con tapa quitada · llave llenando botella · **5** mesa con la jarra de Cero · botón de Cero · catálogo Cero en azul noche con "Frío o caliente." · **6** perro · hombre con café en arco · manos con vaso.
+Tratamiento de color uniforme (leve tono frío) en las fotos de ambiente; los catálogos conservan su fondo plano. Texto solo en los 2 catálogos. Imagen de vista previa: `grilla-final-v4.png`. Carpeta de subida: `lanzamiento/feed/` (01 a 18, en orden de subida) y `lanzamiento/destacados/`.
