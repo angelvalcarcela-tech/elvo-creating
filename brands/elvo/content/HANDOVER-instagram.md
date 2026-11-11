@@ -99,3 +99,12 @@ Pendiente: pies de foto de las 18, stories mínimas por destacado, confirmar con
 Sí existe una vía: la herramienta `manage_social_media` de **Supermetrics** publica y programa en Instagram (IMAGE JPEG, CAROUSEL, VIDEO/reel, STORY con `frames`). **Estado:** la cuenta @elvo_filtros **no está conectada** a Supermetrics (equipo "Team angelvalcarcela"). Hay que abrir el enlace de login con permisos de escritura (`get_user_and_team login_data_source IGI include_management_scopes=true`; vence en 24 h) y conectar la cuenta; después `accounts_discovery IGI` da el `account_id`.
 Reglas del flujo: confirmar el contenido, correr `validate_only`, publicar con `upload_ref` (`creative_picker` o `create_upload_url` + subida) o `media_url` pública (el repo no es público). Espaciar posts de una misma cuenta 5+ minutos. Los posts publicados no se pueden editar ni borrar desde la herramienta. Zona horaria: America/Lima.
 Archivos listos: `lanzamiento/feed-jpg/` (18 JPEG en orden de subida), `lanzamiento/pies-de-foto.md`, `lanzamiento/stories/` (18 láminas 1080×1920 en 6 destacados) y `lanzamiento/stories-minimas.md`. Temperatura de Cero confirmada: 6 °C a 85 °C. Cambio de núcleo: confirmado por el usuario. Sin confirmar: medidas de Nativo; la "garantía de por vida" sigue fuera del copy.
+
+## 15. Publicación en curso (11-nov-2026)
+Cuenta: @elvo_filtros (account_id 17841460108164627, vía Supermetrics `manage_social_media`). El usuario cambió el nivel de aprobación en hub.supermetrics.com/write-settings para poder programar sin un enlace por post.
+- **Foto 01** (manos-ventana) publicada: https://www.instagram.com/p/DfnaZwjjjVh/
+- **Fotos 02 a 18** programadas, una cada 6 minutos, de 16:25 a 18:01 (hora de Lima, 11-nov): scheduled_id 9036 a 9052 y 9057 (balcón, 17:19).
+- **18 stories** programadas en 6 secuencias de 3 láminas (cada 5 min): Nativo 18:10 (9066), Vivo 18:30 (9068), Alivio 18:50 (9069), Cero 19:10 (9070), Reseñas 19:30 (9071), Envíos y pagos 19:50 (9072).
+- Los destacados los crea el usuario en la app desde el archivo de stories (portadas en `lanzamiento/destacados/`).
+- Facebook: no se puede publicar con las herramientas disponibles; sugerido activar "compartir también en Facebook" en Instagram o copiar desde Meta Business Suite.
+- Consultar o cambiar lo programado: `manage_social_media` `status` (sin parámetros lista), `update_post` con `scheduled_id`, `cancel_scheduled`. Lo publicado no se edita ni borra desde la herramienta.
