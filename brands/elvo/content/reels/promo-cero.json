@@ -1,10 +1,62 @@
-{"out":"/home/user/elvo-creating/brands/elvo/content/reels/promo-cero.mp4","xfade":0.9,"scenes":[
- {"src":"/home/user/elvo-creating/brands/elvo/content/video-cero/v1-cero-solo.png","title":"elvo· Cero","sub":"Agua fría y caliente en un solo equipo.","dur":4.5,"zoom":0.05},
- {"src":"/home/user/elvo-creating/brands/elvo/content/lote6/l1-pantry_v1.png","title":"Sin bidones.","sub":"Ni pedir, ni cargar, ni guardar.","dur":4.0},
- {"src":"/home/user/elvo-creating/brands/elvo/content/video-cero/v2-llenado.png","title":"Se llena por atrás.","sub":"Sin mangueras. Sin instalación.","dur":4.0},
- {"src":"/home/user/elvo-creating/brands/elvo/content/video-cero/v3-fria.png","title":"Fría, desde 6 °C.","sub":"Para los días de calor.","dur":4.0},
- {"src":"/home/user/elvo-creating/brands/elvo/content/video-cero/v4-caliente.png","title":"Caliente, hasta 85 °C.","sub":"Para el té y el café.","dur":4.0},
- {"src":"/home/user/elvo-creating/brands/elvo/content/lote3/g2-cero-boton_v1.png","title":"Un toque.","sub":"Eliges la temperatura y sirves.","dur":4.0},
- {"src":"/home/user/elvo-creating/brands/elvo/content/lote8/n1-jarra-reunion_v1.png","title":"La jarra de 2 litros.","sub":"Se lleva a la mesa o a la reunión.","dur":4.0},
- {"src":"/home/user/elvo-creating/brands/elvo/content/video-cero/v5-hogar.png","title":"Para tu casa. Para tu oficina.","sub":"Agua a la mano, todo el día.","dur":4.0},
- {"card":true,"title":"elvo· Cero","sub":"Agua fría y caliente. Sin instalación.","footer":"Pídelo en elvo.pe","dur":5.5}]}
+{
+ "out": "/home/user/elvo-creating/brands/elvo/content/reels/promo-cero.mp4",
+ "xfade": 0.9,
+ "scenes": [
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v1-cero-solo.png",
+   "title": "elvo· Cero",
+   "sub": "Agua fría y caliente en un solo equipo.",
+   "dur": 4.5,
+   "zoom": 0.05
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote6/l1-pantry_v1.png",
+   "title": "Sin bidones.",
+   "sub": "Ni pedir, ni cargar, ni guardar.",
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v2-llenado.png",
+   "title": "Se llena por atrás.",
+   "sub": "Sin mangueras. Sin instalación.",
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v3-fria.png",
+   "title": "Fría,|desde 6 °C.",
+   "sub": "Para los días de calor.",
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v4-caliente.png",
+   "title": "Caliente,|hasta 85 °C.",
+   "sub": "Para el té y el café.",
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote3/g2-cero-boton_v1.png",
+   "title": "Un toque.",
+   "sub": "Eliges la temperatura y sirves.",
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote8/n1-jarra-reunion_v1.png",
+   "title": "La jarra de 2 litros.",
+   "sub": "Se lleva a la mesa o a la reunión.",
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v5-hogar.png",
+   "title": "Para tu casa.|Para tu oficina.",
+   "sub": "Agua a la mano, todo el día.",
+   "dur": 4.0
+  },
+  {
+   "card": true,
+   "title": "elvo· Cero",
+   "sub": "Agua fría y caliente. Sin instalación.",
+   "footer": "Pídelo en elvo.pe",
+   "dur": 5.5
+  }
+ ]
+}

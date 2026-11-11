@@ -16,7 +16,9 @@ def overlay_png(title,sub,out,card=False,footer=''):
     im=Image.new('RGBA',(1080,1920),(0,0,0,0)); d=ImageDraw.Draw(im)
     if not card:
         for y in range(1000,1920): d.line([(0,y),(1080,y)],fill=(1,10,33,min(215,int(215*((y-1000)/700)**1.2))))
-    tl=wrap(d,title,F('Medium',96),900); sl=wrap(d,sub,F('Regular',44),900) if sub else []
+    tl=[]
+    for part in title.split('|'): tl+=wrap(d,part,F('Medium',96),900)
+    sl=wrap(d,sub,F('Regular',44),900) if sub else []
     h=len(tl)*112+(24+len(sl)*58 if sl else 0); y=(1560-h) if not card else 760
     for ln in tl: d.text((90,y),ln,font=F('Medium',96),fill=(255,255,255,255)); y+=112
     y+=24
