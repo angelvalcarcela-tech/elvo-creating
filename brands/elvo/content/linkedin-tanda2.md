@@ -1,6 +1,6 @@
 # LinkedIn — tanda 2 (8 posts, 2 por semana: martes y jueves)
 
-Mismas reglas: sin precios, sin WhatsApp, sin cifras que caduquen, sin afirmaciones técnicas, solo reseñas de Lima (ninguna en esta tanda), todo aspiracional. Preview: `linkedin/preview-tanda2-C.png` (9 a 12) y `preview-tanda2-D.png` (13 a 16). Imágenes: `linkedin/tanda2/`. **Nada publicado todavía.**
+Mismas reglas: sin precios, sin WhatsApp, sin cifras que caduquen, sin afirmaciones técnicas, solo reseñas de Lima (ninguna en esta tanda), todo aspiracional. Preview: `linkedin/preview-tanda2-C.png` (9 a 12) y `preview-tanda2-D.png` (13 a 16). Imágenes: `linkedin/tanda2/`. **Programada** (scheduled_id 9219 a 9234) de martes 17-nov a jueves 10-dic, 8:30 a. m. Lima.
 
 | # | Día | Pilar | Idea | Imagen |
 |---|---|---|---|---|
