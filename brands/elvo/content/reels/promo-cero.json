@@ -1,0 +1,6 @@
+{"out":"/home/user/elvo-creating/brands/elvo/content/reels/promo-cero.mp4","xfade":0.9,"scenes":[
+ {"src":"/home/user/elvo-creating/brands/elvo/content/lote5/k3-cero-noche_v1.png","pad":"0x010A21","title":"elvo· Cero","sub":"Agua fría y caliente.","dur":4.5,"zoom":0.05},
+ {"src":"/home/user/elvo-creating/brands/elvo/content/lote3/g2-cero-boton_v1.png","title":"Un toque.","sub":"Fría o caliente, a tu medida.","dur":4.5},
+ {"src":"/home/user/elvo-creating/brands/elvo/content/lanzamiento/feed/06_mesa-jarra.png","title":"La jarra viaja a la mesa.","sub":"Dos litros, siempre a mano.","dur":4.5},
+ {"src":"/home/user/elvo-creating/brands/elvo/content/lote6/l1-pantry_v1.png","title":"Sin bidones.","sub":"Ni pedir, ni cargar, ni guardar.","dur":4.5},
+ {"card":true,"title":"elvo· Cero","sub":"Agua fría y caliente. Sin instalación.","footer":"elvo.pe","dur":5.5}]}
