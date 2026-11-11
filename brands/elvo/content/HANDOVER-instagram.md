@@ -114,3 +114,7 @@ Cuenta: @elvo_filtros (account_id 17841460108164627, vía Supermetrics `manage_s
 - **Story de Vivo** reprogramada con la foto corregida (cancelada 9068, nueva 9129 a las 18:31). Portada del destacado Vivo regenerada.
 - **LinkedIn:** copy 100% aspiracional (nada de "hervir no elimina metales"), reseña descartada, post 8 nuevo ("El agua también se diseña"). Regla: sin precios, sin WhatsApp, sin cifras que caduquen, solo reseñas de Lima.
 - **Regla de calidad nueva:** en toda foto donde se vea el purificador de caño, debe leerse el "elvo" en el cuerpo, bajo la gota.
+
+## 17. LinkedIn publicado (11-nov-2026, ~18:15 Lima)
+Página **Elvo®** (account_id 145309599). Publicados 8 posts en este orden (el 2, equipo de ventas, al final para quedar arriba del feed): 1 (Por qué elvo·, share-7526417020146352128), 3 (oficina sin bidones), 4 (carrusel de 5 preguntas), 5 (Lo simple, bien hecho), 6 (El ciclo del bidón), 7 (un purificador para cada lugar), 8 (El agua también se diseña), 2 (equipo de ventas, share-7526418936234561536). Se aprobó el permiso de escritura de LinkedIn una vez; los demás salieron sin aprobación.
+Reglas de LinkedIn: sin precios, sin WhatsApp, sin cifras que caduquen (rating, número de familias), sin afirmaciones técnicas, solo reseñas de Lima, todo aspiracional. Instagram queda igual al plan original (no se tocó el pie del post 18). Vivo con limón (IG post 12) publicado sin "elvo" en el producto; decisión pendiente del usuario (dejar, borrar o republicar 12 a 18).
