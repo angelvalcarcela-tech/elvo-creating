@@ -62,17 +62,18 @@ Post → mensaje de LinkedIn o formulario en **elvo.pe** → llamada o visita co
 - **Voz de las personas:** que el fundador y el equipo compartan los posts desde sus perfiles; LinkedIn mueve más lo que viene de personas que de páginas.
 - **Datos que faltan** (los define el equipo): roles que buscan, forma de trabajo (presencial o híbrida), qué valoran, correo para recibir CVs.
 
-## 10. Los 8 primeros posts (versión final, ver preview)
+## 10. Los 8 primeros posts (versión corta, ver preview)
+Tono: breve, evocador, una idea por post, sin ficha técnica. Buscan **equipo de ventas** (búsqueda activa, la página ya lo indica).
 | # | Día | Idea | Imagen |
 |---|---|---|---|
-| 1 | Mar | Por qué existe elvo· (la pregunta sobre el agua del caño y el compromiso con la claridad) | Nativo conectado al caño |
-| 2 | Jue | El agua de la oficina, sin bidones (Cero: fría y caliente, sin instalación, jarra de 2 L) | Dos colegas en la cocina de oficina |
-| 3 | Mar | La reunión empieza con un vaso de agua (idea de oficina bien pensada) | Sala de reuniones con la jarra de 2 L |
-| 4 | Jue | Cero en 5 tarjetas (fría y caliente · sin instalación · jarra · 5 etapas con UV · garantía incluida) | Carrusel de 5 imágenes |
-| 5 | Mar | Cómo decidimos en elvo· (claridad y aviso de cambio de núcleo) | Solo texto [falta un ejemplo real] |
-| 6 | Jue | Menos bidones, menos pedidos, menos plástico (el ciclo del bidón) | Escritorio con taza y vaso [falta una cifra propia] |
-| 7 | Mar | Siempre queremos conocer gente curiosa por el agua | Tarjeta azul [falta roles y correo] |
-| 8 | Jue | Lo que dicen quienes lo instalan (reseña de María G., Lima) | Producto con la cita sobre la imagen |
+| 1 | Mar | "Hervir el agua no elimina los metales pesados": por qué existe elvo· | Nativo conectado al caño |
+| 2 | Jue | **Vender agua es explicar bien: estamos armando el equipo de ventas** | Tarjeta azul |
+| 3 | Mar | "Imagina la oficina sin bidones" (deseo de Cero) | Colegas en la cocina de oficina |
+| 4 | Jue | **Referente:** 5 preguntas antes de elegir un purificador para tu oficina | Carrusel de 6 láminas |
+| 5 | Mar | Cómo decidimos en elvo· (claridad) | Solo texto [falta ejemplo real] |
+| 6 | Jue | "El ciclo del bidón" (opinión + pregunta) | Escritorio con taza y vaso |
+| 7 | Mar | Un purificador para cada lugar donde el agua te toca (la familia) | Collage de 4 fotos de producto |
+| 8 | Jue | Reseña de María G., Lima | Producto con la cita |
 
 ## 11. Pendientes de datos
-Foto real del equipo o del espacio; ejemplo real para el post 5; cifra propia de bidones para el post 6 (solo si es atemporal); roles y correo para el post 7; casos de oficina de Lima con permiso; página elvo.pe/empresas; descripción y pestaña "Quiénes somos" de la página.
+Foto real del equipo o del espacio; ejemplo real para el post 5; el correo o la forma de recibir postulaciones de ventas; casos de oficina de Lima con permiso; página elvo.pe/empresas; descripción y pestaña "Quiénes somos" de la página.
