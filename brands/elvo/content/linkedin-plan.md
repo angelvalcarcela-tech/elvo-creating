@@ -1,40 +1,78 @@
-# elvo· en LinkedIn — marca empleadora y venta de Cero a oficinas
+# elvo· en LinkedIn — estrategia
 
-Objetivo doble: (1) que la gente quiera trabajar en elvo·, (2) vender **elvo· Cero** a oficinas. LinkedIn no publica video ni stories vía Supermetrics; sí texto, imagen, link y carrusel. Datos factuales tomados de elvo.pe (nov-2026). Lo marcado [DEFINIR] lo completa el equipo.
+Página conectada: **Elvo®** (account_id 145309599). Nada publicado todavía. Preview: `linkedin/preview-A.png` y `preview-B.png`; imágenes en `linkedin/imagenes/`; escenas de oficina en `lote6/`.
 
-## Página de empresa
-- **Nombre:** elvo·
-- **Eslogan (máx. 120 caracteres):** Agua pura. Simplificada. Purificadores para hogares y oficinas del Perú.
-- **Ubicación:** Comunal Golf Los Incas, Santiago de Surco, Lima [confirmar piso y dirección].
-- **Acerca de:** elvo· diseña la forma en que el agua entra a tu casa y a tu oficina. Purificadores pensados con cuidado para los hogares peruanos: Nativo y Vivo para el caño, Alivio como agua de reserva y Cero, con agua fría y caliente en un solo equipo. Envío gratis a todo el Perú, 30 días de prueba y pago contra entrega. Más de 500 familias ya usan elvo·.
-- **Botón:** "Visitar sitio web" → elvo.pe. Segundo enlace: WhatsApp 929 190 100.
+## 1. Para qué sirve LinkedIn (y en qué se diferencia de Instagram)
+| | Instagram | LinkedIn |
+|---|---|---|
+| **Rol** | Deseo y ritual: que la gente quiera el mundo elvo· | Credibilidad y confianza: que una empresa te elija como proveedor y que un buen profesional te elija como empleador |
+| **Quién mira** | Hogares, consumidores | Administradores de oficina, jefes de operaciones, RR. HH., gerentes de pymes, administradores de coworkings y edificios, estudios de arquitectura e interiorismo, y gente que busca trabajo |
+| **Tono** | Calmo, sensorial, pocas palabras | Claro, profesional y cercano; explica el porqué y el criterio |
+| **Contenido** | Foto, ritual, gesto | Ideas, criterio, producto explicado para oficina, gente y cultura |
+| **Texto** | Mínimo | Sí lee; 400 a 900 caracteres con una idea clara |
+| **Conversión** | Link en la bio, WhatsApp | Mensaje directo, formulario en la web, visita con cita |
 
-## Mensajes
-| Para | Mensaje |
-|---|---|
-| Talento | Una marca peruana pequeña, de diseño cuidado y trato cercano, donde cada cosa se explica con claridad. [DEFINIR: equipo, forma de trabajo, vacantes] |
-| Oficinas (Cero) | Agua fría y caliente al instante en tu oficina, sin instalación y sin bidones. |
+## 2. Dos objetivos
+1. **Vender Cero a oficinas.** Hacer que quien administra una oficina entienda en 30 segundos qué resuelve (agua fría y caliente, sin bidones, sin instalación) y pida una demostración.
+2. **Atraer talento.** Mostrar cómo se piensa y se trabaja en elvo·, con claridad y diseño, para que gente curiosa quiera trabajar ahí.
 
-## Cero para oficina: datos verificados
-Ósmosis inversa con filtración de 5 etapas · agua fría (6 a 7 °C) y caliente hasta 85 °C, con 7 temperaturas · calienta y enfría en 2 segundos · esterilización UV y autolimpieza · **sin instalación ni mangueras** (se llena el tanque por atrás) · **jarra extraíble de 2 litros** para llevar el agua a la sala de reuniones · 37,6 × 47,9 × 22,5 cm · 110 a 240 V · garantía de 1 año · S/ 1,799. Filtros: PAC cada 8 a 12 meses, ROC cada 12 a 36 meses (kit S/ 329). [DEFINIR: precio por volumen, facturación, demo.] Se puede ver en persona en la oficina, de lunes a viernes de 9 a 6, con cita previa.
+## 3. Reglas de contenido (no negociables)
+- **Contenido atemporal ("timeless").** Nada que caduque: sin cifras de reseñas, calificaciones ni cantidad de clientes, sin "hoy", fechas, ofertas ni "nuevo".
+- **Nunca precios.** Ni en texto ni en imágenes. La cotización se pide por mensaje o desde la web.
+- **Nunca el WhatsApp en un post.** El contacto es por mensaje de LinkedIn o por elvo.pe.
+- **Reseñas:** solo de clientes de **Lima**, con nombre e inicial, verificadas y sin cifras (nada de "4.2" ni "+500 familias"). Sin fotos de personas distintas del cliente.
+- **Sin promesas de salud.** Hablar de agua, diseño y rutina de trabajo; asterisco PureCore solo si se habla de plomo y metales, que en LinkedIn no hace falta.
+- **Datos técnicos de Cero** sí (no cambian con el tiempo): fría y caliente, 5 etapas con esterilización UV, sin instalación, jarra extraíble de 2 L.
+- **Ubicación** (Comunal Golf Los Incas) va en la información de la página, no en posts: es un dato que puede cambiar.
+- **Siempre una sola idea por post** y una pregunta o invitación al final.
 
-## Calendario: 2 publicaciones por semana (martes marca, jueves Cero)
-| # | Día | Tipo | Texto |
+## 4. Audiencias y qué necesita cada una
+| Audiencia | Qué busca | Qué le damos |
+|---|---|---|
+| Administración y operaciones | Quitar la tarea de los bidones, orden, imagen de la oficina | Cero explicado, "menos pedidos", mantenimiento claro (filtros PAC y ROC con avisos) |
+| RR. HH. y bienestar | Detalles que cuidan al equipo sin ser un gasto grande | Ideas sobre la pausa, la sala de reuniones y la cocina de oficina |
+| Gerencia de pymes | Orden, ahorro, proveedor confiable | Claridad, garantía incluida, soporte |
+| Coworkings y edificios | Un equipo que atienda a muchas personas | Cero para áreas comunes, cotización por volumen |
+| Arquitectos e interioristas | Piezas que se vean bien y funcionen | Diseño de Cero en cocinas y salas, material para especificar |
+| Talento | Una marca con criterio, trabajo con sentido, gente cercana | Cómo decidimos, qué hacemos, quiénes somos, cómo es un día |
+
+## 5. Pilares de contenido
+1. **El agua en el trabajo (ideas):** opinión breve sobre la oficina bien pensada, la pausa, la sala de reuniones, el ciclo de los bidones. Atrae a administradores y gerentes.
+2. **Cero para la oficina (producto):** explicar una cosa por post. Fría y caliente; sin instalación; la jarra de 2 L; cómo se mantiene; cómo se cambian los filtros.
+3. **Cómo hacemos elvo· (criterio):** claridad sobre lo que retiene un purificador y lo que no, avisar el cambio de núcleo, diseñar para vivir a la vista. Genera confianza.
+4. **Gente y cultura (marca empleadora):** quiénes somos, cómo trabajamos, qué valoramos. Con fotos reales del equipo cuando existan.
+5. **Casos de oficina (prueba):** una oficina de Lima que usa Cero, con permiso de la empresa, en formato foto + 3 líneas. **Sin cifras de rating.**
+
+## 6. Formatos
+- **Imagen única:** la base. Foto de oficina o producto, sin texto saturado.
+- **Carrusel:** para explicar Cero en 5 tarjetas. Se publica como imágenes (la herramienta no publica PDF).
+- **Texto:** para opiniones y criterio (pilares 1 y 3).
+- **Video:** no se puede publicar desde aquí; si hay video del equipo o de una demostración, se sube a mano.
+- **Página:** pestaña de empleos y "Quiénes somos" completas. Las vacantes con formulario se publican desde LinkedIn.
+
+## 7. Ritmo
+Dos posts por semana, **martes (marca, ideas, gente)** y **jueves (Cero y producto)**, a primera hora de la mañana. Ciclo de 4 semanas: 2 de ideas, 2 de Cero, 1 de cultura y 1 de criterio, más un caso cuando exista. Revisar a las 4 semanas qué post generó mensajes y repetir esa fórmula.
+
+## 8. Cómo se convierte
+Post → mensaje de LinkedIn o formulario en **elvo.pe** → llamada o visita con cita en la oficina → cotización. Pendiente de la web: una página para empresas (propuesta: elvo.pe/empresas) con formulario y sin precios publicados.
+
+## 9. Marca empleadora (lo que hay que construir)
+- **Siempre abiertos:** post y pestaña de empleos que dicen "siempre queremos conocer a gente curiosa por el agua", con roles típicos, sin fechas.
+- **Contenido real:** una foto del equipo o del espacio de trabajo, un día en elvo·, cómo se decide un diseño, qué se aprende. Nada inventado.
+- **Voz de las personas:** que el fundador y el equipo compartan los posts desde sus perfiles; LinkedIn mueve más lo que viene de personas que de páginas.
+- **Datos que faltan** (los define el equipo): roles que buscan, forma de trabajo (presencial o híbrida), qué valoran, correo para recibir CVs.
+
+## 10. Los 8 primeros posts (versión final, ver preview)
+| # | Día | Idea | Imagen |
 |---|---|---|---|
-| 1 | Mar | Imagen | **Hola, somos elvo·.** Todo empezó con una pregunta: ¿qué hay en el agua de mi caño? Descubrimos que hervir no elimina los metales pesados y creamos purificadores que se conectan a tu caño en 5 minutos. Hoy más de 500 familias los usan. Aquí contamos cómo trabajamos. elvo.pe |
-| 2 | Jue | Imagen | **El agua de la oficina, sin bidones.** elvo· Cero sirve agua fría (6 °C) o caliente (hasta 85 °C) al instante, sin instalación. Se llena por atrás y listo. ¿Quieres verlo en persona? Escríbenos y coordinamos una visita. |
-| 3 | Mar | Imagen | **Dónde trabajamos.** Estamos en Comunal Golf Los Incas, Surco. Quien quiera conocer los productos puede visitarnos de lunes a viernes, de 9 a 6, con cita previa. |
-| 4 | Jue | Carrusel | **Cero en 5 tarjetas:** 1. Agua fría y caliente · 2. Sin instalación · 3. Jarra de 2 litros para la sala de reuniones · 4. Filtración de 5 etapas con esterilización UV · 5. S/ 1,799 y 1 año de garantía. |
-| 5 | Mar | Texto | **Cómo decidimos en elvo·:** decimos con claridad qué retiene un purificador y qué no, y avisamos cuándo toca cambiar el núcleo. Esa transparencia es parte del trabajo. [DEFINIR: ejemplo real] |
-| 6 | Jue | Imagen | **Menos bidones, menos pedidos, menos plástico.** Quien administra una oficina sabe lo que cuesta reponer bidones. Cero lo reemplaza por un solo equipo. [DEFINIR: cifra propia si la tienen] |
-| 7 | Mar | Imagen | **Estamos buscando gente.** [DEFINIR: roles, p. ej. ventas a empresas, atención por WhatsApp, logística]. Escríbenos a [correo] con tu CV y cuéntanos por qué te interesa el agua. |
-| 8 | Jue | Imagen | **4.2 en Falabella y más de 500 familias.** Esto dicen quienes usan elvo·: "Lo instalé en menos de 5 minutos y funciona perfecto." Lucía P., Ica. |
+| 1 | Mar | Por qué existe elvo· (la pregunta sobre el agua del caño y el compromiso con la claridad) | Nativo conectado al caño |
+| 2 | Jue | El agua de la oficina, sin bidones (Cero: fría y caliente, sin instalación, jarra de 2 L) | Dos colegas en la cocina de oficina |
+| 3 | Mar | La reunión empieza con un vaso de agua (idea de oficina bien pensada) | Sala de reuniones con la jarra de 2 L |
+| 4 | Jue | Cero en 5 tarjetas (fría y caliente · sin instalación · jarra · 5 etapas con UV · garantía incluida) | Carrusel de 5 imágenes |
+| 5 | Mar | Cómo decidimos en elvo· (claridad y aviso de cambio de núcleo) | Solo texto [falta un ejemplo real] |
+| 6 | Jue | Menos bidones, menos pedidos, menos plástico (el ciclo del bidón) | Escritorio con taza y vaso [falta una cifra propia] |
+| 7 | Mar | Siempre queremos conocer gente curiosa por el agua | Tarjeta azul [falta roles y correo] |
+| 8 | Jue | Lo que dicen quienes lo instalan (reseña de María G., Lima) | Producto con la cita sobre la imagen |
 
-## Fotos
-Hay que generar escenas de **Cero en oficina** (sala de reuniones con la jarra, cocina de oficina, escritorio) con la misma luz fría de la grilla, y una foto de la oficina o del equipo, real, cuando exista. Reutilizables hoy: catálogo Cero, botón de Cero y mesa con la jarra.
-
-## Reglas
-Tono directo y cordial; datos antes que adjetivos; sin promesas de salud; asterisco PureCore solo si se habla de plomo y metales (no aplica a Cero). Responder comentarios en 24 horas.
-
-## Preview (nov-2026)
-Página conectada: **Elvo®** (account_id 145309599). Preview de los 8 posts con sus fotos: `linkedin/preview-A.png` (posts 1 a 4) y `linkedin/preview-B.png` (posts 5 a 8). Imágenes finales en `linkedin/imagenes/`; escenas nuevas de Cero en oficina en `lote6/`. **Nada está publicado.** Pendientes en amarillo en el preview: foto real del espacio (post 3), ejemplo del equipo (5), cifra propia (6), roles y correo (7).
+## 11. Pendientes de datos
+Foto real del equipo o del espacio; ejemplo real para el post 5; cifra propia de bidones para el post 6 (solo si es atemporal); roles y correo para el post 7; casos de oficina de Lima con permiso; página elvo.pe/empresas; descripción y pestaña "Quiénes somos" de la página.
