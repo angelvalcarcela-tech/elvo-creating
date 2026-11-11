@@ -171,3 +171,15 @@ Datos del mapeo: de los 15 reels recientes, cerca de la mitad son **recetas**; e
 | **Momentos peruanos** | Mesa de Fiestas Patrias, garúa con té | 8–12 s | IA o grabado |
 
 Texto en portada: recetas con título grande; producto con una frase corta y delgada. Mismo formato vertical con sujeto centrado.
+
+## 14. Lo aplicado de @promix en la grilla v3 (nov-2026)
+- **Destacados con foto de portada** (Nativo, Vivo, Alivio, Cero, Reseñas, Dónde), con la gota blanca como marca. Carpeta `lanzamiento/destacados/`.
+- **Naturaleza muerta con utilería:** Vivo con limón, hielo, té y menta (`vivo-limon`).
+- **Símbolo recurrente:** el arco y el círculo (espejo redondo, nicho y ventana en arco) como eco de la cúpula azul en 4 escenas (`nativo-cerca`, `vivo-limon`, `noche-espejo`, `cafe-arco`).
+- **Texto corto en 2 piezas**, Inter Light blanca, sin datos técnicos: "Agua pura. Simplificada." (`objeto-texto`) y "Frío o caliente." (`cero-boton-texto`).
+- **Gestos de uso con las manos:** llave de Alivio, botón de Cero, jarra de 2 L, cambio de núcleo.
+- **Cero** baja de 4 a 3 apariciones; el producto se acerca en Nativo y Vivo.
+Pendiente de la segunda ola: capítulos por línea y reels de recetas.
+
+## 15. Kit de lanzamiento
+Carpeta `lanzamiento/feed/`: 18 imágenes 1080×1350 numeradas **en orden de subida** (01 = fila de abajo a la derecha; 18 = fila de arriba a la izquierda). Subiéndolas en ese orden, el perfil queda igual al mockup `grilla-final-18-v3.png`.

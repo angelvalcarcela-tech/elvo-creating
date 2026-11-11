@@ -42,7 +42,7 @@ Precios en web: **Nativo** 18m S/349 · 3a S/389 · 6a S/489; **Vivo** S/249 · 
 **Capas de información:** foto sin texto → pie de foto de tres líneas (frase de ritual, un dato verificado, llamado suave a elvo.pe) → stories (conversión) → destacados (catálogo) → bio y botones.
 **Segunda ola (un mes después):** núcleo (El cambio), Vivo ×2, Alivio en provincia, Cero con infusión, agua con limón, Casas del Perú (sierra), Día del agua (22 marzo), reel de instalación.
 
-## 7. Estado de la grilla de 18 (de arriba a abajo en el perfil; la fila 1 es la más reciente)
+## 7. Estado de la grilla de 18 (ACTUALIZADO: ver al final, sección 12) (de arriba a abajo en el perfil; la fila 1 es la más reciente)
 Todas las fotos generadas están en el repo. Ver `brands/elvo/content/grilla-plan-correcciones.png` (plan con etiquetas) y `grilla-final-18.png` (vista previa de lo ya generado).
 **Auditoría de errores (según el usuario):**
 - **Rehacer (7):** F1 mujer de perfil (purificador sin derivador/manguera); F2 Nativo en cocina (no conectado, segundo grifo de pared); F6 Vivo con café (no conectado); F7 Nativo como objeto (no conectado); F8 mesa familiar (cambiar la jarra genérica por la **jarra de 2 L de Cero**); F11 Alivio (vertía con la tapa puesta y se ve pequeño); F18 Cero (jarra y botón visibles).
@@ -86,3 +86,7 @@ Otras sesiones/ramas: la grilla v6 con estilo mineral está en la rama `claude/f
 1. Leer este archivo, `estrategia-instagram.md` y **`fichas-uso-productos.md`** (traer la rama: `git fetch origin claude/nifty-hawking-xlvtaa`).
 2. No usar `CLAUDE.md`, `doctrina.md` ni `visual-guidelines.md` (identidad mineral, anulada).
 3. Preguntar al usuario si lanza la prueba de 3 (costo ~US$0.6) antes de generar; mostrar cada lote antes de seguir.
+
+## 12. Actualización (nov-2026): grilla v3 terminada
+Se rehicieron las 7 fotos con errores y se agregaron las 4 de gestos (lote2, lote3) y 4 más con arco/espejo y utilería (lote4). Carpeta lista para subir: `brands/elvo/content/lanzamiento/` (`feed/` con 18 imágenes en orden de subida y `destacados/` con 6 portadas). Mockup: `grilla-final-18-v3.png`. Aplicado de @promix: ver sección 14 de `estrategia-instagram.md`. Costo total estimado de imágenes hasta ahora: ~US$ 7.4.
+Pendiente: confirmar con video real el cambio de núcleo (foto `nucleo`), pies de foto de las 18, stories mínimas por destacado, segunda ola (capítulos por línea) y reels (ver sección 13 de la estrategia). Datos por confirmar: medidas de Nativo (25×6 vs 30×16 cm) y temperatura máxima de Cero (85 vs 100 °C).
