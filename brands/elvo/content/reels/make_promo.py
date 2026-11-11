@@ -51,5 +51,5 @@ def build(cfg):
         acc+=durs[k-1]
         fc.append(f"{last}[s{k}]xfade=transition=fade:duration={x}:offset={round(acc,2)}[x{k}]"); last=f'[x{k}]'
     cmd+=['-filter_complex',';'.join(fc),'-map',last,'-c:v','libx264','-preset','fast','-crf','23','-pix_fmt','yuv420p','-movflags','+faststart',out]
-    r=subprocess.run(cmd,capture_output=True,text=True,timeout=115); print(r.returncode,r.stderr[:300])
+    r=subprocess.run(cmd,capture_output=True,text=True,timeout=900); print(r.returncode,r.stderr[:300])
 if __name__=='__main__': build(json.load(open(sys.argv[1])))
