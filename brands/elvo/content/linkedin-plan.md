@@ -35,3 +35,6 @@ Hay que generar escenas de **Cero en oficina** (sala de reuniones con la jarra, 
 
 ## Reglas
 Tono directo y cordial; datos antes que adjetivos; sin promesas de salud; asterisco PureCore solo si se habla de plomo y metales (no aplica a Cero). Responder comentarios en 24 horas.
+
+## Preview (nov-2026)
+Página conectada: **Elvo®** (account_id 145309599). Preview de los 8 posts con sus fotos: `linkedin/preview-A.png` (posts 1 a 4) y `linkedin/preview-B.png` (posts 5 a 8). Imágenes finales en `linkedin/imagenes/`; escenas nuevas de Cero en oficina en `lote6/`. **Nada está publicado.** Pendientes en amarillo en el preview: foto real del espacio (post 3), ejemplo del equipo (5), cifra propia (6), roles y correo (7).
