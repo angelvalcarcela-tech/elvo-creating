@@ -141,3 +141,18 @@ El núcleo no está en la grilla inicial. Entra en la segunda ola (serie "El cam
 
 ## 11. Segunda ola (9 posts, un mes después del lanzamiento)
 Núcleo (El cambio) · Vivo ×2 · Alivio en provincia · Cero con infusión · Agua + limón · Casas del Perú (sierra) · Día del agua · un reel de instalación.
+
+## 12. Referencia: @promix (Promix Nutrition, 272K seguidores, 416 posts)
+Analizado a partir de 11 capturas del usuario (grilla, perfil y destacados). No se ven pies de foto, reels completos ni métricas.
+
+**Qué se rescata para elvo·:**
+1. **Capítulos por producto.** Cada lanzamiento tiene su "mundo" de 9–12 posts con color, escenario y gesto propios (ej. Honeydew Debloat = bloque de tenis en verde). Para elvo·: un capítulo por línea, con un acento distinto dentro de la misma familia (Nativo: cocina de la familia, azul acero · Vivo: amanecer y café, celeste y cítrico · Alivio: sala y reserva, con verde de plantas · Cero: cocina moderna, madera y hielo).
+2. **Naturaleza muerta con utilería del ritual.** Producto sobre piedra o madera con elementos que cuentan el uso (ellos: plátano, naranja, miel). Para elvo·: limón, hielo, hierbas, té, taza ("Agua + algo").
+3. **Manos usando el producto**, mostrando cómo se abre, se vierte o se presiona. Es la base de la serie de gestos (servir, botón plateado, jarra, núcleo).
+4. **Un símbolo recurrente** (su punto amarillo/crema en cada empaque). Para elvo·: la gota y la cúpula azul como guiño constante, incluso en objetos redondos del escenario.
+5. **Destacados con foto de producto** como portada, no íconos. Para elvo·: portadas con foto + cúpula, un destacado por línea.
+6. **Texto muy corto sobre la foto** en algunas piezas ("Three flavors.", "Berberine", "New"). Para elvo·: opcional, máximo 3–4 palabras y en 2–3 piezas, sin información técnica. **Pendiente de aprobación** por la regla "sin flyers".
+7. **Ritmo de grilla:** producto, mano, escena, comida o recipe, y de nuevo producto, intercalados. Mismo principio que ya usamos.
+8. **Carruseles y reels de gestos** (sacar el sobre, verter, abrir el frasco).
+
+**Qué no se rescata:** códigos de descuento y promos, rostros de creadores, colores saturados (el agua es incolora: el color lo pone el escenario, en tonos suaves), gimnasio y deporte intensos, y la saturación de mensajes de venta. La estética de elvo· sigue siendo calma y hogar.
