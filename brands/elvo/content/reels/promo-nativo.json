@@ -3,7 +3,7 @@
  "xfade": 0.7,
  "scenes": [
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n1-hook_v1.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n1b-hook_v1.png",
    "title": "Agua pura|desde tu caño.",
    "sub": "",
    "dur": 3.0,
@@ -11,19 +11,17 @@
    "tdur": 0.4
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n2-presenta_v1.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n5-sin-obras_v1.png",
    "title": "Te presentamos:|elvo· Nativo",
    "sub": "Purificador antimetales",
    "dur": 3.5,
    "tin": 0.3,
-   "tdur": 0.5,
-   "pos": "top",
-   "up": -120
+   "tdur": 0.5
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n3-etapas_v1.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n3b-etapas_v1.png",
    "title": "Antimetales,|en 6 etapas.",
-   "sub": "Y reduce el cloro.",
+   "sub": "",
    "dur": 4.0
   },
   {
@@ -34,7 +32,7 @@
    "up": 170
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n5-sin-obras_v1.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n9-sin-obras_v1.png",
    "title": "Sin electricidad.|Sin obras.",
    "sub": "Sin gasfitero.",
    "dur": 4.0
@@ -46,7 +44,7 @@
    "dur": 4.0
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n7-palanca_v1.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n7b-palanca_v1.png",
    "title": "Mueve la palanca|y sirve.",
    "sub": "Normal o filtrada.",
    "dur": 4.5
