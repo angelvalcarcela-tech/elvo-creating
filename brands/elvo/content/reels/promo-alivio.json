@@ -1,0 +1,57 @@
+{
+ "out": "/home/user/elvo-creating/brands/elvo/content/reels/promo-alivio.mp4",
+ "xfade": 0.7,
+ "scenes": [
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote1/r4c-alivio_v1.png",
+   "title": "Tu Alivio|en casa.",
+   "sub": "Agua de resguardo.",
+   "dur": 3.0,
+   "blur": true,
+   "tin": 0.15,
+   "tdur": 0.4
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote5/k2-alivio-acero_v1.png",
+   "title": "Te presentamos:|elvo· Alivio",
+   "sub": "Purificador por gravedad",
+   "dur": 3.5,
+   "blur": true,
+   "tin": 0.3,
+   "tdur": 0.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote3/g1-alivio-botella_v1.png",
+   "title": "16 o 22 litros.",
+   "sub": "Más litros, más alivio.",
+   "dur": 4.0,
+   "blur": true
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/a-detalle-filtros_v1.png",
+   "title": "Sin electricidad.",
+   "sub": "Filtra con 8 etapas.",
+   "dur": 4.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote2/f11-alivio_v1.png",
+   "title": "Sin presión de caño.",
+   "sub": "Quitas la tapa y llenas con una jarra.",
+   "dur": 4.5,
+   "blur": true
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/a-sirve-llave_v1.png",
+   "title": "Agua guardada,|lista cuando la necesites.",
+   "sub": "",
+   "dur": 4.5
+  },
+  {
+   "card": true,
+   "title": "elvo· Alivio",
+   "sub": "Cero conexiones. Agua de resguardo.",
+   "footer": "Pídelo en elvo.pe",
+   "dur": 4.5
+  }
+ ]
+}

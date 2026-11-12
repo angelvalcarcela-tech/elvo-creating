@@ -1,0 +1,59 @@
+{
+ "out": "/home/user/elvo-creating/brands/elvo/content/reels/promo-nativo.mp4",
+ "xfade": 0.7,
+ "scenes": [
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote4/h1-nativo-cerca_v1.png",
+   "title": "Agua pura|desde tu caño.",
+   "sub": "",
+   "dur": 3.0,
+   "blur": true,
+   "tin": 0.15,
+   "tdur": 0.4
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote5/k1-nativo-azul_v1.png",
+   "title": "Te presentamos:|elvo· Nativo",
+   "sub": "Purificador antimetales",
+   "dur": 3.5,
+   "blur": true,
+   "tin": 0.3,
+   "tdur": 0.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/n-conecta_v1.png",
+   "title": "Se conecta al caño.",
+   "sub": "",
+   "dur": 3.5,
+   "tin": 0.3,
+   "tdur": 0.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/n-palanca_v1.png",
+   "title": "Tú eliges:|normal o filtrada.",
+   "sub": "",
+   "dur": 4.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote2/f6-vivo-cafe_v1.png",
+   "title": "Sale por su pico.",
+   "sub": "",
+   "dur": 4.0,
+   "blur": true
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote3/g3-nucleo_v1.png",
+   "title": "Cambias el núcleo|tú mismo.",
+   "sub": "Cada 18 meses.",
+   "dur": 4.5,
+   "blur": true
+  },
+  {
+   "card": true,
+   "title": "elvo· Nativo",
+   "sub": "Agua pura desde tu caño.",
+   "footer": "Pídelo en elvo.pe",
+   "dur": 4.5
+  }
+ ]
+}

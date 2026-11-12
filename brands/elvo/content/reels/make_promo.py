@@ -45,7 +45,11 @@ def build(cfg):
         z=f"min(1.0+{zmax}*on/{frames},{1+zmax})" if k%2==0 else f"max({1+zmax}-{zmax}*on/{frames},1.0)"
         if s.get('card'): z="1.0"
         pre=f"scale=1080:-2,pad=1080:1920:0:(1920-ih)/2:color={s['pad']}" if s.get('pad') else "scale=-2:1920,crop=1080:1920"
-        fc.append(f"[{k}:v]{pre},scale=4320:7680:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s=1080x1920:fps={fps},format=yuv420p[b{k}]")
+        if s.get('blur'):
+            fc.append(f"[{k}:v]split[a{k}][c{k}];[a{k}]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,gblur=sigma=45[bg{k}];[c{k}]scale=1080:-2[fg{k}];[bg{k}][fg{k}]overlay=0:(H-h)/2[pf{k}]")
+            src=f"[pf{k}]"; pre="null"
+        else: src=f"[{k}:v]"
+        fc.append(f"{src}{pre},scale=4320:7680:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s=1080x1920:fps={fps},format=yuv420p[b{k}]")
         fc.append(f"[{n+k}:v]format=rgba,fade=t=in:st={s.get('tin',0.7)}:d={s.get('tdur',0.7)}:alpha=1[t{k}]")
         fc.append(f"[b{k}][t{k}]overlay=0:0:format=auto,format=yuv420p,setsar=1[s{k}]")
     last='[s0]'; acc=0
