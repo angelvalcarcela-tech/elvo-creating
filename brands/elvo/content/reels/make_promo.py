@@ -46,7 +46,7 @@ def build(cfg):
         if s.get('card'): z="1.0"
         pre=f"scale=1080:-2,pad=1080:1920:0:(1920-ih)/2:color={s['pad']}" if s.get('pad') else "scale=-2:1920,crop=1080:1920"
         fc.append(f"[{k}:v]{pre},scale=4320:7680:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s=1080x1920:fps={fps},format=yuv420p[b{k}]")
-        fc.append(f"[{n+k}:v]format=rgba,fade=t=in:st=0.7:d=0.7:alpha=1[t{k}]")
+        fc.append(f"[{n+k}:v]format=rgba,fade=t=in:st={s.get('tin',0.7)}:d={s.get('tdur',0.7)}:alpha=1[t{k}]")
         fc.append(f"[b{k}][t{k}]overlay=0:0:format=auto,format=yuv420p,setsar=1[s{k}]")
     last='[s0]'; acc=0
     for k in range(1,n):
