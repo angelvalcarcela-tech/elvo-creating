@@ -40,9 +40,15 @@
    "dur": 4.0
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote8/n1-jarra-reunion_v1.png",
-   "title": "La jarra de 2 litros.",
-   "sub": "Se lleva a la mesa o a la reunión.",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j2-graduacion-ml_v1.png",
+   "title": "Elige cuánta agua.",
+   "sub": "Gradúa los ml. Para tus recetas.",
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j1-jarra-extrae_v1.png",
+   "title": "La jarra sale|del equipo.",
+   "sub": "2 litros, directo a la mesa.",
    "dur": 4.0
   },
   {
