@@ -48,6 +48,9 @@ Fuentes: respuestas del dueño de marca (nov-2026), esquemas de medidas y galer�
 
 **Cómo se usa:** llenar el tanque por atrás · elegir la temperatura en la pantalla · apoyar un vaso o taza en la bandeja · presionar el botón plateado para servir · o sacar la jarra de 2 L y servir en la mesa.
 
+
+**Panel izquierdo de la pantalla (confirmado por el dueño, nov-2026):** botones "Filter Reset" y "Pipe Cleaning" (autolimpieza). En el diagrama de la máquina: **dos círculos azules arriba = los filtros; pasan a rojo cuando hay que cambiarlos**; **cuadrados atrás (derecha del dibujo) = falta llenar el tanque de agua**; **cuadrados adelante (junto a la jarra) = nivel de llenado de la jarra**. Volumen con botones − y + (ej. 500 ml). Atajos de 6 °C a 98 °C. Referencias: `product-references/cero-pantalla-real.png` y `cero-pantalla-panel-izq.png`.
+
 **Idea de marca:** **la jarra de Cero es la jarra de la mesa** (almuerzo, desayuno). Es una pieza reconocible de elvo· y enlaza el ritual con el producto.
 
 **Prohibido en fotos:** mangueras o conexión al caño · llenar el tanque por el frente · agua cayendo sin vaso o taza · quitar la jarra del lado equivocado.
