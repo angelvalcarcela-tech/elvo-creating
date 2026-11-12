@@ -3,66 +3,60 @@
  "xfade": 0.9,
  "scenes": [
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v1-cero-solo.png",
-   "title": "elvo· Cero",
-   "sub": "Agua fría y caliente en un solo equipo.",
-   "dur": 4.5,
-   "zoom": 0.05
-  },
-  {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote6/l1-pantry_v1.png",
    "title": "Cero bidones.|Cero complicaciones.",
    "sub": "",
-   "dur": 4.0
+   "dur": 4.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v1-cero-solo.png",
+   "title": "elvo· Cero",
+   "sub": "",
+   "dur": 3.5,
+   "zoom": 0.05
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v2-llenado.png",
    "title": "Cero mangueras.",
-   "sub": "Se llena por atrás, sin instalación.",
-   "dur": 4.0
+   "sub": "",
+   "dur": 3.5
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v3b-fria-dia.png",
    "title": "Fría,|desde 6 °C.",
-   "sub": "Para los días de calor.",
-   "dur": 4.0
+   "sub": "",
+   "dur": 3.5
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v4b-caliente-noche.png",
    "title": "Caliente,|hasta 85 °C.",
-   "sub": "Para el té de la noche.",
-   "dur": 4.0
-  },
-  {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote3/g2-cero-boton_v1.png",
-   "title": "Un toque.",
-   "sub": "Eliges la temperatura y sirves.",
-   "dur": 4.0
+   "sub": "",
+   "dur": 3.5
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j2-graduacion-ml_v1.png",
    "title": "Elige cuánta agua.",
-   "sub": "Gradúa los ml. Para tus recetas.",
-   "dur": 4.0
+   "sub": "",
+   "dur": 3.5
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j1-jarra-extrae_v1.png",
    "title": "La jarra sale|del equipo.",
-   "sub": "2 litros, directo a la mesa.",
-   "dur": 4.0
+   "sub": "",
+   "dur": 3.5
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v5-hogar.png",
    "title": "Para tu casa.|Para tu oficina.",
-   "sub": "Agua a la mano, todo el día.",
-   "dur": 4.0
+   "sub": "",
+   "dur": 3.5
   },
   {
    "card": true,
    "title": "elvo· Cero",
-   "sub": "Agua fría y caliente. Sin instalación.",
+   "sub": "Cero bidones. Cero mangueras.",
    "footer": "Pídelo en elvo.pe",
-   "dur": 5.5
+   "dur": 4.5
   }
  ]
 }
