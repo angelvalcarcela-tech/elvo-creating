@@ -15,6 +15,16 @@ J=[
 ('a4-sin-presion',ALI,"The elvo Alivio standing in a hallway corner of a home far from any kitchen or sink, no taps, no pipes, no cables in view, a plant and soft window light."+ALIP+SAFE),
 ('a5-llenado',ALI,"A person pours water from a clear glass jug into the open top tank of the elvo Alivio, the dome lid held aside in the other hand, water level visible; bright home kitchen."+ALIP+SAFE),
 ]
+
+R2=B+'brand-identity/product-references/'
+CER=[B+'content/video-cero/v1-cero-solo.png',R2+'cero-pantalla-real.png',R2+'web/cero-llenar-tanque.png']
+SAFEC=" COMPOSITION RULE (vertical social video, text added later): vertical 9:16 full-frame photograph; the WHOLE elvo Cero and the glass/cup sit inside the central band between 15% and 62% of the image height and at least 8% from the left and right edges; the top 12% is calm empty wall; the bottom 35% is a calm, empty, out-of-focus counter with NO objects. NO PEOPLE, NO HANDS, NO JUGS, NO TANK LID OPEN: the machine stands alone and only the water falling from the spout into the glass is happening. Photorealistic lifestyle photography, steel-blue and white palette, no text."
+CEROP=" The elvo Cero must match the references exactly: white body, black touch screen with 'elvo·' wordmark, blue '-' and '+' volume buttons, 8 temperature tiles, silver dispensing button with blue light above the tray, removable 2-liter jug with handle on the front-left side. No hoses, no plugs. Clear colorless water."
+JC=[
+('c4-fria-b',CER,"Daytime, sunny window: the elvo Cero alone on a kitchen counter, cold clear water pouring from its spout into a glass with ice cubes on the tray, lemons blurred beside it."+CEROP+SAFEC),
+('c5-caliente-b',CER,"Night, warm lamp light, city lights blurred outside: the elvo Cero alone on a kitchen counter, hot water pouring from its spout into a ceramic cup on the tray, steam rising, a tea bag resting on the cup edge."+CEROP+SAFEC),
+]
+
 def run(name,refs,p):
     for t in range(2):
         try:
@@ -29,5 +39,5 @@ def run(name,refs,p):
 sem=threading.Semaphore(4)
 def w(job):
     with sem: run(*job)
-ths=[threading.Thread(target=w,args=(j,)) for j in J]
+ths=[threading.Thread(target=w,args=(j,)) for j in J]+[threading.Thread(target=w,args=(j,)) for j in JC]
 [t.start() for t in ths]; [t.join() for t in ths]; print('ALLDONE',flush=True)
