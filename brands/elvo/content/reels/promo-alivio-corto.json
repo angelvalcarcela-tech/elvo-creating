@@ -1,0 +1,58 @@
+{
+ "out": "/home/user/elvo-creating/brands/elvo/content/reels/promo-alivio-corto.mp4",
+ "xfade": 0.7,
+ "scenes": [
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a1b-hook_v1.png",
+   "title": "Tu Alivio|en casa.",
+   "sub": "Agua de resguardo.",
+   "tin": 0.15,
+   "tdur": 0.4,
+   "dur": 4.5,
+   "up": 170
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a2-presenta_v1.png",
+   "title": "Te presentamos:|elvo· Alivio",
+   "sub": "Purificador por gravedad",
+   "tin": 0.3,
+   "tdur": 0.4,
+   "dur": 4.5,
+   "pos": "top",
+   "up": -260
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a6-filtros_v1.png",
+   "title": "Sin electricidad.|Filtra con 8 etapas.",
+   "sub": "",
+   "tin": 0.3,
+   "tdur": 0.4,
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a5-llenado_v1.png",
+   "title": "Quitas la tapa|y llenas con jarra.",
+   "sub": "",
+   "tin": 0.3,
+   "tdur": 0.4,
+   "dur": 4.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a3b-litros_v1.png",
+   "title": "2 tamaños,|mayor alivio.",
+   "sub": "",
+   "tin": 0.3,
+   "tdur": 0.4,
+   "dur": 3.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a1b-hook_v1.png",
+   "title": "elvo· Alivio",
+   "sub": "Pídelo en elvo.pe",
+   "tin": 0.15,
+   "tdur": 0.4,
+   "dur": 4.0,
+   "up": 170
+  }
+ ]
+}

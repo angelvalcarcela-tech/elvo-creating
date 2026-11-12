@@ -1,0 +1,55 @@
+{
+ "out": "/home/user/elvo-creating/brands/elvo/content/reels/promo-nativo-corto.mp4",
+ "xfade": 0.7,
+ "scenes": [
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n1c-hook_v1.png",
+   "title": "Agua pura|desde tu caño.",
+   "sub": "",
+   "tin": 0.15,
+   "tdur": 0.4,
+   "dur": 3.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n5-sin-obras_v1.png",
+   "title": "Te presentamos:|elvo· Nativo",
+   "sub": "Purificador antimetales",
+   "tin": 0.3,
+   "tdur": 0.4,
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n3b-etapas_v1.png",
+   "title": "Antimetales,|en 6 etapas.",
+   "sub": "",
+   "tin": 0.3,
+   "tdur": 0.4,
+   "dur": 3.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n9b-sin-obras_v1.png",
+   "title": "Sin electricidad.|Sin obras.",
+   "sub": "",
+   "tin": 0.3,
+   "tdur": 0.4,
+   "dur": 3.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n7b-palanca_v1.png",
+   "title": "Con la palanca",
+   "sub": "Cambia agua normal a agua filtrada.",
+   "tin": 0.3,
+   "tdur": 0.4,
+   "dur": 5.5,
+   "up": 170
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n1c-hook_v1.png",
+   "title": "elvo· Nativo",
+   "sub": "Pídelo en elvo.pe",
+   "tin": 0.15,
+   "tdur": 0.4,
+   "dur": 4.0
+  }
+ ]
+}
