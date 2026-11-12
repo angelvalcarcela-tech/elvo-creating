@@ -8,7 +8,8 @@
    "sub": "Agua de resguardo.",
    "dur": 3.0,
    "tin": 0.15,
-   "tdur": 0.4
+   "tdur": 0.4,
+   "up": 170
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a2-presenta_v1.png",
@@ -17,7 +18,8 @@
    "dur": 3.5,
    "tin": 0.3,
    "tdur": 0.5,
-   "up": -260
+   "up": -260,
+   "pos": "top"
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a6-filtros_v1.png",
@@ -27,9 +29,10 @@
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a4-sin-presion_v1.png",
-   "title": "Sin electricidad.|Sin presión de caño.",
-   "sub": "Va donde tú quieras.",
-   "dur": 4.5
+   "title": "Sin electricidad.|Sin presión.",
+   "sub": "Y sin conexión al caño.",
+   "dur": 4.5,
+   "up": 170
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a5-llenado_v1.png",
