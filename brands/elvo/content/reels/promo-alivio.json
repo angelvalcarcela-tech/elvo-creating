@@ -16,7 +16,9 @@
    "sub": "Purificador por gravedad",
    "dur": 3.5,
    "tin": 0.3,
-   "tdur": 0.5
+   "tdur": 0.5,
+   "pos": "top",
+   "up": 0
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a3-litros_v1.png",

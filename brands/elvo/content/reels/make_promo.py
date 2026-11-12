@@ -24,7 +24,7 @@ def overlay_png(title,sub,out,card=False,footer='',pos='bottom'):
     for part in title.split('|'): tl+=wrap(d,part,F('Medium',96),840)
     sl=wrap(d,sub,F('Regular',44),840) if sub else []
     h=len(tl)*112+(24+len(sl)*58 if sl else 0)
-    y=(1500-h) if pos!='top' else 300
+    y=(1540-h) if pos!='top' else 300
     if card: y=700
     for ln in tl: d.text((90,y),ln,font=F('Medium',96),fill=(255,255,255,255)); y+=112
     y+=24
@@ -49,7 +49,10 @@ def build(cfg):
         frames=int((durs[k]+x)*fps); zmax=s.get('zoom',0.06)
         z=f"min(1.0+{zmax}*on/{frames},{1+zmax})" if k%2==0 else f"max({1+zmax}-{zmax}*on/{frames},1.0)"
         if s.get('card'): z="1.0"
+        up=int(s.get('up',110))
         pre=f"scale=1080:-2,pad=1080:1920:0:(1920-ih)/2:color={s['pad']}" if s.get('pad') else "scale=-2:1920,crop=1080:1920"
+        if up>0 and not s.get('pad') and not s.get('blur'): pre+=f",crop=1080:{1920-up}:0:{up},pad=1080:1920:0:0:color=0x010A21"
+        if up<0 and not s.get('pad') and not s.get('blur'): pre="scale=-2:1920,crop=1080:1920"+f",pad=1080:{1920-up}:0:{-up}:color=0x010A21,crop=1080:1920:0:0"
         if s.get('blur'):
             fc.append(f"[{k}:v]split[a{k}][c{k}];[a{k}]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,gblur=sigma=45[bg{k}];[c{k}]scale=1080:-2[fg{k}];[bg{k}][fg{k}]overlay=0:(H-h)/2[pf{k}]")
             src=f"[pf{k}]"; pre="null"

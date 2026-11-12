@@ -16,7 +16,9 @@
    "sub": "Purificador antimetales",
    "dur": 3.5,
    "tin": 0.3,
-   "tdur": 0.5
+   "tdur": 0.5,
+   "pos": "top",
+   "up": -120
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n3-etapas_v1.png",
@@ -28,7 +30,8 @@
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n4-agua_v1.png",
    "title": "Agua más rica,|con sus minerales.",
    "sub": "",
-   "dur": 4.0
+   "dur": 4.0,
+   "up": 170
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n5-sin-obras_v1.png",
@@ -50,9 +53,10 @@
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n8-nucleo_v1.png",
-   "title": "Cambias el núcleo|tú mismo.",
-   "sub": "Cada 18 meses.",
-   "dur": 4.5
+   "title": "Cambias el núcleo.",
+   "sub": "Tú mismo, cada 18 meses.",
+   "dur": 4.5,
+   "up": 170
   },
   {
    "card": true,

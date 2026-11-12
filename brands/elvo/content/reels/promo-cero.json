@@ -13,10 +13,12 @@
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c2-presenta_v1.png",
    "title": "Te presentamos:|elvo· Cero",
-   "sub": "Purificador con ósmosis inversa + desinfección UV",
+   "sub": "Ósmosis inversa + desinfección UV",
    "dur": 3.5,
    "tin": 0.3,
-   "tdur": 0.5
+   "tdur": 0.5,
+   "pos": "top",
+   "up": -170
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c4-fria_v1.png",
@@ -32,8 +34,8 @@
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c7-jarra_v1.png",
-   "title": "Jarra de agua|purificada extraíble.",
-   "sub": "2 litros.",
+   "title": "Jarra extraíble.",
+   "sub": "2 litros de agua purificada.",
    "dur": 4.5
   },
   {
@@ -41,7 +43,8 @@
    "title": "Te avisa cuándo|cambiar los filtros.",
    "sub": "Y tiene autolimpieza.",
    "dur": 4.5,
-   "pos": "top"
+   "pos": "top",
+   "up": 0
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c3-llenado_v1.png",
@@ -54,7 +57,8 @@
    "title": "Elige la temperatura|y los ml.",
    "sub": "Para tus recetas.",
    "dur": 4.5,
-   "pos": "top"
+   "pos": "top",
+   "up": 0
   },
   {
    "card": true,
