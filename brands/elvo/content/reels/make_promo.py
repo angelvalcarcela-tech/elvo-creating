@@ -45,7 +45,7 @@ def build(cfg):
         z=f"min(1.0+{zmax}*on/{frames},{1+zmax})" if k%2==0 else f"max({1+zmax}-{zmax}*on/{frames},1.0)"
         if s.get('card'): z="1.0"
         pre=f"scale=1080:-2,pad=1080:1920:0:(1920-ih)/2:color={s['pad']}" if s.get('pad') else "scale=-2:1920,crop=1080:1920"
-        fc.append(f"[{k}:v]{pre},zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s=1080x1920:fps={fps},format=yuv420p[b{k}]")
+        fc.append(f"[{k}:v]{pre},scale=4320:7680:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s=1080x1920:fps={fps},format=yuv420p[b{k}]")
         fc.append(f"[{n+k}:v]format=rgba,fade=t=in:st=0.7:d=0.7:alpha=1[t{k}]")
         fc.append(f"[b{k}][t{k}]overlay=0:0:format=auto,format=yuv420p,setsar=1[s{k}]")
     last='[s0]'; acc=0
@@ -53,5 +53,5 @@ def build(cfg):
         acc+=durs[k-1]
         fc.append(f"{last}[s{k}]xfade=transition=fade:duration={x}:offset={round(acc,2)}[x{k}]"); last=f'[x{k}]'
     cmd+=['-filter_complex',';'.join(fc),'-map',last,'-c:v','libx264','-preset','fast','-crf','23','-pix_fmt','yuv420p','-movflags','+faststart',out]
-    r=subprocess.run(cmd,capture_output=True,text=True,timeout=900); print(r.returncode,r.stderr[:300])
+    r=subprocess.run(cmd,capture_output=True,text=True,timeout=2400); print(r.returncode,r.stderr[:300])
 if __name__=='__main__': build(json.load(open(sys.argv[1])))
