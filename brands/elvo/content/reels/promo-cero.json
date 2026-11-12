@@ -6,7 +6,7 @@
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c1-hook_v1.png",
    "title": "Cero bidones.|Cero impurezas.",
    "sub": "",
-   "dur": 3.0,
+   "dur": 3.5,
    "tin": 0.15,
    "tdur": 0.4
   },
@@ -14,9 +14,9 @@
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c2-presenta_v1.png",
    "title": "Te presentamos:|elvo· Cero",
    "sub": "Ósmosis inversa + desinfección UV",
-   "dur": 3.5,
+   "dur": 5.0,
    "tin": 0.3,
-   "tdur": 0.5,
+   "tdur": 0.4,
    "pos": "top",
    "up": -170
   },
@@ -24,48 +24,60 @@
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c4-fria-b_v1.png",
    "title": "Fría,|desde 6 °C.",
    "sub": "",
-   "dur": 4.0
+   "dur": 3.5,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c5-caliente-b_v1.png",
    "title": "Caliente,|hasta 85 °C.",
    "sub": "",
-   "dur": 4.0
+   "dur": 3.5,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c7-jarra_v1.png",
    "title": "Jarra extraíble.",
    "sub": "2 litros de agua purificada.",
-   "dur": 4.5
+   "dur": 4.5,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c8-filtros_v1.png",
    "title": "Te avisa cuándo|cambiar los filtros.",
    "sub": "Y tiene autolimpieza.",
-   "dur": 4.5,
+   "dur": 5.5,
    "pos": "top",
-   "up": 0
+   "up": 0,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c3-llenado_v1.png",
    "title": "Sin instalación.|Llenas el tanque.",
    "sub": "",
-   "dur": 4.0
+   "dur": 4.0,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c6-ml_v1.png",
    "title": "Elige la temperatura|y los ml.",
    "sub": "Para tus recetas.",
-   "dur": 4.5,
+   "dur": 5.5,
    "pos": "top",
-   "up": 0
+   "up": 0,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "card": true,
    "title": "elvo· Cero",
    "sub": "Cero bidones. Cero impurezas.",
    "footer": "Pídelo en elvo.pe",
-   "dur": 4.5
+   "dur": 5.0
   }
  ]
 }

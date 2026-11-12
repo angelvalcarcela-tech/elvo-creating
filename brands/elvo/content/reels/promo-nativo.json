@@ -6,7 +6,7 @@
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n1c-hook_v1.png",
    "title": "Agua pura|desde tu caño.",
    "sub": "",
-   "dur": 3.0,
+   "dur": 3.5,
    "tin": 0.15,
    "tdur": 0.4
   },
@@ -14,55 +14,67 @@
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n5-sin-obras_v1.png",
    "title": "Te presentamos:|elvo· Nativo",
    "sub": "Purificador antimetales",
-   "dur": 3.5,
+   "dur": 4.0,
    "tin": 0.3,
-   "tdur": 0.5
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n3b-etapas_v1.png",
    "title": "Antimetales,|en 6 etapas.",
    "sub": "",
-   "dur": 4.0
+   "dur": 3.5,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n4-agua_v1.png",
    "title": "Agua más rica,|con sus minerales.",
    "sub": "",
    "dur": 4.0,
-   "up": 170
+   "up": 170,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n9b-sin-obras_v1.png",
    "title": "Sin electricidad.|Sin obras.",
    "sub": "Sin gasfitero.",
-   "dur": 4.0
+   "dur": 4.0,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n6-conecta_v1.png",
    "title": "Lo instalas tú|en 5 minutos.",
-   "sub": "Conectas el derivador al caño.",
-   "dur": 4.0
+   "sub": "",
+   "dur": 4.0,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n7b-palanca_v1.png",
    "title": "Con la palanca",
    "sub": "Cambia agua normal a agua filtrada.",
-   "dur": 4.5,
-   "up": 170
+   "dur": 5.5,
+   "up": 170,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/n8-nucleo_v1.png",
    "title": "Cambias el núcleo.",
    "sub": "Tú mismo, cada 18 meses.",
-   "dur": 4.5,
-   "up": 170
+   "dur": 5.0,
+   "up": 170,
+   "tin": 0.3,
+   "tdur": 0.4
   },
   {
    "card": true,
    "title": "elvo· Nativo",
    "sub": "Agua pura desde tu caño.",
    "footer": "Pídelo en elvo.pe",
-   "dur": 4.5
+   "dur": 5.5
   }
  ]
 }
