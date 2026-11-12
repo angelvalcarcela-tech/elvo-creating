@@ -3,7 +3,7 @@
  "xfade": 0.7,
  "scenes": [
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a1-hook_v1.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a1b-hook_v1.png",
    "title": "Tu Alivio|en casa.",
    "sub": "Agua de resguardo.",
    "dur": 3.0,
@@ -17,14 +17,7 @@
    "dur": 3.5,
    "tin": 0.3,
    "tdur": 0.5,
-   "pos": "top",
    "up": -260
-  },
-  {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a3-litros_v1.png",
-   "title": "16 o 22 litros.",
-   "sub": "Más litros, más alivio.",
-   "dur": 4.0
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a6-filtros_v1.png",
@@ -49,6 +42,12 @@
    "title": "El agua baja sola.|Sirves por la llave.",
    "sub": "",
    "dur": 4.5
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/a3b-litros_v1.png",
+   "title": "16 o 22 litros.",
+   "sub": "16 L para 1 o 2 personas. 22 L para 3 o más.",
+   "dur": 5.0
   },
   {
    "card": true,

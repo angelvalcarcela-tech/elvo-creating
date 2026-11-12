@@ -25,6 +25,12 @@ JC=[
 ('c5-caliente-b',CER,"Night, warm lamp light, city lights blurred outside: the elvo Cero alone on a kitchen counter, hot water pouring from its spout into a ceramic cup on the tray, steam rising, a tea bag resting on the cup edge."+CEROP+SAFEC),
 ]
 
+ALIB=B+'brand-identity/product-references/web/'
+JA=[
+('a1b-hook',ALI,"A woman stands beside the elvo Alivio on a wooden console in a bright living room and drinks a glass of clear water, eyes closed for a second, a moment of pure refreshment; the Alivio is full of water next to her."+ALIP+SAFE),
+('a3b-litros',[ALIB+'alivio-22l-hero.png',ALIB+'alivio-16l-hero.png'],"Two elvo Alivio purifiers side by side on a long wooden console in a bright home, same camera angle: on the left the larger 22-litre model (rectangular body, wide and deep, flat lid, clear blue-tinted tanks, no dome) and on the right the smaller 16-litre model (round body with a white dome lid). Reproduce BOTH models exactly as in the two reference photos; the 22 L is visibly bigger. Both full of clear water, soft window light, a plant. NO text, NO badges, NO labels, NO logo on the bodies. No cables, no plugs."+SAFE),
+]
+
 def run(name,refs,p):
     for t in range(2):
         try:
@@ -39,5 +45,5 @@ def run(name,refs,p):
 sem=threading.Semaphore(4)
 def w(job):
     with sem: run(*job)
-ths=[threading.Thread(target=w,args=(j,)) for j in J]+[threading.Thread(target=w,args=(j,)) for j in JC]
+ths=[threading.Thread(target=w,args=(j,)) for j in J]+[threading.Thread(target=w,args=(j,)) for j in JC]+[threading.Thread(target=w,args=(j,)) for j in JA]
 [t.start() for t in ths]; [t.join() for t in ths]; print('ALLDONE',flush=True)
