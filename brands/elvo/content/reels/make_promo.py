@@ -12,19 +12,24 @@ def wrap(d,text,font,maxw):
         else: out.append(cur);cur=w
     if cur: out.append(cur)
     return out
-def overlay_png(title,sub,out,card=False,footer=''):
+def overlay_png(title,sub,out,card=False,footer='',pos='bottom'):
+    """Zona segura Reels 1080x1920: texto entre y=270 y y=1500, x entre 90 y 930."""
     im=Image.new('RGBA',(1080,1920),(0,0,0,0)); d=ImageDraw.Draw(im)
     if not card:
-        for y in range(1000,1920): d.line([(0,y),(1080,y)],fill=(1,10,33,min(215,int(215*((y-1000)/700)**1.2))))
+        if pos=='top':
+            for y in range(0,900): d.line([(0,y),(1080,y)],fill=(1,10,33,min(205,int(205*((900-y)/650)**1.2))))
+        else:
+            for y in range(1000,1920): d.line([(0,y),(1080,y)],fill=(1,10,33,min(215,int(215*((y-1000)/520)**1.2))))
     tl=[]
-    for part in title.split('|'): tl+=wrap(d,part,F('Medium',96),900)
-    sl=wrap(d,sub,F('Regular',44),900) if sub else []
-    h=len(tl)*112+(24+len(sl)*58 if sl else 0); y=(1560-h) if not card else 760
+    for part in title.split('|'): tl+=wrap(d,part,F('Medium',96),840)
+    sl=wrap(d,sub,F('Regular',44),840) if sub else []
+    h=len(tl)*112+(24+len(sl)*58 if sl else 0)
+    y=(1500-h) if pos!='top' else 300
+    if card: y=700
     for ln in tl: d.text((90,y),ln,font=F('Medium',96),fill=(255,255,255,255)); y+=112
     y+=24
     for ln in sl: d.text((90,y),ln,font=F('Regular',44),fill=(222,232,255,255)); y+=58
-    if card and footer: d.text((90,1700),footer,font=F('Regular',40),fill=(222,232,255,255))
-    d.text((90,1790),'elvo·',font=F('SemiBold',48),fill=(255,255,255,255))
+    if card and footer: d.text((90,y+50),footer,font=F('Regular',40),fill=(222,232,255,255))
     im.save(out)
 def build(cfg):
     out=cfg['out']; tmp=os.path.join(os.path.dirname(out),'tmp'); os.makedirs(tmp,exist_ok=True)
@@ -34,7 +39,7 @@ def build(cfg):
     srcs=[]
     for i,s in enumerate(scenes):
         card=s.get('card',False)
-        overlay_png(s['title'],s.get('sub',''),os.path.join(tmp,f't{i}.png'),card=card,footer=s.get('footer',''))
+        overlay_png(s['title'],s.get('sub',''),os.path.join(tmp,f't{i}.png'),card=card,footer=s.get('footer',''),pos=s.get('pos','bottom'))
         srcs.append(os.path.join(tmp,'cierre.png') if card else s['src'])
     cmd=['ffmpeg','-y','-loglevel','error']
     for s in srcs: cmd+=['-i',s]

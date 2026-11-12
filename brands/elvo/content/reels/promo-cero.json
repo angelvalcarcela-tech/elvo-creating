@@ -3,7 +3,7 @@
  "xfade": 0.7,
  "scenes": [
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote6/l1-pantry_v1.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c1-hook_v1.png",
    "title": "Cero bidones.|Cero impurezas.",
    "sub": "",
    "dur": 3.0,
@@ -11,52 +11,50 @@
    "tdur": 0.4
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v1-cero-solo.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c2-presenta_v1.png",
    "title": "Te presentamos:|elvo· Cero",
    "sub": "Purificador con ósmosis inversa + desinfección UV",
    "dur": 3.5,
-   "zoom": 0.05,
    "tin": 0.3,
    "tdur": 0.5
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v2-llenado.png",
-   "title": "Llenas el tanque.",
-   "sub": "",
-   "dur": 3.0,
-   "tin": 0.3,
-   "tdur": 0.5
-  },
-  {
-   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v3b-fria-dia.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c4-fria_v1.png",
    "title": "Fría,|desde 6 °C.",
    "sub": "",
    "dur": 4.0
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v4b-caliente-noche.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c5-caliente_v1.png",
    "title": "Caliente,|hasta 85 °C.",
    "sub": "",
    "dur": 4.0
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j2-graduacion-ml_v2.png",
-   "title": "Sirve los ml exactos.",
-   "sub": "Para tus recetas.",
-   "dur": 4.5
-  },
-  {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j1-jarra-extrae_v1.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c7-jarra_v1.png",
    "title": "Jarra de agua|purificada extraíble.",
    "sub": "2 litros.",
    "dur": 4.5
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j3-panel-filtros_v2.png",
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c8-filtros_v1.png",
    "title": "Te avisa cuándo|cambiar los filtros.",
    "sub": "Y tiene autolimpieza.",
    "dur": 4.5,
-   "zoom": 0.05
+   "pos": "top"
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c3-llenado_v1.png",
+   "title": "Sin instalación.|Llenas el tanque.",
+   "sub": "Solo enchufas.",
+   "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote11/c6-ml_v1.png",
+   "title": "Elige la temperatura|y los ml.",
+   "sub": "Para tus recetas.",
+   "dur": 4.5,
+   "pos": "top"
   },
   {
    "card": true,
