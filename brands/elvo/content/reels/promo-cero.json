@@ -12,8 +12,8 @@
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v1-cero-solo.png",
-   "title": "elvo· Cero",
-   "sub": "Ósmosis inversa + UV",
+   "title": "Te presentamos:|elvo· Cero",
+   "sub": "Purificador con ósmosis inversa + desinfección UV",
    "dur": 3.5,
    "zoom": 0.05,
    "tin": 0.3,
@@ -28,12 +28,6 @@
    "tdur": 0.5
   },
   {
-   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j2-graduacion-ml_v2.png",
-   "title": "Eliges cuánta agua.",
-   "sub": "Para tus recetas.",
-   "dur": 4.5
-  },
-  {
    "src": "/home/user/elvo-creating/brands/elvo/content/video-cero/v3b-fria-dia.png",
    "title": "Fría,|desde 6 °C.",
    "sub": "",
@@ -44,6 +38,12 @@
    "title": "Caliente,|hasta 85 °C.",
    "sub": "",
    "dur": 4.0
+  },
+  {
+   "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j2-graduacion-ml_v2.png",
+   "title": "Sirve los ml exactos.",
+   "sub": "Para tus recetas.",
+   "dur": 4.5
   },
   {
    "src": "/home/user/elvo-creating/brands/elvo/content/lote10/j1-jarra-extrae_v1.png",
