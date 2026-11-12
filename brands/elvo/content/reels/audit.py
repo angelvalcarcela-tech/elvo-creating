@@ -9,7 +9,8 @@ cfg=json.load(open(sys.argv[1])); tiles=[]
 for i,s in enumerate(cfg['scenes']):
     if s.get('card'): im=Image.new('RGB',(1080,1920),(51,85,255))
     else:
-        im=Image.open(s['src']).convert('RGB'); r=max(1080/im.width,1920/im.height); im=im.resize((int(im.width*r),int(im.height*r)))
+        import os
+        im=Image.open(s['src']).convert('RGB') if os.path.exists(s['src']) else Image.new('RGB',(1152,2048),(120,120,130)); r=max(1080/im.width,1920/im.height); im=im.resize((int(im.width*r),int(im.height*r)))
         x=(im.width-1080)//2; y=(im.height-1920)//2; im=im.crop((x,y,x+1080,y+1920)); up=int(s.get('up',110)); c=Image.new('RGB',(1080,1920),(1,10,33)); c.paste(im.crop((0,up,1080,1920)) if up>=0 else im,(0,0 if up>=0 else -up)); im=c
     mp.overlay_png(s['title'],s.get('sub',''),'/tmp/ov.png',card=s.get('card',False),footer=s.get('footer',''),pos=s.get('pos','bottom'))
     im=im.convert('RGBA'); im.alpha_composite(Image.open('/tmp/ov.png')); d=ImageDraw.Draw(im)
