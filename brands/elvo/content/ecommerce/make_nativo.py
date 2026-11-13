@@ -12,14 +12,11 @@ def port(path,out,box,size=(460,960)):
     im=Image.open(path).convert('RGB'); W,H=im.size
     x0,y0,x1,y1=[int(v) for v in (box[0]*W,box[1]*H,box[2]*W,box[3]*H)]
     im.crop((x0,y0,x1,y1)).resize(size,Image.LANCZOS).save(T+out)
-sq(L+'n1c-hook_v1.png','n01.png',0.20)
-port(L+'n3b-etapas_v1.png','n02.png',(0.05,0.18,0.95,0.18+0.90*1.0*1152/2048*0+0.62),(640,1200))
-sq(L+'n4-agua_v1.png','n03.png',0.18)
+for src,out in (('n2-hero','n01.png'),('n2-servir','n03.png'),('n2-cuerpo','n02.png'),('n2-sin-obras','n05.png'),('n2-nucleo','n06.png'),('n2-filtro-llave','cmp-lav.png'),('n2-servir','cmp-nat.png')):
+    sq(F+src+'.png',out)
 port(L+'n6-conecta_v1.png','p1.png',(0.0,0.10,1.0,0.78))
-port(L+'n3b-etapas_v1.png','p2.png',(0.05,0.12,0.95,0.80))
+port(F+'n2-servir.png','p2.png',(0.10,0.0,0.62,1.0))
 port(L+'n7b-palanca_v1.png','p3.png',(0.0,0.10,1.0,0.78))
-sq(L+'n9b-sin-obras_v1.png','n05.png',0.20)
-sq(L+'n8-nucleo_v1.png','n06.png',0.15)
 # medidas: foto oficial del producto
 Image.open(B+'brand-identity/product-images/nativo-front.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+'n08.png')
 for n,o in (('nativo-09-caja','n09.png'),('nativo-10-grifos','n10.png')):
@@ -38,26 +35,35 @@ CSS="""*{box-sizing:border-box;margin:0}body{width:1500px;height:1500px;font-fam
 .foot{position:absolute;left:90px;bottom:60px;font-weight:600;font-size:48px}.fn{position:absolute;left:90px;right:90px;bottom:50px;font-size:26px;color:#46566f}
 .dim{position:absolute;background:#fff;border-radius:99px;padding:14px 30px;font-size:38px;font-weight:600;box-shadow:0 10px 30px rgba(1,10,33,.2);white-space:nowrap}.line{position:absolute;background:#fff;box-shadow:0 0 0 2px rgba(1,10,33,.25)}
 .plans{position:absolute;left:60px;right:60px;top:470px;display:flex;gap:26px}.plan{flex:1;background:#fff;border-radius:36px;padding:70px 28px 80px;text-align:center;box-shadow:0 20px 50px rgba(1,10,33,.10)}.plan.m{background:#3355FF;color:#fff}.plan h2{font-size:60px;font-weight:600;letter-spacing:-1px;margin-bottom:6px}.plan p{font-size:34px;margin-bottom:30px;opacity:.85}.cores{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;min-height:430px;align-items:flex-end;align-content:flex-end}.core{width:78px;height:190px;border-radius:14px 14px 10px 10px;background:linear-gradient(#eef3f7,#c7d5e0);border:3px solid #9EBACE;position:relative}.plan.m .core{background:linear-gradient(#fff,#dfe8ff);border-color:#fff}.core:before{content:'';position:absolute;left:10px;right:10px;top:46px;height:96px;border-radius:6px;background:rgba(51,85,255,.25)}
+
+.cmp{position:absolute;left:60px;right:60px;top:150px;display:flex;gap:30px}.col{flex:1;border-radius:36px;overflow:hidden}.col.us{background:#3355FF}.col.them{background:#fff;box-shadow:0 0 0 3px #c9d7e3 inset}.pic{height:540px;background-size:cover;background-position:center}.clab{padding:22px 30px 10px;font-size:42px;font-weight:600;color:#fff}.col.them .clab{color:#46566f;font-size:36px}.r{display:flex;align-items:center;gap:20px;padding:0 30px;height:140px;font-size:38px;font-weight:500;line-height:1.1;color:#fff}.col.them .r{color:#46566f}.r+.r{border-top:2px solid rgba(255,255,255,.28)}.col.them .r+.r{border-top-color:#dbe3ea}.ic{flex:0 0 64px;height:64px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center}.col.them .ic{background:#e8eef3}.ic svg{width:34px;height:34px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.col.them .ic svg{stroke:#6b7b90}
+.pan{position:absolute;left:0;right:0;bottom:0;height:520px;background:#010A21;color:#fff;padding:44px 80px}.pan h1{font-weight:500;font-size:64px;letter-spacing:-1px;margin-bottom:28px}.chips{display:grid;grid-template-columns:repeat(3,1fr);gap:18px 22px}.chip{display:flex;align-items:center;gap:16px;font-size:34px;font-weight:500;line-height:1.1}.chip i{font-style:normal;flex:0 0 52px;height:52px;border-radius:50%;background:#3355FF;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700}.pan .fn2{position:absolute;left:80px;bottom:30px;font-size:24px;color:#9EBACE}
 """
 def life(img,title,sub=''): return f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{img}')\"></div><div class='scrim'></div><div class='mark'>elvo·</div><div class='cap'><h1>{title}</h1><p>{sub}</p></div></body></html>"
 def plain(img,extra=''): return f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{img}')\"></div><div class='mark'>elvo·</div>{extra}</body></html>"
 def toptext(img,title,sub=''): return f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{img}')\"></div><div style='position:absolute;left:0;right:0;top:0;height:42%;background:linear-gradient(to bottom,rgba(255,255,255,.85),rgba(255,255,255,0))'></div><div style='position:absolute;left:90px;right:90px;top:80px;color:#010A21'><h1 style='font-weight:500;font-size:88px;letter-spacing:-1.5px'>{title}</h1><p style='font-size:40px;margin-top:14px;color:#2b3b55'>{sub}</p></div><div class='mark' style='top:auto;bottom:70px'>elvo·</div></body></html>"
 H={}
 H['nativo-01-principal']=plain('n01.png')
-stages=[('Carbón activado','cloro, olores y mal sabor'),('Etapa antimetales','retiene metales pesados*'),('Plata coloidal','inhibe microorganismos'),('Nanotecnología','microplásticos y partículas finas'),('Aluminosilicato','mejora la claridad del agua'),('Plata iónica','agua más pura por más tiempo')]
-its=''.join(f"<div class='item'><b>{i+1}</b><div>{a}<small>{b}</small></div></div>" for i,(a,b) in enumerate(stages))
-H['nativo-02-seis-etapas']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='txt'><div class='k'>Antimetales</div><h1>6 etapas<br>de filtración</h1>{its}</div><div class='arch' style=\"background-image:url('file://{T}n02.png')\"></div><div class='fn'>*Según la ficha técnica del núcleo PureCore. Pensado para agua de red potable.</div></body></html>"
-H['nativo-03-agua-con-minerales']=life('n03.png','Agua más rica,<br>con sus minerales.')
+stages=['Carbón activado','Etapa antimetales*','Plata coloidal','Nanotecnología','Aluminosilicato','Plata iónica']
+chips=''.join(f"<div class='chip'><i>{i+1}</i>{s}</div>" for i,s in enumerate(stages))
+H['nativo-02-seis-etapas']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='photo' style=\"background-image:url('file://{T}n02.png');bottom:520px\"></div><div class='mark'>elvo·</div><div class='pan'><h1>6 etapas de filtración</h1><div class='chips'>{chips}</div><div class='fn2'>*Según la ficha técnica del núcleo PureCore. Pensado para agua de red potable.</div></div></body></html>"
+H['nativo-03-agua-pura']=life('n03.png','Agua pura<br>desde tu caño.')
 steps=''.join(f"<div class='step'><div class='img' style=\"background-image:url('file://{T}{p}')\"></div><b><i>{n}</i>{t}</b></div>" for n,p,t in ((1,'p1.png','Conectas el derivador'),(2,'p2.png','Dejas correr el agua 5 min'),(3,'p3.png','Mueves la palanca y sirves')))
 H['nativo-04-asi-se-instala']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top'><div class='k'>Así se instala</div><h1>Tú, en 5 minutos</h1></div><div class='steps'>{steps}</div><div class='foot'>elvo·</div></body></html>"
 H['nativo-05-sin-electricidad']=life('n05.png','Sin electricidad.<br>Sin obras.','Sin gasfitero.')
 H['nativo-06-cambio-de-nucleo']=life('n06.png','El núcleo lo cambias tú.','Cada 18 meses. Te avisamos por WhatsApp.')
-cores=lambda n:''.join("<div class='core'></div>" for _ in range(n))
-H['nativo-07-planes']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top'><div class='k'>Elige tu plan</div><h1>Cuánto tiempo<br>te despreocupas</h1></div><div class='plans'><div class='plan'><h2>18 meses</h2><p>1 núcleo</p><div class='cores'>{cores(1)}</div></div><div class='plan m'><h2>3 años</h2><p>2 núcleos</p><div class='cores'>{cores(2)}</div></div><div class='plan'><h2>6 años</h2><p>4 núcleos</p><div class='cores'>{cores(4)}</div></div></div><div class='foot'>elvo·</div><div class='fn' style='left:auto;right:90px;width:900px;text-align:right;bottom:70px'>Cada núcleo dura 18 meses de uso normal.</div></body></html>"
+ic={'e':"<svg viewBox='0 0 24 24'><path d='M12 2.7l5.7 5.7a8 8 0 1 1-11.3 0z'/></svg>",'d':"<svg viewBox='0 0 24 24'><circle cx='12' cy='12' r='10'/><polyline points='12 6 12 12 16 14'/></svg>",'u':"<svg viewBox='0 0 24 24'><path d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/></svg>",'l':"<svg viewBox='0 0 24 24'><path d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/><path d='M9 22V12h6v10'/></svg>"}
+rows=[('e','6 etapas de filtración','1 etapa de carbón activado'),('d','Núcleo de 18 meses','Cartucho de 3 a 6 meses'),('u','Palanca: agua normal o filtrada','Enroscado al grifo'),('l','Sobre la mesada, con pico propio','Colgado del grifo')]
+us=''.join(f"<div class='r'><div class='ic'>{ic[k]}</div>{a}</div>" for k,a,b in rows)
+th=''.join(f"<div class='r'><div class='ic'>{ic[k]}</div>{b}</div>" for k,a,b in rows)
+H['nativo-07-comparacion']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top' style='top:50px'><h1 style='font-size:66px;margin:0'>Nativo vs. filtro de llave</h1></div><div class='cmp'><div class='col us'><div class='pic' style=\"background-image:url('file://{T}cmp-nat.png')\"></div><div class='clab'>elvo· Nativo</div>{us}</div><div class='col them'><div class='pic' style=\"background-image:url('file://{T}cmp-lav.png')\"></div><div class='clab'>Filtro de llave (típico)</div>{th}</div></div></body></html>"
 dims="<div class='line' style='left:1100px;top:125px;width:6px;height:1212px;background:#010A21;box-shadow:none'></div><div class='dim' style='left:1140px;top:690px'>30 cm</div><div class='line' style='left:588px;top:1385px;width:474px;height:6px;background:#010A21;box-shadow:none'></div><div class='dim' style='left:640px;top:1405px;padding:10px 26px;font-size:34px'>16 × 16 cm</div>"
 H['nativo-08-medidas']=plain('n08.png',dims).replace('</style>','.mark{color:#010A21!important;text-shadow:none!important}</style>')
 H['nativo-09-en-la-caja']=toptext('n09.png','En la caja.','Purificador con núcleo · Derivador · Manguera · Adaptador · Llave plástica · Manual')
 H['nativo-10-grifos']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top'><div class='k'>Compatibilidad</div><h1>Se adapta a tu grifo</h1></div><div class='photo' style=\"background-image:url('file://{T}n10.png');top:330px;bottom:250px;left:60px;right:60px;border-radius:36px\"></div><div style='position:absolute;left:90px;right:90px;bottom:70px;font-size:42px;font-weight:500'>Kit de adaptadores incluido.<br><span style='color:#46566f;font-size:36px;font-weight:400'>Compatible con la mayoría de grifos estándar.</span></div></body></html>"
+DK="<style>.mark{color:#010A21!important;text-shadow:none!important}</style>"
+for k in ('nativo-01-principal','nativo-02-seis-etapas','nativo-03-agua-pura','nativo-05-sin-electricidad'):
+    H[k]=H[k].replace('</head>',DK+'</head>')
 os.makedirs('/tmp/ecom/nativo',exist_ok=True)
 for f in os.listdir('/tmp/ecom/nativo'): os.remove('/tmp/ecom/nativo/'+f)
 for k,h in H.items(): open(f'/tmp/ecom/nativo/{k}.html','w').write(h)
