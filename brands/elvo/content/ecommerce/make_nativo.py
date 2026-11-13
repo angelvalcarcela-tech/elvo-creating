@@ -72,7 +72,7 @@ def full(name):
 def full2(name):
     Image.open(F+name+'.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+name+'.png')
     return f"<html><head><meta charset='utf-8'><style>{CSS}body{{background:#fff}}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{name}.png');background-size:100% 100%\"></div></body></html>"
-H['nativo-04-asi-se-instala']=full2('instala4-a')
+H['nativo-04-asi-se-instala']=full2('instala5-b')
 H['nativo-09-en-la-caja']=toptext('n09.png','En la caja.','Purificador con núcleo · Derivador · Manguera · Adaptador · Llave plástica · Manual')
 H['nativo-10-grifos']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top'><div class='k'>Compatibilidad</div><h1>Se adapta a tu grifo</h1></div><div class='photo' style=\"background-image:url('file://{T}n10.png');top:300px;bottom:230px;left:60px;right:60px;border-radius:36px\"></div><div style='position:absolute;left:90px;right:90px;bottom:70px;font-size:42px;font-weight:500'>Incluye derivador y adaptador universal de jebe.<br><span style='color:#46566f;font-size:36px;font-weight:400'>Compatible con la mayoría de grifos estándar.</span></div></body></html>"
 
