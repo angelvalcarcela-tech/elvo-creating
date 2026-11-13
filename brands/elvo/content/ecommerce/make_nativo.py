@@ -85,7 +85,7 @@ H['nativo-10-grifos']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></
 def full(name):
     Image.open(F+name+'.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+name+'.png')
     return f"<html><head><meta charset='utf-8'><style>{CSS}body{{background:#fff}}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{name}.png');background-size:100% 100%\"></div></body></html>"
-H['nativo-09-en-la-caja']=full('real2-caja')
+H['nativo-09-en-la-caja']=full('caja2-b-fix')
 H['nativo-10-grifos']=full('real2-grifos')
 DK="<style>.mark{color:#010A21!important;text-shadow:none!important}</style>"
 for k in ('nativo-01-principal','nativo-05-sin-electricidad'):
