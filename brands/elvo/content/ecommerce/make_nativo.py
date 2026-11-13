@@ -12,7 +12,7 @@ def port(path,out,box,size=(460,960)):
     im=Image.open(path).convert('RGB'); W,H=im.size
     x0,y0,x1,y1=[int(v) for v in (box[0]*W,box[1]*H,box[2]*W,box[3]*H)]
     im.crop((x0,y0,x1,y1)).resize(size,Image.LANCZOS).save(T+out)
-for src,out in (('n2-hero','n01.png'),('n2-servir','n03.png'),('n2-sin-obras','n05.png'),('n2-nucleo','n06.png'),('generico','cmp-lav.png'),('n2-servir','cmp-nat.png')):
+for src,out in (('n3-hero','n01.png'),('n4-servir-a','n03.png'),('n4-servir-a','n02.png'),('n2-sin-obras','n05.png'),('n4-nucleo-a','n06.png'),('generico','cmp-lav.png'),('n4-servir-a','cmp-nat.png')):
     sq(F+src+'.png',out)
 port(F+'n2-conecta.png' if os.path.exists(F+'n2-conecta.png') else L+'n6-conecta_v1.png','p1.png',(0.12,0.0,0.62,1.0) if os.path.exists(F+'n2-conecta.png') else (0.0,0.10,1.0,0.78))
 port(F+'n2-servir.png','p2.png',(0.10,0.0,0.62,1.0))
