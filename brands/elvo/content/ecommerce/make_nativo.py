@@ -12,12 +12,12 @@ def port(path,out,box,size=(460,960)):
     im=Image.open(path).convert('RGB'); W,H=im.size
     x0,y0,x1,y1=[int(v) for v in (box[0]*W,box[1]*H,box[2]*W,box[3]*H)]
     im.crop((x0,y0,x1,y1)).resize(size,Image.LANCZOS).save(T+out)
-for src,out in (('n2-hero','n01.png'),('n2-servir','n02.png'),('n2-sin-obras','n05.png'),('n2-nucleo','n06.png'),('n2-filtro-llave','cmp-lav.png'),('n2-servir','cmp-nat.png')):
+for src,out in (('n2-hero','n01.png'),('n2-servir','n03.png'),('n2-sin-obras','n05.png'),('n2-nucleo','n06.png'),('n2-filtro-llave','cmp-lav.png'),('n2-servir','cmp-nat.png')):
     sq(F+src+'.png',out)
 port(F+'n2-conecta.png' if os.path.exists(F+'n2-conecta.png') else L+'n6-conecta_v1.png','p1.png',(0.12,0.0,0.62,1.0) if os.path.exists(F+'n2-conecta.png') else (0.0,0.10,1.0,0.78))
 port(F+'n2-servir.png','p2.png',(0.10,0.0,0.62,1.0))
 port(L+'n7b-palanca_v1.png','p3.png',(0.0,0.10,1.0,0.78))
-port(F+'n2-nucleo.png','n03.png',(0.36,0.02,0.84,0.92),(640,1200))
+Image.open(F+'despiece-b.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+'n02.png')
 # medidas: foto oficial del producto
 Image.open(B+'brand-identity/product-images/nativo-front.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+'n08.png')
 for n,o in (('nativo-09-caja','n09.png'),('nativo-10-grifos','n10.png')):
@@ -49,13 +49,8 @@ def plain(img,extra=''): return f"<html><head><meta charset='utf-8'><style>{CSS}
 def toptext(img,title,sub=''): return f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{img}')\"></div><div style='position:absolute;left:0;right:0;top:0;height:42%;background:linear-gradient(to bottom,rgba(255,255,255,.85),rgba(255,255,255,0))'></div><div style='position:absolute;left:90px;right:90px;top:80px;color:#010A21'><h1 style='font-weight:500;font-size:88px;letter-spacing:-1.5px'>{title}</h1><p style='font-size:40px;margin-top:14px;color:#2b3b55'>{sub}</p></div><div class='mark' style='top:auto;bottom:70px'>elvo·</div></body></html>"
 H={}
 H['nativo-01-principal']=plain('n01.png')
-rets=[('Retiene plomo y metales pesados*'),('Reduce cloro, olores y sabores'),('Atrapa microplásticos y partículas finas'),('Conserva los minerales del agua')]
-rt=''.join(f"<div class='rt'><i>✓</i><div>{x}</div></div>" for x in rets)
-H['nativo-02-que-retiene']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='photo' style=\"background-image:url('file://{T}n02.png');bottom:560px\"></div><div class='mark'>elvo·</div><div class='pan' style='height:560px'><h1>Qué retiene y qué reduce</h1><div class='ret'>{rt}</div><div class='fn2' style='font-size:25px;line-height:1.25;right:80px'>*Según la ficha técnica del núcleo PureCore. Pensado para agua de red potable; los resultados dependen de la calidad del agua de entrada.</div></div></body></html>"
-H['nativo-02-que-retiene']=H['nativo-02-que-retiene'].replace('</head>',"<style>.mark{color:#010A21!important;text-shadow:none!important}</style></head>")
-st=[('Carbón activado','cloro, olores y mal sabor'),('Etapa antimetales*','retiene metales pesados'),('Plata coloidal','inhibe el crecimiento de microorganismos'),('Nanotecnología','atrapa microplásticos y partículas finas'),('Aluminosilicato','mejora la claridad del agua'),('Plata iónica','mantiene el agua más pura por más tiempo')]
-its=''.join(f"<div class='item'><b>{i+1}</b><div>{a}<small>{b}</small></div></div>" for i,(a,b) in enumerate(st))
-H['nativo-03-seis-etapas']=f"<html><head><meta charset='utf-8'><style>{CSS}.txt{{width:700px}}.item small{{font-size:27px}}</style></head><body><div class='txt'><div class='k'>Núcleo PureCore</div><h1>6 etapas<br>en un solo núcleo</h1>{its}</div><div class='arch' style=\"background-image:url('file://{T}n03.png');width:600px;right:60px\"></div><div class='fn'>*Según la ficha técnica del núcleo PureCore. Pensado para agua de red potable.</div></body></html>"
+H['nativo-02-que-elimina']=f"<html><head><meta charset='utf-8'><style>{CSS}body{{background:#fff}}</style></head><body><div class='photo' style=\"background-image:url('file://{T}n02.png');background-size:100% 100%\"></div></body></html>"
+H['nativo-03-agua-pura']=life('n03.png','Agua pura<br>desde tu caño.')
 steps=''.join(f"<div class='step'><div class='img' style=\"background-image:url('file://{T}{p}')\"></div><b><i>{n}</i>{t}</b></div>" for n,p,t in ((1,'p1.png','Conectas el derivador'),(2,'p2.png','Dejas correr el agua 5 min'),(3,'p3.png','Mueves la palanca y sirves')))
 H['nativo-04-asi-se-instala']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top'><div class='k'>Así se instala</div><h1>Tú, en 5 minutos</h1></div><div class='steps'>{steps}</div><div class='foot'>elvo·</div></body></html>"
 H['nativo-05-sin-electricidad']=life('n05.png','Sin electricidad.<br>Sin obras.','Sin gasfitero.',narrow=True).replace('.cap h1{font-size:72px}','.cap h1{font-size:62px}').replace('width:600px','width:520px')
