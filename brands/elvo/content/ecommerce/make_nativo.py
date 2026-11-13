@@ -68,6 +68,16 @@ H['nativo-10-grifos']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></
 def full(name):
     Image.open(F+name+'.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+name+'.png')
     return f"<html><head><meta charset='utf-8'><style>{CSS}body{{background:#fff}}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{name}.png');background-size:100% 100%\"></div></body></html>"
+def full2(name):
+    Image.open(F+name+'.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+name+'.png')
+    return f"<html><head><meta charset='utf-8'><style>{CSS}body{{background:#fff}}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{name}.png');background-size:100% 100%\"></div></body></html>"
+H['nativo-04-asi-se-instala']=full2('instala3-a')
+H['nativo-09-en-la-caja']=toptext('n09.png','En la caja.','Purificador con núcleo · Derivador · Manguera · Adaptador · Llave plástica · Manual')
+H['nativo-10-grifos']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top'><div class='k'>Compatibilidad</div><h1>Se adapta a tu grifo</h1></div><div class='photo' style=\"background-image:url('file://{T}n10.png');top:300px;bottom:230px;left:60px;right:60px;border-radius:36px\"></div><div style='position:absolute;left:90px;right:90px;bottom:70px;font-size:42px;font-weight:500'>Incluye derivador y adaptador universal de jebe.<br><span style='color:#46566f;font-size:36px;font-weight:400'>Compatible con la mayoría de grifos estándar.</span></div></body></html>"
+
+def full(name):
+    Image.open(F+name+'.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+name+'.png')
+    return f"<html><head><meta charset='utf-8'><style>{CSS}body{{background:#fff}}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{name}.png');background-size:100% 100%\"></div></body></html>"
 steps_r=''.join(f"<div class='step'><div class='img' style=\"background-image:url('file://{T}{p}')\"></div><b><i>{n}</i>{tx}</b></div>" for n,p,tx in ((1,'r1.png','Conectas el derivador'),(2,'r2.png','Dejas correr el agua 5 min'),(3,'r3.png','Mueves la palanca y sirves')))
 H['nativo-04-asi-se-instala']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top'><div class='k'>Así se instala</div><h1>Tú, en 5 minutos</h1></div><div class='steps'>{steps_r}</div><div class='foot'>elvo·</div></body></html>"
 H['nativo-09-en-la-caja']=toptext('n09.png','En la caja.','Purificador con núcleo · Derivador · Manguera · Adaptador · Llave plástica · Manual')
