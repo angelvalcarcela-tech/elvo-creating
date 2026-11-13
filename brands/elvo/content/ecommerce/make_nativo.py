@@ -12,7 +12,7 @@ def port(path,out,box,size=(460,960)):
     im=Image.open(path).convert('RGB'); W,H=im.size
     x0,y0,x1,y1=[int(v) for v in (box[0]*W,box[1]*H,box[2]*W,box[3]*H)]
     im.crop((x0,y0,x1,y1)).resize(size,Image.LANCZOS).save(T+out)
-for src,out in (('n2-hero','n01.png'),('n2-servir','n03.png'),('n2-sin-obras','n05.png'),('n2-nucleo','n06.png'),('n2-filtro-llave','cmp-lav.png'),('n2-servir','cmp-nat.png')):
+for src,out in (('n2-hero','n01.png'),('n2-servir','n03.png'),('n2-sin-obras','n05.png'),('n2-nucleo','n06.png'),('generico','cmp-lav.png'),('n2-servir','cmp-nat.png')):
     sq(F+src+'.png',out)
 port(F+'n2-conecta.png' if os.path.exists(F+'n2-conecta.png') else L+'n6-conecta_v1.png','p1.png',(0.12,0.0,0.62,1.0) if os.path.exists(F+'n2-conecta.png') else (0.0,0.10,1.0,0.78))
 port(F+'n2-servir.png','p2.png',(0.10,0.0,0.62,1.0))
@@ -56,10 +56,10 @@ H['nativo-04-asi-se-instala']=f"<html><head><meta charset='utf-8'><style>{CSS}</
 H['nativo-05-sin-electricidad']=life('n05.png','Sin electricidad.<br>Sin obras.','Sin gasfitero.',narrow=True).replace('.cap h1{font-size:72px}','.cap h1{font-size:62px}').replace('width:600px','width:520px')
 H['nativo-06-cambio-de-nucleo']=life('n06.png','El núcleo<br>lo cambias tú.','Cada 18 meses.',narrow=True)
 ic={'e':"<svg viewBox='0 0 24 24'><path d='M12 2.7l5.7 5.7a8 8 0 1 1-11.3 0z'/></svg>",'d':"<svg viewBox='0 0 24 24'><circle cx='12' cy='12' r='10'/><polyline points='12 6 12 12 16 14'/></svg>",'u':"<svg viewBox='0 0 24 24'><path d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/></svg>",'l':"<svg viewBox='0 0 24 24'><path d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/><path d='M9 22V12h6v10'/></svg>"}
-rows=[('e','6 etapas de filtración','1 etapa de carbón activado'),('d','Núcleo de 18 meses','Cartucho de 3 a 6 meses'),('l','Tu grifo queda libre, con pico propio','Cuelga de tu grifo')]
+rows=[('e','6 etapas de filtración','Etapas según el modelo'),('d','Núcleo PureCore de 18 meses','Duración según el modelo'),('u','Etapa antimetales*','No siempre incluida')]
 us=''.join(f"<div class='r'><div class='ic'>{ic[k]}</div>{a}</div>" for k,a,b in rows)
 th=''.join(f"<div class='r'><div class='ic'>{ic[k]}</div>{b}</div>" for k,a,b in rows)
-H['nativo-07-comparacion']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top' style='top:50px'><h1 style='font-size:66px;margin:0'>Nativo vs. filtro de llave</h1></div><div class='cmp'><div class='col us'><div class='pic' style=\"background-image:url('file://{T}cmp-nat.png')\"></div><div class='clab'>elvo· Nativo</div>{us}</div><div class='col them'><div class='pic' style=\"background-image:url('file://{T}cmp-lav.png')\"></div><div class='clab'>Filtro de llave (típico)</div>{th}</div></div></body></html>"
+H['nativo-07-comparacion']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top' style='top:50px'><h1 style='font-size:64px;margin:0'>Nativo vs. otro purificador de caño</h1></div><div class='cmp'><div class='col us'><div class='pic' style=\"background-image:url('file://{T}cmp-nat.png')\"></div><div class='clab'>elvo· Nativo</div>{us}</div><div class='col them'><div class='pic' style=\"background-image:url('file://{T}cmp-lav.png')\"></div><div class='clab'>Otro purificador genérico</div>{th}</div></div><div style='position:absolute;left:60px;right:60px;bottom:22px;font-size:23px;color:#46566f'>Comparación con un purificador genérico del mismo tipo; revisa la ficha de cada modelo. *Según la ficha técnica del núcleo PureCore.</div></body></html>"
 dims="<div class='line' style='left:1100px;top:125px;width:6px;height:1212px;background:#010A21;box-shadow:none'></div><div class='dim' style='left:1140px;top:690px'>30 cm</div><div class='line' style='left:588px;top:1385px;width:474px;height:6px;background:#010A21;box-shadow:none'></div><div class='dim' style='left:640px;top:1405px;padding:10px 26px;font-size:34px'>16 × 16 cm</div>"
 H['nativo-08-medidas']=plain('n08.png',dims).replace('</style>','.mark{color:#010A21!important;text-shadow:none!important}</style>')
 H['nativo-09-en-la-caja']=toptext('n09.png','En la caja.','Purificador con núcleo · Derivador · Manguera · Adaptador · Llave plástica · Manual')
@@ -71,7 +71,7 @@ def full(name):
 def full2(name):
     Image.open(F+name+'.png').convert('RGB').resize((1500,1500),Image.LANCZOS).save(T+name+'.png')
     return f"<html><head><meta charset='utf-8'><style>{CSS}body{{background:#fff}}</style></head><body><div class='photo' style=\"background-image:url('file://{T}{name}.png');background-size:100% 100%\"></div></body></html>"
-H['nativo-04-asi-se-instala']=full2('instala3-a')
+H['nativo-04-asi-se-instala']=full2('instala4-a')
 H['nativo-09-en-la-caja']=toptext('n09.png','En la caja.','Purificador con núcleo · Derivador · Manguera · Adaptador · Llave plástica · Manual')
 H['nativo-10-grifos']=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='top'><div class='k'>Compatibilidad</div><h1>Se adapta a tu grifo</h1></div><div class='photo' style=\"background-image:url('file://{T}n10.png');top:300px;bottom:230px;left:60px;right:60px;border-radius:36px\"></div><div style='position:absolute;left:90px;right:90px;bottom:70px;font-size:42px;font-weight:500'>Incluye derivador y adaptador universal de jebe.<br><span style='color:#46566f;font-size:36px;font-weight:400'>Compatible con la mayoría de grifos estándar.</span></div></body></html>"
 
