@@ -1,19 +1,19 @@
 # Alivio — Preguntas frecuentes (YaVendio): consolidado
 
-Imágenes en `alivio-qa-fal-6-imagenes.zip` (1–6). Respuestas ≤ 600 caracteres.
+Imágenes en `alivio-preguntas-imagenes-finales.zip` (1–6). Respuestas ≤ 600 caracteres.
 
 ## Listas (1–6)
-1. **¿Qué etapas de filtración tiene y qué quita?** — `01-filtracion.jpg`
+1. **¿Qué etapas de filtración tiene y qué quita?** — `alivio-p1-etapas-de-filtracion.jpg`
    Tiene 7 etapas: filtro cerámico (retiene sedimentos y partículas), carbón activado y de plata (reduce cloro, olores y mal sabor), WMSM-300, arena de sílice (retiene partículas finas), zeolita (ayuda a retener impurezas disueltas), arena mineral (ayuda a equilibrar el pH) y piedra mineral (aporta minerales). No ofrecemos retirar bacterias ni caliche, ni alcalinizar el agua.
-2. **¿Cómo se usa? ¿Necesita electricidad o instalación?** — `02-uso.jpg`
+2. **¿Cómo se usa? ¿Necesita electricidad o instalación?** — `alivio-p2-como-se-usa.jpg`
    No necesita electricidad ni instalación, y nunca se conecta al caño. Quitas la tapa y llenas el tanque superior con una jarra, el agua se filtra sola por gravedad a través de los filtros y la sirves por la llave.
-3. **¿16 o 22 litros? ¿Qué medidas tiene?** — `03-tamano.jpg` (con cotas)
+3. **¿16 o 22 litros? ¿Qué medidas tiene?** — `alivio-p3-tamanos-y-medidas.jpg` (con cotas)
    El Alivio 16 L es para 1 o 2 personas: mide 62 cm de alto y su base es de 35 × 31 cm. El Alivio 22 L es para 3 o más personas: mide 61 cm de alto y su base es de 35 × 23,5 cm.
-4. **¿Cuánto duran los filtros? ¿Venden el repuesto?** — `04-filtros.jpg`
+4. **¿Cuánto duran los filtros? ¿Venden el repuesto?** — `alivio-p4-duracion-de-filtros.jpg`
    Cada kit de filtros rinde hasta 10.000 litros o 1 año, lo que ocurra primero; el equipo ya trae su primer filtro. El kit de repuesto se vende aparte e incluye filtro cerámico, filtro multicapa y filtro mineralizador. Incluye gotas de pH: una gota en el vaso y comparas.
-5. **¿Cuándo llega y cómo pago?** — `05-entrega.jpg`
+5. **¿Cuándo llega y cómo pago?** — `alivio-p5-entrega-y-pago.jpg`
    En Lima y Callao el envío a domicilio es gratis y pagas al recibir. En provincia el envío cuesta S/15 y eliges: recojo en agencia Shalom (adelanto de S/20 y saldo al recoger), envío a domicilio (pago completo adelantado) o pago con tarjeta (te enviamos un link de pago).
-6. **¿Qué incluye la caja? ¿Tiene garantía?** — `06-caja.jpg`
+6. **¿Qué incluye la caja? ¿Tiene garantía?** — `alivio-p6-que-incluye-la-caja.jpg`
    Incluye el equipo, filtro cerámico, filtro multietapa, piedra mineral, gotas de pH y manual. Tienes una garantía de satisfacción de 30 días para probarlo.
 
 ## Propuestas (7–10), pendientes
