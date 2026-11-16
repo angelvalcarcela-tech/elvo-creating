@@ -30,6 +30,11 @@ else:
     sq(src('06'),'p01.png',(105,0,1095,990)); sqx('07','p03.png',105)
     sqx('10','p05.png',105); sqx('13','p06.png',105); sqx('05','p07.png',105); sqx('04','p10.png',105)
     crop(src('04'),'s1.png',(560,0,1160,880),(600,880)); crop(src('04'),'s2.png',(105,0,705,880),(600,880)); crop(src('06'),'s3.png',(540,110,1140,990),(600,880))
+# pasos (cuadrados): llenar, filtros, servir
+if M=='16':
+    sq(src('04'),'r1.png',(105,0,1095,990),size=700); sq(src('05'),'r2.png',(80,0,1070,990),size=700); sq(src('06'),'r3.png',(130,0,1120,990),size=700)
+else:
+    sq(src('04'),'r1.png',(105,0,1095,990),size=700); sq(src('05'),'r2.png',(105,0,1095,990),size=700); sq(src('06'),'r3.png',(105,0,1095,990),size=700)
 # ilustración de componentes (foto 8 de la tienda)
 im8=Image.open(src('08')).convert('RGB'); im8.crop((255,215,553,1012)).resize((596,1594),Image.LANCZOS).save(T+'comp.png')
 # medidas
@@ -84,8 +89,10 @@ etapas=['Filtro cerámico','Carbón activado y de plata','WMSM-300','Arena de s�
 its=''.join(f"<div class='item'><b>{i+1}</b><div>{x}</div></div>" for i,x in enumerate(etapas))
 H['02-ocho-etapas']=page(f"<div class='top'><div class='k'>Alivio {lit} L</div><h1>Filtra con<br>8 etapas</h1></div><div class='list' style='top:380px'>{its}</div><div class='arch'><img src='file://{T}comp.png'></div><div class='fn'>Esquema ilustrativo. Los resultados dependen de la calidad del agua de entrada.</div>")
 H['03-sin-electricidad']=band('p03.png','Sin electricidad. Sin presión de caño.','Se llena con una jarra y purifica por gravedad.','center 30%')
-steps=''.join(f"<div class='step'><div class='img' style=\"background-image:url('file://{T}{p}')\"></div><b><i>{n}</i>{t}</b></div>" for n,p,t in ((1,'s1.png','Quitas la tapa'),(2,'s2.png','Llenas con una jarra'),(3,'s3.png','Sirves por la llave')))
-H['04-asi-se-usa']=page(f"<div class='top'><div class='k'>Así se usa</div><h1>Tú, en 3 pasos</h1></div><div class='steps'>{steps}</div><div class='foot'>elvo·</div>")
+rows=[(1,'r1.png','Quitas la tapa y llenas el tanque superior.'),(2,'r2.png','El agua se filtra por gravedad, a través de los filtros.'),(3,'r3.png','Sirves por la llave.')]
+rr=''.join(f"<div class='row'><div class='rimg' style=\"background-image:url('file://{T}{p}')\"></div><div class='rn'>{n}</div><div class='rt'>{tx}</div></div>" for n,p,tx in rows)
+EXTRA=".rows{position:absolute;left:70px;right:70px;top:270px}.row{display:flex;align-items:center;gap:40px;height:380px;margin-bottom:24px}.rimg{flex:0 0 560px;height:380px;border-radius:36px;background-size:cover;background-position:center;box-shadow:0 20px 50px rgba(1,10,33,.16)}.rn{flex:0 0 96px;height:96px;border-radius:50%;background:#3355FF;color:#fff;font-size:56px;font-weight:600;display:flex;align-items:center;justify-content:center}.rt{flex:1;font-size:50px;font-weight:500;line-height:1.12;letter-spacing:-.5px}"
+H['04-asi-se-usa']=page(f"<div class='top'><div class='k'>Así se usa</div><h1>Tú, en 3 pasos</h1></div><div class='rows'>{rr}</div><div class='mark d' style='left:auto;right:90px'>elvo·</div>",EXTRA)
 H['05-gotas-de-ph']=band('p05.png','Gotas de pH incluidas','Una gota en el vaso y comparas.','center 40%')
 H['06-kit-de-filtros']=band('p06.png','10.000 litros o 1 año','El equipo ya trae su filtro. El kit de repuesto se vende aparte.','center 20%')
 H['07-capacidad']=band('p07.png',f'{lit} litros',pers,'center 35%')
