@@ -5,21 +5,20 @@ def uri(p):
     mt='image/jpeg' if p.endswith('.jpg') else 'image/png'
     return f'data:{mt};base64,'+base64.b64encode(open(p,'rb').read()).decode()
 REFS=[R+'alivio-componentes.png',W+'alivio-16l-hero.png']
-TXT=("ALL TEXT EXACTLY AS WRITTEN, in Spanish with correct accents, nothing else added. Above the title, a small electric-blue uppercase kicker: \"MODELO ALIVIO\". Title at the top-left in dark navy: \"8 etapas\" and under it in smaller grey: \"De arriba hacia abajo\". "
- "Eight numbered stages, each with an electric-blue (#3355FF) numbered circle, FIRST a large dark-navy line saying what it does, THEN BELOW it a much smaller grey uppercase line with the component: "
+TXT=("ALL TEXT EXACTLY AS WRITTEN, in Spanish with correct accents, nothing else added. Above the title, a small electric-blue uppercase kicker: \"MODELO ALIVIO\". Title at the top-left in dark navy: \"7 etapas\" and under it in smaller grey: \"De arriba hacia abajo\". "
+ "Seven numbered stages, each with an electric-blue (#3355FF) numbered circle, FIRST a large dark-navy line saying what it does, THEN BELOW it a much smaller grey uppercase line with the component: "
  "1 \"Retiene sedimentos y partículas\" / \"FILTRO CERÁMICO\"; "
  "2 \"Reduce cloro, olores y mal sabor\" / \"CARBÓN ACTIVADO Y DE PLATA\"; "
  "3 \"Complementa el filtrado\" / \"WMSM-300\"; "
  "4 \"Retiene partículas finas\" / \"ARENA DE SÍLICE\"; "
  "5 \"Ayuda a retener impurezas disueltas\" / \"ZEOLITA\"; "
  "6 \"Ayuda a equilibrar el pH\" / \"ARENA MINERAL\"; "
- "7 \"Aporta minerales al agua\" / \"PIEDRA MINERAL\"; "
- "8 \"Sirves cuando quieras\" / \"LLAVE\". "
+ "7 \"Aporta minerales al agua\" / \"PIEDRA MINERAL\";"
  "Stages 2 to 6 belong to ONE multimedia filter column and are grouped together by a single bracket labeled \"MULTIMEDIA · 5 CAPAS\"; do NOT draw a separate pointer from each of those five stages to a specific layer. "
  "Footnote at the bottom in small grey: \"Esquema ilustrativo. Funciones generales de cada material. Los resultados dependen de la calidad del agua de entrada.\" Small \"elvo·\" wordmark at the bottom-left.")
 STYLE=(" Premium, calm, bright elvo brand style: steel-blue (#9EBACE), white and deep navy (#010A21) with electric-blue accents; clean sans-serif type like Inter; generous spacing; rounded corners; square 1:1 ecommerce image. "
  "Use the first reference as the exact filter parts (white ceramic dome filter, a transparent multimedia filter column with black, brown, white, dark and tan layers, and a white mineral disc). NO logo on any product.")
-J=[('etapas-fal-a',"Creative premium infographic on a soft steel-blue background. Center-right: the three filter parts shown as a beautiful clean 3D exploded vertical stack, with a single drop of water at the very top and a smooth curved blue flow line that travels down through the parts to a chrome tap with a black handle at the bottom. Stage labels on the left, aligned with their parts, connected by thin dotted leader lines. "+TXT+STYLE)]
+J=[('etapas7-fal',"Creative premium infographic on a soft steel-blue background. Center-right: the three filter parts shown as a beautiful clean 3D exploded vertical stack, with a single drop of water at the very top and a smooth curved blue flow line that travels down through the parts and ends as a few water droplets falling from the bottom of the white mineral disc. There is NO tap, NO faucet and NO handle anywhere in the image. Stage labels on the left, aligned with their parts, connected by thin dotted leader lines. "+TXT+STYLE)]
 def run(name,p):
     for t in range(3):
         try:
