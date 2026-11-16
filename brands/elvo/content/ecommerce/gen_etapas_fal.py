@@ -5,7 +5,7 @@ def uri(p):
     mt='image/jpeg' if p.endswith('.jpg') else 'image/png'
     return f'data:{mt};base64,'+base64.b64encode(open(p,'rb').read()).decode()
 REFS=[R+'alivio-componentes.png',W+'alivio-16l-hero.png']
-TXT=("ALL TEXT EXACTLY AS WRITTEN, in Spanish with correct accents, nothing else added. Title at the top-left in dark navy: \"El camino del agua\" and under it in smaller grey: \"8 etapas, de arriba hacia abajo\". "
+TXT=("ALL TEXT EXACTLY AS WRITTEN, in Spanish with correct accents, nothing else added. Title at the top-left in dark navy: \"8 etapas\" and under it in smaller grey: \"De arriba hacia abajo\". "
  "Eight numbered stages, each with an electric-blue (#3355FF) numbered circle, FIRST a large dark-navy line saying what it does, THEN BELOW it a much smaller grey uppercase line with the component: "
  "1 \"Retiene sedimentos y partículas\" / \"FILTRO CERÁMICO\"; "
  "2 \"Reduce cloro, olores y mal sabor\" / \"CARBÓN ACTIVADO Y DE PLATA\"; "
