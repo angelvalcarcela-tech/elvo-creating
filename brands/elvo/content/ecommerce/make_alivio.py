@@ -36,7 +36,8 @@ if M=='16':
 else:
     sq(src('04'),'r1.png',(105,0,1095,990),size=700); sq(src('05'),'r2.png',(105,0,1095,990),size=700); sq(src('06'),'r3.png',(105,0,1095,990),size=700)
 # ilustración de componentes (foto 8 de la tienda)
-im8=Image.open(src('08')).convert('RGB'); im8.crop((255,215,553,1012)).resize((596,1594),Image.LANCZOS).save(T+'comp.png')
+im8=Image.open(src('08')).convert('RGB'); _c=im8.crop((255,215,553,1012)).resize((596,1594),Image.LANCZOS); _a=np.array(_c).astype(int)
+_m=(_a[...,2]>170)&(_a[...,0]<110)&(_a[...,1]<140); _a[_m]=255; Image.fromarray(_a.astype('uint8')).save(T+'comp.png')
 # medidas
 if M=='16':
     im=Image.open(src('16')).convert('RGB'); W,H=im.size; side=max(W,H); a=np.array(im).astype(int)
@@ -70,8 +71,8 @@ CSS="""*{box-sizing:border-box;margin:0}body{width:1500px;height:1500px;font-fam
 .steps{position:absolute;left:60px;right:60px;top:290px;display:flex;gap:30px}.step{flex:1}.step .img{height:880px;border-radius:230px 230px 30px 30px;background-size:cover;background-position:center;box-shadow:0 24px 60px rgba(1,10,33,.18)}
 .step b{display:flex;margin-top:26px;gap:18px;align-items:center;font-size:38px;font-weight:500;line-height:1.1}.step b i{font-style:normal;flex:0 0 62px;height:62px;border-radius:50%;background:#3355FF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:600}
 .foot{position:absolute;left:90px;bottom:60px;font-weight:600;font-size:48px}
-.list{position:absolute;left:90px;top:300px;width:660px}.item{display:flex;gap:22px;margin:0 0 22px;align-items:center}.item b{flex:0 0 58px;height:58px;border-radius:50%;background:#3355FF;color:#fff;font-size:30px;display:flex;align-items:center;justify-content:center}.item div{font-size:40px;line-height:1.1;font-weight:500}
-.arch{position:absolute;right:90px;top:150px;width:600px;height:1220px;border-radius:300px 300px 40px 40px;background:#fff;box-shadow:0 30px 80px rgba(1,10,33,.18);display:flex;align-items:center;justify-content:center}.arch img{height:1000px;width:auto}
+.list{position:absolute;left:90px;top:300px;width:660px}.item{display:flex;gap:22px;margin:0 0 20px;align-items:center}.item b{flex:0 0 58px;height:58px;border-radius:50%;background:#3355FF;color:#fff;font-size:30px;display:flex;align-items:center;justify-content:center}.item div{font-size:38px;line-height:1.1;font-weight:500}.item .s{display:block;font-size:27px;font-weight:400;color:#46566f;margin-top:4px;line-height:1.2}
+.arch{position:absolute;right:60px;top:150px;width:560px;height:1220px;border-radius:300px 300px 40px 40px;background:#fff;box-shadow:0 30px 80px rgba(1,10,33,.18);display:flex;align-items:center;justify-content:center}.arch img{height:1000px;width:auto}
 .dim{position:absolute;background:#fff;border-radius:99px;padding:14px 30px;font-size:38px;font-weight:600;box-shadow:0 10px 30px rgba(1,10,33,.2);white-space:nowrap}.line{position:absolute;background:#010A21}
 .fn{position:absolute;left:90px;right:90px;bottom:34px;font-size:24px;color:#46566f}
 """
@@ -85,9 +86,16 @@ L16=(M=='16'); lit='16' if L16 else '22'; pers='Para 1 o 2 personas' if L16 else
 dims_h=('62 cm','35 × 31 cm') if L16 else ('61 cm','35 × 23,5 cm')
 H={}
 H['01-principal']=page(bgp('p01.png')+"<div class='mark'>elvo·</div>")
-etapas=['Filtro cerámico','Carbón activado y de plata','WMSM-300','Arena de sílice','Zeolita','Arena mineral','Piedra mineral','Llave']
-its=''.join(f"<div class='item'><b>{i+1}</b><div>{x}</div></div>" for i,x in enumerate(etapas))
-H['02-ocho-etapas']=page(f"<div class='top'><div class='k'>Alivio {lit} L</div><h1>Filtra con<br>8 etapas</h1></div><div class='list' style='top:380px'>{its}</div><div class='arch'><img src='file://{T}comp.png'></div><div class='fn'>Esquema ilustrativo. Los resultados dependen de la calidad del agua de entrada.</div>")
+etapas=[('Filtro cerámico','Barrera de microporos: retiene sedimentos y partículas.'),
+ ('Carbón activado y de plata','Reduce cloro, olores y mal sabor. La plata inhibe microorganismos.'),
+ ('WMSM-300','Medio filtrante del filtro multimedia.'),
+ ('Arena de sílice','Filtro mecánico: retiene partículas finas.'),
+ ('Zeolita','Mineral de intercambio iónico: ayuda a retener impurezas disueltas.'),
+ ('Arena mineral','Mineral que ayuda a equilibrar el pH.'),
+ ('Piedra mineral','Aporta minerales al agua.'),
+ ('Llave','Sirves cuando quieras.')]
+its=''.join(f"<div class='item'><b>{i+1}</b><div>{n}<span class='s'>{d}</span></div></div>" for i,(n,d) in enumerate(etapas))
+H['02-ocho-etapas']=page(f"<div class='top'><div class='k'>Alivio {lit} L</div><h1>Filtra con<br>8 etapas</h1></div><div class='list' style='top:360px;width:720px'>{its}</div><div class='arch'><img src='file://{T}comp.png'></div><div class='fn'>Esquema ilustrativo. Funciones generales de cada material. Los resultados dependen de la calidad del agua de entrada.</div>")
 H['03-sin-electricidad']=band('p03.png','Sin electricidad. Sin presión de caño.','Se llena con una jarra y purifica por gravedad.','center 30%')
 rows=[(1,'r1.png','Quitas la tapa y llenas el tanque superior.'),(2,'r2.png','El agua se filtra por gravedad, a través de los filtros.'),(3,'r3.png','Sirves por la llave.')]
 rr=''.join(f"<div class='row'><div class='rimg' style=\"background-image:url('file://{T}{p}')\"></div><div class='rn'>{n}</div><div class='rt'>{tx}</div></div>" for n,p,tx in rows)
