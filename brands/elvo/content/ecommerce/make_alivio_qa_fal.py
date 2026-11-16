@@ -21,9 +21,9 @@ def vcota(x,y0,y1,label,lx):
 def hcota(x0,x1,y,label):
     cx=(x0+x1)//2
     return f"<div class='h' style='left:{x0}px;top:{y}px;width:{x1-x0}px'></div><div class='th' style='left:{x0}px;top:{y-15}px'></div><div class='th' style='left:{x1}px;top:{y-15}px'></div><div class='dm' style='left:{cx-150}px;top:{y+16}px;width:300px;text-align:center'><small>Base</small>{label}</div>"
-cotas=vcota(360,552,1218,'62 cm',215)+hcota(402,712,1246,'35 × 31 cm')+vcota(1195,415,1233,'61 cm',1215)+hcota(730,1148,1256,'35 × 23,5 cm')
+cotas=vcota(350,510,1255,'62 cm',205)+hcota(395,717,1272,'35 × 31 cm')+vcota(1225,500,1245,'61 cm',1245)+hcota(798,1178,1272,'35 × 23,5 cm')
 pills="<div class='pills' style='bottom:24px'><div class='pill card' style='padding:14px 28px'><b style='font-size:48px;display:inline'>16 litros</b> <span style='font-size:32px'>· 1 o 2 personas</span></div><div class='pill card' style='padding:14px 28px'><b style='font-size:48px;display:inline'>22 litros</b> <span style='font-size:32px'>· 3 o más personas</span></div></div>"
-H['03-tamano']=page('aqa3-tamano',"<div class='ts'></div><div class='top'><h1>Mira si cabe<br>en tu cocina.</h1></div>"+cotas+pills).replace("</style>",CT+"</style>")
+H['03-tamano']=page('aqa3-tamano-d',"<div class='ts'></div><div class='top'><h1>Mira si cabe<br>en tu cocina.</h1></div>"+cotas+pills).replace("</style>",CT+"</style>")
 H['05-entrega']=page('aqa5-entrega-c',"<div class='ts'></div><div class='top'><h1>Te llega a casa.</h1><p>Lima y Callao: envío gratis y pagas al recibir.</p></div><div class='mark'>elvo·</div><div class='bs'></div><div class='cap'>Provincia: recojo en Shalom, envío a domicilio o tarjeta<small>Envío S/15 · Shalom con adelanto de S/20</small></div>")
 H['06-caja']=page('aqa6-caja-c',"<div class='ts'></div><div class='top'><h1>Todo en la caja.</h1><p style='max-width:900px;font-size:38px'>Equipo, filtro cerámico, filtro multietapa, piedra mineral, gotas de pH y manual.</p></div><div class='chip'>Garantía de<br>satisfacción de 30 días</div>")
 for k,h in H.items(): open(f'{OUT}/aqafal-{k}.html','w').write(h)
