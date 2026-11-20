@@ -1,0 +1,32 @@
+import os
+F='/home/user/elvo-creating/brands/elvo/content/ecommerce/fotos/'; OUT='/tmp/ml/ml3h'
+for f in os.listdir(OUT): os.remove(OUT+'/'+f)
+CSS="""*{box-sizing:border-box;margin:0}body{width:1500px;height:1500px;font-family:'Inter',sans-serif;color:#fff;position:relative;overflow:hidden;background:linear-gradient(160deg,#010A21 0%,#0b2a8f 55%,#3355FF 100%)}
+.mark{position:absolute;right:70px;top:64px;font-weight:600;font-size:54px;color:#fff}
+.k{position:absolute;left:70px;top:70px;font-size:34px;font-weight:600;color:#9EBACE;letter-spacing:1px;text-transform:uppercase}
+h1{position:absolute;left:70px;top:125px;width:1000px;font-weight:600;font-size:92px;line-height:1.02;letter-spacing:-2.5px}
+.card{position:absolute;left:50px;top:470px;width:600px;height:880px;border-radius:300px 300px 50px 50px;background:linear-gradient(#e9f1fb,#cfe0f3);overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.4)}
+.card .p{position:absolute;inset:0;background-size:auto 112%;background-position:42% 40%;mix-blend-mode:multiply}
+.list{position:absolute;left:700px;right:60px;top:480px}
+.li{display:flex;gap:22px;align-items:flex-start;margin-bottom:34px}.li i{flex:0 0 56px;height:56px;border-radius:50%;background:#fff;color:#3355FF;font-style:normal;font-weight:700;font-size:34px;display:flex;align-items:center;justify-content:center;margin-top:4px}
+.li b{display:block;font-size:44px;font-weight:600;line-height:1.08;letter-spacing:-.8px}.li span{display:block;font-size:30px;color:#bcd0f5;margin-top:6px;line-height:1.25}
+.badge{position:absolute;right:70px;top:64px;width:250px;height:250px}.foot{position:absolute;left:70px;right:70px;bottom:44px;font-size:24px;color:#9EBACE;line-height:1.3}
+"""
+BADGE="""<svg class='badge' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#f7dc7a'/><stop offset='.5' stop-color='#d9a93a'/><stop offset='1' stop-color='#f3d46b'/></linearGradient></defs><polygon fill='url(#g)' points='"""+' '.join(f"{50+(48 if i%2==0 else 41)*__import__('math').cos(i*3.14159265/12):.2f},{50+(48 if i%2==0 else 41)*__import__('math').sin(i*3.14159265/12):.2f}" for i in range(24))+"""'/><circle cx='50' cy='50' r='36' fill='none' stroke='#fff7d6' stroke-width='1.2'/><text x='50' y='52' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='30' fill='#5a3d00'>#1</text><text x='50' y='64' text-anchor='middle' font-family='Inter,sans-serif' font-weight='700' font-size='7.2' fill='#5a3d00'>EN</text><text x='50' y='72' text-anchor='middle' font-family='Inter,sans-serif' font-weight='700' font-size='7.2' fill='#5a3d00'>PURIFICADORES</text><text x='50' y='40' text-anchor='middle' font-size='6' fill='#5a3d00'>★★★★★</text></svg>"""
+def page(body): return f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body>{body}</body></html>"
+def lis(items): return ''.join(f"<div class='li'><i>✓</i><div><b>{a}</b><span>{b}</span></div></div>" for a,b in items)
+def hero(kick,title,items,foot):
+    return page(f"<div class='k'>{kick}</div><h1>{title}</h1>{BADGE}<div class='card'><div class='p' style=\"background-image:url('file://{F}v9-vivo.png')\"></div></div><div class='list'>{lis(items)}</div><div class='foot'>{foot}</div>")
+nat=[('Reduce cloro, olores y sabores','Agua más rica, directo de tu caño'),('Retiene plomo y metales pesados*','Núcleo PureCore de 6 etapas'),('Rinde 20.000 litros','Unos 18 meses de uso normal'),('Para todo caño','Adaptador universal de jebe incluido'),('Más fácil y económico que el bidón','Sin cargar, sin guardar, sin gasfitero')]
+viv=[('Aporta magnesio al agua','Con tu caño de siempre'),('Reduce cloro, olores y sabores','Agua más rica, directo de tu caño'),('Rinde 20.000 litros','Unos 18 meses de uso normal'),('Para todo caño','Kit de adaptadores incluido'),('Más fácil y económico que el bidón','Sin cargar, sin guardar, sin gasfitero')]
+open(OUT+'/ml-nativo-hero.html','w').write(hero('Purificador de caño · Sobre mesada','Agua pura,<br>directo de<br>tu caño.',nat,'*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.'))
+open(OUT+'/ml-vivo-hero.html','w').write(hero('Purificador de caño · Sobre mesada','Agua más rica,<br>directo de<br>tu caño.',viv,'Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo.'))
+# --- Vivo: 4 etapas
+col=[('#eef2f7','#c9d3e0'),('#0c0f14','#2a303a'),('#d99a2b','#f0c46a'),('#f4f6f9','#d5dbe4')]
+bands=''.join(f"<div style='height:200px;background:linear-gradient(90deg,{a},{b},{a});border-bottom:3px solid rgba(255,255,255,.35)'></div>" for a,b in col)
+et=[('Ultrafiltración','Reduce cloro, sedimentos, olores y sabor'),('Bloque de carbón activado','Cloro, sedimentos, mal sabor y olor'),('Aporte de magnesio','Aporta magnesio al agua'),('Microfiltración','Atrapa microplásticos, turbiedad y partículas finas')]
+steps=''.join(f"<div class='li' style='height:200px;align-items:center;margin:0'><i>{n}</i><div><b>{a}</b><span>{b}</span></div></div>" for n,(a,b) in enumerate(et,1))
+open(OUT+'/ml-vivo-etapas.html','w').write(page(f"<div class='k'>Núcleo del Vivo</div><h1 style='font-size:88px'>4 etapas,<br>un solo núcleo.</h1><div style='position:absolute;left:90px;top:520px;width:230px;border-radius:40px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45)'>{bands}</div><div class='list' style='left:390px;top:520px'>{steps}</div><div class='foot'>De arriba hacia abajo. Esquema ilustrativo. Los resultados dependen de la calidad del agua de entrada.</div>"))
+# --- Vivo: qué reduce / qué aporta
+red=[('Cloro y derivados','Agua sin sabor a cloro'),('Olores y sabores','Para que dé gusto tomarla'),('Sedimentos y turbiedad','Agua más clara'),('Microplásticos y partículas finas','Microfiltración en el núcleo')]
+open(OUT+'/ml-vivo-elimina.html','w').write(page(f"<div class='k'>Qué reduce</div><h1 style='font-size:88px'>Qué hace el<br>Vivo por tu agua.</h1><div class='list' style='left:90px;top:470px'>{lis(red)}<div style='margin-top:20px;background:#fff;color:#010A21;border-radius:36px;padding:34px 40px'><b style='font-size:50px;color:#3355FF'>Y además aporta magnesio</b><span style='display:block;font-size:34px;margin-top:8px;color:#46566f'>Núcleo de 18 meses de uso normal</span></div></div><div class='foot'>Pensado para agua de red potable. Los resultados dependen de la calidad del agua de entrada y del cambio oportuno del núcleo.</div>"))
