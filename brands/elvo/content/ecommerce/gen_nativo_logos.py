@@ -1,0 +1,4 @@
+import sys;sys.path.insert(0,'.')
+import gen_ml_vivo_v2 as v
+p=("Edit the FIRST reference (keep layout, headline \"Respaldado por quienes saben.\", the purifier with glass, the navy pill \"Tecnología patentada\", the reviews strip and the elvo· wordmark). REPLACE the row of four badges with four proper logos drawn faithfully as the real marks look, each clean, flat, on its own white rounded tile of equal size: (1) Water Quality Association: the blue stylized wave mark with the words \"Water Quality Association\" as in the SECOND reference but in its original look; (2) Certified B Corporation: the round B in a circle with \"Certified\" above and \"Corporation\" below, black/navy; (3) SGS: the bold green \"SGS\" wordmark in a rounded green-outlined style as the real SGS logo; (4) ISO: the bold \"ISO\" letters in the real ISO wordmark style (blue). Tiles evenly spaced, crisp and legible, no extra text.")
+v.call('n3-10b',['fotos/n3-10.png','/tmp/ref-sellos.jpg'],p)
