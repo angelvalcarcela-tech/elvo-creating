@@ -1,0 +1,10 @@
+import sys,threading;sys.path.insert(0,'.')
+import gen_ml_vivo_v2 as v
+from gen_ml_nativo_fal import R,F
+SP=" The purifier's chrome spout rises IN FRONT of the white body from the lower-front base and arcs to the LEFT, tip pointing left and down."
+j8=("Use the FIRST reference (bright Peruvian kitchen, white elvo Vivo purifier on the counter, glass being filled at the left, common chrome faucet with diverter and white hose) as the photographic base: same scene and mood."+SP+" No filter core or spare part anywhere. Overlay: top-left in navy, enormous: \"36 meses\" (the number 36 huge, \"meses\" beside it in electric blue). Under it in navy bold: \"Un solo cambio de núcleo cada 3 años.\" Small line: \"Sin herramientas, lo cambias tú.\" Tiny footnote: \"36 meses de uso normal. Depende de la calidad del agua de entrada.\" Small 'elvo·' wordmark bottom-right. Keep the text clear of the product.")
+j7=("BACKGROUND: very light steel-blue (#E6EEF8). Headline navy, huge, top: \"Listo en 3 pasos.\" Below, three tall rounded-arch photo panels side by side, like the SECOND reference (bright kitchen photos: 1 hands screwing the chrome diverter with black lever onto a common chrome faucet, 2 hand setting the black lever horizontal with the white hose going to the purifier, 3 a glass being filled from the white elvo purifier spout). Under each panel a big electric-blue numbered circle and a short navy caption: \"1 Conectas el derivador\", \"2 Palanca en horizontal: el agua va al purificador\", \"3 Sirves agua del purificador\". In the purifier panels the chrome spout rises in front of the body and arcs LEFT. "
+"At the bottom a navy rounded strip with the black rubber adjustable adapter with metal clamp and brass end shown exactly as in the THIRD reference (a small clean photo of it) and white text: \"Incluye adaptador de goma ajustable.\" Small 'elvo·' wordmark. Spanish spelled exactly.")
+k=['fotos/v2-10.png']
+ths=[threading.Thread(target=v.call,args=('v2-8c',k+[v.P],j8)),threading.Thread(target=v.call,args=('v2-7b',['/tmp/ref-3pasos.jpg',v.P,'/tmp/ref-adaptador.jpg',R+'derivador-colgado.jpg'],j7))]
+[t.start() for t in ths];[t.join() for t in ths]
