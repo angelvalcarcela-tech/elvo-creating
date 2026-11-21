@@ -1,0 +1,4 @@
+import sys;sys.path.insert(0,'.')
+import gen_ml_vivo_v2 as v
+p=("Edit the FIRST reference image, keep the background, faucet, hand, diverter and logo exactly. Re-layout the left side: move the headline \"Un giro.\" and the blue subtitle \"Del agua del caño al agua purificada.\" UP to the top-left (where the adapter card is now, same size and style). REMOVE the adapter card from the top and put it at the BOTTOM-LEFT as a rounded card with a thin electric-blue outline, clear of the hand: the clean photo of the black rubber adjustable adapter with metal clamp and brass end (SECOND reference) beside white bold text: \"Incluye adaptador de goma ajustable para cualquier caño.\" Spanish spelled exactly, no overlaps with the hand or the faucet.")
+v.call('v2-6i',['fotos/v2-6h.png','/tmp/ref-adaptador.jpg'],p)
