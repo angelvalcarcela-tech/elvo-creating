@@ -1,0 +1,16 @@
+import sys,threading;sys.path.insert(0,'.')
+import gen_ml_vivo_v2 as v
+F='fotos/'
+SP=" The purifier's chrome spout rises IN FRONT of the white body from the lower-front base and arcs to the LEFT, tip pointing left and down."
+FN="Tiny footnote: \"*Según ficha técnica del núcleo.\" "
+J=[
+('n3-1',[v.P],"BACKGROUND: deep navy with a subtle electric-blue glow. The elvo Nativo purifier huge and centered as a hero product shot, dramatic soft rim light."+SP+" A gold circular seal top-right reading \"#1 en purificadores\". Top-left headline in white, huge: \"Agua pura. Simplificada.\" Under it three white pill chips: \"Elimina más de mil contaminantes*\", \"Rinde 18 meses\", \"Para todo caño\". Small 'elvo· Nativo' wordmark bottom. "+FN),
+('n3-5',[v.P,F+'nativo-core-ref.png'],"BACKGROUND: very light steel-blue gradient with a subtle elegant water splash behind. A very large 3D cutaway of the filter core at left-center showing FOUR distinct layers top to bottom, each with a thin leader line and a navy label: \"Microfiltración\", \"Intercambio iónico\", \"Aluminosilicato\", \"Carbón activado sólido\" (light grey, copper/orange, dark speckled, black). Blue upward flow arrows through the layers. The purifier standing at right."+SP+" Headline navy, huge, top: \"Núcleo con tecnología patentada.\" Small line: \"Cuatro etapas en un solo núcleo.\""),
+('n3-6',[v.P],"BACKGROUND: vivid electric blue. Headline white, huge: \"Elimina más de mil contaminantes.*\" A neat grid of round white icon discs with short labels: \"Cloro\", \"Cloraminas y THM\", \"Sedimentos y turbiedad\", \"Mal olor y sabor\", \"Quistes y parásitos\", \"Hidrocarburos y agroquímicos\". The purifier small at the bottom right."+SP+" "+FN),
+('n3-7',[v.P],"BACKGROUND: deep navy. Headline white, huge: \"Retiene metales pesados.*\" Six large periodic-table style tiles in a 3x2 grid, white tiles with navy text: \"As Arsénico\", \"Cr Cromo\", \"Pb Plomo\", \"Al Aluminio\", \"Hg Mercurio\", \"Cd Cadmio\". The purifier standing at right edge."+SP+" "+FN),
+('n3-10',[v.P],"BACKGROUND: light clean. Headline navy, huge: \"Respaldado por quienes saben.\" A tidy row of four certification badges drawn as simple clean outlined round/rect badges in electric blue and navy with text only: \"Water Quality Association\", \"Certified B Corporation\", \"SGS\", \"ISO\". Under them a navy pill: \"Tecnología patentada\". At the bottom a strip with \"4,2 ★ · 124 reseñas · +500 familias\". Small 'elvo·' wordmark."),
+('n3-8',[F+'v2-8c.png'],"Edit the reference image keeping the photo, layout, colors and fonts EXACTLY. Change only the text: the giant \"36 meses\" becomes \"18 meses\"; the line \"Un solo cambio de núcleo cada 3 años.\" becomes \"Un solo cambio de núcleo cada 18 meses.\"; footnote becomes \"18 meses de uso normal. Depende de la calidad del agua de entrada.\" Keep \"Sin herramientas, lo cambias tú.\""),
+('n3-9',[F+'n2-4.png'],"Edit the reference image keeping the design, layout, colors and fonts EXACTLY. Change only the numbers: \"40.000 litros\" becomes \"20.000 litros\", and the bidones count becomes \"1.000 bidones de 20 litros\" (draw a smaller neat stack of bottles consistent with that). Keep every other element and the 'elvo· Nativo' caption."),
+]
+ths=[threading.Thread(target=v.call,args=j) for j in J]
+[t.start() for t in ths];[t.join() for t in ths]
