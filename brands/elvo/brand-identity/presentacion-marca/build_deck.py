@@ -1,12 +1,15 @@
-import os
+import os,json
+LP=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'assets/logo-path.json')))
+DP=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'assets/drop-path.json')))
 D=os.path.dirname(os.path.abspath(__file__))
 DROP='<path d="M0,-10 C5,-3 8,1 8,5 a8,8 0 1 1 -16,0 C-8,1 -5,-3 0,-10z" fill="currentColor"/>'
-def logo(size=120,color='#3355FF'):
-    return f'<span class="logo" style="font-size:{size}px;color:{color}">elvo<svg viewBox="-10 -12 20 28" style="width:{size*0.25}px;height:{size*0.34}px;margin-left:{size*0.03}px;margin-top:{size*0.11}px">{DROP}</svg></span>'
-def drop(size=80,color='#3355FF'):
-    return f'<svg viewBox="-10 -12 20 28" style="width:{size}px;height:{size*1.4}px;color:{color}">{DROP}</svg>'
+def logo(size=120,color='#5891CB'):
+    w=size*2.7
+    return f'<svg viewBox="0 0 {LP["w"]} {LP["h"]}" style="width:{w}px;height:{w*LP["h"]/LP["w"]}px;color:{color};display:inline-block;vertical-align:middle"><path d="{LP["d"]}" fill="currentColor" fill-rule="evenodd"/></svg>'
+def drop(size=80,color='#5891CB'):
+    return f'<svg viewBox="0 0 {DP["w"]} {DP["h"]}" style="width:{size}px;height:{size*DP["h"]/DP["w"]}px;color:{color}"><path d="{DP["d"]}" fill="currentColor" fill-rule="evenodd"/></svg>'
 def hdr(n,t,dark=False):
-    return f'<div class="hd {"dk" if dark else ""}"><span>{n}</span>{logo(34,"#fff" if dark else "#3355FF")}<span>{t}</span></div>'
+    return f'<div class="hd {"dk" if dark else ""}"><span>{n}</span>{logo(34,"#fff" if dark else "#5891CB")}<span>{t}</span></div>'
 CSS='''
 @font-face{font-family:Inter;font-weight:400;src:url(fonts/inter-latin-400-normal.woff2)}
 @font-face{font-family:Inter;font-weight:500;src:url(fonts/inter-latin-500-normal.woff2)}
@@ -65,22 +68,22 @@ P(hdr('02','El problema de marca')+f'''
 
 # 4 primary logo
 P('<div class="abs" style="inset:0;background:radial-gradient(900px 600px at 15% 20%,#C9D9FF 0,transparent 60%),radial-gradient(800px 600px at 90% 95%,#DCE6EE 0,transparent 60%),#FAFAFA"></div>'
-  +hdr('03','Logotipo principal')+f'<div class="abs" style="left:0;right:0;top:330px;text-align:center">{logo(330,"#010A21")}</div>')
+  +hdr('03','Logotipo principal')+f'<div class="abs" style="left:0;right:0;top:260px;text-align:center">{logo(330,"#5891CB")}</div><div class="abs" style="left:240px;right:240px;top:760px;display:flex;gap:30px"><div style="flex:1;height:200px;border-radius:24px;background:#fff;border:2px solid #E1E7EE;display:flex;align-items:center;justify-content:center">{logo(70,"#010A21")}</div><div style="flex:1;height:200px;border-radius:24px;background:#010A21;display:flex;align-items:center;justify-content:center">{logo(70,"#fff")}</div><div style="flex:1;height:200px;border-radius:24px;background:#3355FF;display:flex;align-items:center;justify-content:center">{logo(70,"#fff")}</div></div>')
 
 # 5 construction
 P(hdr('04','Construcción y símbolo')+f'''
 <div class="abs card" style="left:90px;top:130px;width:1040px;height:830px;overflow:hidden">
 <div class="abs" style="left:0;right:0;top:130px;height:2px;background:#C8D3E0"></div><div class="abs" style="left:0;right:0;top:300px;height:2px;background:#C8D3E0"></div><div class="abs" style="left:0;right:0;top:420px;height:2px;background:#3355FF"></div><div class="abs" style="left:0;right:0;top:610px;height:2px;background:#C8D3E0"></div><div class="abs" style="left:0;right:0;top:700px;height:2px;background:#C8D3E0"></div>
-<div class="abs" style="left:180px;top:285px">{logo(330,"#010A21")}</div>
+<div class="abs" style="left:100px;top:300px">{logo(300,"#5891CB")}</div>
 <div class="abs" style="left:30px;top:116px;font-size:15px;color:#5E6B80;letter-spacing:.12em">ASCENDENTE</div><div class="abs" style="left:30px;top:406px;font-size:15px;color:#3355FF;letter-spacing:.12em">ALTURA X</div><div class="abs" style="left:30px;top:596px;font-size:15px;color:#5E6B80;letter-spacing:.12em">BASE</div></div>
 <div class="abs card" style="left:1170px;top:130px;width:660px;height:830px;padding:50px;background:#E9EEF4">
-<div style="display:flex;gap:28px;align-items:center;margin-bottom:60px">{drop(70,"#3355FF")}<div><h3 style="margin:0 0 6px">01 / La gota</h3><p class="sm">Pureza, hidratación y esencia natural del agua.</p></div></div>
-<div style="display:flex;gap:28px;align-items:center;margin-bottom:60px"><div style="width:70px;height:70px;border:16px solid #3355FF;border-radius:50%;flex:none"></div><div><h3 style="margin:0 0 6px">02 / La “o”</h3><p class="sm">El núcleo: el corazón del filtro, redondo y sin aristas.</p></div></div>
-<div style="display:flex;gap:28px;align-items:center"><div style="width:70px;height:30px;border-radius:40px;background:#3355FF;flex:none"></div><div><h3 style="margin:0 0 6px">03 / El trazo suave</h3><p class="sm">Terminaciones redondeadas: calma y cercanía en cada letra.</p></div></div></div>''')
+<div style="display:flex;gap:28px;align-items:center;margin-bottom:60px">{drop(60,"#5891CB")}<div><h3 style="margin:0 0 6px">01 / La gota</h3><p class="sm">Pureza, hidratación y esencia natural del agua.</p></div></div>
+<div style="display:flex;gap:28px;align-items:center;margin-bottom:60px"><div style="width:70px;height:70px;border:16px solid #5891CB;border-radius:50%;flex:none"></div><div><h3 style="margin:0 0 6px">02 / La “o”</h3><p class="sm">El núcleo: el corazón del filtro, redondo y sin aristas.</p></div></div>
+<div style="display:flex;gap:28px;align-items:center"><div style="width:70px;height:70px;flex:none;display:flex;align-items:center;justify-content:center"><div style="width:16px;height:34px;border-radius:40px 40px 40px 40px;background:#5891CB;transform:rotate(12deg)"></div></div><div><h3 style="margin:0 0 6px">03 / El brillo</h3><p class="sm">La rayita interior de la gota: el reflejo de luz del agua limpia.</p></div></div></div>''')
 
 # 6 palette
-sw=[('Azul elvo','#3355FF','51 85 255'),('Azul medio','#6F8BFF','111 139 255'),('Acero','#9EBACE','158 186 206'),('Niebla','#C4D6E4','196 214 228'),('Hielo','#DCE6EE','220 230 238')]
-sws=''.join(f'<div style="flex:1;background:{c};padding:26px;color:{"#fff" if i<2 else "#010A21"};display:flex;flex-direction:column;justify-content:flex-end;font-size:19px;line-height:1.5"><b style="font-size:24px">{n}</b>HEX {c.upper()}<br>RGB {r}</div>' for i,(n,c,r) in enumerate(sw))
+sw=[('Azul vivo','#3355FF','51 85 255'),('Azul logo','#5891CB','88 145 203'),('Acero','#9EBACE','158 186 206'),('Niebla','#C4D6E4','196 214 228'),('Hielo','#DCE6EE','220 230 238')]
+sws=''.join(f'<div style="flex:1;background:{c};padding:26px;color:{"#fff" if i<3 else "#010A21"};display:flex;flex-direction:column;justify-content:flex-end;font-size:19px;line-height:1.5"><b style="font-size:24px">{n}</b>HEX {c.upper()}<br>RGB {r}</div>' for i,(n,c,r) in enumerate(sw))
 P(hdr('05','Paleta de color')+f'''
 <div class="abs" style="left:90px;top:130px;width:620px"><h2>Paleta</h2><p class="sm" style="margin-top:20px">Un azul vivo para la energía del agua, azules acero para la calma, y neutros limpios para dar aire. El marino profundo ancla los textos y los fondos oscuros.</p></div>
 <div class="abs" style="left:90px;top:400px;right:90px;height:300px;display:flex;border-radius:28px;overflow:hidden">{sws}</div>
@@ -91,7 +94,7 @@ P(hdr('05','Paleta de color')+f'''
 # 7 type
 P('<div class="abs" style="inset:0;background:#010A21"></div>'+hdr('06','Tipografía',True)+f'''
 <div class="abs" style="left:90px;top:130px;color:#fff;width:880px"><div style="font-size:300px;font-weight:700;letter-spacing:-.06em;line-height:1">Aa</div><h3 style="color:#9EBACE">01 / Tipografía principal</h3><div style="font-size:64px;font-weight:700;color:#fff">Inter</div><p style="color:#9EBACE;font-size:23px;margin-top:10px">Para titulares, textos y datos. Clara, neutra y legible en pantalla, empaque y catálogo. Pesos: Regular · Medium · Semibold · Bold.</p><p style="color:#fff;font-size:30px;margin-top:30px;letter-spacing:.04em">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p></div>
-<div class="abs" style="left:1010px;top:130px;width:820px;color:#fff;font-family:Nunito"><div style="font-size:300px;font-weight:800;letter-spacing:-.05em;line-height:1">Aa</div><h3 style="color:#9EBACE;font-family:Inter">02 / Tipografía del logotipo</h3><div style="font-size:64px;font-weight:700">Nunito</div><p style="color:#9EBACE;font-size:23px;margin-top:10px;font-family:Inter">Redondeada y amable. Se usa para el logotipo y para acentos de marca, nunca en bloques largos de texto.</p><p style="color:#fff;font-size:30px;margin-top:30px;letter-spacing:.04em">0123456789 · elvo · agua pura.</p></div>''')
+<div class="abs" style="left:1010px;top:130px;width:820px;color:#fff"><div style="height:300px;display:flex;align-items:center">{logo(150,"#fff")}</div><h3 style="color:#9EBACE;margin-top:60px">02 / Logotipo</h3><div style="font-size:64px;font-weight:700;color:#fff">Dibujado a medida</div><p style="color:#9EBACE;font-size:23px;margin-top:10px">Letras finas y redondeadas, con la gota y su brillo interior. El logotipo es un dibujo, no una fuente: no se reescribe ni se reemplaza por texto.</p></div>''')
 
 # 8 voice
 P(hdr('07','Voz y mensajes')+f'''
@@ -121,16 +124,11 @@ P('<div class="abs" style="inset:0;background:#010A21"></div>'+hdr('10','Sistema
 <div style="display:flex;gap:14px;margin-top:50px;align-items:center;font-size:22px;font-weight:600;color:#fff"><span class="pill" style="color:#9EBACE">Caño</span>→<span class="pill" style="color:#6F8BFF">Núcleo</span>→<span class="pill" style="color:#fff">Vaso</span></div></div>
 {IMG('img/nucleo.jpg',900,90,900,900,28,'center','cover')}''')
 
-# 12 social
-tile=lambda s,x,y,w,h:IMG(s,x,y,w,h,18)
+# 12 social (perfil actual @elvo_filtros)
 P(hdr('11','Redes sociales')+f'''
-<div class="abs card" style="left:90px;top:130px;width:620px;height:830px;padding:44px;text-align:center">
-<div style="height:220px;border-radius:22px;background:radial-gradient(600px 300px at 50% 110%,#fff 0,#C9D9FF 50%,#3355FF 100%);margin-bottom:-60px"></div>
-<div style="width:120px;height:120px;border-radius:50%;background:#fff;margin:0 auto;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(0,0,0,.15)">{drop(44)}</div>
-<div style="font-size:34px;font-weight:700;margin-top:18px">elvo</div><div style="color:#5E6B80;font-size:20px;margin-top:6px">Agua pura. Simplificada.</div>
-<p class="sm" style="margin-top:22px;text-align:left">Purificadores de agua para la casa de hoy. Alivio · Nativo · Vivo · Cero.</p><p class="sm" style="margin-top:12px;text-align:left;color:#3355FF;font-weight:600">elvo.pe</p>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:30px">{''.join(f'<div style="aspect-ratio:1;border-radius:12px;background:url({s}) center/cover"></div>' for s in ['img/hero-nativo.jpg','img/life-kitchen.jpg','img/giro.jpg'])}</div></div>
-{tile('img/vivo-1-hero-agua-con-magnesio.jpg',750,130,346,346)}{tile('img/hero-nativo.jpg',1116,130,346,346)}{tile('img/giro.jpg',1482,130,346,346)}{tile('img/vivo-3-cuatro-etapas.jpg',750,496,346,346)}{tile('img/life-vivo36.jpg',1116,496,346,346)}{tile('img/nucleo.jpg',1482,496,346,346)}''')
+<div class="abs" style="left:90px;top:130px;width:600px"><h2>Instagram</h2><p style="color:#5891CB;font-weight:700;font-size:30px;margin-top:10px">@elvo_filtros</p><p class="sm" style="margin-top:24px">El perfil cuenta un solo mundo: casas luminosas, luz fría de ventana, agua que se sirve y el producto a la vista. Cada fila presenta una línea, y el texto vive en el pie de foto, no en la imagen.</p><ul style="margin-top:30px"><li>Bio: Agua pura. Simplificada. · Caño → Núcleo → Vaso</li><li>Destacados: Nativo, Vivo, Alivio, Cero, Reseñas, Dónde</li><li>Un producto por fila, nunca dos pegados</li></ul></div>
+<div class="abs card" style="left:760px;top:110px;width:530px;height:880px;overflow:hidden;padding:0">{IMG('img/ig-a.jpg',0,0,530,880,0,'center top','cover')}</div>
+<div class="abs card" style="left:1320px;top:110px;width:530px;height:880px;overflow:hidden;padding:0">{IMG('img/ig-b.jpg',0,0,530,880,0,'center top','cover')}</div>''')
 
 # 13 web
 P(hdr('12','Catálogo y tienda en línea')+f'''
