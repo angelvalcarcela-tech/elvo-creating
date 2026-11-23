@@ -1,0 +1,6 @@
+import sys;sys.path.insert(0,'.')
+import gen_ml_vivo_v2 as v
+p=("BACKGROUND: very light steel-blue gradient, clean and bright, with a subtle laboratory feel (faint glass flask silhouettes, soft light), no people, no hands, no boxes. ONLY the Alivio 16 L bottle purifier from the reference, exactly as it is, large at the left, with soft shadow. CRITICAL: the purifier has NO logo and NO text printed on it; keep every surface of the purifier blank. "
+"At the right: headline in navy, bold, large: \"Probado en laboratorio contra bacterias.\" Under it four clean white rounded chips in a 2x2 grid, each with an electric-blue check icon, a bold navy bacteria name and a small line: \"E. coli\" / \"más de 99,99 %\"; \"S. aureus\" / \"más de 99,99 %\"; \"E. faecalis\" / \"más de 99,99 %\"; \"Coliformes totales\" / \"más de 99,99 %\". "
+"At the bottom a small footnote in grey: \"Ensayo de laboratorio con agua contaminada a propósito, al inicio de uso. En tu casa los resultados dependen de tu agua y de cambiar los filtros a tiempo.\" Tiny 'elvo·' wordmark bottom-right. Spanish spelled exactly, sharp. No warranty, no shipping, no prices, no other products.")
+v.call('al16-lab',['/tmp/ref-al16.jpg'],p)
