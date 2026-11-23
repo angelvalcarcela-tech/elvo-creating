@@ -23,7 +23,7 @@ P['nativo'] = dict(
         ('Contaminantes', 'Elimina más de mil contaminantes* · retiene arsénico, cromo, plomo, aluminio, mercurio y cadmio*'),
         ('Respaldo', 'Water Quality Association · Certified B Corporation · SGS · ISO · tecnología patentada'),
         ('Agua', 'Alcalina (pH ~8.5) · conserva los minerales naturales'),
-        ('Medidas', '30 cm de alto · 16 × 16 cm (cuerpo, pico y base) · 1,5 kg'),
+        ('Medidas', '25 cm de alto × 6 cm de ancho · 1,5 kg'),
         ('Conexión', 'Derivador metálico con palanca + manguera blanca + adaptador universal de jebe'),
         ('Instalación', 'Sin electricidad · la haces tú en 5 minutos, sin herramientas ni gasfitero'),
         ('Garantía', '1 año del equipo · 30 días de prueba'),
