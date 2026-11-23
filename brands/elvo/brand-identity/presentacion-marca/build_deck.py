@@ -99,7 +99,7 @@ P('<div class="abs" style="inset:0;background:#010A21"></div>'+hdr('06','Tipogra
 # 8 voice
 P(hdr('07','Voz y mensajes')+f'''
 <div class="abs" style="left:90px;top:140px;width:1000px"><h1>Agua pura.<br><span style="color:#3355FF">Simplificada.</span></h1></div>
-<div class="abs" style="left:90px;top:470px;display:flex;gap:18px"><span class="pill" style="color:#3355FF">Núcleo de 18 a 36 meses</span><span class="pill" style="color:#3355FF">Instalación en 5 minutos</span><span class="pill" style="color:#3355FF">Para todo caño</span></div>
+<div class="abs" style="left:90px;top:470px;display:flex;gap:18px"><span class="pill" style="color:#3355FF">Núcleo de 18 meses</span><span class="pill" style="color:#3355FF">Instalación en 5 minutos</span><span class="pill" style="color:#3355FF">Para todo caño</span></div>
 <div class="abs" style="left:90px;top:600px;width:820px"><h3>Cómo hablamos</h3><ul><li>Observación, no alarma: nombramos el problema y nos quedamos en calma.</li><li>La cifra antes que el superlativo.</li><li>Transparencia: decimos cuánto dura el núcleo y cuándo cambiarlo.</li></ul></div>
 <div class="abs" style="left:1000px;top:600px;width:830px"><h3>Cómo no hablamos</h3><ul><li>Sin miedo, sin agua sucia como amenaza.</li><li>Sin urgencia inventada ni descuentos gritados.</li><li>Sin comparar con marcas por su nombre.</li></ul></div>
 <div class="abs card" style="left:1130px;top:140px;width:700px;height:400px;background:#3355FF;color:#fff;padding:50px"><h3 style="color:#C4D6E4">Línea de casa</h3><div style="font-size:46px;line-height:1.2;font-weight:700;letter-spacing:-.02em">El agua es el primer ingrediente de tu día.</div><p class="sm" style="color:#DCE6EE;margin-top:24px">Con elvo, ese primer vaso se vuelve simple.</p></div>''')
@@ -111,12 +111,11 @@ P(hdr('08','Dirección fotográfica')+f'''
 
 # 10 products
 def prod(src,x,name,desc,fit='contain'):
-    return f'<div class="abs card" style="left:{x}px;top:200px;width:410px;height:640px;overflow:hidden">{IMG(src,0,0,410,470,0,"center",fit)}<div style="position:absolute;left:30px;top:490px;right:30px"><div style="font-size:34px;font-weight:700;letter-spacing:-.02em">{logo(36,"#010A21") if False else ""}{name}</div><p class="sm" style="margin-top:12px;font-size:20px">{desc}</p></div></div>'
-P(hdr('09','Línea de productos')+'<div class="abs" style="left:90px;top:110px"><h2>Cuatro formas de purificar</h2></div>'
+    return f'<div class="abs card" style="left:{x}px;top:200px;width:540px;height:640px;overflow:hidden">{IMG(src,0,0,540,470,0,"center",fit)}<div style="position:absolute;left:30px;top:490px;right:30px"><div style="font-size:34px;font-weight:700;letter-spacing:-.02em">{logo(36,"#010A21") if False else ""}{name}</div><p class="sm" style="margin-top:12px;font-size:20px">{desc}</p></div></div>'
+P(hdr('09','Línea de productos')+'<div class="abs" style="left:90px;top:110px"><h2>Tres formas de purificar</h2></div>'
   +prod('img/alivio16.jpg',90,'elvo Alivio','Bidón purificador de 16 y 22 L. Sin luz, sin instalación.')
-  +prod('img/nativo.jpg',520,'elvo Nativo','Purificador de caño con núcleo de 18 meses.')
-  +prod('img/vivo-front.jpg',950,'elvo Vivo','Purificador de caño con magnesio. Núcleo de 18 a 36 meses.')
-  +prod('img/cero.jpg',1380,'elvo Cero','Ósmosis inversa, agua fría y caliente.'))
+  +prod('img/nativo.jpg',690,'elvo Nativo','Purificador de caño con núcleo de 18 meses.')
+  +prod('img/cero.jpg',1290,'elvo Cero','Ósmosis inversa, agua fría y caliente.'))
 
 # 11 system
 P('<div class="abs" style="inset:0;background:#010A21"></div>'+hdr('10','Sistema: caño → núcleo → vaso',True)+f'''
@@ -126,14 +125,14 @@ P('<div class="abs" style="inset:0;background:#010A21"></div>'+hdr('10','Sistema
 
 # 12 social (perfil actual @elvo_filtros)
 P(hdr('11','Redes sociales')+f'''
-<div class="abs" style="left:90px;top:130px;width:600px"><h2>Instagram</h2><p style="color:#5891CB;font-weight:700;font-size:30px;margin-top:10px">@elvo_filtros</p><p class="sm" style="margin-top:24px">El perfil cuenta un solo mundo: casas luminosas, luz fría de ventana, agua que se sirve y el producto a la vista. Cada fila presenta una línea, y el texto vive en el pie de foto, no en la imagen.</p><ul style="margin-top:30px"><li>Bio: Agua pura. Simplificada. · Caño → Núcleo → Vaso</li><li>Destacados: Nativo, Vivo, Alivio, Cero, Reseñas, Dónde</li><li>Un producto por fila, nunca dos pegados</li></ul></div>
+<div class="abs" style="left:90px;top:130px;width:600px"><h2>Instagram</h2><p style="color:#5891CB;font-weight:700;font-size:30px;margin-top:10px">@elvo_filtros</p><p class="sm" style="margin-top:24px">El perfil cuenta un solo mundo: casas luminosas, luz fría de ventana, agua que se sirve y el producto a la vista. Cada fila presenta una línea, y el texto vive en el pie de foto, no en la imagen.</p><ul style="margin-top:30px"><li>Bio: Agua pura. Simplificada. · Caño → Núcleo → Vaso</li><li>Destacados: Nativo, Alivio, Cero, Reseñas, Dónde</li><li>Un producto por fila, nunca dos pegados</li></ul></div>
 <div class="abs card" style="left:760px;top:110px;width:530px;height:880px;overflow:hidden;padding:0">{IMG('img/ig-a.jpg',0,0,530,880,0,'center top','cover')}</div>
 <div class="abs card" style="left:1320px;top:110px;width:530px;height:880px;overflow:hidden;padding:0">{IMG('img/ig-b.jpg',0,0,530,880,0,'center top','cover')}</div>''')
 
 # 13 web
 P(hdr('12','Catálogo y tienda en línea')+f'''
 <div class="abs" style="left:90px;top:130px;width:560px"><h2>Mismo lenguaje, en cada pantalla</h2><p class="sm" style="margin-top:24px">Cada publicación sigue el mismo sistema: un hero con una sola idea, una lámina por pregunta del cliente y fotos de cocina reales. Así la tienda, el catálogo y las redes se sienten una sola marca.</p></div>
-<div class="abs" style="left:700px;top:130px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;width:1130px">{''.join(f'<div style="aspect-ratio:1;border-radius:20px;background:url({s}) center/cover"></div>' for s in ['img/hero-nativo.jpg','img/vivo-3-cuatro-etapas.jpg','img/giro.jpg','img/life-vivo36.jpg','img/nucleo.jpg','img/vivo-5-dos-mil-bidones.jpg'])}</div>''')
+<div class="abs" style="left:700px;top:130px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;width:1130px">{''.join(f'<div style="aspect-ratio:1;border-radius:20px;background:url({s}) center/cover"></div>' for s in ['img/hero-nativo.jpg','img/nucleo.jpg','img/giro.jpg','img/nativo-18m.jpg','img/nativo-contaminantes.jpg','img/nativo-20000.jpg'])}</div>''')
 
 # 14 packaging
 P(IMG('mock/packaging.jpg',0,0,1920,1080)+hdr('13','Empaque',True).replace('class="hd dk"','class="hd dk" style="color:#fff"'))
