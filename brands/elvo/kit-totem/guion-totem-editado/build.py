@@ -18,13 +18,10 @@ body{font-family:Mont,sans-serif}
 '''
 # (page, bbox x0,y0,x1,y1, html, tag)
 EDITS={
-2:[((265,600,535,729),'<b>Hola.</b> Tres formas de tener agua pura en casa.'),
-   ((594,602,864,667),'Cada una resuelve algo distinto.'),
-   ((936,598,1207,663),'Agua pura. Simplificada.')],
 3:[((151,597,699,662),'<div><b>Nativo.</b> Directo en tu caño: lo instalas tú en 5 minutos.</div><div>Núcleo de 18 meses: hasta 20.000 litros.</div><div class="k">Agua rica, sin sabor a cloro. Retiene plomo y metales pesados*.</div>'),
    ((788,598,1332,642),'<div><b>Alivio.</b> Llenas con una jarra, baja por los filtros y sirves.</div><div>Agua de reserva lista en casa, sin luz ni instalación.</div><div class="k">¿Poca presión de agua? Funciona sin depender del caño.</div>')],
 4:[((288,623,836,667),'<div><b>Cero.</b> Fría desde 6 °C, caliente hasta 98 °C, al instante. Perfecto para tu casa o oficina.</div><div>Jarra extraíble de 2 L, autolimpieza y aviso de cambio de filtros.</div><div class="k">Máxima purificación: ósmosis inversa y luz UV.</div>'),
-   ((895,612,1165,698),'30 días de prueba en los tres.')],
+   ((895,612,1165,698),'<b>30 días de prueba</b> y <b>1 año de garantía</b> en los tres.')],
 5:[((404,632,675,739),'<b>Haz clic en este video</b> y te asesoramos por WhatsApp para tu compra.')]}
 pages=[]
 for pg in range(1,6):
@@ -44,7 +41,7 @@ body='''<div style="position:absolute;left:107px;top:42px;font-size:34px;font-we
 <li><b>Nativo:</b> agua rica y metales pesados retenidos*, con practicidad y durabilidad como apoyo.</li>
 <li><b>Alivio:</b> para quien tiene poca presión de agua y quiere agua reservada en casa.</li>
 <li><b>Cero:</b> la máxima purificación: ósmosis inversa y luz UV.</li>
-<li>Sin exclamaciones ni precios. Un solo CTA: WhatsApp.</li></ul></div>
+<li>Un solo CTA: WhatsApp.</li></ul></div>
 <div><div class="h">Detalle para quien lo necesite</div><ul>
 <li><b>Nativo:</b> derivador y manguera conectados, palanca en “filtrada”; adaptador para cualquier caño. Si no encaja, se devuelve el dinero.</li>
 <li><b>Alivio:</b> sin logo en el cuerpo; funciona con agua de tanque o cisterna. Filtros: 10.000 litros o 1 año.</li>
