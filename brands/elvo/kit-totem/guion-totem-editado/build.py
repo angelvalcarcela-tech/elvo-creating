@@ -22,18 +22,17 @@ EDITS={
    ((594,602,864,667),'Cada una resuelve algo distinto.'),
    ((936,598,1207,663),'Agua pura. Simplificada.')],
 3:[((151,597,699,662),'<div><b>Nativo.</b> Directo en tu caño: lo instalas tú en 5 minutos.</div><div>Núcleo de 18 meses: hasta 20.000 litros.</div><div class="k">Agua rica, sin sabor a cloro. Retiene plomo y metales pesados*.</div>'),
-   ((788,598,1332,642),'<div><b>Alivio.</b> Sin luz ni instalación: llenas con una jarra y sirves.</div><div>Agua de reserva lista en casa.</div><div class="k">¿Poca presión de agua? Funciona sin depender del caño.</div>')],
-4:[((288,623,836,667),'<div><b>Cero.</b> Agua fría desde 6 °C y caliente hasta 98 °C, al instante.</div><div>Jarra extraíble de 2 L, autolimpieza y aviso de cambio de filtros.</div><div class="k">Máxima purificación: ósmosis inversa y luz UV.</div>'),
+   ((788,598,1332,642),'<div><b>Alivio.</b> Llenas con una jarra, baja por los filtros y sirves.</div><div>Agua de reserva lista en casa, sin luz ni instalación.</div><div class="k">¿Poca presión de agua? Funciona sin depender del caño.</div>')],
+4:[((288,623,836,667),'<div><b>Cero.</b> Fría desde 6 °C, caliente hasta 98 °C, al instante. Perfecto para tu casa o oficina.</div><div>Jarra extraíble de 2 L, autolimpieza y aviso de cambio de filtros.</div><div class="k">Máxima purificación: ósmosis inversa y luz UV.</div>'),
    ((895,612,1165,698),'30 días de prueba en los tres.')],
-5:[((404,632,675,739),'<b>Escríbenos por WhatsApp.</b>'),
-   ((786,625,1057,732),'<b>Black Days de ELVO.</b> Escríbenos por WhatsApp.')]}
+5:[((404,632,675,739),'<b>Haz clic en este video</b> y te asesoramos por WhatsApp para tu compra.')]}
 pages=[]
 for pg in range(1,6):
     im=Image.open(D+f'/bg/pg-{pg}.jpg').convert('RGB')
     h=f'<img class="bg" src="bg/pg-{pg}.jpg">'
     for (x0,y0,x1,y1),t in EDITS.get(pg,[]):
         c=im.getpixel((int((x0-18)*2),int(((y0+y1)/2)*2))); col='#%02x%02x%02x'%c
-        h+=f'<div class="cov" style="left:{x0-10}px;top:{y0-6}px;width:{x1-x0+20}px;height:{max(y1-y0+16,125 if (pg in (3,4) and (x1-x0)>400) else 0)}px;background:{col}"></div>'
+        h+=f'<div class="cov" style="left:{x0-10}px;top:{y0-6}px;width:{x1-x0+20}px;height:{max(y1-y0+16,140 if (pg in (3,4) and (x1-x0)>400) else 0)}px;background:{col}"></div>'
         h+=f'<div class="cap" style="left:{x0}px;top:{y0}px;width:{x1-x0}px">{t}</div>'
     if pg==3: h+='<div style="position:absolute;left:151px;bottom:40px;font-size:11px;color:#555">*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.</div>'
     pages.append(f'<section class="pg">{h}</section>')
