@@ -34,16 +34,12 @@ for pg in range(1,6):
 # página 6: notas de ELVO
 side='<img src="bg/sidebar.png" style="position:absolute;left:0;top:0;width:67px;height:810px">'
 body='''<div style="position:absolute;left:107px;top:42px;font-size:34px;font-weight:700;color:#2A2E9E;letter-spacing:.01em">Notas de ELVO</div>
-<div style="position:absolute;left:107px;top:112px;width:1230px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:34px;font-size:14px;line-height:1.42;color:#222">
+<div style="position:absolute;left:107px;top:112px;width:1230px;display:grid;grid-template-columns:1fr 1fr;gap:34px;font-size:14px;line-height:1.42;color:#222">
 <div><div class="h">Lo que decide la compra</div><ul>
 <li><b>Nativo:</b> agua rica y metales pesados retenidos, con practicidad y durabilidad como apoyo.</li>
 <li><b>Alivio:</b> para quien tiene poca presión de agua y quiere agua reservada en casa.</li>
 <li><b>Cero:</b> la máxima purificación: ósmosis inversa y luz UV.</li>
 <li>Un solo CTA: WhatsApp.</li></ul></div>
-<div><div class="h">Detalle para quien lo necesite</div><ul>
-<li><b>Nativo:</b> derivador y manguera conectados, palanca en “filtrada”; adaptador para cualquier caño. Si no encaja, se devuelve el dinero.</li>
-<li><b>Alivio:</b> sin logo en el cuerpo; funciona con agua de tanque o cisterna. Filtros: 10.000 litros o 1 año.</li>
-<li><b>Cero:</b> taza bajo el botón plateado; puede quedar enchufado.</li></ul></div>
 <div><div class="h">Video de 20 s</div><ul>
 <li><b>0 a 3 s:</b> gancho con el agua cayendo al vaso.</li>
 <li><b>3 a 14 s:</b> cómo se usa, en 3 pasos.</li>
