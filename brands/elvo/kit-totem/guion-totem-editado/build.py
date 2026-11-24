@@ -18,7 +18,7 @@ body{font-family:Mont,sans-serif}
 '''
 # (page, bbox x0,y0,x1,y1, html, tag)
 EDITS={
-3:[((151,597,699,662),'<div><b>Desde ELVO Nativo,</b> directo en tu caño: lo instalas tú en 5 minutos.</div><div>Núcleo de 18 meses: hasta 20.000 litros.</div><div class="k">Agua rica, sin sabor a cloro. Retiene plomo y metales pesados.</div>'),
+3:[((151,597,699,662),'<div><b>Desde ELVO Nativo,</b> directo en tu caño: lo instalas tú en 5 minutos.</div><div>Núcleo de 18 meses de duración, hasta 20.000 litros.</div><div class="k">Agua rica, sin sabor a cloro. Retiene plomo y metales pesados.</div>'),
    ((788,598,1332,642),'<div><b>Hasta ELVO Alivio:</b> llenas con una jarra, baja por los filtros y sirves.</div><div>Agua de reserva lista en casa, sin luz ni instalación.</div><div class="k">¿Poca presión de agua? Funciona sin depender del caño.</div>')],
 4:[((288,623,836,667),'<div><b>o ELVO Cero:</b> fría desde 6 °C, caliente hasta 98 °C, al instante. Perfecto para tu casa o oficina.</div><div>Jarra extraíble de 2 L, autolimpieza y aviso de cambio de filtros.</div><div class="k">Máxima purificación: ósmosis inversa y luz UV.</div>'),
    ((895,612,1165,698),'<b>30 días de prueba</b> y <b>1 año de garantía</b> en los tres.')],
