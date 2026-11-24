@@ -12,7 +12,7 @@ body{font-family:Mont,sans-serif}
 .pg{width:1440px;height:810px;position:relative;overflow:hidden;page-break-after:always;background:#FAFAFA}
 .bg{position:absolute;left:0;top:0;width:1440px;height:810px}
 .cov{position:absolute;background:#FAFAFA}
-.cap{position:absolute;font-size:19px;line-height:1.3;color:#111;font-weight:500}
+.cap div{margin-bottom:5px}.k{color:#1A22C4;font-weight:700}.cap{position:absolute;font-size:16.5px;line-height:1.3;color:#111;font-weight:500}
 .cap b{font-weight:700;color:#111}
 .tag{position:absolute;font-size:10.5px;font-weight:700;color:#1A22C4;letter-spacing:.06em;text-transform:uppercase}
 '''
@@ -21,10 +21,10 @@ EDITS={
 2:[((265,600,535,729),'<b>Hola.</b> Tres formas de tener agua pura en casa.'),
    ((594,602,864,667),'Cada una resuelve algo distinto.'),
    ((936,598,1207,663),'Agua pura. Simplificada.')],
-3:[((151,597,699,662),'<b>Nativo.</b> Directo en tu caño. Retiene plomo y metales pesados*.'),
-   ((788,598,1332,642),'<b>Alivio.</b> Agua de reserva en casa. Sin luz ni instalación.')],
-4:[((288,623,836,667),'<b>Cero.</b> Agua fría o caliente, al instante.'),
-   ((895,612,1165,698),'30 días de prueba.')],
+3:[((151,597,699,662),'<div><b>Nativo.</b> Directo en tu caño: lo instalas tú en 5 minutos.</div><div>Núcleo de 18 meses: hasta 20.000 litros.</div><div class="k">Agua rica, sin sabor a cloro. Retiene plomo y metales pesados*.</div>'),
+   ((788,598,1332,642),'<div><b>Alivio.</b> Sin luz ni instalación: llenas con una jarra y sirves.</div><div>Agua de reserva lista en casa.</div><div class="k">¿Poca presión de agua? Funciona sin depender del caño.</div>')],
+4:[((288,623,836,667),'<div><b>Cero.</b> Agua fría desde 6 °C y caliente hasta 98 °C, al instante.</div><div>Jarra extraíble de 2 L, autolimpieza y aviso de cambio de filtros.</div><div class="k">Máxima purificación: ósmosis inversa y luz UV.</div>'),
+   ((895,612,1165,698),'30 días de prueba en los tres.')],
 5:[((404,632,675,739),'<b>Escríbenos por WhatsApp.</b>'),
    ((786,625,1057,732),'<b>Black Days de ELVO.</b> Escríbenos por WhatsApp.')]}
 pages=[]
@@ -33,7 +33,7 @@ for pg in range(1,6):
     h=f'<img class="bg" src="bg/pg-{pg}.jpg">'
     for (x0,y0,x1,y1),t in EDITS.get(pg,[]):
         c=im.getpixel((int((x0-18)*2),int(((y0+y1)/2)*2))); col='#%02x%02x%02x'%c
-        h+=f'<div class="cov" style="left:{x0-10}px;top:{y0-6}px;width:{x1-x0+20}px;height:{y1-y0+16}px;background:{col}"></div>'
+        h+=f'<div class="cov" style="left:{x0-10}px;top:{y0-6}px;width:{x1-x0+20}px;height:{max(y1-y0+16,125 if (pg in (3,4) and (x1-x0)>400) else 0)}px;background:{col}"></div>'
         h+=f'<div class="cap" style="left:{x0}px;top:{y0}px;width:{x1-x0}px">{t}</div>'
     if pg==3: h+='<div style="position:absolute;left:151px;bottom:40px;font-size:11px;color:#555">*Según la ficha técnica del núcleo PureCore. Los resultados dependen de la calidad del agua de entrada.</div>'
     pages.append(f'<section class="pg">{h}</section>')
@@ -41,15 +41,15 @@ for pg in range(1,6):
 side='<img src="bg/sidebar.png" style="position:absolute;left:0;top:0;width:67px;height:810px">'
 body='''<div style="position:absolute;left:107px;top:42px;font-size:34px;font-weight:700;color:#2A2E9E;letter-spacing:.01em">Notas de ELVO</div>
 <div style="position:absolute;left:107px;top:112px;width:1230px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:34px;font-size:14px;line-height:1.42;color:#222">
-<div><div class="h">El mensaje de cada uno</div><ul>
-<li><b>Nativo:</b> directo en tu caño; retiene plomo y metales pesados*.</li>
-<li><b>Alivio:</b> agua de reserva; sin luz ni instalación.</li>
-<li><b>Cero:</b> agua fría o caliente, al instante.</li>
+<div><div class="h">Lo que decide la compra</div><ul>
+<li><b>Nativo:</b> agua rica y metales pesados retenidos*, con practicidad y durabilidad como apoyo.</li>
+<li><b>Alivio:</b> para quien tiene poca presión de agua y quiere agua reservada en casa.</li>
+<li><b>Cero:</b> la máxima purificación: ósmosis inversa y luz UV.</li>
 <li>Sin exclamaciones ni precios. Un solo CTA: WhatsApp.</li></ul></div>
 <div><div class="h">Detalle para quien lo necesite</div><ul>
-<li><b>Nativo:</b> derivador y manguera conectados, palanca en “filtrada”. Se instala en 5 minutos, sin gasfitero. Núcleo: hasta 20.000 litros en 18 meses. Si no encaja en el caño, se devuelve el dinero.</li>
+<li><b>Nativo:</b> derivador y manguera conectados, palanca en “filtrada”; adaptador para cualquier caño. Si no encaja, se devuelve el dinero.</li>
 <li><b>Alivio:</b> sin logo en el cuerpo; funciona con agua de tanque o cisterna. Filtros: 10.000 litros o 1 año.</li>
-<li><b>Cero:</b> de 6 °C a 98 °C; taza bajo el botón plateado; puede quedar enchufado.</li></ul></div>
+<li><b>Cero:</b> taza bajo el botón plateado; puede quedar enchufado.</li></ul></div>
 <div><div class="h">Video de 20 s</div><ul>
 <li><b>0 a 3 s:</b> gancho con el agua cayendo al vaso.</li>
 <li><b>3 a 14 s:</b> cómo se usa, en 3 pasos.</li>
